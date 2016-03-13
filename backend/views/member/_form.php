@@ -4,9 +4,10 @@ use yii\helpers\Html;
 use yii\bootstrap\Html as BootHtml;
 
 use yii\widgets\ActiveForm;
+use common\models\Member;
 
 /* @var $this yii\web\View */
-/* @var $model frontend\models\Member */
+/* @var $model common\models\Member */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
@@ -30,7 +31,7 @@ use yii\widgets\ActiveForm;
         ],
     ]); ?>
 
-    <?= $form->field($model, 'country')->dropDownList($model->countryVariants) ?>
+    <?= $form->field($model, 'country')->dropDownList(Member::$countryVariants) ?>
 
     <h3 class="text-center text-info">Сведения об участнике</h3>
 
@@ -39,21 +40,21 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'phone') ?>
     <?= $form->field($model, 'email') ?>
     <?= $form->field($model, 'interest') ?>
-    <?= $form->field($model, 'scienceDegree')->dropDownList($model->scienceDegreeVariants) ?>
-    <?= $form->field($model, 'scienceTitle')->dropDownList($model->scienceTitleVariants) ?>
+    <?= $form->field($model, 'scienceDegree')->dropDownList(Member::$scienceDegreeVariants) ?>
+    <?= $form->field($model, 'scienceTitle')->dropDownList(Member::$scienceTitleVariants) ?>
 
     <h3 class="text-center text-info">Сведения об организации</h3>
 
     <?= $form->field($model, 'organisationTitle') ?>
     <?= $form->field($model, 'organisationAddress') ?>
-    <?= $form->field($model, 'organisationActivity')->dropDownList($model->organisationActivityVariants) ?>
+    <?= $form->field($model, 'organisationActivity')->dropDownList(Member::$organisationActivityVariants) ?>
     <?= $form->field($model, 'organisationDepartment') ?>
 
 
     <h3 class="text-center text-info">Формат участия</h3>
 
     <?= $form->field($model, 'nameEng') ?>
-    <?= Html::activeRadioList($model, 'participationType', $model->participationTypeVariants, [
+    <?= Html::activeRadioList($model, 'participationType', Member::$participationTypeVariants, [
         'item' => function ($index, $label, $name, $checked, $value) {
             if ($index == 0) {
                 return '<div class="col-lg-3 col-lg-offset-3"><label class="radio-inline">' . Html::radio($name, $checked, ['value' => $value]) . $label . '</label></div>';
@@ -68,7 +69,7 @@ use yii\widgets\ActiveForm;
             <?= BootHtml::activeDropDownList(
                 $model,
                 'topicLanguage',
-                $model->topicLanguageVariants,
+                Member::$topicLanguageVariants,
                 ['class' => 'form-control']
             ) ?>
         </div>
@@ -76,7 +77,7 @@ use yii\widgets\ActiveForm;
             <?= BootHtml::activeDropDownList(
                 $model,
                 'topicSection',
-                $model->topicSectionVariants,
+                Member::$topicSectionVariants,
                 ['class' => 'form-control']
             ) ?>
         </div>

@@ -64,6 +64,7 @@ AppAsset::register($this);
                 $menuItems = [
                     ['label' => 'Home', 'url' => ['/site/index']],
                     ['label' => Yii::t('language', 'Members'), 'url' => ['/member/index']],
+                    ['label' => Yii::t('language', 'Content'), 'url' => ['/blog/default/index']],
                     ['label' => Yii::t('language', 'Yii2 - Translate Manager'),
                         'items' => [
                             ['label' => Yii::t('language', 'List of languages'), 'url' => ['/translatemanager/language/list']],
@@ -92,9 +93,9 @@ AppAsset::register($this);
     </div>
 </div>
 
-<footer class="footer">
+<footer class="footer col-md-offset-2">
     <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
+        <p class="pull-left">&copy; Сайт конференций <?= date('Y') ?></p>
 
         <p class="pull-right"><?= Yii::powered() ?></p>
     </div>

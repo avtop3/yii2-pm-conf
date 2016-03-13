@@ -24,17 +24,17 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
         ]) ?>
     </p>
-    <?php print_r($model->countryObj) ?>
+<!--    --><?php //print_r($model->countryObj->name) ?>
 
     <?= DetailView::widget([
         'model' => $model,
-        'attributes' => [
-            'name',
-            [
-                'attribute' => 'country1',
-                'content' => $model->countryObj->name,
-            ]
-        ],
+//        'attributes' => [
+//            'name',
+//            [
+//                'attribute' => 'country1',
+//                'content' => $model->countryObj->name,
+//            ]
+//        ],
     ]) ?>
 
 </div>

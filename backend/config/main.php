@@ -12,7 +12,20 @@ return [
     'controllerNamespace' => 'backend\controllers',
     'language' => 'ru-Ua',
     'bootstrap' => ['log'],
-    'modules' => [],
+    'modules' => [
+        'blog' => [
+            'class' => 'pendalf89\blog\Module',
+            // This option automatically translit entered titles
+            // from russian symbols to english on fly. Default false.
+            'autoTranslit' => true,
+            // Some options for CKEditor. Default custom options.
+            'editorOptions' => [],
+            // callback function for create post view url. Have $model argument.
+            'viewPostUrlCallback' => function($model) {
+                return '/' . $model->alias;
+            },
+        ],
+    ],
     'components' => [
         'user' => [
             'identityClass' => 'common\models\User',

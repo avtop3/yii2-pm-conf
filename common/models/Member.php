@@ -16,13 +16,13 @@ use common\models\Countries;
 
 class Member extends ActiveRecord
 {
-    public $participationTypeVariants = ['listener' => 'Буду участвовать как Слушатель', 'speaker' => 'Буду участвовать как Спикер'];
-    public $scienceDegreeVariants = [0 => 'No degree', 1 => 'Doctor', 2 => 'Candidate'];
-    public $scienceTitleVariants = [0 => 'No rank', 1 => 'Full professor', 2 => 'Associate Professor'];
-    public $organisationActivityVariants = [0 => 'Teaching', 1 => 'Business planning', 2 => 'PM'];
-    public $topicLanguageVariants = ['uk' => 'Українська', 'ru' => 'Русский', 'en' => 'English'];
-    public $topicSectionVariants = [0 => 'First var', 2 => 'Second Variant'];
-    public $countryVariants = [];
+    public static $participationTypeVariants = ['listener' => 'As listener', 'speaker' => 'As speaker'];
+    public static $scienceDegreeVariants = [0 => 'No degree', 1 => 'Doctor', 2 => 'Candidate'];
+    public static $scienceTitleVariants = [0 => 'No rank', 1 => 'Full professor', 2 => 'Associate Professor'];
+    public static $organisationActivityVariants = [0 => 'Teaching', 1 => 'Business planning', 2 => 'PM'];
+    public static $topicLanguageVariants = ['uk' => 'Українська', 'ru' => 'Русский', 'en' => 'English'];
+    public static $topicSectionVariants = [0 => 'First var', 2 => 'Second Variant'];
+    public static $countryVariants = [];
 
     public static function tableName()
     {
@@ -40,7 +40,7 @@ class Member extends ActiveRecord
     {
         parent::init();
         $countries = Countries::find()->asArray()->all();
-        $this->countryVariants = ArrayHelper::map($countries, 'alpha_2', 'name');
+        self::$countryVariants = ArrayHelper::map($countries, 'alpha_2', 'name');
     }
 
 
