@@ -13,8 +13,8 @@ use common\models\Member;
 
 <div class="member-form">
 
-    <?php if(count($model->errors) > 0): ?>
-    <pre class="text-danger">
+    <?php if (count($model->errors) > 0): ?>
+        <pre class="text-danger">
         <?php
         Yii::$app->session->setFlash('error', Yii::t('app', 'Something went wrong :('));
         print_r($model->errors);
@@ -88,7 +88,7 @@ use common\models\Member;
 
 
     <div class="form-group">
-        <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+        <?= Html::submitButton(Yii::t('app', 'Create'), ['class' => 'btn btn-primary pull-right']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

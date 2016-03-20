@@ -62,10 +62,10 @@ AppAsset::register($this);
             <div class="col-sm-3 col-md-2 sidebar">
                 <?php
                 $menuItems = [
-                    ['label' => 'Home', 'url' => ['/site/index']],
-                    ['label' => Yii::t('language', 'Members'), 'url' => ['/member/index']],
-                    ['label' => Yii::t('language', 'Content'), 'url' => ['/blog/default/index']],
-                    ['label' => Yii::t('language', 'Yii2 - Translate Manager'),
+                    ['label' => Yii::t('language', 'Участники конференции'), 'url' => ['/member/index']],
+                    ['label' => Yii::t('language', 'Контент'), 'url' => ['/blog/post/index']],
+                    ['label' => Yii::t('language', 'Файловый менеджер'), 'url' => ['/filemanager/file/index']],
+                    ['label' => Yii::t('language', 'Переводы строк'),
                         'items' => [
                             ['label' => Yii::t('language', 'List of languages'), 'url' => ['/translatemanager/language/list']],
 //                            ['label' => Yii::t('language', 'Create'), 'url' => ['/translatemanager/language/create']],

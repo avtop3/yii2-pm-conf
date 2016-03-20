@@ -60,8 +60,8 @@ class SiteController extends Controller
      *
      * @return mixed
      */
-    public function actionAbout()
+    public function actionStaticPage($page)
     {
-        return $this->render('about');
+        return $this->render($page);
     }
 }
