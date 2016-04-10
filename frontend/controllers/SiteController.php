@@ -1,6 +1,8 @@
 <?php
 namespace frontend\controllers;
 
+use pendalf89\blog\models\Post;
+use pendalf89\blog\models\PostQuery;
 use Yii;
 use frontend\models\ContactForm;
 use yii\web\Controller;
@@ -63,5 +65,14 @@ class SiteController extends Controller
     public function actionStaticPage($page)
     {
         return $this->render($page);
+    }
+
+    public function actionSpeakers()
+    {
+        $postQuery = new PostQuery(Post::className());
+        $postQuery->published()->type('speakers');
+        $posts = $postQuery->all();
+//        print_r();
+        return $this->render('speakers', ['posts' => $posts]);
     }
 }

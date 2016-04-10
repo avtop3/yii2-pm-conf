@@ -36,7 +36,7 @@ return [
     ],
     'modules' => [
         'blog' => [
-            'class' => 'pendalf89\blog\Module',
+            'class' => 'common\modules\blog\Module',
             // This option automatically translit entered titles
             // from russian symbols to english on fly. Default false.
             'autoTranslit' => true,
