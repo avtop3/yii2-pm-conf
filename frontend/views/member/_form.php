@@ -104,9 +104,9 @@ use common\models\Member;
         <?= Yii::t('app.member', 'Payment') ?>
     </h3>
 
-    <table class="table table-bordered summary-info text-center" >
+    <table class="table table-bordered summary-info text-center">
         <tr class="success">
-            <th><?= Yii::t('app.member', 'Full name') ?></th>
+            <th><?= Yii::t('app.member', 'table full name') ?></th>
             <th><?= Yii::t('app.member', 'Registration fee') ?></th>
             <th class=""><?= Yii::t('app.member', 'Conference papers') ?></th>
             <th><?= Yii::t('app.member', 'Total to pay') ?></th>
@@ -119,7 +119,7 @@ use common\models\Member;
                     $model,
                     'papersCount',
                     [
-                        'no' => 'No papers',
+                        'no' => Yii::t('app.member', 'No papers'),
                         1 => 1,
                         2 => 2,
                         3 => 3,
@@ -148,7 +148,7 @@ use common\models\Member;
 
 
     <div class="form-group">
-        <?= Html::submitButton(Yii::t('app', 'Create'), ['class' => 'btn btn-primary pull-right']) ?>
+        <?= Html::submitButton(BootHtml::icon('ok') . Yii::t('app.member', 'Submit'), ['class' => 'btn btn-primary pull-right']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>
