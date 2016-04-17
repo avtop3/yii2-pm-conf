@@ -24,11 +24,29 @@ class MemberSearch extends Member
      * @inheritdoc
      */
 
+    public $overallInUah;
+    public $overallInUsd;
+
     public function rules()
     {
         return [
             [['id'], 'integer'],
-            [['name', 'participationType', 'position', 'email', 'phone', 'country', 'created_at'], 'safe'],
+            [
+                [
+                    'name',
+                    'participationType',
+                    'position',
+                    'email',
+                    'phone',
+                    'country',
+                    'created_at',
+                    'organisationTitle',
+                    'totalSum',
+                    'paid',
+                    'currency',
+                ],
+                'safe'
+            ],
         ];
     }
 
@@ -92,6 +110,12 @@ class MemberSearch extends Member
         $query->andFilterWhere(['between', 'created_at', $this->created['from'], $this->created['to']]);
         $query->andFilterWhere(['like', 'country', $this->country]);
         $query->andFilterWhere(['like', 'participationType', $this->participationType]);
+        $query->andFilterWhere(['like', 'paid', $this->paid]);
+
+        $queryForUsd = clone $query;
+        $queryForUah = clone $query;
+        $this->overallInUsd = $queryForUsd->andWhere(['currency' => 'usd'])->sum('totalSum');
+        $this->overallInUah = $queryForUah->andWhere(['currency' => 'uah'])->sum('totalSum');
 
         return $dataProvider;
     }

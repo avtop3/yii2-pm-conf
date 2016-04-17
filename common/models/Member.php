@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Alex
+ * User: Alex Kovalchuk
  * Date: 07.02.2016
  * Time: 19:02
  */
@@ -14,6 +14,22 @@ use yii\behaviors\TimestampBehavior;
 use yii\helpers\ArrayHelper;
 use common\models\Countries;
 
+/**
+ * Class Member
+ * @package common\models
+ * @property string $country
+ * @property string $participationType
+ * @property int $papersCount
+ * @property string $name
+ * @property string $position
+ * @property string $phone
+ * @property string $email
+ * @property string $interest
+ * @property string $scienceDegree
+ * @property string $scienceTitle
+ * @property string $currency
+ * @property string $totalSum
+ */
 class Member extends ActiveRecord
 {
 //    public static $topicSectionVariants = [0 => 'First var', 2 => 'Second Variant'];
@@ -21,6 +37,8 @@ class Member extends ActiveRecord
 
     const PARTICIPATION_TYPE_LISTENER = 'listener';
     const PARTICIPATION_TYPE_SPEAKER = 'speaker';
+
+    const SCENARIO_ADMIN = 'admin';
 
     public static function tableName()
     {
@@ -69,6 +87,11 @@ class Member extends ActiveRecord
             'topicSection',
             'papersCount',
 
+            'totalSum',
+            'currency',
+            'paid',
+            'noteFromAdmin',
+
             'created_at',
             'updated_at',
         ];
@@ -98,14 +121,17 @@ class Member extends ActiveRecord
             'topicLanguage' => Yii::t('app.member', 'Language of report'),
             'topicSection' => Yii::t('app.member', 'Select section'),
 
+            'paid' => Yii::t('app.member', 'Payment status'),
+            'noteFromAdmin' => Yii::t('app.member', 'Note from Admin'),
+
         ];
     }
 
 
     public function rules()
     {
-        $attr = $this->attributes();
-        unset($attr['id']);
+//        $attr = $this->attributes();
+//        unset($attr['id']);
 //        return [
 //            [$attr, 'safe']
 //        ];
@@ -127,10 +153,11 @@ class Member extends ActiveRecord
                     'organisationActivity',
                     'nameEng',
                     'participationType',
-                    'topicTitle',
+//                    'topicTitle',
                     'topicLanguage',
                     'topicSection',
                     'papersCount',
+                    'organisationUrl',
                 ], 'required'],
             [
                 [
@@ -144,9 +171,34 @@ class Member extends ActiveRecord
                     'nameEng',
                     'topicTitle',
                 ], 'string'],
+            ['papersCount', 'integer'],
             ['email', 'email'],
+            [['paid', 'noteFromAdmin'], 'safe', 'on' => Member::SCENARIO_ADMIN],
+            ['organisationUrl', 'url'],
+//            ['paid', 'default', 'value' => 0],
             ['phone', 'match', 'pattern' => '/^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$/i'],
         ];
+    }
+
+    public function beforeSave($insert)
+    {
+        if (parent::beforeSave($insert)) {
+            $this->calculatePrice();
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    private function calculatePrice()
+    {
+        if ($this->country == 'ua') {
+            $this->currency = 'uah';
+            $this->totalSum = $this->papersCount * 150 + 350;
+        } else {
+            $this->currency = 'usd';
+            $this->totalSum = $this->papersCount * 50 + 100;
+        }
     }
 
     public function getCountryObj()

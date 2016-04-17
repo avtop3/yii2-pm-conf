@@ -14,8 +14,8 @@ use kartik\daterange\DateRangePicker;
 $this->title = Yii::t('app', 'Members');
 $this->params['breadcrumbs'][] = $this->title;
 
-$countries = Countries::find()->asArray()->all();
-$countryVariants = ArrayHelper::map($countries, 'alpha_2', 'name');
+//$countries = Countries::find()->asArray()->all();
+//$countryVariants = ArrayHelper::map($countries, 'alpha_2', 'name');
 
 $dateRange = [
     'model' => $searchModel,
@@ -45,19 +45,28 @@ $dateRange = [
         'filterModel' => $searchModel,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
-            'name',
-//            'country',
+//            'name',
             [
-                'attribute' => 'Country',
-                'value' => 'countryObj.name',
-                'filter' => Html::activeDropDownList(
-                    $searchModel,
-                    'country',
-                    $countryVariants,
-                    ['class' => 'form-control', 'prompt' => 'None']
-                ),
+                'attribute' => 'name',
+                'format' => 'raw',
+                'value' => function ($model) {
+                    return '<b>' . Html::a($model->name, ['update', 'id' => $model->id]) . '</b>';
+                },
+                'contentOptions' => ['style' => 'width: 100px;', 'class' => 'warning ']
             ],
+//            'country',
+//            [
+//                'attribute' => 'Country',
+//                'value' => 'countryObj.name',
+//                'filter' => Html::activeDropDownList(
+//                    $searchModel,
+//                    'country',
+//                    $countryVariants,
+//                    ['class' => 'form-control', 'prompt' => 'None']
+//                ),
+//            ],
             'position',
+            'organisationTitle',
             'phone',
             'email',
             [
@@ -66,22 +75,63 @@ $dateRange = [
                 'filter' => Html::activeDropDownList(
                     $searchModel,
                     'participationType',
-                    Member::$participationTypeVariants,
+                    Member::getParticipationTypeVariants(),
                     ['class' => 'form-control', 'prompt' => 'None']
                 ),
+                'contentOptions' => ['style' => 'width: 100px;']
+            ],
+            [
+                'label' => 'Сумма',
+                'attribute' => 'totalSum',
+                'value' => function ($model) {
+                    return $model->totalSum . ' ' . $model->currency;
+                },
+                'contentOptions' => ['style' => 'width: 100px;']
+            ],
+            [
+                'label' => 'Оплачено',
+                'format' => 'raw',
+                'value' => function ($model) {
+                    if ($model->paid) {
+                        return \yii\bootstrap\Html::icon('ok', ['class' => 'text-success']);
+                    } else {
+                        return \yii\bootstrap\Html::icon('remove', ['class' => 'text-danger']);
+                    }
+                },
+                'filter' => Html::activeDropDownList(
+                    $searchModel,
+                    'paid',
+                    [0 => 'Не оплачено', 1 => 'Оплчено'],
+                    ['class' => 'form-control', 'prompt' => 'Все']
+                ),
+                'contentOptions' => ['style' => 'width: 80px;']
             ],
 
-            [
-                'attribute' => 'Registration date',
-                'value' => 'created_at',
-                'format' => 'date',
-                'filter' => DateRangePicker::widget($dateRange),
-            ],
+
+//            [
+//                'attribute' => 'Registration date',
+//                'value' => 'created_at',
+//                'format' => 'date',
+//                'filter' => DateRangePicker::widget($dateRange),
+//            ],
 //                'created_at:datetime',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
+
+    <ul class="list-group pull-right">
+        <li class="list-group-item list-group-item-success">
+            <h4>Сумма для выборки</h4>
+        </li>
+        <li class="list-group-item">
+            <b class="text-success"><?= $searchModel->overallInUah ?> ГРН</b>
+        </li>
+        <li class="list-group-item">
+            <b class="text-danger"><?= $searchModel->overallInUsd ?> USD</b>
+
+        </li>
+    </ul>
 
 </div>
 

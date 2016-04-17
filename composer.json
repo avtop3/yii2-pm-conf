@@ -27,7 +27,8 @@
         "codemix/yii2-localeurls": "1.*",
         "kartik-v/yii2-date-range": "^1.6",
         "rmrevin/yii2-fontawesome": "~2.12",
-        "pendalf89/yii2-blog": "dev-master"
+        "pendalf89/yii2-blog": "dev-master",
+        "microinginer/yii2-dropdown-action-column": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",

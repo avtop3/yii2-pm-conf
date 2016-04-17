@@ -31,6 +31,24 @@ use common\models\Member;
         ],
     ]); ?>
 
+    <?php if ($model->scenario == Member::SCENARIO_ADMIN): ?>
+
+        <div class="panel panel-warning">
+            <div class="panel-heading">
+                Admin manage
+            </div>
+            <div class="panel-body">
+
+                <div class="col-md-offset-4">
+                    <?= $form->field($model, 'paid')->checkbox() ?>
+                </div>
+                <?= $form->field($model, 'noteFromAdmin')->textarea(['rows' => 6]) ?>
+            </div>
+        </div>
+        <hr>
+
+    <?php endif; ?>
+
     <?= $form->field($model, 'country')->dropDownList(Member::getCountryVariants()) ?>
 
     <h3 class="text-center text-info middle-header">
@@ -119,7 +137,7 @@ use common\models\Member;
                     $model,
                     'papersCount',
                     [
-                        'no' => Yii::t('app.member', 'No papers'),
+                        0 => Yii::t('app.member', 'No papers'),
                         1 => 1,
                         2 => 2,
                         3 => 3,
@@ -216,10 +234,9 @@ function setPapersPrice(){
         priceForPapers = papersCount * 50;
         priceForPapersLabel = '$' + priceForPapers;
     }
-    if(papersCount > 0){
-        $('#price-for-papers').html(priceForPapersLabel);
-    }
+    $('#price-for-papers').html(priceForPapersLabel);
 }
+setPapersPrice();
 
 function setTotalPrice(){
     var totalSum = 0;
