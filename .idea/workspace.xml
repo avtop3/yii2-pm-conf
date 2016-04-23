@@ -1,22 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbe80539-b4f7-45f9-bd38-c21eb94fdb31" name="Default" comment="Структура таблицы с обобщенной информацией о зарегистрированных пользователях&#10;&#10;•&#9;Порядковый номер&#10;•&#9;Фамилия, имя, отчество&#10;•&#9;Должность&#10;•&#9;Название организации&#10;•&#9;Контактный телефон&#10;•&#9;E-mail&#10;•&#9;Формат участия (Слушатель/Спикер)&#10;•&#9;Итого к оплате&#10;•&#9;Оплачено (Да/Нет) – галочка или выпадающий список&#10;•&#9;Примечание (по умолчанию пустое поле) – в него администратор может вносить любую текстовую информацию &#10;&#10;В конце таблицы под столбцом «Итого к оплате» по всем зарегистрированным участником должна подсчитываться общая сумма оплаты с разделением на оплату в гривнах и долларах США&#10;&#10;В конце таблицы под столбцом «Оплачено» по всем зарегистрированным участником у которых стоит отметка об оплате, должна подсчитываться общая сумма оплаты с разделением на оплату в гривнах и долларах США&#10;&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/sql/yii2-conf (1).sql" />
-      <change type="DELETED" beforePath="D:\OpenServer Ultimate\domains\local.yii2-conf\backend\views\member\_form.php" afterPath="" />
+    <list default="true" id="bbe80539-b4f7-45f9-bd38-c21eb94fdb31" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/modules/blog" afterPath="$PROJECT_DIR$/common/modules/blog" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/models/Member.php" afterPath="$PROJECT_DIR$/common/models/Member.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/controllers/MemberController.php" afterPath="$PROJECT_DIR$/backend/controllers/MemberController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/models/MemberSearch.php" afterPath="$PROJECT_DIR$/common/models/MemberSearch.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/member/create.php" afterPath="$PROJECT_DIR$/frontend/views/member/create.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/member/index.php" afterPath="$PROJECT_DIR$/backend/views/member/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/config/main.php" afterPath="$PROJECT_DIR$/backend/config/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/layouts/main.php" afterPath="$PROJECT_DIR$/frontend/views/layouts/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/member/update.php" afterPath="$PROJECT_DIR$/backend/views/member/update.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\OpenServer Ultimate\domains\local.yii2-conf\frontend\views\member\_form.php" afterPath="$PROJECT_DIR$/common/views/member/_form.php" />
     </list>
     <ignored path="local.yii2-conf.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Member.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Member.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/models/Member.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.351852" vertical-offset="1224" max-vertical-offset="5100">
-              <caret line="89" column="21" selection-start-line="89" selection-start-column="13" selection-end-line="89" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.31912145" vertical-offset="3884" max-vertical-offset="9571">
+              <caret line="243" column="29" selection-start-line="243" selection-start-column="29" selection-end-line="243" selection-end-column="29" />
               <folding>
                 <element signature="e#6#96#0#PHP" expanded="true" />
                 <element signature="e#124#132#0#PHP" expanded="true" />
@@ -64,16 +52,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Query.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/db/Query.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-104.42308" vertical-offset="2470" max-vertical-offset="14824">
-              <caret line="310" column="20" selection-start-line="310" selection-start-column="20" selection-end-line="310" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/views/member/index.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -86,20 +64,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="yii2-conf (1).sql" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/common/sql/yii2-conf (1).sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="16983">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MemberController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/controllers/MemberController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.115385" vertical-offset="1071" max-vertical-offset="2125">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1071" max-vertical-offset="2125">
               <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
               <folding />
             </state>
@@ -120,7 +88,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/common/modules/yii2-blog/models/Category.php" />
         <option value="$PROJECT_DIR$/common/modules/yii2-blog/models/CategorySearch.php" />
         <option value="$PROJECT_DIR$/common/modules/yii2-blog/models/Post.php" />
         <option value="$PROJECT_DIR$/common/modules/yii2-blog/models/PostQuery.php" />
@@ -166,11 +133,12 @@
         <option value="$PROJECT_DIR$/frontend/views/member/create.php" />
         <option value="$PROJECT_DIR$/backend/views/member/update.php" />
         <option value="$PROJECT_DIR$/backend/controllers/MemberController.php" />
-        <option value="$PROJECT_DIR$/common/models/Member.php" />
         <option value="$PROJECT_DIR$/backend/config/main.php" />
         <option value="$PROJECT_DIR$/common/views/member/_form.php" />
         <option value="$PROJECT_DIR$/common/models/MemberSearch.php" />
         <option value="$PROJECT_DIR$/backend/views/member/index.php" />
+        <option value="$PROJECT_DIR$/common/sql/yii2-conf (1).sql" />
+        <option value="$PROJECT_DIR$/common/models/Member.php" />
       </list>
     </option>
   </component>
@@ -209,7 +177,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -490,6 +457,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -532,15 +500,15 @@
       <BehatRunner />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
       <tasks />
       <pass-parent-env-vars>false</pass-parent-env-vars>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -598,7 +566,13 @@
       <option name="project" value="LOCAL" />
       <updated>1460831171525</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Структура таблицы с обобщенной информацией о зарегистрированных пользователях&#10;&#10;•&#9;Порядковый номер&#10;•&#9;Фамилия, имя, отчество&#10;•&#9;Должность&#10;•&#9;Название организации&#10;•&#9;Контактный телефон&#10;•&#9;E-mail&#10;•&#9;Формат участия (Слушатель/Спикер)&#10;•&#9;Итого к оплате&#10;•&#9;Оплачено (Да/Нет) – галочка или выпадающий список&#10;•&#9;Примечание (по умолчанию пустое поле) – в него администратор может вносить любую текстовую информацию &#10;&#10;В конце таблицы под столбцом «Итого к оплате» по всем зарегистрированным участником должна подсчитываться общая сумма оплаты с разделением на оплату в гривнах и долларах США&#10;&#10;В конце таблицы под столбцом «Оплачено» по всем зарегистрированным участником у которых стоит отметка об оплате, должна подсчитываться общая сумма оплаты с разделением на оплату в гривнах и долларах США&#10;&#10;">
+      <created>1460906257062</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1460906257062</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -632,20 +606,20 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22087379" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22330096" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7361751" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7361751" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328341" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328341" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32949308" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -670,7 +644,8 @@
     <MESSAGE value="Переместил Yii2-blog из vendor в common/modules&#10;Начал работу над мультиязычным модулем для Контента&#10;Cоздал страницу с спикерами" />
     <MESSAGE value="Добавил JS обработку формы регистрации на конференцию" />
     <MESSAGE value="Дамп БД за 16.04.2016" />
-    <option name="LAST_COMMIT_MESSAGE" value="Дамп БД за 16.04.2016" />
+    <MESSAGE value="Структура таблицы с обобщенной информацией о зарегистрированных пользователях&#10;&#10;•&#9;Порядковый номер&#10;•&#9;Фамилия, имя, отчество&#10;•&#9;Должность&#10;•&#9;Название организации&#10;•&#9;Контактный телефон&#10;•&#9;E-mail&#10;•&#9;Формат участия (Слушатель/Спикер)&#10;•&#9;Итого к оплате&#10;•&#9;Оплачено (Да/Нет) – галочка или выпадающий список&#10;•&#9;Примечание (по умолчанию пустое поле) – в него администратор может вносить любую текстовую информацию &#10;&#10;В конце таблицы под столбцом «Итого к оплате» по всем зарегистрированным участником должна подсчитываться общая сумма оплаты с разделением на оплату в гривнах и долларах США&#10;&#10;В конце таблицы под столбцом «Оплачено» по всем зарегистрированным участником у которых стоит отметка об оплате, должна подсчитываться общая сумма оплаты с разделением на оплату в гривнах и долларах США&#10;&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Структура таблицы с обобщенной информацией о зарегистрированных пользователях&#10;&#10;•&#9;Порядковый номер&#10;•&#9;Фамилия, имя, отчество&#10;•&#9;Должность&#10;•&#9;Название организации&#10;•&#9;Контактный телефон&#10;•&#9;E-mail&#10;•&#9;Формат участия (Слушатель/Спикер)&#10;•&#9;Итого к оплате&#10;•&#9;Оплачено (Да/Нет) – галочка или выпадающий список&#10;•&#9;Примечание (по умолчанию пустое поле) – в него администратор может вносить любую текстовую информацию &#10;&#10;В конце таблицы под столбцом «Итого к оплате» по всем зарегистрированным участником должна подсчитываться общая сумма оплаты с разделением на оплату в гривнах и долларах США&#10;&#10;В конце таблицы под столбцом «Оплачено» по всем зарегистрированным участником у которых стоит отметка об оплате, должна подсчитываться общая сумма оплаты с разделением на оплату в гривнах и долларах США&#10;&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -679,13 +654,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/common/modules/blog/views/post/create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.1445785" vertical-offset="0" max-vertical-offset="612">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/modules/blog/views/type/_form.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.6385542" vertical-offset="0" max-vertical-offset="612">
@@ -844,7 +812,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="850">
           <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -859,9 +826,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.56388205" vertical-offset="306" max-vertical-offset="5287">
           <caret line="45" column="72" selection-start-line="45" selection-start-column="72" selection-end-line="45" selection-end-column="72" />
-          <folding>
-            <element signature="e#46#54#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -883,7 +847,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.1923077" vertical-offset="4502" max-vertical-offset="6987">
           <caret line="274" column="20" selection-start-line="274" selection-start-column="20" selection-end-line="274" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -898,7 +861,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.769231" vertical-offset="213" max-vertical-offset="1530">
           <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -921,7 +883,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.3341523" vertical-offset="478" max-vertical-offset="2091">
           <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -929,7 +890,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-19.615385" vertical-offset="0" max-vertical-offset="918">
           <caret line="30" column="64" selection-start-line="30" selection-start-column="64" selection-end-line="30" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -945,7 +905,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="817">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -961,7 +920,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.43857494" vertical-offset="0" max-vertical-offset="814">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -969,7 +927,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.7692308" vertical-offset="761" max-vertical-offset="6749">
           <caret line="55" column="16" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -977,9 +934,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="510">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#7#28#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -987,7 +941,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="1445">
           <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1003,38 +956,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-25.423077" vertical-offset="155" max-vertical-offset="4573">
           <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding>
-            <element signature="e#7#28#0#PHP" expanded="false" />
-            <marker date="1460901832837" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1460901832837" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1460901832837" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1460901832837" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1460901832837" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1460901832837" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1460901832837" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1460901832837" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1460901832837" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1460901832837" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1460901832837" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1460901832837" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1460901832837" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1460901832837" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1460901832837" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1460901832837" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1460901832837" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1460901832837" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/models/Member.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.351852" vertical-offset="1224" max-vertical-offset="5100">
-          <caret line="89" column="21" selection-start-line="89" selection-start-column="13" selection-end-line="89" selection-end-column="21" />
-          <folding>
-            <element signature="e#6#96#0#PHP" expanded="true" />
-            <element signature="e#124#132#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1042,30 +963,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/controllers/MemberController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.115385" vertical-offset="1071" max-vertical-offset="2125">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1071" max-vertical-offset="2125">
           <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/db/Query.php">
+    <entry file="file://$PROJECT_DIR$/common/sql/yii2-conf (1).sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-104.42308" vertical-offset="2470" max-vertical-offset="14824">
-          <caret line="310" column="20" selection-start-line="310" selection-start-column="20" selection-end-line="310" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/models/MemberSearch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.76923" vertical-offset="1277" max-vertical-offset="2108">
-          <caret line="117" column="42" selection-start-line="117" selection-start-column="42" selection-end-line="117" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="16983">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1080,11 +992,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/sql/yii2-conf (1).sql">
+    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/db/Query.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="16983">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="3.3852868" vertical-offset="2470" max-vertical-offset="14824">
+          <caret line="310" column="20" selection-start-line="310" selection-start-column="20" selection-end-line="310" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/models/MemberSearch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.76923" vertical-offset="1277" max-vertical-offset="2108">
+          <caret line="117" column="42" selection-start-line="117" selection-start-column="42" selection-end-line="117" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_9.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34413967" vertical-offset="3804" max-vertical-offset="18173">
+          <caret line="240" column="9" selection-start-line="240" selection-start-column="9" selection-end-line="240" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/models/Member.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31912145" vertical-offset="3884" max-vertical-offset="9571">
+          <caret line="243" column="29" selection-start-line="243" selection-start-column="29" selection-end-line="243" selection-end-column="29" />
+          <folding>
+            <element signature="e#6#96#0#PHP" expanded="true" />
+            <element signature="e#124#132#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
