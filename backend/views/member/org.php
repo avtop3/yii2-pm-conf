@@ -24,7 +24,6 @@ $this->title = 'Список организаций';
         'dataProvider' => $dataProvider,
         'columns' => [
             'organisationTitle',
-            'organisationDepartment',
             'organisationAddress',
             [
                 'attribute' => 'organisationActivity',

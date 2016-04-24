@@ -84,8 +84,8 @@ $confPeriods = \backend\models\ConfPeriod::find()->orderBy('regStart')->all();
                 'filter' => Html::activeDropDownList(
                     $searchModel,
                     'participationType',
-                    Member::getParticipationTypeVariants(),
-                    ['class' => 'form-control', 'prompt' => 'None']
+                    Member::getParticipationTypePureVariants(),
+                    ['class' => 'form-control', 'prompt' => 'Все']
                 ),
                 'contentOptions' => ['style' => 'width: 100px;']
             ],
@@ -110,7 +110,7 @@ $confPeriods = \backend\models\ConfPeriod::find()->orderBy('regStart')->all();
                 'filter' => Html::activeDropDownList(
                     $searchModel,
                     'paid',
-                    [0 => 'Не оплачено', 1 => 'Оплчено'],
+                    [0 => 'Не оплачено', 1 => 'Оплачено'],
                     ['class' => 'form-control', 'prompt' => 'Все']
                 ),
                 'contentOptions' => ['style' => 'width: 80px;']

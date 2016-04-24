@@ -193,7 +193,7 @@ class Member extends ActiveRecord
             ['email', 'email'],
             [['paid', 'noteFromAdmin', 'created_at'], 'safe', 'on' => Member::SCENARIO_ADMIN],
             ['organisationUrl', 'url'],
-//            ['paid', 'default', 'value' => 0],
+            ['paid', 'default', 'value' => 0],
             ['phone', 'match', 'pattern' => '/^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$/i'],
         ];
     }
@@ -244,6 +244,14 @@ class Member extends ActiveRecord
         return [
             self::PARTICIPATION_TYPE_LISTENER => Yii::t('app.member', 'I will participate as <b>Listener</b>'),
             self::PARTICIPATION_TYPE_SPEAKER => Yii::t('app.member', 'I will participate as <b>Speaker</b>')
+        ];
+    }
+
+    public static function getParticipationTypePureVariants()
+    {
+        return [
+            self::PARTICIPATION_TYPE_LISTENER => Yii::t('app.member', 'Listener'),
+            self::PARTICIPATION_TYPE_SPEAKER => Yii::t('app.member', 'Speaker')
         ];
     }
 
