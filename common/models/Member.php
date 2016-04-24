@@ -17,9 +17,10 @@ use common\models\Countries;
 /**
  * Class Member
  * @package common\models
+ * @property int $id
+ * @property int $papersCount
  * @property string $country
  * @property string $participationType
- * @property int $papersCount
  * @property string $name
  * @property string $position
  * @property string $phone
@@ -27,6 +28,19 @@ use common\models\Countries;
  * @property string $interest
  * @property string $scienceDegree
  * @property string $scienceTitle
+ * @property string $organisationTitle
+ * @property string $organisationDepartment
+ * @property string $organisationAddress
+ * @property string $organisationActivity
+ * @property string $organisationUrl
+ * @property string $nameEng
+ * @property string $topicTitle
+ * @property string $topicLanguage
+ * @property string $topicSection
+ * @property string $paid
+ * @property string $noteFromAdmin
+ * @property string $created_at
+ * @property string $updated_at
  * @property string $currency
  * @property string $totalSum
  */
@@ -123,6 +137,10 @@ class Member extends ActiveRecord
 
             'paid' => Yii::t('app.member', 'Payment status'),
             'noteFromAdmin' => Yii::t('app.member', 'Note from Admin'),
+            'created_at' => Yii::t('app.member', 'Registration date'),
+            'totalSum' => Yii::t('app.member', 'Total sum'),
+            'papersCount' => Yii::t('app.member', 'Papers count'),
+            'participationType' => Yii::t('app.member', 'Participation Type'),
 
         ];
     }
@@ -173,7 +191,7 @@ class Member extends ActiveRecord
                 ], 'string'],
             ['papersCount', 'integer'],
             ['email', 'email'],
-            [['paid', 'noteFromAdmin'], 'safe', 'on' => Member::SCENARIO_ADMIN],
+            [['paid', 'noteFromAdmin', 'created_at'], 'safe', 'on' => Member::SCENARIO_ADMIN],
             ['organisationUrl', 'url'],
 //            ['paid', 'default', 'value' => 0],
             ['phone', 'match', 'pattern' => '/^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$/i'],
@@ -231,22 +249,20 @@ class Member extends ActiveRecord
 
     public static function getScienceTitleVariants()
     {
-        if(Yii::$app->language == 'ru-RU' || Yii::$app->language == 'uk-UA'){
+        if (Yii::$app->language == 'ru-RU' || Yii::$app->language == 'uk-UA') {
             return [
                 'prof' => Yii::t('app.member', 'Full Professor'),
                 'sen_res_off' => Yii::t('app.member', 'Senior Research Officer'),
                 'docent' => Yii::t('app.member', 'Docent'),
                 'no_rank' => Yii::t('app.member', 'No Rank'),
             ];
-        }else{
+        } else {
             return [
                 'prof' => Yii::t('app.member', 'Full Professor'),
                 'docent' => Yii::t('app.member', 'Docent'),
                 'no_rank' => Yii::t('app.member', 'No Rank'),
             ];
         }
-
-
     }
 
     public static function getOrganisationActivityVariants()
@@ -293,16 +309,9 @@ class Member extends ActiveRecord
 
     public static function getCountryVariants()
     {
-        $countries = Countries::find()->asArray()->all();
-        $mapedCountry = ArrayHelper::map($countries, 'alpha_2', 'name');
+//        $countries = Countries::find()->asArray()->all();
+//        $mapedCountry = ArrayHelper::map($countries, 'alpha_2', 'name');
 
-//        $result = '';
-//        foreach ($mapedCountry as $key => $value) {
-//            $result .= "'$key' => Yii::t('app.member', '$value')," . PHP_EOL;
-//        }
-//
-//        print($result);
-//        exit;
         return [
             'ua' => Yii::t('app.member', 'Ukraine'),
             'ru' => Yii::t('app.member', 'Russian Federation'),

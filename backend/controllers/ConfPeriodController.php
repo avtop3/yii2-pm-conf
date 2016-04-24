@@ -3,48 +3,49 @@
 namespace backend\controllers;
 
 use Yii;
-use common\models\Member;
-use common\models\MemberSearch;
-use yii\behaviors\TimestampBehavior;
+use backend\models\ConfPeriod;
 use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * MemberController implements the CRUD actions for Member model.
+ * ConfPeriodController implements the CRUD actions for ConfPeriod model.
  */
-class MemberController extends Controller
+class ConfPeriodController extends Controller
 {
+    /**
+     * @inheritdoc
+     */
     public function behaviors()
     {
         return [
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
-                    'delete' => ['post'],
+                    'delete' => ['POST'],
                 ],
             ],
         ];
     }
 
     /**
-     * Lists all Member models.
+     * Lists all ConfPeriod models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new MemberSearch();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $dataProvider = new ActiveDataProvider([
+            'query' => ConfPeriod::find(),
+        ]);
 
         return $this->render('index', [
-            'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
         ]);
     }
 
     /**
-     * Displays a single Member model.
+     * Displays a single ConfPeriod model.
      * @param integer $id
      * @return mixed
      */
@@ -56,17 +57,15 @@ class MemberController extends Controller
     }
 
     /**
-     * Creates a new Member model.
+     * Creates a new ConfPeriod model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new Member();
+        $model = new ConfPeriod();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) { //&& $model->save()
-//            print_r($model->attributes);
-//            exit();
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
@@ -76,7 +75,7 @@ class MemberController extends Controller
     }
 
     /**
-     * Updates an existing Member model.
+     * Updates an existing ConfPeriod model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -84,7 +83,6 @@ class MemberController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
-        $model->scenario = Member::SCENARIO_ADMIN;
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -96,7 +94,7 @@ class MemberController extends Controller
     }
 
     /**
-     * Deletes an existing Member model.
+     * Deletes an existing ConfPeriod model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -108,28 +106,16 @@ class MemberController extends Controller
         return $this->redirect(['index']);
     }
 
-    public function actionOrg()
-    {
-        $dataProvider = new ActiveDataProvider([
-            'query' => Member::find()->addGroupBy('organisationTitle'),
-            'pagination' => [
-                'pageSize' => 0,
-            ],
-        ]);
-
-        return $this->render('org', ['dataProvider' => $dataProvider]);
-    }
-
     /**
-     * Finds the Member model based on its primary key value.
+     * Finds the ConfPeriod model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Member the loaded model
+     * @return ConfPeriod the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Member::findOne($id)) !== null) {
+        if (($model = ConfPeriod::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');

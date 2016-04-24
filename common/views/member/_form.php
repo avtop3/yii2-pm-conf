@@ -43,6 +43,18 @@ use common\models\Member;
                     <?= $form->field($model, 'paid')->checkbox() ?>
                 </div>
                 <?= $form->field($model, 'noteFromAdmin')->textarea(['rows' => 6]) ?>
+
+                <?= $form->field($model, 'created_at')->widget(
+                    \vakorovin\datetimepicker\Datetimepicker::className(),
+                    [
+                        'options' => [
+                            'lang' => 'ru',
+                            'inline' => true,
+                            'format' => 'unixtime',
+                            'timepicker' => false,
+                        ]]);
+                ?>
+
             </div>
         </div>
         <hr>

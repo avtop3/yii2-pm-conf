@@ -13,22 +13,23 @@ use kartik\daterange\DateRangePicker;
 
 $this->title = Yii::t('app', 'Members');
 $this->params['breadcrumbs'][] = $this->title;
+$confPeriods = \backend\models\ConfPeriod::find()->orderBy('regStart')->all();
 
-//$countries = Countries::find()->asArray()->all();
-//$countryVariants = ArrayHelper::map($countries, 'alpha_2', 'name');
 
-$dateRange = [
-    'model' => $searchModel,
-    'attribute' => 'created_at',
-    'convertFormat' => true,
-    'pluginOptions' => [
-//        'timePicker' => true,
-//        'timePickerIncrement' => 30,
-        'locale' => [
-            'format' => 'Y-m-d '
-        ]
-    ]
-];
+//$dateRange = [
+//    'model' => $searchModel,
+//    'attribute' => 'created_at',
+//    'convertFormat' => true,
+//    'pluginOptions' => [
+////        'timePicker' => true,
+////        'timePickerIncrement' => 30,
+//        'locale' => [
+//            'format' => 'Y-m-d '
+//        ]
+//    ]
+//];
+
+
 ?>
 <div class="member-index">
 
@@ -38,6 +39,14 @@ $dateRange = [
 
     <p>
         <?= Html::a(Yii::t('app', 'Create Member'), ['create'], ['class' => 'btn btn-success']) ?>
+        <?php
+        foreach($confPeriods as $period){
+            echo Html::a($period->title, ['/conf-period/create'], ['class' => 'btn btn-default']);
+        }
+        echo Html::a('+', ['/conf-period/create'], ['class' => 'btn btn-default']);
+
+
+        ?>
     </p>
 
     <?= GridView::widget([

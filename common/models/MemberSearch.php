@@ -101,7 +101,6 @@ class MemberSearch extends Member
             // $query->where('0=1');
             return $dataProvider;
         }
-
         $query->andFilterWhere(['id' => $this->id,]);
 
 //        var_dump($this->created);

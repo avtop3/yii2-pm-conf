@@ -6,6 +6,7 @@ use Yii;
 use common\models\Member;
 use common\models\MemberSearch;
 use yii\behaviors\TimestampBehavior;
+use yii\helpers\Url;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -40,7 +41,15 @@ class MemberController extends Controller
         $model = new Member();
         if ($model->load(Yii::$app->request->post()) && $model->save()) { //&& $model->save()
             Yii::$app->session->setFlash('success', Yii::t('app', 'Success!'));
-        }else{
+
+            Yii::$app->mailer->compose('member-info', ['model' => $model])
+                ->setFrom(Yii::$app->params['smtpEmail'])
+                ->setTo([$model->email, Yii::$app->params['adminEmail']])
+                ->setSubject(Yii::t('app.member.mail', 'Confirmation of registration to \'International Scientific Conference\''))
+                ->send();
+
+            return $this->redirect(Url::home());
+        } else {
         }
 
         return $this->render('create', [

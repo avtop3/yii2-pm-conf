@@ -6,9 +6,21 @@ return [
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
-        'urlManager' =>[
+        'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
+        ],
+        'mailer' => [
+            'class' => 'yii\swiftmailer\Mailer',
+            'viewPath' => '@common/mail',
+            'transport' => [
+                'class' => 'Swift_SmtpTransport',
+                'host' => 'smtp.yandex.ru',
+                'username' => 'pm-edu',
+                'password' => '2exoHkhAXSprkEwDYuDQ',
+                'port' => '465',
+                'encryption' => 'ssl',
+            ],
         ],
         'i18n' => [
             'translations' => [

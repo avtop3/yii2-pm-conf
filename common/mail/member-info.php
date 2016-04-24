@@ -1,31 +1,25 @@
 <?php
-
+/**
+ * Created by PhpStorm.
+ * User: Alex
+ * Date: 24.04.2016
+ * Time: 13:09
+ */
 use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Member */
 
-$this->title = $model->name;
-$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Members'), 'url' => ['index']];
-$this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="member-view">
+<div class="member-info">
+    <h1><?= Yii::t('app.member.mail', 'Hello {name}!', ['name' => $model->name]) ?>,</h1>
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <p><?= Yii::t('app.member.mail', 'Confirmation of registration to \'International Scientific Conference\'') ?></p>
 
-    <p>
-        <?= Html::a(Yii::t('app', 'Update'), ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a(Yii::t('app', 'Delete'), ['delete', 'id' => $model->id], [
-            'class' => 'btn btn-danger',
-            'data' => [
-                'confirm' => Yii::t('app', 'Are you sure you want to delete this item?'),
-                'method' => 'post',
-            ],
-        ]) ?>
-    </p>
-    <!--    --><?php //print_r($model->countryObj->name) ?>
+    <p> <?= Yii::t('app.member.mail', 'Message sent from {url}.', ['url' => \yii\helpers\Url::home(true)]) ?></p>
 
+    <p><?= Yii::t('app.member.mail', 'Here is your info') ?></p>
 
     <?php
     $attributes = [
@@ -84,16 +78,12 @@ $this->params['breadcrumbs'][] = $this->title;
         ];
         $attributes = array_merge($attributes, $attributesForSpeaker);
     }
-
-    $attributes[] = 'paid:boolean';
-    $attributes[] = 'noteFromAdmin';
-    $attributes[] = 'created_at:date';
-
     ?>
 
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => $attributes,
     ]) ?>
+
 
 </div>

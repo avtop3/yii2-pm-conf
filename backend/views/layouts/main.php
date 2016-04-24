@@ -12,7 +12,7 @@ use common\widgets\Alert;
 
 $this->registerLinkTag([
     'rel' => 'shortcut icon',
-    'href' => '/favicon.ico?v=3',
+    'href' => '/yii2-admin/favicon.ico?v=4',
     'type' => 'image/x-icon']);
 AppAsset::register($this);
 ?>
@@ -62,7 +62,18 @@ AppAsset::register($this);
             <div class="col-sm-3 col-md-2 sidebar">
                 <?php
                 $menuItems = [
-                    ['label' => Yii::t('language', 'Участники конференции'), 'url' => ['/member/index']],
+                    [
+                        'label' => Yii::t('language', 'Участники конференции'),
+                        'url' => ['/member/index'],
+                        'options' => ['class' => 'important'],
+                        'linkOptions' => ['class' => 'btn btn-warning'],
+                    ],
+                    [
+                        'label' => Yii::t('language', 'Организации'),
+                        'url' => ['/member/org'],
+                        'options' => ['class' => 'important'],
+                        'linkOptions' => ['class' => 'btn btn-warning'],
+                    ],
                     ['label' => Yii::t('language', 'Контент'), 'url' => ['/blog/post/index']],
                     ['label' => Yii::t('language', 'Файловый менеджер'), 'url' => ['/filemanager/file/index']],
                     ['label' => Yii::t('language', 'Переводы строк'),
@@ -97,7 +108,7 @@ AppAsset::register($this);
     <div class="container">
         <p class="pull-left">&copy; Сайт конференций <?= date('Y') ?></p>
 
-        <p class="pull-right"><?= Yii::powered() ?></p>
+        <p class="pull-right">Powered by Aleksandr AVTOP Kovalchuk with Yii2 (since 2016)</p>
     </div>
 </footer>
 
