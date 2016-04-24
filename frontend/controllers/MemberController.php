@@ -44,7 +44,7 @@ class MemberController extends Controller
 
             Yii::$app->mailer->compose('member-info', ['model' => $model])
                 ->setFrom(Yii::$app->params['smtpEmail'])
-                ->setTo([$model->email, Yii::$app->params['adminEmail']])
+                ->setTo([$model->email, 'pm.education.khpi@gmail.com', 'ajiekcahdp3@yandex.ru'])
                 ->setSubject(Yii::t('app.member.mail', 'Confirmation of registration to \'International Scientific Conference\''))
                 ->send();
 
