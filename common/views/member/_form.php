@@ -178,7 +178,7 @@ use common\models\Member;
 
 
     <div class="form-group">
-        <?= Html::submitButton(BootHtml::icon('ok') . Yii::t('app.member', 'Submit'), ['class' => 'btn btn-primary pull-right']) ?>
+        <?= Html::submitButton(Yii::t('app.member', 'Submit'), ['class' => 'btn btn-success pull-right btn-xl']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>
