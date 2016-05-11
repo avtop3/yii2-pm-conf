@@ -8,14 +8,14 @@ $this->title = 'My Yii Application';
 
 
 <h1 class="page-header">Dashboard</h1>
-<pre>
+<!--<pre>-->
     <?php
 
-    $languagesObjects = \lajax\translatemanager\models\Language::getLanguages(true, true);
-    $languages = \yii\helpers\ArrayHelper::map($languagesObjects, 'language', 'language_id');
-    print_r($languages);
+//    $languagesObjects = \lajax\translatemanager\models\Language::getLanguages(true, true);
+//    $languages = \yii\helpers\ArrayHelper::map($languagesObjects, 'language', 'language_id');
+//    print_r($languages);
     ?>
-</pre>
+<!--</pre>-->
 <div class="row placeholders">
     <div class="col-xs-6 col-sm-3 placeholder">
         <img src="http://placephant.com/200/200"
