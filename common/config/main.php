@@ -52,7 +52,7 @@ return [
             'class' => 'lajax\translatemanager\Module',
             'ignoredCategories' => ['yii', 'array', 'language', 'model'],
             'layout' => NULL,
-            'allowedIPs' => '*',
+            'allowedIPs' => ['*'],
         ],
     ],
 
