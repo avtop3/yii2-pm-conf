@@ -8,6 +8,8 @@
 
 use yii\bootstrap\Html;
 use yii\grid\GridView;
+use kartik\export\ExportMenu;
+
 /*
  * @var $dataProvider yii\data\ActiveDataProvider
  * @var $model common\models\Member
@@ -19,6 +21,27 @@ $this->title = 'Список организаций';
 <div class="member-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
+
+    <div class="row">
+        <div class="col-md-2 col-md-offset-10 text-right">
+            <?=
+            ExportMenu::widget([
+                'dataProvider' => $dataProvider,
+                'columns' => [
+                    'organisationTitle',
+                    'organisationAddress',
+                    'organisationActivity',
+                    'organisationUrl',
+                ],
+                'fontAwesome' => true,
+                'exportConfig' => [
+                    ExportMenu::FORMAT_PDF => false
+
+                ]
+            ]);
+            ?>
+        </div>
+    </div>
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,

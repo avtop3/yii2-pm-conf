@@ -66,13 +66,19 @@ AppAsset::register($this);
                         'label' => Yii::t('language', 'Участники конференции'),
                         'url' => ['/member/index'],
                         'options' => ['class' => 'important'],
-                        'linkOptions' => ['class' => 'btn btn-warning'],
+                        'linkOptions' => ['class' => 'btn btn-pirate'],
                     ],
                     [
                         'label' => Yii::t('language', 'Организации'),
                         'url' => ['/member/org'],
                         'options' => ['class' => 'important'],
-                        'linkOptions' => ['class' => 'btn btn-warning'],
+                        'linkOptions' => ['class' => 'btn btn-pirate'],
+                    ],
+                    [
+                        'label' => Yii::t('language', 'Рассылка'),
+                        'url' => ['/member/bulk-email'],
+                        'options' => ['class' => 'important'],
+                        'linkOptions' => ['class' => 'btn btn-pirate'],
                     ],
                     ['label' => Yii::t('language', 'Контент'), 'url' => ['/blog/post/index']],
                     ['label' => Yii::t('language', 'Файловый менеджер'), 'url' => ['/filemanager/file/index']],
@@ -105,9 +111,7 @@ AppAsset::register($this);
 </div>
 
 <footer class="footer col-md-offset-2">
-    <div class="container">
-        <p class="pull-left">&copy; Сайт конференций <?= date('Y') ?></p>
-
+    <div class="">
         <p class="pull-right">Powered by Aleksandr AVTOP Kovalchuk with Yii2 (since 2016)</p>
     </div>
 </footer>

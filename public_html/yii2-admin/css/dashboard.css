@@ -115,3 +115,23 @@ li.important {
     padding-right: 20px;
 }
 
+li.active a {
+    background-color: darkgray !important;
+}
+
+.btn-pirate {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+.btn-pirate:hover {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+.grid-view thead {
+    background-color: rgb(232, 232, 232);
+    /*color: #ffffff;*/
+}
+

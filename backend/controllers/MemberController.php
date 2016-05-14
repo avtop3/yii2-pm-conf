@@ -7,9 +7,13 @@ use common\models\Member;
 use common\models\MemberSearch;
 use yii\behaviors\TimestampBehavior;
 use yii\data\ActiveDataProvider;
+use yii\helpers\Url;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\Request;
+use yii\web\Session;
+use yii\web\UrlManager;
 
 /**
  * MemberController implements the CRUD actions for Member model.
@@ -50,6 +54,14 @@ class MemberController extends Controller
      */
     public function actionView($id)
     {
+        if (Yii::$app->request->post()) {
+            $model = $this->findModel($id);
+            Yii::$app->mailer->compose('member-info', ['model' => $model])
+                ->setFrom(Yii::$app->params['smtpEmail'])
+                ->setTo([$model->email, 'pm.education.khpi@gmail.com', 'ajiekcahdp3@yandex.ru'])
+                ->setSubject(Yii::t('app.member.mail', 'Confirmation of registration to \'International Scientific Conference\''))
+                ->send();
+        }
         return $this->render('view', [
             'model' => $this->findModel($id),
         ]);
@@ -118,6 +130,37 @@ class MemberController extends Controller
         ]);
 
         return $this->render('org', ['dataProvider' => $dataProvider]);
+    }
+
+    public function actionBulkEmail()
+    {
+        if (Yii::$app->request->method == 'POST' && Yii::$app->request->post('selection')) {
+            $usersObjs = Member::find()->where(['id' => Yii::$app->request->post('selection')])->all();
+
+            $messages = [];
+            foreach ($usersObjs as $user) {
+                $messages[] = Yii::$app->mailer->compose('member-invite', ['model' => $user])
+                    ->setSubject(Yii::t('app.member.mail', 'Confirmation of registration to \'International Scientific Conference\''))
+                    ->setFrom(Yii::$app->params['smtpEmail'])
+                    ->setTo($user->email);
+            }
+            $sendNumber = Yii::$app->mailer->sendMultiple($messages);
+            Yii::$app->session->addFlash('success', 'Письмо(а) успешно отправлены к (' . $sendNumber . ') участникам');
+
+//            print_r($usersObjs);
+
+//            exit;
+            return $this->redirect('bulk-email');
+        }
+
+        $dataProvider = new ActiveDataProvider([
+            'query' => Member::find(),
+            'pagination' => [
+                'pageSize' => 0,
+            ],
+        ]);
+
+        return $this->render('bulk-email', ['dataProvider' => $dataProvider]);
     }
 
     /**

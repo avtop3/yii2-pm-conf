@@ -74,6 +74,9 @@ return [
                 ],
             ],
         ],
+        'gridview'=>[
+            'class' => \kartik\grid\Module::className(),
+        ]
     ],
     'params' => $params,
 ];

@@ -50,6 +50,13 @@ class MemberSearch extends Member
         ];
     }
 
+    public function init()
+    {
+        parent::init();
+        $this->participationType = '';
+    }
+
+
     public function getCreated()
     {
         return self::parseDateString($this->created_at);

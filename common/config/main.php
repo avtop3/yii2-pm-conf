@@ -6,6 +6,13 @@ return [
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
+        'urlManagerFrontEnd' => [
+            'class' => 'yii\web\urlManager',
+            'baseUrl' => 'http://local.yii2-conf',
+            'showScriptName' => false,
+            'enablePrettyUrl' => true,
+            'rules' => [],
+        ],
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
