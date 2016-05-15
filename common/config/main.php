@@ -8,7 +8,7 @@ return [
         ],
         'urlManagerFrontEnd' => [
             'class' => 'yii\web\urlManager',
-            'baseUrl' => 'http://local.yii2-conf',
+            'baseUrl' => 'http://frontend.ibabych.bget.ru',
             'showScriptName' => false,
             'enablePrettyUrl' => true,
             'rules' => [],
