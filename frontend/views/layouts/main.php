@@ -11,9 +11,15 @@ use frontend\assets\AppAsset;
 use common\widgets\Alert;
 
 $this->registerLinkTag([
-    'rel' => 'shortcut icon',
-    'href' => '/favicon.ico?v=2',
-    'type' => 'image/x-icon']);
+        'rel' => 'shortcut icon',
+        'href' => '/favicon.ico?v=2',
+        'type' => 'image/x-icon']
+);
+
+$this->registerMetaTag([
+    'name' => 'theme-color',
+    'content' => '#228B22',
+]);
 
 
 AppAsset::register($this);
@@ -39,7 +45,8 @@ AppAsset::register($this);
             <div class="row">
                 <div class="col-sm-6 col-xs-8">
                     <div class="social">
-                        <a class="navbar-brand" href="<?= \yii\helpers\Url::home()?>"><img src="/markup/images/logo.png" alt="logo"></a>
+                        <a class="navbar-brand" href="<?= \yii\helpers\Url::home() ?>"><img
+                                src="/markup/images/logo.png" alt="logo"></a>
                         <ul class="social-share">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -51,14 +58,40 @@ AppAsset::register($this);
                     </div>
                 </div>
                 <div class="col-sm-6 col-xs-4">
-                    <div class="top-number"><p><i class="fa fa-phone-square"></i> +0123 456 70 90</p></div>
-                    <div class="search">
-                        <form role="form">
-                            <input type="text" class="search-form" autocomplete="off" placeholder="Search">
-                            <i class="fa fa-search"></i>
-                        </form>
-                    </div>
 
+                    <?php
+
+                    $langMenuItems = [
+                        [
+                            'label' => Yii::t('app', 'English'),
+                            'url' => \yii\helpers\Url::current(['language' => 'en']),
+                            'active' => Yii::$app->language === 'en-US',
+                        ],
+                        [
+                            'label' => Yii::t('app', 'Ukrainian'),
+                            'url' => \yii\helpers\Url::current(['language' => 'uk']),
+                            'active' => Yii::$app->language === 'uk-UA'
+                        ],
+                        [
+                            'label' => Yii::t('app', 'Russian'),
+                            'url' => \yii\helpers\Url::current(['language' => 'ru']),
+                            'active' => Yii::$app->language == 'ru-RU',
+                        ],
+                    ];
+                    Nav::widget([
+                        'options' => ['class' => 'list-inline'],
+                        'items' => $langMenuItems,
+                    ]);
+
+                    echo \yii\widgets\Menu::widget([
+                        'options' => ['class' => 'list-inline pull-right', 'id' => 'language-selector'],
+                        'items' => $langMenuItems,
+                    ]);
+
+                    echo  Yii::$app->language;
+
+                    ?>
+                    <!--                    <div class="top-number"><p><i class="fa fa-phone-square"></i> +0123 456 70 90</p></div>-->
                 </div>
 
             </div>
@@ -84,11 +117,6 @@ AppAsset::register($this);
         ['label' => 'Conditions', 'url' => ['/site/static-page', 'page' => 'conditions']],
         ['label' => 'Articles', 'url' => ['/site/static-page', 'page' => 'articles']],
         ['label' => 'Contact us', 'url' => ['/site/static-page', 'page' => 'contact-us']],
-
-        ['label' => Yii::t('app', 'English'), 'url' => \yii\helpers\Url::current(['language' => 'en'])],
-        ['label' => Yii::t('app', 'Ukrainian'), 'url' => \yii\helpers\Url::current(['language' => 'uk'])],
-        ['label' => Yii::t('app', 'Russian'), 'url' => \yii\helpers\Url::current(['language' => 'ru'])],
-
     ];
 
     echo Nav::widget([
@@ -102,7 +130,8 @@ AppAsset::register($this);
 </header>
 <?php //echo Breadcrumbs::widget([
 //    'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-//]) ?>
+//])
+?>
 <div class="container">
     <?= Alert::widget() ?>
 </div>
@@ -176,7 +205,8 @@ AppAsset::register($this);
             <!--/.col-md-3-->
         </div>
     </div>
-</section><!--/#bottom-->
+</section>
+<!--/#bottom-->
 
 <footer id="footer" class="midnight-blue">
     <div class="container">

@@ -37,14 +37,23 @@ $this->title = 'Рассылка';
             ],
             'email',
             [
-                'attribute' => 'organisationActivity',
-                'label' => 'Сфера деятельности организции',
-                'format' => 'raw',
+                'attribute' => 'country',
                 'value' => function ($model) {
-                    return $model->getOrganisationActivityVariants()[$model->organisationActivity];
-                },
+                    return $model->getCountryVariants()[$model->country];
+                }
             ],
-            'organisationTitle',
+//            [
+//                'attribute' => 'organisationActivity',
+//                'label' => 'Сфера деятельности организции',
+//                'format' => 'raw',
+//                'value' => function ($model) {
+//                    return $model->getOrganisationActivityVariants()[$model->organisationActivity];
+//                },
+//            ],
+            [
+                'attribute' => 'organisationTitle',
+                'label' => 'Организация',
+            ],
             'organisationDepartment',
             [
                 'class' => 'yii\grid\CheckboxColumn',
@@ -56,7 +65,24 @@ $this->title = 'Рассылка';
             ],
         ],
     ]); ?>
-    <?= Html::submitButton('Отправить всем!', ['class' => 'btn btn-success pull-right']) ?>
+    <div class="row">
+        <div class="col-md-3 col-md-offset-7">
+            <?= Html::dropDownList(
+                'view',
+                null,
+                [
+                    'member-invite' => 'Письмо-приглашение',
+                    'member-thanks' => 'Письмо-благодарность'
+                ],
+                ['class' => 'form-control']
+            ) ?>
+        </div>
+        <div class="col-md-2">
+            <?= Html::submitButton('Отправить всем!', ['class' => 'btn btn-success']) ?>
+        </div>
+    </div>
+
+
     <?= Html::endForm() ?>
 
 

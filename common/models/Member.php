@@ -315,6 +315,20 @@ class Member extends ActiveRecord
         ];
     }
 
+    public function getNativeLanguage(){
+        $language = 'en-US';
+
+        if ($this->country == 'ua') {
+            $language = 'uk-UA';
+        }
+
+        if (in_array($this->country, ['ru', 'by', 'kz'])) {
+            $language = 'ru-RU';
+        }
+
+        return $language;
+    }
+
     public static function getCountryVariants()
     {
 //        $countries = Countries::find()->asArray()->all();

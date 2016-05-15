@@ -63,6 +63,10 @@ use common\models\Member;
 
     <?= $form->field($model, 'country')->dropDownList(Member::getCountryVariants()) ?>
 
+    <div id="lang-note" class="text-center text-warning">
+        <strong>Fill in the fields in English please</strong>
+    </div>
+
     <h3 class="text-center text-info middle-header">
         <?= Yii::t('app.member', 'Information about the participant') ?>
     </h3>
@@ -197,6 +201,7 @@ $('#member-name').on('change', function(){
 });
 $('#member-country').on('change', function(){
     setTableRegistrationFee();
+    langNote();
     setPapersPrice();
     setTotalPrice();
 });
@@ -266,6 +271,23 @@ function setTotalPrice(){
     }
 }
 setTotalPrice();
+
+function langNote(){
+    var languageNote = '';
+
+    if(selectedCountry == 'ru' || selectedCountry == 'by' || selectedCountry == 'kz'){
+        languageNote= 'Заполните поля на русском языке, пожалуйста';
+    }else{
+        languageNote = 'Fill in the fields in English, please';
+    }
+
+    if(selectedCountry == 'ua'){
+        languageNote ='Заповніть форму українською мовою, будь ласка';
+    }
+
+    $('#lang-note>strong').html(languageNote);
+}
+langNote();
 
 JS;
 

@@ -135,12 +135,42 @@ class MemberController extends Controller
     public function actionBulkEmail()
     {
         if (Yii::$app->request->method == 'POST' && Yii::$app->request->post('selection')) {
+
+            $viewMail = Yii::$app->request->post('view');
             $usersObjs = Member::find()->where(['id' => Yii::$app->request->post('selection')])->all();
 
             $messages = [];
             foreach ($usersObjs as $user) {
-                $messages[] = Yii::$app->mailer->compose('member-invite', ['model' => $user])
-                    ->setSubject(Yii::t('app.member.mail', 'Confirmation of registration to \'International Scientific Conference\''))
+                $lang = $user->getNativeLanguage();
+
+                if ($viewMail == 'member-invite') {
+                    switch ($lang) {
+                        case 'uk-UA':
+                            $subjectMail = 'Запрошення';
+                            break;
+                        case 'ru-RU':
+                            $subjectMail = 'Приглашение';
+                            break;
+                        default:
+                            $subjectMail = 'Invite';
+                    }
+                } else {
+                    switch ($lang) {
+                        case 'uk-UA':
+                            $subjectMail = 'Подяка';
+                            break;
+                        case 'ru-RU':
+                            $subjectMail = 'Благодарность';
+                            break;
+                        default:
+                            $subjectMail = 'Thanks';
+                    }
+                }
+
+//                $subjectMail .= $lang;
+
+                $messages[] = Yii::$app->mailer->compose($viewMail, ['model' => $user])
+                    ->setSubject(Yii::t('app.member.mail', $subjectMail))
                     ->setFrom(Yii::$app->params['smtpEmail'])
                     ->setTo($user->email);
             }
