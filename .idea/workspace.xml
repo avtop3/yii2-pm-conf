@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="bbe80539-b4f7-45f9-bd38-c21eb94fdb31" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/modules/blog" afterPath="$PROJECT_DIR$/common/modules/blog" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/controllers/MemberController.php" afterPath="$PROJECT_DIR$/frontend/controllers/MemberController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/views/member/_form.php" afterPath="$PROJECT_DIR$/common/views/member/_form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/yii2-admin/css/dashboard.css" afterPath="$PROJECT_DIR$/public_html/yii2-admin/css/dashboard.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/mail/member-info.php" afterPath="$PROJECT_DIR$/common/mail/member-info.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/member/bulk-email.php" afterPath="$PROJECT_DIR$/backend/views/member/bulk-email.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/config/params.php" afterPath="$PROJECT_DIR$/common/config/params.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="local.yii2-conf.iws" />
@@ -78,10 +76,45 @@
       <file leaf-file-name="MemberController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/controllers/MemberController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.730769" vertical-offset="563" max-vertical-offset="1377">
-              <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
+            <state vertical-scroll-proportion="-7.769231" vertical-offset="563" max-vertical-offset="1377">
+              <caret line="45" column="56" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="56" />
               <folding>
                 <element signature="e#40#48#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="params.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/common/config/params.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.08596713" vertical-offset="0" max-vertical-offset="791">
+              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bulk-email.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/views/member/bulk-email.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.461538" vertical-offset="153" max-vertical-offset="1513">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding>
+                <element signature="e#88#111#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/views/member/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-20.76923" vertical-offset="1959" max-vertical-offset="4318">
+              <caret line="147" column="0" selection-start-line="147" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
+              <folding>
+                <element signature="e#7#28#0#PHP" expanded="true" />
+                <element signature="e#7597#7629#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,10 +130,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="member-info.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="member-info.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/mail/member-info.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7028714" vertical-offset="83" max-vertical-offset="901">
+            <state vertical-scroll-proportion="-21.653847" vertical-offset="83" max-vertical-offset="901">
               <caret line="96" column="30" selection-start-line="96" selection-start-column="30" selection-end-line="96" selection-end-column="30" />
               <folding>
                 <element signature="e#200#1530#0#PHP" expanded="false" />
@@ -146,7 +179,6 @@
         <option value="$PROJECT_DIR$/common/sql/yii2-conf (1).sql" />
         <option value="$PROJECT_DIR$/backend/assets/AppAsset.php" />
         <option value="$PROJECT_DIR$/vendor/yiisoft/yii2-swiftmailer/Mailer.php" />
-        <option value="$PROJECT_DIR$/common/config/params.php" />
         <option value="$PROJECT_DIR$/backend/views/conf-period/create.php" />
         <option value="$PROJECT_DIR$/backend/views/conf-period/_form.php" />
         <option value="$PROJECT_DIR$/backend/views/conf-period/view.php" />
@@ -176,7 +208,6 @@
         <option value="$PROJECT_DIR$/public_html/markup/css/main.css" />
         <option value="$PROJECT_DIR$/frontend/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/backend/views/member/index.php" />
-        <option value="$PROJECT_DIR$/backend/views/member/bulk-email.php" />
         <option value="$PROJECT_DIR$/common/models/Member.php" />
         <option value="$PROJECT_DIR$/common/mail/member-thanks.php" />
         <option value="$PROJECT_DIR$/common/mail/member-invite.php" />
@@ -187,6 +218,8 @@
         <option value="$PROJECT_DIR$/frontend/controllers/MemberController.php" />
         <option value="$PROJECT_DIR$/public_html/yii2-admin/css/dashboard.css" />
         <option value="$PROJECT_DIR$/common/mail/member-info.php" />
+        <option value="$PROJECT_DIR$/backend/views/member/bulk-email.php" />
+        <option value="$PROJECT_DIR$/common/config/params.php" />
       </list>
     </option>
   </component>
@@ -778,7 +811,13 @@
       <option name="project" value="LOCAL" />
       <updated>1463315693839</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="urlManagerFrontend moved to main-local.php">
+      <created>1463424686306</created>
+      <option name="number" value="00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1463424686306</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -805,6 +844,7 @@
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32949308" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32949308" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32681242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32949308" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -821,7 +861,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32796317" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32949308" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -870,13 +909,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/common/modules/blog/models/PostTranslation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.044226043" vertical-offset="36" max-vertical-offset="850">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/modules/blog/controllers/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
@@ -1002,6 +1034,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.061697" vertical-offset="9639" max-vertical-offset="25143">
           <caret line="47" column="6" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1144,13 +1177,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/member/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26535627" vertical-offset="889" max-vertical-offset="4318">
-          <caret line="65" column="18" selection-start-line="60" selection-start-column="16" selection-end-line="65" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/mail/member-invite.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1485643" vertical-offset="0" max-vertical-offset="801">
@@ -1171,13 +1197,6 @@
         <state vertical-scroll-proportion="-19.038462" vertical-offset="4877" max-vertical-offset="9945">
           <caret line="325" column="31" selection-start-line="325" selection-start-column="24" selection-end-line="325" selection-end-column="31" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/member/bulk-email.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6153846" vertical-offset="204" max-vertical-offset="1513">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1242,16 +1261,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/controllers/MemberController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.730769" vertical-offset="563" max-vertical-offset="1377">
-          <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
-          <folding>
-            <element signature="e#40#48#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public_html/yii2-admin/css/dashboard.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1591" max-vertical-offset="2431">
@@ -1262,7 +1271,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common/mail/member-info.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7028714" vertical-offset="83" max-vertical-offset="901">
+        <state vertical-scroll-proportion="-21.653847" vertical-offset="83" max-vertical-offset="901">
           <caret line="96" column="30" selection-start-line="96" selection-start-column="30" selection-end-line="96" selection-end-column="30" />
           <folding>
             <element signature="e#200#1530#0#PHP" expanded="false" />
@@ -1270,6 +1279,45 @@
             <marker date="1463424676147" expanded="true" signature="3465:3521" placeholder="{...}" />
             <marker date="1463424676147" expanded="true" signature="3536:3568" placeholder="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/controllers/MemberController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.769231" vertical-offset="563" max-vertical-offset="1377">
+          <caret line="45" column="56" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="56" />
+          <folding>
+            <element signature="e#40#48#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/member/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.76923" vertical-offset="1959" max-vertical-offset="4318">
+          <caret line="147" column="0" selection-start-line="147" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
+          <folding>
+            <element signature="e#7#28#0#PHP" expanded="true" />
+            <element signature="e#7597#7629#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/member/bulk-email.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.461538" vertical-offset="153" max-vertical-offset="1513">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="e#88#111#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/config/params.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08596713" vertical-offset="0" max-vertical-offset="791">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -27,7 +27,7 @@ $this->title = 'Рассылка';
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'columns' => [
-            'id',
+            ['class' => 'yii\grid\SerialColumn'],
             [
                 'attribute' => 'name',
                 'format' => 'raw',
