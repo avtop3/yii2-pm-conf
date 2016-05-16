@@ -94,6 +94,7 @@ if ($model->participationType == \common\models\Member::PARTICIPATION_TYPE_SPEAK
 $css = <<< CSS
 th {
     text-align: left;
+    background-color: #d3d3d3;
 }
 td, th, table {
     border: solid 1px black;

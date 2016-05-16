@@ -34,9 +34,6 @@ use common\models\Member;
     <?php if ($model->scenario == Member::SCENARIO_ADMIN): ?>
 
         <div class="panel panel-warning">
-            <div class="panel-heading">
-                Admin manage
-            </div>
             <div class="panel-body">
 
                 <div class="col-md-offset-4">
