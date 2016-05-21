@@ -315,7 +315,8 @@ class Member extends ActiveRecord
         ];
     }
 
-    public function getNativeLanguage(){
+    public function getNativeLanguage()
+    {
         $language = 'en-US';
 
         if ($this->country == 'ua') {
@@ -327,6 +328,16 @@ class Member extends ActiveRecord
         }
 
         return $language;
+    }
+
+
+    public static function getCurrencyVariants()
+    {
+        return [
+            'uah' => Yii::t('app', 'UAH'),
+            'usd' => Yii::t('app', 'USD'),
+            'rub' => Yii::t('app', 'RUB'),
+        ];
     }
 
     public static function getCountryVariants()

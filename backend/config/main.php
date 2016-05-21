@@ -31,7 +31,7 @@ return [
         ],
         'formatter' => [
             'locale' => 'ru-UA',
-        ]
+        ],
 
     ],
     'modules' => [

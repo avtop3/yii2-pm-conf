@@ -46,6 +46,7 @@ $this->title = 'Список организаций';
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'columns' => [
+            ['class' => 'yii\grid\SerialColumn'],
             'organisationTitle',
             'organisationAddress',
             [

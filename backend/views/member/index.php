@@ -7,6 +7,8 @@ use common\models\Member;
 use common\models\Countries;
 use kartik\daterange\DateRangePicker;
 use kartik\export\ExportMenu;
+use yii\data\Pagination;
+use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
 /* @var $searchModel common\models\MemberSearch */
@@ -35,20 +37,41 @@ $confPeriods = \backend\models\ConfPeriod::find()->orderBy('regStart')->all();
 <div class="member-index">
 
 <h1><?= Html::encode($this->title) ?></h1>
-<?php // echo $this->render('_search', ['model' => $searchModel]); ?>
+<?php //echo $this->render('_search', ['model' => $searchModel]); ?>
 <?php ?>
 
 <div class="row">
 
     <div class="col-md-10">
         <?= Html::a(Yii::t('app', 'Create Member'), ['create'], ['class' => 'btn btn-success']) ?>
+        <?php $form = ActiveForm::begin([
+            'action' => ['index', 'MemberSearch' => Yii::$app->request->getQueryParam('MemberSearch')],
+            'method' => 'get',
+            'options' => [
+                'style' => 'display: inline;',
+            ]
+        ]); ?>
         <?php
         foreach ($confPeriods as $period) {
-            echo Html::a($period->title, ['/conf-period/create'], ['class' => 'btn btn-default']);
+            $class = 'btn btn-default';
+
+            if(Yii::$app->request->get('MemberSearch')['period'] == $period->id){
+                $class .= ' active';
+            }
+
+            echo Html::submitButton($period->title, [
+                'class' => $class,
+                'value' => $period->id,
+                'class ' => 'asd',
+                'name' => 'MemberSearch[period]',
+            ]);
         }
         echo Html::a('+', ['/conf-period/create'], ['class' => 'btn btn-default']);
 
         ?>
+
+        <?php ActiveForm::end(); ?>
+
     </div>
 
     <div class="col-md-2 text-right">
@@ -139,7 +162,16 @@ $confPeriods = \backend\models\ConfPeriod::find()->orderBy('regStart')->all();
     </div>
 </div>
 
+<?php
+$pagination = new Pagination([
+    'totalCount' => $dataProvider->totalCount,
+    'pageSize' => $dataProvider->pagination->pageSize
+]);
 
+echo \yii\widgets\LinkPager::widget([
+    'pagination' => $pagination,
+]);
+?>
 
 <?= GridView::widget([
     'dataProvider' => $dataProvider,
@@ -172,7 +204,9 @@ $confPeriods = \backend\models\ConfPeriod::find()->orderBy('regStart')->all();
         'email',
         [
             'attribute' => Yii::t('app', 'Listener or speaker'),
-            'value' => 'participationType',
+            'value' => function ($model) {
+                return Member::getParticipationTypePureVariants()[$model->participationType];
+            },
             'filter' => Html::activeDropDownList(
                 $searchModel,
                 'participationType',
@@ -182,10 +216,10 @@ $confPeriods = \backend\models\ConfPeriod::find()->orderBy('regStart')->all();
             'contentOptions' => ['style' => 'width: 100px;']
         ],
         [
-            'label' => 'Сумма',
+            'label' => Yii::t('app', 'Member`s fee'),
             'attribute' => 'totalSum',
             'value' => function ($model) {
-                return $model->totalSum . ' ' . $model->currency;
+                return $model->totalSum . ' ' . $model->getCurrencyVariants()[$model->currency];
             },
             'contentOptions' => ['style' => 'width: 100px;']
         ],
@@ -220,12 +254,13 @@ $confPeriods = \backend\models\ConfPeriod::find()->orderBy('regStart')->all();
         ['class' => 'yii\grid\ActionColumn'],
     ],
 ]); ?>
+
 <div class="row">
 
     <div class="col-md-6 col-md-offset-6 text-center">
         <table class="table table-bordered">
             <tr class="info">
-                <td><h4>Сумма для выборки</h4></td>
+                <td><h4><?= Yii::t('app', 'All member`s fee') ?></h4></td>
                 <td><h4 class="text-success"><?= $searchModel->overallInUah ?> ГРН</h4></td>
                 <td><h4 class="text-danger"><?= $searchModel->overallInUsd ?> USD</h4></td>
             </tr>

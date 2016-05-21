@@ -2,6 +2,7 @@
 
 namespace common\models;
 
+use backend\models\ConfPeriod;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
@@ -15,8 +16,9 @@ use yii\db\ActiveQuery;
  * @property string $position
  * @property string $email
  * @property string $phone
+ * @property string $totalSum
  * @property string $country
- * @property string $created_at
+ * @property string $paid
  */
 class MemberSearch extends Member
 {
@@ -26,6 +28,17 @@ class MemberSearch extends Member
 
     public $overallInUah;
     public $overallInUsd;
+    public $period;
+    private $_confPeriod;
+
+//    public function attributes()
+//    {
+//        $attr = parent::attributes();
+//        $attr[] = 'period';
+//
+//        return $attr;
+//    }
+
 
     public function rules()
     {
@@ -39,16 +52,24 @@ class MemberSearch extends Member
                     'email',
                     'phone',
                     'country',
-                    'created_at',
                     'organisationTitle',
                     'totalSum',
                     'paid',
-                    'currency',
+                    'period'
                 ],
                 'safe'
             ],
         ];
     }
+
+    public function afterValidate()
+    {
+        parent::afterValidate();
+        if ($this->period) {
+            $this->_confPeriod = ConfPeriod::findOne($this->period);
+        }
+    }
+
 
     public function init()
     {
@@ -57,10 +78,10 @@ class MemberSearch extends Member
     }
 
 
-    public function getCreated()
-    {
-        return self::parseDateString($this->created_at);
-    }
+//    public function getCreated()
+//    {
+//        return self::parseDateString($this->created_at);
+//    }
 
     /**
      * @inheritdoc
@@ -71,18 +92,18 @@ class MemberSearch extends Member
         return Model::scenarios();
     }
 
-    public static function parseDateString($dateString)
-    {//dateRangePicker format to array
-
-        if ($dateString && is_string($dateString)) {
-            $dateArr = explode(' - ', $dateString);
-            if (count($dateArr) == 2) {
-                return ['from' => strtotime($dateArr[0]), 'to' => strtotime($dateArr[1])];
-            }
-        }
-
-        return false;
-    }
+//    public static function parseDateString($dateString)
+//    {//dateRangePicker format to array
+//
+//        if ($dateString && is_string($dateString)) {
+//            $dateArr = explode(' - ', $dateString);
+//            if (count($dateArr) == 2) {
+//                return ['from' => strtotime($dateArr[0]), 'to' => strtotime($dateArr[1])];
+//            }
+//        }
+//
+//        return false;
+//    }
 
     /**
      * Creates data provider instance with search query applied
@@ -99,6 +120,9 @@ class MemberSearch extends Member
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+            'pagination' => [
+                'pageSize' => 20,
+            ],
         ]);
 
         $this->load($params);
@@ -110,10 +134,10 @@ class MemberSearch extends Member
         }
         $query->andFilterWhere(['id' => $this->id,]);
 
-//        var_dump($this->created);
-//        exit('asd');
         $query->andFilterWhere(['like', 'name', $this->name]);
-        $query->andFilterWhere(['between', 'created_at', $this->created['from'], $this->created['to']]);
+        if(is_a($this->_confPeriod, ConfPeriod::className())){
+            $query->andFilterWhere(['between', 'created_at', $this->_confPeriod->regStart, $this->_confPeriod->regEnd]);
+        }
         $query->andFilterWhere(['like', 'country', $this->country]);
         $query->andFilterWhere(['like', 'participationType', $this->participationType]);
         $query->andFilterWhere(['like', 'paid', $this->paid]);

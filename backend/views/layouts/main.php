@@ -14,6 +14,12 @@ $this->registerLinkTag([
     'rel' => 'shortcut icon',
     'href' => '/yii2-admin/favicon.ico?v=4',
     'type' => 'image/x-icon']);
+
+$this->registerMetaTag([
+    'name' => 'generator',
+    'content' => 'Powered by Aleksandr AVTOP Kovalchuk with Yii2 (since 2016)'
+]);
+
 AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
