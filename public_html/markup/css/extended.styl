@@ -1,7 +1,7 @@
 full-size = @block {
   width: 100%
   height: 100%}
-no-padding = '#about-conf .container, #contacts .container, #contacts .person .img-block, #contacts .person, #contacts .map, #contacts .address, #conditions .container, #conditions .price_table, #conditions .price_table .note, #conditions .attention, #conditions .requisites, #conditions .requisites div'
+no-padding = '#about-conf .container, #contacts .container, #contacts .person .img-block, #contacts .person, #contacts .map, #contacts .address, #conditions .container, #conditions .price_table, #conditions .price_table .note, #conditions .attention, #conditions .requisites, #conditions .requisites div, #location .container, #location .container .txt-block'
 inline-display = ''
 {no-padding}
     padding-left 0
@@ -27,12 +27,12 @@ h2, h3, h4, h1
     text-transform uppercase
     color #000
     font-family 'Open Sans Condensed',sans-serif
-    
 #about-conf
     h2
         font-size 32px
         text-align left
         padding 0 15px
+        color #004a00
     h3
         font-size 28px
     .item-group
@@ -73,21 +73,6 @@ h2, h3, h4, h1
                     background-image -moz-linear-gradient(left, rgba(1, 105, 1,0), rgba(1, 105, 1,0.5), rgba(1, 105, 1,0))
                     background-image -ms-linear-gradient(left, rgba(1, 105, 1,0), rgba(1, 105, 1,0.5), rgba(1, 105, 1,0))
                     background-image -o-linear-gradient(left, rgba(1, 105, 1,0), rgba(1, 105, 1,0.5), rgba(1, 105, 1,0))
-    .location
-        p   
-            font-size 20px
-        .img-block
-            img 
-                {full-size}
-        .upper
-            text-transform uppercase
-            font-weight 600
-            text-align right
-            display inline-block
-            a   
-                vertical-align super
-        .right
-            float right
 .features
     .feature-wrap
         display inline-block
@@ -188,7 +173,7 @@ h2, h3, h4, h1
     padding 10px 0
     hr
         margin 0
-        margin-bottom 15px
+        margin-bottom 0
         width 100%
         border 0
         height 2px
@@ -199,37 +184,47 @@ h2, h3, h4, h1
     h2
         font-size 32px
         text-align left
+        color #004a00
     h3
-        font-size 22px
+        font-size 24px
         margin-bottom 0
         font-weight bold
+        text-align left
     .person
+        p
+            font-size 18px
         .img-block
             img 
                 width 100%
         .txt-block
+            padding 25px 10px
             h2
                 text-align left
                 text-transform none
                 font-size 26px
-                color #4e4e4e
+                color #000
                 margin-top 0
             p
-                font-size 18px
+                font-size 20px
     .address
         h3
             text-align left
             font-weight bold
         p   
             font-size 20px
+            margin 0
+            text-align center
     .map, .address
+        margin-top 35px
         h3
-            margin-bottom 10px
+            margin 10px 0
+            text-align center
 #conditions
     padding 10px 0
     h2
         font-size 32px
         text-align left
+        color #004a00
     .price_table 
         color: #444444;
         font-size:100%;
@@ -277,8 +272,8 @@ h2, h3, h4, h1
                 .pack-title 
                      color: #e3c55e;
         .members
-            width: 59%;
-            height: 100%;
+            width 59%
+            height 100%
         .note
             p  
                 font-size 18px
@@ -366,5 +361,239 @@ h2, h3, h4, h1
 				font-size 24px
 			i
 				font-size 28px
-            
-    
+#footer
+    p
+        font-size 16px
+
+#program
+    padding 0
+    .container
+        h2
+            font-size 32px
+            text-align left
+            color #004a00
+        .content
+            .section
+                margin 15px 0 35px
+                ul
+                    list-style none
+                    padding 0
+                    li
+                        font-size 20px
+                        line-height 28px
+                .large
+                    font-size 30px
+                    margin 10px 0
+            i
+                display inline-block
+            a
+                display block
+                margin 20px 0
+                padding 1em
+                cursor pointer
+                background #e1e1e1
+                text-decoration none
+                color #666
+                -webkit-tap-highlight-color rgba(0,0,0,0)
+                text-align center
+                &:hover
+                    color #fff
+                p
+                    display inline-block
+                    margin-right 10px
+                    font-size 24px
+                i
+                    font-size 28px
+#location
+    padding 0
+    .container
+        h2
+            font-size 32px
+            text-align left
+            color #004a00
+        .row
+            margin 25px 0
+            .txt-block
+                padding 2% 0
+                &.right-padd
+                    padding-right 15px
+                &.left-padd
+                    padding-left 15px
+                p
+                    font-size 20px
+                    line-height 30px
+                    text-align justify
+                .contacts
+                    margin 25px 0
+                    p   
+                        line-height normal
+                .booking
+                    p
+                        margin-bottom 15px
+                    a
+                        padding 15px
+                        background #fff
+                        border-radius 5px
+                        margin-right 10px
+                        box-shadow 0 1px 1px 1px rgba(125, 207, 61, 0.4)
+                        img
+                            height 35px
+            .img-block
+                padding-left 0
+                padding-right 0
+                img 
+                    {full-size}
+    .map
+        margin 0 0 15px
+#speakers
+    padding 0
+    .container
+        h2
+            font-size 32px
+            text-align left
+            color #004a00
+        .tabs
+            margin 20px 0
+            ul.nav-tabs
+                margin-left 17%
+                li
+                    border transparent
+                    margin-right 15px
+                    width 275px
+                    text-align center
+                    &.active, &:hover
+                        a
+                            color #fff
+                    a
+                        font-size 24px
+                        background #000
+                        padding 20px 25px
+                        color #909090
+            .tab-content
+                padding 30px 0 20px
+                .speaker
+                    .row
+                        margin 0
+                        .img-block, .txt-block
+                            display inline-block
+                        .img-block
+                            width 16%
+                            img 
+                                {full-size}
+                                border-radius 100%
+                                border 8px solid #fff
+                        .txt-block
+                            padding 0 10px
+                            width 83%
+                            vertical-align middle
+                            .name
+                                font-size 26px
+                                font-weight bold
+                                color #000
+                                text-transform uppercase
+                            p 
+                                color #000
+                                margin 0 0 20px
+                                font-size 18px
+                            .post
+                                font-size 24px
+                                font-weight bold
+                                color #000
+                    .spoiler
+                        padding-left 25px
+                        margin-top 15px
+                        p 
+                            color #000
+                            margin 0 0 20px
+                            font-size 18px
+                            &.content, &.about, &.lang
+                                font-weight bold
+                                font-size 22px
+                    hr
+                        margin 0
+                        margin-bottom 15px
+                        width 100%
+                        border 0
+                        height 2px
+                        background-image -webkit-linear-gradient(left, rgba(1, 105, 1,0), rgba(1, 105, 1,0.5), rgba(1, 105, 1,0))
+                        background-image -moz-linear-gradient(left, rgba(1, 105, 1,0), rgba(1, 105, 1,0.5), rgba(1, 105, 1,0))
+                        background-image -ms-linear-gradient(left, rgba(1, 105, 1,0), rgba(1, 105, 1,0.5), rgba(1, 105, 1,0))
+                        background-image -o-linear-gradient(left, rgba(1, 105, 1,0), rgba(1, 105, 1,0.5), rgba(1, 105, 1,0))
+                .master-class
+                    margin-top 15px
+                    .info
+                        text-align center
+                        width 100%
+                        display block
+                        .title
+                            text-align center
+                            display inline-block
+                            vertical-align top
+                            h3  
+                                font-weight 400
+                                font-size 20px
+                            h2  
+                                font-weight 700
+                                text-align center
+                                color #000
+                                font-size 32px
+                        .photo
+                            display inline-block
+                            margin-left 20px
+                            img 
+                                border-radius 0
+                    .description, .links
+                        width 100%
+                        margin-top 45px
+                        ul
+                            list-style none
+                            padding 0
+                            li  
+                                font-size 20px
+                                padding 5px 0
+                        .logo
+                            width 24.5%
+                            display inline-block
+                            img
+                                {full-size}
+                        p   
+                            font-size 20px
+                            line-height 30px
+                            &.name
+                                font-size 26px
+                                font-weight bold
+                                color #000
+#regLink
+    width 100%
+    background #151515
+    padding 35px 0
+    text-align center
+    a
+        font-size 60px
+        color #fff
+        text-transform uppercase
+        display inline-block
+        margin 20px 0
+        vertical-align middle
+    p   
+        display block
+        color #fff
+        margin 15px 0
+        font-size 26px        
+    .img-left
+        display inline-block
+        img
+            transform rotate(90deg)
+    .img-right
+        display inline-block
+        img
+            transform rotate(270deg)
+.form-horizontal .control-label, .form-horizontal .radio, .form-horizontal .checkbox, .form-horizontal .radio-inline, .form-horizontal .checkbox-inline
+    font-size 18px
+.form-group .form-control
+    font-size 16px
+    padding 3px 12px
+#lang-note, #text-info
+    font-size 18px
+.form-group button[type="submit"]
+    font-size 18px
