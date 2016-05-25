@@ -9,7 +9,9 @@
 #conditions .price_table .note,
 #conditions .attention,
 #conditions .requisites,
-#conditions .requisites div {
+#conditions .requisites div,
+#location .container,
+#location .container .txt-block {
   padding-left: 0;
   padding-right: 0;
 }
@@ -33,6 +35,7 @@ h1 {
   font-size: 32px;
   text-align: left;
   padding: 0 15px;
+  color: #004a00;
 }
 #about-conf h3 {
   font-size: 28px;
@@ -87,25 +90,6 @@ h1 {
   background-image: -moz-linear-gradient(left, rgba(1,105,1,0), rgba(1,105,1,0.5), rgba(1,105,1,0));
   background-image: -ms-linear-gradient(left, rgba(1,105,1,0), rgba(1,105,1,0.5), rgba(1,105,1,0));
   background-image: -o-linear-gradient(left, rgba(1,105,1,0), rgba(1,105,1,0.5), rgba(1,105,1,0));
-}
-#about-conf .location p {
-  font-size: 20px;
-}
-#about-conf .location .img-block img {
-  width: 100%;
-  height: 100%;
-}
-#about-conf .location .upper {
-  text-transform: uppercase;
-  font-weight: 600;
-  text-align: right;
-  display: inline-block;
-}
-#about-conf .location .upper a {
-  vertical-align: super;
-}
-#about-conf .location .right {
-  float: right;
 }
 .features .feature-wrap {
   display: inline-block;
@@ -240,7 +224,7 @@ h1 {
 }
 #contacts hr {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 0;
   width: 100%;
   border: 0;
   height: 2px;
@@ -252,24 +236,32 @@ h1 {
 #contacts h2 {
   font-size: 32px;
   text-align: left;
+  color: #004a00;
 }
 #contacts h3 {
-  font-size: 22px;
+  font-size: 24px;
   margin-bottom: 0;
   font-weight: bold;
+  text-align: left;
+}
+#contacts .person p {
+  font-size: 18px;
 }
 #contacts .person .img-block img {
   width: 100%;
+}
+#contacts .person .txt-block {
+  padding: 25px 10px;
 }
 #contacts .person .txt-block h2 {
   text-align: left;
   text-transform: none;
   font-size: 26px;
-  color: #4e4e4e;
+  color: #000;
   margin-top: 0;
 }
 #contacts .person .txt-block p {
-  font-size: 18px;
+  font-size: 20px;
 }
 #contacts .address h3 {
   text-align: left;
@@ -277,10 +269,17 @@ h1 {
 }
 #contacts .address p {
   font-size: 20px;
+  margin: 0;
+  text-align: center;
+}
+#contacts .map,
+#contacts .address {
+  margin-top: 35px;
 }
 #contacts .map h3,
 #contacts .address h3 {
-  margin-bottom: 10px;
+  margin: 10px 0;
+  text-align: center;
 }
 #conditions {
   padding: 10px 0;
@@ -288,6 +287,7 @@ h1 {
 #conditions h2 {
   font-size: 32px;
   text-align: left;
+  color: #004a00;
 }
 #conditions .price_table {
   color: #444;
@@ -458,4 +458,328 @@ h1 {
 #articles .requirements a i,
 #articles .commission a i {
   font-size: 28px;
+}
+#footer p {
+  font-size: 16px;
+}
+#program {
+  padding: 0;
+}
+#program .container h2 {
+  font-size: 32px;
+  text-align: left;
+  color: #004a00;
+}
+#program .container .content .section {
+  margin: 15px 0 35px;
+}
+#program .container .content .section ul {
+  list-style: none;
+  padding: 0;
+}
+#program .container .content .section ul li {
+  font-size: 20px;
+  line-height: 28px;
+}
+#program .container .content .section .large {
+  font-size: 30px;
+  margin: 10px 0;
+}
+#program .container .content i {
+  display: inline-block;
+}
+#program .container .content a {
+  display: block;
+  margin: 20px 0;
+  padding: 1em;
+  cursor: pointer;
+  background: #e1e1e1;
+  text-decoration: none;
+  color: #666;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  text-align: center;
+}
+#program .container .content a:hover {
+  color: #fff;
+}
+#program .container .content a p {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 24px;
+}
+#program .container .content a i {
+  font-size: 28px;
+}
+#location {
+  padding: 0;
+}
+#location .container h2 {
+  font-size: 32px;
+  text-align: left;
+  color: #004a00;
+}
+#location .container .row {
+  margin: 25px 0;
+}
+#location .container .row .txt-block {
+  padding: 2% 0;
+}
+#location .container .row .txt-block.right-padd {
+  padding-right: 15px;
+}
+#location .container .row .txt-block.left-padd {
+  padding-left: 15px;
+}
+#location .container .row .txt-block p {
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify;
+}
+#location .container .row .txt-block .contacts {
+  margin: 25px 0;
+}
+#location .container .row .txt-block .contacts p {
+  line-height: normal;
+}
+#location .container .row .txt-block .booking p {
+  margin-bottom: 15px;
+}
+#location .container .row .txt-block .booking a {
+  padding: 15px;
+  background: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-right: 10px;
+  box-shadow: 0 1px 1px 1px rgba(125,207,61,0.4);
+}
+#location .container .row .txt-block .booking a img {
+  height: 35px;
+}
+#location .container .row .img-block {
+  padding-left: 0;
+  padding-right: 0;
+}
+#location .container .row .img-block img {
+  width: 100%;
+  height: 100%;
+}
+#location .map {
+  margin: 0 0 15px;
+}
+#speakers {
+  padding: 0;
+}
+#speakers .container h2 {
+  font-size: 32px;
+  text-align: left;
+  color: #004a00;
+}
+#speakers .container .tabs {
+  margin: 20px 0;
+}
+#speakers .container .tabs ul.nav-tabs {
+  margin-left: 17%;
+}
+#speakers .container .tabs ul.nav-tabs li {
+  border: transparent;
+  margin-right: 15px;
+  width: 275px;
+  text-align: center;
+}
+#speakers .container .tabs ul.nav-tabs li.active a,
+#speakers .container .tabs ul.nav-tabs li:hover a {
+  color: #fff;
+}
+#speakers .container .tabs ul.nav-tabs li a {
+  font-size: 24px;
+  background: #000;
+  padding: 20px 25px;
+  color: #909090;
+}
+#speakers .container .tabs .tab-content {
+  padding: 30px 0 20px;
+}
+#speakers .container .tabs .tab-content .speaker .row {
+  margin: 0;
+}
+#speakers .container .tabs .tab-content .speaker .row .img-block,
+#speakers .container .tabs .tab-content .speaker .row .txt-block {
+  display: inline-block;
+}
+#speakers .container .tabs .tab-content .speaker .row .img-block {
+  width: 16%;
+}
+#speakers .container .tabs .tab-content .speaker .row .img-block img {
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  border: 8px solid #fff;
+}
+#speakers .container .tabs .tab-content .speaker .row .txt-block {
+  padding: 0 10px;
+  width: 83%;
+  vertical-align: middle;
+}
+#speakers .container .tabs .tab-content .speaker .row .txt-block .name {
+  font-size: 26px;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+}
+#speakers .container .tabs .tab-content .speaker .row .txt-block p {
+  color: #000;
+  margin: 0 0 20px;
+  font-size: 18px;
+}
+#speakers .container .tabs .tab-content .speaker .row .txt-block .post {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+#speakers .container .tabs .tab-content .speaker .spoiler {
+  padding-left: 25px;
+  margin-top: 15px;
+}
+#speakers .container .tabs .tab-content .speaker .spoiler p {
+  color: #000;
+  margin: 0 0 20px;
+  font-size: 18px;
+}
+#speakers .container .tabs .tab-content .speaker .spoiler p.content,
+#speakers .container .tabs .tab-content .speaker .spoiler p.about,
+#speakers .container .tabs .tab-content .speaker .spoiler p.lang {
+  font-weight: bold;
+  font-size: 22px;
+}
+#speakers .container .tabs .tab-content .speaker hr {
+  margin: 0;
+  margin-bottom: 15px;
+  width: 100%;
+  border: 0;
+  height: 2px;
+  background-image: -webkit-linear-gradient(left, rgba(1,105,1,0), rgba(1,105,1,0.5), rgba(1,105,1,0));
+  background-image: -moz-linear-gradient(left, rgba(1,105,1,0), rgba(1,105,1,0.5), rgba(1,105,1,0));
+  background-image: -ms-linear-gradient(left, rgba(1,105,1,0), rgba(1,105,1,0.5), rgba(1,105,1,0));
+  background-image: -o-linear-gradient(left, rgba(1,105,1,0), rgba(1,105,1,0.5), rgba(1,105,1,0));
+}
+#speakers .container .tabs .tab-content .master-class {
+  margin-top: 15px;
+}
+#speakers .container .tabs .tab-content .master-class .info {
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+#speakers .container .tabs .tab-content .master-class .info .title {
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+#speakers .container .tabs .tab-content .master-class .info .title h3 {
+  font-weight: 400;
+  font-size: 20px;
+}
+#speakers .container .tabs .tab-content .master-class .info .title h2 {
+  font-weight: 700;
+  text-align: center;
+  color: #000;
+  font-size: 32px;
+}
+#speakers .container .tabs .tab-content .master-class .info .photo {
+  display: inline-block;
+  margin-left: 20px;
+}
+#speakers .container .tabs .tab-content .master-class .info .photo img {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+#speakers .container .tabs .tab-content .master-class .description,
+#speakers .container .tabs .tab-content .master-class .links {
+  width: 100%;
+  margin-top: 45px;
+}
+#speakers .container .tabs .tab-content .master-class .description ul,
+#speakers .container .tabs .tab-content .master-class .links ul {
+  list-style: none;
+  padding: 0;
+}
+#speakers .container .tabs .tab-content .master-class .description ul li,
+#speakers .container .tabs .tab-content .master-class .links ul li {
+  font-size: 20px;
+  padding: 5px 0;
+}
+#speakers .container .tabs .tab-content .master-class .description .logo,
+#speakers .container .tabs .tab-content .master-class .links .logo {
+  width: 24.5%;
+  display: inline-block;
+}
+#speakers .container .tabs .tab-content .master-class .description .logo img,
+#speakers .container .tabs .tab-content .master-class .links .logo img {
+  width: 100%;
+  height: 100%;
+}
+#speakers .container .tabs .tab-content .master-class .description p,
+#speakers .container .tabs .tab-content .master-class .links p {
+  font-size: 20px;
+  line-height: 30px;
+}
+#speakers .container .tabs .tab-content .master-class .description p.name,
+#speakers .container .tabs .tab-content .master-class .links p.name {
+  font-size: 26px;
+  font-weight: bold;
+  color: #000;
+}
+#regLink {
+  width: 100%;
+  background: #151515;
+  padding: 35px 0;
+  text-align: center;
+}
+#regLink a {
+  font-size: 60px;
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 20px 0;
+  vertical-align: middle;
+}
+#regLink p {
+  display: block;
+  color: #fff;
+  margin: 15px 0;
+  font-size: 26px;
+}
+#regLink .img-left {
+  display: inline-block;
+}
+#regLink .img-left img {
+  transform: rotate(90deg);
+}
+#regLink .img-right {
+  display: inline-block;
+}
+#regLink .img-right img {
+  transform: rotate(270deg);
+}
+.form-horizontal .control-label,
+.form-horizontal .radio,
+.form-horizontal .checkbox,
+.form-horizontal .radio-inline,
+.form-horizontal .checkbox-inline {
+  font-size: 18px;
+}
+.form-group .form-control {
+  font-size: 16px;
+  padding: 3px 12px;
+}
+#lang-note,
+#text-info {
+  font-size: 18px;
+}
+.form-group button[type="submit"] {
+  font-size: 18px;
 }

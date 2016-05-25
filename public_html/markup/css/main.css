@@ -280,9 +280,8 @@ input.search-form:hover {
 .navbar-nav {
     margin-top: 12px;
 }
-
-.navbar-nav > li {
-    margin-left: 25px;
+.navbar-nav>li {
+    margin-right: 28px;
     padding-bottom: 28px;
 }
 
@@ -364,6 +363,7 @@ input.search-form:hover {
 .navbar-inverse .navbar-form {
     border-top: 0;
     padding-bottom: 0;
+    padding: 0;
 }
 
 /*************************
@@ -894,8 +894,8 @@ a.accordion-toggle i {
     background: #1f1f20;
     position: relative;
 }
-
-.nav-tabs > li.active > a:after {
+/*
+.nav-tabs>li.active>a:after {
     position: absolute;
     content: "";
     width: auto;
@@ -906,7 +906,7 @@ a.accordion-toggle i {
     right: -44px;
     top: 0;
 }
-
+*/
 .tab-wrap {
     border: 1px solid #e6e6e6;
     margin-bottom: 20px;
