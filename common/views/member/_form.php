@@ -135,37 +135,38 @@ use common\models\Member;
         <?= Yii::t('app.member', 'Payment') ?>
     </h3>
 
-    <table class="table table-bordered summary-info text-center">
+    <table class="table table-bordered table-responsive summary-info text-center">
         <tr class="success">
             <th><?= Yii::t('app.member', 'table full name') ?></th>
             <th><?= Yii::t('app.member', 'Registration fee') ?></th>
             <th class=""><?= Yii::t('app.member', 'Conference papers') ?></th>
             <th><?= Yii::t('app.member', 'Total to pay') ?></th>
         </tr>
-        <tr>
+        <tr class="summary-data">
             <td id="table-full-name"></td>
             <td id="table-registration-fee"></td>
-            <td class=""><?=
-                BootHtml::activeDropDownList(
-                    $model,
-                    'papersCount',
-                    [
-                        0 => Yii::t('app.member', 'No papers'),
-                        1 => 1,
-                        2 => 2,
-                        3 => 3,
-                        4 => 4,
-                        5 => 5,
-                        6 => 6,
-                        7 => 7,
-                        8 => 8,
-                        9 => 9,
-                        10 => 10,
-                    ],
-                    ['class' => 'form-control ']
-                )
-                ?>
-                <span id="price-for-papers"></span>
+            <td class="papersCount">
+                <div class="col-md-6">
+                    <?= BootHtml::activeDropDownList(
+                        $model,
+                        'papersCount',
+                        [
+                            0 => Yii::t('app.member', 'No papers'),
+                            1 => 1,
+                            2 => 2,
+                            3 => 3,
+                            4 => 4,
+                            5 => 5,
+                            6 => 6,
+                            7 => 7,
+                            8 => 8,
+                            9 => 9,
+                            10 => 10,
+                        ],
+                        ['class' => 'form-control ']
+                    )
+                    ?></div>
+                <div class="col-md-6"><span id="price-for-papers"></span></div>
             </td>
             <td class="total-sum"></td>
         </tr>
@@ -187,6 +188,18 @@ use common\models\Member;
 </div>
 
 <?php
+
+$css = <<<CSS
+.summary-data td{
+    font-size: x-large;
+}
+
+.summary-data td.papersCount{
+    width: 35%;
+}
+CSS;
+$this->registerCss($css);
+
 $bindFullName = <<< JS
 
 var selectedCountry;
