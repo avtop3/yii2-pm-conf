@@ -142,6 +142,7 @@ use common\models\Member;
             <th class=""><?= Yii::t('app.member', 'Conference papers') ?></th>
             <th><?= Yii::t('app.member', 'Total to pay') ?></th>
         </tr>
+
         <tr class="summary-data">
             <td id="table-full-name"></td>
             <td id="table-registration-fee"></td>
