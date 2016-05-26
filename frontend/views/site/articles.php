@@ -4,7 +4,7 @@
 
 use yii\helpers\Html;
 
-$this->title = 'About';
+$this->title = 'Подача статей';
 ?>
 
 <section id="articles">

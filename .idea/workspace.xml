@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbe80539-b4f7-45f9-bd38-c21eb94fdb31" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/sql/ibabych_yii2.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/views/site/location.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/views/site/program.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/controllers/MemberController.php" afterPath="$PROJECT_DIR$/backend/controllers/MemberController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/site/about.php" afterPath="$PROJECT_DIR$/frontend/views/site/about.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/site/articles.php" afterPath="$PROJECT_DIR$/frontend/views/site/articles.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/site/contact-us.php" afterPath="$PROJECT_DIR$/frontend/views/site/contact-us.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/layouts/main.php" afterPath="$PROJECT_DIR$/frontend/views/layouts/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/member/org.php" afterPath="$PROJECT_DIR$/backend/views/member/org.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/site/speakers.php" afterPath="$PROJECT_DIR$/frontend/views/site/speakers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="local.yii2-conf.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,56 +33,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_form.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/common/views/member/_form.php">
+      <file leaf-file-name="org.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/views/member/org.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34768212">
-              <caret line="137" column="55" selection-start-line="137" selection-start-column="55" selection-end-line="137" selection-end-column="55" />
-              <folding>
-                <marker date="1464266868289" expanded="true" signature="6814:6841" placeholder="{...}" />
-                <marker date="1464266868289" expanded="true" signature="6871:6890" placeholder="{...}" />
-                <marker date="1464266868289" expanded="true" signature="7051:7078" placeholder="{...}" />
-                <marker date="1464266868289" expanded="true" signature="7125:7218" placeholder="{...}" />
-                <marker date="1464266868289" expanded="true" signature="7269:7315" placeholder="{...}" />
-                <marker date="1464266868289" expanded="true" signature="7385:7546" placeholder="{...}" />
-                <marker date="1464266868289" expanded="true" signature="7421:7482" placeholder="{...}" />
-                <marker date="1464266868289" expanded="true" signature="7486:7544" placeholder="{...}" />
-                <marker date="1464266868289" expanded="true" signature="7578:7682" placeholder="{...}" />
-                <marker date="1464266868289" expanded="true" signature="7738:8066" placeholder="{...}" />
-                <marker date="1464266868289" expanded="true" signature="7842:7927" placeholder="{...}" />
-                <marker date="1464266868289" expanded="true" signature="7931:8013" placeholder="{...}" />
-                <marker date="1464266868289" expanded="true" signature="8120:8506" placeholder="{...}" />
-                <marker date="1464266868289" expanded="true" signature="8238:8344" placeholder="{...}" />
-                <marker date="1464266868289" expanded="true" signature="8348:8450" placeholder="{...}" />
-                <marker date="1464266868289" expanded="true" signature="8550:8857" placeholder="{...}" />
-                <marker date="1464266868289" expanded="true" signature="8597:8659" placeholder="{...}" />
-                <marker date="1464266868289" expanded="true" signature="8663:8708" placeholder="{...}" />
-                <marker date="1464266868289" expanded="true" signature="8741:8797" placeholder="{...}" />
-                <marker date="1464266868289" expanded="true" signature="8801:8855" placeholder="{...}" />
-                <marker date="1464266868289" expanded="true" signature="8895:9322" placeholder="{...}" />
-                <marker date="1464266868289" expanded="true" signature="9010:9086" placeholder="{...}" />
-                <marker date="1464266868289" expanded="true" signature="9090:9161" placeholder="{...}" />
-                <marker date="1464266868289" expanded="true" signature="9194:9272" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main-local.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/config/main-local.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.125">
-              <caret line="5" column="59" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
+            <state vertical-scroll-proportion="-20.625">
+              <caret line="47" column="37" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public_html/markup/css/main.css">
+      <file leaf-file-name="MemberController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backend/controllers/MemberController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2561" column="0" selection-start-line="2561" selection-start-column="0" selection-end-line="2561" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.32119206">
+              <caret line="141" column="0" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MemberSearch.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/models/MemberSearch.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-20.625">
+              <caret line="68" column="67" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/views/member/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.25">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -94,6 +88,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/common/config/main-local.php" />
+        <option value="$PROJECT_DIR$/frontend/views/site/about.php" />
+        <option value="$PROJECT_DIR$/frontend/views/site/location.php" />
+        <option value="$PROJECT_DIR$/frontend/views/site/speakers.php" />
+        <option value="$PROJECT_DIR$/frontend/views/site/program.php" />
+        <option value="$PROJECT_DIR$/frontend/views/site/articles.php" />
+        <option value="$PROJECT_DIR$/frontend/views/site/contact-us.php" />
+        <option value="$PROJECT_DIR$/frontend/views/layouts/main.php" />
+        <option value="$PROJECT_DIR$/backend/views/member/index.php" />
+        <option value="$PROJECT_DIR$/backend/views/member/org.php" />
+        <option value="$PROJECT_DIR$/backend/controllers/MemberController.php" />
       </list>
     </option>
   </component>
@@ -220,47 +224,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="yii2-admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="local.yii2-conf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="local.yii2-conf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public_html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="markup" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="local.yii2-conf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="local.yii2-conf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public_html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="markup" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -293,6 +257,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -369,28 +337,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="local.yii2-conf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="local.yii2-conf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="member" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -422,60 +368,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="local.yii2-conf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="local.yii2-conf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mail" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="local.yii2-conf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="local.yii2-conf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="local.yii2-conf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="local.yii2-conf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="backend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -495,10 +387,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -538,65 +426,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="local.yii2-conf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="local.yii2-conf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="local.yii2-conf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="local.yii2-conf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="local.yii2-conf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="local.yii2-conf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -610,7 +440,7 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="AccessControl&#9;FILE&#9;file://D:/OpenServer Ultimate/domains/local.yii2-conf/vendor/yiisoft/yii2/filters/AccessControl.php&#10;Mem&#9;null&#9;null&#10;Member&#9;FILE&#9;file://D:/OpenServer Ultimate/domains/local.yii2-conf/common/models/Member.php&#10;dashbo&#9;FILE&#9;file://D:/OpenServer Ultimate/domains/local.yii2-conf/public_html/yii2-admin/css/dashboard.css&#10;urlManager&#9;FILE&#9;file://D:/OpenServer Ultimate/domains/local.yii2-conf/vendor/yiisoft/yii2/web/UrlManager.php&#10;compo&#9;FILE&#9;file://D:/OpenServer Ultimate/domains/local.yii2-conf/composer.json&#10;Validato&#9;null&#9;null&#10;AssetBundle&#9;null&#9;null&#10;JqueryAsset&#9;null&#9;null&#10;YiiAsset&#9;null&#9;null&#10;BootstrapAsset&#9;FILE&#9;file://D:/OpenServer Ultimate/domains/local.yii2-conf/vendor/yiisoft/yii2-bootstrap/BootstrapAsset.php&#10;FilterValidator&#9;null&#9;null&#10;Validator&#9;null&#9;null&#10;Mailer&#9;null&#9;null&#10;com&#9;FILE&#9;file://D:/OpenServer Ultimate/domains/local.yii2-conf/composer.json&#10;MemberS&#9;null&#9;null&#10;Valid&#9;FILE&#9;file://D:/OpenServer Ultimate/domains/local.yii2-conf/vendor/yiisoft/yii2/validators/Validator.php&#10;Validat&#9;FILE&#9;file://D:/OpenServer Ultimate/domains/local.yii2-conf/vendor/yiisoft/yii2/validators/Validator.php&#10;Valida&#9;null&#9;null&#10;_fo&#9;FILE&#9;file://D:/OpenServer Ultimate/domains/local.yii2-conf/frontend/views/member/_form.php&#10;plug&#9;ACTION&#9;WelcomeScreen.Plugins" />
+    <property name="SearchEverywhereHistoryKey" value="abou&#9;FILE&#9;file:///home/avtop/Documents/local.yii2-conf/public_html/markup/about-us.html&#10;AccessControl&#9;FILE&#9;file://D:/OpenServer Ultimate/domains/local.yii2-conf/vendor/yiisoft/yii2/filters/AccessControl.php&#10;Mem&#9;null&#9;null&#10;Member&#9;FILE&#9;file://D:/OpenServer Ultimate/domains/local.yii2-conf/common/models/Member.php&#10;dashbo&#9;FILE&#9;file://D:/OpenServer Ultimate/domains/local.yii2-conf/public_html/yii2-admin/css/dashboard.css&#10;urlManager&#9;FILE&#9;file://D:/OpenServer Ultimate/domains/local.yii2-conf/vendor/yiisoft/yii2/web/UrlManager.php&#10;compo&#9;FILE&#9;file://D:/OpenServer Ultimate/domains/local.yii2-conf/composer.json&#10;Validato&#9;null&#9;null&#10;AssetBundle&#9;null&#9;null&#10;JqueryAsset&#9;null&#9;null&#10;YiiAsset&#9;null&#9;null&#10;BootstrapAsset&#9;FILE&#9;file://D:/OpenServer Ultimate/domains/local.yii2-conf/vendor/yiisoft/yii2-bootstrap/BootstrapAsset.php&#10;FilterValidator&#9;null&#9;null&#10;Validator&#9;null&#9;null&#10;Mailer&#9;null&#9;null&#10;com&#9;FILE&#9;file://D:/OpenServer Ultimate/domains/local.yii2-conf/composer.json&#10;MemberS&#9;null&#9;null&#10;Valid&#9;FILE&#9;file://D:/OpenServer Ultimate/domains/local.yii2-conf/vendor/yiisoft/yii2/validators/Validator.php&#10;Validat&#9;FILE&#9;file://D:/OpenServer Ultimate/domains/local.yii2-conf/vendor/yiisoft/yii2/validators/Validator.php&#10;Valida&#9;null&#9;null&#10;_fo&#9;FILE&#9;file://D:/OpenServer Ultimate/domains/local.yii2-conf/frontend/views/member/_form.php&#10;plug&#9;ACTION&#9;WelcomeScreen.Plugins" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
@@ -835,7 +665,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2690411" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2690411" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32949308" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7361751" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -897,83 +727,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontend/config/main-local.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/config/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.2113022">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/helpers/Html.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31326783">
-          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/kartik-v/yii2-export/ExportMenu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.061697">
-          <caret line="47" column="6" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2-gii/generators/crud/default/views/_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16978776">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/db/Query.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.269231">
-          <caret line="534" column="20" selection-start-line="534" selection-start-column="20" selection-end-line="534" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/base/Application.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.17478152">
-          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/mail/MailerInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.576923">
-          <caret line="62" column="20" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/web/Session.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.576923">
-          <caret line="761" column="38" selection-start-line="761" selection-start-column="38" selection-end-line="761" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/web/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34332085">
-          <caret line="143" column="20" selection-start-line="143" selection-start-column="20" selection-end-line="143" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/web/UrlManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06616729">
-          <caret line="429" column="37" selection-start-line="429" selection-start-column="20" selection-end-line="429" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public_html/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.1584039">
@@ -992,13 +745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.115385">
           <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.153846">
-          <caret line="67" column="68" selection-start-line="67" selection-start-column="68" selection-end-line="67" selection-end-column="68" />
         </state>
       </provider>
     </entry>
@@ -1049,13 +795,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/member/org.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.192308">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1150,13 +889,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/models/MemberSearch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.423077">
-          <caret line="49" column="25" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/helpers/BaseHtml.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.269231">
@@ -1183,20 +915,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.344473">
           <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/controllers/MemberController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="76" selection-start-line="41" selection-start-column="65" selection-end-line="41" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/member/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="221" column="95" selection-start-line="221" selection-start-column="95" selection-end-line="221" selection-end-column="95" />
         </state>
       </provider>
     </entry>
@@ -1254,34 +972,177 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common/views/member/_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34768212">
+        <state vertical-scroll-proportion="-13.125">
           <caret line="137" column="55" selection-start-line="137" selection-start-column="55" selection-end-line="137" selection-end-column="55" />
           <folding>
-            <marker date="1464266868289" expanded="true" signature="6814:6841" placeholder="{...}" />
-            <marker date="1464266868289" expanded="true" signature="6871:6890" placeholder="{...}" />
-            <marker date="1464266868289" expanded="true" signature="7051:7078" placeholder="{...}" />
-            <marker date="1464266868289" expanded="true" signature="7125:7218" placeholder="{...}" />
-            <marker date="1464266868289" expanded="true" signature="7269:7315" placeholder="{...}" />
-            <marker date="1464266868289" expanded="true" signature="7385:7546" placeholder="{...}" />
-            <marker date="1464266868289" expanded="true" signature="7421:7482" placeholder="{...}" />
-            <marker date="1464266868289" expanded="true" signature="7486:7544" placeholder="{...}" />
-            <marker date="1464266868289" expanded="true" signature="7578:7682" placeholder="{...}" />
-            <marker date="1464266868289" expanded="true" signature="7738:8066" placeholder="{...}" />
-            <marker date="1464266868289" expanded="true" signature="7842:7927" placeholder="{...}" />
-            <marker date="1464266868289" expanded="true" signature="7931:8013" placeholder="{...}" />
-            <marker date="1464266868289" expanded="true" signature="8120:8506" placeholder="{...}" />
-            <marker date="1464266868289" expanded="true" signature="8238:8344" placeholder="{...}" />
-            <marker date="1464266868289" expanded="true" signature="8348:8450" placeholder="{...}" />
-            <marker date="1464266868289" expanded="true" signature="8550:8857" placeholder="{...}" />
-            <marker date="1464266868289" expanded="true" signature="8597:8659" placeholder="{...}" />
-            <marker date="1464266868289" expanded="true" signature="8663:8708" placeholder="{...}" />
-            <marker date="1464266868289" expanded="true" signature="8741:8797" placeholder="{...}" />
-            <marker date="1464266868289" expanded="true" signature="8801:8855" placeholder="{...}" />
-            <marker date="1464266868289" expanded="true" signature="8895:9322" placeholder="{...}" />
-            <marker date="1464266868289" expanded="true" signature="9010:9086" placeholder="{...}" />
-            <marker date="1464266868289" expanded="true" signature="9090:9161" placeholder="{...}" />
-            <marker date="1464266868289" expanded="true" signature="9194:9272" placeholder="{...}" />
+            <marker date="1464266868289" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1464266868289" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1464266868289" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1464266868289" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1464266868289" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1464266868289" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1464266868289" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1464266868289" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1464266868289" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1464266868289" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1464266868289" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1464266868289" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1464266868289" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1464266868289" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1464266868289" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1464266868289" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1464266868289" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1464266868289" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1464266868289" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1464266868289" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1464266868289" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1464266868289" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1464266868289" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1464266868289" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/markup/about-us.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.75">
+          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="312" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/views/site/about.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.4285715">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/markup/location.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.208334">
+          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
+          <folding>
+            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/views/site/location.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.6">
+          <caret line="51" column="40" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
+          <folding>
+            <element signature="e#6#85#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/markup/speakers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.625">
+          <caret line="227" column="4" selection-start-line="227" selection-start-column="4" selection-end-line="235" selection-end-column="13" />
+          <folding>
+            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/views/site/speakers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09933775">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/markup/program.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.0">
+          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+          <folding>
+            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/views/site/program.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.0">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <folding>
+            <element signature="e#6#85#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/views/site/articles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.75">
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/markup/contact-us.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.291666">
+          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+          <folding>
+            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/views/site/contact-us.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.8352942">
+          <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.375">
+          <caret line="122" column="82" selection-start-line="122" selection-start-column="82" selection-end-line="122" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/member/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.25">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/models/MemberSearch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.625">
+          <caret line="68" column="67" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/member/org.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.625">
+          <caret line="47" column="37" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/controllers/MemberController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32119206">
+          <caret line="141" column="0" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

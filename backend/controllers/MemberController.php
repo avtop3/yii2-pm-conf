@@ -14,6 +14,8 @@ use yii\filters\VerbFilter;
 use yii\web\Request;
 use yii\web\Session;
 use yii\web\UrlManager;
+use backend\models\ConfPeriod;
+
 
 /**
  * MemberController implements the CRUD actions for Member model.
@@ -120,10 +122,30 @@ class MemberController extends Controller
         return $this->redirect(['index']);
     }
 
-    public function actionOrg()
+    public function actionOrg($period = null)
     {
+        $period = (int)$period;
+//        $searchModel = new MemberSearch();
+//        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+//        $dataProvider->pagination->pageSize = 0;
+//        return $this->render('index', [
+//            'searchModel' => $searchModel,
+//            'dataProvider' => $dataProvider,
+//        ]);
+        $query = Member::find()->addGroupBy('organisationTitle');
+
+        if (is_integer($period)) {
+
+            $confPeriod = ConfPeriod::findOne($period);
+            if ($confPeriod) {
+//                var_dump($period); exit;
+
+                $query->andFilterWhere(['between', 'created_at', $confPeriod->regStart, $confPeriod->regEnd]);
+            }
+        }
+
         $dataProvider = new ActiveDataProvider([
-            'query' => Member::find()->addGroupBy('organisationTitle'),
+            'query' => $query,
             'pagination' => [
                 'pageSize' => 0,
             ],

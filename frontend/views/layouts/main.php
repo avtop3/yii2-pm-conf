@@ -36,7 +36,7 @@ AppAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body <?= $this->params['bodyClass'] ? 'class="' . $this->params['bodyClass'] . '"' : null ?> >
+<body <?= isset($this->params['bodyClass']) ? 'class="' . $this->params['bodyClass'] . '"' : null ?> >
 <?php $this->beginBody() ?>
 
 <header id="header">
@@ -88,7 +88,7 @@ AppAsset::register($this);
                         'items' => $langMenuItems,
                     ]);
 
-                    echo  Yii::$app->language;
+                    echo Yii::$app->language;
 
                     ?>
                     <!--                    <div class="top-number"><p><i class="fa fa-phone-square"></i> +0123 456 70 90</p></div>-->
@@ -112,11 +112,15 @@ AppAsset::register($this);
         ]);
     $menuItems = [
         ['label' => Yii::t('app', 'Home'), 'url' => ['/']],
-        ['label' => Yii::t('app', 'Registration'), 'url' => ['/member/create']],
         ['label' => 'About', 'url' => ['/site/static-page', 'page' => 'about']],
+        ['label' => 'Location', 'url' => ['/site/static-page', 'page' => 'location']],
+        ['label' => 'Speakers', 'url' => ['/site/static-page', 'page' => 'speakers']],
+        ['label' => Yii::t('app', 'Registration'), 'url' => ['/member/create']],
         ['label' => 'Conditions', 'url' => ['/site/static-page', 'page' => 'conditions']],
+        ['label' => 'Program', 'url' => ['/site/static-page', 'page' => 'program']],
         ['label' => 'Articles', 'url' => ['/site/static-page', 'page' => 'articles']],
         ['label' => 'Contact us', 'url' => ['/site/static-page', 'page' => 'contact-us']],
+        ['label' => 'Archives', 'url' => ['/site/static-page', 'page' => 'articles']],
     ];
 
     echo Nav::widget([
@@ -137,90 +141,24 @@ AppAsset::register($this);
 </div>
 <?= $content ?>
 
-<section id="bottom">
-    <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-        <div class="row">
-            <div class="col-md-3 col-sm-6">
-                <div class="widget">
-                    <h3>Company</h3>
-                    <ul>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">We are hiring</a></li>
-                        <li><a href="#">Meet the team</a></li>
-                        <li><a href="#">Copyright</a></li>
-                        <li><a href="#">Terms of use</a></li>
-                        <li><a href="#">Privacy policy</a></li>
-                        <li><a href="#">Contact us</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!--/.col-md-3-->
-
-            <div class="col-md-3 col-sm-6">
-                <div class="widget">
-                    <h3>Support</h3>
-                    <ul>
-                        <li><a href="#">Faq</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Forum</a></li>
-                        <li><a href="#">Documentation</a></li>
-                        <li><a href="#">Refund policy</a></li>
-                        <li><a href="#">Ticket system</a></li>
-                        <li><a href="#">Billing system</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!--/.col-md-3-->
-
-            <div class="col-md-3 col-sm-6">
-                <div class="widget">
-                    <h3>Developers</h3>
-                    <ul>
-                        <li><a href="#">Web Development</a></li>
-                        <li><a href="#">SEO Marketing</a></li>
-                        <li><a href="#">Theme</a></li>
-                        <li><a href="#">Development</a></li>
-                        <li><a href="#">Email Marketing</a></li>
-                        <li><a href="#">Plugin Development</a></li>
-                        <li><a href="#">Article Writing</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!--/.col-md-3-->
-
-            <div class="col-md-3 col-sm-6">
-                <div class="widget">
-                    <h3>Our Partners</h3>
-                    <ul>
-                        <li><a href="#">Adipisicing Elit</a></li>
-                        <li><a href="#">Eiusmod</a></li>
-                        <li><a href="#">Tempor</a></li>
-                        <li><a href="#">Veniam</a></li>
-                        <li><a href="#">Exercitation</a></li>
-                        <li><a href="#">Ullamco</a></li>
-                        <li><a href="#">Laboris</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!--/.col-md-3-->
-        </div>
-    </div>
-</section>
 <!--/#bottom-->
+<div id="regLink">
+    <div class="img-left">
+        <img src="/markup/images/arrow_up_1.png" alt="">
+    </div>
+    <a href="<?= \yii\helpers\Url::to(['/member/create'])?>"><?= Yii::t('app.layout', 'Registration') ?></a>
+    <div class="img-right">
+        <img src="/markup/images/arrow_up_1.png" alt="">
+    </div>
+    <p><?= Yii::t('app.layout', 'Participation fee <br>350 uah') ?></p>
+</div>
+
 
 <footer id="footer" class="midnight-blue">
     <div class="container">
         <div class="row">
-            <div class="col-sm-6">
-                &copy; My Company <?= date('Y') ?>
-            </div>
-            <div class="col-sm-6">
-                <ul class="pull-right">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Faq</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
+            <div class="col-sm-12">
+                <p class="text-left">Кафедра Стратегического Управления НТУ "ХПИ". Все права защищены &copy; 2016 Харьков, Украина</p>
             </div>
         </div>
     </div>

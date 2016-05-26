@@ -8,15 +8,18 @@ use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 use yii\captcha\Captcha;
 
-$this->title = 'Contact us';
+$this->title = 'Контакты';
 ?>
+
 <section id="contacts">
     <div class="container">
         <h2>Контакты</h2>
 
         <div class="col-lg-6 col-xs-12 col-sm-12 col-md-6 person">
             <h3>Организационный комитет</h3>
-            <hr>
+
+            <p>обращаться по вопросам участия и проживания в гостиннице</p>
+
             <div class="img-block col-lg-4 col-md-4 col-xs-12 col-sm-12">
                 <img src="/markup/images/speakers/haraziy.jpg" alt="">
             </div>
@@ -34,7 +37,9 @@ $this->title = 'Contact us';
         </div>
         <div class="col-lg-6 col-xs-12 col-sm-12 col-md-6 person">
             <h3>Программный комитет</h3>
-            <hr>
+
+            <p>обращаться по вопросам публикации статей</p>
+
             <div class="img-block col-lg-4 col-md-4 col-xs-12 col-sm-12">
                 <img src="/markup/images/speakers/loback.jpg" alt="">
             </div>
@@ -55,7 +60,9 @@ $this->title = 'Contact us';
 
             <p>61002, Украина, г. Харьков, ул. Фрунзе 21, НТУ «ХПИ», Кафедра стратегического управления (корпус У-2, 7й
                 этаж, к. 703)</p>
+            <hr>
         </div>
+
         <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12 map">
             <h3>Мы на карте</h3>
             <iframe
@@ -64,3 +71,4 @@ $this->title = 'Contact us';
         </div>
     </div>
 </section>
+
