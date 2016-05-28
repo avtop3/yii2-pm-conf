@@ -18,7 +18,6 @@ $this->title = Yii::t('app', 'Members');
 $this->params['breadcrumbs'][] = $this->title;
 $confPeriods = \backend\models\ConfPeriod::find()->orderBy('regStart')->all();
 
-
 //$dateRange = [
 //    'model' => $searchModel,
 //    'attribute' => 'created_at',
