@@ -111,16 +111,16 @@ AppAsset::register($this);
             ],
         ]);
     $menuItems = [
-        ['label' => Yii::t('app', 'Home'), 'url' => ['/']],
-        ['label' => 'About', 'url' => ['/site/static-page', 'page' => 'about']],
-        ['label' => 'Location', 'url' => ['/site/static-page', 'page' => 'location']],
-        ['label' => 'Speakers', 'url' => ['/site/static-page', 'page' => 'speakers']],
+        ['label' => Yii::t('app.menu', 'Home'), 'url' => ['/']],
+        ['label' => Yii::t('app.menu', 'About'), 'url' => ['/site/static-page', 'page' => 'about']],
+        ['label' => Yii::t('app.menu', 'Location'), 'url' => ['/site/static-page', 'page' => 'location']],
+        ['label' => Yii::t('app.menu', 'Speakers'), 'url' => ['/site/static-page', 'page' => 'speakers']],
         ['label' => Yii::t('app', 'Registration'), 'url' => ['/member/create']],
-        ['label' => 'Conditions', 'url' => ['/site/static-page', 'page' => 'conditions']],
-        ['label' => 'Program', 'url' => ['/site/static-page', 'page' => 'program']],
-        ['label' => 'Articles', 'url' => ['/site/static-page', 'page' => 'articles']],
-        ['label' => 'Contact us', 'url' => ['/site/static-page', 'page' => 'contact-us']],
-        ['label' => 'Archives', 'url' => ['/site/static-page', 'page' => 'articles']],
+        ['label' => Yii::t('app.menu', 'Conditions'), 'url' => ['/site/static-page', 'page' => 'conditions']],
+        ['label' => Yii::t('app.menu', 'Program'), 'url' => ['/site/static-page', 'page' => 'program']],
+        ['label' => Yii::t('app.menu', 'Articles'), 'url' => ['/site/static-page', 'page' => 'articles']],
+        ['label' => Yii::t('app.menu', 'Contact us'), 'url' => ['/site/static-page', 'page' => 'contact-us']],
+        ['label' => Yii::t('app.menu', 'Archives'), 'url' => ['/site/static-page', 'page' => 'articles']],
     ];
 
     echo Nav::widget([
@@ -146,7 +146,8 @@ AppAsset::register($this);
     <div class="img-left">
         <img src="/markup/images/arrow_up_1.png" alt="">
     </div>
-    <a href="<?= \yii\helpers\Url::to(['/member/create'])?>"><?= Yii::t('app.layout', 'Registration') ?></a>
+    <a href="<?= \yii\helpers\Url::to(['/member/create']) ?>"><?= Yii::t('app.layout', 'Registration') ?></a>
+
     <div class="img-right">
         <img src="/markup/images/arrow_up_1.png" alt="">
     </div>
@@ -158,7 +159,7 @@ AppAsset::register($this);
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <p class="text-left">Кафедра Стратегического Управления НТУ "ХПИ". Все права защищены &copy; 2016 Харьков, Украина</p>
+                <p class="text-left"><?= Yii::t('app', 'copyright') ?></p>
             </div>
         </div>
     </div>
