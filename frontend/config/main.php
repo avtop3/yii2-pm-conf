@@ -60,7 +60,7 @@ return [
                     'defaults' => ['page' => 'about'],
                 ],
                 [
-                    'pattern' => 'location',
+                    'pattern' => 'venue',
                     'route' => 'site/static-page',
                     'defaults' => ['page' => 'location'],
                 ],

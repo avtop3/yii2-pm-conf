@@ -38,21 +38,21 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => 'Сайт Конференций',
-        'brandUrl' => Yii::$app->homeUrl,
+//        'brandLabel' => 'Сайт Конференций',
+//        'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
     ]);
     $menuItems = [
         ['label' => 'Главная', 'url' => ['/site/index']],
-        ['label' => 'Фронтенд', 'url' => Yii::$app->urlManagerFrontEnd->createUrl('')],
+        ['label' => 'Посмотреть сайт', 'url' => Yii::$app->urlManagerFrontEnd->createUrl('')],
     ];
     if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
+        $menuItems[] = ['label' => Yii::t('app.backend', 'Login'), 'url' => ['/site/login']];
     } else {
         $menuItems[] = [
-            'label' => 'Logout (' . Yii::$app->user->identity->username . ')',
+            'label' => Yii::t('app.backend', 'Logout ({name})', ['name' => Yii::$app->user->identity->username]),
             'url' => ['/site/logout'],
             'linkOptions' => ['data-method' => 'post']
         ];

@@ -7,7 +7,7 @@ use yii\widgets\DetailView;
 /* @var $model backend\models\ConfPeriod */
 
 $this->title = $model->title;
-$this->params['breadcrumbs'][] = ['label' => 'Conf Periods', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Conf Periods'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="conf-period-view">

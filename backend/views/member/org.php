@@ -74,6 +74,7 @@ $this->title = 'Список организаций';
             ?>
         </div>
     </div>
+    <br>
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,

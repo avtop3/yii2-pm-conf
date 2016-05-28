@@ -6,7 +6,7 @@ use yii\helpers\Html;
 /* @var $model backend\models\ConfPeriod */
 
 $this->title = 'Update Conf Period: ' . $model->title;
-$this->params['breadcrumbs'][] = ['label' => 'Conf Periods', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Conf Periods'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->title, 'url' => ['view', 'id' => $model->id]];
 $this->params['breadcrumbs'][] = 'Update';
 ?>

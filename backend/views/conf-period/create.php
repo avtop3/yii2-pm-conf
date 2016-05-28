@@ -7,7 +7,7 @@ use yii\helpers\Html;
 /* @var $model backend\models\ConfPeriod */
 
 $this->title = 'Задайте название и переод регистрации на конференцию';
-$this->params['breadcrumbs'][] = ['label' => 'Conf Periods', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Conf Periods'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="conf-period-create">
