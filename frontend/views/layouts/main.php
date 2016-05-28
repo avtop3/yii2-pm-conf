@@ -111,7 +111,7 @@ AppAsset::register($this);
             ],
         ]);
     $menuItems = [
-        ['label' => Yii::t('app.menu', 'Home'), 'url' => ['/']],
+        ['label' => Yii::t('app.menu', 'Home'), 'url' => ['/site/static-page', 'page' => 'index']],
         ['label' => Yii::t('app.menu', 'About'), 'url' => ['/site/static-page', 'page' => 'about']],
         ['label' => Yii::t('app.menu', 'Location'), 'url' => ['/site/static-page', 'page' => 'location']],
         ['label' => Yii::t('app.menu', 'Speakers'), 'url' => ['/site/static-page', 'page' => 'speakers']],
