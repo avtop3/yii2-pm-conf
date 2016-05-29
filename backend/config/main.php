@@ -10,7 +10,7 @@ return [
     'id' => 'app-backend',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
-    'language' => 'en-US',//'ru-RU',
+    'language' => 'ru-RU',
     'bootstrap' => ['log'],
 //    'as access' => [
 //        'class' => 'mdm\admin\components\AccessControl',

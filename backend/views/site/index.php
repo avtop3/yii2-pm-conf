@@ -9,12 +9,12 @@ $this->title = 'My Yii Application';
 
 <h1 class="page-header">Dashboard</h1>
 <!--<pre>-->
-    <?php
+<?php
 
 //    $languagesObjects = \lajax\translatemanager\models\Language::getLanguages(true, true);
 //    $languages = \yii\helpers\ArrayHelper::map($languagesObjects, 'language', 'language_id');
 //    print_r($languages);
-    ?>
+?>
 <!--</pre>-->
 <div class="row placeholders">
     <div class="col-xs-6 col-sm-3 placeholder">
@@ -172,4 +172,19 @@ $this->title = 'My Yii Application';
         </tbody>
     </table>
 </div>
+
+
+<p>От имени организационного и программного комитета конференции благодарим Вас за участие и надеемся увидеть Вас на
+    конференции в следующем году.</p>
+
+<p>С радостью сообщаем, что электронная версия опубликованных статей, презентации докладов, а также фотографии с
+    мероприятия уже доступны на сайте конференции в разделе "Архив" по следующей ссылке
+    http://conf.pm-edu.org/ru/archive.</p>
+
+<p>Также просим Вас уделить несколько минут и заполнить следующую анкету http://goo.gl/forms/o17j29MU8i. Это поможет
+    сделать конференцию следующего года еще лучше.</p>
+
+<b>С уважением, <br> организационный и программный комитет конференции</b>
+
+
 
