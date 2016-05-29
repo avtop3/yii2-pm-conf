@@ -47,7 +47,7 @@ $homeUrl = Yii::$app->urlManagerFrontEnd->createUrl('');
     <p>Looking forward to seeing you at this important event!</p>
 
     <b>Sincerely,<br>the organizing committee of the conference</b>
-    ', ['homeUrl' => $homeUrl]) ?>
+    ', ['homeUrl' => $homeUrl], $language) ?>
 
 
 </div>

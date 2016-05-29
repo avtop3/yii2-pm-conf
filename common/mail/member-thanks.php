@@ -12,7 +12,7 @@ use yii\widgets\DetailView;
 /* @var $model common\models\Member */
 
 $language = $model->getNativeLanguage();
-
+$url = Yii::$app->urlManagerFrontEnd->createUrl(['site/static-page', 'page' => 'archive']);
 ?>
 <div class="member-thanks">
     <h1><?= Yii::t('app.member.mail.thanks', 'Dear {name},', ['name' => $model->name], $language) ?></h1>
@@ -29,7 +29,7 @@ $language = $model->getNativeLanguage();
         This will help make the conference next year even better.
     </p>
     <b>Sincerely,<br>the organizing and program committee of the conference</b>
-    '); ?>
+    ', ['url' => $url], $language); ?>
 
 
 </div>
