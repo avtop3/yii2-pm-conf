@@ -10,7 +10,7 @@ return [
     'id' => 'app-backend',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
-    'language' => 'ru-RU',
+    'language' => 'en-US',//'ru-RU',
     'bootstrap' => ['log'],
 //    'as access' => [
 //        'class' => 'mdm\admin\components\AccessControl',
@@ -84,6 +84,23 @@ return [
         'gridview' => [
             'class' => \kartik\grid\Module::className(),
         ],
+    ],
+    'as globalAccess' => [
+        'class' => '\common\behaviors\GlobalAccessBehavior',
+        'rules' => [
+            [
+                'controllers' => ['site'],
+                'allow' => true,
+                'roles' => ['?'],
+                'actions' => ['login']
+            ],
+            [
+                'controllers' => [],
+                'allow' => true,
+                'roles' => ['@'],
+                'actions' => []
+            ],
+        ]
     ],
     'params' => $params,
 ];

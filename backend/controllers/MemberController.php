@@ -168,24 +168,24 @@ class MemberController extends Controller
                 if ($viewMail == 'member-invite') {
                     switch ($lang) {
                         case 'uk-UA':
-                            $subjectMail = 'Запрошення';
+                            $subjectMail = 'Integrated Management 2017: Запрошення до участі у конференції';
                             break;
                         case 'ru-RU':
-                            $subjectMail = 'Приглашение';
+                            $subjectMail = 'Integrated Management 2017: Приглашение к участию в конференции';
                             break;
                         default:
-                            $subjectMail = 'Invite';
+                            $subjectMail = 'Integrated Management 2017: Invitation for Participation';
                     }
                 } else {
                     switch ($lang) {
                         case 'uk-UA':
-                            $subjectMail = 'Подяка';
+                            $subjectMail = 'Міжнародна науково-практична конференція Integrated Management 2017';
                             break;
                         case 'ru-RU':
-                            $subjectMail = 'Благодарность';
+                            $subjectMail = 'Международная научно-практическая конференция Integrated Management 2017';
                             break;
                         default:
-                            $subjectMail = 'Thanks';
+                            $subjectMail = 'International Scientific and Practical Conference «Integrated Management 2017»';
                     }
                 }
 

@@ -102,10 +102,15 @@ AppAsset::register($this);
                     ],
 
                 ];
-                echo Nav::widget([
-                    'options' => ['class' => 'nav-sidebar'],
-                    'items' => $menuItems,
-                ]); ?>
+                if (!Yii::$app->user->isGuest) {
+                    echo Nav::widget([
+                        'options' => ['class' => 'nav-sidebar'],
+                        'items' => $menuItems,
+                    ]);
+                    Yii::t('app.login', 'Or you can: '); ?> <?= Html::a(Yii::t('app.login', 'Reset password'), ['site/reset-password']);
+                }
+
+                ?>
             </div>
             <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
                 <?= Breadcrumbs::widget([

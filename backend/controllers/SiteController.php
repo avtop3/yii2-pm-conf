@@ -1,6 +1,7 @@
 <?php
 namespace backend\controllers;
 
+use common\models\ResetPassword;
 use common\models\User;
 use Yii;
 use yii\filters\AccessControl;
@@ -19,20 +20,6 @@ class SiteController extends Controller
     public function behaviors()
     {
         return [
-            'access' => [
-                'class' => AccessControl::className(),
-                'rules' => [
-                    [
-                        'actions' => ['login', 'error'],
-                        'allow' => true,
-                    ],
-                    [
-                        'actions' => ['logout', 'index'],
-                        'allow' => true,
-                        'roles' => ['@'],
-                    ],
-                ],
-            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
@@ -87,5 +74,20 @@ class SiteController extends Controller
         Yii::$app->user->logout();
 
         return $this->goHome();
+    }
+
+    public function actionResetPassword()
+    {
+        $model = new ResetPassword();
+
+        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+            Yii::$app->getUser()->identity->setPassword($model->newPassword);
+            Yii::$app->getUser()->identity->save();
+            return $this->goHome();
+        } else {
+            return $this->render('resetPassword', [
+                'model' => $model,
+            ]);
+        }
     }
 }
