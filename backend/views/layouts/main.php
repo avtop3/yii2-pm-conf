@@ -64,6 +64,7 @@ AppAsset::register($this);
     NavBar::end();
     ?>
 
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-3 col-md-2 sidebar">

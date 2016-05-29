@@ -12,6 +12,13 @@ return [
     'controllerNamespace' => 'backend\controllers',
     'language' => 'ru-RU',
     'bootstrap' => ['log'],
+//    'as access' => [
+//        'class' => 'mdm\admin\components\AccessControl',
+//        'allowActions' => [
+//            'site/login',
+//            'site/error',
+//        ]
+//    ],
     'components' => [
         'user' => [
             'identityClass' => 'common\models\User',
@@ -74,9 +81,9 @@ return [
                 ],
             ],
         ],
-        'gridview'=>[
+        'gridview' => [
             'class' => \kartik\grid\Module::className(),
-        ]
+        ],
     ],
     'params' => $params,
 ];

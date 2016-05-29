@@ -1,8 +1,8 @@
+AuthType Basic
+AuthName "Private Area"
+AuthUserFile .htpasswd
+Require user mothes
+#
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . index.php
-
-#AuthType Basic
-#AuthName "Private Area"
-#AuthUserFile .htpasswd
-#Require user mothes

@@ -154,16 +154,16 @@
         },
         {
             "name": "bower-asset/blueimp-file-upload",
-            "version": "9.12.3",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/blueimp/jQuery-File-Upload.git",
-                "reference": "c72c93c3c005bbd0c849c2e35d01daaf7d23ee51"
+                "reference": "dc934e984083424a86b3f539dbf0b071f89b5823"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/blueimp/jQuery-File-Upload/zipball/c72c93c3c005bbd0c849c2e35d01daaf7d23ee51",
-                "reference": "c72c93c3c005bbd0c849c2e35d01daaf7d23ee51",
+                "url": "https://api.github.com/repos/blueimp/jQuery-File-Upload/zipball/dc934e984083424a86b3f539dbf0b071f89b5823",
+                "reference": "dc934e984083424a86b3f539dbf0b071f89b5823",
                 "shasum": ""
             },
             "require": {
@@ -187,7 +187,10 @@
                     "js/main.js",
                     "server",
                     "test"
-                ]
+                ],
+                "branch-alias": {
+                    "dev-master": "9.12.4-dev"
+                }
             },
             "license": [
                 "MIT"
@@ -213,7 +216,8 @@
                 "selection",
                 "upload",
                 "widget"
-            ]
+            ],
+            "time": "2016-05-28 02:13:15"
         },
         {
             "name": "bower-asset/blueimp-gallery",
@@ -315,54 +319,17 @@
             ]
         },
         {
-            "name": "bower-asset/fontawesome",
-            "version": "v4.6.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/FortAwesome/Font-Awesome.git",
-                "reference": "8e241f209faa1dd2182c9fdc9c352d8806504a4e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/8e241f209faa1dd2182c9fdc9c352d8806504a4e",
-                "reference": "8e241f209faa1dd2182c9fdc9c352d8806504a4e",
-                "shasum": ""
-            },
-            "type": "bower-asset-library",
-            "extra": {
-                "bower-asset-main": [
-                    "less/font-awesome.less",
-                    "scss/font-awesome.scss"
-                ],
-                "bower-asset-ignore": [
-                    "*/.*",
-                    "*.json",
-                    "src",
-                    "*.yml",
-                    "Gemfile",
-                    "Gemfile.lock",
-                    "*.md"
-                ]
-            },
-            "license": [
-                "OFL-1.1",
-                "MIT",
-                "CC-BY-3.0"
-            ],
-            "description": "Font Awesome"
-        },
-        {
             "name": "bower-asset/jquery",
-            "version": "2.2.3",
+            "version": "2.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jquery/jquery-dist.git",
-                "reference": "af22a351b2ea5801ffb1695abb3bb34d5bed9198"
+                "reference": "c0185ab7c75aab88762c5aae780b9d83b80eda72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/af22a351b2ea5801ffb1695abb3bb34d5bed9198",
-                "reference": "af22a351b2ea5801ffb1695abb3bb34d5bed9198",
+                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/c0185ab7c75aab88762c5aae780b9d83b80eda72",
+                "reference": "c0185ab7c75aab88762c5aae780b9d83b80eda72",
                 "shasum": ""
             },
             "type": "bower-asset-library",
@@ -773,12 +740,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-date-range.git",
-                "reference": "90b0e305c9c491664693b07dba8e83384ece85b2"
+                "reference": "aeee3c8f05d326e486b1fefbd6672345f4972e3a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-date-range/zipball/90b0e305c9c491664693b07dba8e83384ece85b2",
-                "reference": "90b0e305c9c491664693b07dba8e83384ece85b2",
+                "url": "https://api.github.com/repos/kartik-v/yii2-date-range/zipball/aeee3c8f05d326e486b1fefbd6672345f4972e3a",
+                "reference": "aeee3c8f05d326e486b1fefbd6672345f4972e3a",
                 "shasum": ""
             },
             "require": {
@@ -819,7 +786,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2016-05-11 15:03:45"
+            "time": "2016-05-25 15:23:44"
         },
         {
             "name": "kartik-v/yii2-export",
@@ -886,12 +853,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-grid.git",
-                "reference": "1fdff28ff504b0ee9074c68e44a9a740e1504078"
+                "reference": "2f39c05ec05b39452e818c2c49d1d1cee5f51771"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-grid/zipball/1fdff28ff504b0ee9074c68e44a9a740e1504078",
-                "reference": "1fdff28ff504b0ee9074c68e44a9a740e1504078",
+                "url": "https://api.github.com/repos/kartik-v/yii2-grid/zipball/2f39c05ec05b39452e818c2c49d1d1cee5f51771",
+                "reference": "2f39c05ec05b39452e818c2c49d1d1cee5f51771",
                 "shasum": ""
             },
             "require": {
@@ -927,7 +894,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2016-05-13 17:22:20"
+            "time": "2016-05-15 18:54:47"
         },
         {
             "name": "kartik-v/yii2-krajee-base",
@@ -1444,20 +1411,19 @@
         },
         {
             "name": "rmrevin/yii2-fontawesome",
-            "version": "2.14.0",
+            "version": "2.15.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rmrevin/yii2-fontawesome.git",
-                "reference": "baac28412963974940cbfb6b83940b3aa179b0ee"
+                "reference": "d2777130bc926bc670a4e50c2f504a0fb782efb1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rmrevin/yii2-fontawesome/zipball/baac28412963974940cbfb6b83940b3aa179b0ee",
-                "reference": "baac28412963974940cbfb6b83940b3aa179b0ee",
+                "url": "https://api.github.com/repos/rmrevin/yii2-fontawesome/zipball/d2777130bc926bc670a4e50c2f504a0fb782efb1",
+                "reference": "d2777130bc926bc670a4e50c2f504a0fb782efb1",
                 "shasum": ""
             },
             "require": {
-                "bower-asset/fontawesome": "4.6.*",
                 "php": ">=5.4.0",
                 "yiisoft/yii2": "2.0.*"
             },
@@ -1492,7 +1458,7 @@
                 "font",
                 "yii"
             ],
-            "time": "2016-04-21 11:55:25"
+            "time": "2016-05-28 21:18:32"
         },
         {
             "name": "setasign/fpdi",
@@ -1745,12 +1711,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "2f4342f06ddedc20afb4ea8c79a672ec47c4aaa1"
+                "reference": "e9cc989c9c3de3326892f9205bfc17e61347fcdc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/2f4342f06ddedc20afb4ea8c79a672ec47c4aaa1",
-                "reference": "2f4342f06ddedc20afb4ea8c79a672ec47c4aaa1",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/e9cc989c9c3de3326892f9205bfc17e61347fcdc",
+                "reference": "e9cc989c9c3de3326892f9205bfc17e61347fcdc",
                 "shasum": ""
             },
             "require": {
@@ -1831,7 +1797,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2016-05-13 14:29:25"
+            "time": "2016-05-26 21:41:47"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -2113,12 +2079,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "191fc2b648e1b00ad4725fcae0ab0729537725c8"
+                "reference": "df56110269ffaaea78295290c74d0bd1b3ac176f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/191fc2b648e1b00ad4725fcae0ab0729537725c8",
-                "reference": "191fc2b648e1b00ad4725fcae0ab0729537725c8",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/df56110269ffaaea78295290c74d0bd1b3ac176f",
+                "reference": "df56110269ffaaea78295290c74d0bd1b3ac176f",
                 "shasum": ""
             },
             "require": {
@@ -2155,7 +2121,7 @@
                 "faker",
                 "fixtures"
             ],
-            "time": "2016-05-10 09:22:13"
+            "time": "2016-05-19 20:16:37"
         },
         {
             "name": "phpspec/php-diff",

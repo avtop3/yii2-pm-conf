@@ -88,8 +88,6 @@ AppAsset::register($this);
                         'items' => $langMenuItems,
                     ]);
 
-                    echo Yii::$app->language;
-
                     ?>
                     <!--                    <div class="top-number"><p><i class="fa fa-phone-square"></i> +0123 456 70 90</p></div>-->
                 </div>
