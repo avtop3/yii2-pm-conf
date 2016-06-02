@@ -31,6 +31,17 @@ h1 {
   color: #000;
   font-family: 'Open Sans Condensed', sans-serif;
 }
+hr {
+  margin: 0;
+  margin-bottom: 0;
+  width: 100%;
+  border: 0;
+  height: 2px;
+  background-image: -webkit-linear-gradient(left, rgba(1,105,1,0), rgba(1,105,1,0.5), rgba(1,105,1,0));
+  background-image: -moz-linear-gradient(left, rgba(1,105,1,0), rgba(1,105,1,0.5), rgba(1,105,1,0));
+  background-image: -ms-linear-gradient(left, rgba(1,105,1,0), rgba(1,105,1,0.5), rgba(1,105,1,0));
+  background-image: -o-linear-gradient(left, rgba(1,105,1,0), rgba(1,105,1,0.5), rgba(1,105,1,0));
+}
 #about-conf h2 {
   font-size: 32px;
   text-align: left;
@@ -459,8 +470,13 @@ h1 {
 #articles .commission a i {
   font-size: 28px;
 }
+#footer {
+  background: #000;
+  padding: 0 0 30px;
+}
 #footer p {
-  font-size: 16px;
+  font-size: 20px;
+  vertical-align: top;
 }
 #program {
   padding: 0;
@@ -578,13 +594,10 @@ h1 {
 #speakers .container .tabs {
   margin: 20px 0;
 }
-#speakers .container .tabs ul.nav-tabs {
-  margin-left: 17%;
-}
 #speakers .container .tabs ul.nav-tabs li {
   border: transparent;
   margin-right: 15px;
-  width: 275px;
+  width: 32%;
   text-align: center;
 }
 #speakers .container .tabs ul.nav-tabs li.active a,
@@ -735,32 +748,38 @@ h1 {
 }
 #regLink {
   width: 100%;
-  background: #151515;
-  padding: 35px 0;
+  background: #000;
+  padding: 25px 0;
   text-align: center;
 }
 #regLink a {
-  font-size: 60px;
+  font-size: 80px;
   color: #fff;
   text-transform: uppercase;
   display: inline-block;
-  margin: 20px 0;
-  vertical-align: middle;
+  margin: 50px 0;
+  vertical-align: top;
 }
 #regLink p {
-  display: block;
-  color: #fff;
-  margin: 15px 0;
-  font-size: 26px;
-}
-#regLink .img-left {
   display: inline-block;
+  color: #fff;
+  margin: 0;
+  font-size: 46px;
+  line-height: normal;
+  vertical-align: top;
+  margin-right: 20px;
+}
+#regLink .img-left,
+#regLink .img-right {
+  margin: 25px 0 0;
+  display: inline-block;
+}
+#regLink .img-left img,
+#regLink .img-right img {
+  width: 70px;
 }
 #regLink .img-left img {
   transform: rotate(90deg);
-}
-#regLink .img-right {
-  display: inline-block;
 }
 #regLink .img-right img {
   transform: rotate(270deg);
@@ -771,6 +790,14 @@ h1 {
 .form-horizontal .radio-inline,
 .form-horizontal .checkbox-inline {
   font-size: 18px;
+}
+.form-horizontal h3 {
+  color: #333;
+  font-size: 22px;
+}
+.form-horizontal .summary-info .success th {
+  text-align: center;
+  font-size: 16px;
 }
 .form-group .form-control {
   font-size: 16px;
