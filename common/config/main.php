@@ -6,9 +6,28 @@ return [
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
-        'urlManager' =>[
+        'urlManagerFrontEnd' => [
+            'class' => 'yii\web\urlManager',
+            'baseUrl' => 'http://frontend.ibabych.bget.ru',
+            'showScriptName' => false,
+            'enablePrettyUrl' => true,
+            'rules' => [],
+        ],
+        'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
+        ],
+        'mailer' => [
+            'class' => 'yii\swiftmailer\Mailer',
+            'viewPath' => '@common/mail',
+            'transport' => [
+                'class' => 'Swift_SmtpTransport',
+                'host' => 'smtp.yandex.ru',
+                'username' => 'pm-edu',
+                'password' => '2exoHkhAXSprkEwDYuDQ',
+                'port' => '465',
+                'encryption' => 'ssl',
+            ],
         ],
         'i18n' => [
             'translations' => [
@@ -40,6 +59,7 @@ return [
             'class' => 'lajax\translatemanager\Module',
             'ignoredCategories' => ['yii', 'array', 'language', 'model'],
             'layout' => NULL,
+            'allowedIPs' => ['*'],
         ],
     ],
 

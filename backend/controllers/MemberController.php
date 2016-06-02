@@ -6,9 +6,16 @@ use Yii;
 use common\models\Member;
 use common\models\MemberSearch;
 use yii\behaviors\TimestampBehavior;
+use yii\data\ActiveDataProvider;
+use yii\helpers\Url;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\Request;
+use yii\web\Session;
+use yii\web\UrlManager;
+use backend\models\ConfPeriod;
+
 
 /**
  * MemberController implements the CRUD actions for Member model.
@@ -49,6 +56,14 @@ class MemberController extends Controller
      */
     public function actionView($id)
     {
+        if (Yii::$app->request->post()) {
+            $model = $this->findModel($id);
+            Yii::$app->mailer->compose('member-info', ['model' => $model])
+                ->setFrom(Yii::$app->params['smtpEmail'])
+                ->setTo([$model->email, 'pm.education.khpi@gmail.com', 'ajiekcahdp3@yandex.ru'])
+                ->setSubject(Yii::t('app.member.mail', 'Confirmation of registration to \'International Scientific Conference\''))
+                ->send();
+        }
         return $this->render('view', [
             'model' => $this->findModel($id),
         ]);
@@ -63,7 +78,7 @@ class MemberController extends Controller
     {
         $model = new Member();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save() ) { //&& $model->save()
+        if ($model->load(Yii::$app->request->post()) && $model->save()) { //&& $model->save()
 //            print_r($model->attributes);
 //            exit();
             return $this->redirect(['view', 'id' => $model->id]);
@@ -83,6 +98,7 @@ class MemberController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
+        $model->scenario = Member::SCENARIO_ADMIN;
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -104,6 +120,99 @@ class MemberController extends Controller
         $this->findModel($id)->delete();
 
         return $this->redirect(['index']);
+    }
+
+    public function actionOrg($period = null)
+    {
+        $period = (int)$period;
+//        $searchModel = new MemberSearch();
+//        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+//        $dataProvider->pagination->pageSize = 0;
+//        return $this->render('index', [
+//            'searchModel' => $searchModel,
+//            'dataProvider' => $dataProvider,
+//        ]);
+        $query = Member::find()->addGroupBy('organisationTitle');
+
+        if (is_integer($period)) {
+
+            $confPeriod = ConfPeriod::findOne($period);
+            if ($confPeriod) {
+//                var_dump($period); exit;
+
+                $query->andFilterWhere(['between', 'created_at', $confPeriod->regStart, $confPeriod->regEnd]);
+            }
+        }
+
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+            'pagination' => [
+                'pageSize' => 0,
+            ],
+        ]);
+
+        return $this->render('org', ['dataProvider' => $dataProvider]);
+    }
+
+    public function actionBulkEmail()
+    {
+        if (Yii::$app->request->method == 'POST' && Yii::$app->request->post('selection')) {
+
+            $viewMail = Yii::$app->request->post('view');
+            $usersObjs = Member::find()->where(['id' => Yii::$app->request->post('selection')])->all();
+
+            $messages = [];
+            foreach ($usersObjs as $user) {
+                $lang = $user->getNativeLanguage();
+
+                if ($viewMail == 'member-invite') {
+                    switch ($lang) {
+                        case 'uk-UA':
+                            $subjectMail = 'Integrated Management 2017: Запрошення до участі у конференції';
+                            break;
+                        case 'ru-RU':
+                            $subjectMail = 'Integrated Management 2017: Приглашение к участию в конференции';
+                            break;
+                        default:
+                            $subjectMail = 'Integrated Management 2017: Invitation for Participation';
+                    }
+                } else {
+                    switch ($lang) {
+                        case 'uk-UA':
+                            $subjectMail = 'Міжнародна науково-практична конференція Integrated Management 2017';
+                            break;
+                        case 'ru-RU':
+                            $subjectMail = 'Международная научно-практическая конференция Integrated Management 2017';
+                            break;
+                        default:
+                            $subjectMail = 'International Scientific and Practical Conference «Integrated Management 2017»';
+                    }
+                }
+
+//                $subjectMail .= $lang;
+
+                $messages[] = Yii::$app->mailer->compose($viewMail, ['model' => $user])
+                    ->setSubject(Yii::t('app.member.mail', $subjectMail))
+                    ->setFrom(Yii::$app->params['smtpEmail'])
+                    ->setTo($user->email);
+            }
+            $sendNumber = Yii::$app->mailer->sendMultiple($messages);
+            Yii::$app->session->addFlash('success', 'Письмо(а) успешно отправлены к (' . $sendNumber . ') участникам');
+
+//            print_r($usersObjs);
+
+//            exit;
+            return $this->redirect('bulk-email');
+        }
+
+        $dataProvider = new ActiveDataProvider([
+            'query' => Member::find(),
+            'pagination' => [
+                'pageSize' => 0,
+            ],
+        ]);
+
+        return $this->render('bulk-email', ['dataProvider' => $dataProvider]);
     }
 
     /**

@@ -33,10 +33,10 @@ class SiteController extends Controller
      *
      * @return mixed
      */
-    public function actionIndex()
-    {
-        return $this->render('index');
-    }
+//    public function actionIndex()
+//    {
+//        return $this->render('index');
+//    }
 
 
     public function actionContact()
@@ -64,7 +64,9 @@ class SiteController extends Controller
      */
     public function actionStaticPage($page)
     {
-        return $this->render($page);
+//        print_r(Yii::$app->language); exit;
+
+        return $this->render(Yii::$app->language . DIRECTORY_SEPARATOR . $page);
     }
 
     public function actionSpeakers()

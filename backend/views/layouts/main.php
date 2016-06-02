@@ -12,8 +12,14 @@ use common\widgets\Alert;
 
 $this->registerLinkTag([
     'rel' => 'shortcut icon',
-    'href' => '/favicon.ico?v=3',
+    'href' => '/yii2-admin/favicon.ico?v=4',
     'type' => 'image/x-icon']);
+
+$this->registerMetaTag([
+    'name' => 'generator',
+    'content' => 'Powered by Aleksandr AVTOP Kovalchuk with Yii2 (since 2016)'
+]);
+
 AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
@@ -32,20 +38,21 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => 'Сайт Конференций',
-        'brandUrl' => Yii::$app->homeUrl,
+//        'brandLabel' => 'Сайт Конференций',
+//        'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
     ]);
     $menuItems = [
-        ['label' => 'Home', 'url' => ['/site/index']],
+        ['label' => 'Главная', 'url' => ['/site/index']],
+        ['label' => 'Посмотреть сайт', 'url' => Yii::$app->urlManagerFrontEnd->createUrl('')],
     ];
     if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
+        $menuItems[] = ['label' => Yii::t('app.backend', 'Login'), 'url' => ['/site/login']];
     } else {
         $menuItems[] = [
-            'label' => 'Logout (' . Yii::$app->user->identity->username . ')',
+            'label' => Yii::t('app.backend', 'Logout ({name})', ['name' => Yii::$app->user->identity->username]),
             'url' => ['/site/logout'],
             'linkOptions' => ['data-method' => 'post']
         ];
@@ -57,12 +64,30 @@ AppAsset::register($this);
     NavBar::end();
     ?>
 
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-3 col-md-2 sidebar">
                 <?php
                 $menuItems = [
-                    ['label' => Yii::t('language', 'Участники конференции'), 'url' => ['/member/index']],
+                    [
+                        'label' => Yii::t('language', 'Участники конференции'),
+                        'url' => ['/member/index'],
+                        'options' => ['class' => 'important'],
+                        'linkOptions' => ['class' => 'btn btn-pirate'],
+                    ],
+                    [
+                        'label' => Yii::t('language', 'Организации'),
+                        'url' => ['/member/org'],
+                        'options' => ['class' => 'important'],
+                        'linkOptions' => ['class' => 'btn btn-pirate'],
+                    ],
+                    [
+                        'label' => Yii::t('language', 'Рассылка'),
+                        'url' => ['/member/bulk-email'],
+                        'options' => ['class' => 'important'],
+                        'linkOptions' => ['class' => 'btn btn-pirate'],
+                    ],
                     ['label' => Yii::t('language', 'Контент'), 'url' => ['/blog/post/index']],
                     ['label' => Yii::t('language', 'Файловый менеджер'), 'url' => ['/filemanager/file/index']],
                     ['label' => Yii::t('language', 'Переводы строк'),
@@ -77,10 +102,15 @@ AppAsset::register($this);
                     ],
 
                 ];
-                echo Nav::widget([
-                    'options' => ['class' => 'nav-sidebar'],
-                    'items' => $menuItems,
-                ]); ?>
+                if (!Yii::$app->user->isGuest) {
+                    echo Nav::widget([
+                        'options' => ['class' => 'nav-sidebar'],
+                        'items' => $menuItems,
+                    ]);
+                    Yii::t('app.login', 'Or you can: '); ?> <?= Html::a(Yii::t('app.login', 'Reset password'), ['site/reset-password']);
+                }
+
+                ?>
             </div>
             <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
                 <?= Breadcrumbs::widget([
@@ -94,10 +124,8 @@ AppAsset::register($this);
 </div>
 
 <footer class="footer col-md-offset-2">
-    <div class="container">
-        <p class="pull-left">&copy; Сайт конференций <?= date('Y') ?></p>
-
-        <p class="pull-right"><?= Yii::powered() ?></p>
+    <div class="">
+        <p class="pull-right">Powered by Aleksandr AVTOP Kovalchuk with Yii2 (since 2016)</p>
     </div>
 </footer>
 

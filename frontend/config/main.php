@@ -12,6 +12,8 @@ return [
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
+//    'sourceLanguage' => $params['activeLanguages']['ru'],
+    'language' => $params['activeLanguages']['ru'],
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
         'assetManager' => [
@@ -46,6 +48,49 @@ return [
             // List all supported languages here
             // Make sure, you include your app's default language.
             'languages' => $params['activeLanguages'],
+            'rules' => [
+                [
+                    'pattern' => '',
+                    'route' => 'site/static-page',
+                    'defaults' => ['page' => 'index'],
+                ],
+                [
+                    'pattern' => 'about',
+                    'route' => 'site/static-page',
+                    'defaults' => ['page' => 'about'],
+                ],
+                [
+                    'pattern' => 'venue',
+                    'route' => 'site/static-page',
+                    'defaults' => ['page' => 'location'],
+                ],
+                [
+                    'pattern' => 'speakers',
+                    'route' => 'site/static-page',
+                    'defaults' => ['page' => 'speakers'],
+                ],
+                [
+                    'pattern' => 'conditions',
+                    'route' => 'site/static-page',
+                    'defaults' => ['page' => 'conditions'],
+                ],
+                [
+                    'pattern' => 'program',
+                    'route' => 'site/static-page',
+                    'defaults' => ['page' => 'program'],
+                ],
+                [
+                    'pattern' => 'articles',
+                    'route' => 'site/static-page',
+                    'defaults' => ['page' => 'articles'],
+                ],
+                [
+                    'pattern' => 'contact-us',
+                    'route' => 'site/static-page',
+                    'defaults' => ['page' => 'contact-us'],
+                ],
+                'registration' => 'member/create'
+            ],
         ]
     ],
     'params' => $params,
