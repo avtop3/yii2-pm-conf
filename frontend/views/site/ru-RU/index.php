@@ -226,7 +226,7 @@ $this->params['bodyClass'] = 'homepage';
                     </div>
                 </div>
                 <div class="col-lg-12 all-speakers wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-                    <a href="about-us.html" class="btn btn-default"><i class="fa fa-users"></i> Все докладчики</a>
+                    <a href="/speakers" class="btn btn-default"><i class="fa fa-users"></i> Все докладчики</a>
                 </div>
                 <!--/.col-md-4-->
             </div><!--/.services-->
@@ -247,7 +247,7 @@ $this->params['bodyClass'] = 'homepage';
                     <img class="img-responsive" src="/markup/images/from-conf/b1.jpg" alt="">
                     <div class="overlay">
                         <div class="recent-work-inner">
-                            <a class="preview" href="images/from-conf/b1.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Посмотреть</a>
+                            <a class="preview" href="/markup/images/from-conf/b1.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Посмотреть</a>
                         </div>
                     </div>
                 </div>
@@ -262,7 +262,7 @@ $this->params['bodyClass'] = 'homepage';
                                                             <h3><a href="#">Business theme</a></h3>
                                                             <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
                             -->
-                            <a class="preview" href="images/from-conf/b2.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Посмотреть</a>
+                            <a class="preview" href="/markup/images/from-conf/b2.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Посмотреть</a>
                         </div>
                     </div>
                 </div>
@@ -273,7 +273,7 @@ $this->params['bodyClass'] = 'homepage';
                     <img class="img-responsive" src="/markup/images/from-conf/b3.jpg" alt="">
                     <div class="overlay">
                         <div class="recent-work-inner">
-                            <a class="preview" href="images/from-conf/b3.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Посмотреть</a>
+                            <a class="preview" href="/markup/images/from-conf/b3.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Посмотреть</a>
                         </div>
                     </div>
                 </div>
@@ -284,7 +284,7 @@ $this->params['bodyClass'] = 'homepage';
                     <img class="img-responsive" src="/markup/images/from-conf/b4.jpg" alt="">
                     <div class="overlay">
                         <div class="recent-work-inner">
-                            <a class="preview" href="images/from-conf/b4.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Посмотреть</a>
+                            <a class="preview" href="/markup/images/from-conf/b4.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Посмотреть</a>
                         </div>
                     </div>
                 </div>
@@ -295,7 +295,7 @@ $this->params['bodyClass'] = 'homepage';
                     <img class="img-responsive" src="/markup/images/from-conf/b5.jpg" alt="">
                     <div class="overlay">
                         <div class="recent-work-inner">
-                            <a class="preview" href="images/from-conf/b5.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Посмотреть</a>
+                            <a class="preview" href="/markup/images/from-conf/b5.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Посмотреть</a>
                         </div>
                     </div>
                 </div>
@@ -306,7 +306,7 @@ $this->params['bodyClass'] = 'homepage';
                     <img class="img-responsive" src="/markup/images/from-conf/b6.jpg" alt="">
                     <div class="overlay">
                         <div class="recent-work-inner">
-                            <a class="preview" href="images/from-conf/b6.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Посмотреть</a>
+                            <a class="preview" href="/markup/images/from-conf/b6.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Посмотреть</a>
                         </div>
                     </div>
                 </div>

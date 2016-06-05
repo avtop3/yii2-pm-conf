@@ -38,7 +38,7 @@ $this->title = 'Програма';
                     <li><i class="fa fa-check"></i> Виступи випускників спеціальності «Управління проектами» з доповіддю про власні професійні досягнення.</li>
                 </ul>
             </div>
-            <a href="" class="hvr-shutter-out-horizontal"><p>Завантажити інформаційний лист</p> <i class="fa fa-download" aria-hidden="true"></i></a>
+            <a href="/documents/ua/information_page.pdf" class="hvr-shutter-out-horizontal"><p>Завантажити інформаційний лист</p> <i class="fa fa-download" aria-hidden="true"></i></a>
         </div>
     </div>
 </section>

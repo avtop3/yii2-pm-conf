@@ -38,7 +38,7 @@ $this->title = 'Программа';
                     <li><i class="fa fa-check"></i> Speeches by students graduated in project management about their professional achievements.</li>
                 </ul>
             </div>
-            <a href="" class="hvr-shutter-out-horizontal"><p>DOWNLOAD THE CALL FOR PAPERS</p> <i class="fa fa-download" aria-hidden="true"></i></a>
+            <a href="/documents/en/information_page.pdf" class="hvr-shutter-out-horizontal"><p>DOWNLOAD THE CALL FOR PAPERS</p> <i class="fa fa-download" aria-hidden="true"></i></a>
         </div>
     </div>
 </section>

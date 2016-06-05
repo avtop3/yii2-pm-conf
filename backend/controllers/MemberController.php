@@ -58,11 +58,17 @@ class MemberController extends Controller
     {
         if (Yii::$app->request->post()) {
             $model = $this->findModel($id);
-            Yii::$app->mailer->compose('member-info', ['model' => $model])
+            $messages[] = Yii::$app->mailer->compose('member-info', ['model' => $model])
                 ->setFrom(Yii::$app->params['smtpEmail'])
-                ->setTo([$model->email, 'pm.education.khpi@gmail.com', 'ajiekcahdp3@yandex.ru'])
-                ->setSubject(Yii::t('app.member.mail', 'Confirmation of registration to \'International Scientific Conference\''))
-                ->send();
+                ->setTo([$model->email])
+                ->setSubject(Yii::t('app.member.mail', 'Integrated Management 2017: Confirmation of Registration'));
+
+            $messages[] = Yii::$app->mailer->compose('member-info', ['model' => $model])
+                ->setFrom(Yii::$app->params['smtpEmail'])
+                ->setTo(['ajiekcahdp3@yandex.ru'])//'pm.education.khpi@gmail.com',
+                ->setSubject(Yii::t('app.member.mail', 'Integrated Management 2017: Confirmation of Registration'));
+
+            Yii::$app->mailer->sendMultiple($messages);
         }
         return $this->render('view', [
             'model' => $this->findModel($id),
@@ -160,20 +166,29 @@ class MemberController extends Controller
 
             $viewMail = Yii::$app->request->post('view');
             $usersObjs = Member::find()->where(['id' => Yii::$app->request->post('selection')])->all();
+            $pathPrefix = Yii::getAlias('@public/documents/');
+            $fileName = 'information_page.pdf';
 
             $messages = [];
             foreach ($usersObjs as $user) {
                 $lang = $user->getNativeLanguage();
 
+                $currentMessage = Yii::$app->mailer->compose($viewMail, ['model' => $user])
+                    ->setFrom(Yii::$app->params['smtpEmail'])
+                    ->setTo($user->email);
+
                 if ($viewMail == 'member-invite') {
                     switch ($lang) {
                         case 'uk-UA':
                             $subjectMail = 'Integrated Management 2017: Запрошення до участі у конференції';
+                            $currentMessage->attach($pathPrefix . 'ua/' . $fileName, ['contentType' => 'application/pdf']);
                             break;
                         case 'ru-RU':
                             $subjectMail = 'Integrated Management 2017: Приглашение к участию в конференции';
+                            $currentMessage->attach($pathPrefix . 'ru/' . $fileName, ['contentType' => 'application/pdf']);
                             break;
                         default:
+                            $currentMessage->attach($pathPrefix . 'en/' . $fileName, ['contentType' => 'application/pdf']);
                             $subjectMail = 'Integrated Management 2017: Invitation for Participation';
                     }
                 } else {
@@ -188,13 +203,8 @@ class MemberController extends Controller
                             $subjectMail = 'International Scientific and Practical Conference «Integrated Management 2017»';
                     }
                 }
-
-//                $subjectMail .= $lang;
-
-                $messages[] = Yii::$app->mailer->compose($viewMail, ['model' => $user])
-                    ->setSubject(Yii::t('app.member.mail', $subjectMail))
-                    ->setFrom(Yii::$app->params['smtpEmail'])
-                    ->setTo($user->email);
+                $currentMessage->setSubject(Yii::t('app.member.mail', $subjectMail));
+                $messages[] = $currentMessage;
             }
             $sendNumber = Yii::$app->mailer->sendMultiple($messages);
             Yii::$app->session->addFlash('success', 'Письмо(а) успешно отправлены к (' . $sendNumber . ') участникам');

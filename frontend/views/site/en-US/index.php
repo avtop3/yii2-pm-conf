@@ -226,7 +226,7 @@ $this->params['bodyClass'] = 'homepage';
                     </div>
                 </div>
                 <div class="col-lg-12 all-speakers wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-                    <a href="about-us.html" class="btn btn-default"><i class="fa fa-users"></i> ALL SPEAKERS</a>
+                    <a href="/speakers" class="btn btn-default"><i class="fa fa-users"></i> ALL SPEAKERS</a>
                 </div>
                 <!--/.col-md-4-->
             </div><!--/.services-->

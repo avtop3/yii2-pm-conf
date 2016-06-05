@@ -22,9 +22,9 @@ return [
             'viewPath' => '@common/mail',
             'transport' => [
                 'class' => 'Swift_SmtpTransport',
-                'host' => 'smtp.yandex.ru',
-                'username' => 'pm-edu',
-                'password' => '2exoHkhAXSprkEwDYuDQ',
+                'host' => 'smtp.gmail.com',
+                'username' => 'pm.khpi@gmail.com',
+                'password' => 'IF22Bondar',
                 'port' => '465',
                 'encryption' => 'ssl',
             ],

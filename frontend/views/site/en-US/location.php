@@ -6,7 +6,7 @@
  * Time: 16:40
  */
 
-$this->title = 'About';
+$this->title = 'Conference venue';
 ?>
 
 <section id="location">

@@ -15,7 +15,7 @@ $language = $model->getNativeLanguage();
 $homeUrl = Yii::$app->urlManagerFrontEnd->createUrl('');
 ?>
 <div class="member-info">
-    <h1><?= Yii::t('app.member.mail.invite', 'Dear {name},', ['name' => $model->name]) ?></h1>
+    <h1><?= Yii::t('app.member.mail.invite', 'Dear {name},', ['name' => $model->name], $language) ?></h1>
     <!--    <p>-->
     <? //= Yii::t('app.member.mail.invite', 'You can register here: {regUrl}', ['regUrl' => Html::a($regUrl, $regUrl, ['target' => '_blank'])], $language) ?><!--</p>-->
 

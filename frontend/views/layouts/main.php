@@ -21,6 +21,11 @@ $this->registerMetaTag([
     'content' => '#228B22',
 ]);
 
+$this->registerMetaTag([
+    'name' => 'generator',
+    'content' => 'Powered by Aleksandr AVTOP Kovalchuk with Yii2 (since 2016)'
+]);
+
 
 AppAsset::register($this);
 \rmrevin\yii\fontawesome\cdn\AssetBundle::register($this);
@@ -157,7 +162,7 @@ AppAsset::register($this);
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <p class="text-left"><?= Yii::t('app', 'Кафедра Стратегического Управления НТУ "ХПИ". Все права защищены &copy; 2016 Харьков, Украина') ?></p>
+                    <p class="text-left"><?= Yii::t('app.layout', 'Кафедра Стратегического Управления НТУ "ХПИ". Все права защищены &copy; 2016 Харьков, Украина') ?></p>
                 </div>
             </div>
         </div>

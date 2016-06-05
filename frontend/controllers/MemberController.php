@@ -42,11 +42,17 @@ class MemberController extends Controller
         if ($model->load(Yii::$app->request->post()) && $model->save()) { //&& $model->save()
             Yii::$app->session->setFlash('success', Yii::t('app', 'Success!'));
 
-//            Yii::$app->mailer->compose('member-info', ['model' => $model])
-//                ->setFrom(Yii::$app->params['smtpEmail'])
-//                ->setTo([$model->email, 'pm.education.khpi@gmail.com', 'ajiekcahdp3@yandex.ru'])
-//                ->setSubject(Yii::t('app.member.mail', 'Integrated Management 2017: Confirmation of Registration'))
-//                ->send();
+            $messages[] = Yii::$app->mailer->compose('member-info', ['model' => $model])
+                ->setFrom(Yii::$app->params['smtpEmail'])
+                ->setTo([$model->email])
+                ->setSubject(Yii::t('app.member.mail', 'Integrated Management 2017: Confirmation of Registration'));
+
+            $messages[] = Yii::$app->mailer->compose('member-info', ['model' => $model])
+                ->setFrom(Yii::$app->params['smtpEmail'])
+                ->setTo(['ajiekcahdp3@yandex.ru'])//'pm.education.khpi@gmail.com',
+                ->setSubject(Yii::t('app.member.mail', 'Integrated Management 2017: Confirmation of Registration'));
+
+            Yii::$app->mailer->sendMultiple($messages);
 
             return $this->redirect(Url::home());
         } else {
