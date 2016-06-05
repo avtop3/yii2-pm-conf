@@ -110,7 +110,6 @@ use common\models\Member;
             ],
             'template' => "\n<div class=\"col-lg-6 col-lg-offset-3\">{input}</div>\n<div class=\"col-lg-3 \">{error}</div>"
         ]) ?>
-<!--
         <div class="row">
             <div class="col-lg-4 col-lg-offset-2">
                 <?= BootHtml::activeDropDownList(
@@ -129,7 +128,6 @@ use common\models\Member;
                 ) ?>
             </div>
         </div>
--->
     </div>
 
 
