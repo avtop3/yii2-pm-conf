@@ -233,7 +233,98 @@ $this->params['bodyClass'] = 'homepage';
         </div><!--/.row-->
     </div><!--/.container-->
 </section><!--/#feature-->
-
+<section id="dates">
+    <div class="container">
+        <div class="center wow fadeInDown">
+            <h2>DEADLINES AND KEY DATES</h2>
+            <hr>
+        </div>
+        <div class="row wow fadeInDown">
+            <div class="part">
+                <img src="/markup/images/people.png" alt="">
+                <p class="title">Participation in the Conference</p>
+            </div>
+            <div class="part">
+                <div class="number">
+                    <p>01</p>
+                    <p>October</p>
+                </div>
+                <div class="descr">
+                    <p>Opening date for registration start</p>
+                </div>
+            </div>
+            <div class="part">
+                <div class="number black">
+                    <p>31</p>
+                    <p>December</p>
+                </div>
+                <div class="descr black">
+                    <p>Early registration deadline – registration fee increase</p>
+                </div>
+            </div>
+            <div class="part">
+                <div class="number red">
+                    <p>31</p>
+                    <p>January</p>
+                </div>
+                <div class="descr red">
+                    <p>Registration deadline</p>
+                </div>
+            </div>
+            <div class="part">
+                <div class="number red">
+                    <p>31</p>
+                    <p>January</p>
+                </div>
+                <div class="descr red">
+                    <p>Deadline for registration fee payment</p>
+                </div>
+            </div>
+        </div>
+        <div class="row wow fadeInDown">
+            <div class="part">
+                <img src="/markup/images/article.png" alt="" class="article">
+                <p class="title">Paper Publication</p>
+            </div>
+            <div class="part">
+                <div class="number">
+                    <p>01</p>
+                    <p>October</p>
+                </div>
+                <div class="descr">
+                    <p>Opening date for paper submission</p>
+                </div>
+            </div>
+            <div class="part">
+                <div class="number red">
+                    <p>30</p>
+                    <p>November</p>
+                </div>
+                <div class="descr red">
+                    <p>Deadline for paper submission</p>
+                </div>
+            </div>
+            <div class="part">
+                <div class="number black">
+                    <p>15</p>
+                    <p>December</p>
+                </div>
+                <div class="descr black">
+                    <p>Paper review and notification of acceptance</p>
+                </div>
+            </div>
+            <div class="part">
+                <div class="number red">
+                    <p>25</p>
+                    <p>December</p>
+                </div>
+                <div class="descr red">
+                    <p>Deadline for publication payment</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <section id="recent-works">
     <div class="container">
         <div class="center wow fadeInDown">
