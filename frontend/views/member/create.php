@@ -12,7 +12,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="member-create">
     <div class="container">
-        <h1><?= Html::encode($this->title) ?></h1>
+        <h2><?= Html::encode($this->title) ?></h2>
 
         <?= $this->render('@common/views/member/_form', [
             'model' => $model,

@@ -68,17 +68,17 @@ AppAsset::register($this);
 
                     $langMenuItems = [
                         [
-                            'label' => Yii::t('app', 'En'),
+                            'label' => Yii::t('app', 'EN'),
                             'url' => \yii\helpers\Url::current(['language' => 'en']),
                             'active' => Yii::$app->language === 'en-US',
                         ],
                         [
-                            'label' => Yii::t('app', 'Uk'),
+                            'label' => Yii::t('app', 'UA'),
                             'url' => \yii\helpers\Url::current(['language' => 'uk']),
                             'active' => Yii::$app->language === 'uk-UA'
                         ],
                         [
-                            'label' => Yii::t('app', 'Ru'),
+                            'label' => Yii::t('app', 'RU'),
                             'url' => \yii\helpers\Url::current(['language' => 'ru']),
                             'active' => Yii::$app->language == 'ru-RU',
                         ],
@@ -148,11 +148,11 @@ AppAsset::register($this);
 
 
     <div id="regLink">
-        <p><?= Yii::t('app.layout', 'Стоимость участия<br>350 грн.') ?></p>
+        <p><?= Yii::t('app.layout', 'Participation fee <br>350 uah') ?></p>
         <div class="img-left">
             <img src="/markup/images/arrow_up_1.png" alt="">
         </div>          
-        <a href="<?= \yii\helpers\Url::to(['/member/create']) ?>"><?= Yii::t('app.layout', 'Регистрация') ?></a>
+        <a href="<?= \yii\helpers\Url::to(['/member/create']) ?>"><?= Yii::t('app.layout', 'Registration') ?></a>
         <div class="img-right">
             <img src="/markup/images/arrow_up_1.png" alt="">
         </div>
@@ -162,7 +162,7 @@ AppAsset::register($this);
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <p class="text-left"><?= Yii::t('app.layout', 'Кафедра Стратегического Управления НТУ "ХПИ". Все права защищены &copy; 2016 Харьков, Украина') ?></p>
+                    <p class="text-left"><?= Yii::t('app.layout', 'Strategic Management Department, NTU "KhPI". All rights reserved © {year} Kharkiv, Ukraine', ['year' => date('Y')]) ?></p>
                 </div>
             </div>
         </div>
