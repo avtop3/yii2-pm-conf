@@ -153,6 +153,7 @@ $this->params['bodyClass'] = 'homepage';
     <div class="container">
         <div class="center wow fadeInDown">
             <h2>Ключевые докладчики</h2>
+            <hr>
         </div>
 
         <div class="row">
@@ -233,7 +234,14 @@ $this->params['bodyClass'] = 'homepage';
         </div><!--/.row-->
     </div><!--/.container-->
 </section><!--/#feature-->
-
+<section id="dates">
+    <div class="container">
+        <div class="center wow fadeInDown">
+            <h2>Ключевые даты</h2>
+            <hr>
+        </div>
+    </div>
+</section>
 <section id="recent-works">
     <div class="container">
         <div class="center wow fadeInDown">

@@ -170,7 +170,12 @@ body > section {
 /*************************
 *******Header******
 **************************/
-
+#articles{
+    padding: 0;
+}
+#articles h2{
+    color: #004a00;
+}
 #header .search {
     display: inline-block;
     float: right;
@@ -977,10 +982,12 @@ a.accordion-toggle i {
 
 .partners ul li {
     display: inline-block;
-    float: left;
-    width: 20%;
+    vertical-align: middle;
+    width: 19%;
 }
-
+.partners ul li a {
+    display: inline-block;
+}
 #conatcat-info {
     background: #fff url(../images/contact.png) no-repeat 90% 0;
     padding: 30px 0;
@@ -2532,7 +2539,7 @@ shortcodes page css
 }
 
 #footer a:hover {
-    color: #c52d2f;
+    color: #fff;
 }
 
 #footer ul {

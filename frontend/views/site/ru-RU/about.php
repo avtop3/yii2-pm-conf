@@ -25,10 +25,10 @@ $this->title = 'О конференции';
 
                         <p class="fname">Евгений Иванович</p>
                         <hr>
-                        <p class="proff"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Д.т.н., профессор,
+                        <p class="proff"><i class="fa fa-graduation-cap" aria-hidden="true"></i>  Д.т.н., профессор,
                             ректор НТУ «ХПИ», член-корреспондент НАНУ</p>
 
-                        <p class="from"><i class="fa fa-map-marker"></i> Харьков, Украина</p>
+                        <p class="from"><i class="fa fa-map-marker"></i>  Харьков, Украина</p>
                     </div>
                 </div>
                 <div class="col-lg-6 item hvr-float-shadow wow fadeInUp" data-wow-delay="0.6s" data-offset="0">
@@ -40,9 +40,9 @@ $this->title = 'О конференции';
 
                         <p class="fname">Сергей Дмитриевич</p>
                         <hr>
-                        <p class="proff"><i class="fa fa-graduation-cap"></i> Д.т.н., профессор, КНУСА</p>
+                        <p class="proff"><i class="fa fa-graduation-cap"></i>  Д.т.н., профессор, КНУСА</p>
 
-                        <p class="from"><i class="fa fa-map-marker"></i> Киев, Украина</p>
+                        <p class="from"><i class="fa fa-map-marker"></i>  Киев, Украина</p>
                     </div>
                 </div>
             </div>
@@ -58,10 +58,10 @@ $this->title = 'О конференции';
 
                         <p class="fname">Андрей Петрович</p>
                         <hr>
-                        <p class="proff"><i class="fa fa-graduation-cap"></i>Д.т.н., профессор, проректор по научной
+                        <p class="proff"><i class="fa fa-graduation-cap"></i> Д.т.н., профессор, проректор по научной
                             работе НТУ «ХПИ»</p>
 
-                        <p class="from"><i class="fa fa-map-marker"></i> Харьков, Украина</p>
+                        <p class="from"><i class="fa fa-map-marker"></i>  Харьков, Украина</p>
                     </div>
                 </div>
                 <div class="col-lg-6 item hvr-float-shadow wow fadeInUp" data-wow-delay="1s" data-offset="0">
@@ -73,9 +73,9 @@ $this->title = 'О конференции';
 
                         <p class="fname">Игорь Владимирович</p>
                         <hr>
-                        <p class="proff"><i class="fa fa-graduation-cap"></i> Д.т.н., профессор, НТУ «ХПИ» </p>
+                        <p class="proff"><i class="fa fa-graduation-cap"></i>  Д.т.н., профессор, НТУ «ХПИ» </p>
 
-                        <p class="from"><i class="fa fa-map-marker"></i> Харьков, Украина</p>
+                        <p class="from"><i class="fa fa-map-marker"></i>  Харьков, Украина</p>
                     </div>
                 </div>
             </div>
@@ -91,9 +91,9 @@ $this->title = 'О конференции';
 
                         <p class="fname">Игорь Владимирович</p>
                         <hr>
-                        <p class="proff"><i class="fa fa-graduation-cap"></i> Д.т.н., профессор, ХНУГХ</p>
+                        <p class="proff"><i class="fa fa-graduation-cap"></i>  Д.т.н., профессор, ХНУГХ</p>
 
-                        <p class="from"><i class="fa fa-map-marker"></i> Харьков, Украина</p>
+                        <p class="from"><i class="fa fa-map-marker"></i>  Харьков, Украина</p>
                     </div>
                 </div>
                 <div class="col-lg-4 item hvr-float-shadow wow fadeInUp" data-wow-delay="1.4s" data-offset="0">
@@ -105,9 +105,9 @@ $this->title = 'О конференции';
 
                         <p class="fname">Василий Олегович</p>
                         <hr>
-                        <p class="proff"><i class="fa fa-graduation-cap"></i> К.т.н., доцент, ЛНАУ</p>
+                        <p class="proff"><i class="fa fa-graduation-cap"></i>  К.т.н., доцент, ЛНАУ</p>
 
-                        <p class="from"><i class="fa fa-map-marker"></i> Львов, Украина</p>
+                        <p class="from"><i class="fa fa-map-marker"></i>  Львов, Украина</p>
                     </div>
                 </div>
                 <div class="col-lg-4 item hvr-float-shadow wow fadeInUp" data-wow-delay="1.6s" data-offset="0">
@@ -119,9 +119,9 @@ $this->title = 'О конференции';
 
                         <p class="fname">Антон Иванович</p>
                         <hr>
-                        <p class="proff"><i class="fa fa-graduation-cap"></i> К.т.н., доцент, НТУ «ХПИ»</p>
+                        <p class="proff"><i class="fa fa-graduation-cap"></i>  К.т.н., доцент, НТУ «ХПИ»</p>
 
-                        <p class="from"><i class="fa fa-map-marker"></i> Харьков, Украина</p>
+                        <p class="from"><i class="fa fa-map-marker"></i>  Харьков, Украина</p>
                     </div>
                 </div>
             </div>
@@ -137,9 +137,9 @@ $this->title = 'О конференции';
 
                         <p class="fname">Анна Владимировна</p>
                         <hr>
-                        <p class="proff"><i class="fa fa-graduation-cap"></i> НТУ «ХПИ»</p>
+                        <p class="proff"><i class="fa fa-graduation-cap"></i>  НТУ «ХПИ»</p>
 
-                        <p class="from"><i class="fa fa-map-marker"></i> Харьков, Украина</p>
+                        <p class="from"><i class="fa fa-map-marker"></i>  Харьков, Украина</p>
                     </div>
                 </div>
             </div>
@@ -161,9 +161,9 @@ $this->title = 'О конференции';
 
                         <p class="fname">Игорь Владимирович</p>
                         <hr>
-                        <p class="proff"><i class="fa fa-graduation-cap"></i> Д.т.н., профессор, НТУ «ХПИ»</p>
+                        <p class="proff"><i class="fa fa-graduation-cap"></i>  Д.т.н., профессор, НТУ «ХПИ»</p>
 
-                        <p class="from"><i class="fa fa-map-marker"></i> Харьков, Украина</p>
+                        <p class="from"><i class="fa fa-map-marker"></i>  Харьков, Украина</p>
                     </div>
                 </div>
             </div>
@@ -179,9 +179,9 @@ $this->title = 'О конференции';
 
                         <p class="fname">Константин Викторович</p>
                         <hr>
-                        <p class="proff"><i class="fa fa-graduation-cap"></i> Д.т.н., профессор, ИКИТН НУК</p>
+                        <p class="proff"><i class="fa fa-graduation-cap"></i>  Д.т.н., профессор, ИКИТН НУК</p>
 
-                        <p class="from"><i class="fa fa-map-marker"></i> Николаев, Украина</p>
+                        <p class="from"><i class="fa fa-map-marker"></i>  Николаев, Украина</p>
                     </div>
                 </div>
                 <div class="col-lg-4 item hvr-float-shadow wow fadeInUp" data-wow-delay="0.8s" data-offset="0">
@@ -193,9 +193,9 @@ $this->title = 'О конференции';
 
                         <p class="fname">Виктор Дмитриевич</p>
                         <hr>
-                        <p class="proff"><i class="fa fa-graduation-cap"></i> Д.т.н., профессор, ОНПУ</p>
+                        <p class="proff"><i class="fa fa-graduation-cap"></i>  Д.т.н., профессор, ОНПУ</p>
 
-                        <p class="from"><i class="fa fa-map-marker"></i> Одесса, Украина</p>
+                        <p class="from"><i class="fa fa-map-marker"></i>  Одесса, Украина</p>
                     </div>
                 </div>
                 <div class="col-lg-4 item hvr-float-shadow wow fadeInUp" data-wow-delay="1s" data-offset="0">
@@ -207,9 +207,9 @@ $this->title = 'О конференции';
 
                         <p class="fname">Елена Владимировна</p>
                         <hr>
-                        <p class="proff"><i class="fa fa-graduation-cap"></i> К.т.н., доцент, НТУ «ХПИ»</p>
+                        <p class="proff"><i class="fa fa-graduation-cap"></i>  К.т.н., доцент, НТУ «ХПИ»</p>
 
-                        <p class="from"><i class="fa fa-map-marker"></i> Харьков, Украина</p>
+                        <p class="from"><i class="fa fa-map-marker"></i>  Харьков, Украина</p>
                     </div>
                 </div>
             </div>
@@ -225,10 +225,10 @@ $this->title = 'О конференции';
 
                         <p class="fname">Александр Васильевич</p>
                         <hr>
-                        <p class="proff"><i class="fa fa-graduation-cap"></i> Д.т.н., профессор, ННЦ «ИМЭСХ» НААН
+                        <p class="proff"><i class="fa fa-graduation-cap"></i>  Д.т.н., профессор, ННЦ «ИМЭСХ» НААН
                             Украины</p>
 
-                        <p class="from"><i class="fa fa-map-marker"></i> Киев, Украина</p>
+                        <p class="from"><i class="fa fa-map-marker"></i>  Киев, Украина</p>
                     </div>
                 </div>
                 <div class="col-lg-3 item hvr-float-shadow wow fadeInUp" data-wow-delay="1.4s" data-offset="0">
@@ -240,9 +240,9 @@ $this->title = 'О конференции';
 
                         <p class="fname">Игбал Алиджанович</p>
                         <hr>
-                        <p class="proff"><i class="fa fa-graduation-cap"></i> Д.т.н., профессор, AzPMA</p>
+                        <p class="proff"><i class="fa fa-graduation-cap"></i>  Д.т.н., профессор, AzPMA</p>
 
-                        <p class="from"><i class="fa fa-map-marker"></i> Баку, Азербайджан</p>
+                        <p class="from"><i class="fa fa-map-marker"></i>  Баку, Азербайджан</p>
                     </div>
                 </div>
                 <div class="col-lg-3 item hvr-float-shadow wow fadeInUp" data-wow-delay="1.6s" data-offset="0">
@@ -254,9 +254,9 @@ $this->title = 'О конференции';
 
                         <p class="fname">Кирил</p>
                         <hr>
-                        <p class="proff"><i class="fa fa-graduation-cap"></i> Д.э.н., профессор, УНМХ</p>
+                        <p class="proff"><i class="fa fa-graduation-cap"></i>  Д.э.н., профессор, УНМХ</p>
 
-                        <p class="from"><i class="fa fa-map-marker"></i> София, Болгария</p>
+                        <p class="from"><i class="fa fa-map-marker"></i>  София, Болгария</p>
                     </div>
                 </div>
                 <div class="col-lg-3 item hvr-float-shadow wow fadeInUp" data-wow-delay="1.8s" data-offset="0">
@@ -268,10 +268,10 @@ $this->title = 'О конференции';
 
                         <p class="fname">Сергей Константинович</p>
                         <hr>
-                        <p class="proff"><i class="fa fa-graduation-cap"></i> Д.т.н., профессор, ГП НПКГ
+                        <p class="proff"><i class="fa fa-graduation-cap"></i>  Д.т.н., профессор, ГП НПКГ
                             «Зоря»-«Машпроект»</p>
 
-                        <p class="from"><i class="fa fa-map-marker"></i> Николаев, Украина</p>
+                        <p class="from"><i class="fa fa-map-marker"></i>  Николаев, Украина</p>
                     </div>
                 </div>
             </div>
