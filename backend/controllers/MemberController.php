@@ -65,7 +65,7 @@ class MemberController extends Controller
 
             $messages[] = Yii::$app->mailer->compose('member-info', ['model' => $model])
                 ->setFrom(Yii::$app->params['smtpEmail'])
-                ->setTo(['ajiekcahdp3@yandex.ru'])//'pm.education.khpi@gmail.com',
+                ->setTo(['pm.education.khpi@gmail.com'])//'pm.education.khpi@gmail.com',
                 ->setSubject(Yii::t('app.member.mail', 'Integrated Management 2017: Confirmation of Registration'));
 
             Yii::$app->mailer->sendMultiple($messages);
