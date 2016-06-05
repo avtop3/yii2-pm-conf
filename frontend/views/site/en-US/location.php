@@ -11,12 +11,12 @@ $this->title = 'About';
 
 <section id="location">
     <div class="container">
-        <h2>Место проведения</h2>
+        <h2>CONFERENCE VENUE</h2>
         <div class="row">
             <div class="col-lg-6 txt-block right-padd">
-                <p><strong>Курортный поселок Славское Львовской области</strong> – благодатное место для отдыха в любое время года. Курорт расположен в 140 км от Львова в районе двух рек Опир и Славка и окружен со всех сторон горами. </p>
-                <p>Горная жемчужина радостно принимает почитателей настоящей красоты украинских Карпат, желающих почувствовать себя частью удивительного мира. Здесь Вы получите наслаждение от карпатских горнолыжных трасс. </p>
-                <p>К Вашему вниманию есть огромное количество трасс всех уровней сложности, которые находятся на склонах гор Тростян, Погар, Кремень, Менчил и Высокий Верх.</p>
+                <p><strong>The Conference will be held in the resort village Slavske, Lviv region </strong>– a picturesque place for a holiday at any time of the year. The resort is located 140 km from Lviv in the area of two rivers Opir and Slavka and is surrounded on all sides by mountains. </p>
+                <p>Mountain pearl happily accepts fans of real beauty of the Ukrainian Carpathians who want to feel part of the wonderful world. Here you will get pleasure from the Carpathian ski slopes. </p>
+                <p>To your attention there's a huge amount of groomed pistes of all difficulty levels, which are located on the slopes of the mountains Trostyan, Pohar, Kremin, Menchu and High Top.</p>
             </div>
             <div class="col-lg-6 img-block">
                 <img src="/markup/images/location/ph-1.jpg" alt="">
@@ -27,23 +27,23 @@ $this->title = 'About';
                 <img src="/markup/images/location/ph-2.jpg" alt="">
             </div>
             <div class="col-lg-6 txt-block left-padd">
-                <p><strong>Гостиничный комплекс «Жемчужина Карпат»</strong> расположен среди прекрасных Сколивских Бескидов. Имеет официальный сертификат 3*. Оригинальный стиль зданий отеля напоминает архитектуру Галичины начала ХХ века. </p>
-                <p>В двух корпусах, выполненных в карпатском стиле, Вам предложат уютные одноместные и двухместные номера категории стандарт, полулюкс и люкс. Из всех комнат отеля Вам откроется прекрасный горный пейзаж.</p>
-                <p>Вас радушно встретит ресторан, оформленный руками карпатских мастеров. Повара ресторана предложат Вам эксклюзивные блюда: казацкую мамалыгу, грибы в сметане, отбивную "Тростян" и селедку с яблоками.</p>
+                <p><strong>The hotel complex "Pearl of the Carpathians"</strong> is located in the beautiful Beskid Skolivski massif. It has an official certificate of 3*. The original style of the hotel buildings resembles the architecture of the early twentieth century of Galicia. </p>
+                <p>The two hotel buildings made in the Carpathian style, offer cozy single and double standard rooms, junior suites and suites. From all the rooms of the hotel you will discover a beautiful mountain landscape.</p>
+                <p>You will be welcomed in the restaurant decorated by the hands of the Carpathian masters. Cooks of the restaurant will offer exclusive dishes: Cossack cornmeal mush, mushrooms in sour cream, chop "Trostyan" and herring with apples.</p>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-6 txt-block right-padd">
-                <p><strong>Участникам конференции предоставляется скидка на проживание в размере 15%!</strong><br>
-                    Поспешите, количество свободных номеров ограничено!</p>
+                <p><strong>Conference participants will receive a discount on accommodation at the rate of 15%!</strong><br>
+                    Hurry up, the number of rooms available is limited!</p>
                 <div class="contacts">
-                    <p><strong>Контактная информация</strong></p>
-                    <p>Адрес: Славское, ул. Франка 43-Б</p>
-                    <p>Тел.: +38 (050) 315 8000</p>
+                    <p><strong>Contact Information</strong></p>
+                    <p>Address: Slavske, Lviv region, Franko Str., 43-B</p>
+                    <p>Phone: +38 (050) 315 8000</p>
                     <p>Email: office@perlyna.com</p>
                 </div>
                 <div class="booking">
-                    <p><strong>Бронирование отеля:</strong></p>
+                    <p><strong>Hotel Reservation:</strong></p>
                     <a href="http://perlyna.com/"><img src="/markup/images/location/HotelLogo.png" alt=""></a>
                     <a href="http://www.booking.com/hotel/ua/perlyna-karpat.ru.html"><img src="/markup/images/location/Bookingcom.png" alt=""></a>
                 </div>

@@ -11,7 +11,8 @@
 #conditions .requisites,
 #conditions .requisites div,
 #location .container,
-#location .container .txt-block {
+#location .container .txt-block,
+#insidePhoto .container {
   padding-left: 0;
   padding-right: 0;
 }
@@ -612,6 +613,10 @@ hr {
 }
 #speakers .container .tabs .tab-content {
   padding: 30px 0 20px;
+  text-align: justify;
+}
+#speakers .container .tabs .tab-content .speaker {
+  margin-bottom: 30px;
 }
 #speakers .container .tabs .tab-content .speaker .row {
   margin: 0;
@@ -784,6 +789,18 @@ hr {
 #regLink .img-right img {
   transform: rotate(270deg);
 }
+ul#language-selector {
+  padding: 10px 0;
+}
+ul#language-selector li {
+  padding: 0 10px;
+}
+ul#language-selector li.active {
+  background: #228b22;
+}
+.member-create .hidden.info-for-speaker {
+  display: block !important;
+}
 .form-horizontal .control-label,
 .form-horizontal .radio,
 .form-horizontal .checkbox,
@@ -794,6 +811,10 @@ hr {
 .form-horizontal h3 {
   color: #333;
   font-size: 22px;
+  margin-top: 40px;
+}
+.form-horizontal h3:hover {
+  color: #333;
 }
 .form-horizontal .summary-info .success th {
   text-align: center;

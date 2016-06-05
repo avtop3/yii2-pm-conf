@@ -140,38 +140,34 @@ $this->title = 'About';
 
         <div class="container">
             <div class="item-group col-lg-3">
-                <h3 class="wow fadeIn" data-wow-delay="0.4s" data-offset="0">Председатель</h3>
+                <h3 class="wow fadeIn" data-wow-delay="0.4s" data-offset="0">Chairman</h3>
 
                 <div class="col-lg-12 item hvr-float-shadow wow fadeInUp" data-wow-delay="0.4s" data-offset="0">
                     <div class="img-block">
                         <img src="/markup/images/speakers/kononenko.jpg" alt="kononenko">
                     </div>
                     <div class="txt-block">
-                        <p class="sname">Кононенко</p>
-
-                        <p class="fname">Игорь Владимирович</p>
+                        <p class="sname">Igor KONONENKO</p>
                         <hr>
-                        <p class="proff"><i class="fa fa-graduation-cap"></i> Д.т.н., профессор, НТУ «ХПИ»</p>
+                        <p class="proff"><i class="fa fa-graduation-cap"></i> Doctor of Technical Sciences, Professor, NTU "KhPI"                            </p>
 
-                        <p class="from"><i class="fa fa-map-marker"></i> Харьков, Украина</p>
+                        <p class="from"><i class="fa fa-map-marker"></i> Kharkiv, Ukraine</p>
                     </div>
                 </div>
             </div>
             <div class="item-group col-lg-9">
-                <h3 class="wow fadeIn" data-wow-delay="0.4s" data-offset="0">Члены программного комитета</h3>
+                <h3 class="wow fadeIn" data-wow-delay="0.4s" data-offset="0">Program Committee Members</h3>
 
                 <div class="col-lg-4 item hvr-float-shadow wow fadeInUp" data-wow-delay="0.6s" data-offset="0">
                     <div class="img-block">
                         <img src="/markup/images/speakers/koshkin.jpg" alt="koshkin">
                     </div>
                     <div class="txt-block">
-                        <p class="sname">Кошкин</p>
-
-                        <p class="fname">Константин Викторович</p>
+                        <p class="sname">Konstantin KOSHKIN</p>
                         <hr>
-                        <p class="proff"><i class="fa fa-graduation-cap"></i> Д.т.н., профессор, ИКИТН НУК</p>
+                        <p class="proff"><i class="fa fa-graduation-cap"></i> Doctor of Technical Sciences, Professor, Admiral Makarov NUS</p>
 
-                        <p class="from"><i class="fa fa-map-marker"></i> Николаев, Украина</p>
+                        <p class="from"><i class="fa fa-map-marker"></i> Mykolayiv, Ukraine</p>
                     </div>
                 </div>
                 <div class="col-lg-4 item hvr-float-shadow wow fadeInUp" data-wow-delay="0.8s" data-offset="0">
@@ -179,13 +175,11 @@ $this->title = 'About';
                         <img src="/markup/images/speakers/gogunsky.jpg" alt="gogunsky">
                     </div>
                     <div class="txt-block">
-                        <p class="sname">Гогунский</p>
-
-                        <p class="fname">Виктор Дмитриевич</p>
+                        <p class="sname">Viktor GOGUNSKY</p>
                         <hr>
-                        <p class="proff"><i class="fa fa-graduation-cap"></i> Д.т.н., профессор, ОНПУ</p>
+                        <p class="proff"><i class="fa fa-graduation-cap"></i> Doctor of Technical Sciences, Professor, ONPU</p>
 
-                        <p class="from"><i class="fa fa-map-marker"></i> Одесса, Украина</p>
+                        <p class="from"><i class="fa fa-map-marker"></i> Odesa, Ukraine</p>
                     </div>
                 </div>
                 <div class="col-lg-4 item hvr-float-shadow wow fadeInUp" data-wow-delay="1s" data-offset="0">
@@ -193,13 +187,13 @@ $this->title = 'About';
                         <img src="/markup/images/speakers/loback.jpg" alt="loback">
                     </div>
                     <div class="txt-block">
-                        <p class="sname">Лобач</p>
+                        <p class="sname">Helena LOBACH</p>
 
-                        <p class="fname">Елена Владимировна</p>
+                        <p class="fname"></p>
                         <hr>
-                        <p class="proff"><i class="fa fa-graduation-cap"></i> К.т.н., доцент, НТУ «ХПИ»</p>
+                        <p class="proff"><i class="fa fa-graduation-cap"></i> Ph.D., Associate Professor, NTU «KhPI»</p>
 
-                        <p class="from"><i class="fa fa-map-marker"></i> Харьков, Украина</p>
+                        <p class="from"><i class="fa fa-map-marker"></i>Kharkiv, Ukraine</p>
                     </div>
                 </div>
             </div>
@@ -211,14 +205,11 @@ $this->title = 'About';
                         <img src="/markup/images/speakers/sydorchuk.jpg" alt="sydorchuk">
                     </div>
                     <div class="txt-block">
-                        <p class="sname">Сидорчук</p>
-
-                        <p class="fname">Александр Васильевич</p>
+                        <p class="sname">Alexander SYDORCHUK</p>
                         <hr>
-                        <p class="proff"><i class="fa fa-graduation-cap"></i> Д.т.н., профессор, ННЦ «ИМЭСХ» НААН
-                            Украины</p>
+                        <p class="proff"><i class="fa fa-graduation-cap"></i>Doctor of Technical Sciences, Professor, NSC «IMESH» NAASU</p>
 
-                        <p class="from"><i class="fa fa-map-marker"></i> Киев, Украина</p>
+                        <p class="from"><i class="fa fa-map-marker"></i> Kyiv, Ukraine</p>
                     </div>
                 </div>
                 <div class="col-lg-3 item hvr-float-shadow wow fadeInUp" data-wow-delay="1.4s" data-offset="0">
@@ -226,13 +217,11 @@ $this->title = 'About';
                         <img src="/markup/images/speakers/babaev.jpg" alt="babaev">
                     </div>
                     <div class="txt-block">
-                        <p class="sname">Бабаев</p>
-
-                        <p class="fname">Игбал Алиджанович</p>
+                        <p class="sname">Igbal BABAEV</p>
                         <hr>
-                        <p class="proff"><i class="fa fa-graduation-cap"></i> Д.т.н., профессор, AzPMA</p>
+                        <p class="proff"><i class="fa fa-graduation-cap"></i> Doctor of Technical Sciences, Professor, AzPMA</p>
 
-                        <p class="from"><i class="fa fa-map-marker"></i> Баку, Азербайджан</p>
+                        <p class="from"><i class="fa fa-map-marker"></i> Baku, Azerbaijan</p>
                     </div>
                 </div>
                 <div class="col-lg-3 item hvr-float-shadow wow fadeInUp" data-wow-delay="1.6s" data-offset="0">
@@ -240,13 +229,11 @@ $this->title = 'About';
                         <img src="/markup/images/speakers/todorov.jpg" alt="todorov">
                     </div>
                     <div class="txt-block">
-                        <p class="sname">Тодоров</p>
-
-                        <p class="fname">Кирил</p>
+                        <p class="sname">Kiril TODOROV</p>
                         <hr>
-                        <p class="proff"><i class="fa fa-graduation-cap"></i> Д.э.н., профессор, УНМХ</p>
+                        <p class="proff"><i class="fa fa-graduation-cap"></i>Doctor of Economic Sciences, Professor, UNWE</p>
 
-                        <p class="from"><i class="fa fa-map-marker"></i> София, Болгария</p>
+                        <p class="from"><i class="fa fa-map-marker"></i>Sofia, Bulgaria</p>
                     </div>
                 </div>
                 <div class="col-lg-3 item hvr-float-shadow wow fadeInUp" data-wow-delay="1.8s" data-offset="0">
@@ -254,14 +241,11 @@ $this->title = 'About';
                         <img src="/markup/images/speakers/chernov.jpg" alt="chernov">
                     </div>
                     <div class="txt-block">
-                        <p class="sname">Чернов</p>
-
-                        <p class="fname">Сергей Константинович</p>
+                        <p class="sname">Sergey CHERNOV</p>
                         <hr>
-                        <p class="proff"><i class="fa fa-graduation-cap"></i> Д.т.н., профессор, ГП НПКГ
-                            «Зоря»-«Машпроект»</p>
+                        <p class="proff"><i class="fa fa-graduation-cap"></i> Doctor of Technical Sciences, Professor, "Zorya-Mashproekt"</p>
 
-                        <p class="from"><i class="fa fa-map-marker"></i> Николаев, Украина</p>
+                        <p class="from"><i class="fa fa-map-marker"></i>  Mykolayiv, Ukraine</p>
                     </div>
                 </div>
             </div>

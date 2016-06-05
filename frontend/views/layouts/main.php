@@ -51,7 +51,7 @@ AppAsset::register($this);
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                             <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fa fa-vk"></i></a></li>
                             <li><a href="#"><i class="fa fa-skype"></i></a></li>
                         </ul>
 
@@ -63,17 +63,17 @@ AppAsset::register($this);
 
                     $langMenuItems = [
                         [
-                            'label' => Yii::t('app', 'English'),
+                            'label' => Yii::t('app', 'En'),
                             'url' => \yii\helpers\Url::current(['language' => 'en']),
                             'active' => Yii::$app->language === 'en-US',
                         ],
                         [
-                            'label' => Yii::t('app', 'Ukrainian'),
+                            'label' => Yii::t('app', 'Uk'),
                             'url' => \yii\helpers\Url::current(['language' => 'uk']),
                             'active' => Yii::$app->language === 'uk-UA'
                         ],
                         [
-                            'label' => Yii::t('app', 'Russian'),
+                            'label' => Yii::t('app', 'Ru'),
                             'url' => \yii\helpers\Url::current(['language' => 'ru']),
                             'active' => Yii::$app->language == 'ru-RU',
                         ],
@@ -122,7 +122,7 @@ AppAsset::register($this);
     ];
 
     echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
+        'options' => ['class' => 'navbar-nav navbar-left'],
         'items' => $menuItems,
     ]);
     NavBar::end();
@@ -140,28 +140,28 @@ AppAsset::register($this);
 <?= $content ?>
 
 <!--/#bottom-->
-<div id="regLink">
-    <div class="img-left">
-        <img src="/markup/images/arrow_up_1.png" alt="">
-    </div>
-    <a href="<?= \yii\helpers\Url::to(['/member/create']) ?>"><?= Yii::t('app.layout', 'Registration') ?></a>
-
-    <div class="img-right">
-        <img src="/markup/images/arrow_up_1.png" alt="">
-    </div>
-    <p><?= Yii::t('app.layout', 'Participation fee <br>350 uah') ?></p>
-</div>
 
 
-<footer id="footer" class="midnight-blue">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <p class="text-left"><?= Yii::t('app', 'copyright') ?></p>
-            </div>
+    <div id="regLink">
+        <p><?= Yii::t('app.layout', 'Стоимость участия<br>350 грн.') ?></p>
+        <div class="img-left">
+            <img src="/markup/images/arrow_up_1.png" alt="">
+        </div>          
+        <a href="<?= \yii\helpers\Url::to(['/member/create']) ?>"><?= Yii::t('app.layout', 'Регистрация') ?></a>
+        <div class="img-right">
+            <img src="/markup/images/arrow_up_1.png" alt="">
         </div>
     </div>
-</footer>
+    <footer id="footer" class="midnight-blue">
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="text-left"><?= Yii::t('app', 'Кафедра Стратегического Управления НТУ "ХПИ". Все права защищены &copy; 2016 Харьков, Украина') ?></p>
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
 
 <?php $this->endBody() ?>
 </body>

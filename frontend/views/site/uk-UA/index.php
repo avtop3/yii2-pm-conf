@@ -2,7 +2,7 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
+$this->title = 'Integrated management 2016. Конференція для професіоналів з управління проектами';
 $this->params['bodyClass'] = 'homepage';
 ?>
 
@@ -21,9 +21,9 @@ $this->params['bodyClass'] = 'homepage';
                     <div class="row slide-margin">
                         <div class="col-sm-12">
                             <div class="carousel-content">
-                                <h1 class="animation animated-item-1">VII Международная научно-практическая конференция</h1>
-                                <h2 class="animation animated-item-2">«Интегрированное стратегическое управление, управление портфелями, программами, проектами»</h2>
-                                <a class="btn-slide animation animated-item-3" href="#">Read More</a>
+                                <h1 class="animation animated-item-1">VII Міжнародна науково-практична конференція</h1>
+                                <h2 class="animation animated-item-2">«Інтегроване стратегічне управління, управління портфелями, програмами, проектами»</h2>
+                                <a class="btn-slide animation animated-item-3" href="#">Більше</a>
                             </div>
                         </div>
                     </div>
@@ -35,9 +35,9 @@ $this->params['bodyClass'] = 'homepage';
                     <div class="row slide-margin">
                         <div class="col-sm-12">
                             <div class="carousel-content">
-                                <h1 class="animation animated-item-1">Место проведения</h1>
-                                <h2 class="animation animated-item-2">Отель «Жемчужина Карпат», который находится в живописном уголке Карпат на горнолыжном курорте пгт. Славское</h2>
-                                <a class="btn-slide animation animated-item-3" href="#">Read More</a>
+                                <h1 class="animation animated-item-1">Місце проведення</h1>
+                                <h2 class="animation animated-item-2">Готель «Перлина Карпат», який знаходиться у мальовничому куточку Карпат на гірськолижному курорті смт. Славське.</h2>
+                                <a class="btn-slide animation animated-item-3" href="#">Більше</a>
                             </div>
                         </div>
                     </div>
@@ -49,9 +49,9 @@ $this->params['bodyClass'] = 'homepage';
                     <div class="row slide-margin">
                         <div class="col-sm-12">
                             <div class="carousel-content">
-                                <h1 class="animation animated-item-1">Традиционные участники конференции</h1>
-                                <h2 class="animation animated-item-2">Ведущие учёные и специалисты в сфере управления проектами, менеджмента и информационных технологий</h2>
-                                <a class="btn-slide animation animated-item-3" href="#">Read More</a>
+                                <h1 class="animation animated-item-1">Традиційні учасники конференції</h1>
+                                <h2 class="animation animated-item-2">Провідні вчені та фахівці у сфері управління проектами, менеджменту та інформаційних технологій</h2>
+                                <a class="btn-slide animation animated-item-3" href="#">Більше</a>
                             </div>
                         </div>
                     </div>
@@ -63,9 +63,9 @@ $this->params['bodyClass'] = 'homepage';
                     <div class="row slide-margin">
                         <div class="col-sm-12">
                             <div class="carousel-content">
-                                <h1 class="animation animated-item-1">Труды конференции</h1>
-                                <h2 class="animation animated-item-2">Все статьи будут опубликованы в рецензируемом научном журнале, который входит в перечень специализированных изданий Украины</h2>
-                                <a class="btn-slide animation animated-item-3" href="#">Read More</a>
+                                <h1 class="animation animated-item-1">Праці конференції</h1>
+                                <h2 class="animation animated-item-2">Усі статті будуть опубліковані у рецензованому науковому журналі, що входить до переліку фахових видань України</h2>
+                                <a class="btn-slide animation animated-item-3" href="#">Більше</a>
                             </div>
                         </div>
                     </div>
@@ -86,8 +86,8 @@ $this->params['bodyClass'] = 'homepage';
             <div class="col-sm-12">
                 <div class="media contact-info wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                     <div class="media-body">
-                        <h2>До конференции осталось:</h2>
-                        <p>Конференция завершена!</p>
+                        <h2>До конференції:</h2>
+                        <p>Конференція завершена!</p>
                         <div class="countdown">
                             <div class="clock col-sm-12">
                                 <div class="clock-item clock-days countdown-time-value col-sm-6 col-md-3">
@@ -139,8 +139,8 @@ $this->params['bodyClass'] = 'homepage';
                                 </div>
                             </div>
                         </div>
-                        <p>Зарегистрированных участников: <span id="members">0</span></p>
-                        <a href="" class="btn btn-default registr disabled"><i class="fa fa-ticket"></i> Зарегистрироваться</a>
+                        <p>Вже зареєстровано учасників: <span id="members">0</span></p>
+                        <a href="" class="btn btn-default registr disabled"><i class="fa fa-ticket"></i> Зареєструватися</a>
                     </div>
 
                 </div>
@@ -152,7 +152,7 @@ $this->params['bodyClass'] = 'homepage';
 <section id="feature" >
     <div class="container">
         <div class="center wow fadeInDown">
-            <h2>Ключевые докладчики</h2>
+            <h2>КЛЮЧОВІ ДОПОВІДАЧІ</h2>
         </div>
 
         <div class="row">
@@ -160,8 +160,8 @@ $this->params['bodyClass'] = 'homepage';
                 <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                     <div class="feature-wrap hvr-glow">
                         <img src="/markup/images/main-speakers/babaev.jpg" alt="">
-                        <h2>ИГБАЛ БАБАЕВ</h2>
-                        <p>Президент Азербайджанской ассоциации управления проектами AzPMA</p>
+                        <h2>ІГБАЛ БАБАЄВ</h2>
+                        <p>Президент Азербайджанської асоціації управління проектами AzPMA</p>
                         <p>Баку, Азербайджан</p>
                     </div>
                 </div><!--/.col-md-4-->
@@ -169,18 +169,18 @@ $this->params['bodyClass'] = 'homepage';
                 <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                     <div class="feature-wrap hvr-glow">
                         <img src="/markup/images/main-speakers/elmas.jpg" alt="">
-                        <h2>ЧЕТИН ЭЛЬМАС</h2>
-                        <p>Президент Турецкой ассоциации управления проектами TrPMA</p>
-                        <p>Анкара, Турция</p>
+                        <h2>ЧЕТИН ЕЛЬМАС</h2>
+                        <p>Президент Турецької асоціації управління проектами TrPMA</p>
+                        <p>Анкара, Туреччина</p>
                     </div>
                 </div><!--/.col-md-4-->
 
                 <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                     <div class="feature-wrap hvr-glow">
                         <img src="/markup/images/main-speakers/bushuev.jpg" alt="">
-                        <h2>СЕРГЕЙ БУШУЕВ</h2>
-                        <p>Президент Украинской ассоциации управления проектами UPMA</p>
-                        <p>Киев, Украина</p>
+                        <h2>СЕРГІЙ БУШУЄВ</h2>
+                        <p>Президент Української асоціації управління проектами UPMA</p>
+                        <p>Київ, Україна</p>
                     </div>
                 </div><!--/.col-md-4-->
 
@@ -188,45 +188,45 @@ $this->params['bodyClass'] = 'homepage';
                     <div class="feature-wrap hvr-glow">
                         <img src="/markup/images/main-speakers/todorov.jpg" alt="">
                         <h2>КИРИЛ ТОДОРОВ</h2>
-                        <p>Вице-президент Европейского совета для малого бизнеса</p>
-                        <p>София, Болгария</p>
+                        <p>Віце-президент Європейської ради для малого бізнесу</p>
+                        <p>Софія, Болгарія</p>
                     </div>
                 </div><!--/.col-md-4-->
                 <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                     <div class="feature-wrap hvr-glow">
                         <img src="/markup/images/main-speakers/chernov.jpg" alt="">
-                        <h2>СЕРГЕЙ ЧЕРНОВ</h2>
-                        <p>Директор по персоналу ГП НПКГ «Зоря»-«Машпроект»</p>
-                        <p>Николаев, Украина</p>
+                        <h2>СЕРГІЙ ЧЕРНОВ</h2>
+                        <p>Директор з персоналу ДП НВКГ «Зоря»-«Машпроект»</p>
+                        <p>Миколаїв, Україна</p>
                     </div>
                 </div><!--/.col-md-4-->
 
                 <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                     <div class="feature-wrap hvr-glow">
                         <img src="/markup/images/main-speakers/konan.jpg" alt="">
-                        <h2>ИГОРЬ КОНОНЕНКО</h2>
-                        <p>Заведующий кафедрой стратегического управления НТУ «ХПИ»</p>
-                        <p>Харьков, Украина</p>
+                        <h2>ІГОР КОНОНЕНКО</h2>
+                        <p>Завідувач кафедри стратегічного управління НТУ «ХПІ»</p>
+                        <p>Харків, Україна</p>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                     <div class="feature-wrap hvr-glow">
                         <img src="/markup/images/main-speakers/levchenko.jpg" alt="">
-                        <h2>ТАИСИЯ ЛЕВЧЕНКО</h2>
-                        <p>Основатель и директор консалтинговой компании "ДІЯти!"</p>
-                        <p>Винница, Украина</p>
+                        <h2>ТАЇСІЯ ЛЕВЧЕНКО</h2>
+                        <p>Засновник і директор консалтингової компанії "ДІЯти!"</p>
+                        <p>Вінниця, Україна</p>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                     <div class="feature-wrap hvr-glow">
                         <img src="/markup/images/main-speakers/chumach.JPG" alt="">
-                        <h2>ИГОРЬ ЧУМАЧЕНКО</h2>
-                        <p>Заведующий кафедрой управления проектами в городском хозяйстве и строительстве ХНУГХ им. А.Н. Бекетова</p>
-                        <p>Харьков, Украина</p>
+                        <h2>ІГОР ЧУМАЧЕНКО</h2>
+                        <p>Завідувач кафедри управління проектами в міському господарстві і будівництві ХНУМГ ім. О.М. Бекетова</p>
+                        <p>Харків, Україна</p>
                     </div>
                 </div>
                 <div class="col-lg-12 all-speakers wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-                    <a href="about-us.html" class="btn btn-default"><i class="fa fa-users"></i> Все докладчики</a>
+                    <a href="about-us.html" class="btn btn-default"><i class="fa fa-users"></i> Усі доповідачі</a>
                 </div>
                 <!--/.col-md-4-->
             </div><!--/.services-->
@@ -237,7 +237,7 @@ $this->params['bodyClass'] = 'homepage';
 <section id="recent-works">
     <div class="container">
         <div class="center wow fadeInDown">
-            <h2>Фотографии</h2>
+            <h2>Фотографії   </h2>
             <!--                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>-->
         </div>
 
@@ -247,7 +247,7 @@ $this->params['bodyClass'] = 'homepage';
                     <img class="img-responsive" src="/markup/images/from-conf/b1.jpg" alt="">
                     <div class="overlay">
                         <div class="recent-work-inner">
-                            <a class="preview" href="images/from-conf/b1.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Посмотреть</a>
+                            <a class="preview" href="/markup/images/from-conf/b1.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Подивитися</a>
                         </div>
                     </div>
                 </div>
@@ -262,7 +262,7 @@ $this->params['bodyClass'] = 'homepage';
                                                             <h3><a href="#">Business theme</a></h3>
                                                             <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
                             -->
-                            <a class="preview" href="images/from-conf/b2.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Посмотреть</a>
+                            <a class="preview" href="/markup/images/from-conf/b2.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Подивитися</a>
                         </div>
                     </div>
                 </div>
@@ -273,7 +273,7 @@ $this->params['bodyClass'] = 'homepage';
                     <img class="img-responsive" src="/markup/images/from-conf/b3.jpg" alt="">
                     <div class="overlay">
                         <div class="recent-work-inner">
-                            <a class="preview" href="images/from-conf/b3.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Посмотреть</a>
+                            <a class="preview" href="/markup/images/from-conf/b3.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Подивитися</a>
                         </div>
                     </div>
                 </div>
@@ -284,7 +284,7 @@ $this->params['bodyClass'] = 'homepage';
                     <img class="img-responsive" src="/markup/images/from-conf/b4.jpg" alt="">
                     <div class="overlay">
                         <div class="recent-work-inner">
-                            <a class="preview" href="images/from-conf/b4.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Посмотреть</a>
+                            <a class="preview" href="/markup/images/from-conf/b4.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Подивитися</a>
                         </div>
                     </div>
                 </div>
@@ -295,7 +295,7 @@ $this->params['bodyClass'] = 'homepage';
                     <img class="img-responsive" src="/markup/images/from-conf/b5.jpg" alt="">
                     <div class="overlay">
                         <div class="recent-work-inner">
-                            <a class="preview" href="images/from-conf/b5.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Посмотреть</a>
+                            <a class="preview" href="/markup/images/from-conf/b5.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Подивитися</a>
                         </div>
                     </div>
                 </div>
@@ -306,7 +306,7 @@ $this->params['bodyClass'] = 'homepage';
                     <img class="img-responsive" src="/markup/images/from-conf/b6.jpg" alt="">
                     <div class="overlay">
                         <div class="recent-work-inner">
-                            <a class="preview" href="images/from-conf/b6.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Посмотреть</a>
+                            <a class="preview" href="/markup/images/from-conf/b6.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Подивитися</a>
                         </div>
                     </div>
                 </div>
@@ -320,7 +320,7 @@ $this->params['bodyClass'] = 'homepage';
     <hr>
     <div class="container">
         <div class="center wow fadeInDown">
-            <h2>Организаторы</h2>
+            <h2>ОРГАНІЗАТОРИ КОНФЕРЕНЦІЇ</h2>
         </div>
 
         <div class="partners col-lg-12">
@@ -335,7 +335,7 @@ $this->params['bodyClass'] = 'homepage';
     </div><!--/.container-->
     <div class="container">
         <div class="center wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1800ms">
-            <h2>Партнеры</h2>
+            <h2>ПАРТНЕРИ КОНФЕРЕНЦІЇ</h2>
         </div>
 
         <div class="partners col-lg-12">
