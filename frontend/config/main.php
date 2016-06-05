@@ -49,47 +49,17 @@ return [
             // Make sure, you include your app's default language.
             'languages' => $params['activeLanguages'],
             'rules' => [
+                'registration' => 'member/create',
                 [
                     'pattern' => '',
                     'route' => 'site/static-page',
                     'defaults' => ['page' => 'index'],
                 ],
                 [
-                    'pattern' => 'about',
+                    'pattern' => '/<page:[a-z0-9-_]+>',
                     'route' => 'site/static-page',
-                    'defaults' => ['page' => 'about'],
                 ],
-                [
-                    'pattern' => 'venue',
-                    'route' => 'site/static-page',
-                    'defaults' => ['page' => 'location'],
-                ],
-                [
-                    'pattern' => 'speakers',
-                    'route' => 'site/static-page',
-                    'defaults' => ['page' => 'speakers'],
-                ],
-                [
-                    'pattern' => 'conditions',
-                    'route' => 'site/static-page',
-                    'defaults' => ['page' => 'conditions'],
-                ],
-                [
-                    'pattern' => 'program',
-                    'route' => 'site/static-page',
-                    'defaults' => ['page' => 'program'],
-                ],
-                [
-                    'pattern' => 'articles',
-                    'route' => 'site/static-page',
-                    'defaults' => ['page' => 'articles'],
-                ],
-                [
-                    'pattern' => 'contact-us',
-                    'route' => 'site/static-page',
-                    'defaults' => ['page' => 'contact-us'],
-                ],
-                'registration' => 'member/create'
+
             ],
         ]
     ],

@@ -123,7 +123,7 @@ AppAsset::register($this);
         ['label' => Yii::t('app.menu', 'Program'), 'url' => ['/site/static-page', 'page' => 'program']],
         ['label' => Yii::t('app.menu', 'Articles'), 'url' => ['/site/static-page', 'page' => 'articles']],
         ['label' => Yii::t('app.menu', 'Contact us'), 'url' => ['/site/static-page', 'page' => 'contact-us']],
-        ['label' => Yii::t('app.menu', 'Archives'), 'url' => ['/site/static-page', 'page' => 'articles']],
+        ['label' => Yii::t('app.menu', 'Archives'), 'url' => ['/site/static-page', 'page' => 'archive']],
     ];
 
     echo Nav::widget([
@@ -147,26 +147,58 @@ AppAsset::register($this);
 <!--/#bottom-->
 
 
-    <div id="regLink">
-        <p><?= Yii::t('app.layout', 'Participation fee <br>350 uah') ?></p>
-        <div class="img-left">
-            <img src="/markup/images/arrow_up_1.png" alt="">
-        </div>          
-        <a href="<?= \yii\helpers\Url::to(['/member/create']) ?>"><?= Yii::t('app.layout', 'Registration') ?></a>
-        <div class="img-right">
-            <img src="/markup/images/arrow_up_1.png" alt="">
-        </div>
+<div id="regLink">
+    <p><?= Yii::t('app.layout', 'Participation fee <br>350 uah') ?></p>
+
+    <div class="img-left">
+        <img src="/markup/images/arrow_up_1.png" alt="">
     </div>
-    <footer id="footer" class="midnight-blue">
-        <hr>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <p class="text-left"><?= Yii::t('app.layout', 'Strategic Management Department, NTU "KhPI". All rights reserved © {year} Kharkiv, Ukraine', ['year' => date('Y')]) ?></p>
-                </div>
+    <a href="<?= \yii\helpers\Url::to(['/member/create']) ?>"><?= Yii::t('app.layout', 'Registration') ?></a>
+
+    <div class="img-right">
+        <img src="/markup/images/arrow_up_1.png" alt="">
+    </div>
+</div>
+<footer id="footer" class="midnight-blue">
+    <hr>
+    <hr>
+    <?php
+    NavBar::begin(
+        [
+            'options' => [
+                'class' => 'navbar navbar-inverse',
+            ],
+        ]);
+    $menuItems = [
+        ['label' => Yii::t('app.menu', 'Home'), 'url' => ['/site/static-page', 'page' => 'index']],
+        ['label' => Yii::t('app.menu', 'About'), 'url' => ['/site/static-page', 'page' => 'about']],
+        ['label' => Yii::t('app.menu', 'Venue'), 'url' => ['/site/static-page', 'page' => 'location']],
+        ['label' => Yii::t('app.menu', 'Speakers'), 'url' => ['/site/static-page', 'page' => 'speakers']],
+        ['label' => Yii::t('app', 'Registration'), 'url' => ['/member/create']],
+        ['label' => Yii::t('app.menu', 'Conditions'), 'url' => ['/site/static-page', 'page' => 'conditions']],
+        ['label' => Yii::t('app.menu', 'Program'), 'url' => ['/site/static-page', 'page' => 'program']],
+        ['label' => Yii::t('app.menu', 'Articles'), 'url' => ['/site/static-page', 'page' => 'articles']],
+        ['label' => Yii::t('app.menu', 'Contact us'), 'url' => ['/site/static-page', 'page' => 'contact-us']],
+        ['label' => Yii::t('app.menu', 'Archives'), 'url' => ['/site/static-page', 'page' => 'archive']],
+    ];
+
+    echo Nav::widget([
+        'options' => ['class' => 'navbar-nav navbar-left'],
+        'items' => $menuItems,
+    ]);
+    NavBar::end();
+    ?>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <p class="text-left"><?= Yii::t('app.layout', 'Strategic Management Department, NTU "KhPI". All rights reserved © {year} Kharkiv, Ukraine', ['year' => date('Y')]) ?></p>
             </div>
         </div>
-    </footer><!--/#footer-->
+    </div>
+</footer>
+<!--/#footer-->
+
+
 
 <?php $this->endBody() ?>
 </body>
