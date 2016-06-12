@@ -23,7 +23,7 @@ $this->params['bodyClass'] = 'homepage';
                             <div class="carousel-content">
                                 <h1 class="animation animated-item-1">VII Міжнародна науково-практична конференція</h1>
                                 <h2 class="animation animated-item-2">«Інтегроване стратегічне управління, управління портфелями, програмами, проектами»</h2>
-                                <a class="btn-slide animation animated-item-3" href="#">Більше</a>
+                                <a class="btn-slide animation animated-item-3" href="<?= \yii\helpers\Url::to(['/about'])?>">Більше</a>
                             </div>
                         </div>
                     </div>
@@ -37,7 +37,7 @@ $this->params['bodyClass'] = 'homepage';
                             <div class="carousel-content">
                                 <h1 class="animation animated-item-1">Місце проведення</h1>
                                 <h2 class="animation animated-item-2">Готель «Перлина Карпат», який знаходиться у мальовничому куточку Карпат на гірськолижному курорті смт. Славське.</h2>
-                                <a class="btn-slide animation animated-item-3" href="#">Більше</a>
+                                <a class="btn-slide animation animated-item-3" href="<?= \yii\helpers\Url::to(['/location'])?>">Більше</a>
                             </div>
                         </div>
                     </div>
@@ -51,7 +51,7 @@ $this->params['bodyClass'] = 'homepage';
                             <div class="carousel-content">
                                 <h1 class="animation animated-item-1">Традиційні учасники конференції</h1>
                                 <h2 class="animation animated-item-2">Провідні вчені та фахівці у сфері управління проектами, менеджменту та інформаційних технологій</h2>
-                                <a class="btn-slide animation animated-item-3" href="#">Більше</a>
+                                <a class="btn-slide animation animated-item-3" href="<?= \yii\helpers\Url::to(['/speakers'])?>">Більше</a>
                             </div>
                         </div>
                     </div>
@@ -65,7 +65,7 @@ $this->params['bodyClass'] = 'homepage';
                             <div class="carousel-content">
                                 <h1 class="animation animated-item-1">Праці конференції</h1>
                                 <h2 class="animation animated-item-2">Усі статті будуть опубліковані у рецензованому науковому журналі, що входить до переліку фахових видань України</h2>
-                                <a class="btn-slide animation animated-item-3" href="#">Більше</a>
+                                <a class="btn-slide animation animated-item-3" href="<?= \yii\helpers\Url::to(['/articles'])?>">Більше</a>
                             </div>
                         </div>
                     </div>

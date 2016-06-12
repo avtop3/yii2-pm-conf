@@ -23,7 +23,7 @@ $this->params['bodyClass'] = 'homepage';
                             <div class="carousel-content">
                                 <h1 class="animation animated-item-1">VII International Scientific Conference</h1>
                                 <h2 class="animation animated-item-2">«Integrated Strategic Management, Portfolio, Program and Project Management»</h2>
-                                <a class="btn-slide animation animated-item-3" href="#">Read More</a>
+                                <a class="btn-slide animation animated-item-3" href="<?= \yii\helpers\Url::to(['/about'])?>">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -37,7 +37,7 @@ $this->params['bodyClass'] = 'homepage';
                             <div class="carousel-content">
                                 <h1 class="animation animated-item-1">Conference Venue</h1>
                                 <h2 class="animation animated-item-2">Hotel “Pearl of the Carpathians", located in a picturesque corner of the Carpathians just 300 meters from the ski lifts of Slavske Ski Resort</h2>
-                                <a class="btn-slide animation animated-item-3" href="#">Read More</a>
+                                <a class="btn-slide animation animated-item-3" href="<?= \yii\helpers\Url::to(['/location'])?>">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -51,7 +51,7 @@ $this->params['bodyClass'] = 'homepage';
                             <div class="carousel-content">
                                 <h1 class="animation animated-item-1">Traditional Conference Participants</h1>
                                 <h2 class="animation animated-item-2">Leading scientists and experts in project management and information technology</h2>
-                                <a class="btn-slide animation animated-item-3" href="#">Read More</a>
+                                <a class="btn-slide animation animated-item-3" href="<?= \yii\helpers\Url::to(['/speakers'])?>">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -65,7 +65,7 @@ $this->params['bodyClass'] = 'homepage';
                             <div class="carousel-content">
                                 <h1 class="animation animated-item-1">Conference Papers</h1>
                                 <h2 class="animation animated-item-2">All accepted papers will be published in peer-reviewed scientific journal, indexed in the international scientometric databases</h2>
-                                <a class="btn-slide animation animated-item-3" href="#">Read More</a>
+                                <a class="btn-slide animation animated-item-3" href="<?= \yii\helpers\Url::to(['/articles'])?>">Read More</a>
                             </div>
                         </div>
                     </div>

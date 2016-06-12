@@ -55,7 +55,7 @@ $this->params['bodyClass'] = 'homepage';
                             <div class="carousel-content">
                                 <h1 class="animation animated-item-1">Место проведения</h1>
                                 <h2 class="animation animated-item-2">Отель «Жемчужина Карпат», который находится в живописном уголке Карпат на горнолыжном курорте пгт. Славское</h2>
-                                <a class="btn-slide animation animated-item-3" href="#">Читать дальше</a>
+                                <a class="btn-slide animation animated-item-3" href="<?= \yii\helpers\Url::to(['/location'])?>">Читать дальше</a>
                             </div>
                         </div>
                     </div>
@@ -69,7 +69,7 @@ $this->params['bodyClass'] = 'homepage';
                             <div class="carousel-content">
                                 <h1 class="animation animated-item-1">Традиционные участники конференции</h1>
                                 <h2 class="animation animated-item-2">Ведущие учёные и специалисты в сфере управления проектами, менеджмента и информационных технологий</h2>
-                                <a class="btn-slide animation animated-item-3" href="#">Читать дальше</a>
+                                <a class="btn-slide animation animated-item-3" href="<?= \yii\helpers\Url::to(['/speakers'])?>">Читать дальше</a>
                             </div>
                         </div>
                     </div>
@@ -83,7 +83,7 @@ $this->params['bodyClass'] = 'homepage';
                             <div class="carousel-content">
                                 <h1 class="animation animated-item-1">Труды конференции</h1>
                                 <h2 class="animation animated-item-2">Все статьи будут опубликованы в рецензируемом научном журнале, который входит в перечень специализированных изданий Украины</h2>
-                                <a class="btn-slide animation animated-item-3" href="#">Читать дальше</a>
+                                <a class="btn-slide animation animated-item-3" href="<?= \yii\helpers\Url::to(['/articles'])?>">Читать дальше</a>
                             </div>
                         </div>
                     </div>
