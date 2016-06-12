@@ -153,6 +153,7 @@ $this->params['bodyClass'] = 'homepage';
     <div class="container">
         <div class="center wow fadeInDown">
             <h2>КЛЮЧОВІ ДОПОВІДАЧІ</h2>
+            <hr>
         </div>
 
         <div class="row">
@@ -233,7 +234,98 @@ $this->params['bodyClass'] = 'homepage';
         </div><!--/.row-->
     </div><!--/.container-->
 </section><!--/#feature-->
-
+<section id="dates">
+    <div class="container">
+        <div class="center wow fadeInDown">
+            <h2>ВАЖЛИВІ ДАТИ</h2>
+            <hr>
+        </div>
+        <div class="row wow fadeInDown">
+            <div class="part">
+                <img src="/markup/images/people.png" alt="">
+                <p class="title">Участь у конференції</p>
+            </div>
+            <div class="part">
+                <div class="number">
+                    <p>01</p>
+                    <p>жовтня</p>
+                </div>
+                <div class="descr">
+                    <p>Початок<br> реєстрації учасників конференції</p>
+                </div>
+            </div>
+            <div class="part">
+                <div class="number black">
+                    <p>31</p>
+                    <p>грудня</p>
+                </div>
+                <div class="descr black">
+                    <p>Рання оплата<br> організаційного внеску</p>
+                </div>
+            </div>
+            <div class="part">
+                <div class="number red">
+                    <p>31</p>
+                    <p>січня</p>
+                </div>
+                <div class="descr red">
+                    <p>Закінчення<br> реєстрації учасників</p>
+                </div>
+            </div>
+            <div class="part">
+                <div class="number red">
+                    <p>31</p>
+                    <p>січня</p>
+                </div>
+                <div class="descr red">
+                    <p>Оплата організаційного внеску</p>
+                </div>
+            </div>
+        </div>
+        <div class="row wow fadeInDown">
+            <div class="part">
+                <img src="/markup/images/article.png" alt="" class="article">
+                <p class="title">Публікація статей</p>
+            </div>
+            <div class="part">
+                <div class="number">
+                    <p>01</p>
+                    <p>жовтня</p>
+                </div>
+                <div class="descr">
+                    <p>Початок прийому статей до публікації</p>
+                </div>
+            </div>
+            <div class="part">
+                <div class="number red">
+                    <p>30</p>
+                    <p>листопада</p>
+                </div>
+                <div class="descr red">
+                    <p>Закінчення прийому статей до публікації</p>
+                </div>
+            </div>
+            <div class="part">
+                <div class="number black">
+                    <p>15</p>
+                    <p>грудня</p>
+                </div>
+                <div class="descr black">
+                    <p>Рецензування та оповіщення авторів</p>
+                </div>
+            </div>
+            <div class="part">
+                <div class="number red">
+                    <p>25</p>
+                    <p>грудня</p>
+                </div>
+                <div class="descr red">
+                    <p>Оплата вартості публікації</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <section id="recent-works">
     <div class="container">
         <div class="center wow fadeInDown">

@@ -226,6 +226,7 @@ ul.social-share li {
 
 ul.social-share li a {
     display: inline-block;
+    border: 1px solid #fff;
     color: #fff;
     background: #404040;
     width: 25px;
@@ -385,11 +386,6 @@ input.search-form:hover {
 }
 
 #main-slider .carousel .carousel-content {
-    margin-top: 150px;
-}
-
-#main-slider .carousel .slide-margin {
-    margin-top: 140px;
 }
 
 #main-slider .carousel h2 {
@@ -409,6 +405,21 @@ input.search-form:hover {
     text-align: right;
     position: absolute;
 }
+#main-slider .carousel-content h2 {
+    font-size: 24px;
+}
+#main-slider .carousel-content p {
+    font-size: 26px;
+    color: #fff;
+    line-height: normal;
+}
+#main-slider .carousel-content .left{
+    display: inline-block;
+}
+#main-slider .carousel-content .right{
+    float: right;
+    display: inline-block;
+}
 
 #main-slider .carousel .item {
     background-position: 50%;
@@ -426,7 +437,17 @@ input.search-form:hover {
     -o-transition: opacity ease-in-out 500ms;
     transition: opacity ease-in-out 500ms;
 }
-
+#main-slider .carousel .item .container.full {
+    width: 100%!important;
+}
+#main-slider .carousel .item .container.full.absolute{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+#main-slider .carousel .item .container.full .row>div {
+    padding: 0;
+}
 #main-slider .carousel .item:first-child {
     top: auto;
     position: relative;

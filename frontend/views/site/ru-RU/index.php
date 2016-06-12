@@ -8,22 +8,40 @@ $this->params['bodyClass'] = 'homepage';
 
 <section id="main-slider" class="no-margin">
     <div class="carousel slide">
+<!--
         <ol class="carousel-indicators">
             <li data-target="#main-slider" data-slide-to="0" class="active"></li>
             <li data-target="#main-slider" data-slide-to="1"></li>
             <li data-target="#main-slider" data-slide-to="2"></li>
             <li data-target="#main-slider" data-slide-to="3"></li>
         </ol>
+-->
         <div class="carousel-inner">
 
             <div class="item active" style="background-image: url(/markup/images/s1.jpg)">
-                <div class="container">
-                    <div class="row slide-margin">
+                <div class="container full">
+                    <div class="row">
                         <div class="col-sm-12">
                             <div class="carousel-content">
-                                <h1 class="animation animated-item-1">VII Международная научно-практическая конференция</h1>
-                                <h2 class="animation animated-item-2">«Интегрированное стратегическое управление, управление портфелями, программами, проектами»</h2>
-                                <a class="btn-slide animation animated-item-3" href="#">Читать дальше</a>
+                               <div class="container">
+                                   <div class="left">
+                                       <p>14-16 февраля, 2017 г.</p>
+                                   </div>
+                                   <div class="right">
+                                       <p>пгт. Славское, Львовская обл., Украина</p>
+                                   </div>
+                               </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container full absolute">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="carousel-content">
+                                <h2 class="animation animated-item-1">VII Международная научно-практическая конференция</h2>
+                                <h1 class="animation animated-item-2">«Интегрированное стратегическое управление, управление портфелями, программами, проектами»</h1>
                             </div>
                         </div>
                     </div>
@@ -155,7 +173,6 @@ $this->params['bodyClass'] = 'homepage';
             <h2>Ключевые докладчики</h2>
             <hr>
         </div>
-
         <div class="row">
             <div class="features">
                 <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
@@ -239,6 +256,90 @@ $this->params['bodyClass'] = 'homepage';
         <div class="center wow fadeInDown">
             <h2>Ключевые даты</h2>
             <hr>
+        </div>
+        <div class="row wow fadeInDown">
+            <div class="part">
+                <img src="/markup/images/people.png" alt="">
+                <p class="title">Участие в конференции</p>
+            </div>
+            <div class="part">
+                <div class="number">
+                <p>01</p>
+                <p>октября</p>
+                </div>
+                <div class="descr">
+                    <p>Начало регистрации участников конференции</p>
+                </div>
+            </div>
+            <div class="part">
+                <div class="number black">
+                    <p>31</p>
+                    <p>декабря</p>
+                </div>
+                <div class="descr black">
+                    <p>Ранняя оплата организационного взноса </p>
+                </div>
+            </div>
+            <div class="part">
+                <div class="number red">
+                    <p>31</p>
+                    <p>января</p>
+                </div>
+                <div class="descr red">
+                    <p>Окончание регистрации участников</p>
+                </div>
+            </div>
+            <div class="part">
+                <div class="number red">
+                    <p>31</p>
+                    <p>января</p>
+                </div>
+                <div class="descr red">
+                    <p>Оплата организационного взноса</p>
+                </div>
+            </div>
+        </div>
+        <div class="row wow fadeInDown">
+            <div class="part">
+                <img src="/markup/images/article.png" alt="" class="article">
+                <p class="title">Публикация статей</p>
+            </div>
+            <div class="part">
+                <div class="number">
+                    <p>01</p>
+                    <p>октября</p>
+                </div>
+                <div class="descr">
+                    <p>Начало<br>приема статей для публикации</p>
+                </div>
+            </div>
+            <div class="part">
+                <div class="number red">
+                    <p>30</p>
+                    <p>ноября</p>
+                </div>
+                <div class="descr red">
+                    <p>Окончание<br> приема статей для публикации</p>
+                </div>
+            </div>
+            <div class="part">
+                <div class="number black">
+                    <p>15</p>
+                    <p>декабря</p>
+                </div>
+                <div class="descr black">
+                    <p>Рецензирование и оповещение авторов<br> о приеме статей</p>
+                </div>
+            </div>
+            <div class="part">
+                <div class="number red">
+                    <p>25</p>
+                    <p>декабря</p>
+                </div>
+                <div class="descr red">
+                    <p>Оплата<br> стоимости публикации статьи</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
