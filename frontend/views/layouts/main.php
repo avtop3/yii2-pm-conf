@@ -46,19 +46,18 @@ AppAsset::register($this);
                 <div class="col-sm-6 col-xs-8">
                     <div class="social">
                         <a class="navbar-brand" href="<?= \yii\helpers\Url::home() ?>"><img
-                                src="/markup/images/logo.png" alt="logo"></a>
-                        <ul class="social-share">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-vk"></i></a></li>
-                            <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                        </ul>
-
+                            src="/markup/images/logo.png" alt="logo"></a>
                     </div>
                 </div>
                 <div class="col-sm-6 col-xs-4">
-
+                    <ul class="social-share">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                        <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                    </ul>
+                    
                     <?php
 
                     $langMenuItems = [

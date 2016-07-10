@@ -7,18 +7,28 @@ $this->params['bodyClass'] = 'homepage';
 ?>
 
 <section id="main-slider" class="no-margin">
-    <div class="carousel slide">
-        <ol class="carousel-indicators">
-            <li data-target="#main-slider" data-slide-to="0" class="active"></li>
-            <li data-target="#main-slider" data-slide-to="1"></li>
-            <li data-target="#main-slider" data-slide-to="2"></li>
-            <li data-target="#main-slider" data-slide-to="3"></li>
-        </ol>
+    <div class="carousel slide">        
         <div class="carousel-inner">
-
             <div class="item active" style="background-image: url(/markup/images/s1.jpg)">
-                <div class="container">
-                    <div class="row slide-margin">
+                <div class="container full">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="carousel-content">
+                                <div class="container">
+                                    <div class="left">
+                                        <p>14-16 февраля, 2017 г.</p>
+                                    </div>
+                                    <div class="right">
+                                        <p>пгт. Славское, Львовская обл., Украина</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container full absolute">
+                    <div class="row">
                         <div class="col-sm-12">
                             <div class="carousel-content">
                                 <h1 class="animation animated-item-1">VII International Scientific Conference</h1>
@@ -31,7 +41,7 @@ $this->params['bodyClass'] = 'homepage';
             </div><!--/.item-->
 
             <div class="item" style="background-image: url(/markup/images/s2.jpg)">
-                <div class="container">
+                <div class="container full absolute">
                     <div class="row slide-margin">
                         <div class="col-sm-12">
                             <div class="carousel-content">
@@ -45,7 +55,7 @@ $this->params['bodyClass'] = 'homepage';
             </div><!--/.item-->
 
             <div class="item" style="background-image: url(/markup/images/s3.jpg)">
-                <div class="container">
+                <div class="container full absolute">
                     <div class="row slide-margin">
                         <div class="col-sm-12">
                             <div class="carousel-content">
@@ -59,7 +69,7 @@ $this->params['bodyClass'] = 'homepage';
             </div>
 
             <div class="item" style="background-image: url(/markup/images/s4.jpg)">
-                <div class="container">
+                <div class="container full absolute">
                     <div class="row slide-margin">
                         <div class="col-sm-12">
                             <div class="carousel-content">
@@ -428,12 +438,10 @@ $this->params['bodyClass'] = 'homepage';
         <div class="partners col-lg-12">
             <ul>
                 <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1800ms" src="/markup/images/partners/zhil.png"></a></li>
-                <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="2100ms" src="/markup/images/partners/Softjourn.png"></a></li>
-                <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="2300ms" src="/markup/images/partners/diya.png"></a></li>
                 <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="2500ms" src="/markup/images/partners/LineUp.png"></a></li>
-                <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="2800ms" src="/markup/images/partners/erminesoft.png"></a></li>
             </ul>
         </div>
+        
     </div>
     <hr>
 </section><!--/#partner-->
