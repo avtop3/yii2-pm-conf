@@ -982,6 +982,17 @@ ul#language-selector li.active {
   margin: 0 1.9%;
   vertical-align: middle;
 }
+@media (max-width: 1199px) {
+  #dates .row .part {
+    width: 45%;
+    margin: 1%;
+    padding: 5%;
+  }
+  #dates .row .part:last-child {
+    width: 45%;
+    margin-left: 25%;
+  }
+}
 #dates .row .part .title {
   font-size: 40px;
   color: #000;
