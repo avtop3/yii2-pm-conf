@@ -160,7 +160,6 @@ AppAsset::register($this);
 </div>
 <footer id="footer" class="midnight-blue">
     <hr>
-    <hr>
     <?php
     NavBar::begin(
         [
@@ -187,6 +186,7 @@ AppAsset::register($this);
     ]);
     NavBar::end();
     ?>
+    <hr>
     <div class="container">
         <div class="row">
             <div class="col-sm-12">

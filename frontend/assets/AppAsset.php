@@ -32,6 +32,7 @@ class AppAsset extends AssetBundle
         'markup/css/prettyPhoto.css',
         'markup/css/responsive.css',
         'markup/css/hover.css',
+        'markup/css/flexslider.css',
 //        'css/site.css',
     ];
     public $js = [
