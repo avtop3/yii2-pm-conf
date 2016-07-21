@@ -40,7 +40,7 @@ $this->params['bodyClass'] = 'homepage';
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="carousel-content">
-                                <h2 class="animation animated-item-1">VII Международная научно-практическая конференция</h2>
+                                <h2 class="animation animated-item-1">VIII Международная научно-практическая конференция</h2>
                                 <h1 class="animation animated-item-2">«Интегрированное стратегическое управление, управление портфелями, программами, проектами»</h1>
                             </div>
                         </div>
@@ -53,9 +53,8 @@ $this->params['bodyClass'] = 'homepage';
                     <div class="row slide-margin">
                         <div class="col-sm-12">
                             <div class="carousel-content">
-                                <h1 class="animation animated-item-1">Место проведения</h1>
-                                <h2 class="animation animated-item-2">Отель «Жемчужина Карпат», который находится в живописном уголке Карпат на горнолыжном курорте пгт. Славское</h2>
-                                <a class="btn-slide animation animated-item-3" href="#">Читать дальше</a>
+                                <h2 class="animation animated-item-1">Место проведения</h2>
+                                <h1 class="animation animated-item-2">Отель «Жемчужина Карпат», который находится в живописном уголке Карпат на горнолыжном курорте пгт. Славское</h1>
                             </div>
                         </div>
                     </div>
@@ -67,9 +66,8 @@ $this->params['bodyClass'] = 'homepage';
                     <div class="row slide-margin">
                         <div class="col-sm-12">
                             <div class="carousel-content">
-                                <h1 class="animation animated-item-1">Традиционные участники конференции</h1>
-                                <h2 class="animation animated-item-2">Ведущие учёные и специалисты в сфере управления проектами, менеджмента и информационных технологий</h2>
-                                <a class="btn-slide animation animated-item-3" href="#">Читать дальше</a>
+                                <h2 class="animation animated-item-1">Традиционные участники конференции</h2>
+                                <h1 class="animation animated-item-2">Ведущие учёные и специалисты в сфере управления проектами, менеджмента и информационных технологий</h1>
                             </div>
                         </div>
                     </div>
@@ -81,9 +79,8 @@ $this->params['bodyClass'] = 'homepage';
                     <div class="row slide-margin">
                         <div class="col-sm-12">
                             <div class="carousel-content">
-                                <h1 class="animation animated-item-1">Труды конференции</h1>
-                                <h2 class="animation animated-item-2">Все статьи будут опубликованы в рецензируемом научном журнале, который входит в перечень специализированных изданий Украины</h2>
-                                <a class="btn-slide animation animated-item-3" href="#">Читать дальше</a>
+                                <h2 class="animation animated-item-1">Труды конференции</h2>
+                                <h1 class="animation animated-item-2">Все статьи будут опубликованы в рецензируемом научном журнале, который входит в перечень специализированных изданий Украины</h1>
                             </div>
                         </div>
                     </div>
@@ -434,13 +431,14 @@ $this->params['bodyClass'] = 'homepage';
 
         <div class="partners col-lg-12">
             <ul>
-                <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" src="/markup/images/partners/strategic.png"></a></li>
-                <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" src="/markup/images/partners/upma.png"></a></li>
-                <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms" src="/markup/images/partners/hpi.png"></a></li>
-                <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms" src="/markup/images/partners/g.png"></a></li>
-                <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1500ms" src="/markup/images/partners/lnau.png"></a></li>
+                <li> <a href="http://pm-edu.org/ru/"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" src="/markup/images/partners/strategic.png"></a></li>
+                <li> <a href="http://upma.kiev.ua/ru"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" src="/markup/images/partners/upma.png"></a></li>
+                <li> <a href="http://www.kpi.kharkov.ua/ru/"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms" src="/markup/images/partners/hpi.png"></a></li>
+                <li> <a href="http://www.kname.edu.ua/"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms" src="/markup/images/partners/g.png"></a></li>
+                <li> <a href="http://lnau.lviv.ua/lnau/"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1500ms" src="/markup/images/partners/lnau.png"></a></li>
             </ul>
         </div>
+        
     </div><!--/.container-->
     <div class="container">
         <div class="center wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1800ms">
@@ -449,8 +447,8 @@ $this->params['bodyClass'] = 'homepage';
 
         <div class="partners col-lg-12">
             <ul>
-                <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1800ms" src="/markup/images/partners/zhil.png"></a></li>
-                <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="2500ms" src="/markup/images/partners/LineUp.png"></a></li>
+                <li> <a href="http://www.zhilstroj-2.ua/"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1800ms" src="/markup/images/partners/zhil.png"></a></li>
+                <li> <a href="http://lineup.com.ua/ru/"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="2500ms" src="/markup/images/partners/LineUp.png"></a></li>
             </ul>
         </div>
     </div>

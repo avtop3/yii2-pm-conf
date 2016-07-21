@@ -31,9 +31,8 @@ $this->params['bodyClass'] = 'homepage';
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="carousel-content">
-                                <h1 class="animation animated-item-1">VII International Scientific Conference</h1>
-                                <h2 class="animation animated-item-2">«Integrated Strategic Management, Portfolio, Program and Project Management»</h2>
-                                <a class="btn-slide animation animated-item-3" href="#">Read More</a>
+                                <h2 class="animation animated-item-1">VIII International Scientific Conference</h2>
+                                <h1 class="animation animated-item-2">«Integrated Strategic Management, Portfolio, Program and Project Management»</h1>
                             </div>
                         </div>
                     </div>
@@ -42,12 +41,11 @@ $this->params['bodyClass'] = 'homepage';
 
             <div class="item" style="background-image: url(/markup/images/s2.jpg)">
                 <div class="container full absolute">
-                    <div class="row slide-margin">
+                    <div class="row">
                         <div class="col-sm-12">
                             <div class="carousel-content">
-                                <h1 class="animation animated-item-1">Conference Venue</h1>
-                                <h2 class="animation animated-item-2">Hotel “Pearl of the Carpathians", located in a picturesque corner of the Carpathians just 300 meters from the ski lifts of Slavske Ski Resort</h2>
-                                <a class="btn-slide animation animated-item-3" href="#">Read More</a>
+                                <h2 class="animation animated-item-1">Conference Venue</h2>
+                                <h1 class="animation animated-item-2">Hotel “Pearl of the Carpathians", located in a picturesque corner of the Carpathians just 300 meters from the ski lifts of Slavske Ski Resort</h1>
                             </div>
                         </div>
                     </div>
@@ -55,13 +53,13 @@ $this->params['bodyClass'] = 'homepage';
             </div><!--/.item-->
 
             <div class="item" style="background-image: url(/markup/images/s3.jpg)">
+               
                 <div class="container full absolute">
                     <div class="row slide-margin">
                         <div class="col-sm-12">
                             <div class="carousel-content">
-                                <h1 class="animation animated-item-1">Traditional Conference Participants</h1>
-                                <h2 class="animation animated-item-2">Leading scientists and experts in project management and information technology</h2>
-                                <a class="btn-slide animation animated-item-3" href="#">Read More</a>
+                                <h2 class="animation animated-item-1">Traditional Conference Participants</h2>
+                                <h1 class="animation animated-item-2">Leading scientists and experts in project management and information technology</h1>
                             </div>
                         </div>
                     </div>
@@ -73,9 +71,8 @@ $this->params['bodyClass'] = 'homepage';
                     <div class="row slide-margin">
                         <div class="col-sm-12">
                             <div class="carousel-content">
-                                <h1 class="animation animated-item-1">Conference Papers</h1>
-                                <h2 class="animation animated-item-2">All accepted papers will be published in peer-reviewed scientific journal, indexed in the international scientometric databases</h2>
-                                <a class="btn-slide animation animated-item-3" href="#">Read More</a>
+                                <h2 class="animation animated-item-1">Conference Papers</h2>
+                                <h1 class="animation animated-item-2">All accepted papers will be published in peer-reviewed scientific journal, indexed in the international scientometric databases</h1>
                             </div>
                         </div>
                     </div>
@@ -422,13 +419,14 @@ $this->params['bodyClass'] = 'homepage';
 
         <div class="partners col-lg-12">
             <ul>
-                <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" src="/markup/images/partners/strategic.png"></a></li>
-                <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" src="/markup/images/partners/upma.png"></a></li>
-                <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms" src="/markup/images/partners/hpi.png"></a></li>
-                <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms" src="/markup/images/partners/g.png"></a></li>
-                <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1500ms" src="/markup/images/partners/lnau.png"></a></li>
+                <li> <a href="http://pm-edu.org/ru/"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" src="/markup/images/partners/strategic.png"></a></li>
+                <li> <a href="http://upma.kiev.ua/ru"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" src="/markup/images/partners/upma.png"></a></li>
+                <li> <a href="http://www.kpi.kharkov.ua/ru/"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms" src="/markup/images/partners/hpi.png"></a></li>
+                <li> <a href="http://www.kname.edu.ua/"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms" src="/markup/images/partners/g.png"></a></li>
+                <li> <a href="http://lnau.lviv.ua/lnau/"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1500ms" src="/markup/images/partners/lnau.png"></a></li>
             </ul>
         </div>
+        
     </div><!--/.container-->
     <div class="container">
         <div class="center wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1800ms">
@@ -437,8 +435,8 @@ $this->params['bodyClass'] = 'homepage';
 
         <div class="partners col-lg-12">
             <ul>
-                <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1800ms" src="/markup/images/partners/zhil.png"></a></li>
-                <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="2500ms" src="/markup/images/partners/LineUp.png"></a></li>
+                <li> <a href="http://www.zhilstroj-2.ua/"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1800ms" src="/markup/images/partners/zhil.png"></a></li>
+                <li> <a href="http://lineup.com.ua/ru/"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="2500ms" src="/markup/images/partners/LineUp.png"></a></li>
             </ul>
         </div>
         
