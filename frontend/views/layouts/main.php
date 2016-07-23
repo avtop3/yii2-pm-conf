@@ -54,15 +54,7 @@ AppAsset::register($this);
                             src="/markup/images/logo.png" alt="logo"></a>
                     </div>
                 </div>
-                <div class="col-sm-6 col-xs-4">
-                    <ul class="social-share">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa fa-vk"></i></a></li>
-                        <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                    </ul>
-                    
+                <div class="col-sm-6 col-xs-4">                    
                     <?php
 
                     $langMenuItems = [
