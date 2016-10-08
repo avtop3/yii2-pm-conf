@@ -39,8 +39,9 @@ class MemberController extends Controller
     public function actionCreate()
     {
         $model = new Member();
-        if ($model->load(Yii::$app->request->post()) && $model->agreement) {
-            if ($model->save()) {
+        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+            if($model->agreement){
+                $model->save();
                 Yii::$app->session->setFlash('success', Yii::t('app', 'Success!'));
 
                 $messages[] = Yii::$app->mailer->compose('member-info', ['model' => $model])
@@ -56,9 +57,9 @@ class MemberController extends Controller
                 Yii::$app->mailer->sendMultiple($messages);
 
                 return $this->redirect(Url::home());
+            }else {
+                Yii::$app->session->setFlash('warning', Yii::t('app', 'Please, accept rules about processing of your personal data '));
             }
-        } else {
-            Yii::$app->session->setFlash('warning', Yii::t('app', 'Please, accept rules about processing of your personal data '));
         }
 
         return $this->render('create', [
