@@ -83,6 +83,7 @@ class MemberController extends Controller
     public function actionCreate()
     {
         $model = new Member();
+        $model->agreement = true;
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) { //&& $model->save()
 //            print_r($model->attributes);

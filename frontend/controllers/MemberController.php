@@ -39,23 +39,26 @@ class MemberController extends Controller
     public function actionCreate()
     {
         $model = new Member();
-        if ($model->load(Yii::$app->request->post()) && $model->save()) { //&& $model->save()
-            Yii::$app->session->setFlash('success', Yii::t('app', 'Success!'));
+        if ($model->load(Yii::$app->request->post()) && $model->agreement) {
+            if ($model->save()) {
+                Yii::$app->session->setFlash('success', Yii::t('app', 'Success!'));
 
-            $messages[] = Yii::$app->mailer->compose('member-info', ['model' => $model])
-                ->setFrom(Yii::$app->params['smtpEmail'])
-                ->setTo([$model->email])
-                ->setSubject(Yii::t('app.member.mail', 'Integrated Management 2017: Confirmation of Registration'));
+                $messages[] = Yii::$app->mailer->compose('member-info', ['model' => $model])
+                    ->setFrom(Yii::$app->params['smtpEmail'])
+                    ->setTo([$model->email])
+                    ->setSubject(Yii::t('app.member.mail', 'Integrated Management 2017: Confirmation of Registration'));
 
-            $messages[] = Yii::$app->mailer->compose('member-info', ['model' => $model])
-                ->setFrom(Yii::$app->params['smtpEmail'])
-                ->setTo(['pm.education.khpi@gmail.com'])//'pm.education.khpi@gmail.com',
-                ->setSubject(Yii::t('app.member.mail', 'Integrated Management 2017: Confirmation of Registration'));
+                $messages[] = Yii::$app->mailer->compose('member-info', ['model' => $model])
+                    ->setFrom(Yii::$app->params['smtpEmail'])
+                    ->setTo(['pm.education.khpi@gmail.com'])//'pm.education.khpi@gmail.com',
+                    ->setSubject(Yii::t('app.member.mail', 'Integrated Management 2017: Confirmation of Registration'));
 
-            Yii::$app->mailer->sendMultiple($messages);
+                Yii::$app->mailer->sendMultiple($messages);
 
-            return $this->redirect(Url::home());
+                return $this->redirect(Url::home());
+            }
         } else {
+            Yii::$app->session->setFlash('warning', Yii::t('app', 'Please, accept rules about processing of your personal data '));
         }
 
         return $this->render('create', [

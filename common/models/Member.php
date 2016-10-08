@@ -54,6 +54,11 @@ class Member extends ActiveRecord
 
     const SCENARIO_ADMIN = 'admin';
 
+    /**
+     * @var bool
+     */
+    public $agreement = false;
+
     public static function tableName()
     {
         return 'member';
@@ -190,6 +195,7 @@ class Member extends ActiveRecord
                     'topicTitle',
                 ], 'string'],
             ['papersCount', 'integer'],
+            ['agreement', 'boolean'],
             ['email', 'email'],
             [['paid', 'noteFromAdmin', 'created_at'], 'safe', 'on' => Member::SCENARIO_ADMIN],
             ['organisationUrl', 'url'],

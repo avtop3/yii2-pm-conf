@@ -21,11 +21,9 @@ class AppAsset extends AssetBundle
     public $baseUrl = '@web';
     public $css = [
         'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,cyrillic,cyrillic-ext',
-        'css/font-awesome.min.css',
-        'css/animate.min.css',
-//        'css/prettyPhoto.css',
-//        'css/main.css',
-        'css/responsive.css',
+        'markup/css/font-awesome.min.css',
+        'markup/css/animate.min.css',
+        'markup/css/responsive.css',
         'markup/css/main.css',
         'markup/css/countdown.css',
         'markup/css/extended.css',
@@ -33,15 +31,9 @@ class AppAsset extends AssetBundle
         'markup/css/responsive.css',
         'markup/css/hover.css',
         'markup/css/flexslider.css',
-//        'css/site.css',
     ];
     public $js = [
         'js/bootstrap.min.js',
-//        'js/jquery.prettyPhoto.js',
-//        'js/jquery.isotope.min.js',
-//        'js/main.js',
-//        'js/wow.min.js',
-
         'markup/js/jquery.prettyPhoto.js',
         'markup/js/jquery.isotope.min.js',
         'markup/js/jquery.animateNumber.min.js',
@@ -55,8 +47,6 @@ class AppAsset extends AssetBundle
     ];
     public $depends = [
         'yii\web\YiiAsset',
-//        '\rmrevin\yii\fontawesome\AssetBundle',
-//        'yii\bootstrap\BootstrapPluginAsset',
         'yii\bootstrap\BootstrapAsset',
     ];
 }
