@@ -8,7 +8,7 @@ return [
         ],
         'urlManagerFrontEnd' => [
             'class' => 'yii\web\urlManager',
-            'baseUrl' => 'http://frontend.ibabych.bget.ru',
+            'baseUrl' => 'http://conf.pm-edu.org',
             'showScriptName' => false,
             'enablePrettyUrl' => true,
             'rules' => [],
