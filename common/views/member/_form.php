@@ -181,12 +181,12 @@ use common\models\Member;
             </h2>
         </div>
 
-        <div class="form-group">
-            <?= $form
-                ->field($model, 'agreement')
-                ->checkbox([
+        <div class="form-group text-center">
+            <?=
+                Html::activeCheckbox($model, 'agreement', [
                     'label' => Yii::t('app.member', 'I give my consent to the processing of my personal data imposed by me'),
-                ])
+                    'labelOptions' => ['class' => 'control-label']
+                ]);
             ?>
         </div>
         <div class="form-group text-center">
