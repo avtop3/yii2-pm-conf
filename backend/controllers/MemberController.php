@@ -56,8 +56,15 @@ class MemberController extends Controller
      */
     public function actionView($id)
     {
-        if (Yii::$app->request->post()) {
-            $model = $this->findModel($id);
+        return $this->render('view', [
+            'model' => $this->findModel($id),
+        ]);
+    }
+
+    public function actionSendInviteEmail($id)
+    {
+        $model = $this->findModel($id);
+        if ($model) {
             $messages[] = Yii::$app->mailer->compose('member-info', ['model' => $model])
                 ->setFrom(Yii::$app->params['smtpEmail'])
                 ->setTo([$model->email])
@@ -67,12 +74,18 @@ class MemberController extends Controller
                 ->setFrom(Yii::$app->params['smtpEmail'])
                 ->setTo(['pm.education.khpi@gmail.com'])//'pm.education.khpi@gmail.com',
                 ->setSubject(Yii::t('app.member.mail', 'Integrated Management 2017: Confirmation of Registration'));
+            $sentNumber = Yii::$app->mailer->sendMultiple($messages);
 
-            Yii::$app->mailer->sendMultiple($messages);
+            if (2 === $sentNumber) {
+                $model->touchInviteSentAt();
+                $model->save();
+                Yii::$app->session->addFlash('success', 'Ok!');
+            } else {
+                Yii::$app->session->addFlash('error', 'Error sending invites');
+            }
         }
-        return $this->render('view', [
-            'model' => $this->findModel($id),
-        ]);
+
+        return $this->redirect(Url::to('index'));
     }
 
     /**
@@ -132,21 +145,12 @@ class MemberController extends Controller
     public function actionOrg($period = null)
     {
         $period = (int)$period;
-//        $searchModel = new MemberSearch();
-//        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-//        $dataProvider->pagination->pageSize = 0;
-//        return $this->render('index', [
-//            'searchModel' => $searchModel,
-//            'dataProvider' => $dataProvider,
-//        ]);
         $query = Member::find()->addGroupBy('organisationTitle');
 
         if (is_integer($period)) {
 
             $confPeriod = ConfPeriod::findOne($period);
             if ($confPeriod) {
-//                var_dump($period); exit;
-
                 $query->andFilterWhere(['between', 'created_at', $confPeriod->regStart, $confPeriod->regEnd]);
             }
         }
@@ -224,6 +228,25 @@ class MemberController extends Controller
         ]);
 
         return $this->render('bulk-email', ['dataProvider' => $dataProvider]);
+    }
+
+    /**
+     * Lists last registered Members.
+     * @return mixed
+     */
+    public function actionLastMembers()
+    {
+        $dataProvider = new ActiveDataProvider(
+            [
+                'query' => Member::find()->where(['inviteSentAt' => NULL]),
+                'pagination' => [
+                    'pageSize' => 0,
+                ]
+            ]);
+
+        return $this->render('last-members', [
+            'dataProvider' => $dataProvider,
+        ]);
     }
 
     /**

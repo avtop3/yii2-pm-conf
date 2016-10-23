@@ -44,6 +44,7 @@ use common\models\Countries;
  * @property string $updated_at
  * @property string $currency
  * @property string $totalSum
+ * @property string $inviteSentAt
  */
 class Member extends ActiveRecord
 {
@@ -103,6 +104,7 @@ class Member extends ActiveRecord
             'currency',
             'paid',
             'noteFromAdmin',
+            'inviteSentAt',
             'created_at',
             'updated_at',
         ];
@@ -225,5 +227,10 @@ class Member extends ActiveRecord
         }
 
         return $language;
+    }
+
+    public function touchInviteSentAt()
+    {
+        $this->inviteSentAt = date('U');
     }
 }

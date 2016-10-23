@@ -77,6 +77,12 @@ AppAsset::register($this);
                         'linkOptions' => ['class' => 'btn btn-pirate'],
                     ],
                     [
+                        'label' => Yii::t('language', 'Ожидают подтверждения'),
+                        'url' => ['/member/last-members'],
+                        'options' => ['class' => 'important'],
+                        'linkOptions' => ['class' => 'btn btn-pirate'],
+                    ],
+                    [
                         'label' => Yii::t('language', 'Организации'),
                         'url' => ['/member/org'],
                         'options' => ['class' => 'important'],

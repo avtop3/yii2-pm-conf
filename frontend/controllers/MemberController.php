@@ -30,7 +30,6 @@ class MemberController extends Controller
         ];
     }
 
-
     /**
      * Creates a new Member model.
      * If creation is successful, the browser will be redirected to the 'view' page.
@@ -44,17 +43,17 @@ class MemberController extends Controller
                 $model->save();
                 Yii::$app->session->setFlash('success', Yii::t('app', 'Success!'));
 
-                $messages[] = Yii::$app->mailer->compose('member-info', ['model' => $model])
-                    ->setFrom(Yii::$app->params['smtpEmail'])
-                    ->setTo([$model->email])
-                    ->setSubject(Yii::t('app.member.mail', 'Integrated Management 2017: Confirmation of Registration'));
-
-                $messages[] = Yii::$app->mailer->compose('member-info', ['model' => $model])
-                    ->setFrom(Yii::$app->params['smtpEmail'])
-                    ->setTo(['pm.education.khpi@gmail.com'])//'pm.education.khpi@gmail.com',
-                    ->setSubject(Yii::t('app.member.mail', 'Integrated Management 2017: Confirmation of Registration'));
-
-                Yii::$app->mailer->sendMultiple($messages);
+//                $messages[] = Yii::$app->mailer->compose('member-info', ['model' => $model])
+//                    ->setFrom(Yii::$app->params['smtpEmail'])
+//                    ->setTo([$model->email])
+//                    ->setSubject(Yii::t('app.member.mail', 'Integrated Management 2017: Confirmation of Registration'));
+//
+//                $messages[] = Yii::$app->mailer->compose('member-info', ['model' => $model])
+//                    ->setFrom(Yii::$app->params['smtpEmail'])
+//                    ->setTo(['pm.education.khpi@gmail.com'])//'pm.education.khpi@gmail.com',
+//                    ->setSubject(Yii::t('app.member.mail', 'Integrated Management 2017: Confirmation of Registration'));
+//
+//                Yii::$app->mailer->sendMultiple($messages);
 
                 return $this->redirect(Url::home());
             }else {

@@ -212,12 +212,12 @@ echo \yii\widgets\LinkPager::widget([
         [
             'attribute' => Yii::t('app', 'Listener or speaker'),
             'value' => function ($model) {
-                return ParticipationType::getList()[$model->participationType];
+                return ParticipationType::getParticipationTypeVariants()[$model->participationType];
             },
             'filter' => Html::activeDropDownList(
                 $searchModel,
                 'participationType',
-                array_merge(['' => Yii::t('app', 'All')], ParticipationType::getList()),
+                array_merge(['' => Yii::t('app', 'All')], ParticipationType::getParticipationTypeVariants()),
                 ['class' => 'form-control',]
             ),
             'contentOptions' => ['style' => 'width: 100px;']

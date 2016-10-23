@@ -18,25 +18,25 @@ $this->title = 'My Yii Application';
 <!--</pre>-->
 <div class="row placeholders">
     <div class="col-xs-6 col-sm-3 placeholder">
-        <img src="http://placephant.com/200/200"
+        <img src="http://beerhold.it/200/200"
              width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
         <h4>Label</h4>
         <span class="text-muted">Something else</span>
     </div>
     <div class="col-xs-6 col-sm-3 placeholder">
-        <img src="http://placephant.com/200/203"
+        <img src="http://beerhold.it/200/203"
              width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
         <h4>Label</h4>
         <span class="text-muted">Something else</span>
     </div>
     <div class="col-xs-6 col-sm-3 placeholder">
-        <img src="http://placephant.com/202/202"
+        <img src="http://beerhold.it/202/202"
              width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
         <h4>Label</h4>
         <span class="text-muted">Something else</span>
     </div>
     <div class="col-xs-6 col-sm-3 placeholder">
-        <img src="http://placephant.com/201/201"
+        <img src="http://beerhold.it/201/201"
              width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
         <h4>Label</h4>
         <span class="text-muted">Something else</span>
