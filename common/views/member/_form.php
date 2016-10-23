@@ -2,9 +2,15 @@
 
 use yii\helpers\Html;
 use yii\bootstrap\Html as BootHtml;
-
 use yii\widgets\ActiveForm;
 use common\models\Member;
+use common\models\memberVariants\Country;
+use common\models\memberVariants\OrganisationActivity;
+use common\models\memberVariants\ParticipationType;
+use common\models\memberVariants\ScienceDegree;
+use common\models\memberVariants\ScienceTitle;
+use common\models\memberVariants\TopicLanguage;
+use common\models\memberVariants\TopicSection;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Member */
@@ -58,7 +64,7 @@ use common\models\Member;
 
         <?php endif; ?>
 
-        <?= $form->field($model, 'country')->dropDownList(Member::getCountryVariants()) ?>
+        <?= $form->field($model, 'country')->dropDownList(Country::getList()) ?>
 
         <div id="lang-note" class="text-center text-warning">
             <strong>Fill in the fields in English please</strong>
@@ -73,8 +79,8 @@ use common\models\Member;
         <?= $form->field($model, 'phone') ?>
         <?= $form->field($model, 'email') ?>
         <?= $form->field($model, 'interest') ?>
-        <?= $form->field($model, 'scienceDegree')->dropDownList(Member::getScienceDegreeVariants()) ?>
-        <?= $form->field($model, 'scienceTitle')->dropDownList(Member::getScienceTitleVariants()) ?>
+        <?= $form->field($model, 'scienceDegree')->dropDownList(ScienceDegree::getList()) ?>
+        <?= $form->field($model, 'scienceTitle')->dropDownList(ScienceTitle::getList()) ?>
 
         <h3 class="text-center text-info middle-header">
             <?= Yii::t('app.member', 'Organisation information') ?>
@@ -83,7 +89,7 @@ use common\models\Member;
         <?= $form->field($model, 'organisationTitle') ?>
         <?= $form->field($model, 'organisationDepartment') ?>
         <?= $form->field($model, 'organisationAddress') ?>
-        <?= $form->field($model, 'organisationActivity')->dropDownList(Member::getOrganisationActivityVariants()) ?>
+        <?= $form->field($model, 'organisationActivity')->dropDownList(OrganisationActivity::getList()) ?>
         <?= $form->field($model, 'organisationUrl') ?>
 
         <h3 class="text-center text-info middle-header">
@@ -92,12 +98,14 @@ use common\models\Member;
 
         <?= $form->field($model, 'nameEng') ?>
         <div class="form-group">
-            <?= Html::activeRadioList($model, 'participationType', Member::getParticipationTypeVariants(), [
+            <?= Html::activeRadioList($model, 'participationType', ParticipationType::getList(), [
                 'item' => function ($index, $label, $name, $checked, $value) {
                     if ($index == 0) {
-                        return '<div class="col-lg-3 col-lg-offset-3"><label class="radio-inline">' . Html::radio($name, $checked, ['value' => $value]) . $label . '</label></div>';
+                        return '<div class="col-lg-3 col-lg-offset-3"><label class="radio-inline">'
+                        . Html::radio($name, $checked, ['value' => $value]) . $label . '</label></div>';
                     }
-                    return '<div class="col-lg-6"><label class="radio-inline">' . Html::radio($name, $checked, ['value' => $value]) . $label . '</label></div>';
+                    return '<div class="col-lg-6"><label class="radio-inline">'
+                    . Html::radio($name, $checked, ['value' => $value]) . $label . '</label></div>';
                 }
             ]); ?>
         </div>
@@ -117,7 +125,7 @@ use common\models\Member;
                     <?= BootHtml::activeDropDownList(
                         $model,
                         'topicLanguage',
-                        Member::getTopicLanguageVariants(),
+                        TopicLanguage::getList(),
                         ['class' => 'form-control']
                     ) ?>
                 </div>
@@ -125,7 +133,7 @@ use common\models\Member;
                     <?= BootHtml::activeDropDownList(
                         $model,
                         'topicSection',
-                        Member::getTopicSectionVariants(),
+                        TopicSection::getList(),
                         ['class' => 'form-control']
                     ) ?>
                 </div>
@@ -183,10 +191,10 @@ use common\models\Member;
 
         <div class="form-group text-center">
             <?=
-                Html::activeCheckbox($model, 'agreement', [
-                    'label' => Yii::t('app.member', 'I give my consent to the processing of my personal data imposed by me'),
-                    'labelOptions' => ['class' => 'control-label']
-                ]);
+            Html::activeCheckbox($model, 'agreement', [
+                'label' => Yii::t('app.member', 'I give my consent to the processing of my personal data imposed by me'),
+                'labelOptions' => ['class' => 'control-label']
+            ]);
             ?>
         </div>
         <div class="form-group text-center">
@@ -209,6 +217,9 @@ $css = <<<CSS
 }
 CSS;
 $this->registerCss($css);
+
+$paramsObj = json_encode(Yii::$app->params['registration']);
+$this->registerJs('var paramsObj = ' . $paramsObj . ';');
 
 $bindFullName = <<< JS
 
@@ -253,10 +264,10 @@ function setTableRegistrationFee(){
     var tableField;
 
     if(selectedCountry == 'ua'){
-        registrationFee = 350;
+        registrationFee = paramsObj.uah.fee;
         tableField = registrationFee + ' грн';
     }else{
-        registrationFee = 100;
+        registrationFee =  paramsObj.usd.fee;
         tableField = '$' + registrationFee;
     }
     $('#table-registration-fee').html(tableField);
@@ -268,10 +279,10 @@ function setPapersPrice(){
     var priceForPapersLabel;
 
     if(selectedCountry == 'ua'){
-        priceForPapers = papersCount * 150;
+        priceForPapers = papersCount *  paramsObj.uah.priceForPapers;
         priceForPapersLabel = priceForPapers + ' грн';
     }else{
-        priceForPapers = papersCount * 50;
+        priceForPapers = papersCount * paramsObj.usd.priceForPapers;
         priceForPapersLabel = '$' + priceForPapers;
     }
     $('#price-for-papers').html(priceForPapersLabel);

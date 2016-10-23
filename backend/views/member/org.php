@@ -10,7 +10,7 @@ use yii\bootstrap\Html;
 use yii\grid\GridView;
 use kartik\export\ExportMenu;
 use yii\widgets\ActiveForm;
-
+use common\models\memberVariants\OrganisationActivity;
 /*
  * @var $dataProvider yii\data\ActiveDataProvider
  * @var $model common\models\Member
@@ -86,7 +86,7 @@ $this->title = 'Список организаций';
                 'attribute' => 'organisationActivity',
                 'format' => 'raw',
                 'value' => function ($model) {
-                    return $model->getOrganisationActivityVariants()[$model->organisationActivity];
+                    return OrganisationActivity::getList()[$model->organisationActivity];
                 },
                 'contentOptions' => ['style' => 'width: 100px;', 'class' => 'warning ']
             ],

@@ -77,12 +77,6 @@ class MemberSearch extends Member
         $this->participationType = '';
     }
 
-
-//    public function getCreated()
-//    {
-//        return self::parseDateString($this->created_at);
-//    }
-
     /**
      * @inheritdoc
      */
@@ -91,19 +85,6 @@ class MemberSearch extends Member
         // bypass scenarios() implementation in the parent class
         return Model::scenarios();
     }
-
-//    public static function parseDateString($dateString)
-//    {//dateRangePicker format to array
-//
-//        if ($dateString && is_string($dateString)) {
-//            $dateArr = explode(' - ', $dateString);
-//            if (count($dateArr) == 2) {
-//                return ['from' => strtotime($dateArr[0]), 'to' => strtotime($dateArr[1])];
-//            }
-//        }
-//
-//        return false;
-//    }
 
     /**
      * Creates data provider instance with search query applied

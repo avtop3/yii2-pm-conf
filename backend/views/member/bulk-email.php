@@ -9,6 +9,7 @@
 use yii\bootstrap\Html;
 use yii\grid\GridView;
 use kartik\export\ExportMenu;
+use common\models\memberVariants\Country;
 
 /*
  * @var $dataProvider yii\data\ActiveDataProvider
@@ -39,7 +40,7 @@ $this->title = 'Рассылка';
             [
                 'attribute' => 'country',
                 'value' => function ($model) {
-                    return $model->getCountryVariants()[$model->country];
+                    return Country::getList()[$model->country];
                 }
             ],
 //            [
@@ -82,8 +83,5 @@ $this->title = 'Рассылка';
         </div>
     </div>
 
-
     <?= Html::endForm() ?>
-
-
 </div>

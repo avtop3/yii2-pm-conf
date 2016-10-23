@@ -6,6 +6,13 @@
  * Time: 13:09
  */
 use yii\widgets\DetailView;
+use common\models\memberVariants\Country;
+use common\models\memberVariants\OrganisationActivity;
+use common\models\memberVariants\ParticipationType;
+use common\models\memberVariants\ScienceDegree;
+use common\models\memberVariants\ScienceTitle;
+use common\models\memberVariants\TopicLanguage;
+use common\models\memberVariants\TopicSection;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Member */
@@ -14,7 +21,7 @@ $attributes = [
     'name',
     [
         'attribute' => Yii::t('app.member', 'Country of residence'),
-        'value' => $model->getCountryVariants()[$model->country],
+        'value' => Country::getList()[$model->country],
     ],
     'position',
     'phone',
@@ -22,25 +29,25 @@ $attributes = [
     'interest',
     [
         'attribute' => $model->getAttributeLabel('scienceDegree'),
-        'value' => $model->getScienceDegreeVariants()[$model->scienceDegree],
+        'value' => ScienceDegree::getList()[$model->scienceDegree],
     ],
     [
         'attribute' => $model->getAttributeLabel('scienceTitle'),
-        'value' => $model->getScienceTitleVariants()[$model->scienceTitle],
+        'value' => ScienceTitle::getList()[$model->scienceTitle],
     ],
     'organisationTitle',
     'organisationDepartment',
     'organisationAddress',
     [
         'attribute' => $model->getAttributeLabel('organisationActivity'),
-        'value' => $model->getOrganisationActivityVariants()[$model->organisationActivity],
+        'value' => OrganisationActivity::getList()[$model->organisationActivity],
     ],
     'organisationUrl',
     'nameEng',
     [
         'format' => 'html',
         'attribute' => $model->getAttributeLabel('participationType'),
-        'value' => $model->getParticipationTypeVariants()[$model->participationType],
+        'value' => ParticipationType::getList()[$model->participationType],
     ],
     [
         'attribute' => $model->getAttributeLabel('papersCount'),
@@ -52,16 +59,16 @@ $attributes = [
     ],
 ];
 
-if ($model->participationType == \common\models\Member::PARTICIPATION_TYPE_SPEAKER) {
+if ($model->participationType == ParticipationType::SPEAKER) {
     $attributesForSpeaker = [
         'topicTitle',
         [
             'attribute' => $model->getAttributeLabel('topicSection'),
-            'value' => $model->getTopicSectionVariants()[$model->topicSection],
+            'value' => TopicSection::getList()[$model->topicSection],
         ],
         [
             'attribute' => $model->getAttributeLabel('topicLanguage'),
-            'value' => $model->getTopicLanguageVariants()[$model->topicLanguage],
+            'value' => TopicLanguage::getList()[$model->topicLanguage],
         ],
     ];
     $attributes = array_merge($attributes, $attributesForSpeaker);

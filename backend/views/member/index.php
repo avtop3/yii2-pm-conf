@@ -9,6 +9,14 @@ use kartik\daterange\DateRangePicker;
 use kartik\export\ExportMenu;
 use yii\data\Pagination;
 use yii\widgets\ActiveForm;
+use common\models\memberVariants\Currency;
+use common\models\memberVariants\Country;
+use common\models\memberVariants\OrganisationActivity;
+use common\models\memberVariants\ParticipationType;
+use common\models\memberVariants\ScienceDegree;
+use common\models\memberVariants\ScienceTitle;
+use common\models\memberVariants\TopicLanguage;
+use common\models\memberVariants\TopicSection;
 
 /* @var $this yii\web\View */
 /* @var $searchModel common\models\MemberSearch */
@@ -83,7 +91,7 @@ $confPeriods = \backend\models\ConfPeriod::find()->orderBy('regStart')->all();
                 [
                     'attribute' => 'Country',
                     'value' => function ($model) {
-                        return $model->getCountryVariants()[$model->country];
+                        return Country::getList()[$model->country];
                     }
                 ],
 
@@ -101,13 +109,13 @@ $confPeriods = \backend\models\ConfPeriod::find()->orderBy('regStart')->all();
                 [
                     'attribute' => 'scienceDegree',
                     'value' => function ($model) {
-                        return $model->getScienceDegreeVariants()[$model->scienceDegree];
+                        return ScienceDegree::getList()[$model->scienceDegree];
                     }
                 ],
                 [
                     'attribute' => 'scienceTitle',
                     'value' => function ($model) {
-                        return $model->getScienceTitleVariants()[$model->scienceTitle];
+                        return ScienceTitle::getList()[$model->scienceTitle];
                     },
                 ],
 
@@ -117,7 +125,7 @@ $confPeriods = \backend\models\ConfPeriod::find()->orderBy('regStart')->all();
                 [
                     'attribute' => 'organisationActivity',
                     'value' => function ($model) {
-                        return $model->getOrganisationActivityVariants()[$model->organisationActivity];
+                        return OrganisationActivity::getList()[$model->organisationActivity];
                     },
                 ],
                 'organisationUrl',
@@ -126,20 +134,20 @@ $confPeriods = \backend\models\ConfPeriod::find()->orderBy('regStart')->all();
                 [
                     'attribute' => Yii::t('app', 'Listener or speaker'),
                     'value' => function ($model) {
-                        return $model->getParticipationTypePureVariants()[$model->participationType];
+                        return ParticipationType::getParticipationTypeVariants()[$model->participationType];
                     },
                 ],
                 'topicTitle',
                 [
                     'attribute' => 'topicLanguage',
                     'value' => function ($model) {
-                        return $model->getTopicLanguageVariants()[$model->topicLanguage];
+                        return TopicLanguage::getList()[$model->topicLanguage];
                     },
                 ],
                 [
                     'attribute' => 'topicSection',
                     'value' => function ($model) {
-                        return $model->getTopicSectionVariants()[$model->topicSection];
+                        return TopicSection::getList()[$model->topicSection];
                     },
                 ],
                 'papersCount',
@@ -204,12 +212,12 @@ echo \yii\widgets\LinkPager::widget([
         [
             'attribute' => Yii::t('app', 'Listener or speaker'),
             'value' => function ($model) {
-                return Member::getParticipationTypePureVariants()[$model->participationType];
+                return ParticipationType::getList()[$model->participationType];
             },
             'filter' => Html::activeDropDownList(
                 $searchModel,
                 'participationType',
-                array_merge(['' => Yii::t('app', 'All')], Member::getParticipationTypePureVariants()),
+                array_merge(['' => Yii::t('app', 'All')], ParticipationType::getList()),
                 ['class' => 'form-control',]
             ),
             'contentOptions' => ['style' => 'width: 100px;']
@@ -218,7 +226,7 @@ echo \yii\widgets\LinkPager::widget([
             'label' => Yii::t('app', 'Member`s fee'),
             'attribute' => 'totalSum',
             'value' => function ($model) {
-                return $model->totalSum . ' ' . $model->getCurrencyVariants()[$model->currency];
+                return $model->totalSum . ' ' . Currency::getList()[$model->currency];
             },
             'contentOptions' => ['style' => 'width: 100px;']
         ],
