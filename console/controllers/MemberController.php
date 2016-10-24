@@ -30,5 +30,4 @@ class MemberController extends Controller
 
         echo $membersCount . ' new member(s) are waiting for confirm email' . PHP_EOL;
     }
-
 } 
