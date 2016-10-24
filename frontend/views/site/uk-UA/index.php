@@ -2,24 +2,24 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'Integrated management 2016. Конференція для професіоналів з управління проектами';
+$this->title = 'Integrated Management 2017: Міжнародна науково-практична конференція з управління проектами, програмами, портфелями';
 $this->params['bodyClass'] = 'homepage';
 ?>
 
 <section id="main-slider" class="no-margin">
     <div class="carousel slide">        
         <div class="carousel-inner">            
-            <div class="item active" style="background-image: url(/markup/images/s1.jpg)">
+            <div class="item active" style="background-image: url(/markup/images/s11.jpg)">
                 <div class="container full">
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="carousel-content">
                                 <div class="container">
                                     <div class="left">
-                                        <p>14-16 февраля, 2017 г.</p>
+                                        <p>13-16 лютого 2017 р.</p>
                                     </div>
                                     <div class="right">
-                                        <p>пгт. Славское, Львовская обл., Украина</p>
+                                        <p>с. Яблуниця (Буковель), Івано-Франківська обл., Україна</p>
                                     </div>
                                 </div>
 
@@ -40,13 +40,13 @@ $this->params['bodyClass'] = 'homepage';
                 </div>
             </div><!--/.item-->
 
-            <div class="item" style="background-image: url(/markup/images/s2.jpg)">
+            <div class="item" style="background-image: url(/markup/images/s12.jpg)">
                 <div class="container full absolute">
                     <div class="row slide-margin">
                         <div class="col-sm-12">
                             <div class="carousel-content">
                                 <h2 class="animation animated-item-1">Місце проведення</h2>
-                                <h1 class="animation animated-item-2">Готель «Перлина Карпат», який знаходиться у мальовничому куточку Карпат на гірськолижному курорті смт. Славське.</h1>
+                                <h1 class="animation animated-item-2">Готель «Горгани», який знаходиться у мальовничому куточку Карпат поруч з гірськолижним курортом Буковель</h1>
                             </div>
                         </div>
                     </div>
@@ -72,7 +72,7 @@ $this->params['bodyClass'] = 'homepage';
                         <div class="col-sm-12">
                             <div class="carousel-content">
                                 <h2 class="animation animated-item-1">Праці конференції</h2>
-                                <h1 class="animation animated-item-2">Усі статті будуть опубліковані у рецензованому науковому журналі, що входить до переліку фахових видань України</h1>
+                                <h1 class="animation animated-item-2">Усі статті будуть опубліковані у рецензованому науковому журналі, що входить до переліку фахових видань України та індексується в міжнародних наукометричних базах, репозитаріях та пошукових системах</h1>
                             </div>
                         </div>
                     </div>
@@ -103,7 +103,7 @@ $this->params['bodyClass'] = 'homepage';
                                             <div id="canvas_days" class="clock-canvas"></div>
                                             <div class="text">
                                                 <p class="val">0</p>
-                                                <p class="type-days type-time">ДНЕЙ</p>
+                                                <p class="type-days type-time">ДНІВ</p>
                                             </div>
                                         </div>
                                     </div>
@@ -115,7 +115,7 @@ $this->params['bodyClass'] = 'homepage';
                                             <div id="canvas_hours" class="clock-canvas"></div>
                                             <div class="text">
                                                 <p class="val">0</p>
-                                                <p class="type-hours type-time">ЧАСОВ</p>
+                                                <p class="type-hours type-time">ГОДИН</p>
                                             </div>
                                         </div>
                                     </div>
@@ -127,7 +127,7 @@ $this->params['bodyClass'] = 'homepage';
                                             <div id="canvas_minutes" class="clock-canvas"></div>
                                             <div class="text">
                                                 <p class="val">0</p>
-                                                <p class="type-minutes type-time">МИНУТ</p>
+                                                <p class="type-minutes type-time">ХВИЛИН</p>
                                             </div>
                                         </div>
                                     </div>
@@ -255,10 +255,10 @@ $this->params['bodyClass'] = 'homepage';
             <div class="part">
                 <div class="number">
                     <p>01</p>
-                    <p>жовтня</p>
+                    <p>листопада</p>
                 </div>
                 <div class="descr">
-                    <p>Початок<br> реєстрації учасників конференції</p>
+                    <p>Початок <br>реєстрації учасників конференції</p>
                 </div>
             </div>
             <div class="part">
@@ -267,25 +267,25 @@ $this->params['bodyClass'] = 'homepage';
                     <p>грудня</p>
                 </div>
                 <div class="descr black">
-                    <p>Рання оплата<br> організаційного внеску</p>
+                    <p>Кінцевий термін <br>для ранньої оплати організаційного внеску</p>
                 </div>
             </div>
             <div class="part">
                 <div class="number red">
-                    <p>31</p>
+                    <p>20</p>
                     <p>січня</p>
                 </div>
                 <div class="descr red">
-                    <p>Закінчення<br> реєстрації учасників</p>
+                    <p>Закінчення <br>реєстрації учасників конференції</p>
                 </div>
             </div>
             <div class="part">
                 <div class="number red">
-                    <p>31</p>
+                    <p>20</p>
                     <p>січня</p>
                 </div>
                 <div class="descr red">
-                    <p>Оплата організаційного внеску</p>
+                    <p>Кінцевий термін <br>для оплати організаційного внеску</p>
                 </div>
             </div>
         </div>
@@ -297,37 +297,37 @@ $this->params['bodyClass'] = 'homepage';
             <div class="part">
                 <div class="number">
                     <p>01</p>
-                    <p>жовтня</p>
+                    <p>листопада</p>
                 </div>
                 <div class="descr">
-                    <p>Початок прийому статей до публікації</p>
+                    <p>Початок прийому статей до публікації від учасників конференції</p>
                 </div>
             </div>
             <div class="part">
                 <div class="number red">
-                    <p>30</p>
-                    <p>листопада</p>
+                    <p>10</p>
+                    <p>грудня</p>
                 </div>
                 <div class="descr red">
-                    <p>Закінчення прийому статей до публікації</p>
+                    <p>Закінчення прийому статей до публікації від учасників конференції</p>
                 </div>
             </div>
             <div class="part">
                 <div class="number black">
-                    <p>15</p>
+                    <p>25</p>
                     <p>грудня</p>
                 </div>
                 <div class="descr black">
-                    <p>Рецензування та оповіщення авторів</p>
+                    <p>Рецензування та оповіщення авторів про прийом статей</p>
                 </div>
             </div>
             <div class="part">
                 <div class="number red">
-                    <p>25</p>
+                    <p>31</p>
                     <p>грудня</p>
                 </div>
                 <div class="descr red">
-                    <p>Оплата вартості публікації</p>
+                    <p>Кінцевий термін <br>для оплати вартості публікації</p>
                 </div>
             </div>
         </div>
@@ -424,11 +424,11 @@ $this->params['bodyClass'] = 'homepage';
 
         <div class="partners col-lg-12">
             <ul>
-                <li> <a href="http://pm-edu.org/ru/"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" src="/markup/images/partners/strategic.png"></a></li>
-                <li> <a href="http://upma.kiev.ua/ru"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" src="/markup/images/partners/upma.png"></a></li>
-                <li> <a href="http://www.kpi.kharkov.ua/ru/"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms" src="/markup/images/partners/hpi.png"></a></li>
-                <li> <a href="http://www.kname.edu.ua/"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms" src="/markup/images/partners/g.png"></a></li>
-                <li> <a href="http://lnau.lviv.ua/lnau/"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1500ms" src="/markup/images/partners/lnau.png"></a></li>
+                <li> <a href="http://pm-edu.org/ua/"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" src="/markup/images/partners/strategic.png"></a></li>
+                <li> <a href="http://upma.kiev.ua/uk" rel="nofollow"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" src="/markup/images/partners/upma.png"></a></li>
+                <li> <a href="http://www.kpi.kharkov.ua/ua/" rel="nofollow"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms" src="/markup/images/partners/hpi.png"></a></li>
+                <li> <a href="http://www.kname.edu.ua/" rel="nofollow"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms" src="/markup/images/partners/g.png"></a></li>
+                <li> <a href="http://lnau.lviv.ua/lnau/" rel="nofollow"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1500ms" src="/markup/images/partners/lnau.png"></a></li>
             </ul>
         </div>
     </div><!--/.container-->
@@ -439,8 +439,8 @@ $this->params['bodyClass'] = 'homepage';
 
         <div class="partners col-lg-12">
             <ul>
-                <li> <a href="http://www.zhilstroj-2.ua/"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1800ms" src="/markup/images/partners/zhil.png"></a></li>
-                <li> <a href="http://lineup.com.ua/ru/"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="2500ms" src="/markup/images/partners/LineUp.png"></a></li>
+                <li> <a href="http://www.zhilstroj-2.ua/" rel="nofollow"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1800ms" src="/markup/images/partners/zhil.png"></a></li>
+                <li> <a href="http://lineup.com.ua/ua/" rel="nofollow"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="2500ms" src="/markup/images/partners/LineUp.png"></a></li>
             </ul>
         </div>
     </div>

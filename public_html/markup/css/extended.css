@@ -544,6 +544,7 @@ hr {
   font-size: 32px;
   text-align: left;
   color: #004a00;
+  padding-left: 15px;
 }
 #location .container .row {
   margin: 25px 0;
@@ -553,8 +554,10 @@ hr {
 }
 #location .container .row .txt-block.right-padd {
   padding-right: 15px;
+  padding-left: 15px;
 }
 #location .container .row .txt-block.left-padd {
+  padding-right: 15px;
   padding-left: 15px;
 }
 #location .container .row .txt-block p {
@@ -569,7 +572,7 @@ hr {
   line-height: normal;
 }
 #location .container .row .txt-block .booking p {
-  margin-bottom: 15px;
+  margin-bottom: 0;
 }
 #location .container .row .txt-block .booking a {
   padding: 15px;
@@ -577,16 +580,18 @@ hr {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  margin-right: 10px;
+  margin-right: 8px;
   box-shadow: 0 1px 1px 1px rgba(125,207,61,0.4);
 }
 #location .container .row .txt-block .booking a img {
-  height: 35px;
+  height: 45px;
 }
-#location .container .row .img-block {
-  padding-left: 0;
+#location .container .row .img-block .right-padd {
   padding-right: 0;
-}
+  }
+#location .container .row .img-block .left-padd {
+  padding-left: 15px;
+  }
 #location .container .row .img-block img {
   width: 100%;
   height: 100%;
@@ -1052,4 +1057,20 @@ ul#language-selector li.active {
 }
 #dates .row .part .descr.red {
   background: #c00000;
+}
+#insidePhoto .tab-content {
+     padding: 10px 0;   
+}
+#insidePhoto #tab-1 .tab-gallery a.gallery 
+{
+    width: 24%;
+    height: 100%;
+    margin: 1% 0.4%;
+    display: inline-block;
+    border: 6px solid #fff;
+}
+#insidePhoto #tab-1 .tab-gallery a.gallery img
+{
+    height: 100%;
+    width: 100%
 }

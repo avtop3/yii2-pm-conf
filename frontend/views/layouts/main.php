@@ -23,7 +23,7 @@ $this->registerMetaTag([
 
 $this->registerMetaTag([
     'name' => 'generator',
-    'content' => 'Powered by Aleksandr AVTOP Kovalchuk with Yii2 (since 2016)'
+    'content' => 'Strategic Management Department, NTU "KhPI". All rights reserved © 2016 Kharkiv, Ukraine'
 ]);
 
 
@@ -40,6 +40,10 @@ AppAsset::register($this);
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
+    <link href="/markup/css/flexslider.css" rel="stylesheet">   
+    <link href="/markup/css/jquery.fancybox-buttons.css?v=1.0.5" rel="stylesheet">   
+    <link href="/markup/css/jquery.fancybox-thumbs.css?v=1.0.7" rel="stylesheet">     
+    <link href="/markup/css/jquery.fancybox.css" rel="stylesheet">  
 </head>
 <body <?= isset($this->params['bodyClass']) ? 'class="' . $this->params['bodyClass'] . '"' : null ?> >
 <?php $this->beginBody() ?>
@@ -139,7 +143,7 @@ AppAsset::register($this);
 
 
 <div id="regLink">
-    <p><?= Yii::t('app.layout', 'Participation fee <br>350 uah') ?></p>
+    <p><?= Yii::t('app.layout', 'Participation fee <br>450 uah') ?></p>
 
     <div class="img-left">
         <img src="/markup/images/arrow_up_1.png" alt="">
@@ -188,10 +192,32 @@ AppAsset::register($this);
     </div>
 </footer>
 <!--/#footer-->
-
-
-
 <?php $this->endBody() ?>
+<script src="/markup/js/jquery.flexslider.js"></script>
+<script src="/markup/js/jquery.fancybox.js"></script>
+<script src="/markup/js/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script src="/markup/js/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<script type="text/javascript">
+            $(document).ready(function() {
+                var baseUrl = 'api/file/images';                
+                $("a[data-folder-name]").click(function() {
+                    $.ajax({
+                        type: 'get',
+                        url: baseUrl,
+                        data: {
+                            subFolder: $(this).data('folder-name')
+                        },
+                        success: function(data){
+                            var result = data.map(function(item){                            
+                                return item.path;
+                            });                        
+                            console.log(result);
+                            $.fancybox.open(result);
+                        }
+                    })
+                });
+            });
+        </script>
 </body>
 </html>
 <?php $this->endPage() ?>

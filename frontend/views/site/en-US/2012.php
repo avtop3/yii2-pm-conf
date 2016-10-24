@@ -6,13 +6,22 @@
  * Time: 22:51
  */
 
-$this->title = 'Conference archive 2012';
+$this->title = 'Conference archive 2012 | International Conference in Project, Program, and Portfolio Management';
 ?>
 <section id="insidePhoto">
     <div class="container">
-        <h2><?= $this->title ?></h2>
+        <h2>Conference archive 2012</h2>
+
         <div class="tabs">
-            <?= $this->render('archive-menu.php') ?>
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#tab-1" data-toggle="tab" class="hvr-bubble-bottom"><i
+                            class="fa fa-picture-o" aria-hidden="true"></i> PHOTOGALLERY</a></li>
+                <li><a href="#tab-2" data-toggle="tab" class="hvr-bubble-bottom"><i class="fa fa-list-alt"
+                                                                                    aria-hidden="true"></i> PRESENTATIONS</a></li>
+                <li><a href="#tab-3" data-toggle="tab" class="hvr-bubble-bottom"><i class="fa fa-sticky-note-o"
+                                                                                    aria-hidden="true"></i> PAPERS</a>
+                </li>
+            </ul>
             <div class="tab-content">
                 <div class="tab-pane fade" id="tab-1">
 
@@ -21,7 +30,7 @@ $this->title = 'Conference archive 2012';
 
                 </div>
                 <div class="tab-pane fade in active" id="tab-3">
-                    <a href="" class="hvr-shutter-out-horizontal download">
+                    <a href="../markup/images/archive/2012/ConferencePapers2012.rar" class="hvr-shutter-out-horizontal download" download>
                         <p>Download published papers</p> <i class="fa fa-download" aria-hidden="true"></i>
                     </a>
                 </div>

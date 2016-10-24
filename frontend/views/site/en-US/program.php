@@ -6,7 +6,7 @@
  * Time: 16:44
  */
 
-$this->title = 'Программа';
+$this->title = 'Conference Topics | International Conference in Project, Program, and Portfolio Management';
 ?>
 
 <section id="program">

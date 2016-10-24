@@ -5,7 +5,7 @@
  * Date: 05.06.2016
  * Time: 22:52
  */
-$this->title = 'Архів конференції 2014 року';
+$this->title = 'Архів конференції 2014 року | Міжнародна конференція з управління проектами, програмами, портфелями';
 ?>
 
 <section id="insidePhoto">
@@ -13,101 +13,48 @@ $this->title = 'Архів конференції 2014 року';
         <h2>Архів конференції 2014 року</h2>
 
         <div class="tabs">
-            <?= $this->render('archive-menu.php') ?>
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#tab-1" data-toggle="tab" class="hvr-bubble-bottom"><i
+                            class="fa fa-picture-o" aria-hidden="true"></i> Фотоархів конференції</a></li>
+                <li><a href="#tab-2" data-toggle="tab" class="hvr-bubble-bottom"><i class="fa fa-list-alt"
+                                                                                    aria-hidden="true"></i> Презентації доповідей</a></li>
+                <li><a href="#tab-3" data-toggle="tab" class="hvr-bubble-bottom"><i class="fa fa-sticky-note-o"
+                                                                                    aria-hidden="true"></i> Статті</a>
+                </li>
+            </ul>
             <div class="tab-content">
                 <div class="tab-pane fade in active" id="tab-1">
-                    <div id="slider" class="flexslider">
-                        <ul class="slides">
-                            <li>
-                                <img src="/markup/images/gallery/gallery1.jpg"/>
-                            </li>
-                            <li>
-                                <img src="/markup/images/gallery/gallery1.jpg"/>
-                            </li>
-                            <li>
-                                <img src="/markup/images/gallery/gallery1.jpg"/>
-                            </li>
-                            <li>
-                                <img src="/markup/images/gallery/gallery1.jpg"/>
-                            </li>
-                            <li>
-                                <img src="/markup/images/gallery/gallery1.jpg"/>
-                            </li>
-                            <li>
-                                <img src="/markup/images/gallery/gallery1.jpg"/>
-                            </li>
-                            <li>
-                                <img src="/markup/images/gallery/gallery1.jpg"/>
-                            </li>
-                            <li>
-                                <img src="/markup/images/gallery/gallery1.jpg"/>
-                            </li>
-                            <li>
-                                <img src="/markup/images/gallery/gallery1.jpg"/>
-                            </li>
-                        </ul>
-                    </div>
-                    <div id="carousel" class="flexslider">
-                        <ul class="slides">
-                            <li>
-                                <img src="/markup/images/gallery/gallery1.jpg"/>
-                            </li>
-                            <li>
-                                <img src="/markup/images/gallery/gallery1.jpg"/>
-                            </li>
-                            <li>
-                                <img src="/markup/images/gallery/gallery1.jpg"/>
-                            </li>
-                            <li>
-                                <img src="/markup/images/gallery/gallery1.jpg"/>
-                            </li>
-                            <li>
-                                <img src="/markup/images/gallery/gallery1.jpg"/>
-                            </li>
-                            <li>
-                                <img src="/markup/images/gallery/gallery1.jpg"/>
-                            </li>
-                            <li>
-                                <img src="/markup/images/gallery/gallery1.jpg"/>
-                            </li>
-                            <li>
-                                <img src="/markup/images/gallery/gallery1.jpg"/>
-                            </li>
-                            <li>
-                                <img src="/markup/images/gallery/gallery1.jpg"/>
-                            </li>
-                        </ul>
-                    </div>
+                    
                 </div>
-                <div class="tab-pane fade" id="tab-2">
+                <div class="tab-pane fade in active" id="tab-2">
                     <div class="presentation">
-                        <a id="pres1" href="javascript:;">
-                            <img src="/markup/images/archive/2014/presentations/01.jpg" alt="">
+                        <a href="javascript:;" data-folder-name="2014/presentations/01">
+                            <img src="/markup/images/archive/2014/presentations/01/01.JPG" alt="">
                         </a>
                     </div>
                     <div class="presentation">
-                        <a id="pres2" href="javascript:;">
-                            <img src="/markup/images/archive/2014/presentations/02.jpg" alt="">
+                        <a href="javascript:;" data-folder-name="2014/presentations/02">
+                            <img src="/markup/images/archive/2014/presentations/02/01.JPG" alt="">
                         </a>
                     </div>
                     <div class="presentation">
-                        <a id="pres3" href="javascript:;">
-                            <img src="/markup/images/archive/2014/presentations/03.jpg" alt="">
+                        <a href="javascript:;" data-folder-name="2014/presentations/03">
+                            <img src="/markup/images/archive/2014/presentations/03/01.JPG" alt="">
                         </a>
                     </div>
                     <div class="presentation">
-                        <a id="pres4" href="javascript:;">
-                            <img src="/markup/images/archive/2014/presentations/04.jpg" alt="">
+                        <a href="javascript:;" data-folder-name="2014/presentations/04">
+                            <img src="/markup/images/archive/2014/presentations/04/01.JPG" alt="">
                         </a>
                     </div>
                     <div class="presentation">
-                        <a id="pres5" href="javascript:;">
-                            <img src="/markup/images/archive/2014/presentations/05.jpg" alt="">
+                        <a href="javascript:;" data-folder-name="2014/presentations/05">
+                            <img src="/markup/images/archive/2014/presentations/05/01.JPG" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="tab-3">
-                    <a href="" class="hvr-shutter-out-horizontal download">
+                    <a href="../markup/images/archive/2014/ConferencePapers2014.rar" class="hvr-shutter-out-horizontal download" download>
                         <p>Завантажити опубліковані статті</p> <i class="fa fa-download" aria-hidden="true"></i></a>
                 </div>
             </div>

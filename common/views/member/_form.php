@@ -253,7 +253,7 @@ function setTableRegistrationFee(){
     var tableField;
 
     if(selectedCountry == 'ua'){
-        registrationFee = 350;
+        registrationFee = 450;
         tableField = registrationFee + ' грн';
     }else{
         registrationFee = 100;

@@ -8,7 +8,7 @@ use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 use yii\captcha\Captcha;
 
-$this->title = 'Contact information';
+$this->title = 'Contact Information | International Conference in Project, Program, and Portfolio Management';
 ?>
 
 <section id="contacts">
@@ -58,7 +58,7 @@ $this->title = 'Contact information';
         <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12 address">
             <h3>OUR ADDRESS</h3>
 
-            <p>Ukraine, 61002, Kharkiv, 21, Frunze str., NTU “KhPI”, Strategic Management Department (U-2 Building, 7th floor, room 703)</p>
+            <p>Ukraine, 61002, Kharkiv, 21, Kirpicheva str., NTU “KhPI”, Strategic Management Department (U-2 Building, 7th floor, room 703)</p>
             <hr>
         </div>
 
@@ -66,7 +66,7 @@ $this->title = 'Contact information';
             <h3>WE ARE ON THE MAP</h3>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10258.636093345713!2d36.2498081!3d49.9990019!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4847f00cec333b6!2z0KXQsNGA0YzQutC-0LLRgdC60LjQuSDQv9C-0LvQuNGC0LXRhdC90LjRh9C10YHQutC40Lkg0LjQvdGB0YLQuNGC0YPRgg!5e0!3m2!1sru!2sua!4v1460894569060"
-                width="100%" height="450" frameborder="0" style="border:1px solid #028e02;" allowfullscreen></iframe>
+                width="100%" height="500" frameborder="0" style="border:1px solid #028e02;" allowfullscreen></iframe>
         </div>
     </div>
 </section>

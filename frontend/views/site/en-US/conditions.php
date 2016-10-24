@@ -4,12 +4,12 @@
 
 use yii\helpers\Html;
 
-$this->title = 'Conditions';
+$this->title = 'Conditions of Perticipation | International Conference in Project, Program, and Portfolio Management';
 ?>
 
 <section id="conditions">
     <div class="container">
-        <h2>CONDITIONS OF REGISTRATIONS</h2>
+        <h2>CONDITIONS OF PARTICIPATION</h2>
 
         <div class="price_table col-lg-12">                
             <div class="column_1 members">
