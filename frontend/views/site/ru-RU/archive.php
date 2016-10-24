@@ -5,12 +5,12 @@
  * Date: 05.06.2016
  * Time: 22:11
  */
-$this->title = 'Архивы конференции';
+$this->title = 'Архив конференции | Международная конференция по управлению проектами, программами, портфелями';
 ?>
 
 <section id="archive">
     <div class="container">
-        <h2>Архивы конференции</h2>
+        <h2>Архив конференции</h2>
 
         <div class="row">
             <div class="col-lg-5 img-block">
@@ -26,7 +26,7 @@ $this->title = 'Архивы конференции';
                 <p>Количество участников: 103</p>
 
                 <p>Опубликованно статей: 46</p>
-                <a href="<?= \yii\helpers\Url::to(['site/static-page', 'page' => '2016']) ?>" target="_blank">Подробный отчет</a>
+                <a href="<?= \yii\helpers\Url::to(['site/static-page', 'page' => '2016']) ?>">Подробнее...</a>
             </div>
         </div>
         <div class="row">
@@ -38,12 +38,12 @@ $this->title = 'Архивы конференции';
 
                 <p>Дата проведения: 10-13 февраля 2015 г.</p>
 
-                <p>Место проведения: с. Поляниця, Ивано-Франковская область, Украина</p>
+                <p>Место проведения: с. Поляница (Буковель), Ивано-Франковская область, Украина</p>
 
                 <p>Количество участников: 115</p>
 
                 <p>Опубликованно статей: 68</p>
-                <a href="<?= \yii\helpers\Url::to(['site/static-page', 'page' => '2015']) ?>" target="_blank">Подробный отчет</a>
+                <a href="<?= \yii\helpers\Url::to(['site/static-page', 'page' => '2015']) ?>">Подробнее...</a>
             </div>
         </div>
         <div class="row">
@@ -60,7 +60,7 @@ $this->title = 'Архивы конференции';
                 <p>Количество участников: 84</p>
 
                 <p>Опубликованно статей: 43</p>
-                <a href="<?= \yii\helpers\Url::to(['site/static-page', 'page' => '2014']) ?>" target="_blank">Подробный отчет</a>
+                <a href="<?= \yii\helpers\Url::to(['site/static-page', 'page' => '2014']) ?>">Подробнее...</a>
             </div>
         </div>
         <div class="row">
@@ -72,12 +72,12 @@ $this->title = 'Архивы конференции';
 
                 <p>Дата проведения: 01-04 февраля 2013 г.</p>
 
-                <p>Место проведения: г. Яремче, Ивано-Франковская область, Украина</p>
+                <p>Место проведения: г. Яремче (Буковель), Ивано-Франковская область, Украина</p>
 
                 <p>Количество участников: 151</p>
 
                 <p>Опубликованно статей: 64</p>
-                <a href="<?= \yii\helpers\Url::to(['site/static-page', 'page' => '2013']) ?>" target="_blank">Подробный отчет</a>
+                <a href="<?= \yii\helpers\Url::to(['site/static-page', 'page' => '2013']) ?>">Подробнее...</a>
             </div>
         </div>
         <div class="row">
@@ -94,7 +94,7 @@ $this->title = 'Архивы конференции';
                 <p>Количество участников: 162</p>
 
                 <p>Опубликованно статей: 90</p>
-                <a href="<?= \yii\helpers\Url::to(['site/static-page', 'page' => '2012']) ?>" target="_blank">Подробный отчет</a>
+                <a href="<?= \yii\helpers\Url::to(['site/static-page', 'page' => '2012']) ?>">Подробнее...</a>
             </div>
         </div>
         <div class="row">
@@ -111,7 +111,7 @@ $this->title = 'Архивы конференции';
                 <p>Количество участников: 120</p>
 
                 <p>Опубликованно статей: 72</p>
-                <a href="<?= \yii\helpers\Url::to(['site/static-page', 'page' => '2011']) ?>" target="_blank">Подробный отчет</a>
+                <a href="<?= \yii\helpers\Url::to(['site/static-page', 'page' => '2011']) ?>" >Подробнее...</a>
             </div>
         </div>
         <div class="row">
@@ -128,7 +128,7 @@ $this->title = 'Архивы конференции';
                 <p>Количество участников: 80</p>
 
                 <p>Опубликованно статей: 49</p>
-                <a href="<?= \yii\helpers\Url::to(['site/static-page', 'page' => '2010']) ?>" target="_blank">Подробный отчет</a>
+                <a href="<?= \yii\helpers\Url::to(['site/static-page', 'page' => '2010']) ?>">Подробнее...</a>
             </div>
         </div>
     </div>

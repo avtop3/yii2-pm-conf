@@ -4,7 +4,7 @@
 
 use yii\helpers\Html;
 
-$this->title = 'About';
+$this->title = 'About Conference | International Conference in Project, Program, and Portfolio Management';
 ?>
 <div id="about-conf">
     <div class="organizers">
@@ -135,7 +135,7 @@ $this->title = 'About';
                         <p class="fname">Anna</p>
 
                         <hr>
-                        <p class="proff"><i class="fa fa-graduation-cap"></i>  НТУ «ХПИ»</p>
+                        <p class="proff"><i class="fa fa-graduation-cap"></i> Ph.D., Teaching Assistant, NTU "KhPI"</p>
 
                         <p class="from"><i class="fa fa-map-marker"></i>  Kharkiv, Ukraine</p>
                     </div>

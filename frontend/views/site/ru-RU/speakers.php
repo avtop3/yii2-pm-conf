@@ -9,7 +9,7 @@
 /* @var $post \pendalf89\blog\models\Post */
 use yii\helpers\Html;
 
-$this->title = 'Спикеры';
+$this->title = 'Спикеры | Международная конференция по управлению проектами, программами, портфелями';
 ?>
 
 <section id="speakers">

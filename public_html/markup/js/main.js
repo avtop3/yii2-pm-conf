@@ -67,4 +67,18 @@ jQuery(function($) {'use strict',
 	$("a[rel^='prettyPhoto']").prettyPhoto({
 		social_tools: false
 	});	
+	
+	//Archive photo from conf
+	$("a.gallery").fancybox({						
+        "padding" : 20,
+        "imageScale" : false, 
+        "zoomOpacity" : false,
+        "zoomSpeedIn" : 1000,	
+        "zoomSpeedOut" : 1000,	
+        "zoomSpeedChange" : 1000,
+        "overlayShow" : true, 
+        "overlayOpacity" : 0.8,	
+        "hideOnContentClick" :false,
+        "centerOnScroll" : false
+    });
 });

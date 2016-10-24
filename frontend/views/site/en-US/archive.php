@@ -5,7 +5,7 @@
  * Date: 05.06.2016
  * Time: 22:11
  */
-$this->title = 'Сonference archive';
+$this->title = 'Conference Archive | International Conference in Project, Program, and Portfolio Management';
 ?>
 
 <section id="archive">
@@ -26,7 +26,7 @@ $this->title = 'Сonference archive';
                 <p>Participants: 103</p>
 
                 <p>Published articles: 46</p>
-                <a href="<?= \yii\helpers\Url::to(['site/static-page', 'page' => '2016']) ?>" target="_blank">Details</a>
+                <a href="<?= \yii\helpers\Url::to(['site/static-page', 'page' => '2016']) ?>">Learn more</a>
             </div>
         </div>
         <div class="row">
@@ -43,7 +43,7 @@ $this->title = 'Сonference archive';
                 <p>Participants: 115</p>
 
                 <p>Published articles: 68</p>
-                <a href="<?= \yii\helpers\Url::to(['site/static-page', 'page' => '2015']) ?>" target="_blank">Details</a>
+                <a href="<?= \yii\helpers\Url::to(['site/static-page', 'page' => '2015']) ?>" >Learn more</a>
             </div>
         </div>
         <div class="row">
@@ -60,7 +60,7 @@ $this->title = 'Сonference archive';
                 <p>Participants: 84</p>
 
                 <p>Published articles: 43</p>
-                <a href="<?= \yii\helpers\Url::to(['site/static-page', 'page' => '2014']) ?>" target="_blank">Details</a>
+                <a href="<?= \yii\helpers\Url::to(['site/static-page', 'page' => '2014']) ?>" >Learn more</a>
             </div>
         </div>
         <div class="row">
@@ -77,7 +77,7 @@ $this->title = 'Сonference archive';
                 <p>Participants: 151</p>
 
                 <p>Published articles: 64</p>
-                <a href="<?= \yii\helpers\Url::to(['site/static-page', 'page' => '2013']) ?>" target="_blank">Details</a>
+                <a href="<?= \yii\helpers\Url::to(['site/static-page', 'page' => '2013']) ?>" >Learn more</a>
             </div>
         </div>
         <div class="row">
@@ -94,7 +94,7 @@ $this->title = 'Сonference archive';
                 <p>Participants: 162</p>
 
                 <p>Published articles: 90</p>
-                <a href="<?= \yii\helpers\Url::to(['site/static-page', 'page' => '2012']) ?>" target="_blank">Details</a>
+                <a href="<?= \yii\helpers\Url::to(['site/static-page', 'page' => '2012']) ?>" >Learn more</a>
             </div>
         </div>
         <div class="row">
@@ -111,7 +111,7 @@ $this->title = 'Сonference archive';
                 <p>Participants: 120</p>
 
                 <p>Published articles: 72</p>
-                <a href="<?= \yii\helpers\Url::to(['site/static-page', 'page' => '2011']) ?>" target="_blank">Details</a>
+                <a href="<?= \yii\helpers\Url::to(['site/static-page', 'page' => '2011']) ?>" >Learn more</a>
             </div>
         </div>
         <div class="row">
@@ -128,7 +128,7 @@ $this->title = 'Сonference archive';
                 <p>Participants: 80</p>
 
                 <p>Published articles: 49</p>
-                <a href="<?= \yii\helpers\Url::to(['site/static-page', 'page' => '2010']) ?>" target="_blank">Details</a>
+                <a href="<?= \yii\helpers\Url::to(['site/static-page', 'page' => '2010']) ?>" >Learn more</a>
             </div>
         </div>
     </div>

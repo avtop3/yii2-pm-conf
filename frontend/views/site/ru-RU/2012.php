@@ -5,6 +5,7 @@
  * Date: 05.06.2016
  * Time: 22:51
  */
+ $this->title = 'Архив конференции 2012 года | Международная конференция по управлению проектами, программами, портфелями';
 ?>
 <section id="insidePhoto">
     <div class="container">
@@ -23,7 +24,7 @@
 
                 </div>
                 <div class="tab-pane fade in active" id="tab-3">
-                    <a href="" class="hvr-shutter-out-horizontal download">
+                    <a href="../markup/images/archive/2012/ConferencePapers2012.rar" class="hvr-shutter-out-horizontal download" download>
                         <p>Скачать опубликованные статьи</p> <i class="fa fa-download" aria-hidden="true"></i>
                     </a>
                 </div>
