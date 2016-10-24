@@ -17,26 +17,6 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="member-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
-    <?php ?>
-
-    <div class="row">
-
-        <div class="col-md-10">
-            <?= Html::a(Yii::t('app', 'Create Member'), ['create'], ['class' => 'btn btn-success']) ?>
-            <?php $form = ActiveForm::begin([
-                'action' => ['index', 'MemberSearch' => Yii::$app->request->getQueryParam('MemberSearch')],
-                'method' => 'get',
-                'options' => [
-                    'style' => 'display: inline;',
-                ]
-            ]); ?>
-            <?php ActiveForm::end(); ?>
-
-        </div>
-
-        <div class="col-md-2 text-right">
-        </div>
-    </div>
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,

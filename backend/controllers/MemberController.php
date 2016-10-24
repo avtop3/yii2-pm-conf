@@ -238,7 +238,7 @@ class MemberController extends Controller
     {
         $dataProvider = new ActiveDataProvider(
             [
-                'query' => Member::find()->where(['inviteSentAt' => NULL]),
+                'query' => Member::getMembersWhoWaitingForConfirmEmail(),
                 'pagination' => [
                     'pageSize' => 0,
                 ]

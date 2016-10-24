@@ -13,6 +13,13 @@ return [
             'enablePrettyUrl' => true,
             'rules' => [],
         ],
+        'urlManagerBackEnd' => [
+            'class' => 'yii\web\urlManager',
+            'baseUrl' => 'http://conf.pm-edu.org/yii2-admin',
+            'showScriptName' => false,
+            'enablePrettyUrl' => true,
+            'rules' => [],
+        ],
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,

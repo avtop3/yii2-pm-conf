@@ -233,4 +233,12 @@ class Member extends ActiveRecord
     {
         $this->inviteSentAt = date('U');
     }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public static function getMembersWhoWaitingForConfirmEmail()
+    {
+        return Member::find()->where(['inviteSentAt' => NULL]);
+    }
 }
