@@ -23,8 +23,8 @@ $this->title = 'Conditions of Perticipation | International Conference in Projec
             <div class="column_1">
                 <div class="pack-title align_center">from Ukraine</div>
                 <div class="description align_center">
-                    <p><strong>350 UAH</strong></p>
-                    <p><strong>40 UAH</strong><br>
+                    <p><strong>400 UAH</strong></p>
+                    <p><strong>70 UAH</strong><br>
                         for one printed  sheet</p>
                     <p><strong>150 UAH</strong></p>
                 </div>
@@ -37,11 +37,8 @@ $this->title = 'Conditions of Perticipation | International Conference in Projec
                         for one printed  sheet</p>
                     <p><strong>50 USD</strong></p>
                 </div>
+                </div>
             </div>
-            <div class="note col-lg-12">
-                <p><i class="fa fa-info-circle" aria-hidden="true"></i> For all authors of the published paper only one printed copy of the conference papers will be provided free of charge. This printed copy is included into the registration fee. Additional printed copies of the conference papers can be ordered during the registration process.</p>
-            </div>
-        </div>
         <div class="attention col-lg-12">
             <h3>Pay Attention!</h3>
 

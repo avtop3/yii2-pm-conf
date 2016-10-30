@@ -8,9 +8,8 @@ $this->title = 'Venue | International Conference in Project, Program, and Portfo
         <h2>CONFERENCE VENUE</h2>
         <div class="row">
             <div class="col-lg-6 txt-block right-padd">
-                <p><strong>The Conference will be held in the resort village Yablunytsa, Ivano-Frankivsk region</strong> – a picturesque place for a holiday at any time of the year. The resort is located 140 km from Lviv in the area of two rivers Opir and Slavka and is surrounded on all sides by mountains. </p>
-                <p>Mountain pearl happily accepts fans of real beauty of the Ukrainian Carpathians who want to feel part of the wonderful world. Here you will get pleasure from the Carpathian ski slopes. </p>
-                <p>To your attention there's a huge amount of groomed pistes of all difficulty levels, which are located on the slopes of the mountains Trostyan, Pohar, Kremin, Menchu and High Top.</p>
+                <p><strong>The Conference will be held in the resort village of Yablunytsa, Ivano-Frankivsk region</strong> – a mountain skiing and climatic resort of the Carpathians, which is located at an altitude of 960 meters (3150 ft) above sea level in the Carpathian National Park. From the village one can watch the beautiful view of the Montenegrin mountain range, which concentrared all the mountains of Ukraine that are higher than 2 km (6500 ft).</p>
+                <p>The village of Yablunytsa is 100 km away from Ivano-Frankivsk in close proximity (just 10 km away) from "Bukovel", the largest ski resort of Ukraine. There is also a new highway from Yablunytsa to Bukovel. Besides, the village has its own ski trails of varying difficulty ("blue" and "red") with a total length of about 4 kilometers (vertical drop - 280 meters, the width of the slopes is less than 150 meters), which are convenient to learn the basics of skiing for skiers-beginners.</p>
             </div>
             <div class="col-lg-6 img-block">
                 <img src="/markup/images/location/ph-1.jpg" alt="">
@@ -21,9 +20,8 @@ $this->title = 'Venue | International Conference in Project, Program, and Portfo
                 <img src="/markup/images/location/ph-2.jpg" alt="">
             </div>
             <div class="col-lg-6 txt-block left-padd">
-                <p><strong>The hotel complex "Gorgany Mountain Resort" </strong> is located in the beautiful Beskid Skolivski massif. It has an official certificate of 3*. The original style of the hotel buildings resembles the architecture of the early twentieth century of Galicia. </p>
-                <p>The two hotel buildings made in the Carpathian style, offer cozy single and double standard rooms, junior suites and suites. From all the rooms of the hotel you will discover a beautiful mountain landscape.</p>
-                <p>You will be welcomed in the restaurant decorated by the hands of the Carpathian masters. Cooks of the restaurant will offer exclusive dishes: Cossack cornmeal mush, mushrooms in sour cream, chop "Trostyan" and herring with apples.</p>
+                <p><strong>The hotel complex "Gorgany Mountain Resort" </strong> is located on a mountaintop of the Yablonitsky Pass, which offers great views of the highest mountains of Ukraine - Hoverla and Petros.</p>
+                <p>The hotel was built in 2007. It is located 8 km away from Bukovel and 15 km away from Dragobrat, the highest ski resort in Ukraine. The hotel is designed in the European style. It consists of two main buildings (on 5 and 6 floors each), seven two-storey wooden cottages and one house-chalet. Number fund of the hotel consist of 70 comfortable rooms. The hotel has a well-developed infrastructure and a landscaped area. The hotel offers a lounge bar with quiet music and delicious dishes, Hutsul wooden kolyba, billiards, Finnish sauna, parking, mini market, souvenir market, and ski equipment rental.</p>
             </div>
         </div>
         <div class="row">
@@ -32,7 +30,7 @@ $this->title = 'Venue | International Conference in Project, Program, and Portfo
                     Hurry up, the number of rooms available is limited!</p>
                 <div class="contacts">
                     <p><strong>Contact Information</strong></p>
-                    <p>Address: Yablunytsa, Ivano-Frankivsk region, Ukraine</p>
+                    <p>Address: Yablunytsa, Ivano-Frankivsk region, Ukraine, 78592</p>
                     <p>Phone: +38 (067) 160-61-19, +38 (050) 205-63-33</p>
                     <p>Email: book@gorgany.ua</p>
                 </div>

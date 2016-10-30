@@ -141,6 +141,39 @@ $this->title = 'About Conference | International Conference in Project, Program,
                     </div>
                 </div>
             </div>
+            
+            <div class="item-group col-lg-12">
+                <h3 class="wow fadeIn" data-wow-delay="1s" data-offset="0">Organizing Committee Members</h3>
+                <div class="col-lg-3 item hvr-float-shadow wow fadeInUp" data-wow-delay="1.2s" data-offset="0">
+                    <div class="img-block">
+                        <img src="/markup/images/speakers/timofeev.jpg" alt="timofeev">
+                    </div>
+                    <div class="txt-block">
+                        <p class="sname">Timofeev</p>
+
+                        <p class="fname">Volodymyr</p>
+                        <hr>
+                        <p class="proff"><i class="fa fa-graduation-cap"></i>  Doctor of Technical Sciences, Professor, KNURE</p>
+
+                        <p class="from"><i class="fa fa-map-marker"></i>  Kharkiv, Ukraine</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 item hvr-float-shadow wow fadeInUp" data-wow-delay="1.4s" data-offset="0">
+                    <div class="img-block">
+                        <img src="/markup/images/speakers/chaykova.jpg" alt="chaykova">
+                    </div>
+                    <div class="txt-block">
+                        <p class="sname">Chaikova</p>
+
+                        <p class="fname">Elena</p>
+                        <hr>
+                        <p class="proff"><i class="fa fa-graduation-cap"></i>  Ph.D., Associate Professor, NTU "KhPI"</p>
+
+                        <p class="from"><i class="fa fa-map-marker"></i>  Kharkiv, Ukraine</p>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </div>
     <div class="program-committee">
@@ -166,21 +199,33 @@ $this->title = 'About Conference | International Conference in Project, Program,
             </div>
             <div class="item-group col-lg-9">
                 <h3 class="wow fadeIn" data-wow-delay="0.4s" data-offset="0">Program Committee Members</h3>
-
                 <div class="col-lg-4 item hvr-float-shadow wow fadeInUp" data-wow-delay="0.6s" data-offset="0">
                     <div class="img-block">
-                        <img src="/markup/images/speakers/koshkin.jpg" alt="koshkin">
+                        <img src="/markup/images/speakers/babaev.jpg" alt="babaev">
                     </div>
                     <div class="txt-block">
-                        <p class="sname"> KOSHKIN</p>
-                        <p class="fname">Konstantin</p>
+                        <p class="sname"> BABAEV</p>
+                        <p class="fname">Igbal</p>
                         <hr>
-                        <p class="proff"><i class="fa fa-graduation-cap"></i>  Doctor of Technical Sciences, Professor, Admiral Makarov NUS</p>
+                        <p class="proff"><i class="fa fa-graduation-cap"></i>  Doctor of Technical Sciences, Professor, AzPMA</p>
 
-                        <p class="from"><i class="fa fa-map-marker"></i>  Mykolayiv, Ukraine</p>
+                        <p class="from"><i class="fa fa-map-marker"></i>  Baku, Azerbaijan</p>
                     </div>
                 </div>
                 <div class="col-lg-4 item hvr-float-shadow wow fadeInUp" data-wow-delay="0.8s" data-offset="0">
+                    <div class="img-block">
+                        <img src="/markup/images/speakers/chernov.jpg" alt="chernov">
+                    </div>
+                    <div class="txt-block">
+                        <p class="sname"> CHERNOV</p>
+                        <p class="fname">Sergey</p>
+                        <hr>
+                        <p class="proff"><i class="fa fa-graduation-cap"></i>  Doctor of Technical Sciences, Professor, "Zorya-Mashproekt"</p>
+
+                        <p class="from"><i class="fa fa-map-marker"></i>   Mykolayiv, Ukraine</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 item hvr-float-shadow wow fadeInUp" data-wow-delay="1s" data-offset="0">
                     <div class="img-block">
                         <img src="/markup/images/speakers/gogunsky.jpg" alt="gogunsky">
                     </div>
@@ -193,7 +238,23 @@ $this->title = 'About Conference | International Conference in Project, Program,
                         <p class="from"><i class="fa fa-map-marker"></i>  Odesa, Ukraine</p>
                     </div>
                 </div>
-                <div class="col-lg-4 item hvr-float-shadow wow fadeInUp" data-wow-delay="1s" data-offset="0">
+            </div>
+            <div class="item-group col-lg-12">
+                <h3 class="wow fadeIn" data-wow-delay="0.4s" data-offset="0">Program Committee Members</h3>
+                <div class="col-lg-3 item hvr-float-shadow wow fadeInUp" data-wow-delay="1.2s" data-offset="0">
+                    <div class="img-block">
+                        <img src="/markup/images/speakers/koshkin.jpg" alt="koshkin">
+                    </div>
+                    <div class="txt-block">
+                        <p class="sname"> KOSHKIN</p>
+                        <p class="fname">Konstantin</p>
+                        <hr>
+                        <p class="proff"><i class="fa fa-graduation-cap"></i>  Doctor of Technical Sciences, Professor, Admiral Makarov NUS</p>
+
+                        <p class="from"><i class="fa fa-map-marker"></i>  Mykolayiv, Ukraine</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 item hvr-float-shadow wow fadeInUp" data-wow-delay="1.4s" data-offset="0">
                     <div class="img-block">
                         <img src="/markup/images/speakers/loback.jpg" alt="loback">
                     </div>
@@ -208,11 +269,7 @@ $this->title = 'About Conference | International Conference in Project, Program,
                         <p class="from"><i class="fa fa-map-marker"></i> Kharkiv, Ukraine</p>
                     </div>
                 </div>
-            </div>
-            <div class="item-group col-lg-12">
-                <h3 class="wow fadeIn" data-wow-delay="0.4s" data-offset="0">Program Committee Members</h3>
-
-                <div class="col-lg-3 item hvr-float-shadow wow fadeInUp" data-wow-delay="1.2s" data-offset="0">
+                <div class="col-lg-3 item hvr-float-shadow wow fadeInUp" data-wow-delay="1.6s" data-offset="0">
                     <div class="img-block">
                         <img src="/markup/images/speakers/sydorchuk.jpg" alt="sydorchuk">
                     </div>
@@ -225,20 +282,7 @@ $this->title = 'About Conference | International Conference in Project, Program,
                         <p class="from"><i class="fa fa-map-marker"></i>  Kyiv, Ukraine</p>
                     </div>
                 </div>
-                <div class="col-lg-3 item hvr-float-shadow wow fadeInUp" data-wow-delay="1.4s" data-offset="0">
-                    <div class="img-block">
-                        <img src="/markup/images/speakers/babaev.jpg" alt="babaev">
-                    </div>
-                    <div class="txt-block">
-                        <p class="sname"> BABAEV</p>
-                        <p class="fname">Igbal</p>
-                        <hr>
-                        <p class="proff"><i class="fa fa-graduation-cap"></i>  Doctor of Technical Sciences, Professor, AzPMA</p>
-
-                        <p class="from"><i class="fa fa-map-marker"></i>  Baku, Azerbaijan</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 item hvr-float-shadow wow fadeInUp" data-wow-delay="1.6s" data-offset="0">
+                <div class="col-lg-3 item hvr-float-shadow wow fadeInUp" data-wow-delay="1.8s" data-offset="0">
                     <div class="img-block">
                         <img src="/markup/images/speakers/todorov.jpg" alt="todorov">
                     </div>
@@ -249,19 +293,6 @@ $this->title = 'About Conference | International Conference in Project, Program,
                         <p class="proff"><i class="fa fa-graduation-cap"></i>  Doctor of Economic Sciences, Professor, UNWE</p>
 
                         <p class="from"><i class="fa fa-map-marker"></i>  Sofia, Bulgaria</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 item hvr-float-shadow wow fadeInUp" data-wow-delay="1.8s" data-offset="0">
-                    <div class="img-block">
-                        <img src="/markup/images/speakers/chernov.jpg" alt="chernov">
-                    </div>
-                    <div class="txt-block">
-                        <p class="sname"> CHERNOV</p>
-                        <p class="fname">Sergey</p>
-                        <hr>
-                        <p class="proff"><i class="fa fa-graduation-cap"></i>  Doctor of Technical Sciences, Professor, "Zorya-Mashproekt"</p>
-
-                        <p class="from"><i class="fa fa-map-marker"></i>   Mykolayiv, Ukraine</p>
                     </div>
                 </div>
             </div>

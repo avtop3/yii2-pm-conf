@@ -7,7 +7,7 @@ return [
     'activeLanguages' => ['en' => 'en-US', 'ru' => 'ru-RU', 'uk' => 'uk-UA'],
     'registration' =>[
         'uah' =>[
-            'fee' => 450,
+            'fee' => 400,
             'priceForPapers' => 150
         ],
         'usd' =>[

@@ -124,7 +124,7 @@ $this->title = 'Про конференцію | Міжнародна конфе�
                 </div>
             </div>
             <div class="item-group col-lg-3">
-                <h3 class="wow fadeIn" data-wow-delay="1.2s" data-offset="0">Секретар</h3>
+                <h3 class="wow fadeIn" data-wow-delay="1.2s" data-offset="0">Менеджер конференції</h3>
 
                 <div class="col-lg-12 item hvr-float-shadow wow fadeInUp" data-wow-delay="1.8s" data-offset="0">
                     <div class="img-block">
@@ -141,8 +141,44 @@ $this->title = 'Про конференцію | Міжнародна конфе�
                     </div>
                 </div>
             </div>
+            
+            <div class="item-group col-lg-12">
+                <h3 class="wow fadeIn" data-wow-delay="1s" data-offset="0">Члени організаційного комітету</h3>
+                <div class="col-lg-3 item hvr-float-shadow wow fadeInUp" data-wow-delay="1.2s" data-offset="0">
+                    <div class="img-block">
+                        <img src="/markup/images/speakers/timofeev.jpg" alt="timofeev">
+                    </div>
+                    <div class="txt-block">
+                        <p class="sname">Тімофєєв</p>
+
+                        <p class="fname">Володимир Олександрович</p>
+                        <hr>
+                        <p class="proff"><i class="fa fa-graduation-cap"></i>  Д.т.н., професор, ХНУРЕ</p>
+
+                        <p class="from"><i class="fa fa-map-marker"></i>  Харків, Україна</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 item hvr-float-shadow wow fadeInUp" data-wow-delay="1.4s" data-offset="0">
+                    <div class="img-block">
+                        <img src="/markup/images/speakers/chaykova.jpg" alt="chaykova">
+                    </div>
+                    <div class="txt-block">
+                        <p class="sname">Чайкова</p>
+
+                        <p class="fname">Олена Ігорівна</p>
+                        <hr>
+                        <p class="proff"><i class="fa fa-graduation-cap"></i>  К.т.н., доцент, НТУ «ХПІ»</p>
+
+                        <p class="from"><i class="fa fa-map-marker"></i>  Харків, Україна</p>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </div>
+    
+   
+    
     <div class="program-committee">
         <h3 class="wow fadeIn">ПРОГРАМНИЙ КОМІТЕТ</h3>
 

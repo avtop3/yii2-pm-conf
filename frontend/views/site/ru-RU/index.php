@@ -342,9 +342,9 @@ $this->params['bodyClass'] = 'homepage';
 </section>
 <section id="recent-works">
     <div class="container">
+        
         <div class="center wow fadeInDown">
             <h2>Фотографии</h2>
-            <!--                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>-->
         </div>
 
         <div class="row">
@@ -364,10 +364,6 @@ $this->params['bodyClass'] = 'homepage';
                     <img class="img-responsive" src="/markup/images/from-conf/b2.jpg" alt="">
                     <div class="overlay">
                         <div class="recent-work-inner">
-                            <!--
-                                                            <h3><a href="#">Business theme</a></h3>
-                                                            <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                            -->
                             <a class="preview" href="/markup/images/from-conf/b2.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Посмотреть</a>
                         </div>
                     </div>

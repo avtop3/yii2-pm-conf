@@ -143,7 +143,7 @@ AppAsset::register($this);
 
 
 <div id="regLink">
-    <p><?= Yii::t('app.layout', 'Participation fee <br>450 uah') ?></p>
+    <p><?= Yii::t('app.layout', 'Participation fee <br>400 uah') ?></p>
 
     <div class="img-left">
         <img src="/markup/images/arrow_up_1.png" alt="">

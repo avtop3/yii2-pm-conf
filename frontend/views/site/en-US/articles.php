@@ -39,7 +39,7 @@ $this->title = 'For Authors | International Conference in Project, Program, and 
                 program committee reserves the right, on a case-by-case basis, not to publish the article. Payment for
                 publication in this case is returned to the author(s) in full. </p>
 
-            <p><strong>PUBLICATION OF PAPERS IS PAID AT THE RATE OF 40 UAH PER PAGE FOR AUTHOR(S) FROM UKRAINE AND 5 USD
+            <p><strong>PUBLICATION OF PAPERS IS PAID AT THE RATE OF 70 UAH PER PAGE FOR AUTHOR(S) FROM UKRAINE AND 5 USD
                     PER PAGE FOR AUTHOR(S) FROM ABROAD.</strong></p>
 
             <p>Papers that have successfully undergone the peer-review procedure and were paid in time will be published

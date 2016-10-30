@@ -324,7 +324,7 @@ hr {
   color: #fff;
   text-shadow: 0 1px 0 rgba(125,207,61,0.4);
   width: 100%;
-  background: #004a00;
+  background: #3b3c36;
   padding: 15px 0;
 }
 #conditions .price_table .column_1 {
@@ -550,7 +550,7 @@ hr {
   margin: 25px 0;
 }
 #location .container .row .txt-block {
-  padding: 2% 0;
+  padding: 0;
 }
 #location .container .row .txt-block.right-padd {
   padding-right: 15px;
