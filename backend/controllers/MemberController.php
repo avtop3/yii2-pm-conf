@@ -65,15 +65,21 @@ class MemberController extends Controller
     {
         $model = $this->findModel($id);
         if ($model) {
-            $messages[] = Yii::$app->mailer->compose('member-info', ['model' => $model])
+            $messages['toMember'] = Yii::$app->mailer->compose('member-info', ['model' => $model])
                 ->setFrom(Yii::$app->params['smtpEmail'])
                 ->setTo([$model->email])
                 ->setSubject(Yii::t('app.member.mail', 'Integrated Management 2017: Confirmation of Registration'));
 
-            $messages[] = Yii::$app->mailer->compose('member-info', ['model' => $model])
+            $messages['toAdmin'] = Yii::$app->mailer->compose('member-info', ['model' => $model])
                 ->setFrom(Yii::$app->params['smtpEmail'])
-                ->setTo(['pm.education.khpi@gmail.com'])//'pm.education.khpi@gmail.com',
+                ->setTo([Yii::$app->params['adminEmail']])//'pm.education.khpi@gmail.com',
                 ->setSubject(Yii::t('app.member.mail', 'Integrated Management 2017: Confirmation of Registration'));
+
+            if (file_exists(PdfController::getPdfPath($model))) {
+                $messages['toMember']->attach(PdfController::getPdfPath($model));
+                $messages['toAdmin']->attach(PdfController::getPdfPath($model));
+            }
+
             $sentNumber = Yii::$app->mailer->sendMultiple($messages);
 
             if (2 === $sentNumber) {

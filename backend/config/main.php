@@ -12,13 +12,7 @@ return [
     'controllerNamespace' => 'backend\controllers',
     'language' => 'ru-RU',
     'bootstrap' => ['log'],
-//    'as access' => [
-//        'class' => 'mdm\admin\components\AccessControl',
-//        'allowActions' => [
-//            'site/login',
-//            'site/error',
-//        ]
-//    ],
+    'defaultRoute' => 'member/last-members',
     'components' => [
         'user' => [
             'identityClass' => 'common\models\User',

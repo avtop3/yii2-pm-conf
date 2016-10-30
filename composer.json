@@ -18,6 +18,12 @@
         "source": "https://github.com/yiisoft/yii2"
     },
     "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/avtop3/dompdf"
+        }
+    ],
     "require": {
         "php": ">=5.4.0",
         "yiisoft/yii2": ">=2.0.6",
@@ -30,13 +36,14 @@
         "pendalf89/yii2-blog": "dev-master",
         "vakorovin/yii2-datetimepicker": "dev-master",
         "kartik-v/yii2-export": "@dev",
-        "kartik-v/yii2-mpdf": "dev-master"
+        "kartik-v/yii2-mpdf": "dev-master",
+        "dompdf/dompdf": "dev-master"
     },
     "require-dev": {
-        "yiisoft/yii2-codeception": "*",
         "yiisoft/yii2-debug": "*",
         "yiisoft/yii2-gii": "*",
-        "yiisoft/yii2-faker": "*"
+        "yiisoft/yii2-faker": "*",
+        "codeception/codeception": "*"
     },
     "config": {
         "process-timeout": 1800

@@ -17,11 +17,13 @@ use common\models\memberVariants\TopicSection;
 $this->title = $model->name;
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Members'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
+
+$pdfPath = \backend\controllers\PdfController::getPdfPath($model);
+$pdfExists = file_exists($pdfPath);
 ?>
 <div class="member-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
-
 
     <p>
         <?= Html::a(Yii::t('app', 'Update'), ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
@@ -32,16 +34,60 @@ $this->params['breadcrumbs'][] = $this->title;
                 'method' => 'post',
             ],
         ]) ?>
-        <?=
-        Html::a(
-            'Отправить email подтверждения регистрации',
-            ['/member/send-invite-email', 'id' => $model->id],
-            ['data-method' => 'post', 'class' => 'btn btn-warning']
-        )
-        ?>
-    </p>
-    <!--    --><?php //print_r($model->countryObj->name) ?>
 
+    </p>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">Email подтверждения регистрации</div>
+        <div class="panel-body">
+            <?php if (!$pdfExists) { ?>
+                <p class="text-danger">Нет прикрепленого PDF файла к письму</p>
+            <?php } ?>
+            <?=
+            Html::a(
+                \yii\bootstrap\Html::icon('envelope') . ' Отправить',
+                ['/member/send-invite-email', 'id' => $model->id],
+                ['data-method' => 'post', 'class' => 'btn btn-default']
+            )
+            ?>
+
+            <?php
+            if ($pdfExists) {
+                echo Html::a(
+                    \yii\bootstrap\Html::icon('refresh') . ' PDF',
+                    ['/pdf/invite-create', 'memberId' => $model->id],
+                    ['class' => 'btn btn-default']
+                );
+            } else {
+                echo Html::a(
+                    \yii\bootstrap\Html::icon('plus') . ' PDF',
+                    ['/pdf/invite-create', 'memberId' => $model->id],
+                    ['class' => 'btn btn-success']
+                );
+            }
+            ?>
+
+            <?php
+            if ($pdfExists) {
+                echo Html::a(
+                    \yii\bootstrap\Html::icon('eye-open') . ' PDF',
+                    ['pdf/invite-view', 'memberId' => $model->id],
+                    ['class' => 'btn btn-default', 'target' => '_blank']
+                );
+            }
+            ?>
+
+            <?php
+            if ($pdfExists) {
+                echo Html::a(
+                    \yii\bootstrap\Html::icon('download-alt') . ' PDF',
+                    ['pdf/invite-download', 'memberId' => $model->id],
+                    ['class' => 'btn btn-default']
+                );
+            }
+            ?>
+        </div>
+    </div>
 
     <?php
     $attributes = [
@@ -84,6 +130,8 @@ $this->params['breadcrumbs'][] = $this->title;
             'attribute' => $model->getAttributeLabel('totalSum'),
             'value' => $model->totalSum . ' ' . $model->currency,
         ],
+        'inviteSentAt',
+
     ];
 
     if ($model->participationType == \common\models\memberVariants\ParticipationType::SPEAKER) {

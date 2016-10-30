@@ -95,7 +95,7 @@ AppAsset::register($this);
                         'linkOptions' => ['class' => 'btn btn-pirate'],
                     ],
 //                    ['label' => Yii::t('language', 'Контент'), 'url' => ['/blog/post/index']],
-                    ['label' => Yii::t('language', 'Файловый менеджер'), 'url' => ['/filemanager/file/index']],
+//                    ['label' => Yii::t('language', 'Файловый менеджер'), 'url' => ['/filemanager/file/index']],
                     ['label' => Yii::t('language', 'Переводы строк'),
                         'items' => [
                             ['label' => Yii::t('language', 'List of languages'), 'url' => ['/translatemanager/language/list']],

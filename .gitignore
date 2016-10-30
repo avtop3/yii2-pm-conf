@@ -1,4 +1,8 @@
+/public_html/yii2-admin/.htaccess
+/public_html/.htaccess
+/backend/modules/pdf/invitations
 /vendor
 /.idea
 /frontend/web
 /backend/web
+tests/_output/*
