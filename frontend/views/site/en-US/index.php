@@ -95,57 +95,7 @@ $this->params['bodyClass'] = 'homepage';
                     <div class="media-body">
                         <h2>Conference starts in:</h2>
                         <p>Conference has ended!</p>
-                        <div class="countdown">
-                            <div class="clock col-sm-12">
-                                <div class="clock-item clock-days countdown-time-value col-sm-6 col-md-3">
-                                    <div class="wrap">
-                                        <div class="inner">
-                                            <div id="canvas_days" class="clock-canvas"></div>
-                                            <div class="text">
-                                                <p class="val">0</p>
-                                                <p class="type-days type-time">DAYS</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="clock-item clock-hours countdown-time-value col-sm-6 col-md-3">
-                                    <div class="wrap">
-                                        <div class="inner">
-                                            <div id="canvas_hours" class="clock-canvas"></div>
-                                            <div class="text">
-                                                <p class="val">0</p>
-                                                <p class="type-hours type-time">HOURS</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="clock-item clock-minutes countdown-time-value col-sm-6 col-md-3">
-                                    <div class="wrap">
-                                        <div class="inner">
-                                            <div id="canvas_minutes" class="clock-canvas"></div>
-                                            <div class="text">
-                                                <p class="val">0</p>
-                                                <p class="type-minutes type-time">MINUTES</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="clock-item clock-seconds countdown-time-value col-sm-6 col-md-3">
-                                    <div class="wrap">
-                                        <div class="inner">
-                                            <div id="canvas_seconds" class="clock-canvas"></div>
-                                            <div class="text">
-                                                <p class="val">0</p>
-                                                <p class="type-seconds type-time">SECONDS</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <div id="clock"></div>
                         <p>Registered Participants: <span id="members">0</span></p>
                         <a href="" class="btn btn-default registr disabled"><i class="fa fa-ticket"></i> Register as Conference Participant</a>
                     </div>
