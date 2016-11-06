@@ -41,6 +41,7 @@ AppAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
     <link href="/markup/css/flexslider.css" rel="stylesheet">   
+    <link href="/markup/css/countdown.css" rel="stylesheet">   
     <link href="/markup/css/jquery.fancybox-buttons.css?v=1.0.5" rel="stylesheet">   
     <link href="/markup/css/jquery.fancybox-thumbs.css?v=1.0.7" rel="stylesheet">     
     <link href="/markup/css/jquery.fancybox.css" rel="stylesheet">  
@@ -52,13 +53,14 @@ AppAsset::register($this);
     <div class="top-bar">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 col-xs-8">
+                <div class="col-sm-6 col-xs-6">
                     <div class="social">
                         <a class="navbar-brand" href="<?= \yii\helpers\Url::home() ?>"><img
                             src="/markup/images/logo.png" alt="logo"></a>
                     </div>
-                </div>
-                <div class="col-sm-6 col-xs-4">                    
+                </div>                
+                <div class="pluso-engine col-sm-4 col-xs-4" pluso-sharer={"buttons":"vkontakte,google,linkedin,facebook,twitter,odnoklassniki,more","style":{"size":"medium","shape":"square","theme":"theme12"},"orientation":"horizontal","multiline":false}  data-url="https%3A%2F%2Fconf.pm-edu.org%2F"></div> 
+                <div class="col-sm-2 col-xs-2">                    
                     <?php
 
                     $langMenuItems = [
@@ -194,30 +196,56 @@ AppAsset::register($this);
 <!--/#footer-->
 <?php $this->endBody() ?>
 <script src="/markup/js/jquery.flexslider.js"></script>
+<script src="/markup/js/jquery.countdown.min.js"></script>
 <script src="/markup/js/jquery.fancybox.js"></script>
 <script src="/markup/js/jquery.fancybox-buttons.js?v=1.0.5"></script>
 <script src="/markup/js/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<script type="text/javascript">(function() {
+    if (window.pluso) {return};
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://x.pluso.ru/pluso-x.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+})();
+</script>
 <script type="text/javascript">
-            $(document).ready(function() {
-                var baseUrl = 'api/file/images';                
-                $("a[data-folder-name]").click(function() {
-                    $.ajax({
-                        type: 'get',
-                        url: baseUrl,
-                        data: {
-                            subFolder: $(this).data('folder-name')
-                        },
-                        success: function(data){
-                            var result = data.map(function(item){                            
-                                return item.path;
-                            });                        
-                            console.log(result);
-                            $.fancybox.open(result);
-                        }
-                    })
-                });
-            });
-        </script>
-</body>
+    setTimeout(function(){
+        $( document ).ready(function() {
+            $('#main-slider .next').click();
+        });        
+    }, 6000);
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        var baseUrl = 'api/file/images';                
+        $("a[data-folder-name]").click(function() {
+            $.ajax({
+                type: 'get',
+                url: baseUrl,
+                data: {
+                    subFolder: $(this).data('folder-name')
+                },
+                success: function(data){
+                    var result = data.map(function(item){                            
+                        return item.path;
+                    });                        
+                    console.log(result);
+                    $.fancybox.open(result);
+                }
+            })
+        });
+    });
+</script>
+<script>
+    $('#clock, #clockUA, #clockEN').countdown('2017/02/13').on('update.countdown', function(event) {
+        var $this = $(this).html(event.strftime(        
+        '%D <span class="string"> days </span> ' + ' '
+            + '%H <span class="string"> hours </span>' + ' '
+            + '%M <span class="string"> min </span>  ' + ' '
+            + '%S <span class="string"> sec </span>'));
+    });
+</script>
+</body>   
 </html>
 <?php $this->endPage() ?>

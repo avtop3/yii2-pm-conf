@@ -95,62 +95,22 @@ $this->params['bodyClass'] = 'homepage';
                     <div class="media-body">
                         <h2>До конференції:</h2>
                         <p>Конференція завершена!</p>
-                        <div class="countdown">
-                            <div class="clock col-sm-12">
-                                <div class="clock-item clock-days countdown-time-value col-sm-6 col-md-3">
-                                    <div class="wrap">
-                                        <div class="inner">
-                                            <div id="canvas_days" class="clock-canvas"></div>
-                                            <div class="text">
-                                                <p class="val">0</p>
-                                                <p class="type-days type-time">ДНІВ</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="clock-item clock-hours countdown-time-value col-sm-6 col-md-3">
-                                    <div class="wrap">
-                                        <div class="inner">
-                                            <div id="canvas_hours" class="clock-canvas"></div>
-                                            <div class="text">
-                                                <p class="val">0</p>
-                                                <p class="type-hours type-time">ГОДИН</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="clock-item clock-minutes countdown-time-value col-sm-6 col-md-3">
-                                    <div class="wrap">
-                                        <div class="inner">
-                                            <div id="canvas_minutes" class="clock-canvas"></div>
-                                            <div class="text">
-                                                <p class="val">0</p>
-                                                <p class="type-minutes type-time">ХВИЛИН</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="clock-item clock-seconds countdown-time-value col-sm-6 col-md-3">
-                                    <div class="wrap">
-                                        <div class="inner">
-                                            <div id="canvas_seconds" class="clock-canvas"></div>
-                                            <div class="text">
-                                                <p class="val">0</p>
-                                                <p class="type-seconds type-time">СЕКУНД</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <div id="clock"></div>
                         <p>Вже зареєстровано учасників: <span id="members">0</span></p>
                         <a href="" class="btn btn-default registr disabled"><i class="fa fa-ticket"></i> Зареєструватися</a>
                     </div>
 
                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="media counter wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="media-body">
+                        <h2>До конференції:</h2>
+                        <div id="clockUA"></div>
+                    </div>
+                </div>                
             </div>
         </div>
     </div><!--/.container-->
