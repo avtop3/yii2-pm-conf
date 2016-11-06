@@ -10,6 +10,7 @@ namespace backend\controllers;
 
 use backend\modules\pdf\InvitePDF;
 use common\models\Member;
+use common\models\MembersFile;
 use Dompdf\Dompdf;
 use yii\helpers\FileHelper;
 use yii\helpers\Inflector;
@@ -17,14 +18,17 @@ use yii\web\Controller;
 
 class PdfController extends Controller
 {
-    /* @todo: Все таки надо вынести в модуль*/
-    /* @todo: Менять язык контента PDF в зависимоти от страны мембера*/
-    /* @todo: Добавить кнопку для ленивых "Сгенирироваь PDF & Отослать"*/
+    /* @todo: Все таки надо вынести в модуль */
+    /* @todo: Менять язык контента PDF в зависимоти от страны мембера */
+    /* @todo: Добавить кнопку для ленивых "Сгенирироваь PDF & Отослать" */
     public function actionInviteCreate($memberId)
     {
         $member = Member::findOne($memberId);
         if ($member) {
-            $html = $this->renderFile('@backend/modules/pdf/views/invite/invite.php', ['member' => $member]);
+            $html = $this->renderFile(
+                '@backend/modules/pdf/views/invite/invite.php',
+                ['member' => $member, 'locale' => $member->getNativeLanguage()]
+            );
             $domPdf = new Dompdf();
             $domPdf->loadHtml($html);
             $domPdf->setPaper('A4');
@@ -32,9 +36,16 @@ class PdfController extends Controller
             $output = $domPdf->output();
 
             $result = file_put_contents(
-                PdfController::getPdfPath($member),
+                \Yii::getAlias(PdfController::getPdfPath($member)),
                 $output
             );
+
+            $fileEntity = new MembersFile();
+            $fileEntity->path = PdfController::getPdfPath($member);
+            $fileEntity->member_id = $member->id;
+            $fileEntity->type = MembersFile::TYPE_INVITE;
+            $fileEntity->save();
+
             if ($result) {
                 \Yii::$app->session->addFlash('success', 'PDF created!');
             } else {
@@ -47,41 +58,41 @@ class PdfController extends Controller
         return $this->redirect(['/member/index']);
     }
 
-    public function actionInviteView($memberId)
+    public function actionInviteView($id)
     {
-        $member = Member::findOne($memberId);
-        $path = PdfController::getPdfPath($member);
-        if ($member && file_exists($path)) {
-            return \Yii::$app->response->sendFile($path, basename($path), ['inline' => true]);
-        }else{
-            \Yii::$app->session->setFlash('error', 'Member or PDF file were not found');
-        }
-
-        return $this->redirect('/');
-    }
-
-    public function actionInviteDownload($memberId)
-    {
-        $member = Member::findOne($memberId);
-        $path = PdfController::getPdfPath($member);
-        if ($member && file_exists($path)) {
-            return \Yii::$app->response->sendFile($path, basename($path), ['inline' => false]);
-        }else{
+        $pdf = MembersFile::findOne($id);
+        if ($pdf && file_exists($pdf->getAbsolutePath())) {
+            return \Yii::$app->response->sendFile($pdf->getAbsolutePath(), basename($pdf->path), ['inline' => true]);
+        } else {
             \Yii::$app->session->setFlash('error', 'Member or PDF file were not found');
         }
 
         return $this->redirect('');
     }
 
-    public static function getPdfPath(Member $member)
+    public function actionInviteDownload($id)
     {
-        $memberNameSlug = $member->id . '_' . Inflector::slug($member->nameEng);
+        $pdf = MembersFile::findOne($id);
+        if ($pdf && file_exists($pdf->getAbsolutePath())) {
+            return \Yii::$app->response->sendFile($pdf->getAbsolutePath(), basename($pdf->path), ['inline' => false]);
+        } else {
+            \Yii::$app->session->setFlash('error', 'Member or PDF file were not found');
+        }
 
-        $dir = \Yii::getAlias('@backend/modules/pdf/invitations/' . date('Y'));
+        return $this->redirect('');
+    }
+
+    public static function getPdfPath(Member $member, $locale = null)
+    {
+        $locale = $locale ? $locale : $member->getNativeLanguage();
+        $memberNameSlug = $member->id . '_' . Inflector::slug($member->nameEng) . '_' . $locale;
+
+
+        $dir = '@backend/modules/pdf/invitations/' . date('Y');
         if (!file_exists($dir)) {
             FileHelper::createDirectory($dir);
         }
 
-        return $dir . '/official_invite_' . $memberNameSlug . '.pdf';
+        return $dir . '/' . $memberNameSlug . '.pdf';
     }
-} 
+}

@@ -94,6 +94,12 @@ AppAsset::register($this);
                         'options' => ['class' => 'important'],
                         'linkOptions' => ['class' => 'btn btn-pirate'],
                     ],
+                    [
+                        'label' => 'PDF',
+                        'url' => ['/members-file/index'],
+                        'options' => ['class' => 'important'],
+                        'linkOptions' => ['class' => 'btn btn-pirate'],
+                    ],
 //                    ['label' => Yii::t('language', 'Контент'), 'url' => ['/blog/post/index']],
 //                    ['label' => Yii::t('language', 'Файловый менеджер'), 'url' => ['/filemanager/file/index']],
                     ['label' => Yii::t('language', 'Переводы строк'),

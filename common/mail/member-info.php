@@ -16,6 +16,9 @@ use common\models\memberVariants\TopicSection;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Member */
+/* @var $locale string */
+
+Yii::$app->language = $locale;
 
 $attributes = [
     'name',

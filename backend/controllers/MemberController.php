@@ -56,8 +56,16 @@ class MemberController extends Controller
      */
     public function actionView($id)
     {
+        $member = $this->findModel($id);
+        $membersFilesDataProvider = new ActiveDataProvider([
+            'query' => $member->getFiles(),
+            'pagination' => [
+                'pageSize' => 10,
+            ],
+        ]);
         return $this->render('view', [
-            'model' => $this->findModel($id),
+            'model' => $member,
+            'membersFilesDataProvider' => $membersFilesDataProvider
         ]);
     }
 
@@ -65,24 +73,31 @@ class MemberController extends Controller
     {
         $model = $this->findModel($id);
         if ($model) {
-            $messages['toMember'] = Yii::$app->mailer->compose('member-info', ['model' => $model])
+            $messages['toMember'] = Yii::$app->mailer
+                ->compose('member-info', ['model' => $model, 'locale' => $model->getNativeLanguage()])
                 ->setFrom(Yii::$app->params['smtpEmail'])
                 ->setTo([$model->email])
-                ->setSubject(Yii::t('app.member.mail', 'Integrated Management 2017: Confirmation of Registration'));
+                ->setSubject(
+                    Yii::t(
+                        'app.member.mail',
+                        'Integrated Management 2017: Confirmation of Registration',
+                        [],
+                        $model->getNativeLanguage()
+                    )
+                );
 
-            $messages['toAdmin'] = Yii::$app->mailer->compose('member-info', ['model' => $model])
-                ->setFrom(Yii::$app->params['smtpEmail'])
-                ->setTo([Yii::$app->params['adminEmail']])//'pm.education.khpi@gmail.com',
-                ->setSubject(Yii::t('app.member.mail', 'Integrated Management 2017: Confirmation of Registration'));
-
-            if (file_exists(PdfController::getPdfPath($model))) {
-                $messages['toMember']->attach(PdfController::getPdfPath($model));
-                $messages['toAdmin']->attach(PdfController::getPdfPath($model));
+            if ($model->getInvitePdf()) {
+                $messages['toMember']->attach(
+                    $model->getInvitePdf()->getAbsolutePath(),
+                    [
+                        'fileName' => 'any_name.pdf'
+                    ]
+                );
             }
 
             $sentNumber = Yii::$app->mailer->sendMultiple($messages);
 
-            if (2 === $sentNumber) {
+            if ($sentNumber) {
                 $model->touchInviteSentAt();
                 $model->save();
                 Yii::$app->session->addFlash('success', 'Ok!');
@@ -214,7 +229,7 @@ class MemberController extends Controller
                             $subjectMail = 'International Scientific and Practical Conference «Integrated Management 2017»';
                     }
                 }
-                $currentMessage->setSubject(Yii::t('app.member.mail', $subjectMail));
+                $currentMessage->setSubject($subjectMail);
                 $messages[] = $currentMessage;
             }
             $sendNumber = Yii::$app->mailer->sendMultiple($messages);

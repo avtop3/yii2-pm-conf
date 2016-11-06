@@ -214,6 +214,11 @@ class Member extends ActiveRecord
         }
     }
 
+    /**
+     * Return locale depending on member's country
+     * Examples: en-US, uk-UA, ru-RU
+     * @return string The system locale.
+     */
     public function getNativeLanguage()
     {
         $language = 'en-US';
@@ -240,5 +245,18 @@ class Member extends ActiveRecord
     public static function getMembersWhoWaitingForConfirmEmail()
     {
         return Member::find()->where(['inviteSentAt' => NULL]);
+    }
+
+    public function getFiles()
+    {
+        return $this->hasMany(MembersFile::class, ['member_id' => 'id']);
+    }
+
+    /**
+     * @return null|MembersFile
+     */
+    public function getInvitePdf()
+    {
+        return $this->getFiles()->where(['type' => MembersFile::TYPE_INVITE])->one();
     }
 }

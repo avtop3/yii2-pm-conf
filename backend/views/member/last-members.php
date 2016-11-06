@@ -1,6 +1,6 @@
 <?php
 
-use yii\helpers\Html;
+use yii\bootstrap\Html;
 use kartik\grid\GridView;
 use yii\data\Pagination;
 use yii\widgets\ActiveForm;
@@ -48,9 +48,9 @@ $this->params['breadcrumbs'][] = $this->title;
                 'format' => 'html',
                 'value' => function ($model) {
                     return Html::a(
-                        'Send invite',
-                        ['/member/send-invite-email', 'id' => $model->id],
-                        ['class' => 'btn btn-warning']
+                        Html::icon('eye-open') . ' View',
+                        ['/member/view', 'id' => $model->id],
+                        ['class' => 'btn btn-primary']
                     );
                 }
             ]

@@ -10,12 +10,14 @@ use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Member */
+
 $language = $model->getNativeLanguage();
+Yii::$app->language = $language;
 
 $homeUrl = Yii::$app->urlManagerFrontEnd->createUrl('');
 ?>
 <div class="member-info">
-    <h1><?= Yii::t('app.member.mail.invite', 'Dear {name},', ['name' => $model->name], $language) ?></h1>
+    <h1><?= Yii::t('app.member.mail.invite', 'Dear {name},', ['name' => $model->name]) ?></h1>
     <!--    <p>-->
     <? //= Yii::t('app.member.mail.invite', 'You can register here: {regUrl}', ['regUrl' => Html::a($regUrl, $regUrl, ['target' => '_blank'])], $language) ?><!--</p>-->
 
@@ -47,7 +49,7 @@ $homeUrl = Yii::$app->urlManagerFrontEnd->createUrl('');
     <p>Looking forward to seeing you at this important event!</p>
 
     <b>Sincerely,<br>the organizing committee of the conference</b>
-    ', ['homeUrl' => $homeUrl], $language) ?>
+    ', ['homeUrl' => $homeUrl]) ?>
 
 
 </div>

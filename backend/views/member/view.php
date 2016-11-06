@@ -10,16 +10,16 @@ use common\models\memberVariants\ScienceDegree;
 use common\models\memberVariants\ScienceTitle;
 use common\models\memberVariants\TopicLanguage;
 use common\models\memberVariants\TopicSection;
+use yii\grid\GridView;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Member */
+/* @var $membersFilesDataProvider \yii\data\ActiveDataProvider */
 
 $this->title = $model->name;
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Members'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 
-$pdfPath = \backend\controllers\PdfController::getPdfPath($model);
-$pdfExists = file_exists($pdfPath);
 ?>
 <div class="member-view">
 
@@ -40,51 +40,54 @@ $pdfExists = file_exists($pdfPath);
     <div class="panel panel-default">
         <div class="panel-heading">Email подтверждения регистрации</div>
         <div class="panel-body">
-            <?php if (!$pdfExists) { ?>
-                <p class="text-danger">Нет прикрепленого PDF файла к письму</p>
-            <?php } ?>
-            <?=
-            Html::a(
-                \yii\bootstrap\Html::icon('envelope') . ' Отправить',
-                ['/member/send-invite-email', 'id' => $model->id],
-                ['data-method' => 'post', 'class' => 'btn btn-default']
-            )
-            ?>
 
-            <?php
-            if ($pdfExists) {
+            <div class="btn-group">
+                <?php
                 echo Html::a(
-                    \yii\bootstrap\Html::icon('refresh') . ' PDF',
-                    ['/pdf/invite-create', 'memberId' => $model->id],
-                    ['class' => 'btn btn-default']
+                    \yii\bootstrap\Html::icon('envelope') . ' Отправить',
+                    ['/member/send-invite-email', 'id' => $model->id],
+                    ['data-method' => 'post', 'class' => 'btn btn-default']
                 );
-            } else {
                 echo Html::a(
-                    \yii\bootstrap\Html::icon('plus') . ' PDF',
+                    \yii\bootstrap\Html::icon('plus') . ' Invite PDF',
                     ['/pdf/invite-create', 'memberId' => $model->id],
                     ['class' => 'btn btn-success']
                 );
-            }
-            ?>
-
+                ?>
+            </div>
             <?php
-            if ($pdfExists) {
-                echo Html::a(
-                    \yii\bootstrap\Html::icon('eye-open') . ' PDF',
-                    ['pdf/invite-view', 'memberId' => $model->id],
-                    ['class' => 'btn btn-default', 'target' => '_blank']
-                );
-            }
-            ?>
+            echo GridView::widget([
+                'dataProvider' => $membersFilesDataProvider,
+                'columns' => [
+                    'path',
+                    'type',
+                    [
+                        'label' => 'Actions',
+                        'format' => 'html',
+                        'value' => function (\common\models\MembersFile $model) {
+                            return '<div class="btn-group">'
+                            . Html::a(
+                                \yii\bootstrap\Html::icon('eye-open') ,
+                                ['pdf/invite-view', 'id' => $model->id],
+                                ['class' => 'btn btn-primary', 'target' => '_blank']
+                            )
+                            . Html::a(
+                                \yii\bootstrap\Html::icon('download-alt'),
+                                ['pdf/invite-download', 'id' => $model->id],
+                                ['class' => 'btn btn-default']
+                            )
+                            . Html::a(
+                                \yii\bootstrap\Html::icon('trash') . '',
+                                ['delete', 'id' => $model->id],
+                                ['class' => 'btn btn-default']
+                            )
+                            . '</div>';
 
-            <?php
-            if ($pdfExists) {
-                echo Html::a(
-                    \yii\bootstrap\Html::icon('download-alt') . ' PDF',
-                    ['pdf/invite-download', 'memberId' => $model->id],
-                    ['class' => 'btn btn-default']
-                );
-            }
+
+                        }
+                    ]
+                ]
+            ]);
             ?>
         </div>
     </div>

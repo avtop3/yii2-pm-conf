@@ -3,6 +3,8 @@
 
 /*  @var $this \yii\web\View */
 /*  @var $member \common\models\Member */
+/*  @var $locale string ['en', 'uk', 'ru'] */
+
 ?>
 <html>
 <style>
@@ -39,7 +41,7 @@
 <br/>
 <br/>
 
-<h3 class="center">Шановний(а) <?= $member->name ?> !</h3>
+<h3 class="center"><?= Yii::t('app.pdf.invite','Dear', [], $locale) ?> <?= $member->name ?> !</h3>
 
 <p class="main-content">
     Запрошуємо Вас прийняти участь у VIII-й Міжнародній науково-практичній конференції
