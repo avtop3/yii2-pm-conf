@@ -2595,3 +2595,10 @@ ul#language-selector li.active {
 ul#language-selector li a {
     color: white;
 }
+
+.pluso-sharer {
+    padding: 10px 0!important;
+}
+#contact-info .contact-info {
+    display: none;
+}

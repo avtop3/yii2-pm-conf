@@ -41,6 +41,7 @@ AppAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
     <link href="/markup/css/flexslider.css" rel="stylesheet">   
+    <link href="/markup/css/countdown.css" rel="stylesheet">   
     <link href="/markup/css/jquery.fancybox-buttons.css?v=1.0.5" rel="stylesheet">   
     <link href="/markup/css/jquery.fancybox-thumbs.css?v=1.0.7" rel="stylesheet">     
     <link href="/markup/css/jquery.fancybox.css" rel="stylesheet">  
@@ -57,8 +58,8 @@ AppAsset::register($this);
                         <a class="navbar-brand" href="<?= \yii\helpers\Url::home() ?>"><img
                             src="/markup/images/logo.png" alt="logo"></a>
                     </div>
-                </div>
-                <div class="pluso-engine col-sm-4 col-xs-4" pluso-sharer={"buttons":"vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print,more","style":{"size":"small","shape":"square","theme":"theme02","css":"background:transparent"},"orientation":"horizontal","multiline":false}  data-description="%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D0%BA%D0%BE%D0%BD%D1%84%D0%B5%D1%80%D0%B5%D0%BD%D1%86%D0%B8%D1%8F%20%D0%BF%D0%BE%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8E%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8%2C%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0%D0%BC%D0%B8%2C%20%D0%BF%D0%BE%D1%80%D1%82%D1%84%D0%B5%D0%BB%D1%8F%D0%BC%D0%B8" data-url="https%3A%2F%2Fconf.pm-edu.org%2F"></div> 
+                </div>                
+                <div class="pluso-engine col-sm-4 col-xs-4" pluso-sharer={"buttons":"vkontakte,google,linkedin,facebook,twitter,odnoklassniki,more","style":{"size":"medium","shape":"square","theme":"theme12"},"orientation":"horizontal","multiline":false}  data-url="https%3A%2F%2Fconf.pm-edu.org%2F"></div> 
                 <div class="col-sm-2 col-xs-2">                    
                     <?php
 
@@ -195,31 +196,25 @@ AppAsset::register($this);
 <!--/#footer-->
 <?php $this->endBody() ?>
 <script src="/markup/js/jquery.flexslider.js"></script>
+<script src="/markup/js/jquery.countdown.min.js"></script>
 <script src="/markup/js/jquery.fancybox.js"></script>
 <script src="/markup/js/jquery.fancybox-buttons.js?v=1.0.5"></script>
 <script src="/markup/js/jquery.fancybox-thumbs.js?v=1.0.7"></script>
-<script type="text/javascript">
-    $(function(){
-        $('.carousel').carousel({
-            interval: 2000
-        });
-    });
+<script type="text/javascript">(function() {
+    if (window.pluso) {return};
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://x.pluso.ru/pluso-x.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+})();
 </script>
 <script type="text/javascript">
-    (function() {
-        if (window.pluso) {
-            return
-        };
-    var d = document, 
-        s = d.createElement('script'), 
-        g = 'getElementsByTagName';
-        s.type = 'text/javascript'; 
-        s.charset='UTF-8'; 
-        s.async = true;
-        s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://x.pluso.ru/pluso-x.js';
-        var h=d[g]('body')[0];
-        h.appendChild(s);
-})();
+    setTimeout(function(){
+        $( document ).ready(function() {
+            $('#main-slider .next').click();
+        });        
+    }, 6000);
 </script>
 <script type="text/javascript">
     $(document).ready(function() {
@@ -243,13 +238,12 @@ AppAsset::register($this);
     });
 </script>
 <script>
-    $('#clock').countdown('2020/10/10').on('update.countdown', function(event) {
-        var $this = $(this).html(event.strftime(''
-        + '<span>%-w</span> <br> week%!w '
-        + '<span>%-d</span> <br> day%!d '
-        + '<span>%H</span> <br> hr '
-        + '<span>%M</span> <br> min '
-        + '<span>%S</span> <br> sec'));
+    $('#clock, #clockUA, #clockEN').countdown('2017/02/13').on('update.countdown', function(event) {
+        var $this = $(this).html(event.strftime(        
+        '%D <span class="string"> days </span> ' + ' '
+            + '%H <span class="string"> hours </span>' + ' '
+            + '%M <span class="string"> min </span>  ' + ' '
+            + '%S <span class="string"> sec </span>'));
     });
 </script>
 </body>   

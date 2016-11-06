@@ -103,6 +103,16 @@ $this->params['bodyClass'] = 'homepage';
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="media counter wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="media-body">
+                        <h2>До конференції:</h2>
+                        <div id="clockUA"></div>
+                    </div>
+                </div>                
+            </div>
+        </div>
     </div><!--/.container-->
 </section><!--/#conatcat-info-->
 

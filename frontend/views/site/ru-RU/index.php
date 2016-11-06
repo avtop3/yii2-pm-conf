@@ -8,16 +8,7 @@ $this->params['bodyClass'] = 'homepage';
 
 <section id="main-slider" class="no-margin">
     <div class="carousel slide">
-<!--
-        <ol class="carousel-indicators">
-            <li data-target="#main-slider" data-slide-to="0" class="active"></li>
-            <li data-target="#main-slider" data-slide-to="1"></li>
-            <li data-target="#main-slider" data-slide-to="2"></li>
-            <li data-target="#main-slider" data-slide-to="3"></li>
-        </ol>
--->
         <div class="carousel-inner">
-
             <div class="item active" style="background-image: url(/markup/images/s11.jpg)">
                 <div class="container full">
                     <div class="row">
@@ -102,13 +93,21 @@ $this->params['bodyClass'] = 'homepage';
                 <div class="media contact-info wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                     <div class="media-body">
                         <h2>До конференции осталось:</h2>
-                        <p>Конференция завершена!</p>
-                        <div id="clock"></div>
+                        <p>Конференция завершена!</p>                        
                         <p>Зарегистрированных участников: <span id="members">0</span></p>
                         <a href="" class="btn btn-default registr disabled"><i class="fa fa-ticket"></i> Зарегистрироваться</a>
                     </div>
-
                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="media counter wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="media-body">
+                        <h2>До конференции осталось:</h2>
+                        <div id="clock"></div>
+                    </div>
+                </div>                
             </div>
         </div>
     </div><!--/.container-->
