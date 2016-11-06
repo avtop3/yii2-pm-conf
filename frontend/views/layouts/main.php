@@ -238,12 +238,12 @@ AppAsset::register($this);
     });
 </script>
 <script>
-    $('#clock, #clockUA, #clockEN').countdown('2017/02/13').on('update.countdown', function(event) {
-        var $this = $(this).html(event.strftime(        
-        '%D <span class="string"> days </span> ' + ' '
-            + '%H <span class="string"> hours </span>' + ' '
-            + '%M <span class="string"> min </span>  ' + ' '
-            + '%S <span class="string"> sec </span>'));
+    $('#clock, #clockUA, #clockEN').countdown('2017/02/13').on('update.countdown', function (event) {
+        var $this = $(this).html(event.strftime(
+            '%D <span class="string"> <?= Yii::t('app.layout.clock','days' )?></span> ' + ' '
+            + '%H <span class="string"> <?= Yii::t('app.layout.clock','hours' )?> </span>' + ' '
+            + '%M <span class="string"> <?= Yii::t('app.layout.clock','min' )?> </span>  ' + ' '
+            + '%S <span class="string"> <?= Yii::t('app.layout.clock','sec' )?> </span>'));
     });
 </script>
 </body>   
