@@ -34,13 +34,11 @@ $this->params['breadcrumbs'][] = $this->title;
                 'method' => 'post',
             ],
         ]) ?>
-
     </p>
 
     <div class="panel panel-default">
         <div class="panel-heading">Email подтверждения регистрации</div>
         <div class="panel-body">
-
             <div class="btn-group">
                 <?php
                 echo Html::a(
@@ -55,6 +53,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 );
                 ?>
             </div>
+            <p></p>
             <?php
             echo GridView::widget([
                 'dataProvider' => $membersFilesDataProvider,
@@ -63,11 +62,11 @@ $this->params['breadcrumbs'][] = $this->title;
                     'type',
                     [
                         'label' => 'Actions',
-                        'format' => 'html',
+                        'format' => 'raw',
                         'value' => function (\common\models\MembersFile $model) {
                             return '<div class="btn-group">'
                             . Html::a(
-                                \yii\bootstrap\Html::icon('eye-open') ,
+                                \yii\bootstrap\Html::icon('eye-open'),
                                 ['pdf/invite-view', 'id' => $model->id],
                                 ['class' => 'btn btn-primary', 'target' => '_blank']
                             )
@@ -78,8 +77,12 @@ $this->params['breadcrumbs'][] = $this->title;
                             )
                             . Html::a(
                                 \yii\bootstrap\Html::icon('trash') . '',
-                                ['delete', 'id' => $model->id],
-                                ['class' => 'btn btn-default']
+                                ['members-file/delete', 'id' => $model->id],
+                                [
+                                    'class' => 'btn btn-default',
+                                    'data-confirm' => Yii::t('yii', 'Are you sure you want to delete this item?'),
+                                    'data-method' => 'post',
+                                ]
                             )
                             . '</div>';
 
@@ -127,7 +130,7 @@ $this->params['breadcrumbs'][] = $this->title;
         ],
         [
             'attribute' => $model->getAttributeLabel('papersCount'),
-            'value' => $model->papersCount . ' ' . Yii::t('app.member.view', 'papers'),
+            'value' => $model->papersCount . ' ' . Yii::t('app.member', 'papers'),
         ],
         [
             'attribute' => $model->getAttributeLabel('totalSum'),
@@ -157,7 +160,6 @@ $this->params['breadcrumbs'][] = $this->title;
     $attributes[] = 'created_at:date';
 
     ?>
-
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => $attributes,

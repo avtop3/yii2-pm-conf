@@ -1,10 +1,10 @@
 <?php
-    use yii\bootstrap\Html;
+use yii\bootstrap\Html;
 
 /*  @var $this \yii\web\View */
 /*  @var $member \common\models\Member */
-/*  @var $locale string ['en', 'uk', 'ru'] */
-
+/*  @var $locale string ['en-US', 'uk-UA', 'ru-RU'] */
+Yii::$app->language = $locale;
 ?>
 <html>
 <style>
@@ -20,37 +20,41 @@
     h3 {
         font-weight: bold;
     }
-
-    .p_under_header {
-        margin-left: 30px;
-    }
-
     .main-content {
         text-indent: 30px;
+        text-align: justify;
+    }
+
+    img {
+        width: 100%;
     }
 </style>
 <body>
 <p class="center">
-    <img src="<?= Yii::getAlias('@backend/modules/pdf/views/pdf_parts/header.jpg') ?>"/>
+    <img src="<?= Yii::getAlias('@backend/modules/pdf/views/pdf_parts/header_en-US.jpg') ?>"/>
 </p>
 
-<p class="p_under_header">________№ ___________</p>
-
-<p class="p_under_header">На № _________________</p>
-
-<br/>
-<br/>
-
-<h3 class="center"><?= Yii::t('app.pdf.invite','Dear', [], $locale) ?> <?= $member->name ?> !</h3>
+<h3>Dear <?= $member->name ?>,</h3>
 
 <p class="main-content">
-    Запрошуємо Вас прийняти участь у VIII-й Міжнародній науково-практичній конференції
-    «Інтегроване стратегічне управління, управління портфелями, програмами, проектами»,
-    яка відбудеться 13-16 лютого 2017 року в с. Яблуниця Івано-Франківської області, готель «Горгани».</p>
+    It is with great pleasure that we invite you to participate in the 8th International Scientific and Practical
+    Conference “Integrated Strategic Management, Portfolio, Program, and Project Management”, which will be held at
+    Hotel “Gorgany Mountain Resort” in a resort village of Yablunytsa, Ivano-Frankivsk region, Ukraine from 13 to 16
+    February 2017.
+    The objective of the Conference is a discussion of new ideas in the field of strategic management, portfolio,
+    program, and project management. The Conference will be a platform for scientists, managers and other participants
+    to discuss the current situation, challenges and advancements relating to the unification of experience in the
+    application of strategic management, portfolio, program, and project management in different sectors of the economy.
+    The Conference will be divided into substantive sessions and working groups, providing the opportunity to focus on
+    specific areas such as Integration of Strategic Management with Portfolio, Program and Project Management; Managing
+    ІТ Projects; Application of Effective Management Technologies in Practice.
+    The working languages of the Conference are English, Ukrainian, and Russian.
+    Looking forward to seeing you at this important event,
+</p>
 <br/>
 
 <p class="center">
-    <img src="<?= Yii::getAlias('@backend/modules/pdf/views/pdf_parts/footer.jpg') ?>" class="center"/>
+    <img src="<?= Yii::getAlias('@backend/modules/pdf/views/pdf_parts/footer_en-US.jpg') ?>"/>
 </p>
 </body>
 </html>

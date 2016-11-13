@@ -97,7 +97,7 @@ class MemberSearch extends Member
      */
     public function search($params)
     {
-        $query = Member::find();
+        $query = Member::find()->indexBy('id');
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,

@@ -8,14 +8,14 @@ return [
         ],
         'urlManagerFrontEnd' => [
             'class' => 'yii\web\urlManager',
-            'baseUrl' => 'http://conf.pm-edu.org',
+            'baseUrl' => 'https://conf.pm-edu.org',
             'showScriptName' => false,
             'enablePrettyUrl' => true,
             'rules' => [],
         ],
         'urlManagerBackEnd' => [
             'class' => 'yii\web\urlManager',
-            'baseUrl' => 'http://conf.pm-edu.org/yii2-admin',
+            'baseUrl' => 'https://conf.pm-edu.org/yii2-admin',
             'showScriptName' => false,
             'enablePrettyUrl' => true,
             'rules' => [],
@@ -38,36 +38,19 @@ return [
         ],
         'i18n' => [
             'translations' => [
-                '*' => [
-                    'class' => 'yii\i18n\DbMessageSource',
-                    'db' => 'db',
-                    'sourceLanguage' => 'en-US', // Developer language
-                    'sourceMessageTable' => '{{%language_source}}',
-                    'messageTable' => '{{%language_translate}}',
-                    'forceTranslation' => true,
-                    'cachingDuration' => 86400,
-                    'enableCaching' => false,
-                ],
                 'app*' => [
-                    'class' => 'yii\i18n\DbMessageSource',
-                    'db' => 'db',
-                    'sourceLanguage' => 'en-US', // Developer language
-                    'sourceMessageTable' => '{{%language_source}}',
-                    'messageTable' => '{{%language_translate}}',
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'basePath' => '@common/messages',
                     'forceTranslation' => true,
-                    'cachingDuration' => 86400,
-                    'enableCaching' => false,
+                    'sourceLanguage' => 'en-US', // Developer language
+                    'fileMap' => [
+                        'app' => 'app.php',
+                        'app/error' => 'error.php',
+                    ],
                 ],
             ],
         ],
     ],
     'modules' => [
-        'translatemanager' => [
-            'class' => 'lajax\translatemanager\Module',
-            'ignoredCategories' => ['yii', 'array', 'language', 'model'],
-            'layout' => NULL,
-            'allowedIPs' => ['*'],
-        ],
     ],
-
 ];

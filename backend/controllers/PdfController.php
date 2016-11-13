@@ -19,15 +19,16 @@ use yii\web\Controller;
 class PdfController extends Controller
 {
     /* @todo: Все таки надо вынести в модуль */
-    /* @todo: Менять язык контента PDF в зависимоти от страны мембера */
     /* @todo: Добавить кнопку для ленивых "Сгенирироваь PDF & Отослать" */
     public function actionInviteCreate($memberId)
     {
         $member = Member::findOne($memberId);
         if ($member) {
+            // set global language to member's locale, so then Yii will render localized View below
+            \Yii::$app->language = $member->getNativeLanguage();
             $html = $this->renderFile(
                 '@backend/modules/pdf/views/invite/invite.php',
-                ['member' => $member, 'locale' => $member->getNativeLanguage()]
+                ['member' => $member]
             );
             $domPdf = new Dompdf();
             $domPdf->loadHtml($html);

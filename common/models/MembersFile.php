@@ -44,10 +44,8 @@ class MembersFile extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => 'ID',
-            'member_id' => 'Member ID',
-            'path' => 'Path',
-            'type' => 'Type',
+            'path' => 'Путь к файлу',
+            'type' => 'Тип',
         ];
     }
 

@@ -58,25 +58,25 @@ $confPeriods = \backend\models\ConfPeriod::find()->orderBy('regStart')->all();
                 'style' => 'display: inline;',
             ]
         ]); ?>
-        <?php
-        foreach ($confPeriods as $period) {
-            $class = 'btn btn-default';
+        <div class="btn-group">
+            <?php
+            foreach ($confPeriods as $period) {
+                $class = 'btn btn-default';
 
-            if(Yii::$app->request->get('MemberSearch')['period'] == $period->id){
-                $class .= ' active';
+                if (Yii::$app->request->get('MemberSearch')['period'] == $period->id) {
+                    $class .= ' active';
+                }
+
+                echo Html::submitButton($period->title, [
+                    'class' => $class,
+                    'value' => $period->id,
+                    'class ' => 'asd',
+                    'name' => 'MemberSearch[period]',
+                ]);
             }
-
-            echo Html::submitButton($period->title, [
-                'class' => $class,
-                'value' => $period->id,
-                'class ' => 'asd',
-                'name' => 'MemberSearch[period]',
-            ]);
-        }
-        echo Html::a('+', ['/conf-period/create'], ['class' => 'btn btn-default']);
-
-        ?>
-
+            echo Html::a('+', ['/conf-period/create'], ['class' => 'btn btn-default']);
+            ?>
+        </div>
         <?php ActiveForm::end(); ?>
 
     </div>
@@ -102,6 +102,7 @@ $confPeriods = \backend\models\ConfPeriod::find()->orderBy('regStart')->all();
                         return '<b>' . Html::a($model->name, ['update', 'id' => $model->id]) . '</b>';
                     },
                 ],
+                'sex',
                 'position',
                 'phone',
                 'email',
@@ -193,6 +194,15 @@ echo \yii\widgets\LinkPager::widget([
                 return '<b>' . Html::a($model->name, ['update', 'id' => $model->id]) . '</b>';
             },
             'contentOptions' => ['style' => 'width: 100px;', 'class' => 'warning ']
+        ],
+        [
+            'attribute' => 'sex',
+            'class' => kartik\grid\EditableColumn::className(),
+            'editableOptions'=>[
+                'inputType'=>\kartik\editable\Editable::INPUT_DROPDOWN_LIST,
+                'data' => \common\models\memberVariants\Sex::getListWitLabel()
+
+            ],
         ],
 //            'country',
 //            [

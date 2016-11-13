@@ -9,6 +9,7 @@
 namespace common\models;
 
 use common\models\memberVariants\ParticipationType;
+use common\models\memberVariants\Sex;
 use Yii;
 use yii\db\ActiveRecord;
 use yii\behaviors\TimestampBehavior;
@@ -45,6 +46,7 @@ use common\models\Countries;
  * @property string $currency
  * @property string $totalSum
  * @property string $inviteSentAt
+ * @property string $sex Use common\models\memberVariants\Sex constants
  */
 class Member extends ActiveRecord
 {
@@ -107,6 +109,7 @@ class Member extends ActiveRecord
             'inviteSentAt',
             'created_at',
             'updated_at',
+            'sex'
         ];
     }
 
@@ -185,6 +188,7 @@ class Member extends ActiveRecord
             [['paid', 'noteFromAdmin', 'created_at'], 'safe', 'on' => Member::SCENARIO_ADMIN],
             ['organisationUrl', 'url'],
             ['paid', 'default', 'value' => 0],
+            ['sex', 'in', 'range' => Sex::getList()],
             ['phone', 'match', 'pattern' => '/^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$/i'],
         ];
     }

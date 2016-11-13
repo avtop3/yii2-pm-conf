@@ -7,6 +7,7 @@ use common\models\Member;
 use common\models\MemberSearch;
 use yii\behaviors\TimestampBehavior;
 use yii\data\ActiveDataProvider;
+use yii\helpers\Json;
 use yii\helpers\Url;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -43,6 +44,17 @@ class MemberController extends Controller
         $searchModel = new MemberSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
+        if (Yii::$app->request->post('hasEditable')) {
+            $memberId = Yii::$app->request->post('editableKey');
+            $model = Member::findOne($memberId);
+            $posted = current($_POST['Member']);
+            $post = ['Member' => $posted];
+
+            if ($model->load($post) && $model->save()) {
+                return Json::encode(['output' => $model->sex, 'message' => '']);
+            }
+        }
+
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
@@ -56,6 +68,8 @@ class MemberController extends Controller
      */
     public function actionView($id)
     {
+        Url::remember();
+
         $member = $this->findModel($id);
         $membersFilesDataProvider = new ActiveDataProvider([
             'query' => $member->getFiles(),
@@ -63,6 +77,7 @@ class MemberController extends Controller
                 'pageSize' => 10,
             ],
         ]);
+
         return $this->render('view', [
             'model' => $member,
             'membersFilesDataProvider' => $membersFilesDataProvider

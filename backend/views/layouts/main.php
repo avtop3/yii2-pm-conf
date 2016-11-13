@@ -71,25 +71,25 @@ AppAsset::register($this);
                 <?php
                 $menuItems = [
                     [
-                        'label' => Yii::t('language', 'Участники конференции'),
+                        'label' => 'Участники конференции',
                         'url' => ['/member/index'],
                         'options' => ['class' => 'important'],
                         'linkOptions' => ['class' => 'btn btn-pirate'],
                     ],
                     [
-                        'label' => Yii::t('language', 'Ожидают подтверждения'),
+                        'label' => 'Ожидают подтверждения',
                         'url' => ['/member/last-members'],
                         'options' => ['class' => 'important'],
                         'linkOptions' => ['class' => 'btn btn-pirate'],
                     ],
                     [
-                        'label' => Yii::t('language', 'Организации'),
+                        'label' => 'Организации',
                         'url' => ['/member/org'],
                         'options' => ['class' => 'important'],
                         'linkOptions' => ['class' => 'btn btn-pirate'],
                     ],
                     [
-                        'label' => Yii::t('language', 'Рассылка'),
+                        'label' => 'Рассылка',
                         'url' => ['/member/bulk-email'],
                         'options' => ['class' => 'important'],
                         'linkOptions' => ['class' => 'btn btn-pirate'],
@@ -102,16 +102,16 @@ AppAsset::register($this);
                     ],
 //                    ['label' => Yii::t('language', 'Контент'), 'url' => ['/blog/post/index']],
 //                    ['label' => Yii::t('language', 'Файловый менеджер'), 'url' => ['/filemanager/file/index']],
-                    ['label' => Yii::t('language', 'Переводы строк'),
-                        'items' => [
-                            ['label' => Yii::t('language', 'List of languages'), 'url' => ['/translatemanager/language/list']],
-//                            ['label' => Yii::t('language', 'Create'), 'url' => ['/translatemanager/language/create']],
-                            ['label' => Yii::t('language', 'Scan'), 'url' => ['/translatemanager/language/scan']],
-                            ['label' => Yii::t('language', 'Optimize'), 'url' => ['/translatemanager/language/optimizer']],
-//                            ['label' => Yii::t('language', 'Import'), 'url' => ['/translatemanager/language/import']],
-//                            ['label' => Yii::t('language', 'Export'), 'url' => ['/translatemanager/language/export']],
-                        ]
-                    ],
+//                    ['label' => Yii::t('language', 'Переводы строк'),
+//                        'items' => [
+//                            ['label' => Yii::t('language', 'List of languages'), 'url' => ['/translatemanager/language/list']],
+////                            ['label' => Yii::t('language', 'Create'), 'url' => ['/translatemanager/language/create']],
+//                            ['label' => Yii::t('language', 'Scan'), 'url' => ['/translatemanager/language/scan']],
+//                            ['label' => Yii::t('language', 'Optimize'), 'url' => ['/translatemanager/language/optimizer']],
+////                            ['label' => Yii::t('language', 'Import'), 'url' => ['/translatemanager/language/import']],
+////                            ['label' => Yii::t('language', 'Export'), 'url' => ['/translatemanager/language/export']],
+//                        ]
+//                    ],
 
                 ];
                 if (!Yii::$app->user->isGuest) {

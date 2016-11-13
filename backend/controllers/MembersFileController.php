@@ -5,6 +5,7 @@ namespace backend\controllers;
 use Yii;
 use common\models\MembersFile;
 use yii\data\ActiveDataProvider;
+use yii\helpers\Url;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -35,6 +36,7 @@ class MembersFileController extends Controller
      */
     public function actionIndex()
     {
+        Url::remember();
         $dataProvider = new ActiveDataProvider([
             'query' => MembersFile::find(),
         ]);
@@ -86,7 +88,7 @@ class MembersFileController extends Controller
         $model = $this->findModel($id);
         $model->delete();
 
-        return $this->redirect(['index']);
+        return $this->redirect(Url::previous());
     }
 
     /**

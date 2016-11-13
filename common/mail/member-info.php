@@ -54,7 +54,7 @@ $attributes = [
     ],
     [
         'attribute' => $model->getAttributeLabel('papersCount'),
-        'value' => $model->papersCount . ' ' . Yii::t('app.member.view', 'papers'),
+        'value' => $model->papersCount . ' ' . Yii::t('app.member', 'papers'),
     ],
     [
         'attribute' => $model->getAttributeLabel('totalSum'),
