@@ -20,6 +20,7 @@ use yii\bootstrap\Html;
     }
 
     .main-content {
+        font-size: 14pt;
         text-indent: 30px;
         text-align: justify;
     }
@@ -30,7 +31,7 @@ use yii\bootstrap\Html;
 </style>
 <body>
 <p class="center">
-    <img src="<?= Yii::getAlias('@backend/modules/pdf/views/pdf_parts/header_ru-RU.jpg') ?>"/>
+    <img src="<?= Yii::getAlias('@backend/modules/pdf/views/pdf_parts/header_ru-ru.jpg') ?>"/>
 </p>
 <p class="p_under_header">________№ ___________</p>
 
@@ -51,7 +52,7 @@ use yii\bootstrap\Html;
 <br/>
 
 <p class="center">
-    <img src="<?= Yii::getAlias('@backend/modules/pdf/views/pdf_parts/footer_ru-RU.jpg') ?>"/>
+    <img src="<?= Yii::getAlias('@backend/modules/pdf/views/pdf_parts/footer_ru-ru.jpg') ?>"/>
 </p>
 </body>
 </html>

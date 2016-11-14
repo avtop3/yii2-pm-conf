@@ -17,6 +17,7 @@ use yii\bootstrap\Html;
         font-weight: bold;
     }
     .main-content {
+        font-size: 14pt;
         text-indent: 30px;
         text-align: justify;
     }
@@ -26,7 +27,7 @@ use yii\bootstrap\Html;
 </style>
 <body>
 <p class="center">
-    <img src="<?= Yii::getAlias('@backend/modules/pdf/views/pdf_parts/header_uk-UA.jpg') ?>"/>
+    <img src="<?= Yii::getAlias('@backend/modules/pdf/views/pdf_parts/header_uk-ua.jpg') ?>"/>
 </p>
 <p class="p_under_header">________№ ___________</p>
 
@@ -40,13 +41,11 @@ use yii\bootstrap\Html;
     ) ?></h3>
 
 <p class="main-content">
-    Приглашаем Вас принять участие в работе VIII-й Международной научно-практической конференции «Интегрированное
-    стратегическое управление, управление портфелями, программами, проектами», которая состоится 13-16 февраля 2017 года
-    в с. Яблоница Ивано-Франковской области в отеле «Горганы».
+    Запрошуємо Вас прийняти участь у VIII-й Міжнародній науково-практичній конференції «Інтегроване стратегічне управління, управління портфелями, програмами, проектами», яка відбудеться 13-16 лютого 2017 року в с. Яблуниця Івано-Франківської області, готель «Горгани».
 </p>
 
 <p class="center">
-    <img src="<?= Yii::getAlias('@backend/modules/pdf/views/pdf_parts/footer_uk-UA.jpg') ?>"/>
+    <img src="<?= Yii::getAlias('@backend/modules/pdf/views/pdf_parts/footer_uk-ua.jpg') ?>"/>
 </p>
 </body>
 </html>
