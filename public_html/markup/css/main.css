@@ -2598,6 +2598,7 @@ ul#language-selector li a {
 
 .pluso-sharer {
     padding: 10px 0!important;
+    float: right;
 }
 #contact-info .contact-info {
     display: none;

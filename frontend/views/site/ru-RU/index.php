@@ -86,7 +86,8 @@ $this->params['bodyClass'] = 'homepage';
         <i class="fa fa-chevron-right"></i>
     </a>
 </section><!--/#main-slider-->
-<section id="contact-info">
+
+<!--<section id="contact-info">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
@@ -110,7 +111,7 @@ $this->params['bodyClass'] = 'homepage';
                 </div>                
             </div>
         </div>
-    </div><!--/.container-->
+    </div>
 </section><!--/#conatcat-info-->
 
 <section id="feature" >

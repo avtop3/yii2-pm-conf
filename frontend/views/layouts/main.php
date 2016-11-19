@@ -59,7 +59,7 @@ AppAsset::register($this);
                             src="/markup/images/logo.png" alt="logo"></a>
                     </div>
                 </div>                
-                <div class="pluso-engine col-sm-4 col-xs-4" pluso-sharer={"buttons":"vkontakte,google,linkedin,facebook,twitter,odnoklassniki,more","style":{"size":"medium","shape":"square","theme":"theme12"},"orientation":"horizontal","multiline":false}  data-url="https%3A%2F%2Fconf.pm-edu.org%2F"></div> 
+                <div class="pluso-engine col-sm-4 col-xs-4" pluso-sharer={"buttons":"facebook,linkedin,vkontakte,twitter,google","style":{"size":"medium","shape":"square","theme":"theme12"},"orientation":"horizontal","multiline":false}  data-url="https%3A%2F%2Fconf.pm-edu.org%2F"></div> 
                 <div class="col-sm-2 col-xs-2">                    
                     <?php
 
@@ -238,9 +238,18 @@ AppAsset::register($this);
     });
 </script>
 <script>
+    //Counter for registration time in RU UA EN
     $('#clock, #clockUA, #clockEN').countdown('2017/02/13').on('update.countdown', function(event) {
         var $this = $(this).html(event.strftime(        
         '%D <span class="string"> days </span> ' + ' '
+            + '%H <span class="string"> hours </span>' + ' '
+            + '%M <span class="string"> min </span>  ' + ' '
+            + '%S <span class="string"> sec </span>'));
+    });
+    // Counters for key dates
+    $('#registrEnd, #registrEndUA, #registrEndEN').countdown('2017/01/20').on('update.countdown', function(event) {
+        var $this = $(this).html(event.strftime(        
+            '%D <span class="string"> days </span> ' + ' '
             + '%H <span class="string"> hours </span>' + ' '
             + '%M <span class="string"> min </span>  ' + ' '
             + '%S <span class="string"> sec </span>'));

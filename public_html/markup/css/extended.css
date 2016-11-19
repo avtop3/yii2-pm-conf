@@ -811,8 +811,8 @@ ul#language-selector {
 }
 ul#language-selector li {
   padding: 0;
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   text-align: center;
 }
 ul#language-selector li.active {
@@ -1074,3 +1074,4 @@ ul#language-selector li.active {
     height: 100%;
     width: 100%
 }
+
