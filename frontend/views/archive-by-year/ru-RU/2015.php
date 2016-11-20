@@ -1,33 +1,24 @@
 <?php
-$result = false;
- $filePath = '../markup/images/archive/2015/photogallery';
- if ($handle = opendir('/home/i/ibabych/conf.pm-edu.org/public_html/markup/images/archive/2015/photogallery')) {
-    while (false !== ($file = readdir($handle))) {
-        if (preg_match('/jpg$/', strtolower($file))){
-            $result[] = $filePath . '/' . $file;
-        }
-        
-    }
-    closedir($handle);
-}
-$this->title = 'Conference archive 2015 | International Conference in Project, Program, and Portfolio Management';
-
+/**
+ * @var array $result
+ */
+$this->title = 'Архив конференции 2015 года | Международная конференция по управлению проектами, программами, портфелями';
 ?>
 <section id="insidePhoto">
     <div class="container">
-        <h2>Conference archive 2015</h2>
+        <h2>Архив конференции 2015 года</h2>
 
         <div class="tabs">
             <ul class="nav nav-tabs">
                 <li class="active"><a href="#tab-1" data-toggle="tab" class="hvr-bubble-bottom"><i
-                            class="fa fa-picture-o" aria-hidden="true"></i> PHOTOGALLERY</a></li>
+                            class="fa fa-picture-o" aria-hidden="true"></i> Фотоархив конференции</a></li>
                 <li><a href="#tab-2" data-toggle="tab" class="hvr-bubble-bottom"><i class="fa fa-list-alt"
-                                                                                    aria-hidden="true"></i> PRESENTATIONS</a></li>
+                                                                                    aria-hidden="true"></i> Презентации
+                        докладов</a></li>
                 <li><a href="#tab-3" data-toggle="tab" class="hvr-bubble-bottom"><i class="fa fa-sticky-note-o"
-                                                                                    aria-hidden="true"></i> PAPERS</a>
+                                                                                    aria-hidden="true"></i> Статьи</a>
                 </li>
             </ul>
-
             <div class="tab-content">
                 <div class="tab-pane fade in active" id="tab-1">
                    <div class="tab-gallery">
@@ -112,7 +103,8 @@ $this->title = 'Conference archive 2015 | International Conference in Project, P
                 </div>
                 <div class="tab-pane fade" id="tab-3">
                     <a href="../markup/images/archive/2015/ConferencePapers2015.rar" class="hvr-shutter-out-horizontal download" download>
-                        <p>Download published papers</p> <i class="fa fa-download" aria-hidden="true"></i></a>
+                        <p>Скачать опубликованные статьи</p> <i
+                            class="fa fa-download" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>

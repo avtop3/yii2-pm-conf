@@ -36,7 +36,7 @@ class AppAsset extends AssetBundle
         'markup/js/jquery.prettyPhoto.js',
         'markup/js/jquery.isotope.min.js',
         'markup/js/jquery.animateNumber.min.js',
-        'markup/js/jquery.countdown.min',
+        'markup/js/jquery.countdown.min.js',
         'markup/js/main.js',
         'markup/js/kinetic_countdown.js',
         'markup/js/wow.min.js',

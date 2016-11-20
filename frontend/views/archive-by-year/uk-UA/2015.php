@@ -1,32 +1,24 @@
 <?php
-  $result = false;
- $filePath = 'markup/images/archive/2015/photogallery';
- if ($handle = opendir('/home/i/ibabych/conf.pm-edu.org/public_html/markup/images/archive/2015/photogallery')) {
-    while (false !== ($file = readdir($handle))) {
-        if (preg_match('/jpg$/', strtolower($file))){
-            $result[] = $filePath . '/' . $file;
-        }
-        
-    }
-    closedir($handle);
-}
-$this->title = 'Архив конференции 2015 года | Международная конференция по управлению проектами, программами, портфелями';
+/**
+ * @var array $result
+ */
+$this->title = 'Архів конференції 2015 року | Міжнародна конференція з управління проектами, програмами, портфелями';
 ?>
 <section id="insidePhoto">
     <div class="container">
-        <h2>Архив конференции 2015 года</h2>
+        <h2>Архів конференції 2015 року</h2>
 
         <div class="tabs">
             <ul class="nav nav-tabs">
                 <li class="active"><a href="#tab-1" data-toggle="tab" class="hvr-bubble-bottom"><i
-                            class="fa fa-picture-o" aria-hidden="true"></i> Фотоархив конференции</a></li>
+                            class="fa fa-picture-o" aria-hidden="true"></i> Фотоархів конференції</a></li>
                 <li><a href="#tab-2" data-toggle="tab" class="hvr-bubble-bottom"><i class="fa fa-list-alt"
-                                                                                    aria-hidden="true"></i> Презентации
-                        докладов</a></li>
+                                                                                    aria-hidden="true"></i> Презентації доповідей</a></li>
                 <li><a href="#tab-3" data-toggle="tab" class="hvr-bubble-bottom"><i class="fa fa-sticky-note-o"
-                                                                                    aria-hidden="true"></i> Статьи</a>
+                                                                                    aria-hidden="true"></i> Статті</a>
                 </li>
             </ul>
+
             <div class="tab-content">
                 <div class="tab-pane fade in active" id="tab-1">
                    <div class="tab-gallery">
@@ -111,8 +103,7 @@ $this->title = 'Архив конференции 2015 года | Междуна
                 </div>
                 <div class="tab-pane fade" id="tab-3">
                     <a href="../markup/images/archive/2015/ConferencePapers2015.rar" class="hvr-shutter-out-horizontal download" download>
-                        <p>Скачать опубликованные статьи</p> <i
-                            class="fa fa-download" aria-hidden="true"></i></a>
+                        <p>Завантажити опубліковані статті</p> <i class="fa fa-download" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>

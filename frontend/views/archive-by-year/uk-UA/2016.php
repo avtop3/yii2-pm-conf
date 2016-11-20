@@ -1,15 +1,7 @@
 <?php
-$result = false;
- $filePath = '../markup/images/archive/2016/photogallery';
- if ($handle = opendir('/home/i/ibabych/conf.pm-edu.org/public_html/markup/images/archive/2016/photogallery')) {
-    while (false !== ($file = readdir($handle))) {
-        if (preg_match('/jpg$/', strtolower($file))){
-            $result[] = $filePath . '/' . $file;
-        }
-        
-    }
-    closedir($handle);
-}
+/**
+ * @var array $result
+ */
 $this->title = 'Архів конференції 2016 року | Міжнародна конференція з управління проектами, програмами, портфелями';
 ?>
 <section id="insidePhoto">

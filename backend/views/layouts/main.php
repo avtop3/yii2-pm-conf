@@ -17,7 +17,7 @@ $this->registerLinkTag([
 
 $this->registerMetaTag([
     'name' => 'generator',
-    'content' => ''
+    'content' => 'Powered by Aleksandr AVTOP Kovalchuk with Yii2 (since 2016)'
 ]);
 
 AppAsset::register($this);

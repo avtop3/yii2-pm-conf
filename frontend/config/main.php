@@ -12,7 +12,6 @@ return [
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
-//    'sourceLanguage' => $params['activeLanguages']['ru'],
     'language' => $params['activeLanguages']['ru'],
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
@@ -54,6 +53,10 @@ return [
                     'pattern' => '',
                     'route' => 'site/static-page',
                     'defaults' => ['page' => 'index'],
+                ],
+                [
+                    'pattern' => '/<year:[0-9]{4}>',
+                    'route' => 'archive-by-year/show',
                 ],
                 [
                     'pattern' => '/<page:[a-z0-9-_]+>',
