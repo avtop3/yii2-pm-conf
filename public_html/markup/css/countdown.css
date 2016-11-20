@@ -16,3 +16,47 @@
     font-weight: normal;
     color: #000;
 }
+#main-slider .carousel .item .full.fullsize .counter{
+    text-align: center;
+    margin: 5% 0;
+}
+#main-slider .carousel .item .full.fullsize .counter .count{
+    color: #fff;
+    margin: 15px 25px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    line-height: normal;
+}
+#main-slider .carousel .item .full.fullsize .counter .count .num {
+    font-size: 100px;
+}
+#main-slider .carousel .item .full.fullsize .counter .count p {
+    font-size: 80px;
+}
+#dates .row.timer {
+    margin: 10px 0!important;
+}
+#dates .count, #main-slider .count {
+    display: inline-block; 
+    text-align: center;
+    font-size: 22px;
+    color: #000;
+    font-family: 'Open Sans Condensed', sans-serif;    
+}
+#dates .timer .descr{
+    font-size: 28px;
+    margin: 20px 0 10px;
+    line-height: normal;
+}
+#dates .timer .count .num {
+    margin: 0 25px 10px;
+    padding: 20% 0;
+    width: 60px;
+    height: 62px;
+    color: #fff;
+    vertical-align: baseline;
+    background-color: rgb(255, 143, 0);
+    border-radius: 3.3px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 4px;
+    font-weight: 700;
+    font-size: 30px;
+}

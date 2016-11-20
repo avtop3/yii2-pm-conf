@@ -237,7 +237,16 @@ AppAsset::register($this);
         });
     });
 </script>
-<script>
+<script>    
+    //Counter for main slider
+    $('#sliderCount, #sliderCountUA, #sliderCountEN').countdown('2017/02/13').on('update.countdown', function(event) {
+        var $this = $(this).html(event.strftime(        
+            '<div class="count"><div class="num">%-D</div> <p class="string"> days </p></div>'
+            + '<div class="count"><div class="num">%-H</div> <p class="string"> hours </p></div>'
+            + '<div class="count"><div class="num">%-M</div> <p class="string"> min </p></div>'
+            + '<div class="count"><div class="num">%-S</div> <p class="string"> sec </p></div>'));
+    });
+    
     //Counter for registration time in RU UA EN
     $('#clock, #clockUA, #clockEN').countdown('2017/02/13').on('update.countdown', function(event) {
         var $this = $(this).html(event.strftime(        
@@ -246,14 +255,23 @@ AppAsset::register($this);
             + '%M <span class="string"> min </span>  ' + ' '
             + '%S <span class="string"> sec </span>'));
     });
+    
     // Counters for key dates
     $('#registrEnd, #registrEndUA, #registrEndEN').countdown('2017/01/20').on('update.countdown', function(event) {
         var $this = $(this).html(event.strftime(        
-            '%D <span class="string"> days </span> ' + ' '
-            + '%H <span class="string"> hours </span>' + ' '
-            + '%M <span class="string"> min </span>  ' + ' '
-            + '%S <span class="string"> sec </span>'));
+            '<div class="count"> <div class="num">%-D</div> <p class="string"> days </p></div>'
+            + '<div class="count"><div class="num">%-H</div> <p class="string"> hours </p></div>'
+            + '<div class="count"><div class="num">%-M</div> <p class="string"> min </p></div>'
+            + '<div class="count"><div class="num">%-S</div> <p class="string"> sec </p></div>'));
     });
+    $('#articleEnd, #articleEndUA, #articleEndEN').countdown('2016/12/10').on('update.countdown', function(event) {
+        var $this = $(this).html(event.strftime(        
+            '<div class="count"> <div class="num">%-D</div> <p class="string"> days </p></div>'
+            + '<div class="count"><div class="num">%-H</div> <p class="string"> hours </p></div>'
+            + '<div class="count"><div class="num">%-M</div> <p class="string"> min </p></div>'
+            + '<div class="count"><div class="num">%-S</div> <p class="string"> sec </p></div>'));
+    });
+    
 </script>
 </body>   
 </html>

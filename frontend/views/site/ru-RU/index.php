@@ -10,6 +10,28 @@ $this->params['bodyClass'] = 'homepage';
     <div class="carousel slide">
         <div class="carousel-inner">
             <div class="item active" style="background-image: url(/markup/images/s11.jpg)">
+            <div class="container full fullsize">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="carousel-content">
+                            <div class="container">
+                                <h2 class="animation animated-item-1">VIII Международная научно-практическая конференция</h2>
+                                <h1 class="animation animated-item-2">«Интегрированное стратегическое управление, управление портфелями, программами, проектами»</h1>
+                            </div>
+                            <div id="sliderCount" class="counter"></div>
+                            <div class="container">
+                                <div class="left">
+                                    <p>13-16 февраля 2017 г.</p>
+                                </div>
+                                <div class="right">
+                                    <p>с. Яблоница (Буковель), Ивано-Франковская обл., Украина</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--
                 <div class="container full">
                     <div class="row">
                         <div class="col-sm-12">
@@ -36,8 +58,8 @@ $this->params['bodyClass'] = 'homepage';
                             </div>
                         </div>
                     </div>
-                </div>
-            </div><!--/.item-->
+                </div>-->
+            </div>
 
             <div class="item" style="background-image: url(/markup/images/s12.jpg)">
                 <div class="container full absolute">
@@ -204,6 +226,14 @@ $this->params['bodyClass'] = 'homepage';
             <h2>Ключевые даты</h2>
             <hr>
         </div>
+        <div class="row wow fadeInDown timer">
+            <div class="col-md-6">
+                <p class="descr">До окончания регистрации участников осталось:</p>
+            </div>
+            <div class="col-md-6">
+                <div id="registrEnd" class="fltRight"></div>
+            </div>
+        </div>
         <div class="row wow fadeInDown">
             <div class="part">
                 <img src="/markup/images/people.png" alt="">
@@ -244,6 +274,14 @@ $this->params['bodyClass'] = 'homepage';
                 <div class="descr red">
                     <p>Дедлайн для оплаты организационного взноса</p>
                 </div>
+            </div>
+        </div>
+        <div class="row wow fadeInDown timer">
+            <div class="col-md-6">
+                <p class="descr">До окончания приема статей для публикации осталось:</p>
+            </div>
+            <div class="col-md-6">
+                <div id="articleEnd" class="fltRight"></div>
             </div>
         </div>
         <div class="row wow fadeInDown">

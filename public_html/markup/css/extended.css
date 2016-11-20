@@ -984,8 +984,8 @@ ul#language-selector li.active {
 #dates .row .part {
   width: 16%;
   display: inline-block;
-  margin: 0 1.9%;
-  vertical-align: middle;
+  margin: 0 1.9% 2%;
+  vertical-align: text-top;
 }
 @media (max-width: 1199px) {
   #dates .row .part {

@@ -10,6 +10,28 @@ $this->params['bodyClass'] = 'homepage';
     <div class="carousel slide">        
         <div class="carousel-inner">            
             <div class="item active" style="background-image: url(/markup/images/s11.jpg)">
+                <div class="container full fullsize">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="carousel-content">
+                                <div class="container">
+                                    <h2 class="animation animated-item-1">VIII Міжнародна науково-практична конференція</h2>
+                                    <h1 class="animation animated-item-2">«Інтегроване стратегічне управління, управління портфелями, програмами, проектами»</h1>
+                                </div>
+                                <div id="sliderCountUA" class="counter"></div>
+                                <div class="container">
+                                    <div class="left">
+                                        <p>13-16 лютого 2017 р.</p>
+                                    </div>
+                                    <div class="right">
+                                        <p>с. Яблуниця (Буковель), Івано-Франківська обл., Україна</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!--
                 <div class="container full">
                     <div class="row">
                         <div class="col-sm-12">
@@ -38,6 +60,7 @@ $this->params['bodyClass'] = 'homepage';
                         </div>
                     </div>
                 </div>
+-->
             </div><!--/.item-->
 
             <div class="item" style="background-image: url(/markup/images/s12.jpg)">
@@ -207,6 +230,14 @@ $this->params['bodyClass'] = 'homepage';
             <h2>ВАЖЛИВІ ДАТИ</h2>
             <hr>
         </div>
+        <div class="row wow fadeInDown timer">
+            <div class="col-md-6">
+                <p class="descr">До закінчення реєстрації учасників конференції залишилось:</p>
+            </div>
+            <div class="col-md-6">
+                <div id="registrEndUA" class="fltRight"></div>
+            </div>
+        </div>
         <div class="row wow fadeInDown">
             <div class="part">
                 <img src="/markup/images/people.png" alt="">
@@ -247,6 +278,14 @@ $this->params['bodyClass'] = 'homepage';
                 <div class="descr red">
                     <p>Кінцевий термін <br>для оплати організаційного внеску</p>
                 </div>
+            </div>
+        </div>
+        <div class="row wow fadeInDown timer">
+            <div class="col-md-6">
+                <p class="descr">До закінчення прийому статей до публікації від учасників конференції залишилось:</p>
+            </div>
+            <div class="col-md-6">
+                <div id="articleEndUA" class="fltRight"></div>
             </div>
         </div>
         <div class="row wow fadeInDown">

@@ -412,7 +412,7 @@ input.search-form:hover {
     font-size: 24px;
 }
 #main-slider .carousel-content p {
-    font-size: 26px;
+    font-size: 28px;
     color: #fff;
     line-height: normal;
 }
@@ -443,7 +443,13 @@ input.search-form:hover {
 #main-slider .carousel .item .container.full {
     width: 100%!important;
 }
-#main-slider .carousel .item .container.full.absolute{
+#main-slider .carousel .item .full.fullsize,
+#main-slider .carousel .item .full.fullsize .row,
+#main-slider .carousel .item .full.fullsize .row>div,
+#main-slider .carousel .item .full.fullsize .row>div>.carousel-content{
+    height: 100%;
+}
+#main-slider .carousel .item .full.absolute{
     position: absolute;
     bottom: 0;
     text-align: center;
@@ -2602,4 +2608,16 @@ ul#language-selector li a {
 }
 #contact-info .contact-info {
     display: none;
+}
+.fltRight {
+    float: right;
+}
+.form-horizontal .summary-info,
+.form-horizontal .summary-info tr th,
+.form-horizontal .summary-info tr td{
+    border: 1px solid #000;
+}
+.form-horizontal .summary-info tr th {
+    background: #000;
+    color: #fff;
 }
