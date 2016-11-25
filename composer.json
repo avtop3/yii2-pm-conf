@@ -26,14 +26,12 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "yiisoft/yii2": ">=2.0.6",
-        "yiisoft/yii2-bootstrap": "*",
-        "yiisoft/yii2-swiftmailer": "*",
-        "lajax/yii2-translate-manager": "1.*",
+        "yiisoft/yii2": "~2.0.6",
+        "yiisoft/yii2-bootstrap": "~2.0.0",
+        "yiisoft/yii2-swiftmailer": "~2.0.0",
         "codemix/yii2-localeurls": "1.*",
         "kartik-v/yii2-date-range": "^1.6",
         "rmrevin/yii2-fontawesome": "~2.12",
-        "pendalf89/yii2-blog": "dev-master",
         "vakorovin/yii2-datetimepicker": "dev-master",
         "kartik-v/yii2-export": "@dev",
         "kartik-v/yii2-mpdf": "dev-master",
@@ -42,10 +40,12 @@
         "kartik-v/yii2-editable": "*"
     },
     "require-dev": {
-        "yiisoft/yii2-debug": "*",
-        "yiisoft/yii2-gii": "*",
-        "yiisoft/yii2-faker": "*",
-        "codeception/codeception": "*"
+        "yiisoft/yii2-debug": "~2.0.0",
+        "yiisoft/yii2-gii": "~2.0.0",
+        "yiisoft/yii2-faker": "~2.0.0",
+
+        "codeception/codeception": "^2.2.3",
+        "codeception/verify": "~0.3.1"
     },
     "config": {
         "process-timeout": 1800
