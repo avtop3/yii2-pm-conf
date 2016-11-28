@@ -23,7 +23,7 @@ $this->title = 'Контакты | Международная конференц
             <div class="img-block col-lg-4 col-md-4 col-xs-12 col-sm-12">
                 <img src="/markup/images/speakers/haraziy.jpg" alt="">
             </div>
-            <div class="txt-block col-lg-8 col-md-8 col-xs-12 col-sm-12">
+            <div class="txt-block col-lg-8 col-md-8 col-xs-12 col-sm-12" id="kharazii">
                 <h2>Харазий Анна Владимировна</h2>
 
                 <p>моб.тел.: +38(066)060-16-19 </p>
@@ -43,7 +43,7 @@ $this->title = 'Контакты | Международная конференц
             <div class="img-block col-lg-4 col-md-4 col-xs-12 col-sm-12">
                 <img src="/markup/images/speakers/loback.jpg" alt="">
             </div>
-            <div class="txt-block col-lg-8 col-md-8 col-xs-12 col-sm-12">
+            <div class="txt-block col-lg-8 col-md-8 col-xs-12 col-sm-12" id="lobach">
                 <h2>Лобач Елена Владимировна</h2>
 
                 <p>моб.тел.: +38(050)984-69-79 </p>
