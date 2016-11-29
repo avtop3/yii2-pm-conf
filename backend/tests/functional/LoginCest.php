@@ -19,19 +19,24 @@ class LoginCest
             ]
         ]);
     }
-//    /**
-//     * @param FunctionalTester $I
-//     */
-//    public function loginUser(FunctionalTester $I)
-//    {
-//
-//        $I->amOnPage('/site/login');
-//        $I->fillField('Username', 'erau');
-//        $I->fillField('Password', 'password_0');
-//        $I->click('login-button');
-//
-//        $I->see('Logout (erau)', 'form button[type=submit]');
-//        $I->dontSeeLink('Login');
-//        $I->dontSeeLink('Signup');
-//    }
+
+    /**
+     * @param FunctionalTester $I
+     */
+    public function loginUser(FunctionalTester $I)
+    {
+        $I->amOnPage('/yii2-admin/site/login');
+        $I->seeInCurrentUrl('/yii2-admin/site/login');
+        $I->see('Войти', 'h1');
+        $I->fillField('#loginform-username', 'tester');
+        $I->fillField('#loginform-password', 'tester');
+        $I->click('login-button');
+
+        $I->seeInCurrentUrl('/yii2-admin');
+        $I->canSeeLink('Участники конференции', '/yii2-admin/member/index');
+        $I->canSeeLink('Ожидают подтверждения', '/yii2-admin/member/last-members');
+        $I->canSeeLink('Организации', '/yii2-admin/member/org');
+        $I->canSeeLink('Рассылка', '/yii2-admin/member/bulk-email');
+        $I->canSeeLink('PDF', '/yii2-admin/members-file/index');
+    }
 }

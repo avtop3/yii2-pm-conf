@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbe80539-b4f7-45f9-bd38-c21eb94fdb31" name="Default" comment="Добавил тестов для проверки что чтраницы загружаются&#10;4 hours">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/items.php" afterPath="" />
+    <list default="true" id="bbe80539-b4f7-45f9-bd38-c21eb94fdb31" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/tests/functional/ArchiveByYearCest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/tests/functional/ArchiveCest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/tests/functional/RegistrationCest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/tests/_data/login_data.php" afterPath="$PROJECT_DIR$/backend/tests/_data/login_data.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/tests/functional/LoginCest.php" afterPath="$PROJECT_DIR$/backend/tests/functional/LoginCest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/codeception.yml" afterPath="$PROJECT_DIR$/common/codeception.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/models/memberVariants/Currency.php" afterPath="$PROJECT_DIR$/common/models/memberVariants/Currency.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/views/member/_form.php" afterPath="$PROJECT_DIR$/common/views/member/_form.php" />
     </list>
     <ignored path="local.yii2-conf.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,81 +31,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HomeCest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/tests/functional/HomeCest.php">
+      <file leaf-file-name="login_data.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/tests/_data/login_data.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="49" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="49" />
+            <state relative-caret-position="75">
+              <caret line="5" column="99" selection-start-line="5" selection-start-column="99" selection-end-line="5" selection-end-column="99" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AboutCest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/tests/functional/AboutCest.php">
+      <file leaf-file-name="LoginCest.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backend/tests/functional/LoginCest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+            <state relative-caret-position="345">
+              <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SpeakersCest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/tests/functional/SpeakersCest.php">
+      <file leaf-file-name="MemberController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/controllers/MemberController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConditionsCest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/tests/functional/ConditionsCest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContactUsCest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/tests/functional/ContactUsCest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="frontend.tests.functional.HomeCest.checkOpen.fail.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/tests/_output/frontend.tests.functional.HomeCest.checkOpen.fail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="codeception.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/codeception.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="195">
+              <caret line="44" column="78" selection-start-line="44" selection-start-column="78" selection-end-line="44" selection-end-column="78" />
               <folding />
             </state>
           </provider>
@@ -128,7 +85,6 @@
         <option value="$PROJECT_DIR$/frontend/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/backend/views/member/index.php" />
         <option value="$PROJECT_DIR$/backend/views/member/org.php" />
-        <option value="$PROJECT_DIR$/backend/controllers/MemberController.php" />
         <option value="$PROJECT_DIR$/tests/codeception/config/config.php" />
         <option value="$PROJECT_DIR$/tests/codeception/frontend/_pages/AboutPage.php" />
         <option value="$PROJECT_DIR$/codeception.yml" />
@@ -141,7 +97,6 @@
         <option value="$PROJECT_DIR$/frontend/tests/unit/models/SignupFormTest.php" />
         <option value="$PROJECT_DIR$/frontend/tests/unit/models/ResetPasswordFormTest.php" />
         <option value="$PROJECT_DIR$/common/config/test-local.php" />
-        <option value="$PROJECT_DIR$/backend/tests/functional/LoginCest.php" />
         <option value="$PROJECT_DIR$/frontend/tests/functional/HomeCest.php" />
         <option value="$PROJECT_DIR$/frontend/tests/functional/AboutCest.php" />
         <option value="$PROJECT_DIR$/frontend/tests/functional/ConditionsCept.php" />
@@ -153,6 +108,15 @@
         <option value="$PROJECT_DIR$/frontend/views/site/uk-UA/contact-us.php" />
         <option value="$PROJECT_DIR$/frontend/tests/functional/ContactUsCest.php" />
         <option value="$PROJECT_DIR$/frontend/tests/functional/ConditionsCest.php" />
+        <option value="$PROJECT_DIR$/frontend/tests/functional/ArchiveCest.php" />
+        <option value="$PROJECT_DIR$/frontend/tests/functional/ArchiveByYearCest.php" />
+        <option value="$PROJECT_DIR$/common/views/member/_form.php" />
+        <option value="$PROJECT_DIR$/common/codeception.yml" />
+        <option value="$PROJECT_DIR$/common/models/memberVariants/Currency.php" />
+        <option value="$PROJECT_DIR$/frontend/tests/functional/RegistrationCest.php" />
+        <option value="$PROJECT_DIR$/backend/tests/_data/login_data.php" />
+        <option value="$PROJECT_DIR$/backend/controllers/MemberController.php" />
+        <option value="$PROJECT_DIR$/backend/tests/functional/LoginCest.php" />
       </list>
     </option>
   </component>
@@ -240,24 +204,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public_html" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="markup" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="local.yii2-conf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="local.yii2-conf" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="frontend" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -276,11 +222,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site" />
+              <option name="myItemId" value="tests" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -298,33 +240,11 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="tests" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="site" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uk-UA" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="local.yii2-conf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="local.yii2-conf" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="_data" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -342,6 +262,86 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="local.yii2-conf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="local.yii2-conf" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="local.yii2-conf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="local.yii2-conf" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="functional" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="local.yii2-conf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="local.yii2-conf" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_data" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="local.yii2-conf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="local.yii2-conf" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -351,7 +351,7 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="BasePage&#9;null&#9;null&#10;FunctionalTester&#9;null&#9;null&#10;abou&#9;FILE&#9;file:///home/avtop/Documents/local.yii2-conf/public_html/markup/about-us.html&#10;AccessControl&#9;FILE&#9;file://D:/OpenServer Ultimate/domains/local.yii2-conf/vendor/yiisoft/yii2/filters/AccessControl.php&#10;Mem&#9;null&#9;null&#10;Member&#9;FILE&#9;file://D:/OpenServer Ultimate/domains/local.yii2-conf/common/models/Member.php&#10;dashbo&#9;FILE&#9;file://D:/OpenServer Ultimate/domains/local.yii2-conf/public_html/yii2-admin/css/dashboard.css&#10;urlManager&#9;FILE&#9;file://D:/OpenServer Ultimate/domains/local.yii2-conf/vendor/yiisoft/yii2/web/UrlManager.php&#10;compo&#9;FILE&#9;file://D:/OpenServer Ultimate/domains/local.yii2-conf/composer.json&#10;Validato&#9;null&#9;null&#10;AssetBundle&#9;null&#9;null&#10;JqueryAsset&#9;null&#9;null&#10;YiiAsset&#9;null&#9;null&#10;BootstrapAsset&#9;FILE&#9;file://D:/OpenServer Ultimate/domains/local.yii2-conf/vendor/yiisoft/yii2-bootstrap/BootstrapAsset.php&#10;FilterValidator&#9;null&#9;null&#10;Validator&#9;null&#9;null&#10;Mailer&#9;null&#9;null&#10;com&#9;FILE&#9;file://D:/OpenServer Ultimate/domains/local.yii2-conf/composer.json&#10;MemberS&#9;null&#9;null&#10;Valid&#9;FILE&#9;file://D:/OpenServer Ultimate/domains/local.yii2-conf/vendor/yiisoft/yii2/validators/Validator.php&#10;Validat&#9;FILE&#9;file://D:/OpenServer Ultimate/domains/local.yii2-conf/vendor/yiisoft/yii2/validators/Validator.php&#10;Valida&#9;null&#9;null&#10;_fo&#9;FILE&#9;file://D:/OpenServer Ultimate/domains/local.yii2-conf/frontend/views/member/_form.php&#10;plug&#9;ACTION&#9;WelcomeScreen.Plugins" />
+    <property name="SearchEverywhereHistoryKey" value="User&#9;null&#9;null&#10;login_data&#9;FILE&#9;file:///var/www/local.yii2-conf/backend/tests/_data/login_data.php&#10;Member&#9;null&#9;null&#10;BasePage&#9;null&#9;null&#10;FunctionalTester&#9;null&#9;null&#10;abou&#9;FILE&#9;file:///home/avtop/Documents/local.yii2-conf/public_html/markup/about-us.html&#10;AccessControl&#9;FILE&#9;file://D:/OpenServer Ultimate/domains/local.yii2-conf/vendor/yiisoft/yii2/filters/AccessControl.php&#10;Mem&#9;null&#9;null&#10;dashbo&#9;FILE&#9;file://D:/OpenServer Ultimate/domains/local.yii2-conf/public_html/yii2-admin/css/dashboard.css&#10;urlManager&#9;FILE&#9;file://D:/OpenServer Ultimate/domains/local.yii2-conf/vendor/yiisoft/yii2/web/UrlManager.php&#10;compo&#9;FILE&#9;file://D:/OpenServer Ultimate/domains/local.yii2-conf/composer.json&#10;Validato&#9;null&#9;null&#10;AssetBundle&#9;null&#9;null&#10;JqueryAsset&#9;null&#9;null&#10;YiiAsset&#9;null&#9;null&#10;BootstrapAsset&#9;FILE&#9;file://D:/OpenServer Ultimate/domains/local.yii2-conf/vendor/yiisoft/yii2-bootstrap/BootstrapAsset.php&#10;FilterValidator&#9;null&#9;null&#10;Validator&#9;null&#9;null&#10;Mailer&#9;null&#9;null&#10;com&#9;FILE&#9;file://D:/OpenServer Ultimate/domains/local.yii2-conf/composer.json&#10;MemberS&#9;null&#9;null&#10;Valid&#9;FILE&#9;file://D:/OpenServer Ultimate/domains/local.yii2-conf/vendor/yiisoft/yii2/validators/Validator.php&#10;Validat&#9;FILE&#9;file://D:/OpenServer Ultimate/domains/local.yii2-conf/vendor/yiisoft/yii2/validators/Validator.php&#10;Valida&#9;null&#9;null&#10;_fo&#9;FILE&#9;file://D:/OpenServer Ultimate/domains/local.yii2-conf/frontend/views/member/_form.php&#10;plug&#9;ACTION&#9;WelcomeScreen.Plugins" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
@@ -439,7 +439,7 @@
       <workItem from="1479997799050" duration="7946000" />
       <workItem from="1480089196711" duration="2229000" />
       <workItem from="1480328349726" duration="7010000" />
-      <workItem from="1480407601443" duration="609000" />
+      <workItem from="1480407601443" duration="10225000" />
     </task>
     <task id="LOCAL-00001" summary="Remove index.php from .gitignore">
       <created>1457876497085</created>
@@ -616,11 +616,25 @@
       <option name="project" value="LOCAL" />
       <updated>1480340391865</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Смерджился с Никитой&#10;1 час">
+      <created>1480408241734</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1480408241734</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Смерджился с Никитой&#10;1 час">
+      <created>1480409565930</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1480409565930</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17794000" />
+    <option name="totallyTimeSpent" value="27410000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -644,16 +658,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="24" width="1867" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24876441" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32949308" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7361751" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7361751" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32796317" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30688936" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34029227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37787056" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32949308" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -664,7 +679,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32796317" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -725,7 +739,8 @@
     <MESSAGE value="Филтрация по годам" />
     <MESSAGE value="composer exec codecept run" />
     <MESSAGE value="Добавил тестов для проверки что чтраницы загружаются&#10;4 hours" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил тестов для проверки что чтраницы загружаются&#10;4 hours" />
+    <MESSAGE value="Смерджился с Никитой&#10;1 час" />
+    <option name="LAST_COMMIT_MESSAGE" value="Смерджился с Никитой&#10;1 час" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -734,63 +749,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tests/codeception/common/_pages/LoginPage.php" />
-    <entry file="file://$PROJECT_DIR$/tests/codeception/frontend/functional.suite.yml" />
-    <entry file="file://$PROJECT_DIR$/vendor/codeception/codeception/package/stub.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/codeception/config/config.php" />
-    <entry file="file://$PROJECT_DIR$/tests/codeception/frontend/functional/AboutCept.php" />
-    <entry file="file://$PROJECT_DIR$/tests/codeception/frontend/acceptance/AboutCept.php" />
-    <entry file="file://$PROJECT_DIR$/tests/codeception/frontend/_pages/AboutPage.php" />
-    <entry file="file://$PROJECT_DIR$/tests/README.md" />
-    <entry file="file://$PROJECT_DIR$/tests/_support/FunctionalTester.php" />
-    <entry file="file://$PROJECT_DIR$/frontend/config/main-local.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/config/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="35" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/tests/unit/models/LoginFormTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/fixtures/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/codeception.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/yii_test">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -831,6 +789,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -869,24 +828,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/config/test-local.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/config/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/config/main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -894,6 +840,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="59" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -901,13 +848,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
           <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/tests/functional/LoginCest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -922,20 +862,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
           <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeception.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/codeception.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -957,13 +883,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/tests/functional.suite.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/tests/codeception.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -973,7 +892,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/tests/functional/HomeCest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="0">
           <caret line="8" column="49" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="49" />
           <folding />
         </state>
@@ -998,6 +917,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="45" column="83" selection-start-line="45" selection-start-column="73" selection-end-line="45" selection-end-column="83" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1005,6 +925,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="45" column="73" selection-start-line="45" selection-start-column="73" selection-end-line="45" selection-end-column="84" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1024,14 +945,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/tests/functional/ConditionsCest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1044,6 +957,234 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/tests/functional/ConditionsCest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/tests/functional/ArchiveCest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/controllers/MemberController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-360">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/tests/_support/_generated/FunctionalTesterActions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="621" column="16" selection-start-line="621" selection-start-column="16" selection-end-line="621" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeception.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/views/member/_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="104" column="111" selection-start-line="104" selection-start-column="111" selection-end-line="104" selection-end-column="111" />
+          <folding>
+            <marker date="1480416677266" expanded="true" signature="4526:4598" ph="..." />
+            <marker date="1480416677266" expanded="true" signature="4556:4598" ph="..." />
+            <marker date="1480416677266" expanded="true" signature="5011:5177" ph="..." />
+            <marker date="1480416677266" expanded="true" signature="5066:5177" ph="..." />
+            <marker date="1480416677266" expanded="true" signature="5382:5493" ph="..." />
+            <marker date="1480416677266" expanded="true" signature="5717:5806" ph="..." />
+            <marker date="1480416677266" expanded="true" signature="5778:5806" ph="..." />
+            <marker date="1480416677266" expanded="true" signature="5943:6016" ph="..." />
+            <marker date="1480416677266" expanded="true" signature="5980:6016" ph="..." />
+            <marker date="1480416677266" expanded="true" signature="6358:6694" ph="..." />
+            <marker date="1480416677266" expanded="true" signature="6512:6694" ph="..." />
+            <marker date="1480416677266" expanded="true" signature="6559:6694" ph="..." />
+            <marker date="1480416677266" expanded="true" signature="7669:7745" ph="..." />
+            <marker date="1480416677266" expanded="true" signature="7717:7745" ph="..." />
+            <marker date="1480416677266" expanded="true" signature="7915:7973" ph="..." />
+            <marker date="1480416677266" expanded="true" signature="8263:8306" ph="..." />
+            <marker date="1480416677266" expanded="true" signature="8473:8500" ph="{...}" />
+            <marker date="1480416677266" expanded="true" signature="8508:8546" ph="{...}" />
+            <marker date="1480416677266" expanded="true" signature="8575:8594" ph="{...}" />
+            <marker date="1480416677266" expanded="true" signature="8875:8902" ph="{...}" />
+            <marker date="1480416677266" expanded="true" signature="8949:9042" ph="{...}" />
+            <marker date="1480416677266" expanded="true" signature="9093:9139" ph="{...}" />
+            <marker date="1480416677266" expanded="true" signature="9188:9219" ph="{...}" />
+            <marker date="1480416677266" expanded="true" signature="9289:9470" ph="{...}" />
+            <marker date="1480416677266" expanded="true" signature="9345:9406" ph="{...}" />
+            <marker date="1480416677266" expanded="true" signature="9410:9468" ph="{...}" />
+            <marker date="1480416677266" expanded="true" signature="9501:9605" ph="{...}" />
+            <marker date="1480416677266" expanded="true" signature="9661:10018" ph="{...}" />
+            <marker date="1480416677266" expanded="true" signature="9765:9864" ph="{...}" />
+            <marker date="1480416677266" expanded="true" signature="9868:9965" ph="{...}" />
+            <marker date="1480416677266" expanded="true" signature="10072:10510" ph="{...}" />
+            <marker date="1480416677266" expanded="true" signature="10190:10322" ph="{...}" />
+            <marker date="1480416677266" expanded="true" signature="10326:10454" ph="{...}" />
+            <marker date="1480416677266" expanded="true" signature="10554:10861" ph="{...}" />
+            <marker date="1480416677266" expanded="true" signature="10601:10663" ph="{...}" />
+            <marker date="1480416677266" expanded="true" signature="10667:10712" ph="{...}" />
+            <marker date="1480416677266" expanded="true" signature="10745:10801" ph="{...}" />
+            <marker date="1480416677266" expanded="true" signature="10805:10859" ph="{...}" />
+            <marker date="1480416677266" expanded="true" signature="10899:11326" ph="{...}" />
+            <marker date="1480416677266" expanded="true" signature="11014:11090" ph="{...}" />
+            <marker date="1480416677266" expanded="true" signature="11094:11165" ph="{...}" />
+            <marker date="1480416677266" expanded="true" signature="11198:11276" ph="{...}" />
+            <marker date="1480416677266" expanded="true" signature="11371:11603" ph="{...}" />
+            <marker date="1480416677266" expanded="true" signature="11478:11539" ph="{...}" />
+            <marker date="1480416677266" expanded="true" signature="11543:11601" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/tests/functional.suite.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/codeception.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/tests/functional/ArchiveByYearCest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="81" column="33" selection-start-line="81" selection-start-column="33" selection-end-line="81" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/tests/functional/RegistrationCest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="42" column="35" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+          <folding>
+            <element signature="e#45#87#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/models/memberVariants/Currency.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/models/Member.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="105" column="21" selection-start-line="105" selection-start-column="13" selection-end-line="105" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/codeception.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+          <folding>
+            <marker date="1480419868970" expanded="true" signature="216:320" ph="modules: &lt;1 key&gt;" />
+            <marker date="1480419868970" expanded="true" signature="229:320" ph="config: &lt;1 key&gt;" />
+            <marker date="1480419868970" expanded="true" signature="245:320" ph="Yii2: &lt;2 keys&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/config/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/config/test-local.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/codeception/codeception/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="93" column="13" selection-start-line="93" selection-start-column="13" selection-end-line="93" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/tests/_data/login_data.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/tests/_data/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/controllers/MemberController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="44" column="78" selection-start-line="44" selection-start-column="78" selection-end-line="44" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/tests/_data/login_data.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="99" selection-start-line="5" selection-start-column="99" selection-end-line="5" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/tests/functional/LoginCest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
           <folding />
         </state>
       </provider>
