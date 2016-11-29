@@ -10,27 +10,43 @@ $this->params['bodyClass'] = 'homepage';
     <div class="carousel slide">
         <div class="carousel-inner">
             <div class="item active" style="background-image: url(/markup/images/s11.jpg)">
-            <div class="container full fullsize">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="carousel-content">
-                            <div class="container">
-                                <h2 class="animation animated-item-1">VIII Международная научно-практическая конференция</h2>
-                                <h1 class="animation animated-item-2">«Интегрированное стратегическое управление, управление портфелями, программами, проектами»</h1>
-                            </div>
-                            <div id="sliderCount" class="counter"></div>
-                            <div class="container">
-                                <div class="left">
-                                    <p>13-16 февраля 2017 г.</p>
+                <div class="container full fullsize">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="carousel-content">
+                                <div class="container">
+                                    <h2 class="animation animated-item-1">VIII Международная научно-практическая конференция</h2>
+                                    <hr>
+                                    <h1 class="animation animated-item-2">Интегрированное стратегическое управление,<br> управление портфелями, программами, проектами</h1>
                                 </div>
-                                <div class="right">
-                                    <p>с. Яблоница (Буковель), Ивано-Франковская обл., Украина</p>
+                                <div id="sliderCountEN" class="counter"></div>
+                                <div class="container text-center action-buttons">
+                                    <a href="/registration" class="regist">Регистрация</a>
+                                    <a href="/documents/ru/information_page.pdf" class="pdf">
+                                        <img src="/markup/images/pdffile.png" class="img-responsive" alt="">Информационное письмо</a> 
+                                </div>
+                                <div class="container text-center">
+                                    <div class="left">
+                                        <div class="img-block">
+                                            <img src="/markup/images/calendar.png" class="img-responsive" alt="">
+                                        </div>
+                                        <div class="txt-block">
+                                            <p>13-16 февраля 2017 г.</p>
+                                        </div>                                        
+                                    </div>
+                                    <div class="right">
+                                        <div class="img-block">
+                                            <img src="/markup/images/location.png" class="img-responsive" alt="">
+                                        </div>
+                                        <div class="txt-block">
+                                            <p>с. Яблоница (Буковель), Ивано-Франковская обл., Украина</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 <!--
                 <div class="container full">
                     <div class="row">
@@ -227,11 +243,11 @@ $this->params['bodyClass'] = 'homepage';
             <hr>
         </div>
         <div class="row wow fadeInDown timer">
-            <div class="col-md-6">
+            <div class="col-md-6 text-right">
                 <p class="descr">До окончания регистрации участников осталось:</p>
             </div>
             <div class="col-md-6">
-                <div id="registrEnd" class="fltRight"></div>
+                <div id="registrEnd"></div>
             </div>
         </div>
         <div class="row wow fadeInDown">
@@ -277,11 +293,11 @@ $this->params['bodyClass'] = 'homepage';
             </div>
         </div>
         <div class="row wow fadeInDown timer">
-            <div class="col-md-6">
+            <div class="col-md-6 text-right">
                 <p class="descr">До окончания приема статей для публикации осталось:</p>
             </div>
             <div class="col-md-6">
-                <div id="articleEnd" class="fltRight"></div>
+                <div id="articleEnd"></div>
             </div>
         </div>
         <div class="row wow fadeInDown">

@@ -16,15 +16,31 @@ $this->params['bodyClass'] = 'homepage';
                             <div class="carousel-content">
                                 <div class="container">
                                     <h2 class="animation animated-item-1">VIII Міжнародна науково-практична конференція</h2>
-                                    <h1 class="animation animated-item-2">«Інтегроване стратегічне управління, управління портфелями, програмами, проектами»</h1>
+                                    <hr>
+                                    <h1 class="animation animated-item-2">Інтегроване стратегічне управління, <br> управління портфелями, програмами, проектами</h1>
                                 </div>
-                                <div id="sliderCountUA" class="counter"></div>
-                                <div class="container">
+                                <div id="sliderCountEN" class="counter"></div>
+                                <div class="container text-center action-buttons">
+                                    <a href="/uk/registration" class="regist">Реєстрація</a>
+                                    <a href="/documents/uk/information_page.pdf" class="pdf">
+                                        <img src="/markup/images/pdffile.png" class="img-responsive" alt="">Інформаційний лист</a>
+                                </div>
+                                <div class="container text-center">
                                     <div class="left">
-                                        <p>13-16 лютого 2017 р.</p>
+                                        <div class="img-block">
+                                            <img src="/markup/images/calendar.png" class="img-responsive" alt="">
+                                        </div>
+                                        <div class="txt-block">
+                                            <p>13-16 лютого 2017 р.</p>
+                                        </div>                                        
                                     </div>
                                     <div class="right">
-                                        <p>с. Яблуниця (Буковель), Івано-Франківська обл., Україна</p>
+                                        <div class="img-block">
+                                            <img src="/markup/images/location.png" class="img-responsive" alt="">
+                                        </div>
+                                        <div class="txt-block">
+                                            <p>с. Яблуниця (Буковель), Івано-Франківська обл., Україна</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -231,11 +247,11 @@ $this->params['bodyClass'] = 'homepage';
             <hr>
         </div>
         <div class="row wow fadeInDown timer">
-            <div class="col-md-6">
+            <div class="col-md-6 text-right">
                 <p class="descr">До закінчення реєстрації учасників конференції залишилось:</p>
             </div>
             <div class="col-md-6">
-                <div id="registrEndUA" class="fltRight"></div>
+                <div id="registrEndUA"></div>
             </div>
         </div>
         <div class="row wow fadeInDown">
@@ -281,11 +297,11 @@ $this->params['bodyClass'] = 'homepage';
             </div>
         </div>
         <div class="row wow fadeInDown timer">
-            <div class="col-md-6">
+            <div class="col-md-6 text-right">
                 <p class="descr">До закінчення прийому статей до публікації від учасників конференції залишилось:</p>
             </div>
             <div class="col-md-6">
-                <div id="articleEndUA" class="fltRight"></div>
+                <div id="articleEndUA"></div>
             </div>
         </div>
         <div class="row wow fadeInDown">

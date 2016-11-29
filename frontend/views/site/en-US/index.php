@@ -7,7 +7,7 @@ $this->params['bodyClass'] = 'homepage';
 ?>
 
 <section id="main-slider" class="no-margin">
-    <div class="carousel slide">        
+    <div class="carousel slide">
         <div class="carousel-inner">
             <div class="item active" style="background-image: url(/markup/images/s11.jpg)">
                 <div class="container full fullsize">
@@ -16,15 +16,31 @@ $this->params['bodyClass'] = 'homepage';
                             <div class="carousel-content">
                                 <div class="container">
                                     <h2 class="animation animated-item-1">VIII International Scientific and Practical Conference</h2>
-                                    <h1 class="animation animated-item-2">«Integrated Strategic Management, Portfolio, Program, and Project Management»</h1>
+                                    <hr>
+                                    <h1 class="animation animated-item-2">Integrated Strategic Management, <br> Portfolio, Program, and Project Management</h1>
                                 </div>
                                 <div id="sliderCountEN" class="counter"></div>
-                                <div class="container">
+                                <div class="container text-center action-buttons">
+                                    <a href="/en/registration" class="regist">Register now</a>
+                                    <a href="/documents/en/information_page.pdf" class="pdf">
+                                    <img src="/markup/images/pdffile.png" class="img-responsive" alt="">Call for papers</a>
+                                </div>
+                                <div class="container text-center">
                                     <div class="left">
-                                        <p>February 13-16, 2017</p>
+                                       <div class="img-block">
+                                           <img src="/markup/images/calendar.png" class="img-responsive" alt="">
+                                       </div>
+                                       <div class="txt-block">
+                                           <p>February 13-16, 2017</p>
+                                       </div>                                        
                                     </div>
                                     <div class="right">
-                                        <p>Yablunytsa (Bukovel), Ivano-Frankivsk region, Ukraine</p>
+                                        <div class="img-block">
+                                            <img src="/markup/images/location.png" class="img-responsive" alt="">
+                                        </div>
+                                        <div class="txt-block">
+                                            <p>Yablunytsa (Bukovel), Ivano-Frankivsk region, Ukraine</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -61,7 +77,6 @@ $this->params['bodyClass'] = 'homepage';
                 </div>
 -->
             </div><!--/.item-->
-
             <div class="item" style="background-image: url(/markup/images/s12.jpg)">
                 <div class="container full absolute">
                     <div class="row">
@@ -73,7 +88,7 @@ $this->params['bodyClass'] = 'homepage';
                         </div>
                     </div>
                 </div>
-            </div><!--/.item-->
+            </div>
 
             <div class="item" style="background-image: url(/markup/images/s3.jpg)">
                
@@ -100,7 +115,7 @@ $this->params['bodyClass'] = 'homepage';
                         </div>
                     </div>
                 </div>
-            </div><!--/.item-->
+            </div>
         </div><!--/.carousel-inner-->
     </div><!--/.carousel-->
     <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
@@ -231,11 +246,11 @@ $this->params['bodyClass'] = 'homepage';
             <hr>
         </div>
         <div class="row wow fadeInDown timer">
-            <div class="col-md-6">
+            <div class="col-md-6 text-right">
                 <p class="descr">Before the end registration of participants left:</p>
             </div>
             <div class="col-md-6">
-                <div id="registrEndEN" class="fltRight"></div>
+                <div id="registrEndEN"></div>
             </div>
         </div>
         <div class="row wow fadeInDown">
@@ -281,11 +296,11 @@ $this->params['bodyClass'] = 'homepage';
             </div>
         </div>
         <div class="row wow fadeInDown timer">
-            <div class="col-md-6">
+            <div class="col-md-6 text-right">
                 <p class="descr">Before the deadline for the publication of articles left:</p>
             </div>
             <div class="col-md-6">
-                <div id="articleEndEN" class="fltRight"></div>
+                <div id="articleEndEN"></div>
             </div>
         </div>
         <div class="row wow fadeInDown">
