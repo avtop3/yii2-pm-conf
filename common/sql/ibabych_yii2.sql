@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.6.1
--- http://www.phpmyadmin.net
+-- version 4.6.4
+-- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: May 26, 2016 at 03:37 PM
--- Server version: 5.6.28-76.1-beget-log
--- PHP Version: 5.6.20
+-- Хост: localhost
+-- Время создания: Ноя 29 2016 г., 11:51
+-- Версия сервера: 5.7.14-8-beget-log
+-- Версия PHP: 5.6.23
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,15 +17,15 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `ibabych_yii2`
+-- База данных: `ibabych_yii2`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `blog_category`
+-- Структура таблицы `blog_category`
 --
--- Creation: Apr 24, 2016 at 05:50 PM
+-- Создание: Ноя 21 2016 г., 00:07
 --
 
 DROP TABLE IF EXISTS `blog_category`;
@@ -38,7 +38,7 @@ CREATE TABLE `blog_category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `blog_category`
+-- Дамп данных таблицы `blog_category`
 --
 
 INSERT INTO `blog_category` (`id`, `parent_id`, `title`, `alias`, `position`) VALUES
@@ -49,9 +49,9 @@ INSERT INTO `blog_category` (`id`, `parent_id`, `title`, `alias`, `position`) VA
 -- --------------------------------------------------------
 
 --
--- Table structure for table `blog_post`
+-- Структура таблицы `blog_post`
 --
--- Creation: Apr 24, 2016 at 05:50 PM
+-- Создание: Ноя 21 2016 г., 00:07
 --
 
 DROP TABLE IF EXISTS `blog_post`;
@@ -72,7 +72,7 @@ CREATE TABLE `blog_post` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `blog_post`
+-- Дамп данных таблицы `blog_post`
 --
 
 INSERT INTO `blog_post` (`id`, `category_id`, `type_id`, `title`, `title_seo`, `alias`, `meta_description`, `preview`, `content`, `views`, `publish_status`, `created_at`, `updated_at`) VALUES
@@ -82,9 +82,9 @@ INSERT INTO `blog_post` (`id`, `category_id`, `type_id`, `title`, `title_seo`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `blog_post_translation`
+-- Структура таблицы `blog_post_translation`
 --
--- Creation: Apr 24, 2016 at 05:50 PM
+-- Создание: Ноя 21 2016 г., 00:07
 --
 
 DROP TABLE IF EXISTS `blog_post_translation`;
@@ -97,7 +97,7 @@ CREATE TABLE `blog_post_translation` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `blog_post_translation`
+-- Дамп данных таблицы `blog_post_translation`
 --
 
 INSERT INTO `blog_post_translation` (`id`, `post_id`, `field_name`, `lang_id`, `value`) VALUES
@@ -111,9 +111,9 @@ INSERT INTO `blog_post_translation` (`id`, `post_id`, `field_name`, `lang_id`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `blog_type`
+-- Структура таблицы `blog_type`
 --
--- Creation: Apr 24, 2016 at 05:50 PM
+-- Создание: Ноя 21 2016 г., 00:07
 --
 
 DROP TABLE IF EXISTS `blog_type`;
@@ -125,7 +125,7 @@ CREATE TABLE `blog_type` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `blog_type`
+-- Дамп данных таблицы `blog_type`
 --
 
 INSERT INTO `blog_type` (`id`, `title`, `alias`, `show_category`) VALUES
@@ -135,9 +135,9 @@ INSERT INTO `blog_type` (`id`, `title`, `alias`, `show_category`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `conf_period`
+-- Структура таблицы `conf_period`
 --
--- Creation: Apr 24, 2016 at 05:50 PM
+-- Создание: Ноя 21 2016 г., 00:07
 --
 
 DROP TABLE IF EXISTS `conf_period`;
@@ -149,21 +149,23 @@ CREATE TABLE `conf_period` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `conf_period`
+-- Дамп данных таблицы `conf_period`
 --
 
 INSERT INTO `conf_period` (`id`, `title`, `regStart`, `regEnd`) VALUES
 (2, '2016', 1443719653, 1475255653),
 (3, '2017', 1475342148, 1506791748),
-(4, '2010-2015', 1412138553, 1443588153);
+(4, '2010-2015', 1412138553, 1443588153),
+(5, 'Потенциальные', 1380633958, 1412083558);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `countries`
+-- Структура таблицы `countries`
 --
--- Creation: Apr 24, 2016 at 05:50 PM
--- Last update: Apr 24, 2016 at 05:50 PM
+-- Создание: Апр 24 2016 г., 17:50
+-- Последнее обновление: Ноя 21 2016 г., 00:07
+-- Последняя проверка: Ноя 21 2016 г., 00:07
 --
 
 DROP TABLE IF EXISTS `countries`;
@@ -175,7 +177,7 @@ CREATE TABLE `countries` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `countries`
+-- Дамп данных таблицы `countries`
 --
 
 INSERT INTO `countries` (`id`, `name`, `alpha_2`, `alpha_3`) VALUES
@@ -432,9 +434,9 @@ INSERT INTO `countries` (`id`, `name`, `alpha_2`, `alpha_3`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `filemanager_mediafile`
+-- Структура таблицы `filemanager_mediafile`
 --
--- Creation: Apr 24, 2016 at 05:50 PM
+-- Создание: Ноя 21 2016 г., 00:07
 --
 
 DROP TABLE IF EXISTS `filemanager_mediafile`;
@@ -451,22 +453,12 @@ CREATE TABLE `filemanager_mediafile` (
   `updated_at` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `filemanager_mediafile`
---
-
-INSERT INTO `filemanager_mediafile` (`id`, `filename`, `type`, `url`, `alt`, `size`, `description`, `thumbs`, `created_at`, `updated_at`) VALUES
-(7, 'productionproblemsdelaynewcaliforniadriverlicenses.jpg', 'image/jpeg', '/uploads/2016/03/productionproblemsdelaynewcaliforniadriverlicenses.jpg', NULL, '239058', NULL, 'a:3:{s:5:"small";s:79:"/uploads/2016/03/productionproblemsdelaynewcaliforniadriverlicenses-100x100.jpg";s:6:"medium";s:79:"/uploads/2016/03/productionproblemsdelaynewcaliforniadriverlicenses-300x200.jpg";s:5:"large";s:79:"/uploads/2016/03/productionproblemsdelaynewcaliforniadriverlicenses-500x400.jpg";}', 1458473769, NULL),
-(8, 'levchenko.jpg', 'image/jpeg', '/uploads/2016/04/levchenko.jpg', NULL, '8592', NULL, 'a:3:{s:5:"small";s:38:"/uploads/2016/04/levchenko-100x100.jpg";s:6:"medium";s:38:"/uploads/2016/04/levchenko-300x200.jpg";s:5:"large";s:38:"/uploads/2016/04/levchenko-500x400.jpg";}', 1460282430, NULL),
-(9, 'chumach.jpg', 'image/jpeg', '/uploads/2016/04/chumach.jpg', NULL, '14695', NULL, 'a:3:{s:5:"small";s:36:"/uploads/2016/04/chumach-100x100.jpg";s:6:"medium";s:36:"/uploads/2016/04/chumach-300x200.jpg";s:5:"large";s:36:"/uploads/2016/04/chumach-500x400.jpg";}', 1460285895, NULL),
-(10, 'suspectdog.jpg', 'image/jpeg', '/uploads/2016/04/suspectdog.jpg', NULL, '83096', NULL, 'a:3:{s:5:"small";s:39:"/uploads/2016/04/suspectdog-100x100.jpg";s:6:"medium";s:39:"/uploads/2016/04/suspectdog-300x200.jpg";s:5:"large";s:39:"/uploads/2016/04/suspectdog-500x400.jpg";}', 1460288996, NULL);
-
 -- --------------------------------------------------------
 
 --
--- Table structure for table `filemanager_owners`
+-- Структура таблицы `filemanager_owners`
 --
--- Creation: Apr 24, 2016 at 05:50 PM
+-- Создание: Ноя 21 2016 г., 00:07
 --
 
 DROP TABLE IF EXISTS `filemanager_owners`;
@@ -477,21 +469,12 @@ CREATE TABLE `filemanager_owners` (
   `owner_attribute` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `filemanager_owners`
---
-
-INSERT INTO `filemanager_owners` (`mediafile_id`, `owner_id`, `owner`, `owner_attribute`) VALUES
-(8, 2, 'post', 'thumbnail'),
-(9, 3, 'post', 'thumbnail'),
-(10, 1, 'post', 'thumbnail');
-
 -- --------------------------------------------------------
 
 --
--- Table structure for table `language`
+-- Структура таблицы `language`
 --
--- Creation: Apr 24, 2016 at 05:50 PM
+-- Создание: Ноя 21 2016 г., 00:07
 --
 
 DROP TABLE IF EXISTS `language`;
@@ -505,7 +488,7 @@ CREATE TABLE `language` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `language`
+-- Дамп данных таблицы `language`
 --
 
 INSERT INTO `language` (`language_id`, `language`, `country`, `name`, `name_ascii`, `status`) VALUES
@@ -517,9 +500,9 @@ INSERT INTO `language` (`language_id`, `language`, `country`, `name`, `name_asci
 -- --------------------------------------------------------
 
 --
--- Table structure for table `language_source`
+-- Структура таблицы `language_source`
 --
--- Creation: Apr 24, 2016 at 05:50 PM
+-- Создание: Ноя 21 2016 г., 00:07
 --
 
 DROP TABLE IF EXISTS `language_source`;
@@ -530,13 +513,10 @@ CREATE TABLE `language_source` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `language_source`
+-- Дамп данных таблицы `language_source`
 --
 
 INSERT INTO `language_source` (`id`, `category`, `message`) VALUES
-(367, 'app', 'English'),
-(368, 'app', 'Ukrainian'),
-(369, 'app', 'Russian'),
 (370, 'app', 'Create Member'),
 (371, 'app', 'Members'),
 (372, 'app', 'Update {modelClass}: '),
@@ -559,7 +539,6 @@ INSERT INTO `language_source` (`id`, `category`, `message`) VALUES
 (394, 'app', 'Alpha 2'),
 (395, 'app', 'Alpha 3'),
 (396, 'app', 'Success!'),
-(397, 'app', 'Home'),
 (398, 'app', 'Registration'),
 (399, 'app', 'Select file...'),
 (400, 'app.member', 'Country of residence'),
@@ -987,7 +966,6 @@ INSERT INTO `language_source` (`id`, `category`, `message`) VALUES
 (824, 'app.member', 'Zambia'),
 (825, 'app.member', 'Zimbabwe'),
 (826, 'app.member.view', 'papers'),
-(828, 'app.member.mail', 'Confirmation of registration to \'International Scientific Conference\''),
 (831, 'app.member', 'Listener'),
 (832, 'app.member', 'Speaker'),
 (833, 'app', 'Listener or speaker'),
@@ -1086,28 +1064,55 @@ INSERT INTO `language_source` (`id`, `category`, `message`) VALUES
 (926, 'kvexport', 'Exported File'),
 (927, 'kvexport', 'Download exported file'),
 (928, 'kvexport', 'Toggle All'),
-(929, 'app.member.mail', 'Integrated Management 2017: Confirmation of Registration'),
-(930, 'app.member.mail', 'Hello dear {name} we are inviting you to the next PM conference! It will be on 15th of January 2017'),
-(931, 'app.member.mail', 'You can register here: {regUrl}'),
 (932, 'app.member.mail', 'Dear {name}!'),
 (933, 'app.member.mail', 'We thank you for your interest in our conference Integrated Management 2017. Your registration was successful and you were added to the list of participants. During registration the following personal details have been specified:'),
 (934, 'app.member.mail', 'If you want to change any of the personal data (in particular the Name and Surname for the certificate), please let us know by sending an e-mail to the following address pm.khpi@gmail.com. Please, do not perform the re-registration on the site!'),
 (935, 'app.member.mail', 'We remind you that participation fee payment for participants from not Ukraine is made on arrival. '),
 (936, 'app.member.mail', 'If you have any questions, please contact us in any convenient way for you, and we will gladly help you. All available methods for communication are shown on the contact page of the conference website (http://conf.pm-edu.org/en/contacts).'),
 (937, 'app.member.mail', 'Sincerely,<br> the organizing committee of the conference'),
-(938, 'app.member.mail', 'Dear {name} thank you for participation in conference.'),
 (939, 'app', 'UAH'),
 (940, 'app', 'USD'),
 (941, 'app', 'RUB'),
 (942, 'app', 'Member`s fee'),
-(943, 'app', 'All member`s fee');
+(943, 'app', 'All member`s fee'),
+(944, 'app.layout', 'Registration'),
+(945, 'app.layout', 'Participation fee <br>350 uah'),
+(947, 'app.menu', 'Home'),
+(948, 'app.menu', 'About'),
+(950, 'app.menu', 'Speakers'),
+(951, 'app.menu', 'Conditions'),
+(952, 'app.menu', 'Program'),
+(953, 'app.menu', 'Articles'),
+(954, 'app.menu', 'Contact us'),
+(955, 'app.menu', 'Archives'),
+(956, 'app', 'Conf Periods'),
+(957, 'app.menu', 'Venue'),
+(958, 'app.member.mail.invite', 'Dear {name},'),
+(959, 'app.member.mail.invite', '\n    <p>It is with great pleasure that we invite you to participate in the 8th International Conference “Integrated\n        Strategic Management, Portfolio, Program and Project Management” to be held at Hotel “Pearl of the Carpathians”\n        in Slavsko, Lviv region, Ukraine from 14 to 16 February 2017.</p>\n\n    <p>The Conference is organized by the National Technical University “Kharkiv Polytechnic Institute” (NTU “KhPI”), in\n        collaboration with the Ukrainian Project Management Association (UPMA), and the O.M. Beketov National University\n        of Urban Economy.</p>\n\n    <p>The objective of the Conference is a discussion of new ideas in the field of strategic management, portfolio,\n        program, and project management. The Conference will be a platform for scientists, managers and other\n        participants to discuss the current situation, challenges and advancements relating to the unification of\n        experience in the application of strategic management, portfolio, program, and project management in different\n        sectors of the economy.</p>\n\n    <p>The Conference will be divided into substantive sessions and working groups, providing the opportunity to focus\n        on specific areas such as Integration of Strategic Management with Portfolio, Program and Project Management;\n        Managing ІТ Projects; Application of Effective Management Technologies in Practice.</p>\n\n    <p>The working languages of the Conference are English, Ukrainian, and Russian.</p>\n\n    <p>Please refer to the Conference official website {homeUrl} for more details. Should you have\n        further questions about the 8th International Conference, please address them to Mr. Igor Kononenko\n        (igorvkononenko@gmail.com), Ms. Helena Lobach (publish.conf@gmail.com) or Ms. Anna Kharazii (imconf@gmail.com).\n\n    <p>Looking forward to seeing you at this important event!</p>\n\n    <b>Sincerely,<br>the organizing committee of the conference</b>\n    '),
+(960, 'app.member.mail.thanks', 'Dear {name},'),
+(961, 'app.member.mail.thanks', '\n    <p>On behalf of the organizing and program committee of the conference we would like to thank you for your\n        participation and hope to see you at the conference next year.</p>\n\n    <p> We are pleased to announce that the electronic version of published papers, presentations of reports and photos\n        from the event are available on the conference website in the "Archive" on the following link\n        http://conf.pm-edu.org/ru/archive.\n    </p>\n\n    <p> We also ask you to take a few minutes and fill in the following questionnaire http://goo.gl/forms/o17j29MU8i.\n        This will help make the conference next year even better.\n    </p>\n    <b>Sincerely,<br>the organizing and program committee of the conference</b>\n    '),
+(962, 'app.backend', 'Login'),
+(963, 'app.backend', 'Logout ({name})'),
+(964, 'app.login', 'Or you can: '),
+(965, 'app.login', 'Reset password'),
+(966, 'app.login', 'Login'),
+(967, 'app.login', 'Please fill out the following fields to login:'),
+(968, 'app', 'EN'),
+(969, 'app', 'UA'),
+(970, 'app', 'RU'),
+(971, 'app.member.mail', 'Integrated Management 2017: Confirmation of Registration'),
+(972, 'app.layout', 'Strategic Management Department, NTU "KhPI". All rights reserved © {year} Kharkiv, Ukraine'),
+(973, 'app', 'Please, accept rules about processing of your personal data '),
+(974, 'app.member', 'I give my consent to the processing of my personal data imposed by me'),
+(975, 'app', 'Last registered Members'),
+(976, 'app.layout', 'Participation fee <br>400 uah');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `language_translate`
+-- Структура таблицы `language_translate`
 --
--- Creation: Apr 24, 2016 at 05:50 PM
+-- Создание: Ноя 21 2016 г., 00:07
 --
 
 DROP TABLE IF EXISTS `language_translate`;
@@ -1118,186 +1123,517 @@ CREATE TABLE `language_translate` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `language_translate`
+-- Дамп данных таблицы `language_translate`
 --
 
 INSERT INTO `language_translate` (`id`, `language`, `translation`) VALUES
-(367, 'ru-RU', 'Английский'),
-(367, 'uk-UA', 'Англійська'),
-(368, 'ru-RU', 'Украинский'),
-(368, 'uk-UA', 'Українська'),
-(369, 'ru-RU', 'Русский'),
-(369, 'uk-UA', 'Російська'),
-(370, 'ru-RU', 'Новый участник'),
+(370, 'en-US', 'Participant Registration'),
+(370, 'ru-RU', 'Новый участник конференции'),
+(370, 'uk-UA', 'Новий учасник конференції'),
+(371, 'en-US', 'Members'),
 (371, 'ru-RU', 'Участники конференции'),
+(371, 'uk-UA', 'Участники конференции'),
+(372, 'en-US', 'Update {modelClass}:'),
 (372, 'ru-RU', 'Редактировать данные регистрации:'),
+(372, 'uk-UA', 'Учасники конференції'),
+(373, 'en-US', 'Update'),
 (373, 'ru-RU', 'Редактировать'),
+(373, 'uk-UA', 'Редагувати'),
+(374, 'en-US', 'Delete'),
 (374, 'ru-RU', 'Удалить'),
+(374, 'uk-UA', 'Видалити'),
+(375, 'en-US', 'Are you sure you want to delete this item?'),
+(375, 'ru-RU', 'Вы уверены, что хотите удалить этот элемент?'),
+(375, 'uk-UA', 'Ви впевнені, що хочете видалити цей елемент?'),
+(377, 'en-US', 'Search'),
+(377, 'ru-RU', 'Поиск'),
+(377, 'uk-UA', 'Пошук'),
+(378, 'ru-RU', 'Сброс'),
+(378, 'uk-UA', 'Сброс'),
+(383, 'en-US', 'Translation Language: {name}'),
+(383, 'ru-RU', 'Язык перевода: {name}'),
+(383, 'uk-UA', 'Мова перекладу: {name}'),
 (384, 'ru-RU', 'Сохранить'),
+(384, 'uk-UA', 'Зберегти'),
+(385, 'en-US', 'Close'),
 (385, 'ru-RU', 'Закрыть'),
+(385, 'uk-UA', 'Закрити'),
+(386, 'en-US', 'Are you sure you want to delete these items?'),
+(386, 'ru-RU', 'Вы уверены, что хотите удалить эти элементы?'),
+(386, 'uk-UA', 'Ви впевнені, що хочете видалити ці елементи?'),
+(387, 'en-US', 'Are you sure you want to delete this item?'),
+(387, 'ru-RU', 'Вы уверены, что хотите удалить этот элемент?'),
+(387, 'uk-UA', 'Ви впевнені, що хочете видалити цей елемент?'),
+(388, 'en-US', 'Inactive'),
+(388, 'ru-RU', 'Неактивный'),
+(388, 'uk-UA', 'Неактивний'),
+(389, 'en-US', 'Active'),
+(389, 'ru-RU', 'Активный'),
+(389, 'uk-UA', 'Активний'),
+(390, 'en-US', 'Beta'),
+(390, 'ru-RU', 'Beta'),
+(390, 'uk-UA', 'Beta'),
+(391, 'en-US', 'Something went wrong :('),
+(391, 'ru-RU', 'Что-то пошло не так :('),
+(391, 'uk-UA', 'Щось пішло не так :('),
+(392, 'en-US', 'ID'),
+(392, 'ru-RU', 'Идентификатор'),
+(392, 'uk-UA', 'Ідентифікатор'),
+(393, 'en-US', 'Name'),
+(393, 'ru-RU', 'Название'),
+(393, 'uk-UA', 'Назва'),
+(394, 'en-US', 'Alpha 2'),
+(394, 'ru-RU', 'Alpha 2'),
+(394, 'uk-UA', 'Alpha 2'),
+(395, 'en-US', 'Alpha 3'),
+(395, 'ru-RU', 'Alpha 3'),
+(395, 'uk-UA', 'Alpha 3'),
+(396, 'en-US', 'Success!'),
+(396, 'ru-RU', 'Успех!'),
+(396, 'uk-UA', 'Успіх!'),
+(398, 'en-US', 'Registration'),
+(398, 'ru-RU', 'Регистрация'),
+(398, 'uk-UA', 'Реєстрація'),
+(399, 'en-US', 'Select file...'),
+(399, 'ru-RU', 'Выберите файл...'),
+(399, 'uk-UA', 'Виберіть файл...'),
+(400, 'en-US', 'Country of residence'),
 (400, 'ru-RU', 'Страна проживания'),
 (400, 'uk-UA', 'Країна проживання'),
+(401, 'en-US', 'Full name'),
 (401, 'ru-RU', 'Фамилия, имя, отчество'),
 (401, 'uk-UA', 'Прізвище, ім\'я, по-батькові'),
+(402, 'en-US', 'Position'),
 (402, 'ru-RU', 'Должность'),
 (402, 'uk-UA', 'Посада'),
+(403, 'en-US', 'Phone number'),
 (403, 'ru-RU', 'Контактный телефон'),
 (403, 'uk-UA', 'Контактний телефон'),
+(404, 'en-US', 'E-mail'),
 (404, 'ru-RU', 'E-mail'),
 (404, 'uk-UA', 'E-mail'),
+(405, 'en-US', 'Research interests'),
 (405, 'ru-RU', 'Круг научных интересов'),
 (405, 'uk-UA', 'Коло наукових інтересів'),
+(406, 'en-US', 'Scientific Degree'),
 (406, 'ru-RU', 'Ученая степень'),
 (406, 'uk-UA', 'Наукова ступінь'),
 (407, 'ru-RU', 'Ученое звание'),
 (407, 'uk-UA', 'Вчене звання'),
+(408, 'en-US', 'Full title'),
 (408, 'ru-RU', 'Полное название организации'),
 (408, 'uk-UA', 'Повна назва'),
 (409, 'ru-RU', 'Название кафедры/подразделения'),
 (409, 'uk-UA', 'Назва кафедри/підрозділу'),
 (410, 'ru-RU', 'Почтовый адрес'),
 (410, 'uk-UA', 'Поштова адреса'),
+(411, 'en-US', 'Field of activity'),
 (411, 'ru-RU', 'Сфера деятельности'),
 (411, 'uk-UA', 'Сфера діяльності'),
+(412, 'en-US', 'Website'),
 (412, 'ru-RU', 'Сайт'),
 (412, 'uk-UA', 'Сайт'),
+(413, 'en-US', 'Name and Surname according to your international passport (for the certificate)'),
 (413, 'ru-RU', 'Имя и Фамилия согласно загранпаспорта (для сертификата)'),
-(413, 'uk-UA', 'Ім\'я та прізвище згідно закордонного паспорту (для сертифікату)'),
+(413, 'uk-UA', 'Ім\'я та Прізвище згідно закордонного паспорту (для сертифікату)'),
+(414, 'en-US', 'Enter the title of your report'),
 (414, 'ru-RU', 'Введите название Вашего доклада'),
 (414, 'uk-UA', 'Введіть назву Вашої доповіді'),
+(415, 'en-US', 'Language of report'),
 (415, 'ru-RU', 'Язык доклада'),
 (415, 'uk-UA', 'Мова доповіді'),
+(416, 'en-US', 'Select section'),
 (416, 'ru-RU', 'Выбирите секцию'),
 (416, 'uk-UA', 'Оберіть секцію'),
+(417, 'en-US', 'Doctor of Sciences'),
 (417, 'ru-RU', 'Доктор наук'),
 (417, 'uk-UA', 'Доктор наук'),
+(418, 'en-US', 'Doctor of Technical Sciences'),
 (418, 'ru-RU', 'Доктор технических наук'),
 (418, 'uk-UA', 'Доктор технічних наук'),
+(419, 'en-US', 'Doctor of Economic Sciences'),
 (419, 'ru-RU', 'Доктор экономических наук'),
 (419, 'uk-UA', 'Доктор економічних наук'),
+(420, 'en-US', 'Doctor of Physical and Mathematical Sciences'),
 (420, 'ru-RU', 'Доктор физико-математических наук'),
 (420, 'uk-UA', 'Доктор фізико-математичних наук'),
+(421, 'en-US', 'Candidate of Sciences (Ph.D.)'),
 (421, 'ru-RU', 'Кандидат наук'),
 (421, 'uk-UA', 'Кандидат наук'),
+(422, 'en-US', 'Candidate of Technical Sciences (Ph.D.)'),
 (422, 'ru-RU', 'Кандидат технических наук'),
 (422, 'uk-UA', 'Кандидат технічних наук'),
+(423, 'en-US', 'Candidate of Economic Sciences (Ph.D.)'),
 (423, 'ru-RU', 'Кандидат экономических наук'),
 (423, 'uk-UA', 'Кандидат економічних наук'),
+(424, 'en-US', 'Candidate of Physical and Mathematical Sciences (Ph.D.)'),
 (424, 'ru-RU', 'Кандидат физико-математических наук'),
 (424, 'uk-UA', 'Кандидат фізико-математичних наук'),
+(425, 'en-US', 'No Degree'),
 (425, 'ru-RU', 'Нет степени'),
 (425, 'uk-UA', 'Нема ступеню'),
+(426, 'en-US', 'I will participate as <b>Listener</b>'),
 (426, 'ru-RU', 'Буду участвовать как <b>Слушатель</b>'),
 (426, 'uk-UA', 'Буду приймати участь як <b>Слухач</b>'),
+(427, 'en-US', 'I will participate as <b>Speaker</b>'),
 (427, 'ru-RU', 'Буду участвовать как <b>Спикер</b>'),
 (427, 'uk-UA', 'Буду приймати участь як <b>Доповідач</b>'),
+(428, 'en-US', 'Full Professor'),
 (428, 'ru-RU', 'Профессор'),
 (428, 'uk-UA', 'Професор'),
+(429, 'en-US', 'Docent'),
 (429, 'ru-RU', 'Доцент'),
 (429, 'uk-UA', 'Доцент'),
+(430, 'en-US', 'No Rank'),
 (430, 'ru-RU', 'Нет звания'),
 (430, 'uk-UA', 'Нема звання'),
+(431, 'en-US', 'Education, Science'),
 (431, 'ru-RU', 'Образование, наука'),
 (431, 'uk-UA', 'Освіта, наука'),
+(432, 'en-US', 'Information Technology'),
 (432, 'ru-RU', 'IT'),
 (432, 'uk-UA', 'IT'),
+(433, 'en-US', 'Banking, Finance, Investment'),
 (433, 'ru-RU', 'Банки, финансы, инвестиции'),
 (433, 'uk-UA', 'Банки, фінанси, інвестиції'),
+(434, 'en-US', 'Hotel and Restaurant Business, Tourism'),
 (434, 'ru-RU', 'Гостинично-ресторанный бизнес, туризм'),
 (434, 'uk-UA', 'Готельно-ресторанний бізнес, туризм'),
+(435, 'en-US', 'Public Administration'),
 (435, 'ru-RU', 'Государственное управление'),
 (435, 'uk-UA', 'Державне управління'),
+(436, 'en-US', 'Consulting, Analytics, Audit'),
 (436, 'ru-RU', 'Консалтинг, аналитика, аудит'),
 (436, 'uk-UA', 'Консалтинг, аналітика, аудит'),
+(437, 'en-US', 'Culture, Showbiz, Entertainment'),
 (437, 'ru-RU', 'Культура, шоу-бизнес, развлечения'),
 (437, 'uk-UA', 'Культура, шоу-бізнес, розваги'),
+(438, 'en-US', 'Medicine, Pharmaceuticals, Health Care'),
 (438, 'ru-RU', 'Медицина, фармацевтика, здравоохранение'),
 (438, 'uk-UA', 'Медицина, фармацевтика, охорона здоров’я'),
+(439, 'en-US', 'Real Estate'),
 (439, 'ru-RU', 'Недвижимость'),
 (439, 'uk-UA', 'Нерухомість'),
+(440, 'en-US', 'Non-profit Organizations'),
 (440, 'ru-RU', 'Некоммерческие организации'),
 (440, 'uk-UA', 'Некомерційні організації'),
+(441, 'en-US', 'Industry, Manufacturing'),
 (441, 'ru-RU', 'Промышленность'),
 (441, 'uk-UA', 'Промисловість'),
+(442, 'en-US', 'Agriculture, Agribusiness'),
 (442, 'ru-RU', 'Сельское хозяйство, агробизнес'),
 (442, 'uk-UA', 'Сільське господарство, агробізнес'),
+(443, 'en-US', 'Construction, Architecture'),
 (443, 'ru-RU', 'Строительство, архитектура'),
 (443, 'uk-UA', 'Будівництво, архітектура'),
+(444, 'en-US', 'Telecommunications'),
 (444, 'ru-RU', 'Телекоммуникации и связь'),
 (444, 'uk-UA', 'Телекомунікації та зв\'язок'),
+(445, 'en-US', 'Trade, Commerce'),
 (445, 'ru-RU', 'Торговля'),
 (445, 'uk-UA', 'Торгівля'),
+(446, 'en-US', 'Transport, Auto Business'),
 (446, 'ru-RU', 'Транспорт, автобизнес'),
 (446, 'uk-UA', 'Транспорт, автобізнес'),
+(447, 'en-US', 'Services'),
 (447, 'ru-RU', 'Услуги, сфера обслуживания'),
 (447, 'uk-UA', 'Послуги, сфера обслуговування'),
+(448, 'en-US', 'English'),
 (448, 'ru-RU', 'Английский'),
 (448, 'uk-UA', 'Англійська'),
+(449, 'en-US', 'Ukrainian'),
 (449, 'ru-RU', 'Украинский'),
 (449, 'uk-UA', 'Українська'),
+(450, 'en-US', 'Russian'),
 (450, 'ru-RU', 'Русский'),
 (450, 'uk-UA', 'Російська'),
+(451, 'en-US', 'Plenary Session'),
 (451, 'ru-RU', 'Пленарное заседание'),
 (451, 'uk-UA', 'Пленарне засідання'),
+(452, 'en-US', 'Section 1. Integration of Strategic Management with Portfolio, Program and Project Management: Models, Methods and Techniques'),
 (452, 'ru-RU', 'Секция 1: Интеграция стратегического управления, управления портфелями, программами, проектами'),
 (452, 'uk-UA', 'Секція 1: Інтеграція стратегічного управління, управління портфелями, програмами, проектами'),
+(453, 'en-US', 'Section 2. Managing ІТ Projects'),
 (453, 'ru-RU', 'Секция 2: Управление IT проектами'),
 (453, 'uk-UA', 'Секція 2: Управління IT проектами'),
+(454, 'en-US', 'Section 3. Application of Effective Management Technologies in Practice'),
 (454, 'ru-RU', 'Секция 3: Применение эффективных технологий управления на практике'),
 (454, 'uk-UA', 'Секція 3: Застосування ефективних технологій управління на практиці'),
+(455, 'en-US', 'Ukraine'),
 (455, 'ru-RU', 'Украина'),
 (455, 'uk-UA', 'Україна'),
-(457, 'ru-RU', 'Белорусь'),
+(457, 'en-US', 'Belarus'),
+(457, 'ru-RU', 'Беларусь'),
 (457, 'uk-UA', 'Білорусь'),
+(458, 'en-US', 'Kazakhstan'),
 (458, 'ru-RU', 'Казахстан'),
 (458, 'uk-UA', 'Казахстан'),
+(460, 'en-US', 'Information about the participant'),
 (460, 'ru-RU', 'Сведения об участнике'),
 (460, 'uk-UA', 'Відомості про учасника'),
+(461, 'en-US', 'Organisation information'),
 (461, 'ru-RU', 'Сведения об организации'),
 (461, 'uk-UA', 'Відомості про організацію'),
+(462, 'en-US', 'Form of participation'),
 (462, 'ru-RU', 'Формат участия'),
 (462, 'uk-UA', 'Формат участі'),
+(463, 'en-US', 'Payment'),
 (463, 'ru-RU', 'К оплате'),
-(463, 'uk-UA', 'До оплати'),
+(463, 'uk-UA', 'До сплати'),
+(464, 'en-US', 'Registration fee'),
 (464, 'ru-RU', 'Организационный взнос'),
 (464, 'uk-UA', 'Організаційний внесок'),
+(465, 'en-US', 'Conference papers'),
 (465, 'ru-RU', 'Журнал статей конференции'),
-(465, 'uk-UA', 'Журнал'),
+(465, 'uk-UA', 'Журнал статей конференції'),
+(466, 'en-US', 'Total to pay'),
 (466, 'ru-RU', 'Итого к оплате'),
 (466, 'uk-UA', 'Всього до сплати'),
-(467, 'ru-RU', 'Итого к оплате:'),
-(467, 'uk-UA', 'Загалом'),
+(467, 'en-US', 'Total sum'),
+(467, 'ru-RU', 'Сумма к оплате:'),
+(467, 'uk-UA', 'Загалом:'),
+(468, 'en-US', 'Parent category'),
+(468, 'ru-RU', 'Родительская категория'),
+(468, 'uk-UA', 'Родительская категория'),
+(469, 'en-US', 'Title'),
+(469, 'ru-RU', 'Заглавие'),
+(469, 'uk-UA', 'Батьківська категорія'),
+(470, 'en-US', 'Alias'),
+(470, 'ru-RU', 'Алиас'),
+(470, 'uk-UA', 'Аліас'),
+(471, 'en-US', 'Position'),
+(471, 'ru-RU', 'Расположение'),
+(471, 'uk-UA', 'Розташування'),
+(472, 'en-US', 'Category'),
+(472, 'ru-RU', 'Категория'),
+(472, 'uk-UA', 'Категорія'),
+(473, 'en-US', 'Type'),
+(473, 'ru-RU', 'Тип'),
+(473, 'uk-UA', 'Тип'),
+(474, 'en-US', 'Meta description'),
+(474, 'ru-RU', 'Мета-описание'),
+(474, 'uk-UA', 'Мета-опис'),
+(475, 'en-US', 'Preview'),
+(475, 'ru-RU', 'Предварительный просмотр'),
+(475, 'uk-UA', 'Попередній перегляд'),
+(476, 'en-US', 'Content'),
+(476, 'ru-RU', 'Контент'),
+(476, 'uk-UA', 'Контент'),
+(477, 'en-US', 'Views'),
+(477, 'ru-RU', 'Просмотры'),
+(477, 'uk-UA', 'Перегляди'),
+(478, 'ru-RU', 'Статус публикации'),
+(478, 'uk-UA', 'Статус публікації'),
+(479, 'ru-RU', 'Миниатюра'),
+(479, 'uk-UA', 'Мініатюра'),
+(480, 'ru-RU', 'Создано'),
+(480, 'uk-UA', 'Створено'),
+(481, 'ru-RU', 'Обновлено'),
+(481, 'uk-UA', 'Оновлено'),
+(482, 'ru-RU', 'Черновик'),
+(482, 'uk-UA', 'Чорновик'),
+(483, 'ru-RU', 'Опубликовано'),
+(483, 'uk-UA', 'Опубліковано'),
+(484, 'ru-RU', 'Показать категорию'),
+(484, 'uk-UA', 'Показать категорию'),
+(485, 'ru-RU', 'Новая категория'),
+(485, 'uk-UA', 'Показати категорію'),
+(486, 'ru-RU', 'Блог'),
+(486, 'uk-UA', 'Блог'),
+(487, 'ru-RU', 'Категории'),
+(487, 'uk-UA', 'Категорії'),
+(488, 'ru-RU', 'Дерево категорий'),
+(488, 'uk-UA', 'Дерево категорій'),
+(489, 'ru-RU', 'Обновить категорию “{title}”'),
+(489, 'uk-UA', 'Оновити категорію "{title}"'),
+(490, 'ru-RU', 'Обновить категорию'),
+(490, 'uk-UA', 'Оновити категорію'),
 (491, 'ru-RU', 'Редактировать'),
+(491, 'uk-UA', 'Редагувати'),
 (492, 'ru-RU', 'Удалить'),
+(492, 'uk-UA', 'Видалити'),
+(493, 'ru-RU', 'Выбрать родительскую категорию'),
+(493, 'uk-UA', 'Вибрати батьківську категорію'),
+(495, 'ru-RU', 'Создать'),
+(495, 'uk-UA', 'Створити'),
+(496, 'ru-RU', 'Модуль "Блог"'),
+(496, 'uk-UA', 'Модуль "Блог"'),
+(497, 'ru-RU', 'Добро пожаловать в модуль "Блог"!'),
+(497, 'uk-UA', 'Ласкаво просимо в модуль "Блог"!'),
+(498, 'ru-RU', 'Вы успешно установили модуль "Блог". Теперь, чтобы создать запись, необходимо создать ваш первый тип записи и категорию'),
+(498, 'uk-UA', 'Ви успішно встановили модуль "Блог". Тепер, щоб створити запис, необхідно створити ваш перший тип запису і категорію'),
+(499, 'ru-RU', 'Записи'),
+(499, 'uk-UA', 'Записи'),
+(500, 'ru-RU', 'Типы записей'),
+(500, 'uk-UA', 'Типи записів'),
+(501, 'ru-RU', 'Новый {type}'),
+(501, 'uk-UA', 'Новий {type}'),
+(502, 'ru-RU', 'Последние изменения'),
+(502, 'uk-UA', 'Останні зміни'),
+(503, 'ru-RU', 'Посмотреть запись на сайте'),
+(503, 'uk-UA', 'Переглянути запис на сайті'),
+(504, 'ru-RU', 'Обновить запись'),
+(504, 'uk-UA', 'Оновити запис'),
+(505, 'ru-RU', 'Запись “{title}” была успешно сохранена!'),
+(505, 'uk-UA', 'Запис "{title}" був успішно збережений!'),
+(506, 'ru-RU', 'Вы можете просмотреть эту запись {на сайте}, или просмотреть {все записи}.'),
+(506, 'uk-UA', 'Ви можете переглянути цей запис {на сайті}, або переглянути {усі записи}.'),
+(507, 'ru-RU', 'На сайте'),
+(507, 'uk-UA', 'На сайті'),
+(508, 'ru-RU', 'Все записи'),
+(508, 'uk-UA', 'Усі записи'),
+(509, 'ru-RU', 'Набор миниатюр'),
+(509, 'uk-UA', 'Набір мініатюр'),
+(510, 'ru-RU', 'Сохранить'),
+(510, 'uk-UA', 'Зберегти'),
+(511, 'ru-RU', 'Посмотреть на сайте'),
+(511, 'uk-UA', 'Переглянути на сайті'),
+(512, 'ru-RU', 'Подробная информация'),
+(512, 'uk-UA', 'Детальна інформація'),
+(513, 'ru-RU', 'Новая запись'),
+(513, 'uk-UA', 'Новий запис'),
+(514, 'ru-RU', 'Тип записи'),
+(514, 'uk-UA', 'Тип запису'),
+(515, 'ru-RU', 'Добавить'),
+(515, 'uk-UA', 'Додати'),
+(516, 'ru-RU', 'Поиск записи'),
+(516, 'uk-UA', 'Пошук запису'),
+(517, 'ru-RU', 'Введите заголовок записи ...'),
+(517, 'uk-UA', 'Введіть заголовок запису ...'),
+(518, 'ru-RU', 'Поиск'),
+(518, 'uk-UA', 'Пошук'),
+(519, 'ru-RU', 'Тип новой записи'),
+(519, 'uk-UA', 'Тип нового запису'),
+(520, 'ru-RU', 'Обновить тип записи “{title}”'),
+(520, 'uk-UA', 'Оновити тип запису “{title}”'),
+(521, 'ru-RU', 'Обновить тип записи'),
+(521, 'uk-UA', 'Оновити тип запису'),
+(522, 'ru-RU', 'Изменения не сохранены.'),
+(522, 'uk-UA', 'Изменения не сохранены.'),
+(523, 'ru-RU', 'Изменения сохранены!'),
+(523, 'uk-UA', 'Зміни не були збережені.'),
+(524, 'ru-RU', 'Идентификатор'),
+(524, 'uk-UA', 'Ідентифікатор'),
+(525, 'ru-RU', 'Имя файла'),
+(525, 'uk-UA', 'Ім\'я файлу'),
+(526, 'ru-RU', 'Url'),
+(526, 'uk-UA', 'Url'),
+(527, 'ru-RU', 'Атрибут Alt'),
+(527, 'uk-UA', 'Атрибут Alt'),
+(528, 'ru-RU', 'Размер'),
+(528, 'uk-UA', 'Розмір'),
+(529, 'ru-RU', 'Описание'),
+(529, 'uk-UA', 'Опис'),
+(530, 'ru-RU', 'Миниатюры'),
+(530, 'uk-UA', 'Мініатюри'),
+(531, 'ru-RU', 'Создано'),
+(531, 'uk-UA', 'Створено'),
+(532, 'ru-RU', 'Обновлено'),
+(532, 'uk-UA', 'Оновлено'),
+(533, 'ru-RU', 'Первоисточник'),
+(533, 'uk-UA', 'Першоджерело'),
+(534, 'ru-RU', 'Файловый менеджер'),
+(534, 'uk-UA', 'Файловий менеджер'),
+(535, 'ru-RU', 'Модуль "Файловый менеджер"'),
+(535, 'uk-UA', 'Модуль "Файловий менеджер"'),
+(536, 'ru-RU', 'Файлы'),
+(536, 'uk-UA', 'Файли'),
+(537, 'ru-RU', 'Настройки'),
+(537, 'uk-UA', 'Налаштування'),
+(538, 'ru-RU', 'Настройки миниатюр'),
+(538, 'uk-UA', 'Налаштування мініатюр'),
+(539, 'ru-RU', 'Размеры миниатюр были успешно изменены!'),
+(539, 'uk-UA', 'Розміри мініатюр були успішно змінені!'),
+(540, 'ru-RU', ''),
+(541, 'ru-RU', 'В настоящее время используются следующие предустановки миниатюр'),
+(541, 'uk-UA', 'В даний час використовуються наступні предустановки мініатюр'),
+(542, 'ru-RU', 'Если Вы изменили размеры миниатюр, настоятельно рекомендуется изменить размер всех миниатюр.'),
+(542, 'uk-UA', 'Якщо Ви змінили розміри мініатюр, наполегливо рекомендується змінити розмір всіх мініатюр.'),
+(543, 'ru-RU', 'Изменить размер миниатюр'),
+(543, 'uk-UA', 'Змінити розмір мініатюр'),
+(544, 'ru-RU', 'Менеджер загрузок'),
+(544, 'uk-UA', 'Менеджер завантажень'),
+(545, 'ru-RU', 'Выберите размер изображения'),
+(545, 'uk-UA', 'Виберіть розмір зображення'),
+(546, 'ru-RU', 'Вставить'),
+(546, 'uk-UA', 'Вставити'),
+(547, 'ru-RU', 'Вернуться в файловый менеджер'),
+(547, 'uk-UA', 'Повернутися в файловий менеджер'),
+(548, 'ru-RU', 'Ошибка'),
+(548, 'uk-UA', 'Помилка'),
+(549, 'ru-RU', 'Удалить'),
+(549, 'uk-UA', 'Видалити'),
+(550, 'ru-RU', 'Отменить'),
+(550, 'uk-UA', 'Відмінити'),
+(551, 'ru-RU', 'Добавить файлы'),
+(551, 'uk-UA', 'Додати файли'),
+(552, 'ru-RU', 'Начать загрузку'),
+(552, 'uk-UA', 'Почати завантаження'),
+(553, 'ru-RU', 'Отменить загрузку'),
+(553, 'uk-UA', 'Відмінити завантаження'),
+(554, 'ru-RU', 'Обработка'),
+(554, 'uk-UA', 'Обробка'),
+(555, 'ru-RU', 'Начать'),
+(555, 'uk-UA', 'Почати'),
+(556, 'ru-RU', 'Применить'),
+(556, 'uk-UA', 'Застосувати'),
+(557, 'ru-RU', 'Отменить'),
+(557, 'uk-UA', 'Відмінити'),
+(558, 'ru-RU', ''),
+(561, 'ru-RU', 'Пользовательский диапазон'),
+(561, 'uk-UA', 'Діапазон користувача'),
+(562, 'ru-RU', 'Выберите диапазон дат'),
+(562, 'uk-UA', 'Виберіть діапазон дат'),
+(563, 'ru-RU', 'Сегодня'),
+(563, 'uk-UA', 'Сьогодні'),
+(564, 'ru-RU', 'Вчера'),
+(564, 'uk-UA', 'Вчора'),
+(565, 'ru-RU', 'Последние {n} дней'),
+(565, 'uk-UA', 'Останні {n} днів'),
+(566, 'ru-RU', 'Этот месяц'),
+(566, 'uk-UA', 'Цей місяць'),
+(567, 'ru-RU', 'Прошлый месяц'),
+(567, 'uk-UA', 'Минулий місяць'),
 (569, 'ru-RU', 'Не нужен'),
+(569, 'uk-UA', 'Не потрібен'),
 (570, 'ru-RU', 'Отправить'),
-(570, 'uk-UA', 'Відіслати'),
+(570, 'uk-UA', 'Відправити'),
+(571, 'en-US', 'Participant Full Name'),
 (571, 'ru-RU', 'ФИО участника'),
-(571, 'uk-UA', 'П.І.Б. учасника'),
+(571, 'uk-UA', 'ПІБ учасника'),
 (572, 'ru-RU', 'Оплачено'),
+(572, 'uk-UA', 'Сплачено'),
+(573, 'ru-RU', 'SEO заголовок'),
+(573, 'uk-UA', 'SEO заголовок'),
+(574, 'ru-RU', 'Обновить запись “{title}”'),
+(574, 'uk-UA', 'Оновити запис "{title}"'),
 (575, 'ru-RU', 'Примечание'),
+(575, 'uk-UA', 'Примітка'),
 (576, 'ru-RU', 'Дата регистрации'),
+(576, 'uk-UA', 'Дата реєстрації'),
 (577, 'ru-RU', 'Количество журналов статей конференции'),
+(577, 'uk-UA', 'Кількість журналів статей конференції'),
 (578, 'ru-RU', 'Формат участия в конференции'),
+(578, 'uk-UA', 'Формат участі в конференції'),
 (579, 'ru-RU', 'Старший научный сотрудник'),
 (579, 'uk-UA', 'Старший науковий співробітник'),
 (580, 'ru-RU', 'Россия'),
 (580, 'uk-UA', 'Росія'),
 (581, 'ru-RU', 'Афганистан'),
 (581, 'uk-UA', 'Афганістан'),
-(582, 'ru-RU', 'Аландские острова'),
+(582, 'ru-RU', 'Аландские острова (Финляндия)'),
 (582, 'uk-UA', 'Аландські острови (Фінляндія )'),
 (583, 'ru-RU', 'Албания'),
 (583, 'uk-UA', 'Албанія'),
 (584, 'ru-RU', 'Алжир'),
 (584, 'uk-UA', 'Алжир'),
-(585, 'ru-RU', 'Восточное (Американское) Самоа'),
+(585, 'ru-RU', 'Восточное (Американское) Самоа (США)'),
 (585, 'uk-UA', 'Американське Самоа (США)'),
 (586, 'ru-RU', 'Андорра'),
 (586, 'uk-UA', 'Андорра'),
 (587, 'ru-RU', 'Ангола'),
 (587, 'uk-UA', 'Ангола'),
-(588, 'ru-RU', 'Ангилья'),
+(588, 'ru-RU', 'Ангилья (Великобритания)'),
 (588, 'uk-UA', 'Ангілья (Велика Британія)'),
 (589, 'ru-RU', 'Антарктида'),
 (589, 'uk-UA', 'Антарктида'),
@@ -1307,7 +1643,7 @@ INSERT INTO `language_translate` (`id`, `language`, `translation`) VALUES
 (591, 'uk-UA', 'Аргентина'),
 (592, 'ru-RU', 'Армения'),
 (592, 'uk-UA', 'Вірменія'),
-(593, 'ru-RU', 'Аруба'),
+(593, 'ru-RU', 'Аруба (Нидерланды)'),
 (593, 'uk-UA', 'Аруба (Нідерланди)'),
 (594, 'ru-RU', 'Австралия'),
 (594, 'uk-UA', 'Австралія'),
@@ -1329,23 +1665,23 @@ INSERT INTO `language_translate` (`id`, `language`, `translation`) VALUES
 (602, 'uk-UA', 'Беліз'),
 (603, 'ru-RU', 'Бенин'),
 (603, 'uk-UA', 'Бенін'),
-(604, 'ru-RU', 'Бермудские острова'),
+(604, 'ru-RU', 'Бермудские острова (Великобритания)'),
 (604, 'uk-UA', 'Бермудські острови (Велика Британія)'),
 (605, 'ru-RU', 'Бутан'),
 (605, 'uk-UA', 'Бутан'),
 (606, 'ru-RU', 'Боливия'),
 (606, 'uk-UA', 'Болівія'),
-(607, 'ru-RU', 'Бонэйр'),
+(607, 'ru-RU', 'Бонэйр (Карибские Нидерланды)'),
 (607, 'uk-UA', 'Бонайре (Карибські Нідерланди)'),
 (608, 'ru-RU', 'Босния и Герцеговина'),
 (608, 'uk-UA', 'Боснія і Герцеговина'),
 (609, 'ru-RU', 'Ботсвана'),
 (609, 'uk-UA', 'Ботсвана'),
-(610, 'ru-RU', 'Остров Буве'),
+(610, 'ru-RU', 'Остров Буве (Норвегия)'),
 (610, 'uk-UA', 'Острів Буве (Норвегія)'),
 (611, 'ru-RU', 'Бразилия'),
 (611, 'uk-UA', 'Бразилія'),
-(612, 'ru-RU', 'Британская территория в Индийском океане'),
+(612, 'ru-RU', 'Британская территория в Индийском океане (Великобритания)'),
 (612, 'uk-UA', 'Британська територія в Індійському океані (Велика Британія)'),
 (613, 'ru-RU', 'Бруней'),
 (613, 'uk-UA', 'Бруней'),
@@ -1363,7 +1699,7 @@ INSERT INTO `language_translate` (`id`, `language`, `translation`) VALUES
 (619, 'uk-UA', 'Канада'),
 (620, 'ru-RU', 'Кабо-Верде'),
 (620, 'uk-UA', 'Кабо-Верде'),
-(621, 'ru-RU', 'Кайманы'),
+(621, 'ru-RU', 'Кайманы (Великобритания)'),
 (621, 'uk-UA', 'Кайманові острови (Велика Британія)'),
 (622, 'ru-RU', 'Центральноафриканская Республика'),
 (622, 'uk-UA', 'Центральноафриканська Республіка'),
@@ -1371,9 +1707,9 @@ INSERT INTO `language_translate` (`id`, `language`, `translation`) VALUES
 (623, 'uk-UA', 'Чад'),
 (624, 'ru-RU', 'Чили'),
 (624, 'uk-UA', 'Чилі'),
-(625, 'ru-RU', 'Китайская Народная Республика'),
+(625, 'ru-RU', 'Китай'),
 (625, 'uk-UA', 'Китай'),
-(626, 'ru-RU', 'Остров Рождества'),
+(626, 'ru-RU', 'Остров Рождества (Австралия)'),
 (626, 'uk-UA', 'Острів Різдва (Австралія)'),
 (627, 'ru-RU', 'Кокосовые острова'),
 (627, 'uk-UA', 'Кокосові острови (Кілінг)'),
@@ -1383,9 +1719,9 @@ INSERT INTO `language_translate` (`id`, `language`, `translation`) VALUES
 (629, 'uk-UA', 'Коморські Острови'),
 (630, 'ru-RU', 'Конго (Браззавиль)'),
 (630, 'uk-UA', 'Конго'),
-(631, 'ru-RU', 'ДРК и Конго (Киншаса)'),
+(631, 'ru-RU', 'Демократическая Республика Конго (Заир)'),
 (631, 'uk-UA', 'Демократична Республіка Конго (Заїр)'),
-(632, 'ru-RU', 'Острова Кука'),
+(632, 'ru-RU', 'Острова Кука (Новая Зеландия)'),
 (632, 'uk-UA', 'Острови Кука (Нова Зеландія)'),
 (633, 'ru-RU', 'Коста-Рика'),
 (633, 'uk-UA', 'Коста-Рика'),
@@ -1395,7 +1731,7 @@ INSERT INTO `language_translate` (`id`, `language`, `translation`) VALUES
 (635, 'uk-UA', 'Хорватія'),
 (636, 'ru-RU', 'Куба'),
 (636, 'uk-UA', 'Куба'),
-(637, 'ru-RU', 'Кюрасао'),
+(637, 'ru-RU', 'Кюрасао (Нидерланды)'),
 (637, 'uk-UA', 'Кюрасао (Нідерланди)'),
 (638, 'ru-RU', 'Кипр'),
 (638, 'uk-UA', 'Кіпр'),
@@ -1423,9 +1759,9 @@ INSERT INTO `language_translate` (`id`, `language`, `translation`) VALUES
 (649, 'uk-UA', 'Естонія'),
 (650, 'ru-RU', 'Эфиопия'),
 (650, 'uk-UA', 'Ефіопія'),
-(651, 'ru-RU', 'Фолклендские острова'),
+(651, 'ru-RU', 'Фолклендские острова (Великобритания)'),
 (651, 'uk-UA', 'Фолклендські (Мальвінські) острови (Велика Британія)'),
-(652, 'ru-RU', 'Фареры'),
+(652, 'ru-RU', 'Фареры (Дания)'),
 (652, 'uk-UA', 'Фарерські острови  (Данія)'),
 (653, 'ru-RU', 'Фиджи'),
 (653, 'uk-UA', 'Фіджі'),
@@ -1433,11 +1769,11 @@ INSERT INTO `language_translate` (`id`, `language`, `translation`) VALUES
 (654, 'uk-UA', 'Фінляндія'),
 (655, 'ru-RU', 'Франция'),
 (655, 'uk-UA', 'Франція'),
-(656, 'ru-RU', 'Гвиана'),
+(656, 'ru-RU', 'Гвиана (Франция)'),
 (656, 'uk-UA', 'Французька Гвіана (Франція)'),
-(657, 'ru-RU', 'Полинезия Французская'),
+(657, 'ru-RU', 'Французская Полинезия (Франция)'),
 (657, 'uk-UA', 'Французька Полінезія (Франція)'),
-(658, 'ru-RU', 'Французские Южные территории'),
+(658, 'ru-RU', 'Французские Южные и Антарктические территории (Франция)'),
 (658, 'uk-UA', 'Французькі Південні і Антарктичні території (Франція)'),
 (659, 'ru-RU', 'Габон'),
 (659, 'uk-UA', 'Габон'),
@@ -1449,21 +1785,21 @@ INSERT INTO `language_translate` (`id`, `language`, `translation`) VALUES
 (662, 'uk-UA', 'Німеччина'),
 (663, 'ru-RU', 'Гана'),
 (663, 'uk-UA', 'Гана'),
-(664, 'ru-RU', 'Гибралтар'),
+(664, 'ru-RU', 'Гибралтар (Великобритания)'),
 (664, 'uk-UA', 'Гібралтар (Велика Британія)'),
 (665, 'ru-RU', 'Греция'),
 (665, 'uk-UA', 'Греція'),
-(666, 'ru-RU', 'Гренландия'),
+(666, 'ru-RU', 'Гренландия (Дания)'),
 (666, 'uk-UA', 'Ґренландія (Данія)'),
 (667, 'ru-RU', 'Гренада'),
 (667, 'uk-UA', 'Гренада'),
-(668, 'ru-RU', 'Гваделупа'),
+(668, 'ru-RU', 'Гваделупа (Франция)'),
 (668, 'uk-UA', 'Гваделупа (Франція)'),
-(669, 'ru-RU', 'Гуам'),
+(669, 'ru-RU', 'Гуам (США)'),
 (669, 'uk-UA', 'Гуам (США)'),
 (670, 'ru-RU', 'Гватемала'),
 (670, 'uk-UA', 'Гватемала'),
-(671, 'ru-RU', 'Гернси'),
+(671, 'ru-RU', 'Гернси (Великобритания)'),
 (671, 'uk-UA', 'Гернсі (Велика Британія)'),
 (672, 'ru-RU', 'Гвинея'),
 (672, 'uk-UA', 'Гвінея'),
@@ -1473,13 +1809,13 @@ INSERT INTO `language_translate` (`id`, `language`, `translation`) VALUES
 (674, 'uk-UA', 'Гайана'),
 (675, 'ru-RU', 'Гаити'),
 (675, 'uk-UA', 'Гаїті'),
-(676, 'ru-RU', 'Остров Херд и острова Макдональд'),
+(676, 'ru-RU', 'Остров Херд и острова Макдональд (Австралия)'),
 (676, 'uk-UA', 'Острів Херд і острови Макдональд (Австралія)'),
 (677, 'ru-RU', 'Ватикан'),
 (677, 'uk-UA', 'Ватикан'),
 (678, 'ru-RU', 'Гондурас'),
 (678, 'uk-UA', 'Гондурас'),
-(679, 'ru-RU', 'Гонконг'),
+(679, 'ru-RU', 'Гонконг (Китай)'),
 (679, 'uk-UA', 'Гонконг (КНР)'),
 (680, 'ru-RU', 'Венгрия'),
 (680, 'uk-UA', 'Угорщина'),
@@ -1495,7 +1831,7 @@ INSERT INTO `language_translate` (`id`, `language`, `translation`) VALUES
 (685, 'uk-UA', 'Ірак'),
 (686, 'ru-RU', 'Ирландия'),
 (686, 'uk-UA', 'Ірландія'),
-(687, 'ru-RU', 'Остров Мэн'),
+(687, 'ru-RU', 'Остров Мэн (Великобритания)'),
 (687, 'uk-UA', 'Острів Мен (Велика Британія)'),
 (688, 'ru-RU', 'Израиль'),
 (688, 'uk-UA', 'Ізраїль'),
@@ -1505,7 +1841,7 @@ INSERT INTO `language_translate` (`id`, `language`, `translation`) VALUES
 (690, 'uk-UA', 'Ямайка'),
 (691, 'ru-RU', 'Япония'),
 (691, 'uk-UA', 'Японія'),
-(692, 'ru-RU', 'Джерси'),
+(692, 'ru-RU', 'Джерси (Великобритания)'),
 (692, 'uk-UA', 'Джерсі (Велика Британія)'),
 (693, 'ru-RU', 'Иордания'),
 (693, 'uk-UA', 'Йорданія'),
@@ -1539,7 +1875,7 @@ INSERT INTO `language_translate` (`id`, `language`, `translation`) VALUES
 (707, 'uk-UA', 'Литва'),
 (708, 'ru-RU', 'Люксембург'),
 (708, 'uk-UA', 'Люксембург'),
-(709, 'ru-RU', 'Макао'),
+(709, 'ru-RU', 'Макао (Китай)'),
 (709, 'uk-UA', 'Макао (КНР)'),
 (710, 'ru-RU', 'Македония'),
 (710, 'uk-UA', 'Македонія'),
@@ -1557,7 +1893,7 @@ INSERT INTO `language_translate` (`id`, `language`, `translation`) VALUES
 (716, 'uk-UA', 'Мальта'),
 (717, 'ru-RU', 'Маршалловы острова'),
 (717, 'uk-UA', 'Маршаллові Острови'),
-(718, 'ru-RU', 'Мартиника'),
+(718, 'ru-RU', 'Мартиника (Франция)'),
 (718, 'uk-UA', 'Мартиніка (Франція)'),
 (719, 'ru-RU', 'Мавритания'),
 (719, 'uk-UA', 'Мавританія'),
@@ -1577,7 +1913,7 @@ INSERT INTO `language_translate` (`id`, `language`, `translation`) VALUES
 (726, 'uk-UA', 'Монголія'),
 (727, 'ru-RU', 'Черногория'),
 (727, 'uk-UA', 'Чорногорія'),
-(728, 'ru-RU', 'Монтсеррат'),
+(728, 'ru-RU', 'Монтсеррат (Великобритания)'),
 (728, 'uk-UA', 'Монтсеррат (Велика Британія)'),
 (729, 'ru-RU', 'Марокко'),
 (729, 'uk-UA', 'Марокко'),
@@ -1593,7 +1929,7 @@ INSERT INTO `language_translate` (`id`, `language`, `translation`) VALUES
 (734, 'uk-UA', 'Непал'),
 (735, 'ru-RU', 'Нидерланды'),
 (735, 'uk-UA', 'Нідерланди'),
-(736, 'ru-RU', 'Новая Каледония'),
+(736, 'ru-RU', 'Новая Каледония (Франция)'),
 (736, 'uk-UA', 'Нова Каледонія (Франція)'),
 (737, 'ru-RU', 'Новая Зеландия'),
 (737, 'uk-UA', 'Нова Зеландія'),
@@ -1603,11 +1939,11 @@ INSERT INTO `language_translate` (`id`, `language`, `translation`) VALUES
 (739, 'uk-UA', 'Нігер'),
 (740, 'ru-RU', 'Нигерия'),
 (740, 'uk-UA', 'Нігерія'),
-(741, 'ru-RU', 'Ниуэ'),
+(741, 'ru-RU', 'Ниуэ (Новая Зеландия)'),
 (741, 'uk-UA', 'Ніуе (Нова Зеландія)'),
-(742, 'ru-RU', 'Остров Норфолк'),
+(742, 'ru-RU', 'Остров Норфолк (Австралия)'),
 (742, 'uk-UA', 'Острів Норфолк (Австралія)'),
-(743, 'ru-RU', 'Северные Марианские Острова'),
+(743, 'ru-RU', 'Северные Марианские Острова (США)'),
 (743, 'uk-UA', 'Північні Маріанські острови  (США)'),
 (744, 'ru-RU', 'Норвегия'),
 (744, 'uk-UA', 'Норвегія'),
@@ -1629,33 +1965,33 @@ INSERT INTO `language_translate` (`id`, `language`, `translation`) VALUES
 (752, 'uk-UA', 'Перу'),
 (753, 'ru-RU', 'Филиппины'),
 (753, 'uk-UA', 'Філіппіни'),
-(754, 'ru-RU', 'Острова Питкэрн'),
+(754, 'ru-RU', 'Острова Питкэрн (Великобритания)'),
 (754, 'uk-UA', 'Піткерн (Велика Британія)'),
 (755, 'ru-RU', 'Польша'),
 (755, 'uk-UA', 'Польща'),
 (756, 'ru-RU', 'Португалия'),
 (756, 'uk-UA', 'Португалія'),
-(757, 'ru-RU', 'Пуэрто-Рико'),
+(757, 'ru-RU', 'Пуэрто-Рико (США)'),
 (757, 'uk-UA', 'Пуерто-Рико  (США)'),
 (758, 'ru-RU', 'Катар'),
 (758, 'uk-UA', 'Катар'),
-(759, 'ru-RU', 'Реюньон'),
+(759, 'ru-RU', 'Реюньон (Франция)'),
 (759, 'uk-UA', 'Реюньйон (Франція)'),
 (760, 'ru-RU', 'Румыния'),
 (760, 'uk-UA', 'Румунія'),
 (761, 'ru-RU', 'Руанда'),
 (761, 'uk-UA', 'Руанда'),
-(762, 'ru-RU', 'Сен-Бартелеми'),
+(762, 'ru-RU', 'Сен-Бартелеми (Франция)'),
 (762, 'uk-UA', 'Сен-Бартелемі (Франція)'),
-(763, 'ru-RU', 'Острова Святой Елены, Вознесения и Тристан-да-Кунья'),
+(763, 'ru-RU', 'Острова Святой Елены, Вознесения и Тристан-да-Кунья (Великобритания)'),
 (763, 'uk-UA', 'Острови Святої Єлени, Вознесіння і Тристан-да-Кунья (Велика Британія)'),
 (764, 'ru-RU', 'Сент-Китс и Невис'),
 (764, 'uk-UA', 'Сент-Кіттс і Невіс'),
 (765, 'ru-RU', 'Сент-Люсия'),
 (765, 'uk-UA', 'Сент-Люсія'),
-(766, 'ru-RU', 'Сен-Мартен'),
+(766, 'ru-RU', 'Сен-Мартен (Франция)'),
 (766, 'uk-UA', 'Сен-Мартен (Франція)'),
-(767, 'ru-RU', 'Сен-Пьер и Микелон'),
+(767, 'ru-RU', 'Сен-Пьер и Микелон (Франция)'),
 (767, 'uk-UA', 'Сен-П\'єр і Мікелон (Франція)'),
 (768, 'ru-RU', 'Сент-Винсент и Гренадины'),
 (768, 'uk-UA', 'Сент-Вінсент і Гренадини'),
@@ -1677,7 +2013,7 @@ INSERT INTO `language_translate` (`id`, `language`, `translation`) VALUES
 (776, 'uk-UA', 'Сьєрра-Леоне'),
 (777, 'ru-RU', 'Сингапур'),
 (777, 'uk-UA', 'Сінгапур'),
-(778, 'ru-RU', 'Синт-Мартен'),
+(778, 'ru-RU', 'Синт-Мартен (Нидерланды)'),
 (778, 'uk-UA', 'Сінт-Мартен (Нідерланди)'),
 (779, 'ru-RU', 'Словакия'),
 (779, 'uk-UA', 'Словаччина'),
@@ -1689,7 +2025,7 @@ INSERT INTO `language_translate` (`id`, `language`, `translation`) VALUES
 (782, 'uk-UA', 'Сомалі'),
 (783, 'ru-RU', 'Южно-Африканская Республика'),
 (783, 'uk-UA', 'Південно-Африканська Республіка'),
-(784, 'ru-RU', 'Южная Георгия и Южные Сандвичевы острова'),
+(784, 'ru-RU', 'Южная Георгия и Южные Сандвичевы острова (Великобритания)'),
 (784, 'uk-UA', 'Південна Джорджія та Південні Сандвічеві острови (Велика Британія)'),
 (785, 'ru-RU', 'Южный Судан'),
 (785, 'uk-UA', 'Південний Судан'),
@@ -1701,7 +2037,7 @@ INSERT INTO `language_translate` (`id`, `language`, `translation`) VALUES
 (788, 'uk-UA', 'Судан'),
 (789, 'ru-RU', 'Суринам'),
 (789, 'uk-UA', 'Суринам'),
-(790, 'ru-RU', 'Шпицберген и Ян-Майен'),
+(790, 'ru-RU', 'Шпицберген и Ян-Майен (Норвегия)'),
 (790, 'uk-UA', 'Свальбард і Ян-Маєн  (Норвегія)'),
 (791, 'ru-RU', 'Свазиленд'),
 (791, 'uk-UA', 'Свазіленд'),
@@ -1723,7 +2059,7 @@ INSERT INTO `language_translate` (`id`, `language`, `translation`) VALUES
 (799, 'uk-UA', 'Східний Тимор'),
 (800, 'ru-RU', 'Того'),
 (800, 'uk-UA', 'Того'),
-(801, 'ru-RU', 'Токелау'),
+(801, 'ru-RU', 'Токелау (Новая Зеландия)'),
 (801, 'uk-UA', 'Токелау (Нова Зеландія)'),
 (802, 'ru-RU', 'Тонга'),
 (802, 'uk-UA', 'Тонга'),
@@ -1735,7 +2071,7 @@ INSERT INTO `language_translate` (`id`, `language`, `translation`) VALUES
 (805, 'uk-UA', 'Туреччина'),
 (806, 'ru-RU', 'Туркмения'),
 (806, 'uk-UA', 'Туркменістан'),
-(807, 'ru-RU', 'Тёркс и Кайкос'),
+(807, 'ru-RU', 'Острова Тёркс и Кайкос (Великобритания)'),
 (807, 'uk-UA', 'Острови Теркс і Кайкос (Велика Британія)'),
 (808, 'ru-RU', 'Тувалу'),
 (808, 'uk-UA', 'Тувалу'),
@@ -1763,7 +2099,7 @@ INSERT INTO `language_translate` (`id`, `language`, `translation`) VALUES
 (819, 'uk-UA', 'Британські Віргінські Острови (Велика Британія)'),
 (820, 'ru-RU', 'Виргинские Острова (США)'),
 (820, 'uk-UA', 'Американські Віргінські Острови (США)'),
-(821, 'ru-RU', 'Уоллис и Футуна'),
+(821, 'ru-RU', 'Уоллис и Футуна (Франция)'),
 (821, 'uk-UA', 'Волліс і Футуна (Франція)'),
 (822, 'ru-RU', 'Западная Сахара'),
 (822, 'uk-UA', 'Західна Сахара'),
@@ -1773,8 +2109,8 @@ INSERT INTO `language_translate` (`id`, `language`, `translation`) VALUES
 (824, 'uk-UA', 'Замбія'),
 (825, 'ru-RU', 'Зимбабве'),
 (825, 'uk-UA', 'Зімбабве'),
-(828, 'ru-RU', 'Подтверждение регистрации в "Международной научно-практической конференции"'),
-(828, 'uk-UA', 'Confirmation of registration to \'International Scientific Conference\''),
+(826, 'ru-RU', 'журнал(а)'),
+(826, 'uk-UA', 'журнал(и)'),
 (831, 'ru-RU', 'Слушатель'),
 (831, 'uk-UA', 'Слухач'),
 (832, 'ru-RU', 'Докладчик'),
@@ -1782,36 +2118,269 @@ INSERT INTO `language_translate` (`id`, `language`, `translation`) VALUES
 (833, 'ru-RU', 'Слушатель/Докладчик'),
 (833, 'uk-UA', 'Слухач/Доповідач'),
 (834, 'ru-RU', 'Все участники'),
-(895, 'ru-RU', ''),
-(929, 'ru-RU', 'Integrated Management 2017: Подтверждение регистрации'),
-(929, 'uk-UA', 'Integrated Management 2017: Підтвердження реєстрації'),
-(930, 'ru-RU', 'Здравствуйте, уважаемый {name} мы приглашаем Вас к следующей конференции PM! Это будет 15-го января 2017 года'),
-(930, 'uk-UA', 'Здрастуйте, дорогі {name} ми запрошуємо вас до наступної конференції PM! Це буде 15-го січня 2017 року'),
-(931, 'ru-RU', 'Вы можете пройти регистрацию тут: {regUrl}'),
-(931, 'uk-UA', 'Ви можете зареєструватися тут: {regUrl}'),
-(932, 'ru-RU', 'Уважаемый {name}!'),
-(932, 'uk-UA', 'Шановний {name}!'),
+(834, 'uk-UA', 'Усі учасники'),
+(835, 'ru-RU', 'Раскрыть'),
+(835, 'uk-UA', 'Розкрити'),
+(836, 'ru-RU', 'Свернуть'),
+(836, 'uk-UA', 'Згорнути'),
+(837, 'ru-RU', 'Раскрыть все'),
+(837, 'uk-UA', 'Розкрити усі'),
+(838, 'ru-RU', 'Свернуть все'),
+(838, 'uk-UA', 'Згорнути усі'),
+(839, 'ru-RU', 'Добавить книгу'),
+(839, 'uk-UA', 'Додати книгу'),
+(840, 'ru-RU', 'Список книг'),
+(840, 'uk-UA', 'Список книг'),
+(841, 'ru-RU', 'Загрузить выбранное'),
+(841, 'uk-UA', 'Завантажити вибране'),
+(842, 'ru-RU', 'Библиотека'),
+(842, 'uk-UA', 'Бібліотека'),
+(846, 'ru-RU', 'Resize table columns just like a spreadsheet by dragging the column edges.'),
+(847, 'ru-RU', 'Неверные или плохо редактируемые данные'),
+(847, 'uk-UA', 'Невірні або погано редаговані дані'),
+(850, 'ru-RU', 'экспорт'),
+(850, 'uk-UA', 'експорт'),
+(851, 'ru-RU', 'Данные не найдены'),
+(851, 'uk-UA', 'Дані не знайдено'),
+(852, 'ru-RU', 'Очистить выбор'),
+(852, 'uk-UA', 'Очистити вибір'),
+(853, 'ru-RU', 'Активный'),
+(853, 'uk-UA', 'Активний'),
+(854, 'ru-RU', 'Неактивный'),
+(854, 'uk-UA', 'Неактивний'),
+(855, 'ru-RU', 'Отключите все блокировщики всплывающих окон в вашем браузере, чтобы обеспечить правильную загрузку.'),
+(855, 'uk-UA', 'Вимкніть усі блокувальники спливаючих вікон у вашому браузері, щоб забезпечити правильне завантаження.'),
+(856, 'ru-RU', 'Ok, чтобы продолжить?'),
+(856, 'uk-UA', 'Ok, щоб продовжити?'),
+(857, 'ru-RU', 'Создание файла экспорта. Пожалуйста, подождите...'),
+(857, 'uk-UA', 'Створення файлу експорту. Будь ласка зачекайте...'),
+(858, 'ru-RU', 'Запрос отправлен! Вы можете безопасно закрыть это диалоговое окно после сохранения скачанного файла.'),
+(858, 'uk-UA', 'Запит відправлено! Ви можете безпечно закрити це діалогове вікно після збереження завантаженого файлу.'),
+(859, 'ru-RU', 'Экспорт'),
+(859, 'uk-UA', 'Експорт'),
+(860, 'ru-RU', 'Экспортировать данные страницы'),
+(860, 'uk-UA', 'Експортувати дані сторінки'),
+(861, 'ru-RU', 'Экспортировать все данные'),
+(861, 'uk-UA', 'Експортувати усі дані'),
+(863, 'ru-RU', 'Yii2 Grid Export (PDF)'),
+(863, 'uk-UA', 'Yii2 Grid Export (PDF)'),
+(864, 'ru-RU', 'Созданный'),
+(864, 'uk-UA', 'Створений'),
+(865, 'ru-RU', '© Расширения Krajee Yii2'),
+(865, 'uk-UA', '© Розширення Krajee Yii2'),
+(866, 'ru-RU', 'HTML'),
+(866, 'uk-UA', 'HTML'),
+(868, 'ru-RU', 'Файл экспорта в формате HTML будет создан для скачивания'),
+(868, 'uk-UA', 'Файл експорту в форматі HTML буде створено для скачування'),
+(869, 'ru-RU', 'Язык разметки гипертекста'),
+(869, 'uk-UA', 'Мова розмітки гіпертексту'),
+(870, 'ru-RU', 'CSV'),
+(870, 'uk-UA', 'CSV'),
+(871, 'ru-RU', 'Файл экспорта в формате CSV будет создан для скачивания'),
+(871, 'uk-UA', 'Файл експорту в форматі CSV буде створений для скачування'),
+(872, 'ru-RU', 'Значения, разделенные запятыми'),
+(872, 'uk-UA', 'Значення, розділені комами'),
+(873, 'ru-RU', 'Текст'),
+(873, 'uk-UA', 'Текст'),
+(874, 'ru-RU', 'Файл экспорта в формате TEXT будет создан для скачивания'),
+(874, 'uk-UA', 'Файл експорту в форматі TEXT буде створений для скачування'),
+(875, 'ru-RU', 'Табулированный текст'),
+(875, 'uk-UA', 'Табульований текст'),
+(876, 'ru-RU', 'Excel'),
+(876, 'uk-UA', 'Excel'),
+(877, 'ru-RU', 'Файл экспорта в формате EXCEL будет создан для скачивания'),
+(877, 'uk-UA', 'Файл експорту в форматі EXCEL буде створений для скачування'),
+(878, 'ru-RU', 'Microsoft Excel 95+'),
+(878, 'uk-UA', 'Microsoft Excel 95+'),
+(879, 'ru-RU', 'Экспортировать рабочий лист'),
+(879, 'uk-UA', 'Експортувати робочий лист'),
+(880, 'ru-RU', 'PDF'),
+(880, 'uk-UA', 'PDF'),
+(881, 'ru-RU', 'Файл экспорта в формате PDF будет создан для скачивания'),
+(881, 'uk-UA', 'Файл експорту в форматі PDF буде створений для скачування'),
+(882, 'ru-RU', 'Portable Document Format'),
+(882, 'uk-UA', 'Portable Document Format'),
+(883, 'ru-RU', 'PDF export generated by kartik-v/yii2-grid extension'),
+(883, 'uk-UA', 'PDF export generated by kartik-v/yii2-grid extension'),
+(884, 'ru-RU', 'krajee, grid, export, yii2-grid, pdf'),
+(884, 'uk-UA', 'krajee, grid, export, yii2-grid, pdf'),
+(885, 'ru-RU', 'JSON'),
+(885, 'uk-UA', 'JSON'),
+(886, 'ru-RU', 'Файл экспорта в формате JSON будет создан для скачивания'),
+(886, 'uk-UA', 'Файл експорту в форматі JSON буде створений для скачування'),
+(887, 'ru-RU', 'JavaScript Object Notation'),
+(887, 'uk-UA', 'JavaScript Object Notation'),
+(888, 'ru-RU', 'Всего {totalCount} записей. Вы уверены, что хотите отобразить их всех?'),
+(888, 'uk-UA', 'Всього {total Count} записів. Ви впевнені, що хочете відобразити їх усі?'),
+(889, 'ru-RU', 'Все'),
+(889, 'uk-UA', 'Усі'),
+(890, 'ru-RU', 'Показать все данные'),
+(890, 'uk-UA', 'Показати усі дані'),
+(891, 'ru-RU', 'Страница'),
+(891, 'uk-UA', 'Сторінка'),
+(892, 'ru-RU', 'Показать данные первой страницы'),
+(892, 'uk-UA', 'Показати дані першої сторінки'),
+(893, 'ru-RU', 'Действия'),
+(893, 'uk-UA', 'Дії'),
+(894, 'ru-RU', 'Просмотр'),
+(894, 'uk-UA', 'Перегляд'),
+(895, 'ru-RU', 'Обновить'),
+(895, 'uk-UA', 'Оновити'),
+(896, 'ru-RU', 'Удалить'),
+(896, 'uk-UA', 'Видалити'),
+(897, 'ru-RU', 'Вы уверены, что хотите удалить этот элемент?'),
+(897, 'uk-UA', 'Ви впевнені, що хочете видалити цей елемент?'),
+(898, 'ru-RU', 'Выберите столбцы'),
+(898, 'uk-UA', 'Виберіть стовпці'),
+(899, 'ru-RU', 'Выберите столбцы для экспорта'),
+(899, 'uk-UA', 'Виберіть стовпці для експорту'),
+(900, 'ru-RU', 'Столбец'),
+(900, 'uk-UA', 'Стовпець'),
+(902, 'ru-RU', 'HTML'),
+(902, 'uk-UA', 'HTML'),
+(903, 'ru-RU', 'Язык разметки гипертекста'),
+(903, 'uk-UA', 'Мова розмітки гіпертексту'),
+(904, 'ru-RU', 'Файл экспорта в формате HTML будет создан для скачивания'),
+(904, 'uk-UA', 'Файл експорту в форматі HTML буде створено для скачування'),
+(905, 'ru-RU', 'CSV'),
+(905, 'uk-UA', 'CSV'),
+(906, 'ru-RU', 'Значения, разделенные запятыми'),
+(906, 'uk-UA', 'Значення, розділені комами'),
+(907, 'ru-RU', 'Файл экспорта в формате CSV будет создан для скачивания'),
+(907, 'uk-UA', 'Файл експорту в форматі CSV буде створений для скачування'),
+(908, 'ru-RU', 'Текст'),
+(908, 'uk-UA', 'Текст'),
+(909, 'ru-RU', 'Табулированный текст'),
+(909, 'uk-UA', 'Табульований текст'),
+(910, 'ru-RU', 'Файл экспорта в формате TEXT будет создан для скачивания'),
+(910, 'uk-UA', 'Файл експорту в форматі TEXT буде створений для скачування'),
+(911, 'ru-RU', 'PDF'),
+(911, 'uk-UA', 'PDF'),
+(912, 'ru-RU', 'Portable Document Format'),
+(912, 'uk-UA', 'Portable Document Format'),
+(913, 'ru-RU', 'Файл экспорта в формате PDF будет создан для скачивания'),
+(913, 'uk-UA', 'Файл експорту в форматі PDF буде створений для скачування'),
+(914, 'ru-RU', 'Excel 95 +'),
+(914, 'uk-UA', 'Excel 95 +'),
+(915, 'ru-RU', 'Microsoft Excel 95+ (xls)'),
+(915, 'uk-UA', 'Microsoft Excel 95+ (xls)'),
+(916, 'ru-RU', 'Файл экспорта в формате EXCEL 95+ (xls) будет создан для скачивания'),
+(916, 'uk-UA', 'Файл експорту в форматі EXCEL 95+ (xls) буде створений для скачування'),
+(917, 'ru-RU', 'Excel 2007+'),
+(917, 'uk-UA', 'Excel 2007+'),
+(918, 'ru-RU', 'Microsoft Excel 2007+ (xlsx)'),
+(918, 'uk-UA', 'Microsoft Excel 2007+ (xlsx)'),
+(919, 'ru-RU', 'Файл экспорта в формате EXCEL 2007+ (xlsx) будет создан для скачивания'),
+(919, 'uk-UA', 'Файл експорту в форматі EXCEL 2007+ (xlsx) буде створений для скачування'),
+(920, 'ru-RU', 'Отключите все блокировщики всплывающих окон в вашем браузере, чтобы обеспечить правильную загрузку.'),
+(920, 'uk-UA', 'Вимкніть усі блокувальники спливаючих вікон у вашому браузері, щоб забезпечити правильне завантаження.'),
+(921, 'ru-RU', 'Ok, чтобы продолжить?'),
+(921, 'uk-UA', 'Ok, щоб продовжити?'),
+(922, 'ru-RU', 'Создание файла экспорта. Пожалуйста, подождите...'),
+(922, 'uk-UA', 'Создание файла экспорта. Пожалуйста, подождите...'),
+(923, 'ru-RU', 'Запрос отправлен! Вы можете безопасно закрыть это диалоговое окно после сохранения скачанного файла.'),
+(923, 'uk-UA', 'Створення файлу експорту. Будь ласка зачекайте...'),
+(924, 'ru-RU', 'Экспорт данных в выбранном формате'),
+(924, 'uk-UA', 'Експорт даних в обраному форматі'),
+(926, 'ru-RU', 'Экспортированный файл'),
+(926, 'uk-UA', 'Експортований файл'),
+(927, 'ru-RU', 'Скачать экспортированный файл'),
+(927, 'uk-UA', 'Завантажити експортований файл'),
+(928, 'ru-RU', 'Переключить все'),
+(928, 'uk-UA', 'Переключити усі'),
+(932, 'ru-RU', 'Уважаемый(ая) {name}!'),
+(932, 'uk-UA', 'Шановний(а) {name}!'),
 (933, 'ru-RU', 'Благодарим Вас за проявленный интерес к нашей конференции Integrated Management 2017. Ваша регистрация прошла успешно, и Вы были внесены в список участников. При регистрации Вами были указаны следующие персональные данные:'),
-(933, 'uk-UA', 'Дякуємо Вам за проявлений інтерес до нашої конференції Integrated Management 2017. Ваша реєстрація пройшла успішно, і Ви були внесені в список учасників. При реєстрації Вами були вказані такі персональні дані:'),
+(933, 'uk-UA', 'Дякуємо Вам за проявлений інтерес до нашої конференції Integrated Management 2017. Ваша реєстрація пройшла успішно, і Ви були внесені в список учасників. При реєстрації Вами були вказані наступні персональні дані:'),
 (934, 'ru-RU', 'Если Вы хотите изменить какие-либо из персональных данных (в особенности имя и фамилию для сертификата), сообщите нам об этом, отправив письмо на электронный адрес pm.khpi@gmail.com. Пожалуйста, не осуществляйте повторной регистрации на сайте!'),
 (934, 'uk-UA', 'Якщо Ви хочете змінити будь-які з персональних даних (особливо ім\'я і прізвище для сертифіката), повідомте нам про це, надіславши електронного листа на електронну адресу pm.khpi@gmail.com. Будь ласка, не здійснюйте повторної реєстрації на сайті!'),
 (935, 'ru-RU', 'Напоминаем, что\n<ul>\n<li>крайний срок для оплаты оргвзноса – 31 января 2017 г. </li>\n<li>крайний срок для подачи статей к публикации – 25 ноября 2016 г</li>\n</ul>	\nПри ранней оплате предоставляется скидка. Подробнее на http://conf.pm-edu.org/ru/participation.'),
-(935, 'uk-UA', 'Нагадуємо, що\n<ul>\n<li>крайній термін для сплати організаційного внеску – 31 січня 2017 р.</li>\n<li>крайній термін для подачі статей до публікації – 25 листопада 2016 р.</li>\n</ul>	\nПри ранній оплаті надається знижка. Детальніше на http://conf.pm-edu.org/ua/participation.'),
+(935, 'uk-UA', 'Нагадуємо, що\n<ul>\n<li>крайній термін для сплати організаційного внеску – 20 січня 2017 р.</li>\n<li>крайній термін для подачі статей до публікації – 10 грудня 2016 р.</li>\n</ul>	\nПри ранній оплаті надається знижка. Детальніше на https://conf.pm-edu.org/uk/conditions.'),
 (936, 'ru-RU', 'Если у Вас возникнут какие-либо вопросы, свяжитесь с нами любым удобным для Вас способом, и мы с радостью поможем Вам. Все доступные способы для связи представлены на странице контактов сайта конференции (http://conf.pm-edu.org/ru/contacts).'),
-(936, 'uk-UA', 'Якщо у Вас виникнуть будь-які питання, зв\'яжіться з нами будь-яким зручним для Вас способом, і ми з радістю допоможемо Вам. Всі доступні способи для зв\'язку представлені на сторінці контактів сайту конференції (http://conf.pm-edu.org/ua/contacts).'),
+(936, 'uk-UA', 'Якщо у Вас виникнуть будь-які питання, зв\'яжіться з нами будь-яким зручним для Вас способом, і ми з радістю допоможемо Вам. Всі доступні способи для зв\'язку представлені на сторінці контактів сайту конференції (https://conf.pm-edu.org/uk/contact-us).'),
 (937, 'ru-RU', 'С уважением,<br>организационный комитет конференции'),
 (937, 'uk-UA', 'З повагою,<br>організаційний комітет конференції'),
-(938, 'ru-RU', 'Уважаемый {name,} благодарим Вас за участие в конференции.'),
-(938, 'uk-UA', 'Шановний {name} дякуємо Вам за участь в конференції'),
+(939, 'ru-RU', 'UAH'),
+(939, 'uk-UA', 'UAH'),
+(940, 'ru-RU', 'USD'),
+(940, 'uk-UA', 'USD'),
+(941, 'ru-RU', 'RUB'),
+(941, 'uk-UA', 'RUB'),
 (942, 'ru-RU', 'Оргвзнос'),
-(943, 'ru-RU', 'Все оргвзносы');
+(942, 'uk-UA', 'Оргвнесок'),
+(943, 'ru-RU', 'Все оргвзносы'),
+(943, 'uk-UA', 'Усі оргвнески'),
+(944, 'ru-RU', 'Регистрация'),
+(944, 'uk-UA', 'Реєстрація'),
+(945, 'en-US', 'Participation fee <br>100 USD'),
+(945, 'ru-RU', 'Стоимость участия <br>450 грн'),
+(945, 'uk-UA', 'Вартість участі <br> 450 грн'),
+(947, 'ru-RU', 'Главная'),
+(947, 'uk-UA', 'Головна'),
+(948, 'ru-RU', 'О нас'),
+(948, 'uk-UA', 'Про нас'),
+(950, 'ru-RU', 'Спикеры'),
+(950, 'uk-UA', 'Спікери'),
+(951, 'ru-RU', 'Условия'),
+(951, 'uk-UA', 'Умови'),
+(952, 'ru-RU', 'Программа'),
+(952, 'uk-UA', 'Програма'),
+(953, 'ru-RU', 'Подача статей'),
+(953, 'uk-UA', 'Подання статей'),
+(954, 'ru-RU', 'Контакты'),
+(954, 'uk-UA', 'Контакти'),
+(955, 'ru-RU', 'Архив'),
+(955, 'uk-UA', 'Архів'),
+(956, 'ru-RU', 'Периоды конференций'),
+(956, 'uk-UA', 'Періоди конференцій'),
+(957, 'ru-RU', 'Место'),
+(957, 'uk-UA', 'Місце'),
+(958, 'ru-RU', 'Уважаемый(ая) {name}!'),
+(958, 'uk-UA', 'Шановний(a) {name}!'),
+(959, 'ru-RU', '<p>Приглашаем Вас принять участие в работе VIII Международной научно-практической конференции «Интегрированное\n    стратегической управление, управление портфелями, программами, проектами», которая состоится с 14 по 16 февраля 2017 года в пгт. Славское Львовской области в отеле «Жемчужина Карпат».</p>\n\n<p>Организатором конференции является Национальный технический университет «Харьковский политехнический институт» при поддержке Украинской ассоциации управления проектами «УКРНЕТ», Львовского национального аграрного университета и\n    Харьковского национального университета городского хозяйства имени А.Н. Бекетова.</p>\n\n<p>Целью конференции является обсуждение новых идей в области стратегического управления, управления портфелями,\n    программами, проектами.</p>\n\n<p>Работа конференции будет проводиться по следующим трём направлениям:</p>\n<ul>\n    <li>Интеграция стратегического управления, управления портфелями, программами, проектами: модели, методы и\n        технологии\n    </li>\n    <li>Управление ІТ проектами</li>\n    <li>Применение эффективных технологий управления на практике</li>\n</ul>\n<p>Основные рабочие языки конференции: украинский, русский и английский.</p>\n\n<p>С более детальной информацией об ожидаемых докладчиках, условиях участия, ключевых датах, месте проведения,\n    требованиях к публикации статей вы можете ознакомиться на официальном сайте конференции по адресу\n   {homeUrl}.</p>\n\n<b>С уважением,<br> организационный комитет конференции </b>'),
+(959, 'uk-UA', '<p>Запрошуємо Вас прийняти участь в роботі VIII Міжнародної науково-практичної конференції «Інтегроване стратегічної\n    управління, управління портфелями, програмами, проектами», яка відбудеться з 14 по 16 лютого 2017 року в смт.\n    Славське Львівської області в готелі «Перлина Карпат».</p>\n\n<p>Організатором конференції є Національний технічний університет «Харківський політехнічний інститут» за підтримки\n    Української асоціації управління проектами «УКРНЕТ», Львівського національного аграрного університету та\n    Харківського національного університету міського господарства імені О.М. Бекетова.</p>\n\n<p>Метою конференції є обговорення нових ідей в області стратегічного управління, управління портфелями, програмами,\n    проектами.</p>\n\n<p>Робота конференції буде проводитися за наступними трьома напрямками:</p>\n<ul>\n    <li>Інтеграція стратегічного управління, управління портфелями, програмами, проектами: моделі, методи і технології\n    </li>\n    <li>Управління ІТ проектами</li>\n    <li>Застосування ефективних технологій управління на практиці</li>\n</ul>\n\n<p>Основні робочі мови конференції: українська, російська та англійська.</p>\n\n<p>З більш детальною інформацією про очікуваних доповідачів, умови участі, ключові дати, місце проведення, вимоги до\n    публікації статей ви можете ознайомитися на офіційному сайті конференції за адресою {homeUrl} .</p>\n\n<b>З повагою,<br> організаційний комітет конференції</b>'),
+(960, 'ru-RU', 'Уважаемый(ая) {name}!'),
+(960, 'uk-UA', 'Шановний(a) {name}!'),
+(961, 'en-US', '<p>On behalf of the organizing and program committee of the conference we would like to thank you for your\n        participation and hope to see you at the conference next year.</p>\n\n    <p> We are pleased to announce that the electronic version of published papers, presentations of reports and photos\n        from the event are available on the conference website in the "Archive" on the following link\n       {url}.\n    </p>\n\n    <p> We also ask you to take a few minutes and fill in the following questionnaire http://goo.gl/forms/o17j29MU8i.\n        This will help make the conference next year even better.\n    </p>\n    <b>Sincerely,<br>the organizing and program committee of the conference</b>'),
+(961, 'ru-RU', '<p>От имени организационного и программного комитета конференции благодарим Вас за участие и надеемся увидеть Вас на\n    конференции в следующем году.</p>\n\n<p>С радостью сообщаем, что электронная версия опубликованных статей, презентации докладов, а также фотографии с\n    мероприятия уже доступны на сайте конференции в разделе "Архив" по следующей ссылке\n    {url}</p>\n\n<p>Также просим Вас уделить несколько минут и заполнить следующую анкету http://goo.gl/forms/o17j29MU8i. Это поможет\n    сделать конференцию следующего года еще лучше.</p>\n\n<b>С уважением, <br> организационный и программный комитет конференции</b>'),
+(961, 'uk-UA', '<p>Від імені організаційного та програмного комітету конференції дякуємо Вам за участь і сподіваємося побачити Вас на\n    конференції в наступному році.</p>\n\n<p>З радістю повідомляємо, що електронна версія опублікованих статей, презентації доповідей, а також фотографії з заходу\n    вже доступні на сайті конференції в розділі "Архів" за наступним посиланням {url}.</p>\n\n<p>Також просимо Вас приділити кілька хвилин і заповнити наступну анкету http://goo.gl/forms/o17j29MU8i. Це допоможе\n    зробити конференцію наступного року ще краще.</p>\n\n<b>З повагою,<br>організаційний і програмний комітет конференції</b>'),
+(962, 'ru-RU', 'Войти'),
+(962, 'uk-UA', 'Увійти'),
+(963, 'ru-RU', 'Выйти ({name})'),
+(963, 'uk-UA', 'Вийти ({name})'),
+(964, 'ru-RU', 'Или вы можете:'),
+(964, 'uk-UA', 'Або ви можете:'),
+(965, 'ru-RU', 'Сброс пароля'),
+(965, 'uk-UA', 'Скидання пароля'),
+(966, 'ru-RU', 'Войти'),
+(966, 'uk-UA', 'Увійти');
+INSERT INTO `language_translate` (`id`, `language`, `translation`) VALUES
+(967, 'ru-RU', 'Пожалуйста, заполните следующие поля для входа:'),
+(967, 'uk-UA', 'Будь ласка, заповніть наступні поля для входу:'),
+(968, 'ru-RU', 'EN'),
+(968, 'uk-UA', 'EN'),
+(969, 'ru-RU', 'UA'),
+(969, 'uk-UA', 'UA'),
+(970, 'ru-RU', 'RU'),
+(970, 'uk-UA', 'RU'),
+(971, 'ru-RU', 'Integrated Management 2017: Подтверждение регистрации'),
+(971, 'uk-UA', 'Integrated Management 2017: Підтвердження реєстрації'),
+(972, 'ru-RU', 'Кафедра стратегического управления НТУ "ХПИ". Все права защищены &copy; {year} Харьков, Украина'),
+(972, 'uk-UA', 'Кафедра стратегічного управління НТУ "ХПІ". Усі права захищені © {year} Харків, Україна'),
+(973, 'ru-RU', 'Пожалуйста, дайте согласие на обработку персональных данных'),
+(973, 'uk-UA', 'Будь ласка, прийміть правила про обробці ваших особистих даних'),
+(974, 'ru-RU', 'Я даю свое согласие на обработку введеных мною персональных данных'),
+(974, 'uk-UA', 'Я даю свою згоду на обробку введених мною персональних даних'),
+(976, 'en-US', 'Participation fee <br>100 USD'),
+(976, 'ru-RU', 'Стоимость участия <br>400 грн'),
+(976, 'uk-UA', 'Вартість участі <br>400 грн');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `member`
+-- Структура таблицы `member`
 --
--- Creation: Apr 24, 2016 at 05:50 PM
+-- Создание: Ноя 21 2016 г., 00:07
 --
 
 DROP TABLE IF EXISTS `member`;
@@ -1841,197 +2410,623 @@ CREATE TABLE `member` (
   `created_at` int(11) DEFAULT NULL,
   `updated_at` int(11) DEFAULT NULL,
   `paid` int(11) DEFAULT NULL,
-  `noteFromAdmin` varchar(5000) DEFAULT NULL
+  `noteFromAdmin` varchar(5000) DEFAULT NULL,
+  `inviteSentAt` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `member`
+-- Дамп данных таблицы `member`
 --
 
-INSERT INTO `member` (`id`, `name`, `nameEng`, `country`, `position`, `phone`, `email`, `interest`, `scienceDegree`, `scienceTitle`, `organisationTitle`, `organisationDepartment`, `organisationAddress`, `organisationActivity`, `organisationUrl`, `participationType`, `topicTitle`, `topicLanguage`, `topicSection`, `totalSum`, `currency`, `papersCount`, `created_at`, `updated_at`, `paid`, `noteFromAdmin`) VALUES
-(19, 'Бабич Ігор Ігоревич', 'Igor Babych', 'ua', 'Асистент', '+380956860510', 'babych.igor.i@gmail.com', 'Управління проектами, імітаційне моделювання', 'no_degree', 'no_rank', 'Національний технічний університет "Харківський політехнічний інститут"', 'Кафедра стратегічного управління', 'вул. Фрунзе, 21, Харків, Україна, 61002', 'science', 'http://www.kpi.kharkov.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463467298, 1463664331, 0, ''),
-(20, 'Лобач Олена Володимирівна', 'Helena Lobach', 'ua', 'Доцент', '+380509846979', 'e.v.lobach@gmail.com', 'Управління проектами і програмами', 'ph_d_tech', 'docent', 'Національний технічний університет "Харківський політехнічний інститут"', 'Кафедра стратегічного управління', 'вул. Фрунзе, 21, Харків, Україна, 61002', 'science', 'http://www.kpi.kharkov.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463467540, 1463664348, 0, ''),
-(21, 'Роговий Антон Іванович', 'Anton Rogoviy', 'ua', 'Доцент', '+380675424242', 'rogoviy@ukr.net', 'Управління проектами, маркетинг', 'ph_d_tech', 'docent', 'Національний технічний університет "Харківський політехнічний інститут"', 'Кафедра стратегічного управління', 'вул. Фрунзе, 21, Харків, Україна, 61002', 'science', 'http://www.kpi.kharkov.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463467741, 1463664364, 0, ''),
-(22, 'Ігуменцева Наталія Володимирівна', 'Natalia Igumentseva', 'ua', 'Доцент', '+380672990614', 'izumnv@i.ua', 'Соціальне прогнозування', 'ph_d_econ', 'docent', 'Харківський національний університет радіоелектроніки', 'Кафедра економічної кібернетики і управління економічною безпекою', 'пр-т Науки, 14, Харків. Україна, 61166', 'science', 'http://nure.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463489553, 1464165498, 1, ''),
-(23, 'Гуца Олег Миколайович', 'Oleg Gutsa', 'ua', 'Доцент', '+380503007762', 'gutsabox@gmail.com', 'Процесний підхід до управління, бізнес-процеси, регламенти', 'ph_d_tech', 'docent', 'Харківський національний університет радіоелектроніки', 'Кафедра економічної кібернетики і управління економічною безпекою', 'пр-т Науки, 14, Харків. Україна, 61166', 'science', 'http://nure.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463490019, 1464165509, 1, ''),
-(24, 'Довгопол Ніна Василівна', 'Nina Dovgopol', 'ua', 'Доцент', '+380952234442', 'n.dovgopol@mail.ru', 'Оптимізація бізнес-процесів в бухгалтерському обліку', 'ph_d_econ', 'docent', 'Харківський національний університет радіоелектроніки', 'Кафедра економічної кібернетики і управління економічною безпекою', 'пр-т Науки, 14, Харків. Україна, 61166', 'science', 'http://nure.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463490199, 1464165519, 1, ''),
-(25, 'Кононенко Ігор Володимирович', 'Igor Kononenko', 'ua', 'Завідувач кафедри стратегічного управління', '+380505142016', 'igorvkononenko@gmail.com', 'Інтегроване стратегічне управління, управління портфелями, програмами, проектами', 'ph_d_tech', 'prof', 'Національний технічний університет "Харківський політехнічний інститут"', 'Кафедра стратегічного управління', 'вул. Фрунзе, 21, Харків, Україна, 61002', 'science', 'http://www.kpi.kharkov.ua/', 'speaker', 'Модель и метод синтеза методологии управления проектом при нечетких исходных данных', '2', '0', 350, 'uah', 0, 1463490634, 1463664381, 0, ''),
-(26, 'Овсюченко Юрій Вікторович', 'Yuriy Ovsyuchenko', 'ua', 'Доцент', '+380501716175', 'ovsyuchenko64@mail.ru', 'Управління бізнес-процесами', 'ph_d_econ', 'docent', 'Харківський національний університет радіоелектроніки', 'Кафедра економічної кібернетики і управління економічною безпекою', 'пр-т Науки, 14, Харків. Україна, 61166', 'science', 'http://nure.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463490931, 1464165530, 1, ''),
-(27, 'Пересада Олена Василівна', 'Olena Peresada', 'ua', 'Старший викладач', '+380501330080', 'alexeyperesada@gmail.com', 'Міжнародна економіка, історія економічних вчень', 'no_degree', 'no_rank', 'Харківський національний університет радіоелектроніки', 'Кафедра економічної кібернетики і управління економічною безпекою', 'пр-т Науки, 14, Харків. Україна, 61166', 'science', 'http://nure.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463491718, 1464165539, 1, ''),
-(28, 'Прібильнова Інна Борисівна', 'Inna Pribylnova', 'ua', 'Старший викладач', '+380930551830', 'inessa_@list.ru', 'Інформаційний бізнес, моделювання бізнес-процесів', 'no_degree', 'no_rank', 'Харківський національний університет радіоелектроніки', 'Кафедра економічної кібернетики і управління економічною безпекою', 'пр-т Науки, 14, Харків. Україна, 61166', 'science', 'http://nure.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463492059, 1464165549, 1, ''),
-(29, 'Тімофєєв Володимир Олександрович', 'Volodymyr Timofeev', 'ua', 'Завідувач кафедри економічної кібернетики і управління економічною безпекою', '+380577021490', 'kafedra_eim@kture.kharkov.ua', 'Економічна кібернетика, управління економічною безпекою', 'd_sc_tech', 'prof', 'Харківський національний університет радіоелектроніки', 'Кафедра економічної кібернетики і управління економічною безпекою', 'пр-т Науки, 14, Харків. Україна, 61166', 'science', 'http://nure.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463492337, 1464165560, 0, ''),
-(30, 'Харазій Анна Володимирівна', 'Anna Haraziy', 'ua', 'Асистент', '+380506153212', 'haraziy@rambler.ru', 'Управління проектами і програмами', 'ph_d_tech', 'no_rank', 'Національний технічний університет "Харківський політехнічний інститут"', 'Кафедра стратегічного управління', 'вул. Фрунзе, 21, Харків, Україна, 61002', 'science', 'http://www.kpi.kharkov.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463492520, 1463664398, 0, ''),
-(31, 'Чайкова Олена Ігорівна', 'Olena Chaykova', 'ua', 'Доцент', '+380577076161', 'chaykovalena@gmail.com', 'Менеджмент, маркетинг', 'ph_d_econ', 'docent', 'Національний технічний університет "Харківський політехнічний інститут"', 'Кафедра менеджменту зовнішньоекономічної діяльності та фінансів', 'вул. Фрунзе, 21, Харків, Україна, 61002', 'science', 'http://www.kpi.kharkov.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463492725, 1463664424, 0, ''),
-(32, 'Андрієвська Віра Олександрівна', 'Vira Andrievska', 'ua', 'Старший викладач', '+380634770060', 'andri-vera@ukr.net', 'Управління проектами та програмами ', 'no_degree', 'no_rank', 'Одеський національний морський університет', 'Кафедра "Системний аналіз та логістика"', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463516836, 1464020656, 1, ''),
-(33, 'Берневек Тетяна Іванівна', 'Tatyana Bernevek', 'ua', 'Асистент', '+380482341192', 'bernevek-g@mail.ru', 'Управління проектами', 'no_degree', 'no_rank', 'Одеський національний морський університет', 'Кафедра "Морські перевезення"', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463517110, 1464020753, 1, ''),
-(34, 'Бондар Алла Віталіївна', 'Alla Bondar', 'ua', 'Доцент', '+380684030010', 'ocheretyanka@rambler.ru', 'Управління проектами на транспорті', 'ph_d_tech', 'docent', 'Одеський національний морський університет', 'Кафедра "Системний аналіз та логістика"', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463517303, 1464020774, 1, ''),
-(35, 'Гловацька Світлана Миколаївна', 'Svitlana Glovatska', 'ua', 'Начальник відділу міжнародних зв\'язків', '+380677584958', 'snglov@gmail.com', 'Управління проектами міжнародної діяльності ВНЗ, управління іміджем ВНЗ', 'no_degree', 'no_rank', 'Одеський національний морський університет', 'Відділ міжнародних зв\'язків', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463517590, 1464020896, 1, ''),
-(36, 'Ковтун Тетяна Антонівна', 'Tatyana Kovtun', 'ua', 'Доцент', '+380679212974', 'tandem@gcn.net', 'Управління проектами, управління ризиками, логістичний менеджмент', 'ph_d_tech', 'docent', 'Одеський національний морський університет', 'Кафедра "Системний аналіз та логістика"', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463517890, 1464021059, 1, ''),
-(37, 'Пітерська Варвара Михайлівна', 'Varvara Piterskaya', 'ua', 'Доцент', '+380675592377', 'varuwa@ukr.net', 'Управління проектами, проектування інноваційних систем', 'ph_d_tech', 'docent', 'Одеський національний морський університет', 'Кафедра "Комерційне забезпечення транспортних процесів"', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463518180, 1464021294, 1, ''),
-(38, 'Ходікова Інна Володимирівна', 'Inna Hodikova', 'ua', 'Старший викладач', '+380677681841', 'xodikowa@rambler.ru', 'Формування та управління командою проекту', 'no_degree', 'no_rank', 'Одеський національний морський університет', 'Кафедра "Системний аналіз та логістика"', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463518643, 1464021554, 1, ''),
-(39, 'Богославець Аліна Олександрівна', 'Alina Bogoslavets', 'ua', 'Асистент', '+380933521760', 'alinalinal@gmail.com', 'Управління IT-проектами', 'no_degree', 'no_rank', 'Харківський національний університет міського господарства імені О.М. Бекетова', 'Кафедра управління проектами в міському господарстві і будівництві', 'вул. Маршала Бажанова, 17, Харків, Україна, 61002', 'science', 'http://www.kname.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463641574, 1463641574, 0, NULL),
-(40, 'Гусєва Юлія Юріївна', 'Yulia Guseva', 'ua', 'Доцент', '+30668095322', 'yulia.y.guseva@gmail.com', 'Управління проектами', 'ph_d_tech', 'docent', 'Харківський національний університет міського господарства імені О.М. Бекетова', 'Кафедра управління проектами в міському господарстві і будівництві', 'вул. Маршала Бажанова, 17, Харків, Україна, 61002', 'science', 'http://www.kname.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463641801, 1464020930, 1, ''),
-(41, 'Давідіч Наталія Василівна', 'Natalia Davidich', 'ua', 'Аспірант', '+380502285361', 'shamanwelkax@mail.ru', 'Управління проектами', 'no_degree', 'no_rank', 'Харківський національний університет міського господарства імені О.М. Бекетова', 'Кафедра управління проектами в міському господарстві і будівництві', 'вул. Маршала Бажанова, 17, Харків, Україна, 61002', 'science', 'http://www.kname.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463641953, 1463641967, 0, ''),
-(42, 'Кадикова Ірина Миколаївна', 'Irina Kadykova', 'ua', 'Доцент', '+380505668449', 'irina.kadykova@gmail.com', 'Управління соціальними проектами', 'ph_d_econ', 'docent', 'Харківський національний університет міського господарства імені О.М. Бекетова', 'Кафедра управління проектами в міському господарстві і будівництві', 'вул. Маршала Бажанова, 17, Харків, Україна, 61002', 'science', 'http://www.kname.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463642162, 1464021019, 1, ''),
-(43, 'Старостіна Альона Юріївна', 'Alena Starostina', 'ua', 'Асистент', '+380990532900', 'starostina-2010@yandex.ua', 'Управління програмами', 'no_degree', 'no_rank', 'Харківський національний університет міського господарства імені О.М. Бекетова', 'Кафедра управління проектами в міському господарстві і будівництві', 'вул. Маршала Бажанова, 17, Харків, Україна, 61002', 'science', 'http://www.kname.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463642636, 1463642636, 0, NULL),
-(44, 'Сухонос Марія Костянтинівна', 'Maria Sukhonos', 'ua', 'Професор', '+380506362409', 'sukhonos.maria@mail.ru', 'Управлівння програмами і портфелями проектів', 'd_sc_tech', 'prof', 'Харківський національний університет міського господарства імені О.М. Бекетова', 'Кафедра управління проектами в міському господарстві і будівництві', 'вул. Маршала Бажанова, 17, Харків, Україна, 61002', 'science', 'http://www.kname.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463642796, 1463642796, 0, NULL),
-(45, 'Чумаченко Ігор Володимирович', 'Igor Chumachenko', 'ua', 'Завідувач кафедри управління проектами в міському господарстві і будівництві', '+380675708066', 'ivchumachenko@gmail.com', 'Управління проектами і програмами', 'd_sc_tech', 'prof', 'Харківський національний університет міського господарства імені О.М. Бекетова', 'Кафедра управління проектами в міському господарстві і будівництві', 'вул. Маршала Бажанова, 17, Харків, Україна, 61002', 'science', 'http://www.kname.edu.ua/', 'speaker', 'Управление заинтересованными сторонами образовательных проектов', '2', '0', 350, 'uah', 0, 1463643196, 1463643196, 0, NULL),
-(46, 'Колесніков Олексій Євгенович', 'Oleksii Kolesnikov', 'ua', 'Доцент', '+380972196167', 'akoles78@gmail.com', 'Інформаційні технології в управлінні проектами, дистанційна освіта', 'ph_d_tech', 'docent', 'Одеський національний політехнічний університет', 'Кафедра управління системами безпеки життєдіяльності ', 'пр-т Шевченка, 1, Одеса, Україна, 65044', 'science', 'http://opu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463644740, 1464158300, 0, ''),
-(47, 'Колеснікова Катерина Вікторівна', 'Kateryna Kolesnikova', 'ua', 'Професор', '+380677023294', 'amberk4@gmail.com', 'Інформаційні технології в управлінні проектами', 'd_sc_tech', 'prof', 'Одеський національний політехнічний університет', 'Кафедра інформаційних технологій проектування в машинобудуванні', 'пр-т Шевченка, 1, Одеса, Україна, 65044', 'science', 'http://opu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463645062, 1464021072, 1, ''),
-(48, 'Васильєва Валентина Юліївна', 'Valentyna Vasilieva', 'ua', 'Провідний фахівець', '+380664190222', 'v.y.vasileva@mail.ru', 'Управління проектами', 'no_degree', 'no_rank', 'Одеський національний політехнічний університет', 'Відділ маркетингу та інноваційної політики', 'пр-т Шевченка, 1, Одеса, Україна, 65044', 'science', 'http://opu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463645314, 1464020827, 1, ''),
-(49, 'Гогунський Віктор Дмитрович', 'Viktor Gogunsky', 'ua', 'Завідувач кафедри управління системами безпеки життєдіяльності', '+380677097930', 'vgog@i.ua', 'Управління проектами, моделювання', 'd_sc_tech', 'prof', 'Одеський національний політехнічний університет', 'Кафедра управління системами безпеки життєдіяльності ', 'пр-т Шевченка, 1, Одеса, Україна, 65044', 'science', 'http://opu.ua/', 'speaker', 'Общие механизмы формирования системы цитирования научных статей', '2', '0', 350, 'uah', 0, 1463645621, 1464158190, 0, ''),
-(50, 'Олех Тетяна Мефодіївна', 'Tatyana Olekh', 'ua', 'Доцент', '+380503910078', 'olekhta@gmail.com', 'Моделі та методи управління проектами та програмами', 'ph_d_tech', 'docent', 'Одеський національний політехнічний університет', 'Кафедра вищої математики та моделювання систем', 'пр-т Шевченка, 1, Одеса, Україна, 65044', 'science', 'http://opu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463645840, 1464021280, 1, ''),
-(51, 'Тимочко Василь Олегович', 'Vasiliy Tymochko', 'ua', 'Завідувач кафедри управління проектами та безпеки виробництва', '+380672949183', 'tymochko_vo@mail.ru', 'Управління портфелями проектів аграрного виробництва', 'ph_d_tech', 'docent', 'Львівський національний аграрний університет', 'Кафедра управління проектами та безпеки виробництва', 'вул. Володимира Великого, 1, м. Дубляни,  Жовківський район, Львівська область, Україна, 80381', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463646786, 1463646786, 0, NULL),
-(52, 'Тригуба Анатолій Миколайович', 'Anatoly Tryguba', 'ua', 'Доцент', '+380680506725', 'trianamik@mail.ru', 'Управління інтегрованими програмами', 'ph_d_tech', 'docent', 'Львівський національний аграрний університет', 'Кафедра управління проектами та безпеки виробництва', 'вул. Володимира Великого, 1, м. Дубляни,  Жовківський район, Львівська область, Україна, 80381', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463646963, 1464021499, 1, ''),
-(53, 'Шолудько Петро Васильович', 'Petro Sholudko', 'ua', 'Доцент', '+380678012411', 'p.ivankiv@gmail.com', 'Планування проектів', 'ph_d_tech', 'docent', 'Львівський національний аграрний університет', 'Кафедра експлуатації та технічного сервісу машин', 'вул. Володимира Великого, 1, м. Дубляни,  Жовківський район, Львівська область, Україна, 80381', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463647100, 1464022322, 1, ''),
-(54, 'Сидорчук  Леонід  Леонідович', 'Leonid Sydorchuk', 'ua', 'Асистент', '+380972359530', 'leonsidor@mail.ru', 'Управління проектами', 'ph_d_tech', 'no_rank', 'Львівський національний аграрний університет', 'Кафедра управління проектами та безпеки виробництва', 'вул. Володимира Великого, 1, м. Дубляни,  Жовківський район, Львівська область, Україна, 80381', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463647236, 1464022303, 1, ''),
-(55, 'Боярчук Олег Віталійович', 'Oleg Boyarchuk', 'ua', 'Старший викладач', '+380673400929', 'boyarchuko@mail.ua', 'Управління проектами аграрного виробництва', 'no_degree', 'no_rank', 'Львівський національний аграрний університет', 'Кафедра управління проектами та безпеки виробництва', 'вул. Володимира Великого, 1, м. Дубляни,  Жовківський район, Львівська область, Україна, 80381', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463647369, 1464022338, 1, ''),
-(56, 'Говда Оксана Ігорівна', 'Oksana Govda', 'ua', 'Старший викладач', '+3803202242942', 'oksana.govda@gmail.com', 'Математичні методи і моделі управління проектами', 'no_degree', 'no_rank', 'Львівський національний аграрний університет', 'Кафедра вищої математики', 'вул. Володимира Великого, 1, м. Дубляни,  Жовківський район, Львівська область, Україна, 80381', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463647990, 1464020909, 1, ''),
-(57, 'Ковальчик Юрій Іванович', 'Yuriy Kovalchyk', 'ua', 'Завідувач кафедри вищої математики', '+3803202242942', 'yurij.kovalchyk@gmail.com', 'Математичне моделювання,  континуальне інтегрування, теорія тертя і зношування', 'd_sc_math', 'prof', 'Львівський національний аграрний університет', 'Кафедра вищої математики', 'вул. Володимира Великого, 1, м. Дубляни,  Жовківський район, Львівська область, Україна, 80381', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463648231, 1464021032, 1, ''),
-(58, 'Луб Павло Миронович', 'Pavlo Lub', 'ua', 'Доцент', '+380961606701', 'pollylub@ukr.net', 'Управління проектами технологічних систем сільськогосподарського виробництва', 'ph_d_tech', 'docent', 'Львівський національний аграрний університет', 'Кафедра управління проектами та безпеки виробництва', 'вул. Володимира Великого, 1, м. Дубляни,  Жовківський район, Львівська область, Україна, 80381', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463648362, 1464021148, 1, ''),
-(59, 'Бедрій Дмитро Іванович', 'Dmytro Bedrii', 'ua', 'Заступник директора з наукової роботи', '+380674871204', 'dimi7928@gmail.com', 'Управління вартістю та ризиками наукових проектів', 'ph_d_tech', 'no_rank', 'Державне підприємство “Український науково-дослідний інститут радіо і телебачення”', 'Апарат управління', 'вул. Буніна, 31, Одеса, Україна, 65026', 'science', 'http://uniirt.ddns.net/', 'listener', '', '0', '0', 350, 'uah', 0, 1463662197, 1464020735, 1, ''),
-(60, 'Саченко Анатолій Олексійович', 'Anatoliy Sachenko', 'ua', 'Завідувач кафедри інформаційно-обчислювальних систем та управління', '+380974313425', 'as@tneu.edu.ua', 'Управління ІТ проектами, розподілені інтелектуальні системи і безпровідні мережі, інтелектуальні системи кібербезпеки', 'd_sc_tech', 'prof', 'Тернопільський національний економічний університет', 'Кафедра інформаційно-обчислювальних систем та управління', 'вул. Львівська, 11, Тернопіль, Україна, 46000', 'science', 'http://www.tneu.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463663054, 1464021430, 1, ''),
-(61, 'Виходець Юлія Сергіївна', 'Yulia Vyhodets', 'ua', 'Доцент', '+380505143651', 'vyhodets@mail.ru', 'Управління проектами розвитку, бізнес-моделі', 'ph_d_tech', 'docent', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра менеджменту', 'вул. Чкалова,17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 350, 'uah', 0, 1463663603, 1464020857, 1, ''),
-(62, 'Ровінська Настасья Юріївна', 'Nastasya Rovinskaya', 'ua', 'Аспірант', '+380672931031', 'asyaxai@mail.ru', 'Управління проектами', 'no_degree', 'no_rank', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра менеджменту', 'вул. Чкалова,17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 350, 'uah', 0, 1463663911, 1464021360, 1, ''),
-(63, 'Ченарані Алі', 'Ali Chanarani', 'ua', 'Аспірант', '+380634622870', 'alichen.ua@gmail.com', 'Управління проектами, інформаційна технологія проектування, управління ризиками', 'no_degree', 'no_rank', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра інформаційних технологій проектування літальних апаратів', 'вул. Чкалова,17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 350, 'uah', 0, 1463664200, 1463664200, 0, NULL),
-(64, 'Байстрюченко Наталія Олегівна', '-', 'ua', 'Доцент', '+380660919116', 'n.baistriuchenko@ukr.net', 'Проблеми теорії та практики підприємництва, дослідження структури капіталу, копроративне управління', 'ph_d_econ', 'no_rank', 'Сумський державний університет', 'Кафедра управління', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463667376, 1464020712, 1, ''),
-(65, 'Теліженко Олександр Михайлович', '-', 'ua', 'Завідувач кафедри управління', '+380954020827', 'altel@ukr.net', 'Економіка природокористування, економіка енергетики, управління інвестиціями', 'd_sc_econ', 'prof', 'Сумський державний університет', 'Кафедра управління', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463667590, 1464021477, 1, ''),
-(66, 'Борисова Наталія Ігорівна', '-', 'ua', 'Аспірант', '+380974677658', 'n_borisova1977@mail.ru', 'Проекти альтернативної енергетики, управління ризиками', 'no_degree', 'no_rank', 'Черкаський державний технологічний університет', 'Кафедра економічної кібернетики та маркетингу', 'бул. Шевченко, 460, Черкаси, Україна, 18006', 'science', 'https://chdtu.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463667882, 1464020788, 1, ''),
-(67, 'Семко Інга Борисівна', '-', 'ua', 'Старший викладач', '+380675834039', 'semkoi@mail.ru', 'Управління проектами з енергозбреження', 'ph_d_tech', 'no_rank', 'Черкаський державний технологічний університет', 'Кафедра електротехнічних систем', 'бул. Шевченко, 460, Черкаси, Україна, 18006', 'science', 'https://chdtu.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463668025, 1463668025, 0, NULL),
-(68, 'Вайганг Ганна Олександрівна', '-', 'ua', 'Старший викладач', '+380630778181', 'malko.anna.comp@gmail.com', '"Зелена" логістика, проектний менеджмент, інформаційнні технології', 'ph_d_tech', 'no_rank', 'Національний транспортний університет', 'Кафедра екології та безпеки життєдіяльності', 'вул. Суворова, 1, Київ, Україна, 01010', 'science', 'http://ntu.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463668416, 1464020812, 1, ''),
-(69, 'Марченко Ганна Миколаївна', '-', 'ua', 'Асистент', '+380977641480', 'm-anka@ukr.net', 'Методи та моделі управління профорієнтаційними проектами', 'no_degree', 'no_rank', 'Національний транспортний університет', 'Кафедра технічної експлуатації автомобілів та автосервісу', 'вул. Суворова, 1, Київ, Україна, 01010', 'science', 'http://ntu.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463668641, 1464021182, 1, ''),
-(70, 'Савостін-Косяк Данило Олександрович', '-', 'ua', 'Асистент', '+380938766418', 'daniel_s@ukr.net', 'Управління проектами підвищення кваліфікації за дистанційною формою навчання', 'no_degree', 'no_rank', 'Національний транспортний університет', 'Кафедра технічної експлуатації автомобілів та автосервісу', 'вул. Суворова, 1, Київ, Україна, 01010', 'science', 'http://ntu.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463668762, 1464021395, 1, ''),
-(71, 'Возний Олександр Михайлович', '-', 'ua', 'Доцент', '+380933969334', 'oleksandr.voznyi@nuos.edu.ua', 'Управління проектами в суднобудуванні, інформаційні технології управління проектами', 'ph_d_tech', 'docent', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра управління проектами', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463669195, 1464020872, 1, ''),
-(72, 'Гайдаєнко Оксана Володимирівна', '-', 'ua', 'Аспірант', '+380971828342', 'o_kotsur@mail.ru', 'Інформаційні технології підтримки організації надання послуг', 'no_degree', 'no_rank', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра інформаційних управляючих систем та технологій', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463669546, 1463669546, 0, NULL),
-(73, 'Книрік Наталя Ромуальдівна', '-', 'ua', 'Старший викладач', '+380972708689', 'nknyrik@gmail.com', 'Інформаційні технології управління проектами', 'no_degree', 'no_rank', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра інформаційних управляючих систем та технологій', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463669708, 1463669708, 0, NULL),
-(74, 'Кошкін Костянтин Вікторович', '-', 'ua', 'Директор інституту комп’ютерних та інженерно-технологічних наук, завідувач кафедри інформаційних управляючих систем та технологій', '+380512424470', 'kkoshkin@ukr.net', 'Управління проектами в галузі суднобудування та ІТ', 'd_sc_tech', 'prof', 'Національний університет кораблебудування імені адмірала Макарова', 'Інститут комп’ютерних та інженерно-технологічних наук', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'speaker', 'Принятие решений при реализации IT-проектов на основе имитационного моделирования', '2', '0', 350, 'uah', 0, 1463669861, 1464020508, 0, ''),
-(75, 'Данченко Олена Борисівна', '-', 'ua', 'Завідувач кафедри бізнес адміністрування та управління проектами', '+380675931102', 'elen_danchenko@rambler.ru', 'Управління проектами, ризик-менеджмент, реінжиніринг бізнес-процесів', 'ph_d_tech', 'docent', 'Університет економіка та права "КРОК"', 'Кафедра бізнес-адміністрування та управління проектами', 'вул. Лагерна, 30-32, Київ, Україна, 01001', 'science', 'http://www.krok.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463670181, 1464119718, 1, ''),
-(76, 'Любима Юлія Олександрівна', '-', 'ua', 'Аспірант', '+380502870371', 'Alary7@ukr.net', 'Наукові проекти', 'no_degree', 'no_rank', 'Університет економіка та права "КРОК"', 'Кафедра бізнес-адміністрування та управління проектами', 'вул. Лагерна, 30-32, Київ, Україна, 01001', 'science', 'http://www.krok.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463670300, 1464119882, 1, ''),
-(77, 'Демидюк Микола Анатолійович', '-', 'ua', 'Завідувач відділом аспірантури та докторантури', '+380688496435', 'nick090579@mail.ru', 'Автоматизація процесів керування', 'ph_d_tech', 'docent', 'Луцький національний технічний університет', 'Відділ аспірантури та докторантури', 'вул. Львівська, 75, Луцьк, Україна, 43018', 'science', 'http://lutsk-ntu.com.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463670558, 1464020976, 1, ''),
-(78, 'Сіваковська Олена Миколаївна', '-', 'ua', 'Аспірант', '+380961305556', 'goodlenchik@gmail.com', 'Програмування, АСУ', 'no_degree', 'no_rank', 'Луцький національний технічний університет', 'Кафедра комп\'ютерної інженерії', 'вул. Львівська, 75, Луцьк, Україна, 43018', 'science', 'http://lutsk-ntu.com.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463670769, 1464021380, 1, ''),
-(79, 'Савчук Петро Петрович', '-', 'ua', 'Ректор Луцького національного технічного університету', '+380667892893', 'savchuk71@gmail.com', 'Управління інноваційною діяльністю', 'd_sc_tech', 'prof', 'Луцький національний технічний університет', 'Кафедра матеріалознавства та пластичного формування конструкцій машинобудування', 'вул. Львівська, 75, Луцьк, Україна, 43018', 'science', 'http://lutsk-ntu.com.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463670949, 1464021416, 1, ''),
-(80, 'Зачко Олег Богданович', '-', 'ua', 'Заступник завідувача кафедри', '+380676880060', 'zachko@ukr.net', 'Управління проектами, інформаційні технології, безпека', 'ph_d_tech', 'docent', 'Львівський державний університет безпеки життєдіяльності', 'Кафедра управління проектами, інформаційнних технологій та телекомунікацій', 'вул. Клепарівська, 35, Львів, Україна, 79007', 'science', 'http://www.ldubgd.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463671234, 1464022284, 1, ''),
-(81, 'Коломієць Анна Степанівна', '-', 'ua', 'Асистент', '+380932492253', 'anna.tsesliv@gmail.com', 'Управління впровадженням комерційної концесії на промислових підприємствах', 'ph_d_econ', 'no_rank', 'Київський національний університет імені Тараса Шевченка', 'Кафедра технологій управління', 'вул. Володимирська, 64/13, Київ, Україна, 01601 ', 'science', 'http://www.univ.kiev.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463671528, 1464021092, 1, ''),
-(82, 'Кубявка Любов Богданівна', '-', 'ua', 'Асистент', '+380931684148', 'lyubov.kubyavka@mail.ru', 'Управління проектами', 'ph_d_tech', 'no_rank', 'Київський національний університет імені Тараса Шевченка', 'Кафедра технологій управління', 'вул. Володимирська, 64/13, Київ, Україна, 01601 ', 'science', 'http://www.univ.kiev.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463671732, 1463671732, 0, NULL),
-(83, 'Морозов Віктор Володимирович', '-', 'ua', 'Завідувач кафедри технологій управління', '+0380503580950', 'knumvv@gmail.com', 'Методи управління проектами, управління закупівлями', 'ph_d_tech', 'prof', 'Київський національний університет імені Тараса Шевченка', 'Кафедра технологій управління', 'вул. Володимирська, 64/13, Київ, Україна, 01601 ', 'science', 'http://www.univ.kiev.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463671867, 1463671867, 0, NULL),
-(84, 'Бушуєв Сергій Дмитрович', '-', 'ua', 'Завідувач кафедри управління проектами', '+380504693839', 'SBushuyev@ukr.net', 'Управління проектами і програмами', 'd_sc_tech', 'prof', 'Київський національний університет будівництва і архітектури', 'Кафедра управління проектами', 'пр-т Повітрофлотський, 31, Київ, Україна, 03680', 'science', 'http://www.knuba.edu.ua/', 'speaker', 'Ключевые тенденции развития управления проектами в условиях кризиса   ', '2', '0', 350, 'uah', 0, 1463672079, 1464020361, 0, ''),
-(85, 'Рулікова Наталія Сергіївна', '-', 'ua', 'Доцент', '+380673653131', 'belikovaevg@ukr.net', 'Моделі та механізми управління програмою інноваційного розвитку діючого металургійного підприємства', 'ph_d_tech', 'docent', 'Національна металургійна академія України', 'Кафедра інтелектуальної власності', 'пр-т Гагаріна, 4, Дніпропетровськ, Україна, 49600', 'science', 'http://nmetau.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463672306, 1463672306, 0, NULL),
-(86, 'Швець Євгенія Сергіївна', '-', 'ua', 'Аспірант', '+380637145938', 'belikovaevg@ukr.net', 'Моделі та механізми управління програмою інноваційного розвитку діючого металургійного підприємства', 'no_degree', 'no_rank', 'Національна металургійна академія України', 'Кафедра інтелектуальної власності', 'пр-т Гагаріна, 4, Дніпропетровськ, Україна, 49600', 'science', 'http://nmetau.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463672458, 1463672458, 0, NULL),
-(87, 'Чухрай Наталія Іванівна', '-', 'ua', 'Проректор з наукової роботи', '+380679960631', 'chuhraj@polynet.lviv.ua', 'Маркетинг, логістика, стратегічне управління, інноваційний менеджмент', 'd_sc_econ', 'prof', 'Національний університет "Львівська політехніка"', 'Ректорат', 'вул. Степана Бандери, 12, Львів, Україна, 79013', 'science', 'http://www.lp.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463672745, 1463672745, 0, NULL),
-(88, 'Сидорчук Олександр Васильович', '-', 'ua', 'Заступник директора з наукової роботи', '+380673220323', 'sydov@ukr.net', 'Управління інноваційними проектами та програмами', 'd_sc_tech', 'prof', 'Національний науковий центр «Інститут механізації та електрифікації сільського господарства»', 'Апарат управління', 'вул. Вокзальна, 11, смт. Глеваха-1,  Васильківський район, Київська область, Україна, 08631.', 'science', 'http://imesg.gov.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463673094, 1463673094, 0, NULL),
-(89, 'Aгаї Ахмад', '-', 'ua', 'Аспірант', '+380938753643', 'ahmadaghaee@yahoo.com', 'Управління проектами', 'no_degree', 'no_rank', 'Національний технічний університет "Харківський політехнічний інститут"', 'Кафедра стратегічного управління', 'вул. Фрунзе, 21, Харків, Україна, 61002', 'science', 'http://www.kpi.kharkov.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463673276, 1463673276, 0, NULL),
-(90, 'Кучма Олег Олександрович', '-', 'ua', 'Доцент', '+30672502794', 'kuchmao@yandex.ua', 'Управління будівельними проектами', 'ph_d_econ', 'docent', 'Харківський національний університет будівництва та архітектури', 'Кафедра організації будівельного виробництва', 'вул. Сумська, 40, Харків, Україна, 61002', 'science', 'http://www.kstuca.kharkov.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463673455, 1464021115, 1, ''),
-(91, 'Лобакова Лілія В\'ячеславівна', '-', 'ua', 'Аспірант', '+380974979609', 'Liya_lobakova@mail.ru', 'Управління проектами', 'no_degree', 'no_rank', 'Одеська державна академія будівництва та архітектури', 'Кафедра технології будівельного виробництва', 'вул. Дідріхсона, 4, Одеса, Україна, 65029', 'science', 'http://www.ogasa.org.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463673659, 1464021128, 1, ''),
-(92, 'Менейлюк Олександр Іванович', '-', 'ua', 'Завідувач кафедри технології будівельного виробництва', '+380674853577', 'pr.mai@mail.ru', 'Оптимізація інвестиційно-будівельних проектів', 'd_sc_tech', 'prof', 'Одеська державна академія будівництва та архітектури', 'Кафедра технології будівельного виробництва', 'вул. Дідріхсона, 4, Одеса, Україна, 65029', 'science', 'http://www.ogasa.org.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463673805, 1464021212, 1, ''),
-(93, 'Нікіфоров Олексій Леонідович', '-', 'ua', 'Аспірант', '+380663309054', 'aleksey-nikiforov@mail.ua', 'Управління будівельними проектами та підприємствами', 'no_degree', 'no_rank', 'Одеська державна академія будівництва та архітектури', 'Кафедра технології будівельного виробництва', 'вул. Дідріхсона, 4, Одеса, Україна, 65029', 'science', 'http://www.ogasa.org.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463673893, 1464021238, 1, ''),
-(94, 'Бiловус Дар\'я Романiвна', '-', 'ua', 'Помічник керівника', '+380666620898', 'dashkalaya11@bigmir.net', '-', 'no_degree', 'no_rank', 'ТОВ "Юридичний Альянс "Вікторовичі і Партнери"', '-', 'вул. Глінки, 1, Дніпропетровськ, Україна, 49000', 'consult', 'http://uavip.com.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463674292, 1464020697, 1, ''),
-(95, 'Машир Ярослав Вiкторович', '-', 'ua', 'Генеральний директор', '+380505848321', 'risham.ya@mail.ru', '-', 'no_degree', 'no_rank', 'ТОВ "Юридичний Альянс "Вікторовичі і Партнери"', '-', 'вул. Глінки, 1, Дніпропетровськ, Україна, 49000', 'consult', 'http://uavip.com.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463675031, 1464021197, 1, ''),
-(96, 'Чиколовець Олексій Анатолійович', '-', 'ua', 'Начальник виробничо-технічного відділу', '+380672387377', 'chikolovec_alex@mail.ru', 'Управління проектами', 'no_degree', 'no_rank', 'Компанія «НЕСТ» (ВАТ «Нерухомість столиці»)', '-', 'вул. Василя Липківського, 45, Київ, Україна, 03035', 'real_est', 'http://www.nest.com.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463675366, 1464021542, 1, ''),
-(97, 'Чернов Сергій Костянтинович', '-', 'ua', 'Директор з персоналу', '+380512493481', 'chsk@zorya.com.ua', 'Управління проектами і програмами', 'd_sc_tech', 'prof', 'Державне підприємство Науково-виробничий комплекс газотурбобудування «Зоря»-«Машпроект»', 'Апарат управління', 'пр-т Жовтневий, 42-а, Миколаїв, Україна, 54018', 'industry', 'http://www.zmturbines.com/', 'speaker', 'Управление финансированием проекта создания базового газотурбинного  двигателя мощностью 35 МВт', '2', '0', 350, 'uah', 0, 1463675721, 1464021530, 1, ''),
-(98, 'Сутковий Андрій Миколайович', '-', 'ua', 'Директор', '+380504761451', 'shs_sd@mail.ru', 'Управління проектами', 'no_degree', 'no_rank', 'ТОВ "Штандарт"', '-', 'вул. Гагаріна, 68а, Сєвєродонецьк, Україна, 93400', 'consult', 'http://no.site', 'listener', '', '0', '0', 350, 'uah', 0, 1463676194, 1464021464, 1, ''),
-(99, 'Попов Вадим Михайлович', '-', 'ua', 'Проректор з персоналу', '+380975172279', 'm.novozhilova04@gmail.com', 'Управління програмами розвитку макросистем', 'ph_d_tech', 'docent', 'Національний університет цивільного захисту України', 'Ректорат', 'вул. Чернишевська, 94, Харків, Україна, 61023', 'science', 'http://nuczu.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463676781, 1464021332, 1, ''),
-(100, 'Нікітін Павло Володимирович', '-', 'ua', 'Доцент', '+380672614974', 'uapsua@ukr.net', 'Упраління проектами та програмами підготовки плавскладу водного транспорту', 'ph_d_econ', 'docent', 'Київська державна академія водного транспорту імені гетьмана Петра Конашевича-Сагайдачного', 'Кафедра судноводіння та керування судном', 'вул. Кирилівська, 9, Київ, Україна, 04071', 'science', 'http://www.maritime.kiev.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463677199, 1463677199, 0, NULL),
-(101, 'Муравецький Святослав Аркадійович', '-', 'ua', 'Магістрант', '+380934651965', 'smuravetskiy@lohika.com', 'Управління проектами', 'no_degree', 'no_rank', 'Одеський регіональний інститут державного управління Національної академії державного управління при Президентові України', 'Кафедра управління проектами', 'вул. Генуезька, 22, Одеса, Україна, 65009', 'science', 'http://www.oridu.odessa.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1463677484, 1463677484, 0, NULL),
-(102, 'Kiril Todorov', 'Kiril Todorov', 'bg', 'Head of Department of Entrepreneurship', '+359028195545', 'ktodorov@unwe.bg', 'Industrial Management, Entrepreneurship', 'd_sc_econ', 'prof', 'University of National and World Economy', 'Department of Entrepreneurship', '8-mi Dekemvri Str., 1700, Sofia, Bulgaria', 'science', 'http://www.unwe.bg/', 'speaker', 'Management of Business Internationalization: The Case of Family Businesses   ', '0', '0', 100, 'usd', 0, 1464016522, 1464016522, 0, NULL),
-(103, 'Kostadin Kolarov ', 'Kostadin Kolarov ', 'bg', 'Associate Professor', '+359888738132', 'kkolarov@unwe.bg', 'Entrepreneurial Economics', 'ph_d_econ', 'docent', 'University of National and World Economy', 'Department of Entrepreneurship', '8-mi Dekemvri Str., 1700, Sofia, Bulgaria', 'science', 'http://www.unwe.bg/', 'listener', '', '0', '0', 100, 'usd', 0, 1464017028, 1464017028, 0, NULL),
-(104, 'Hasan TUNÇ', 'Hasan TUNÇ', 'tr', 'Professor', '+903422118080', 'hasan.tunc@hku.edu.tr', '-', 'd_sc_econ', 'prof', 'Hasan Kalyoncu University', 'Faculty of Law', 'Havalimanı Yolu 8. Km, 27410, Şahinbey, Gaziantep, Turkey', 'science', 'http://www.hku.edu.tr/', 'listener', '', '0', '0', 100, 'usd', 0, 1464018129, 1464018129, 0, NULL),
-(105, 'Çetin ELMAS', 'Çetin ELMAS', 'tr', 'Professor', '+903122028528', 'celmas@gazi.edu.tr', 'Project Management', 'd_sc_tech', 'prof', 'Gazi University', 'Faculty of Engineering', '06500 Teknikokullar, Ankara, Turkey', 'science', 'http://gazi.edu.tr/', 'speaker', 'Comparation of Project Management Standards', '0', '0', 100, 'usd', 0, 1464019209, 1464019209, 0, NULL),
-(106, 'Igbal Babaev', 'Igbal Babaev', 'az', 'President of Azerbaijan Project Management Association', '+994124041860', 'info@ipma.az', 'Project and Program Management', 'ph_d_tech', 'prof', 'Azerbaijan Project Management Association', '-', 'AZ1075, Baku, Azerbaijan, Narimanov district, 153, A.Radjabli Street', 'npo', 'http://www.ipma.az/', 'speaker', 'Управление инновационными проектами в динамически изменяющейся среде   ', '2', '0', 100, 'usd', 0, 1464020208, 1464020223, 0, ''),
-(107, 'Тесленко Павло Олександрович', '-', 'ua', 'Доцент', '+380679400451', 'p_a_t@ukr.net', 'Управління проектами', 'ph_d_tech', 'docent', 'Одеська державна академія будівництва та архітектури', 'Кафедра менеджменту та управління проектами', 'вул. Дідріхсона, 4, Одеса, Україна, 65029', 'science', 'http://www.ogasa.org.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1464021833, 1464025486, 1, ''),
-(108, 'Фесенко Тетяна Григорівна', '-', 'ua', 'Доцент', '+380577073132', 'fesenkotatyana@gmail.com', 'Управління будівельними проектами', 'ph_d_tech', 'docent', 'Харківський національний університет міського господарства імені О.М. Бекетова', 'Кафедра управління проектами в міському господарстві і будівництві', 'вул. Маршала Бажанова, 17, Харків, Україна, 61002', 'science', 'http://www.kname.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1464022089, 1464022095, 1, ''),
-(109, 'Анатольєв Анатолій Аркадійович', '-', 'ua', 'Аспірант', '+380678306102', 'anatolijarkadievi41988@gmail.com', 'Управління проектами', 'no_degree', 'no_rank', 'Одеська державна академія будівництва та архітектури', 'Кафедра менеджменту та управління проектами', 'вул. Дідріхсона, 4, Одеса, Україна, 65029', 'science', 'http://www.ogasa.org.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441129214, 1464025512, 0, ''),
-(110, 'Барська Ірина Сергіївна', '-', 'ua', 'Здобувач', '+380679406437', 'ibarska@mail.ru', 'Управління проектами і програмами', 'no_degree', 'no_rank', 'Одеська державна академія будівництва та архітектури', 'Кафедра менеджменту та управління проектами', 'вул. Дідріхсона, 4, Одеса, Україна, 65029', 'science', 'http://www.ogasa.org.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441129660, 1464025673, 0, ''),
-(111, 'Денисенко Вікторія Юріївна', '-', 'ua', 'Доцент', '+380679332552', 'vitka_2kd@ukr.net', 'Прикладна математика', 'ph_d_tech', 'docent', 'Одеська державна академія будівництва та архітектури', 'Кафедра прикладної та обчислювальної математики та САПР', 'вул. Дідріхсона, 4, Одеса, Україна, 65029', 'science', 'http://www.ogasa.org.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441129859, 1464025869, 0, ''),
-(112, 'Боярчук Віталій Мефодійович', '-', 'ua', 'Перший проректор, завідувач кафедри енергетики', '+380503707101', 'trianamik@mail.ru', 'Управління проектами аграрного виробництва', 'ph_d_tech', 'prof', 'Львівський національний аграрний університет', 'Кафедра енергетики', 'вул. Володимира Великого, 1, м. Дубляни, Жовківський район, Львівська область, Україна, 80381', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441130325, 1464026335, 0, ''),
-(113, 'Безуглий Дмитро Георгійович', '-', 'ua', 'Заступник голови обласної ради', '+380978799255', 'a.ermolenko1990@gmail.com', 'Маркетинг, менеджмент, управління проектами', 'no_degree', 'no_rank', 'Дніпропетровська обласна рада', 'Відділ внутрішньої політики', 'пр-т Кірова, 2, Дніпропетровськ, Україна, 49004', 'public_adm', 'http://oblrada.dp.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441130765, 1464026973, 0, ''),
-(114, 'Михалюк Микола Адамович', '-', 'ua', 'Доцент', '+380679793084', 'mykhaljuk@rambler.ru', 'Управління проектами аграрного виробництва', 'ph_d_tech', 'docent', 'Львівський національний аграрний університет', 'Кафедра енергетики', 'вул. Володимира Великого, 1, м. Дубляни, Жовківський район, Львівська область, Україна, 80381', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441130940, 1464026999, 0, ''),
-(115, 'Тригуба Інна Леонтіївна', '-', 'ua', 'Старший викладач', '+380986564097', 'tinna@mail.ru', 'Управління проектами аграрного виробництва', 'no_degree', 'no_rank', 'Львівський національний аграрний університет', 'Кафедра селекції, генетики та захисту рослин', 'вул. Володимира Великого, 1, м. Дубляни, Жовківський район, Львівська область, Україна, 80381', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441131158, 1464087344, 0, ''),
-(116, 'Бубенко Павло Трохимович', '-', 'ua', 'Директор Центру', '+380577063042', 'office.nesc@nas.gov.ua', 'Регіональна економіка та інноватика', 'd_sc_econ', 'prof', 'Північно-Східний науковий центр НАН і МОН України', '-', 'вул. Фрунзе, 8, Харків, Україна, 61002', 'science', 'http://www.nesc.com.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441131494, 1464027503, 0, ''),
-(117, 'Літвінова Наталя Сергіївна', '-', 'ua', 'Аспірант', '+380487992142', 'ms.litvinoff@gmail.com', 'Управління проектами державно-приватного партнерства', 'no_degree', 'no_rank', 'Одеський національний морський університет', 'Кафедра "Організація митного контролю на транспорті"', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441131884, 1464027902, 0, ''),
-(118, 'Шарибура Андрій Остапович ', '-', 'ua', 'Доцент', '+380661198786', 'AScharibura@gmail.com', 'Управління проектами систем вирощування сільськогосподарських культур', 'ph_d_tech', 'docent', 'Львівський національний аграрний університет', 'Кафедра експлуатації та технічного сервісу машин', 'вул. Володимира Великого, 1, м. Дубляни, Жовківський район, Львівська область, Україна, 80381', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441132273, 1464028290, 0, ''),
-(119, 'Березовецький Сергій Андрійович.', '-', 'ua', 'Старший викладач', '+380972359530', 'siko@mail.ua', 'Управління конфігурацією проектів', 'no_degree', 'no_rank', 'Львівський національний аграрний університет', 'Кафедра машинобудування', 'вул. Володимира Великого, 1, м. Дубляни, Жовківський район, Львівська область, Україна, 80381', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441132541, 1464028554, 0, ''),
-(120, 'Чімшир Валентин Іванович', '-', 'ua', 'Завідувач кафедри судноводіння та енергетики суден', '+380965549377', 'chimshir@mail.ru', 'Управління проектами', 'ph_d_tech', 'docent', 'Одеська національна морська академія (Ізмаїльський факультет)', 'Кафедра судноводіння та енергетики суден', 'вул. Фанагорійська, 9, Ізмаїл, Україна, 68600', 'science', 'http://izf.onma.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441103571, 1464085980, 0, ''),
-(121, 'Кременчук Олександр Вікторович', '-', 'ua', 'Аспірант', '+380635898809', 'saawhitelife@gmail.com', 'Методологія та інформаційні технології управління науково-освітніми проектами та програмами', 'no_degree', 'no_rank', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра управління проектами', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441104261, 1464086672, 0, ''),
-(122, 'Левченко Ольга Григорівна', '-', 'ua', 'Аспірант', '+380937425958', 'olga.georgieva@nuos.edu.ua', 'Управління науковими проектами та програмами', 'no_degree', 'no_rank', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра «Облік та економічний аналіз»', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441104390, 1464086817, 0, ''),
-(123, 'Кальніченко Олена Володимирівна', '-', 'ua', 'Доцент, старший науковий співробітник', '+380504111061', 'kv_vl@ukr.net', 'Управління проектами', 'ph_d_tech', 'docent', 'Університет економіка та права "КРОК"', 'Кафедра бізнес-адміністрування та управління проектами', 'вул. Лагерна, 30-32, Київ, Україна, 01001', 'science', 'http://www.krok.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441105164, 1464119892, 0, ''),
-(124, 'Коренєва Анастасія Юріївна', '-', 'ua', 'Аспірант', '+380966004666', '_Meln_@ukr.net', 'Управління проектами і програмами', 'no_degree', 'no_rank', 'Одеський національний морський університет', 'Кафедра "Системний аналіз та логістика"', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441105694, 1464088105, 0, ''),
-(125, 'Тесля Юрій Миколайович', '-', 'ua', 'Декан факультету інформаційних технологій', '+300675033916', 'teslyas@ukr.net', 'Управління проектами і програмами', 'ph_d_tech', 'prof', 'Київський національний університет імені Тараса Шевченка', 'Факультет інформаційних технологій', 'вул. Володимирська, 64/13, Київ, Україна, 01601 ', 'science', 'http://www.univ.kiev.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441105917, 1464088331, 0, ''),
-(126, 'Кузьмінська Юлія Миколаївна', '-', 'ua', 'Директор департаменту підвищення кваліфікації', '+380678575755', 'jkuzminskaya@gmail.com', 'Управління проектами', 'no_degree', 'no_rank', 'Університет економіка та права "КРОК"', 'Департамент підвищення кваліфікації', 'вул. Лагерна, 30-32, Київ, Україна, 01001', 'science', 'http://www.krok.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441106112, 1464088522, 0, ''),
-(127, 'Лазарева Марина Вікторівна', '-', 'ua', 'Аспірант', '+380931671098', 'lazareva_marina@ukr.net', 'Управління довірою в управлінні проектами', 'no_degree', 'no_rank', 'Київський національний університет будівництва і архітектури', 'Кафедра управління проектами', 'пр-т Повітрофлотський, 31, Київ, Україна, 03680', 'science', 'http://www.knuba.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441106271, 1464088683, 0, '');
-INSERT INTO `member` (`id`, `name`, `nameEng`, `country`, `position`, `phone`, `email`, `interest`, `scienceDegree`, `scienceTitle`, `organisationTitle`, `organisationDepartment`, `organisationAddress`, `organisationActivity`, `organisationUrl`, `participationType`, `topicTitle`, `topicLanguage`, `topicSection`, `totalSum`, `currency`, `papersCount`, `created_at`, `updated_at`, `paid`, `noteFromAdmin`) VALUES
-(128, 'Ершов Михаил Николаевич', '-', 'ru', 'Профессор', '+74952874914', 'mnershov@gmail.com', 'Управление проектами', 'ph_d_tech', 'prof', 'Московский государственный строительный университет', 'Кафедра технологии и организации строительного производства', 'Ярославское шоссе, 26, Москва, Россия, 129337', 'science', 'http://mgsu.ru/', 'listener', '', '0', '0', 100, 'usd', 0, 1441107001, 1464089418, 0, ''),
-(129, 'Логінов Олег Володимирович', '-', 'ua', 'Старший викладач', '+380963690983', 'ologinov@ukr.net', 'Управління проектами', 'no_degree', 'no_rank', 'Одеський національний морський університет', 'Кафедра транспортного права', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441107293, 1464089706, 0, ''),
-(130, 'Мельник Каріна Володимирівна', '-', 'ua', 'Асистент', '+380577076474', 'karina.v.melnyk@gmail.com', 'Складні розподілені інформаційні системи, системи підтримки прийняття управлінських рішень', 'no_degree', 'no_rank', 'Національний технічний університет "Харківський політехнічний інститут"', 'Кафедра "Програмна інженерія та інформаційні технології управління"', 'вул. Фрунзе, 21, Харків, Україна, 61002', 'science', 'http://www.kpi.kharkov.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441123998, 1464106422, 0, ''),
-(131, 'Молочник Юлія Богданівна', '-', 'ua', 'Асистент', '+380508580158', 'yulya.molochnik@mail.ru', 'Комунікаційний менеджмент', 'no_degree', 'no_rank', 'Національний університет "Львівська політехніка"', 'Кафедра менеджменту і міжнародного підприємництва', 'вул. Степана Бандери, 12, Львів, Україна, 79013', 'science', 'http://www.lp.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441124245, 1464106657, 0, ''),
-(132, 'Пецкович Марія Дмитрівна', '-', 'ua', 'Асистент', '+380979790856', 'mdp@ukr.net', 'Контролювання', 'ph_d_econ', 'no_rank', 'Національний університет "Львівська політехніка"', 'Кафедра зовнішньоекономічної та митної діяльності', 'вул. Степана Бандери, 12, Львів, Україна, 79013', 'science', 'http://www.lp.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441124482, 1464107084, 0, ''),
-(133, 'Малиновський Юрій Володимирович', '-', 'ua', 'Доцент', '+30677129132', 'travel_2020@rambler.ru', 'Економіка будівельної галузі', 'ph_d_econ', 'docent', 'Національний університет "Львівська політехніка"', 'Кафедра теоретичної та прикладної економіки', 'вул. Степана Бандери, 12, Львів, Україна, 79013', 'science', 'http://www.lp.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441124656, 1464107066, 0, ''),
-(134, 'Романенков Юрій Олександрович', '-', 'ua', 'Доцент', '+380994332060', 'KhAI.management@ukr.net', 'Інформаційні технології прогнозування', 'ph_d_tech', 'docent', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра економіки та маркетингу', 'вул. Чкалова,17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 350, 'uah', 0, 1441136936, 1464119354, 0, ''),
-(135, 'Рудніцький Сергій Іванович', '-', 'ua', 'Аспірант', '+380676050584', 'sergey.rudnitskiy@gmail.com', 'Управління проектами, управління конфігурацією проектів', 'no_degree', 'no_rank', 'Університет економіка та права "КРОК"', 'Кафедра бізнес-адміністрування та управління проектами', 'вул. Лагерна, 30-32, Київ, Україна, 01001', 'science', 'http://www.krok.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441137139, 1464119551, 0, ''),
-(136, 'Ратушний Роман Тадейович', '-', 'ua', 'Проректор університету з логістики та менеджменту', '+380676732980', 'ratyshnuj@gmail.com', 'Інформаційні текхнології, управління проектами', 'ph_d_tech', 'docent', 'Львівський державний університет безпеки життєдіяльності', 'Ректорат', 'вул. Клепарівська, 35, Львів, Україна, 79007', 'science', 'http://www.ldubgd.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441137972, 1464120388, 0, ''),
-(137, 'Шелега Олег Вячеславович', '-', 'ua', 'Аспірант', '+380971792494', 'ua-pl@i.ua', 'Управління інтегрованими проектами', 'no_degree', 'no_rank', 'Подільський державний аграрно-технічний університет', 'Кафедра транспортних технологій та засобів АПК', 'вул. Шевченка, 13, Кам’янець-Подільський, Україна, 32300', 'science', 'http://www.pdatu.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441138616, 1464121027, 0, ''),
-(138, 'Пукас Віталій Леонідович', '-', 'ua', 'Аспірант', '+380972901162', 'pukas.ivanna@mail.ru', 'Управління інтегрованими проектами', 'no_degree', 'no_rank', 'Подільський державний аграрно-технічний університет', 'Кафедра "Трактори, автомобілі та енергетичні засоби"', 'вул. Шевченка, 13, Кам’янець-Подільський, Україна, 32300', 'science', 'http://www.pdatu.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441138852, 1464121263, 0, ''),
-(139, 'Михалюк Володимир Миколайович', '-', 'ua', 'Аспірант', '+380976332023', 'myhaluk@ukr.net', 'Управління інтегрованими проектами', 'no_degree', 'no_rank', 'Львівський національний аграрний університет', 'Кафедра енергетики', 'вул. Володимира Великого, 1, м. Дубляни, Жовківський район, Львівська область, Україна, 80381', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441139019, 1464121431, 0, ''),
-(140, 'Флис Ігор Михайлович', '-', 'ua', 'Доцент', '+380965583435', 'ihorflys@ukr.net', 'Управління проектами і програмами в аграрній галузі', 'ph_d_tech', 'docent', 'Львівський національний аграрний університет', 'Кафедра машинобудування', 'вул. Володимира Великого, 1, м. Дубляни, Жовківський район, Львівська область, Україна, 80381', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441086160, 1464154973, 0, ''),
-(141, 'Чайковська Марина Петрівна', '-', 'ua', 'Доцент', '+380677502387', 'chmp@ukr.net', 'Управління ІТ-проектами, інформаційні системи та технології в бізнесі, інноваційний менеджмент, математичнв методи і моделювання в економіці і управлінні', 'ph_d_econ', 'docent', 'Одеський національний університет імені І.І. Мечникова', 'Кафедра менеджменту та математичного моделювання ринкових процесів', 'вул. Дворянська, 2, Одеса, Україна, 65023', 'science', 'http://onu.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441086449, 1464155260, 0, ''),
-(142, 'Новаківський Ігор Іванович', '-', 'ua', 'Доцент', '+380974350379', 'inovak@ukr.net', 'Менеджмент, ІТ', 'ph_d_econ', 'docent', 'Національний університет "Львівська політехніка"', 'Кафедра менеджменту організацій', 'вул. Степана Бандери, 12, Львів, Україна, 79013', 'science', 'http://www.lp.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441086610, 1464155420, 0, ''),
-(143, 'Шатковський Леонiд Юрiйович', '-', 'ua', 'Аспірант', '+380994842909', 'shatkovskyiL@gmail.com', 'Управління проектами', 'no_degree', 'no_rank', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра інформаційних управляючих систем та технологій', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441086753, 1464155565, 0, ''),
-(144, 'Григорян Тигран Георгiйович', '-', 'ua', 'Доцент', '+380933969330', 'grigorian.tigran@gmail.com', 'Управління проектами', 'ph_d_tech', 'docent', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра управління проектами', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441086871, 1464155682, 0, ''),
-(145, 'Шматко Олександр Віталійович', '-', 'ua', 'Доцент', '+380677415514', 'asu.spios@gmail.com', 'Моделювання складних ієрархічних систем', 'ph_d_tech', 'docent', 'Національний технічний університет "Харківський політехнічний інститут"', 'Кафедра "Програмна інженерія та інформаційні технології управління"', 'вул. Фрунзе, 21, Харків, Україна, 61002', 'science', 'http://www.kpi.kharkov.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441087002, 1464155813, 0, ''),
-(146, 'Яцунський Євген Олександрович', '-', 'ua', 'Аспірант', '+380666045900', 'yevhen.yatsunskyi@nuos.edu.ua', 'Рекреаційні проекти', 'no_degree', 'no_rank', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра управління проектами', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441087228, 1464156039, 0, ''),
-(147, 'Шахов Анатолій Валентинович', '-', 'ua', 'Професор', '+380674840353', 'avshakhov@yandex.ua', 'Управління проектами', 'd_sc_tech', 'prof', 'Одеський національний морський університет', 'Кафедра судноремонту', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441087385, 1464159955, 0, ''),
-(148, 'Бокарева Марина Олегівна', '-', 'ua', 'Аспірант', '+380679102000', 'bokareva.m@gmail.com', 'Управління проектами', 'no_degree', 'no_rank', 'Одеський національний морський університет', 'Кафедра судноремонту', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441087512, 1464156324, 0, ''),
-(149, 'Корзняков Олексій Сергійович', '-', 'ua', 'Аспірант', '+380933540348', 'alexei.korznyakov@gmail.com', 'Управління проектами', 'no_degree', 'no_rank', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра управління проектами', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441087661, 1464156473, 0, ''),
-(150, 'Домбровський Михайло Збишекович', '-', 'ua', 'Інженер', '+380672543132 ', 'Michael@tneu.edu.ua', 'Процеси і системи управління проектами, розробка моделей планування діяльності підприємств, застосування процесного підходу в управлінні', 'no_degree', 'no_rank', 'Тернопільський національний економічний університет', 'Загальноуніверитетська навчальна комп’ютерна лабораторія', 'вул. Львівська, 11, Тернопіль, Україна, 46000', 'science', 'http://www.tneu.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441087882, 1464156695, 0, ''),
-(151, 'Дорош Марія Сергіївна', '-', 'ua', 'Доцент', '+380937859955', 'dorosh.m@inbox.ru', 'Управління проектами, управління якістю', 'ph_d_tech', 'docent', 'Навчально-науковий Інститут Економіки "Чернігівський національний технологічний університет"', 'Кафедра управління якістю та проектами', 'вул. Стрелецька, 1, Чернігів, Україна, 14034', 'science', 'http://geci.stu.cn.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441088614, 1464157431, 0, ''),
-(152, 'Ігнатюк Вікторія Василівна', '-', 'ua', 'Асистент', '+380971313271', 'nikushek@ukr.net', 'Управління проектами і програмами', 'no_degree', 'no_rank', 'Національний транспортний університет', 'Кафедра менеджменту', 'вул. Суворова, 1, Київ, Україна, 01010', 'science', 'http://ntu.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441088789, 1464157600, 0, ''),
-(153, 'Кирій Валентина Василівна', '-', 'ua', 'Доцент', '+380504024796', 'kiriy_v@mail.ru', 'Інформаційне забезпечення управління, математичне моделювання та оптимізація в економіці', 'ph_d_econ', 'docent', 'Харківський національний університет радіоелектроніки', 'Кафедра економічної кібернетики і управління економічною безпекою', 'пр-т Науки, 14, Харків. Україна, 61166', 'science', 'http://nure.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441088957, 1464165569, 0, ''),
-(154, 'Москалюк Андрій Юрійович', '-', 'ua', 'Старший викладач', '+380672888108 ', 'Andreum@mail.ru', 'Управління проектами', 'no_degree', 'no_rank', 'Одеський національний політехнічний університет', 'Кафедра управління системами безпеки життєдіяльності ', 'пр-т Шевченка, 1, Одеса, Україна, 65044', 'science', 'http://opu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441089265, 1464158075, 0, ''),
-(155, 'Онищенко Інна Ігорівна', '-', 'ua', 'Здобувач', '+380978908854', 'zitrs@i.ua', 'Управління проектами', 'no_degree', 'no_rank', 'Університет економіка та права "КРОК"', 'Кафедра бізнес-адміністрування та управління проектами', 'вул. Лагерна, 30-32, Київ, Україна, 01001', 'science', 'http://www.krok.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441089691, 1464158507, 0, ''),
-(156, 'Карпенко Олена Анатоліївна', '-', 'ua', 'Доцент', '+380673168531', 'swettla@i.ua', 'Управління проектами та логістика', 'ph_d_econ', 'docent', 'Національний транспортний університет', 'Кафедра транспортного права та логістики', 'вул. Суворова, 1, Київ, Україна, 01010', 'science', 'http://ntu.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441090925, 1464159736, 0, ''),
-(157, 'Колісник Марія Едуардівна ', '-', 'ua', 'Старший викладач', '+380669038819', 'Rozaeduard@gmail.com', 'Управління проектами', 'ph_d_tech', 'no_rank', 'Національний технічний університет "Харківський політехнічний інститут"', 'Кафедра економіки та маркетингу', 'вул. Фрунзе, 21, Харків, Україна, 61002', 'science', 'http://www.kpi.kharkov.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441091386, 1464160201, 0, ''),
-(158, 'Степований Володимир Миколайович', '-', 'ua', 'Аспірант', '+380985757096', 'stepovani@gmail.com', 'Управління проектами в аграрному видобництві', 'no_degree', 'no_rank', 'Львівський національний аграрний університет', 'Кафедра машинобудування', 'вул. Володимира Великого, 1, м. Дубляни, Жовківський район, Львівська область, Україна, 80381', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441091875, 1464160685, 0, ''),
-(159, 'Целовальникова Олена Андріївна', '-', 'ua', 'Аспірант', '+380674825421', 'milena012@mail.ru', 'Управління проектами і програмами', 'no_degree', 'no_rank', 'Університет економіка та права "КРОК"', 'Кафедра бізнес-адміністрування та управління проектами', 'вул. Лагерна, 30-32, Київ, Україна, 01001', 'science', 'http://www.krok.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441092007, 1464160819, 0, ''),
-(160, 'Романів Тетяна Віталіївна', '-', 'ua', 'Здобувач', '+380955148927', 'tatiromaniv@gmail.com', 'Стратегічне управління проектноорієнтованими підприємствами', 'no_degree', 'no_rank', 'Університет економіка та права "КРОК"', 'Кафедра бізнес-адміністрування та управління проектами', 'вул. Лагерна, 30-32, Київ, Україна, 01001', 'science', 'http://www.krok.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441092167, 1464160977, 0, ''),
-(161, 'Оліфер Олександр Віталійович ', '-', 'ua', 'Здобувач', '+380973512306 ', 'oleksander_olsfe@mail.ru', 'Управління проектів у лісогосподарській галузі', 'no_degree', 'no_rank', 'Львівський національний аграрний університет', 'Кафедра машинобудування', 'вул. Володимира Великого, 1, м. Дубляни, Жовківський район, Львівська область, Україна, 80381', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441094370, 1464163179, 0, ''),
-(162, 'Меленівська Ярослава Валеріївна', '-', 'ua', 'Здобувач', '+380503311806', 'melenivska@gmail.com', 'Управління проектами', 'd_sc', 'prof', 'Університет економіка та права "КРОК"', 'Кафедра бізнес-адміністрування та управління проектами', 'вул. Лагерна, 30-32, Київ, Україна, 01001', 'science', 'http://www.krok.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441094481, 1464163294, 0, ''),
-(163, 'Чернова Людмила Сергіївна', '-', 'ua', 'Аспірант', '+380675153777', 'myla-0108@mail.ru', 'Управління наукомісткими підприємствами', 'no_degree', 'no_rank', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра управління проектами', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441094605, 1464163417, 0, ''),
-(164, 'Міхнов Дмитро Кіндратович', '-', 'ua', 'Професор', '+380577021451', 'mikhnov@kture.kharkov.ua', 'Управління проектами, інформаційні системи', 'ph_d_tech', 'docent', 'Харківський національний університет радіоелектроніки', 'Кафедра інформаційних управляючих систем', 'пр-т Науки, 14, Харків. Україна, 61166', 'science', 'http://nure.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441094840, 1464163649, 0, ''),
-(165, 'Міхнова Аліна Володимирівна', '-', 'ua', 'Доцент', '+380577021451', 'mikhnova@kture.kharkov.ua', 'Управління проектами, інформаційні системи', 'ph_d_tech', 'docent', 'Харківський національний університет радіоелектроніки', 'Кафедра інформаційних управляючих систем', 'пр-т Науки, 14, Харків. Україна, 61166', 'science', 'http://nure.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441094996, 1464163807, 0, ''),
-(166, 'Сохань В`ячеслав Вікторович', '-', 'ua', 'Аспірант', '+380962992379', 'SlavikSo@bigmir.net', 'Управління проектами і програмами', 'no_degree', 'no_rank', 'Національний транспортний університет', 'Кафедра транспортного права та логістики', 'вул. Суворова, 1, Київ, Україна, 01010', 'science', 'http://ntu.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441095151, 1464163963, 0, ''),
-(167, 'Мельниченко Олександр Іванович', '-', 'ua', 'Професор', '+380442800149', 'melnichenko@ntu.edu.ua', 'Управління проектами і програмами', 'ph_d_tech', 'docent', 'Національний транспортний університет', 'Кафедра транспортного права та логістики', 'вул. Суворова, 1, Київ, Україна, 01010', 'science', 'http://ntu.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441095275, 1464164097, 0, ''),
-(168, 'Шпильовий Василь Дмитрович', '-', 'ua', 'Завідувач кафедри технологій управління', '+380444067377', 'itu@nau.edu.ua', 'Управління проектами, стратегічне управління, інноваційна діяльність, підготовка фахівців', 'ph_d_tech', 'docent', 'Національний авіаційний університет', 'Кафедра технологій управління', 'пр-т Комарова 1, Київ, Україна, 03680', 'science', 'http://nau.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441095607, 1464164417, 0, ''),
-(169, 'Шамов Олексій Володимирович', '-', 'ua', 'Старший викладач', '+30984524777', 'al23od@rambler.ru', 'Управління проектами', 'no_degree', 'no_rank', 'Одеський національний морський університет', 'Кафедра технологій матеріалів', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441095784, 1464164593, 0, ''),
-(170, 'Котетунов Віктор Юрійович', '-', 'ua', 'Аспірант', '+380632800728', 'kulibin.construct@gmail.com', 'Управління проектами', 'no_degree', 'no_rank', 'Черкаський державний технологічний університет', 'Кафедра управління проектами', 'бул. Шевченко, 460, Черкаси, Україна, 18006', 'science', 'https://chdtu.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441095986, 1464164798, 0, ''),
-(171, 'Маргасов Дмитро Валерійович', '-', 'ua', 'Аспірант', '+380672326854', 'mn123@i.ua', 'Управління енергоощадними проектами', 'no_degree', 'no_rank', 'Навчально-науковий Інститут Економіки "Чернігівський національний технологічний університет"', 'Кафедра управління якістю та проектами', 'вул. Стрелецька, 1, Чернігів, Україна, 14034', 'science', 'http://geci.stu.cn.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441096183, 1464164992, 0, ''),
-(172, 'Берулава Дмитро Заурійович', '-', 'ua', 'Аспірант', '+380663771122', 'bkt@bigmir.net', 'Стратегічні програми розвитку міст', 'no_degree', 'no_rank', 'Київський національний університет будівництва і архітектури', 'Кафедра управління проектами', 'пр-т Повітрофлотський, 31, Київ, Україна, 03680', 'science', 'http://www.knuba.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441096311, 1464165121, 0, ''),
-(173, 'Грисюк Юрій Сергійович', '-', 'ua', 'Доцент', '+380679071869', 'karerra@ukr.net', 'Управління процесом реалізації проектів та програм', 'ph_d_econ', 'docent', 'Національний транспортний університет', 'Кафедра транспортного права та логістики', 'вул. Суворова, 1, Київ, Україна, 01010', 'science', 'http://ntu.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441096532, 1464165341, 0, ''),
-(174, 'Рибак Анатолій Іванович', '-', 'ua', 'Професор', '+380506110106', 'anatol166@rambler.ru', 'Управління проектами', 'd_sc_tech', 'prof', 'Міжнародний гуманітарний університет', 'Кафедра бізнес-адміністрування та комп’ютерної безпеки', 'вул. Фонтанська дорога, 33, Одеса, Україна, 65009 ', 'science', 'http://mgu.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441101801, 1464170613, 0, ''),
-(175, 'Азарова Ірина Борисівна', '-', 'ua', 'Здобувач', '+380677227327', 'partisia@mail.ru', 'Управління проектами', 'no_degree', 'no_rank', 'Міжнародний гуманітарний університет', 'Кафедра бізнес-адміністрування та комп’ютерної безпеки', 'вул. Фонтанська дорога, 33, Одеса, Україна, 65009 ', 'science', 'http://mgu.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441101902, 1464170716, 0, ''),
-(176, 'Панафідін Геннадій Сергійович', '-', 'ua', 'Здобувач', '+3806762479999', 'g.s.panafidin@ua-etc.com', 'Економіка та комп\'ютерні технології', 'no_degree', 'no_rank', 'Міжнародний гуманітарний університет', 'Кафедра бізнес-адміністрування та комп’ютерної безпеки', 'вул. Фонтанська дорога, 33, Одеса, Україна, 65009 ', 'science', 'http://mgu.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441102071, 1464170893, 0, ''),
-(177, 'Бабенко Михайло Юрійович  ', '-', 'ua', 'Аспірант', '+380633706868', 'babenkomichail777@gmail.com', 'Економіка та комп\'ютерні технології', 'no_degree', 'no_rank', 'Міжнародний гуманітарний університет', 'Кафедра бізнес-адміністрування та комп’ютерної безпеки', 'вул. Фонтанська дорога, 33, Одеса, Україна, 65009 ', 'science', 'http://mgu.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441102169, 1464170979, 0, ''),
-(178, 'Баранюк Іван Андрійович', '-', 'ua', 'Доцент', '+380974506230', 'ivan_baranyuk@ukr.net', 'Управління якістю', 'ph_d_tech', 'docent', 'Навчально-науковий Інститут Економіки "Чернігівський національний технологічний університет"', 'Кафедра управління якістю та проектами', 'вул. Стрелецька, 1, Чернігів, Україна, 14034', 'science', 'http://geci.stu.cn.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441102347, 1464171159, 0, ''),
-(179, 'Ітченко Дмитро Миколайович', '-', 'ua', 'Старший викладач', '+380971969066', 'itchenko@list.ru', 'Управління якістю', 'no_degree', 'no_rank', 'Навчально-науковий Інститут Економіки "Чернігівський національний технологічний університет"', 'Кафедра управління якістю та проектами', 'вул. Стрелецька, 1, Чернігів, Україна, 14034', 'science', 'http://geci.stu.cn.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441102460, 1464171271, 0, ''),
-(180, 'Малєєва Ольга Володимирівна', '-', 'ua', 'Професор', '+380973497591', 'omaleyeva@mail.ru', 'Управління проектами та програмами, інформаційні технології в управлінні', 'd_sc_tech', 'prof', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра інформаційних управляючих систем', 'вул. Чкалова,17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 350, 'uah', 0, 1441102627, 1464171438, 0, ''),
-(181, 'Король Юлія Олександрівна', '-', 'ua', 'Аспірант', '+380965541727', 'korol_julia@mail.ru', 'Управління проектами і програмами', 'no_degree', 'no_rank', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра інформаційних управляючих систем', 'вул. Чкалова,17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 350, 'uah', 0, 1441102727, 1464171537, 0, ''),
-(182, 'Прокопенко Тетяна Олександрівна', '-', 'ua', 'Доцент', '+380972999979', 'tatianaalexandr@yandex.ru', 'Управління проектами', 'ph_d_tech', 'docent', 'Черкаський державний технологічний університет', 'Кафедра управління проектами', 'бул. Шевченко, 460, Черкаси, Україна, 18006', 'science', 'https://chdtu.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441102943, 1464171756, 0, ''),
-(183, 'Урецька Юлія Ігоревна', '-', 'ua', 'Аспірант', '+380633649190', 'julia.uretskaya@tmx.com.ua', 'Управління проектами', 'no_degree', 'no_rank', 'Черкаський державний технологічний університет', 'Кафедра управління проектами', 'бул. Шевченко, 460, Черкаси, Україна, 18006', 'science', 'https://chdtu.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441103038, 1464171855, 0, ''),
-(184, 'Васильцова Наталія Володимирівна', '-', 'ua', 'Доцент', '+380577021451 ', 'vasiltsova_natali@mail.ru', 'Управління ІТ-проектами, управління роботою проектної команди', 'ph_d_tech', 'docent', 'Харківський національний університет радіоелектроніки', 'Кафедра інформаційних управляючих систем', 'пр-т Науки, 14, Харків. Україна, 61166', 'science', 'http://nure.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441103431, 1464172241, 0, ''),
-(185, 'Панфьорова Ірина Юріївна', '-', 'ua', 'Доцент', '+380577021451', 'panfiorova@gmail.com', 'Управління ІТ-проектами, технології баз даних, автоматизація управління організацією', 'ph_d_tech', 'docent', 'Харківський національний університет радіоелектроніки', 'Кафедра інформаційних управляючих систем', 'пр-т Науки, 14, Харків. Україна, 61166', 'science', 'http://nure.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441103541, 1464172351, 0, ''),
-(186, 'Гайдабрус Богдан Володимирович', '-', 'ua', 'Доцент', '+380502362464', 'gaudabrys@mail.ru', 'Управління проектами та програмами, управління ризиками ', 'ph_d_tech', 'docent', 'Сумський державний університет', 'Кафедра комп\'ютерних наук', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441103725, 1464172535, 0, ''),
-(187, 'Дружинін Євген Анатолійович ', '-', 'ua', 'Завідувач кафедри інформаційних технологій проектування літальних апаратів', '+380577884105', 'dea5050@mail.ru', 'Управління проектами и програмами, системне проектування ', 'd_sc_tech', 'prof', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра інформаційних технологій проектування літальних апаратів', 'вул. Чкалова,17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 350, 'uah', 0, 1441103874, 1464172683, 0, ''),
-(188, 'Казимиренко Юлія Олексіївна', '-', 'ua', 'Доцент', '+380679805197', 'uakazi@mksat.net', 'Розробка нових композиційних матеріалів і покриттів, експериментальні дослідження їх властивостей, оптимізація складу, структури, захист від іонізуючого випромінювання', 'ph_d_tech', 'docent', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра матеріалознавства і технології металів', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441115320, 1464184133, 0, ''),
-(189, 'Фаріонова Тетяна Анатоліївна', '-', 'ua', 'Доцент', '+380672356700', 'tetyana.farionova@nuos.du.ua', 'Дослідження в галузі управління проектами та теорії прийняття рішень, їх прикладне застосування для рішення інженерних задач', 'ph_d_tech', 'docent', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра програмного забезпечення автоматизованих систем', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441115436, 1464184247, 0, ''),
-(190, 'Ярошенко Руслан Федорович ', '-', 'ua', 'Доцент', '+380442449690', 'r.yaroshenko@mail.ru', 'Управління проектами', 'ph_d_tech', 'docent', 'Київський національний університет будівництва і архітектури', 'Кафедра управління проектами', 'пр-т Повітрофлотський, 31, Київ, Україна, 03680', 'science', 'http://www.knuba.edu.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441115650, 1464184460, 0, ''),
-(191, 'Левикін Віктор Макарович', '-', 'ua', 'Завідувач кафедри інформаційних управляючих систем', '+380577021451', 'iyc@kture.kharkov.ua', 'Методології, методи та інформаційні технології розробки інтегрованих і web-базованих інформаційних систем', 'd_sc_tech', 'prof', 'Харківський національний університет радіоелектроніки', 'Кафедра інформаційних управляючих систем', 'пр-т Науки, 14, Харків. Україна, 61166', 'science', 'http://nure.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441115867, 1464184678, 0, ''),
-(192, 'Євланов Максим Вікторович', '-', 'ua', 'Доцент', '+380577021451', 'evlanov_max@mail.ru', 'Розробка методологій, моделей, методів і технологій створення сервіс-орієнтованих систем, включаючи формування та аналіз вимог, а також синтез функціональних структур інформаційних систем.', 'ph_d_tech', 'docent', 'Харківський національний університет радіоелектроніки', 'Кафедра інформаційних управляючих систем', 'пр-т Науки, 14, Харків. Україна, 61166', 'science', 'http://nure.ua/', 'listener', '', '0', '0', 350, 'uah', 0, 1441115988, 1464184802, 0, ''),
-(193, 'Кійко Сергій Геннадійович', '-', 'ua', 'Перший заступник Голови Правління - директор з фінансів та економіки', '+380612834069', 'secrdp@dss.com.ua', 'Фінансовий менеджмент, управління проектами', 'no_degree', 'no_rank', 'ПАО "Дніпроспецсталь"', '-', 'вул. Південне шосе, 81, Запоріжжя, Україна, 69008', 'industry', 'http://www.dss-ua.com/', 'listener', '', '0', '0', 350, 'uah', 0, 1441116378, 1464185188, 0, '');
+INSERT INTO `member` (`id`, `name`, `nameEng`, `country`, `position`, `phone`, `email`, `interest`, `scienceDegree`, `scienceTitle`, `organisationTitle`, `organisationDepartment`, `organisationAddress`, `organisationActivity`, `organisationUrl`, `participationType`, `topicTitle`, `topicLanguage`, `topicSection`, `totalSum`, `currency`, `papersCount`, `created_at`, `updated_at`, `paid`, `noteFromAdmin`, `inviteSentAt`) VALUES
+(19, 'Бабич Ігор Ігоревич', 'Igor Babych', 'ua', 'Асистент', '+380956860510', 'avtop25495@gmail.com', 'Управління проектами, імітаційне моделювання', 'no_degree', 'no_rank', 'Національний технічний університет "Харківський політехнічний інститут"', 'Кафедра стратегічного управління', 'вул. Фрунзе, 21, Харків, Україна, 61002', 'science', 'http://www.kpi.kharkov.ua/', 'listener', '', '0', '0', 400, 'uah', 0, 1463467298, 1478162706, 0, '', 1478162706),
+(20, 'Лобач Олена Володимирівна', 'Helena Lobach', 'ua', 'Доцент', '+380509846979', 'e.v.lobach@gmail.com', 'Управління проектами і програмами', 'ph_d_tech', 'docent', 'Національний технічний університет "Харківський політехнічний інститут"', 'Кафедра стратегічного управління', 'вул. Фрунзе, 21, Харків, Україна, 61002', 'science', 'http://www.kpi.kharkov.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463467540, 1477245126, 0, '', 1463467540),
+(21, 'Роговий Антон Іванович', 'Anton Rogoviy', 'ua', 'Доцент', '+380675424242', 'rogoviy@ukr.net', 'Управління проектами, маркетинг', 'ph_d_tech', 'docent', 'Національний технічний університет "Харківський політехнічний інститут"', 'Кафедра стратегічного управління', 'вул. Фрунзе, 21, Харків, Україна, 61002', 'science', 'http://www.kpi.kharkov.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463467741, 1477245126, 0, '', 1463467741),
+(22, 'Ігуменцева Наталія Володимирівна', 'Natalia Igumentseva', 'ua', 'Доцент', '+380672990614', 'izumnv@i.ua', 'Соціальне прогнозування', 'ph_d_econ', 'docent', 'Харківський національний університет радіоелектроніки', 'Кафедра економічної кібернетики і управління економічною безпекою', 'пр-т Науки, 14, Харків. Україна, 61166', 'science', 'http://nure.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463489553, 1477245126, 1, '', 1463489553),
+(23, 'Гуца Олег Миколайович', 'Oleg Gutsa', 'ua', 'Доцент', '+380503007762', 'gutsabox@gmail.com', 'Процесний підхід до управління, бізнес-процеси, регламенти', 'ph_d_tech', 'docent', 'Харківський національний університет радіоелектроніки', 'Кафедра економічної кібернетики і управління економічною безпекою', 'пр-т Науки, 14, Харків. Україна, 61166', 'science', 'http://nure.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463490019, 1477245126, 1, '', 1463490019),
+(24, 'Довгопол Ніна Василівна', 'Nina Dovgopol', 'ua', 'Доцент', '+380952234442', 'n.dovgopol@mail.ru', 'Оптимізація бізнес-процесів в бухгалтерському обліку', 'ph_d_econ', 'docent', 'Харківський національний університет радіоелектроніки', 'Кафедра економічної кібернетики і управління економічною безпекою', 'пр-т Науки, 14, Харків. Україна, 61166', 'science', 'http://nure.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463490199, 1477245126, 1, '', 1463490199),
+(25, 'Кононенко Ігор Володимирович', 'Igor Kononenko', 'ua', 'Завідувач кафедри стратегічного управління', '+380505142016', 'igorvkononenko@gmail.com', 'Інтегроване стратегічне управління, управління портфелями, програмами, проектами', 'ph_d_tech', 'prof', 'Національний технічний університет "Харківський політехнічний інститут"', 'Кафедра стратегічного управління', 'вул. Фрунзе, 21, Харків, Україна, 61002', 'science', 'http://www.kpi.kharkov.ua/', 'speaker', 'Модель и метод синтеза методологии управления проектом при нечетких исходных данных', '2', '0', 450, 'uah', 0, 1463490634, 1477245126, 0, '', 1463490634),
+(26, 'Овсюченко Юрій Вікторович', 'Yuriy Ovsyuchenko', 'ua', 'Доцент', '+380501716175', 'ovsyuchenko64@mail.ru', 'Управління бізнес-процесами', 'ph_d_econ', 'docent', 'Харківський національний університет радіоелектроніки', 'Кафедра економічної кібернетики і управління економічною безпекою', 'пр-т Науки, 14, Харків. Україна, 61166', 'science', 'http://nure.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463490931, 1477245126, 1, '', 1463490931),
+(27, 'Пересада Олена Василівна', 'Olena Peresada', 'ua', 'Старший викладач', '+380501330080', 'alexeyperesada@gmail.com', 'Міжнародна економіка, історія економічних вчень', 'no_degree', 'no_rank', 'Харківський національний університет радіоелектроніки', 'Кафедра економічної кібернетики і управління економічною безпекою', 'пр-т Науки, 14, Харків. Україна, 61166', 'science', 'http://nure.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463491718, 1477245126, 1, '', 1463491718),
+(28, 'Прібильнова Інна Борисівна', 'Inna Pribylnova', 'ua', 'Старший викладач', '+380930551830', 'inessa_@list.ru', 'Інформаційний бізнес, моделювання бізнес-процесів', 'no_degree', 'no_rank', 'Харківський національний університет радіоелектроніки', 'Кафедра економічної кібернетики і управління економічною безпекою', 'пр-т Науки, 14, Харків. Україна, 61166', 'science', 'http://nure.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463492059, 1477245126, 1, '', 1463492059),
+(29, 'Тімофєєв Володимир Олександрович', 'Volodymyr Timofeev', 'ua', 'Завідувач кафедри економічної кібернетики і управління економічною безпекою', '+380577021490', 'kafedra_eim@kture.kharkov.ua', 'Економічна кібернетика, управління економічною безпекою', 'd_sc_tech', 'prof', 'Харківський національний університет радіоелектроніки', 'Кафедра економічної кібернетики і управління економічною безпекою', 'пр-т Науки, 14, Харків. Україна, 61166', 'science', 'http://nure.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463492337, 1477245126, 0, '', 1463492337),
+(30, 'Харазій Анна Володимирівна', 'Anna Haraziy', 'ua', 'Асистент', '+380506153212', 'haraziy@rambler.ru', 'Управління проектами і програмами', 'ph_d_tech', 'no_rank', 'Національний технічний університет "Харківський політехнічний інститут"', 'Кафедра стратегічного управління', 'вул. Фрунзе, 21, Харків, Україна, 61002', 'science', 'http://www.kpi.kharkov.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463492520, 1477245126, 0, '', 1463492520),
+(31, 'Чайкова Олена Ігорівна', 'Olena Chaykova', 'ua', 'Доцент', '+380577076161', 'chaykovalena@gmail.com', 'Менеджмент, маркетинг', 'ph_d_econ', 'docent', 'Національний технічний університет "Харківський політехнічний інститут"', 'Кафедра менеджменту зовнішньоекономічної діяльності та фінансів', 'вул. Фрунзе, 21, Харків, Україна, 61002', 'science', 'http://www.kpi.kharkov.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463492725, 1477245126, 0, '', 1463492725),
+(32, 'Андрієвська Віра Олександрівна', 'Vira Andrievska', 'ua', 'Старший викладач', '+380634770060', 'andri-vera@ukr.net', 'Управління проектами та програмами ', 'no_degree', 'no_rank', 'Одеський національний морський університет', 'Кафедра «Системний аналіз та логістика»', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463516836, 1477245126, 1, '', 1463516836),
+(33, 'Берневек Тетяна Іванівна', 'Tatyana Bernevek', 'ua', 'Асистент', '+380482341192', 'bernevek-g@mail.ru', 'Управління проектами', 'no_degree', 'no_rank', 'Одеський національний морський університет', 'Кафедра "Морські перевезення"', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463517110, 1477245126, 1, '', 1463517110),
+(34, 'Бондар Алла Віталіївна', 'Alla Bondar', 'ua', 'Доцент', '+380684030010', 'ocheretyanka@rambler.ru', 'Управління проектами на транспорті', 'ph_d_tech', 'docent', 'Одеський національний морський університет', 'Кафедра «Системний аналіз та логістика»', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463517303, 1477245126, 1, '', 1463517303),
+(35, 'Гловацька Світлана Миколаївна', 'Svitlana Glovatska', 'ua', 'Начальник відділу міжнародних зв\'язків', '+380677584958', 'snglov@gmail.com', 'Управління проектами міжнародної діяльності ВНЗ, управління іміджем ВНЗ', 'no_degree', 'no_rank', 'Одеський національний морський університет', 'Відділ міжнародних зв\'язків', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463517590, 1477245126, 1, '', 1463517590),
+(36, 'Ковтун Тетяна Антонівна', 'Tatyana Kovtun', 'ua', 'Доцент', '+380679212974', 'tandem@gcn.net', 'Управління проектами, управління ризиками, логістичний менеджмент', 'ph_d_tech', 'docent', 'Одеський національний морський університет', 'Кафедра «Системний аналіз та логістика»', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463517890, 1477245126, 1, '', 1463517890),
+(37, 'Пітерська Варвара Михайлівна', 'Varvara Piterskaya', 'ua', 'Доцент', '+380675592377', 'varuwa@ukr.net', 'Управління проектами, проектування інноваційних систем', 'ph_d_tech', 'docent', 'Одеський національний морський університет', 'Кафедра "Комерційне забезпечення транспортних процесів"', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463518180, 1477245126, 1, '', 1463518180),
+(38, 'Ходікова Інна Володимирівна', 'Inna Hodikova', 'ua', 'Старший викладач', '+380677681841', 'xodikowa@rambler.ru', 'Формування та управління командою проекту', 'no_degree', 'no_rank', 'Одеський національний морський університет', 'Кафедра «Системний аналіз та логістика»', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463518643, 1477245126, 1, '', 1463518643),
+(39, 'Богославець Аліна Олександрівна', 'Alina Bogoslavets', 'ua', 'Асистент', '+380933521760', 'alinalinal@gmail.com', 'Управління IT-проектами', 'no_degree', 'no_rank', 'Харківський національний університет міського господарства імені О.М. Бекетова', 'Кафедра управління проектами в міському господарстві і будівництві', 'вул. Маршала Бажанова, 17, Харків, Україна, 61002', 'science', 'http://www.kname.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463641574, 1477245126, 0, NULL, 1463641574),
+(40, 'Гусєва Юлія Юріївна', 'Yulia Guseva', 'ua', 'Доцент', '+30668095322', 'yulia.y.guseva@gmail.com', 'Управління проектами', 'ph_d_tech', 'docent', 'Харківський національний університет міського господарства імені О.М. Бекетова', 'Кафедра управління проектами в міському господарстві і будівництві', 'вул. Маршала Бажанова, 17, Харків, Україна, 61002', 'science', 'http://www.kname.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463641801, 1477245126, 1, '', 1463641801),
+(41, 'Давідіч Наталія Василівна', 'Natalia Davidich', 'ua', 'Аспірант', '+380502285361', 'shamanwelkax@mail.ru', 'Управління проектами', 'no_degree', 'no_rank', 'Харківський національний університет міського господарства імені О.М. Бекетова', 'Кафедра управління проектами в міському господарстві і будівництві', 'вул. Маршала Бажанова, 17, Харків, Україна, 61002', 'science', 'http://www.kname.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463641953, 1477245126, 0, '', 1463641953),
+(42, 'Кадикова Ірина Миколаївна', 'Irina Kadykova', 'ua', 'Доцент', '+380505668449', 'irina.kadykova@gmail.com', 'Управління соціальними проектами', 'ph_d_econ', 'docent', 'Харківський національний університет міського господарства імені О.М. Бекетова', 'Кафедра управління проектами в міському господарстві і будівництві', 'вул. Маршала Бажанова, 17, Харків, Україна, 61002', 'science', 'http://www.kname.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463642162, 1477245126, 1, '', 1463642162),
+(43, 'Старостіна Альона Юріївна', 'Alena Starostina', 'ua', 'Асистент', '+380990532900', 'starostina-2010@yandex.ua', 'Управління програмами', 'no_degree', 'no_rank', 'Харківський національний університет міського господарства імені О.М. Бекетова', 'Кафедра управління проектами в міському господарстві і будівництві', 'вул. Маршала Бажанова, 17, Харків, Україна, 61002', 'science', 'http://www.kname.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463642636, 1477245126, 0, NULL, 1463642636),
+(44, 'Сухонос Марія Костянтинівна', 'Maria Sukhonos', 'ua', 'Професор', '+380506362409', 'sukhonos.maria@mail.ru', 'Управлівння програмами і портфелями проектів', 'd_sc_tech', 'prof', 'Харківський національний університет міського господарства імені О.М. Бекетова', 'Кафедра управління проектами в міському господарстві і будівництві', 'вул. Маршала Бажанова, 17, Харків, Україна, 61002', 'science', 'http://www.kname.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463642796, 1477245126, 0, NULL, 1463642796),
+(45, 'Чумаченко Ігор Володимирович', 'Igor Chumachenko', 'ua', 'Завідувач кафедри управління проектами в міському господарстві і будівництві', '+380675708066', 'ivchumachenko@gmail.com', 'Управління проектами і програмами', 'd_sc_tech', 'prof', 'Харківський національний університет міського господарства імені О.М. Бекетова', 'Кафедра управління проектами в міському господарстві і будівництві', 'вул. Маршала Бажанова, 17, Харків, Україна, 61002', 'science', 'http://www.kname.edu.ua/', 'speaker', 'Управление заинтересованными сторонами образовательных проектов', '2', '0', 450, 'uah', 0, 1463643196, 1477245126, 0, NULL, 1463643196),
+(46, 'Колесніков Олексій Євгенович', 'Oleksii Kolesnikov', 'ua', 'Доцент', '+380972196167', 'akoles78@gmail.com', 'Інформаційні технології в управлінні проектами, дистанційна освіта', 'ph_d_tech', 'docent', 'Одеський національний політехнічний університет', 'Кафедра управління системами безпеки життєдіяльності ', 'пр-т Шевченка, 1, Одеса, Україна, 65044', 'science', 'http://opu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463644740, 1477245126, 0, '', 1463644740),
+(47, 'Колеснікова Катерина Вікторівна', 'Kateryna Kolesnikova', 'ua', 'Професор', '+380677023294', 'amberk4@gmail.com', 'Інформаційні технології в управлінні проектами', 'd_sc_tech', 'prof', 'Одеський національний політехнічний університет', 'Кафедра інформаційних технологій проектування в машинобудуванні', 'пр-т Шевченка, 1, Одеса, Україна, 65044', 'science', 'http://opu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463645062, 1477245126, 1, '', 1463645062),
+(48, 'Васильєва Валентина Юліївна', 'Valentyna Vasilieva', 'ua', 'Провідний фахівець', '+380664190222', 'v.y.vasileva@mail.ru', 'Управління проектами', 'no_degree', 'no_rank', 'Одеський національний політехнічний університет', 'Відділ маркетингу та інноваційної політики', 'пр-т Шевченка, 1, Одеса, Україна, 65044', 'science', 'http://opu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463645314, 1477245126, 1, '', 1463645314),
+(49, 'Гогунський Віктор Дмитрович', 'Viktor Gogunsky', 'ua', 'Завідувач кафедри управління системами безпеки життєдіяльності', '+380677097930', 'vgog@i.ua', 'Управління проектами, моделювання', 'd_sc_tech', 'prof', 'Одеський національний політехнічний університет', 'Кафедра управління системами безпеки життєдіяльності ', 'пр-т Шевченка, 1, Одеса, Україна, 65044', 'science', 'http://opu.ua/', 'speaker', 'Общие механизмы формирования системы цитирования научных статей', '2', '0', 450, 'uah', 0, 1463645621, 1477245126, 0, '', 1463645621),
+(50, 'Олех Тетяна Мефодіївна', 'Tatyana Olekh', 'ua', 'Доцент', '+380503910078', 'olekhta@gmail.com', 'Моделі та методи управління проектами та програмами', 'ph_d_tech', 'docent', 'Одеський національний політехнічний університет', 'Кафедра вищої математики та моделювання систем', 'пр-т Шевченка, 1, Одеса, Україна, 65044', 'science', 'http://opu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463645840, 1477245126, 1, '', 1463645840),
+(51, 'Тимочко Василь Олегович', 'Vasiliy Tymochko', 'ua', 'Завідувач кафедри управління проектами та безпеки виробництва', '+380672949183', 'tymochko_vo@mail.ru', 'Управління портфелями проектів аграрного виробництва', 'ph_d_tech', 'docent', 'Львівський національний аграрний університет', 'Кафедра управління проектами та безпеки виробництва', 'вул. Володимира Великого, 1, м. Дубляни,  Жовківський район, Львівська область, Україна, 80381', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463646786, 1477245126, 0, NULL, 1463646786),
+(52, 'Тригуба Анатолій Миколайович', 'Anatoly Tryguba', 'ua', 'Доцент', '+380680506725', 'trianamik@mail.ru', 'Управління інтегрованими програмами', 'ph_d_tech', 'docent', 'Львівський національний аграрний університет', 'Кафедра управління проектами та безпеки виробництва', 'вул. Володимира Великого, 1, м. Дубляни,  Жовківський район, Львівська область, Україна, 80381', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463646963, 1477245126, 1, '', 1463646963),
+(53, 'Шолудько Петро Васильович', 'Petro Sholudko', 'ua', 'Доцент', '+380678012411', 'p.ivankiv@gmail.com', 'Планування проектів', 'ph_d_tech', 'docent', 'Львівський національний аграрний університет', 'Кафедра експлуатації та технічного сервісу машин', 'вул. Володимира Великого, 1, м. Дубляни,  Жовківський район, Львівська область, Україна, 80381', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463647100, 1477245126, 1, '', 1463647100),
+(54, 'Сидорчук  Леонід  Леонідович', 'Leonid Sydorchuk', 'ua', 'Асистент', '+380972359530', 'leonsidor@mail.ru', 'Управління проектами', 'ph_d_tech', 'no_rank', 'Львівський національний аграрний університет', 'Кафедра управління проектами та безпеки виробництва', 'вул. Володимира Великого, 1, м. Дубляни,  Жовківський район, Львівська область, Україна, 80381', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463647236, 1477245126, 1, '', 1463647236),
+(55, 'Боярчук Олег Віталійович', 'Oleg Boyarchuk', 'ua', 'Старший викладач', '+380673400929', 'boyarchuko@mail.ua', 'Управління проектами аграрного виробництва', 'no_degree', 'no_rank', 'Львівський національний аграрний університет', 'Кафедра управління проектами та безпеки виробництва', 'вул. Володимира Великого, 1, м. Дубляни,  Жовківський район, Львівська область, Україна, 80381', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463647369, 1477245126, 1, '', 1463647369),
+(56, 'Говда Оксана Ігорівна', 'Oksana Govda', 'ua', 'Старший викладач', '+3803202242942', 'oksana.govda@gmail.com', 'Математичні методи і моделі управління проектами', 'no_degree', 'no_rank', 'Львівський національний аграрний університет', 'Кафедра вищої математики', 'вул. Володимира Великого, 1, м. Дубляни,  Жовківський район, Львівська область, Україна, 80381', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463647990, 1477245126, 1, '', 1463647990),
+(57, 'Ковальчик Юрій Іванович', 'Yuriy Kovalchyk', 'ua', 'Завідувач кафедри вищої математики', '+3803202242942', 'yurij.kovalchyk@gmail.com', 'Математичне моделювання,  континуальне інтегрування, теорія тертя і зношування', 'd_sc_math', 'prof', 'Львівський національний аграрний університет', 'Кафедра вищої математики', 'вул. Володимира Великого, 1, м. Дубляни,  Жовківський район, Львівська область, Україна, 80381', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463648231, 1477245126, 1, '', 1463648231),
+(58, 'Луб Павло Миронович', 'Pavlo Lub', 'ua', 'Доцент', '+380961606701', 'pollylub@ukr.net', 'Управління проектами технологічних систем сільськогосподарського виробництва', 'ph_d_tech', 'docent', 'Львівський національний аграрний університет', 'Кафедра управління проектами та безпеки виробництва', 'вул. Володимира Великого, 1, м. Дубляни,  Жовківський район, Львівська область, Україна, 80381', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463648362, 1477245126, 1, '', 1463648362),
+(59, 'Бедрій Дмитро Іванович', 'Dmytro Bedrii', 'ua', 'Заступник директора з наукової роботи', '+380674871204', 'dimi7928@gmail.com', 'Управління вартістю та ризиками наукових проектів', 'ph_d_tech', 'no_rank', 'Державне підприємство “Український науково-дослідний інститут радіо і телебачення”', 'Апарат управління', 'вул. Буніна, 31, Одеса, Україна, 65026', 'science', 'http://uniirt.ddns.net/', 'listener', '', '0', '0', 450, 'uah', 0, 1463662197, 1477245126, 1, '', 1463662197),
+(60, 'Саченко Анатолій Олексійович', 'Anatoliy Sachenko', 'ua', 'Завідувач кафедри інформаційно-обчислювальних систем та управління', '+380974313425', 'as@tneu.edu.ua', 'Управління ІТ проектами, розподілені інтелектуальні системи і безпровідні мережі, інтелектуальні системи кібербезпеки', 'd_sc_tech', 'prof', 'Тернопільський національний економічний університет', 'Кафедра інформаційно-обчислювальних систем та управління', 'вул. Львівська, 11, Тернопіль, Україна, 46000', 'science', 'http://www.tneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463663054, 1477245126, 1, '', 1463663054),
+(61, 'Виходець Юлія Сергіївна', 'Yulia Vyhodets', 'ua', 'Доцент', '+380505143651', 'vyhodets@mail.ru', 'Управління проектами розвитку, бізнес-моделі', 'ph_d_tech', 'docent', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра менеджменту', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1463663603, 1477245126, 1, '', 1463663603),
+(62, 'Ровінська Настасья Юріївна', 'Nastasya Rovinskaya', 'ua', 'Аспірант', '+380672931031', 'asyaxai@mail.ru', 'Управління проектами', 'no_degree', 'no_rank', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра менеджменту', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1463663911, 1477245126, 1, '', 1463663911),
+(63, 'Ченарані Алі', 'Ali Chanarani', 'ua', 'Аспірант', '+380634622870', 'alichen.ua@gmail.com', 'Управління проектами, інформаційна технологія проектування, управління ризиками', 'no_degree', 'no_rank', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра інформаційних технологій проектування літальних апаратів', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1463664200, 1477245126, 0, '', 1463664200),
+(64, 'Байстрюченко Наталія Олегівна', '-', 'ua', 'Доцент', '+380660919116', 'n.baistriuchenko@ukr.net', 'Проблеми теорії та практики підприємництва, дослідження структури капіталу, копроративне управління', 'ph_d_econ', 'no_rank', 'Сумський державний університет', 'Кафедра управління', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463667376, 1477245126, 1, '', 1463667376),
+(65, 'Теліженко Олександр Михайлович', '-', 'ua', 'Завідувач кафедри управління', '+380954020827', 'altel@ukr.net', 'Економіка природокористування, економіка енергетики, управління інвестиціями', 'd_sc_econ', 'prof', 'Сумський державний університет', 'Кафедра управління', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463667590, 1477245126, 1, '', 1463667590),
+(66, 'Борисова Наталія Ігорівна', '-', 'ua', 'Аспірант', '+380974677658', 'n_borisova1977@mail.ru', 'Проекти альтернативної енергетики, управління ризиками', 'no_degree', 'no_rank', 'Черкаський державний технологічний університет', 'Кафедра економічної кібернетики та маркетингу', 'бул. Шевченко, 460, Черкаси, Україна, 18006', 'science', 'https://chdtu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463667882, 1477245126, 1, '', 1463667882),
+(67, 'Семко Інга Борисівна', '-', 'ua', 'Старший викладач', '+380675834039', 'semkoi@mail.ru', 'Управління проектами з енергозбреження', 'ph_d_tech', 'no_rank', 'Черкаський державний технологічний університет', 'Кафедра електротехнічних систем', 'бул. Шевченко, 460, Черкаси, Україна, 18006', 'science', 'https://chdtu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463668025, 1477245126, 0, NULL, 1463668025),
+(68, 'Вайганг Ганна Олександрівна', '-', 'ua', 'Старший викладач', '+380630778181', 'malko.anna.comp@gmail.com', '"Зелена" логістика, проектний менеджмент, інформаційнні технології', 'ph_d_tech', 'no_rank', 'Національний транспортний університет', 'Кафедра екології та безпеки життєдіяльності', 'вул. Суворова, 1, Київ, Україна, 01010', 'science', 'http://ntu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463668416, 1477245126, 1, '', 1463668416),
+(69, 'Марченко Ганна Миколаївна', '-', 'ua', 'Асистент', '+380977641480', 'm-anka@ukr.net', 'Методи та моделі управління профорієнтаційними проектами', 'no_degree', 'no_rank', 'Національний транспортний університет', 'Кафедра технічної експлуатації автомобілів та автосервісу', 'вул. Суворова, 1, Київ, Україна, 01010', 'science', 'http://ntu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463668641, 1477245126, 1, '', 1463668641),
+(70, 'Савостін-Косяк Данило Олександрович', '-', 'ua', 'Асистент', '+380938766418', 'daniel_s@ukr.net', 'Управління проектами підвищення кваліфікації за дистанційною формою навчання', 'no_degree', 'no_rank', 'Національний транспортний університет', 'Кафедра технічної експлуатації автомобілів та автосервісу', 'вул. Суворова, 1, Київ, Україна, 01010', 'science', 'http://ntu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463668762, 1477245126, 1, '', 1463668762),
+(71, 'Возний Олександр Михайлович', '-', 'ua', 'Доцент', '+380933969334', 'oleksandr.voznyi@nuos.edu.ua', 'Управління проектами в суднобудуванні, інформаційні технології управління проектами', 'ph_d_tech', 'docent', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра управління проектами', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463669195, 1477245126, 1, '', 1463669195),
+(72, 'Гайдаєнко Оксана Володимирівна', '-', 'ua', 'Аспірант', '+380971828342', 'o_kotsur@mail.ru', 'Інформаційні технології підтримки організації надання послуг', 'no_degree', 'no_rank', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра інформаційних управляючих систем та технологій', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463669546, 1477245126, 0, NULL, 1463669546),
+(73, 'Книрік Наталя Ромуальдівна', '-', 'ua', 'Старший викладач', '+380972708689', 'nknyrik@gmail.com', 'Інформаційні технології управління проектами', 'no_degree', 'no_rank', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра інформаційних управляючих систем та технологій', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463669708, 1477245126, 0, NULL, 1463669708),
+(74, 'Кошкін Костянтин Вікторович', '-', 'ua', 'Директор інституту комп’ютерних та інженерно-технологічних наук, завідувач кафедри інформаційних управляючих систем та технологій', '+380512424470', 'kkoshkin@ukr.net', 'Управління проектами в галузі суднобудування та ІТ', 'd_sc_tech', 'prof', 'Національний університет кораблебудування імені адмірала Макарова', 'Інститут комп’ютерних та інженерно-технологічних наук', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'speaker', 'Принятие решений при реализации IT-проектов на основе имитационного моделирования', '2', '0', 450, 'uah', 0, 1463669861, 1477245126, 0, '', 1463669861),
+(75, 'Данченко Олена Борисівна', '-', 'ua', 'Завідувач кафедри бізнес-адміністрування та управління проектами', '+380675931102', 'elen_danchenko@rambler.ru', 'Управління проектами, ризик-менеджмент, реінжиніринг бізнес-процесів', 'ph_d_tech', 'docent', 'Університет економіка та права "КРОК"', 'Кафедра бізнес-адміністрування та управління проектами', 'вул. Лагерна, 30-32, Київ, Україна, 01001', 'science', 'http://www.krok.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463670181, 1477245126, 1, '', 1463670181),
+(76, 'Любима Юлія Олександрівна', '-', 'ua', 'Аспірант', '+380502870371', 'Alary7@ukr.net', 'Наукові проекти', 'no_degree', 'no_rank', 'Університет економіка та права "КРОК"', 'Кафедра бізнес-адміністрування та управління проектами', 'вул. Лагерна, 30-32, Київ, Україна, 01001', 'science', 'http://www.krok.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463670300, 1477245126, 1, '', 1463670300),
+(77, 'Демидюк Микола Анатолійович', '-', 'ua', 'Завідувач відділом аспірантури та докторантури', '+380688496435', 'nick090579@mail.ru', 'Автоматизація процесів керування', 'ph_d_tech', 'docent', 'Луцький національний технічний університет', 'Відділ аспірантури та докторантури', 'вул. Львівська, 75, Луцьк, Україна, 43018', 'science', 'http://lutsk-ntu.com.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463670558, 1477245126, 1, '', 1463670558),
+(78, 'Сіваковська Олена Миколаївна', '-', 'ua', 'Аспірант', '+380961305556', 'goodlenchik@gmail.com', 'Програмування, АСУ', 'no_degree', 'no_rank', 'Луцький національний технічний університет', 'Кафедра комп\'ютерної інженерії', 'вул. Львівська, 75, Луцьк, Україна, 43018', 'science', 'http://lutsk-ntu.com.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463670769, 1477245126, 1, '', 1463670769),
+(79, 'Савчук Петро Петрович', '-', 'ua', 'Ректор Луцького національного технічного університету', '+380667892893', 'savchuk71@gmail.com', 'Управління інноваційною діяльністю', 'd_sc_tech', 'prof', 'Луцький національний технічний університет', 'Кафедра матеріалознавства та пластичного формування конструкцій машинобудування', 'вул. Львівська, 75, Луцьк, Україна, 43018', 'science', 'http://lutsk-ntu.com.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463670949, 1477245126, 1, '', 1463670949),
+(80, 'Зачко Олег Богданович', '-', 'ua', 'Заступник завідувача кафедри', '+380676880060', 'zachko@ukr.net', 'Управління проектами, інформаційні технології, безпека', 'ph_d_tech', 'docent', 'Львівський державний університет безпеки життєдіяльності', 'Кафедра управління проектами, інформаційнних технологій та телекомунікацій', 'вул. Клепарівська, 35, Львів, Україна, 79007', 'science', 'http://www.ldubgd.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463671234, 1477245126, 1, '', 1463671234),
+(81, 'Коломієць Анна Степанівна', '-', 'ua', 'Асистент', '+380932492253', 'anna.tsesliv@gmail.com', 'Управління впровадженням комерційної концесії на промислових підприємствах', 'ph_d_econ', 'no_rank', 'Київський національний університет імені Тараса Шевченка', 'Кафедра технологій управління', 'вул. Володимирська, 64/13, Київ, Україна, 01601 ', 'science', 'http://www.univ.kiev.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463671528, 1477245126, 1, '', 1463671528),
+(82, 'Кубявка Любов Богданівна', '-', 'ua', 'Асистент', '+380931684148', 'lyubov.kubyavka@mail.ru', 'Управління проектами', 'ph_d_tech', 'no_rank', 'Київський національний університет імені Тараса Шевченка', 'Кафедра технологій управління', 'вул. Володимирська, 64/13, Київ, Україна, 01601 ', 'science', 'http://www.univ.kiev.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463671732, 1477245126, 0, NULL, 1463671732),
+(83, 'Морозов Віктор Володимирович', '-', 'ua', 'Завідувач кафедри технологій управління', '+0380503580950', 'knumvv@gmail.com', 'Методи управління проектами, управління закупівлями', 'ph_d_tech', 'prof', 'Київський національний університет імені Тараса Шевченка', 'Кафедра технологій управління', 'вул. Володимирська, 64/13, Київ, Україна, 01601 ', 'science', 'http://www.univ.kiev.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463671867, 1477245126, 0, NULL, 1463671867),
+(84, 'Бушуєв Сергій Дмитрович', '-', 'ua', 'Завідувач кафедри управління проектами', '+380504693839', 'SBushuyev@ukr.net', 'Управління проектами і програмами', 'd_sc_tech', 'prof', 'Київський національний університет будівництва і архітектури', 'Кафедра управління проектами', 'пр-т Повітрофлотський, 31, Київ, Україна, 03680', 'science', 'http://www.knuba.edu.ua/', 'speaker', 'Ключевые тенденции развития управления проектами в условиях кризиса   ', '2', '0', 450, 'uah', 0, 1463672079, 1477245126, 0, '', 1463672079),
+(85, 'Рулікова Наталія Сергіївна', '-', 'ua', 'Доцент', '+380673653131', 'n_s_rulikova@mail.ua', 'Моделі та механізми управління програмою інноваційного розвитку діючого металургійного підприємства', 'ph_d_tech', 'docent', 'Національна металургійна академія України', 'Кафедра інтелектуальної власності', 'пр-т Гагаріна, 4, Дніпропетровськ, Україна, 49600', 'science', 'http://nmetau.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463672306, 1477245126, 0, '', 1463672306),
+(86, 'Швець Євгенія Сергіївна', '-', 'ua', 'Аспірант', '+380637145938', 'ip.nmetau@gmail.com', 'Моделі та механізми управління програмою інноваційного розвитку діючого металургійного підприємства', 'no_degree', 'no_rank', 'Національна металургійна академія України', 'Кафедра інтелектуальної власності', 'пр-т Гагаріна, 4, Дніпропетровськ, Україна, 49600', 'science', 'http://nmetau.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463672458, 1477245126, 0, '', 1463672458),
+(87, 'Чухрай Наталія Іванівна', '-', 'ua', 'Проректор з наукової роботи', '+380679960631', 'chuhraj@polynet.lviv.ua', 'Маркетинг, логістика, стратегічне управління, інноваційний менеджмент', 'd_sc_econ', 'prof', 'Національний університет "Львівська політехніка"', 'Ректорат', 'вул. Степана Бандери, 12, Львів, Україна, 79013', 'science', 'http://www.lp.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463672745, 1477245126, 0, NULL, 1463672745),
+(88, 'Сидорчук Олександр Васильович', '-', 'ua', 'Заступник директора з наукової роботи', '+380673220323', 'sydov@ukr.net', 'Управління інноваційними проектами та програмами', 'd_sc_tech', 'prof', 'Національний науковий центр «Інститут механізації та електрифікації сільського господарства»', 'Апарат управління', 'вул. Вокзальна, 11, смт. Глеваха-1,  Васильківський район, Київська область, Україна, 08631', 'science', 'http://imesg.gov.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463673094, 1477245126, 0, '', 1463673094),
+(89, 'Aгаї Ахмад', '-', 'ua', 'Аспірант', '+380938753643', 'ahmadaghaee@yahoo.com', 'Управління проектами', 'no_degree', 'no_rank', 'Національний технічний університет "Харківський політехнічний інститут"', 'Кафедра стратегічного управління', 'вул. Фрунзе, 21, Харків, Україна, 61002', 'science', 'http://www.kpi.kharkov.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463673276, 1477245126, 0, NULL, 1463673276),
+(90, 'Кучма Олег Олександрович', '-', 'ua', 'Доцент', '+30672502794', 'kuchmao@yandex.ua', 'Управління будівельними проектами', 'ph_d_econ', 'docent', 'Харківський національний університет будівництва та архітектури', 'Кафедра організації будівельного виробництва', 'вул. Сумська, 40, Харків, Україна, 61002', 'science', 'http://www.kstuca.kharkov.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463673455, 1477245126, 1, '', 1463673455),
+(91, 'Лобакова Лілія В\'ячеславівна', '-', 'ua', 'Аспірант', '+380974979609', 'Liya_lobakova@mail.ru', 'Управління проектами', 'no_degree', 'no_rank', 'Одеська державна академія будівництва та архітектури', 'Кафедра технології будівельного виробництва', 'вул. Дідріхсона, 4, Одеса, Україна, 65029', 'science', 'http://www.ogasa.org.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463673659, 1477245126, 1, '', 1463673659),
+(92, 'Менейлюк Олександр Іванович', '-', 'ua', 'Завідувач кафедри технології будівельного виробництва', '+380674853577', 'pr.mai@mail.ru', 'Оптимізація інвестиційно-будівельних проектів', 'd_sc_tech', 'prof', 'Одеська державна академія будівництва та архітектури', 'Кафедра технології будівельного виробництва', 'вул. Дідріхсона, 4, Одеса, Україна, 65029', 'science', 'http://www.ogasa.org.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463673805, 1477245126, 1, '', 1463673805),
+(93, 'Нікіфоров Олексій Леонідович', '-', 'ua', 'Аспірант', '+380663309054', 'aleksey-nikiforov@mail.ua', 'Управління будівельними проектами та підприємствами', 'no_degree', 'no_rank', 'Одеська державна академія будівництва та архітектури', 'Кафедра технології будівельного виробництва', 'вул. Дідріхсона, 4, Одеса, Україна, 65029', 'science', 'http://www.ogasa.org.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463673893, 1477245126, 1, '', 1463673893),
+(95, 'Машир Ярослав Вiкторович', '-', 'ua', 'Генеральний директор', '+380505848321', 'risham.ya@mail.ru', '-', 'no_degree', 'no_rank', 'ТОВ "Юридичний Альянс "Вікторовичі і Партнери"', 'Апарат управління', 'вул. Глінки, 1, Дніпропетровськ, Україна, 49000', 'consult', 'http://uavip.com.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463675031, 1477245126, 1, '', 1463675031),
+(96, 'Чиколовець Олексій Анатолійович', '-', 'ua', 'Начальник виробничо-технічного відділу', '+380672387377', 'chikolovec_alex@mail.ru', 'Управління проектами', 'no_degree', 'no_rank', 'Компанія «НЕСТ» (ВАТ «Нерухомість столиці»)', 'Виробничо-технічний відділ', 'вул. Василя Липківського, 45, Київ, Україна, 03035', 'real_est', 'http://www.nest.com.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463675366, 1477245126, 1, '', 1463675366),
+(97, 'Чернов Сергій Костянтинович', '-', 'ua', 'Директор з персоналу', '+380512493481', 'chsk@zorya.com.ua', 'Управління проектами і програмами', 'd_sc_tech', 'prof', 'Державне підприємство Науково-виробничий комплекс газотурбобудування «Зоря»-«Машпроект»', 'Апарат управління', 'пр-т Жовтневий, 42-а, Миколаїв, Україна, 54018', 'industry', 'http://www.zmturbines.com/', 'speaker', 'Управление финансированием проекта создания базового газотурбинного  двигателя мощностью 35 МВт', '2', '0', 450, 'uah', 0, 1463675721, 1477245126, 1, '', 1463675721),
+(98, 'Сутковий Андрій Миколайович', '-', 'ua', 'Директор', '+380504761451', 'shs_sd@mail.ru', 'Управління проектами', 'no_degree', 'no_rank', 'ТОВ "Штандарт"', 'Апарат управління', 'вул. Гагаріна, 68а, Сєвєродонецьк, Україна, 93400', 'consult', 'http://no.site', 'listener', '', '0', '0', 450, 'uah', 0, 1463676194, 1477245126, 1, '', 1463676194),
+(99, 'Попов Вадим Михайлович', '-', 'ua', 'Проректор з персоналу', '+380975172279', 'm.novozhilova04@gmail.com', 'Управління програмами розвитку макросистем', 'ph_d_tech', 'docent', 'Національний університет цивільного захисту України', 'Ректорат', 'вул. Чернишевська, 94, Харків, Україна, 61023', 'science', 'http://nuczu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463676781, 1477245126, 1, '', 1463676781),
+(100, 'Нікітін Павло Володимирович', '-', 'ua', 'Доцент', '+380672614974', 'uapsua@ukr.net', 'Упраління проектами та програмами підготовки плавскладу водного транспорту', 'ph_d_econ', 'docent', 'Київська державна академія водного транспорту імені гетьмана Петра Конашевича-Сагайдачного', 'Кафедра судноводіння та керування судном', 'вул. Кирилівська, 9, Київ, Україна, 04071', 'science', 'http://www.maritime.kiev.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463677199, 1477245126, 0, NULL, 1463677199),
+(101, 'Муравецький Святослав Аркадійович', '-', 'ua', 'Магістрант', '+380934651965', 'smuravetskiy@lohika.com', 'Управління проектами', 'no_degree', 'no_rank', 'Одеський регіональний інститут державного управління Національної академії державного управління при Президентові України', 'Кафедра управління проектами', 'вул. Генуезька, 22, Одеса, Україна, 65009', 'science', 'http://www.oridu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1463677484, 1477245126, 0, NULL, 1463677484),
+(102, 'Kiril Todorov', 'Kiril Todorov', 'bg', 'Head of Department of Entrepreneurship', '+359028195545', 'ktodorov@unwe.bg', 'Industrial Management, Entrepreneurship', 'd_sc_econ', 'prof', 'University of National and World Economy', 'Department of Entrepreneurship', '8-mi Dekemvri Str., 1700, Sofia, Bulgaria', 'science', 'http://www.unwe.bg/', 'speaker', 'Management of Business Internationalization: The Case of Family Businesses   ', '0', '0', 100, 'usd', 0, 1464016522, 1477245126, 0, NULL, 1464016522),
+(103, 'Kostadin Kolarov ', 'Kostadin Kolarov ', 'bg', 'Associate Professor', '+359888738132', 'kkolarov@unwe.bg', 'Entrepreneurial Economics', 'ph_d_econ', 'docent', 'University of National and World Economy', 'Department of Entrepreneurship', '8-mi Dekemvri Str., 1700, Sofia, Bulgaria', 'science', 'http://www.unwe.bg/', 'listener', '', '0', '0', 100, 'usd', 0, 1464017028, 1477245126, 0, NULL, 1464017028),
+(104, 'Hasan TUNÇ', 'Hasan TUNÇ', 'tr', 'Professor', '+903422118080', 'hasan.tunc@hku.edu.tr', '-', 'd_sc_econ', 'prof', 'Hasan Kalyoncu University', 'Faculty of Law', 'Havalimanı Yolu 8. Km, 27410, Şahinbey, Gaziantep, Turkey', 'science', 'http://www.hku.edu.tr/', 'listener', '', '0', '0', 100, 'usd', 0, 1464018129, 1477245126, 0, NULL, 1464018129),
+(105, 'Çetin ELMAS', 'Çetin ELMAS', 'tr', 'Professor', '+903122028528', 'celmas@gazi.edu.tr', 'Project Management', 'd_sc_tech', 'prof', 'Gazi University', 'Faculty of Engineering', '06500 Teknikokullar, Ankara, Turkey', 'science', 'http://gazi.edu.tr/', 'speaker', 'Comparation of Project Management Standards', '0', '0', 100, 'usd', 0, 1464019209, 1477245126, 0, NULL, 1464019209),
+(106, 'Igbal Babaev', 'Igbal Babaev', 'az', 'President of Azerbaijan Project Management Association', '+994124041860', 'info@ipma.az', 'Project and Program Management', 'd_sc_tech', 'prof', 'Azerbaijan Project Management Association', 'Management Board', 'AZ1075, Baku, Azerbaijan, Narimanov district, 153, A.Radjabli Street', 'npo', 'http://www.ipma.az/', 'speaker', 'Управление инновационными проектами в динамически изменяющейся среде   ', '2', '0', 100, 'usd', 0, 1464020208, 1477245126, 0, '', 1464020208),
+(107, 'Тесленко Павло Олександрович', '-', 'ua', 'Доцент', '+380679400451', 'p_a_t@ukr.net', 'Управління проектами', 'ph_d_tech', 'docent', 'Одеська державна академія будівництва та архітектури', 'Кафедра менеджменту та управління проектами', 'вул. Дідріхсона, 4, Одеса, Україна, 65029', 'science', 'http://www.ogasa.org.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1464021833, 1477245126, 1, '', 1464021833),
+(108, 'Фесенко Тетяна Григорівна', '-', 'ua', 'Доцент', '+380577073132', 'fesenkotatyana@gmail.com', 'Управління будівельними проектами', 'ph_d_tech', 'docent', 'Харківський національний університет міського господарства імені О.М. Бекетова', 'Кафедра управління проектами в міському господарстві і будівництві', 'вул. Маршала Бажанова, 17, Харків, Україна, 61002', 'science', 'http://www.kname.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1464022089, 1477245126, 1, '', 1464022089),
+(109, 'Анатольєв Анатолій Аркадійович', '-', 'ua', 'Аспірант', '+380678306102', 'anatolijarkadievi41988@gmail.com', 'Управління проектами', 'no_degree', 'no_rank', 'Одеська державна академія будівництва та архітектури', 'Кафедра менеджменту та управління проектами', 'вул. Дідріхсона, 4, Одеса, Україна, 65029', 'science', 'http://www.ogasa.org.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441129214, 1477245126, 0, '', 1441129214),
+(110, 'Барська Ірина Сергіївна', '-', 'ua', 'Здобувач', '+380679406437', 'ibarska@mail.ru', 'Управління проектами і програмами', 'no_degree', 'no_rank', 'Одеська державна академія будівництва та архітектури', 'Кафедра менеджменту та управління проектами', 'вул. Дідріхсона, 4, Одеса, Україна, 65029', 'science', 'http://www.ogasa.org.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441129660, 1477245126, 0, '', 1441129660),
+(111, 'Денисенко Вікторія Юріївна', '-', 'ua', 'Доцент', '+380679332552', 'vitka_2kd@ukr.net', 'Прикладна математика', 'ph_d_tech', 'docent', 'Одеська державна академія будівництва та архітектури', 'Кафедра прикладної та обчислювальної математики та САПР', 'вул. Дідріхсона, 4, Одеса, Україна, 65029', 'science', 'http://www.ogasa.org.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441129859, 1477245126, 0, '', 1441129859),
+(113, 'Безуглий Дмитро Георгійович', '-', 'ua', 'Заступник голови обласної ради', '+380978799255', 'a.ermolenko1990@gmail.com', 'Маркетинг, менеджмент, управління проектами', 'no_degree', 'no_rank', 'Дніпропетровська обласна рада', 'Відділ внутрішньої політики', 'пр-т Кірова, 2, Дніпропетровськ, Україна, 49004', 'public_adm', 'http://oblrada.dp.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441130765, 1477245126, 0, '', 1441130765),
+(114, 'Михалюк Микола Адамович', '-', 'ua', 'Доцент', '+380679793084', 'mykhaljuk@rambler.ru', 'Управління проектами аграрного виробництва', 'ph_d_tech', 'docent', 'Львівський національний аграрний університет', 'Кафедра енергетики', 'вул. Володимира Великого, 1, м. Дубляни, Жовківський район, Львівська область, Україна, 80381', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441130940, 1477245126, 0, '', 1441130940),
+(115, 'Тригуба Інна Леонтіївна', '-', 'ua', 'Старший викладач', '+380986564097', 'tinna@mail.ru', 'Управління проектами аграрного виробництва', 'no_degree', 'no_rank', 'Львівський національний аграрний університет', 'Кафедра селекції, генетики та захисту рослин', 'вул. Володимира Великого, 1, м. Дубляни, Жовківський район, Львівська область, Україна, 80381', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441131158, 1477245126, 0, '', 1441131158),
+(116, 'Бубенко Павло Трохимович', '-', 'ua', 'Директор Центру', '+380577063042', 'office.nesc@nas.gov.ua', 'Регіональна економіка та інноватика', 'd_sc_econ', 'prof', 'Північно-Східний науковий центр НАН і МОН України', 'Апарат управління', 'вул. Фрунзе, 8, Харків, Україна, 61002', 'science', 'http://www.nesc.com.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441131494, 1477245126, 0, '', 1441131494),
+(117, 'Літвінова Наталя Сергіївна', '-', 'ua', 'Аспірант', '+380487992142', 'ms.litvinoff@gmail.com', 'Управління проектами державно-приватного партнерства', 'no_degree', 'no_rank', 'Одеський національний морський університет', 'Кафедра "Організація митного контролю на транспорті"', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441131884, 1477245126, 0, '', 1441131884),
+(118, 'Шарибура Андрій Остапович ', '-', 'ua', 'Доцент', '+380661198786', 'AScharibura@gmail.com', 'Управління проектами систем вирощування сільськогосподарських культур', 'ph_d_tech', 'docent', 'Львівський національний аграрний університет', 'Кафедра експлуатації та технічного сервісу машин', 'вул. Володимира Великого, 1, м. Дубляни, Жовківський район, Львівська область, Україна, 80381', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441132273, 1477245126, 0, '', 1441132273),
+(119, 'Березовецький Сергій Андрійович.', '-', 'ua', 'Старший викладач', '+380972359530', 'siko@mail.ua', 'Управління конфігурацією проектів', 'no_degree', 'no_rank', 'Львівський національний аграрний університет', 'Кафедра машинобудування', 'вул. Володимира Великого, 1, м. Дубляни, Жовківський район, Львівська область, Україна, 80381', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441132541, 1477245126, 0, '', 1441132541),
+(120, 'Чімшир Валентин Іванович', '-', 'ua', 'Завідувач кафедри судноводіння та енергетики суден', '+380965549377', 'chimshir@mail.ru', 'Управління проектами', 'ph_d_tech', 'docent', 'Одеська національна морська академія (Ізмаїльський факультет)', 'Кафедра судноводіння та енергетики суден', 'вул. Фанагорійська, 9, Ізмаїл, Україна, 68600', 'science', 'http://izf.onma.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441103571, 1477245126, 0, '', 1441103571),
+(121, 'Кременчук Олександр Вікторович', '-', 'ua', 'Аспірант', '+380635898809', 'saawhitelife@gmail.com', 'Методологія та інформаційні технології управління науково-освітніми проектами та програмами', 'no_degree', 'no_rank', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра управління проектами', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441104261, 1477245126, 0, '', 1441104261),
+(122, 'Левченко Ольга Григорівна', '-', 'ua', 'Аспірант', '+380937425958', 'olga.georgieva@nuos.edu.ua', 'Управління науковими проектами та програмами', 'no_degree', 'no_rank', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра «Облік та економічний аналіз»', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441104390, 1477245126, 0, '', 1441104390),
+(123, 'Кальніченко Олена Володимирівна', '-', 'ua', 'Доцент, старший науковий співробітник', '+380504111061', 'kv_vl@ukr.net', 'Управління проектами', 'ph_d_tech', 'docent', 'Університет економіка та права "КРОК"', 'Кафедра бізнес-адміністрування та управління проектами', 'вул. Лагерна, 30-32, Київ, Україна, 01001', 'science', 'http://www.krok.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441105164, 1477245126, 0, '', 1441105164),
+(124, 'Коренєва Анастасія Юріївна', '-', 'ua', 'Аспірант', '+380966004666', '_Meln_@ukr.net', 'Управління проектами і програмами', 'no_degree', 'no_rank', 'Одеський національний морський університет', 'Кафедра «Системний аналіз та логістика»', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441105694, 1477245126, 0, '', 1441105694),
+(125, 'Тесля Юрій Миколайович', '-', 'ua', 'Декан факультету інформаційних технологій', '+300675033916', 'teslyas@ukr.net', 'Управління проектами і програмами', 'd_sc_tech', 'prof', 'Київський національний університет імені Тараса Шевченка', 'Кафедра технологій управління', 'вул. Володимирська, 64/13, Київ, Україна, 01601 ', 'science', 'http://www.univ.kiev.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441105917, 1477245126, 0, '', 1441105917);
+INSERT INTO `member` (`id`, `name`, `nameEng`, `country`, `position`, `phone`, `email`, `interest`, `scienceDegree`, `scienceTitle`, `organisationTitle`, `organisationDepartment`, `organisationAddress`, `organisationActivity`, `organisationUrl`, `participationType`, `topicTitle`, `topicLanguage`, `topicSection`, `totalSum`, `currency`, `papersCount`, `created_at`, `updated_at`, `paid`, `noteFromAdmin`, `inviteSentAt`) VALUES
+(126, 'Кузьмінська Юлія Миколаївна', '-', 'ua', 'Директор департаменту підвищення кваліфікації', '+380678575755', 'jkuzminskaya@gmail.com', 'Управління проектами', 'no_degree', 'no_rank', 'Університет економіка та права "КРОК"', 'Департамент підвищення кваліфікації', 'вул. Лагерна, 30-32, Київ, Україна, 01001', 'science', 'http://www.krok.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441106112, 1477245126, 0, '', 1441106112),
+(127, 'Лазарева Марина Вікторівна', '-', 'ua', 'Аспірант', '+380931671098', 'lazareva_marina@ukr.net', 'Управління довірою в управлінні проектами', 'no_degree', 'no_rank', 'Київський національний університет будівництва і архітектури', 'Кафедра управління проектами', 'пр-т Повітрофлотський, 31, Київ, Україна, 03680', 'science', 'http://www.knuba.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441106271, 1477245126, 0, '', 1441106271),
+(128, 'Ершов Михаил Николаевич', '-', 'ru', 'Профессор', '+74952874914', 'mnershov@gmail.com', 'Управление проектами', 'ph_d_tech', 'prof', 'Московский государственный строительный университет', 'Кафедра технологии и организации строительного производства', 'Ярославское шоссе, 26, Москва, Россия, 129337', 'science', 'http://mgsu.ru/', 'listener', '', '0', '0', 100, 'usd', 0, 1441107001, 1477245126, 0, '', 1441107001),
+(129, 'Логінов Олег Володимирович', '-', 'ua', 'Старший викладач', '+380963690983', 'ologinov@ukr.net', 'Управління проектами', 'no_degree', 'no_rank', 'Одеський національний морський університет', 'Кафедра транспортного права', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420115693, 1477245126, 0, '', 1420115693),
+(130, 'Мельник Каріна Володимирівна', '-', 'ua', 'Асистент', '+380577076474', 'karina.v.melnyk@gmail.com', 'Складні розподілені інформаційні системи, системи підтримки прийняття управлінських рішень', 'no_degree', 'no_rank', 'Національний технічний університет "Харківський політехнічний інститут"', 'Кафедра "Програмна інженерія та інформаційні технології управління"', 'вул. Фрунзе, 21, Харків, Україна, 61002', 'science', 'http://www.kpi.kharkov.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441123998, 1477245126, 0, '', 1441123998),
+(131, 'Молочник Юлія Богданівна', '-', 'ua', 'Асистент', '+380508580158', 'yulya.molochnik@mail.ru', 'Комунікаційний менеджмент', 'no_degree', 'no_rank', 'Національний університет "Львівська політехніка"', 'Кафедра менеджменту і міжнародного підприємництва', 'вул. Степана Бандери, 12, Львів, Україна, 79013', 'science', 'http://www.lp.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441124245, 1477245126, 0, '', 1441124245),
+(132, 'Пецкович Марія Дмитрівна', '-', 'ua', 'Асистент', '+380979790856', 'mdp@ukr.net', 'Контролювання', 'ph_d_econ', 'no_rank', 'Національний університет "Львівська політехніка"', 'Кафедра зовнішньоекономічної та митної діяльності', 'вул. Степана Бандери, 12, Львів, Україна, 79013', 'science', 'http://www.lp.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441124482, 1477245126, 0, '', 1441124482),
+(133, 'Малиновський Юрій Володимирович', '-', 'ua', 'Доцент', '+30677129132', 'travel_2020@rambler.ru', 'Економіка будівельної галузі', 'ph_d_econ', 'docent', 'Національний університет "Львівська політехніка"', 'Кафедра теоретичної та прикладної економіки', 'вул. Степана Бандери, 12, Львів, Україна, 79013', 'science', 'http://www.lp.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441124656, 1477245126, 0, '', 1441124656),
+(134, 'Романенков Юрій Олександрович', '-', 'ua', 'Доцент', '+380994332060', 'KhAI.management@ukr.net', 'Інформаційні технології прогнозування', 'ph_d_tech', 'docent', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра економіки і маркетингу', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1441136936, 1477245126, 0, '', 1441136936),
+(135, 'Рудніцький Сергій Іванович', '-', 'ua', 'Аспірант', '+380676050584', 'sergey.rudnitskiy@gmail.com', 'Управління проектами, управління конфігурацією проектів', 'no_degree', 'no_rank', 'Університет економіка та права "КРОК"', 'Кафедра бізнес-адміністрування та управління проектами', 'вул. Лагерна, 30-32, Київ, Україна, 01001', 'science', 'http://www.krok.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441137139, 1477245126, 0, '', 1441137139),
+(136, 'Ратушний Роман Тадейович', '-', 'ua', 'Проректор університету з логістики та менеджменту', '+380676732980', 'ratyshnuj@gmail.com', 'Інформаційні текхнології, управління проектами', 'ph_d_tech', 'docent', 'Львівський державний університет безпеки життєдіяльності', 'Ректорат', 'вул. Клепарівська, 35, Львів, Україна, 79007', 'science', 'http://www.ldubgd.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441137972, 1477245126, 0, '', 1441137972),
+(137, 'Шелега Олег Вячеславович', '-', 'ua', 'Аспірант', '+380971792494', 'ua-pl@i.ua', 'Управління інтегрованими проектами', 'no_degree', 'no_rank', 'Подільський державний аграрно-технічний університет', 'Кафедра транспортних технологій та засобів АПК', 'вул. Шевченка, 13, Кам’янець-Подільський, Україна, 32300', 'science', 'http://www.pdatu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441138616, 1477245126, 0, '', 1441138616),
+(138, 'Пукас Віталій Леонідович', '-', 'ua', 'Аспірант', '+380972901162', 'pukas.ivanna@mail.ru', 'Управління інтегрованими проектами', 'no_degree', 'no_rank', 'Подільський державний аграрно-технічний університет', 'Кафедра "Трактори, автомобілі та енергетичні засоби"', 'вул. Шевченка, 13, Кам’янець-Подільський, Україна, 32300', 'science', 'http://www.pdatu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441138852, 1477245126, 0, '', 1441138852),
+(139, 'Михалюк Володимир Миколайович', '-', 'ua', 'Аспірант', '+380976332023', 'myhaluk@ukr.net', 'Управління інтегрованими проектами', 'no_degree', 'no_rank', 'Львівський національний аграрний університет', 'Кафедра енергетики', 'вул. Володимира Великого, 1, м. Дубляни, Жовківський район, Львівська область, Україна, 80381', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441139019, 1477245126, 0, '', 1441139019),
+(140, 'Флис Ігор Михайлович', '-', 'ua', 'Доцент', '+380965583435', 'ihorflys@ukr.net', 'Управління проектами і програмами в аграрній галузі', 'ph_d_tech', 'docent', 'Львівський національний аграрний університет', 'Кафедра машинобудування', 'вул. Володимира Великого, 1, м. Дубляни, Жовківський район, Львівська область, Україна, 80381', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441086160, 1477245126, 0, '', 1441086160),
+(141, 'Чайковська Марина Петрівна', '-', 'ua', 'Доцент', '+380677502387', 'chmp@ukr.net', 'Управління ІТ-проектами, інформаційні системи та технології в бізнесі, інноваційний менеджмент, математичнв методи і моделювання в економіці і управлінні', 'ph_d_econ', 'docent', 'Одеський національний університет імені І.І. Мечникова', 'Кафедра менеджменту та математичного моделювання ринкових процесів', 'вул. Дворянська, 2, Одеса, Україна, 65023', 'science', 'http://onu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441086449, 1477245126, 0, '', 1441086449),
+(142, 'Новаківський Ігор Іванович', '-', 'ua', 'Доцент', '+380974350379', 'inovak@ukr.net', 'Менеджмент, ІТ', 'ph_d_econ', 'docent', 'Національний університет "Львівська політехніка"', 'Кафедра менеджменту організацій', 'вул. Степана Бандери, 12, Львів, Україна, 79013', 'science', 'http://www.lp.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441086610, 1477245126, 0, '', 1441086610),
+(143, 'Шатковський Леонiд Юрiйович', '-', 'ua', 'Аспірант', '+380994842909', 'shatkovskyiL@gmail.com', 'Управління проектами', 'no_degree', 'no_rank', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра інформаційних управляючих систем та технологій', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441086753, 1477245126, 0, '', 1441086753),
+(144, 'Григорян Тигран Георгiйович', '-', 'ua', 'Доцент', '+380933969330', 'grigorian.tigran@gmail.com', 'Управління проектами', 'ph_d_tech', 'docent', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра управління проектами', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441086871, 1477245126, 0, '', 1441086871),
+(145, 'Шматко Олександр Віталійович', '-', 'ua', 'Доцент', '+380677415514', 'asu.spios@gmail.com', 'Моделювання складних ієрархічних систем', 'ph_d_tech', 'docent', 'Національний технічний університет "Харківський політехнічний інститут"', 'Кафедра "Програмна інженерія та інформаційні технології управління"', 'вул. Фрунзе, 21, Харків, Україна, 61002', 'science', 'http://www.kpi.kharkov.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441087002, 1477245126, 0, '', 1441087002),
+(146, 'Яцунський Євген Олександрович', '-', 'ua', 'Аспірант', '+380666045900', 'yevhen.yatsunskyi@nuos.edu.ua', 'Рекреаційні проекти', 'no_degree', 'no_rank', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра управління проектами', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441087228, 1477245126, 0, '', 1441087228),
+(147, 'Шахов Анатолій Валентинович', '-', 'ua', 'Професор', '+380674840353', 'avshakhov@yandex.ua', 'Управління проектами', 'd_sc_tech', 'prof', 'Одеський національний морський університет', 'Кафедра судноремонту', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441087385, 1477245126, 0, '', 1441087385),
+(148, 'Бокарева Марина Олегівна', '-', 'ua', 'Аспірант', '+380679102000', 'bokareva.m@gmail.com', 'Управління проектами', 'no_degree', 'no_rank', 'Одеський національний морський університет', 'Кафедра судноремонту', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441087512, 1477245126, 0, '', 1441087512),
+(149, 'Корзняков Олексій Сергійович', '-', 'ua', 'Аспірант', '+380933540348', 'alexei.korznyakov@gmail.com', 'Управління проектами', 'no_degree', 'no_rank', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра управління проектами', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441087661, 1477245126, 0, '', 1441087661),
+(150, 'Домбровський Михайло Збишекович', '-', 'ua', 'Інженер', '+380672543132 ', 'Michael@tneu.edu.ua', 'Процеси і системи управління проектами, розробка моделей планування діяльності підприємств, застосування процесного підходу в управлінні', 'no_degree', 'no_rank', 'Тернопільський національний економічний університет', 'Загальноуніверитетська навчальна комп’ютерна лабораторія', 'вул. Львівська, 11, Тернопіль, Україна, 46000', 'science', 'http://www.tneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441087882, 1477245126, 0, '', 1441087882),
+(151, 'Дорош Марія Сергіївна', '-', 'ua', 'Доцент', '+380937859955', 'dorosh.m@inbox.ru', 'Управління проектами, управління якістю', 'ph_d_tech', 'docent', 'Навчально-науковий Інститут Економіки "Чернігівський національний технологічний університет"', 'Кафедра управління якістю та проектами', 'вул. Стрелецька, 1, Чернігів, Україна, 14034', 'science', 'http://geci.stu.cn.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441088614, 1477245126, 0, '', 1441088614),
+(152, 'Ігнатюк Вікторія Василівна', '-', 'ua', 'Асистент', '+380971313271', 'nikushek@ukr.net', 'Управління проектами і програмами', 'no_degree', 'no_rank', 'Національний транспортний університет', 'Кафедра менеджменту', 'вул. Суворова, 1, Київ, Україна, 01010', 'science', 'http://ntu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441088789, 1477245126, 0, '', 1441088789),
+(153, 'Кирій Валентина Василівна', '-', 'ua', 'Доцент', '+380504024796', 'kiriy_v@mail.ru', 'Інформаційне забезпечення управління, математичне моделювання та оптимізація в економіці', 'ph_d_econ', 'docent', 'Харківський національний університет радіоелектроніки', 'Кафедра економічної кібернетики і управління економічною безпекою', 'пр-т Науки, 14, Харків. Україна, 61166', 'science', 'http://nure.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441088957, 1477245126, 0, '', 1441088957),
+(154, 'Москалюк Андрій Юрійович', '-', 'ua', 'Старший викладач', '+380672888108 ', 'Andreum@mail.ru', 'Управління проектами', 'no_degree', 'no_rank', 'Одеський національний політехнічний університет', 'Кафедра управління системами безпеки життєдіяльності ', 'пр-т Шевченка, 1, Одеса, Україна, 65044', 'science', 'http://opu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441089265, 1477245126, 0, '', 1441089265),
+(155, 'Онищенко Інна Ігорівна', '-', 'ua', 'Здобувач', '+380978908854', 'zitrs@i.ua', 'Управління проектами', 'no_degree', 'no_rank', 'Університет економіка та права "КРОК"', 'Кафедра бізнес-адміністрування та управління проектами', 'вул. Лагерна, 30-32, Київ, Україна, 01001', 'science', 'http://www.krok.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441089691, 1477245126, 0, '', 1441089691),
+(156, 'Карпенко Олена Анатоліївна', '-', 'ua', 'Доцент', '+380673168531', 'swettla@i.ua', 'Управління проектами та логістика', 'ph_d_econ', 'docent', 'Національний транспортний університет', 'Кафедра транспортного права та логістики', 'вул. Суворова, 1, Київ, Україна, 01010', 'science', 'http://ntu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441090925, 1477245126, 0, '', 1441090925),
+(157, 'Колісник Марія Едуардівна ', '-', 'ua', 'Старший викладач', '+380669038819', 'Rozaeduard@gmail.com', 'Управління проектами', 'ph_d_tech', 'no_rank', 'Національний технічний університет "Харківський політехнічний інститут"', 'Кафедра економіки та маркетингу', 'вул. Фрунзе, 21, Харків, Україна, 61002', 'science', 'http://www.kpi.kharkov.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441091386, 1477245126, 0, '', 1441091386),
+(158, 'Степований Володимир Миколайович', '-', 'ua', 'Аспірант', '+380985757096', 'stepovani@gmail.com', 'Управління проектами в аграрному видобництві', 'no_degree', 'no_rank', 'Львівський національний аграрний університет', 'Кафедра машинобудування', 'вул. Володимира Великого, 1, м. Дубляни, Жовківський район, Львівська область, Україна, 80381', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441091875, 1477245126, 0, '', 1441091875),
+(159, 'Целовальникова Олена Андріївна', '-', 'ua', 'Аспірант', '+380674825421', 'milena012@mail.ru', 'Управління проектами і програмами', 'no_degree', 'no_rank', 'Університет економіка та права "КРОК"', 'Кафедра бізнес-адміністрування та управління проектами', 'вул. Лагерна, 30-32, Київ, Україна, 01001', 'science', 'http://www.krok.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441092007, 1477245126, 0, '', 1441092007),
+(160, 'Романів Тетяна Віталіївна', '-', 'ua', 'Здобувач', '+380955148927', 'tatiromaniv@gmail.com', 'Стратегічне управління проектноорієнтованими підприємствами', 'no_degree', 'no_rank', 'Університет економіка та права "КРОК"', 'Кафедра бізнес-адміністрування та управління проектами', 'вул. Лагерна, 30-32, Київ, Україна, 01001', 'science', 'http://www.krok.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441092167, 1477245126, 0, '', 1441092167),
+(161, 'Оліфер Олександр Віталійович ', '-', 'ua', 'Здобувач', '+380973512306 ', 'oleksander_olsfe@mail.ru', 'Управління проектів у лісогосподарській галузі', 'no_degree', 'no_rank', 'Львівський національний аграрний університет', 'Кафедра машинобудування', 'вул. Володимира Великого, 1, м. Дубляни, Жовківський район, Львівська область, Україна, 80381', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441094370, 1477245126, 0, '', 1441094370),
+(162, 'Меленівська Ярослава Валеріївна', '-', 'ua', 'Здобувач', '+380503311806', 'melenivska@gmail.com', 'Управління проектами', 'd_sc', 'prof', 'Університет економіка та права "КРОК"', 'Кафедра бізнес-адміністрування та управління проектами', 'вул. Лагерна, 30-32, Київ, Україна, 01001', 'science', 'http://www.krok.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441094481, 1477245126, 0, '', 1441094481),
+(163, 'Чернова Людмила Сергіївна', '-', 'ua', 'Аспірант', '+380675153777', 'myla-0108@mail.ru', 'Управління наукомісткими підприємствами', 'no_degree', 'no_rank', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра управління проектами', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441094605, 1477245126, 0, '', 1441094605),
+(164, 'Міхнов Дмитро Кіндратович', '-', 'ua', 'Професор', '+380577021451', 'mikhnov@kture.kharkov.ua', 'Управління проектами, інформаційні системи', 'ph_d_tech', 'docent', 'Харківський національний університет радіоелектроніки', 'Кафедра інформаційних управляючих систем', 'пр-т Науки, 14, Харків. Україна, 61166', 'science', 'http://nure.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441094840, 1477245126, 0, '', 1441094840),
+(165, 'Міхнова Аліна Володимирівна', '-', 'ua', 'Доцент', '+380577021451', 'mikhnova@kture.kharkov.ua', 'Управління проектами, інформаційні системи', 'ph_d_tech', 'docent', 'Харківський національний університет радіоелектроніки', 'Кафедра інформаційних управляючих систем', 'пр-т Науки, 14, Харків. Україна, 61166', 'science', 'http://nure.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441094996, 1477245126, 0, '', 1441094996),
+(166, 'Сохань В`ячеслав Вікторович', '-', 'ua', 'Аспірант', '+380962992379', 'SlavikSo@bigmir.net', 'Управління проектами і програмами', 'no_degree', 'no_rank', 'Національний транспортний університет', 'Кафедра транспортного права та логістики', 'вул. Суворова, 1, Київ, Україна, 01010', 'science', 'http://ntu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441095151, 1477245126, 0, '', 1441095151),
+(167, 'Мельниченко Олександр Іванович', '-', 'ua', 'Професор', '+380442800149', 'melnichenko@ntu.edu.ua', 'Управління проектами і програмами', 'ph_d_tech', 'docent', 'Національний транспортний університет', 'Кафедра транспортного права та логістики', 'вул. Суворова, 1, Київ, Україна, 01010', 'science', 'http://ntu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441095275, 1477245126, 0, '', 1441095275),
+(168, 'Шпильовий Василь Дмитрович', '-', 'ua', 'Завідувач кафедри технологій управління', '+380444067377', 'itu@nau.edu.ua', 'Управління проектами, стратегічне управління, інноваційна діяльність, підготовка фахівців', 'ph_d_tech', 'docent', 'Національний авіаційний університет', 'Кафедра технологій управління', 'пр-т Комарова, 1, Київ, Україна, 03680', 'science', 'http://nau.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441095607, 1477245126, 0, '', 1441095607),
+(170, 'Котетунов Віктор Юрійович', '-', 'ua', 'Аспірант', '+380632800728', 'kulibin.construct@gmail.com', 'Управління проектами', 'no_degree', 'no_rank', 'Черкаський державний технологічний університет', 'Кафедра управління проектами', 'бул. Шевченко, 460, Черкаси, Україна, 18006', 'science', 'https://chdtu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441095986, 1477245126, 0, '', 1441095986),
+(171, 'Маргасов Дмитро Валерійович', '-', 'ua', 'Аспірант', '+380672326854', 'mn123@i.ua', 'Управління енергоощадними проектами', 'no_degree', 'no_rank', 'Навчально-науковий Інститут Економіки "Чернігівський національний технологічний університет"', 'Кафедра управління якістю та проектами', 'вул. Стрелецька, 1, Чернігів, Україна, 14034', 'science', 'http://geci.stu.cn.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441096183, 1477245126, 0, '', 1441096183),
+(172, 'Берулава Дмитро Заурійович', '-', 'ua', 'Аспірант', '+380663771122', 'bkt@bigmir.net', 'Стратегічні програми розвитку міст', 'no_degree', 'no_rank', 'Київський національний університет будівництва і архітектури', 'Кафедра управління проектами', 'пр-т Повітрофлотський, 31, Київ, Україна, 03680', 'science', 'http://www.knuba.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441096311, 1477245126, 0, '', 1441096311),
+(173, 'Грисюк Юрій Сергійович', '-', 'ua', 'Доцент', '+380679071869', 'Hrysjuk@ukr.net', 'Управління процесом реалізації проектів та програм', 'ph_d_econ', 'docent', 'Національний транспортний університет', 'Кафедра транспортного права та логістики', 'вул. Суворова, 1, Київ, Україна, 01010', 'science', 'http://ntu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441096532, 1477245126, 0, '', 1441096532),
+(174, 'Рибак Анатолій Іванович', '-', 'ua', 'Професор', '+380506110106', 'anatol166@rambler.ru', 'Управління проектами', 'd_sc_tech', 'prof', 'Міжнародний гуманітарний університет', 'Кафедра бізнес-адміністрування та комп’ютерної безпеки', 'вул. Фонтанська дорога, 33, Одеса, Україна, 65009 ', 'science', 'http://mgu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441101801, 1477245126, 0, '', 1441101801),
+(175, 'Азарова Ірина Борисівна', '-', 'ua', 'Здобувач', '+380677227327', 'partisia@mail.ru', 'Управління проектами', 'no_degree', 'no_rank', 'Міжнародний гуманітарний університет', 'Кафедра бізнес-адміністрування та комп’ютерної безпеки', 'вул. Фонтанська дорога, 33, Одеса, Україна, 65009 ', 'science', 'http://mgu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441101902, 1477245126, 0, '', 1441101902),
+(176, 'Панафідін Геннадій Сергійович', '-', 'ua', 'Здобувач', '+3806762479999', 'g.s.panafidin@ua-etc.com', 'Економіка та комп\'ютерні технології', 'no_degree', 'no_rank', 'Міжнародний гуманітарний університет', 'Кафедра бізнес-адміністрування та комп’ютерної безпеки', 'вул. Фонтанська дорога, 33, Одеса, Україна, 65009 ', 'science', 'http://mgu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441102071, 1477245126, 0, '', 1441102071),
+(177, 'Бабенко Михайло Юрійович  ', '-', 'ua', 'Аспірант', '+380633706868', 'babenkomichail777@gmail.com', 'Економіка та комп\'ютерні технології', 'no_degree', 'no_rank', 'Міжнародний гуманітарний університет', 'Кафедра бізнес-адміністрування та комп’ютерної безпеки', 'вул. Фонтанська дорога, 33, Одеса, Україна, 65009 ', 'science', 'http://mgu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441102169, 1477245126, 0, '', 1441102169),
+(178, 'Баранюк Іван Андрійович', '-', 'ua', 'Доцент', '+380974506230', 'ivan_baranyuk@ukr.net', 'Управління якістю', 'ph_d_tech', 'docent', 'Навчально-науковий Інститут Економіки "Чернігівський національний технологічний університет"', 'Кафедра управління якістю та проектами', 'вул. Стрелецька, 1, Чернігів, Україна, 14034', 'science', 'http://geci.stu.cn.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441102347, 1477245126, 0, '', 1441102347),
+(179, 'Ітченко Дмитро Миколайович', '-', 'ua', 'Старший викладач', '+380971969066', 'itchenko@list.ru', 'Управління якістю', 'no_degree', 'no_rank', 'Навчально-науковий Інститут Економіки "Чернігівський національний технологічний університет"', 'Кафедра управління якістю та проектами', 'вул. Стрелецька, 1, Чернігів, Україна, 14034', 'science', 'http://geci.stu.cn.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441102460, 1477245126, 0, '', 1441102460),
+(180, 'Малєєва Ольга Володимирівна', '-', 'ua', 'Професор', '+380973497591', 'omaleyeva@mail.ru', 'Управління проектами та програмами, інформаційні технології в управлінні', 'd_sc_tech', 'prof', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра інформаційних управляючих систем', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1441102627, 1477245126, 0, '', 1441102627),
+(181, 'Король Юлія Олександрівна', '-', 'ua', 'Аспірант', '+380965541727', 'korol_julia@mail.ru', 'Управління проектами і програмами', 'no_degree', 'no_rank', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра інформаційних управляючих систем', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1441102727, 1477245126, 0, '', 1441102727),
+(182, 'Прокопенко Тетяна Олександрівна', '-', 'ua', 'Доцент', '+380972999979', 'tatianaalexandr@yandex.ru', 'Управління проектами', 'ph_d_tech', 'docent', 'Черкаський державний технологічний університет', 'Кафедра управління проектами', 'бул. Шевченко, 460, Черкаси, Україна, 18006', 'science', 'https://chdtu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441102943, 1477245126, 0, '', 1441102943),
+(183, 'Урецька Юлія Ігоревна', '-', 'ua', 'Аспірант', '+380633649190', 'julia.uretskaya@tmx.com.ua', 'Управління проектами', 'no_degree', 'no_rank', 'Черкаський державний технологічний університет', 'Кафедра управління проектами', 'бул. Шевченко, 460, Черкаси, Україна, 18006', 'science', 'https://chdtu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441103038, 1477245126, 0, '', 1441103038),
+(184, 'Васильцова Наталія Володимирівна', '-', 'ua', 'Доцент', '+380577021451 ', 'vasiltsova_natali@mail.ru', 'Управління ІТ-проектами, управління роботою проектної команди', 'ph_d_tech', 'docent', 'Харківський національний університет радіоелектроніки', 'Кафедра інформаційних управляючих систем', 'пр-т Науки, 14, Харків. Україна, 61166', 'science', 'http://nure.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441103431, 1477245126, 0, '', 1441103431),
+(185, 'Панфьорова Ірина Юріївна', '-', 'ua', 'Доцент', '+380577021451', 'panfiorova@gmail.com', 'Управління ІТ-проектами, технології баз даних, автоматизація управління організацією', 'ph_d_tech', 'docent', 'Харківський національний університет радіоелектроніки', 'Кафедра інформаційних управляючих систем', 'пр-т Науки, 14, Харків. Україна, 61166', 'science', 'http://nure.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441103541, 1477245126, 0, '', 1441103541),
+(186, 'Гайдабрус Богдан Володимирович', '-', 'ua', 'Доцент', '+380502362464', 'gaudabrys@mail.ru', 'Управління проектами та програмами, управління ризиками ', 'ph_d_tech', 'docent', 'Сумський державний університет', 'Кафедра комп\'ютерних наук', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441103725, 1477245126, 0, '', 1441103725),
+(187, 'Дружинін Євген Анатолійович ', '-', 'ua', 'Завідувач кафедри інформаційних технологій проектування літальних апаратів', '+380577884105', 'dea5050@mail.ru', 'Управління проектами и програмами, системне проектування ', 'd_sc_tech', 'prof', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра інформаційних технологій проектування літальних апаратів', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1441103874, 1477245126, 0, '', 1441103874),
+(188, 'Казимиренко Юлія Олексіївна', '-', 'ua', 'Доцент', '+380679805197', 'uakazi@mksat.net', 'Розробка нових композиційних матеріалів і покриттів, експериментальні дослідження їх властивостей, оптимізація складу, структури, захист від іонізуючого випромінювання', 'ph_d_tech', 'docent', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра матеріалознавства і технології металів', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441115320, 1477245126, 0, '', 1441115320),
+(189, 'Фаріонова Тетяна Анатоліївна', '-', 'ua', 'Доцент', '+380672356700', 'tetyana.farionova@nuos.edu.ua', 'Дослідження в галузі управління проектами та теорії прийняття рішень, їх прикладне застосування для рішення інженерних задач', 'ph_d_tech', 'docent', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра програмного забезпечення автоматизованих систем', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 400, 'uah', 0, 1441115436, 1478084029, 0, '', 1441115436),
+(190, 'Ярошенко Руслан Федорович ', '-', 'ua', 'Доцент', '+380442449690', 'r.yaroshenko@mail.ru', 'Управління проектами', 'ph_d_tech', 'docent', 'Київський національний університет будівництва і архітектури', 'Кафедра управління проектами', 'пр-т Повітрофлотський, 31, Київ, Україна, 03680', 'science', 'http://www.knuba.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441115650, 1477245126, 0, '', 1441115650),
+(191, 'Левикін Віктор Макарович', '-', 'ua', 'Завідувач кафедри інформаційних управляючих систем', '+380577021451', 'iyc@kture.kharkov.ua', 'Методології, методи та інформаційні технології розробки інтегрованих і web-базованих інформаційних систем', 'd_sc_tech', 'prof', 'Харківський національний університет радіоелектроніки', 'Кафедра інформаційних управляючих систем', 'пр-т Науки, 14, Харків. Україна, 61166', 'science', 'http://nure.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441115867, 1477245126, 0, '', 1441115867),
+(192, 'Євланов Максим Вікторович', '-', 'ua', 'Доцент', '+380577021451', 'evlanov_max@mail.ru', 'Розробка методологій, моделей, методів і технологій створення сервіс-орієнтованих систем, включаючи формування та аналіз вимог, а також синтез функціональних структур інформаційних систем.', 'ph_d_tech', 'docent', 'Харківський національний університет радіоелектроніки', 'Кафедра інформаційних управляючих систем', 'пр-т Науки, 14, Харків. Україна, 61166', 'science', 'http://nure.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1441115988, 1477245126, 0, '', 1441115988),
+(193, 'Кійко Сергій Геннадійович', '-', 'ua', 'Перший заступник Голови Правління - директор з фінансів та економіки', '+380612834069', 'secrdp@dss.com.ua', 'Фінансовий менеджмент, управління проектами', 'no_degree', 'no_rank', 'ПАО "Дніпроспецсталь"', 'Апарат управління', 'вул. Південне шосе, 81, Запоріжжя, Україна, 69008', 'industry', 'http://www.dss-ua.com/', 'listener', '', '0', '0', 450, 'uah', 0, 1441116378, 1477245126, 0, '', 1441116378),
+(194, 'Тубальцева Наталя Пилипівна', '-', 'ua', 'Аспірант', '+380512424800', 'satmarch@mail.ru', 'Управління інноваційними проектами', 'no_degree', 'no_rank', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра обліку і економічного аналізу', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420102882, 1477245126, 0, '', 1420102882),
+(195, 'Вакарчук Ігор Миколайович', '-', 'ua', 'Доцент', '+380509612349', 'imvsor@gmail.com', 'Удосконалення транспортних систем та логістичних напрямів пасажирських перевезень, нормативно-правової та технологічної бази транспортного законодавства; управління проектами та програмами побудови систем пасажирських перевезень', 'ph_d_tech', 'docent', 'Національний транспортний університет', 'Кафедра транспортного права та логістики', 'вул. Суворова, 1, Київ, Україна, 01010', 'science', 'http://ntu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420103559, 1477245126, 0, '', 1420103559),
+(196, 'Харута Віталій Сергійович', '-', 'ua', 'Асистент', '+380964719517', 'vitalik_haruta@mail.ru', 'Пасажирські перевезення, транспортні системи, управління проектами', 'no_degree', 'no_rank', 'Національний транспортний університет', 'Кафедра транспортного права та логістики', 'вул. Суворова, 1, Київ, Україна, 01010', 'science', 'http://ntu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420103840, 1477245126, 0, '', 1420103840),
+(197, 'Яні Ганна Юріївна ', '-', 'ua', 'Викладач', '+380000000000', 'anna.yany@gmail.com', 'Управління ризиками суднобудівних проектів', 'no_degree', 'no_rank', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра інформаційних управляючих систем та технологій', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420104796, 1477245126, 0, '', 1420104796),
+(198, 'Павловська Людмила Анатоліївна', '-', 'ua', 'Доцент', '+380679073095', 'licy74@mail.css.od.ua', 'Економіко-математичні методи і моделі в управлінні проектами на транспорті', 'ph_d_econ', 'docent', 'Одеський національний морський університет', 'Кафедра «Системний аналіз та логістика»', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420105121, 1477245126, 0, '', 1420105121),
+(199, 'Водолазська Наталія Володимирівна', '-', 'ua', 'Доцент', '+380506478125', 'vnv26@bk.ru', 'Управління складними технічними і організаційними системами', 'ph_d_tech', 'docent', 'Донецький національний технічний університет', 'Кафедра гірничозаводського транспорту і логістики', 'вул. Артема, 58, Донецьк, Україна, 83001', 'science', 'http://donntu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420134103, 1477245126, 0, '', 1420134103),
+(200, 'Леонова Світлана Миколаївна', '-', 'ua', 'Аспірант', '+380967670538', 'sleonova@ukr.net', 'Суднобудування, управління проектами та програмами, системний аналіз', 'no_degree', 'no_rank', 'Одеський національний морський університет', 'Кафедра «Системний аналіз та логістика»', 'вул. Мечникова,34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420138178, 1477245126, 0, '', 1420138178),
+(201, 'Полотай Орест Іванович', '-', 'ua', 'Викладач', '+380976684562', 'orest.polotaj@gmail.com', 'Економіка знань, управління знаннями, дистанційні освітні технології, управління інноваційними проектами та проектами інформатизації', 'no_degree', 'no_rank', 'Львівський державний університет безпеки життєдіяльності', 'Кафедра управління інформаційною безпекою', 'вул. Клепарівстка, 35, м. Львів, 79000', 'science', 'http://www.ldubgd.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420139415, 1477245126, 0, '', 1420139415),
+(202, 'Гречуха Євген Іванович', '-', 'ua', 'Здобувач', '+380667717463', 'maomail@mail.ru', 'Управління проектами', 'no_degree', 'no_rank', 'Одеська державна академія будівництва та архітектури', 'Кафедра менеджменту та управління проектами', 'вул. Дідріхсона, 4, м. Одеса, 65029', 'science', 'http://www.ogasa.org.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420140302, 1477245126, 0, '', 1420140302),
+(203, 'Доценко Наталія Володимирівна ', '-', 'ua', 'Доцент ', '+380577884484 ', 'nvdotsenko@gmail.com', 'Управління проектами ', 'ph_d_tech', 'docent', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра менеджменту', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1420140733, 1477245126, 0, '', 1420140733),
+(204, 'Маланчук Олександр Васильович', '-', 'ua', 'Здобувач', '+380322242916', 'malanchuk@mail.ru', 'Управління проектами аграрного виробництва', 'no_degree', 'no_rank', 'Львівський національний аграрний університет', 'Кафедра тракторів та автомобілів  ', 'вул. Володимира Великого, 1, м. Дубляни,  Жовківський район, Львівська область, Україна, 80381', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420141308, 1477245126, 0, '', 1420141308),
+(205, 'Рудинець Микола Віталійович', '-', 'ua', 'Доцент ', '+380033274840', 'rudinetc@mail.ru', 'Управління проектами аграрного виробництва', 'ph_d_tech', 'docent', 'Луцький національний технічний університет', 'Кафедра безпеки життєдіяльності ', 'вул. Львівська, 75, Луцьк, Україна, 43018', 'science', 'http://lutsk-ntu.com.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420141588, 1477245126, 0, '', 1420141588),
+(206, 'Панюра Ярослав Йосипович', '-', 'ua', 'Старший викладач ', '+380676711256', 'panjura@mail.ru', 'Управління змістом і часом у проектах', 'no_degree', 'no_rank', 'Львівський національний аграрний університет', 'Кафедра енергетики ', 'вул. Володимира Великого, 1, м. Дубляни,  Жовківський район, Львівська область, Україна, 80381', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420142269, 1477245126, 0, '', 1420142269),
+(207, 'Скібчик Володимир Іванович', '-', 'ua', 'Аспірант', '+380972081360', 'skibczyk@mail.ru', 'Управління конфігурацією проектів', 'no_degree', 'no_rank', 'Національний науковий центр «Інститут механізації та електрифікації сільського господарства»', '-', 'вул. Вокзальна, 11, смт. Глеваха-1,  Васильківський район, Київська область, Україна, 08631', 'science', 'http://imesg.gov.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420142757, 1477245126, 0, '', 1420142757),
+(208, 'Гринченко Марина Анатоліївна', '-', 'ua', 'Доцент ', '+380577076824', 'mgrinchenko@list.ru', 'Управління розвитком соціально-економічними системами', 'ph_d_tech', 'docent', 'Національний технічний університет "Харківський політехнічний інститут"', 'Кафедра стратегічного управління', 'вул. Фрунзе, 21, Харків, Україна, 61002', 'science', 'http://www.kpi.kharkov.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420144565, 1477245126, 0, '', 1420144565),
+(209, 'Днесь Віктор Ігорович', '-', 'ua', 'Старший науковий співробітник', '+380000000000', 'mailtobeer@mail.ru', 'Комбайнове збирання зернових культур', 'no_degree', 'no_rank', 'Національний науковий центр «Інститут механізації та електрифікації сільського господарства»', 'Лабораторія прогнозування техніко-технологічного переоснащення у рослинництві', 'вул. Вокзальна, 11, смт. Глеваха-1,  Васильківський район, Київська область, Україна, 08631', 'science', 'http://imesg.gov.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420144899, 1477245126, 0, '', 1420144899),
+(211, 'Кузнецова Інна Олексіївна ', '-', 'ua', 'Завідувач кафедри менеджменту організацій та ЗЕД ', '+380674819312    ', 'inna.stream@mail.ru', 'Стратегічне управління підприємством', 'd_sc_econ', 'prof', 'Одеський національний економічний університет', 'Кафедра менеджменту організацій та ЗЕД ', 'вул. Преображенська, 8, Одеса, Україна, 65026 ', 'science', 'http://oneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420147346, 1477245126, 0, '', 1420147346),
+(212, 'Мандра Андрій Валерійович ', '-', 'ua', 'Аспірант', '+380000000000', 'mandra.andrew@gmail.com', 'Управління проектами в суднобудуванні, захист інформації', 'no_degree', 'no_rank', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра інформаційних управляючих систем та технологій', 'Проспект Героїв Сталінграду, 9, м. Миколаїв, Україна, 54025 ', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420148229, 1477245126, 0, '', 1420148229),
+(213, 'Пономаренко Тетяна Вікторівна ', '-', 'ua', 'Доцент ', '+380673194748', 'tavi@ukr.net', 'Вітроенергетика, штучний інтелект', 'ph_d_tech', 'docent', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра програмного забезпечення автоматизованих систем ', 'Проспект Героїв Сталінграду, 9, м. Миколаїв, Україна, 54025 ', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420148458, 1477245126, 0, '', 1420148458),
+(214, 'Ванюшкін Олександр Сергійович', '-', 'ua', 'Доцент ', '+380999602373', 'vanyushkin2@yandex.ru', '-', 'ph_d_tech', 'docent', 'Таврійський національний університет ім. В.І. Вернадського', 'Кафедра міжнародної економіки', 'пр-т Вернадського, 4, Сімферополь, Україна, 95000', 'science', 'http://tnu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420127352, 1477245126, 0, '', 1420127352),
+(215, 'Григорян Анна Сергіївна', '-', 'ua', 'Аспірант ', '+380934034446 ', 'a.grigorian@bigmir.net', 'Аутсорсинг, інноваційні проекти, аналіз ефективності проектів, управління командами проектів, комунікації в проектах', 'no_degree', 'no_rank', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра управління проектами ', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420127567, 1477245126, 0, '', 1420127567),
+(217, 'Онищенко Світлана Петрівна', '-', 'ua', 'Завідувач кафедри «Організація митного контролю на транспорті»', '+380675577646      ', 'onyshenko@gmail.com', 'Моделювання процесів прийняття рішень в маркетингу та управлінні проектами', 'd_sc_econ', 'docent', 'Одеський національний морський університет', 'Кафедра "Організація митного контролю на транспорті"', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420136226, 1477245126, 0, '', 1420136226),
+(218, 'Сіраєв Олександр Рафаїлович', '-', 'ua', 'Аспірант', '+380982836302      ', 'dj_iz@mail.ru', 'Управління проектами транспортного забезпечення розподільних систем', 'no_degree', 'no_rank', 'Одеський національний морський університет', 'Кафедра "Організація митного контролю на транспорті"', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420141473, 1477245126, 0, '', 1420141473),
+(219, 'Аркатов Денис Борисович', '-', 'ua', 'Асистент', '+380632283806', 'denarkatov@gmail.com', 'Інформаційні технології, математичне моделювання та оптимізація АСУ технологічних процесів', 'no_degree', 'no_rank', 'Національний технічний університет "Харківський політехнічний інститут"', 'Кафедра "Програмна інженерія та інформаційні технології управління"', 'вул. Фрунзе, 21, Харків, Україна, 61002', 'science', 'http://www.kpi.kharkov.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420141704, 1477245126, 0, '', 1420141704),
+(220, 'Негрі Артем Олександрович', '-', 'ua', 'Аспірант', '+380632475436', 'artem.negri@opera.com', 'Управління ІТ-проектами', 'no_degree', 'no_rank', 'Одеський національний політехнічний університет', 'Кафедра інформаційних технологій проектування в машинобудуванні', 'пр-т Шевченка, 1, Одеса, Україна, 65044', 'science', 'http://opu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420141951, 1477245126, 0, '', 1420141951),
+(221, 'Руденко Сергій Васильович', '-', 'ua', 'Ректор Одеського національного морського університету', '+380487321686', 'rudsv@i.ua', 'Екологічні проекти', 'd_sc_tech', 'prof', 'Одеський національний морський університет', 'Ректорат', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420056001, 1477245126, 0, '', 1420056001),
+(223, 'Писаренко Тетяна Василівна', '-', 'ua', 'Заступник директора з наукової роботи', '+380445210014', 'pisarenko@uintei.kiev.ua', '-', 'ph_d_tech', 'no_rank', 'Український інститут науково-технічної експертизи і інформації', 'Апарат управління', 'вул. Антоновича, 180, Київ, Україна, 03680', 'science', 'http://www.uintei.kiev.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420056617, 1477245126, 0, '', 1420056617),
+(224, 'Сидорук Марина Вікторівна', '-', 'ua', 'Доцент ', '+380552326994', 'msidoruk@ukr.net', 'Іформаційна підтримка при управлінні підприємством', 'ph_d_tech', 'docent', 'Херсонський національний технічний університет', 'Кафедра економічної кібернетики та управління проектами', 'Бериславське шосе, 24, Херсон, Україна, 73008', 'science', 'http://kntu.net.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420143113, 1477245126, 0, '', 1420143113),
+(225, 'Ігнатенко Галина Анатоліївна', '-', 'ua', 'Старший викладач ', '+380552326994', 'headway35@gmail.com', 'Моделювання управління соціально-економічним розвитком регіону', 'no_degree', 'no_rank', 'Херсонський національний технічний університет', 'Кафедра економічної кібернетики та управління проектами', 'Бериславське шосе, 24, Херсон, Україна, 73008', 'science', 'http://kntu.net.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420056829, 1477245126, 0, '', 1420056829),
+(226, 'Хапов Денис Вікторович', '-', 'ua', 'Старший викладач', '+380552326994', 'denvh76@gmail.com', 'Методи та моделі автоматизованого управління', 'ph_d_tech', 'no_rank', 'Херсонський національний технічний університет', 'Кафедра економічної кібернетики та управління проектами', 'Бериславське шосе, 24, Херсон, Україна, 73008', 'science', 'http://kntu.net.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420057033, 1477245126, 0, '', 1420057033),
+(227, 'Райко Галина Олександрівна', '-', 'ua', 'Доцент ', '+380552326994', 'rayko.galina@gmail.com', 'Процеси та системи управління, математичне моделювання та управління розвитком складних динамічних систем', 'ph_d_tech', 'docent', 'Херсонський національний технічний університет', 'Кафедра економічної кібернетики та управління проектами', 'Бериславське шосе, 24, Херсон, Україна, 73008', 'science', 'http://kntu.net.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420059080, 1477245126, 0, '', 1420059080),
+(228, 'Данилець Євген Валентинович', '-', 'ua', 'Доцент ', '+380552326994', 'e.v.danilets@gmail.com', 'Проектування інформаційних систем, процеси і системи управління', 'ph_d_tech', 'docent', 'Херсонський національний технічний університет', 'Кафедра економічної кібернетики та управління проектами', 'Бериславське шосе, 24, Херсон, Україна, 73008', 'science', 'http://kntu.net.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420059211, 1477245126, 0, '', 1420059211),
+(229, 'Карамушка Марина Володимирівна', '-', 'ua', 'Доцент ', '+380552326994', 'karamushkamarina@mail.ru', 'Системи управління розвитком підприємства', 'ph_d_tech', 'docent', 'Херсонський національний технічний університет', 'Кафедра економічної кібернетики та управління проектами', 'Бериславське шосе, 24, Херсон, Україна, 73008', 'science', 'http://kntu.net.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420059336, 1477245126, 0, '', 1420059336),
+(233, 'Соколова Надія Андріївна', '-', 'ua', 'Завідувач кафедри економічної кібернетики та управління проектами', '+380552326994', 'kntu-ek@rambler.ru', 'Управління складними системами', 'd_sc_tech', 'prof', 'Херсонський національний технічний університет', 'Кафедра економічної кібернетики та управління проектами', 'Бериславське шосе, 24, Херсон, Україна, 73008', 'science', 'http://kntu.net.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420060369, 1477245126, 0, '', 1420060369),
+(234, 'Гуцол Тарас Дмитрович ', '-', 'ua', 'Доцент ', '+380979006306', 'td777@mail.ru', 'Інтеграція стратегічного управління, управління проектами і програмами', 'ph_d_tech', 'docent', 'Подільський державний аграрно-технічний університет', 'Кафедра транспортних технологій та засобів АПК', 'вул. Шевченка, 13, Кам’янець-Подільський, Україна, 32300', 'science', 'http://www.pdatu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420063869, 1477245126, 0, '', 1420063869),
+(235, 'Зеленський Олександр Валерійович', '-', 'ua', 'Аспірант', '+380976989823', 'zelk1@rambler.ru', 'Інтеграція стратегічного управління, управління проектами і програмами', 'no_degree', 'no_rank', 'Подільський державний аграрно-технічний університет', 'Кафедра транспортних технологій та засобів АПК', 'вул. Шевченка, 13, Кам’янець-Подільський, Україна, 32300', 'science', 'http://www.pdatu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420064099, 1477245126, 0, '', 1420064099),
+(236, 'Татомир Андрій Володимирович', '-', 'ua', 'Старший викладач ', '+380977891597', 'tatomyr-box@ukr.net', 'Управління проектами і програмами: моделі, методи та технології', 'ph_d_tech', 'no_rank', 'Львівський національний аграрний університет', 'Кафедра енергетики', 'вул. Володимира Великого, 1, м. Дубляни, Жовківський район, Львівська область, Україна, 80381', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420064501, 1477245126, 0, '', 1420064501),
+(237, 'Бабич Михайло Іванович', '-', 'ua', 'Старший викладач ', '+380977635832', 'm.babych@ukr.net', 'Управління проектами і програмами: моделі, методи та технології', 'ph_d_tech', 'no_rank', 'Львівський національний аграрний університет', 'Кафедра енергетики', 'вул. Володимира Великого, 1, м. Дубляни, Жовківський район, Львівська область, Україна, 8038', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420064833, 1477245126, 0, '', 1420064833),
+(238, 'Кригуль Роман Євгенович', '-', 'ua', 'Старший викладач ', '+380677598015', 'krroma@ukr.net', 'Управління проектами і програмами: моделі, методи та технології', 'ph_d_tech', 'no_rank', 'Львівський національний аграрний університет', 'Кафедра енергетики', 'вул. Володимира Великого, 1, м. Дубляни, Жовківський район, Львівська область, Україна, 80381', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420064979, 1477245126, 0, '', 1420064979),
+(239, 'Літвінов Володимир Федорович', '-', 'ua', 'Доцент ', '+380000000000', 'litv@te.net.ua', 'Управління проектами у галузі комп`ютерних систем обліку виробничих підприємств, опис та оптимізація бізнес- процесів', 'ph_d_math', 'docent', 'Одеський національний політехнічний університет', 'Кафедра управління системами безпеки життєдіяльності', 'пр-т Шевченка, 1, Одеса, Україна, 65044', 'science', 'http://opu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420065197, 1477245126, 0, '', 1420065197),
+(240, 'Чернега Юлія Сергіївна', '-', 'ua', 'Аспірант', '+380665626524', 'ulija.chernega@gmail.com', 'Управління проектами, охорона праці та безпека життєдіяльності', 'no_degree', 'no_rank', 'Одеський національний політехнічний університет', 'Кафедра управління системами безпеки життєдіяльності', 'пр-т Шевченка, 1, Одеса, Україна, 65044', 'science', 'http://opu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420065391, 1477245126, 0, '', 1420065391);
+INSERT INTO `member` (`id`, `name`, `nameEng`, `country`, `position`, `phone`, `email`, `interest`, `scienceDegree`, `scienceTitle`, `organisationTitle`, `organisationDepartment`, `organisationAddress`, `organisationActivity`, `organisationUrl`, `participationType`, `topicTitle`, `topicLanguage`, `topicSection`, `totalSum`, `currency`, `papersCount`, `created_at`, `updated_at`, `paid`, `noteFromAdmin`, `inviteSentAt`) VALUES
+(241, 'Баришнікова Віра Вячеславівна', '-', 'ua', 'Доцент ', '+380506672592 ', 'vera.b@mail.ru', 'Менеджмент, логістичні процеси на підприємствах морегосподарського комплексу', 'ph_d_econ', 'docent', 'Одеський національний морський університет', 'Кафедра "Менеджмент і маркетинг"', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420065561, 1477245126, 0, '', 1420065561),
+(243, 'Власенко Олена Вікторівна', '-', 'ua', 'Асистент', '+380674883013', 'olena.vlasenko@gmail.com', 'Проектний менеджмент', 'no_degree', 'no_rank', 'Одеський національний політехнічний університет', 'Кафедра управління системами безпеки життєдіяльності', 'пр-т Шевченка, 1, Одеса, Україна, 65044', 'science', 'http://opu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420066154, 1477245126, 0, '', 1420066154),
+(244, 'Дзюба Тамара Володимирівна', '-', 'ua', 'Старший викладач ', '+380504039200', 'dzubat@mail.ru', 'Інтеграція маркетингового та проектного менеджменту', 'no_degree', 'no_rank', 'Університет економіка та права "КРОК"', 'Кафедра бізнес-адміністрування та управління проектами', 'вул. Лагерна, 30-32, Київ, Україна, 01001', 'science', 'http://www.krok.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420057505, 1477245126, 0, '', 1420057505),
+(245, 'Смотр Ольга Олексіївна', '-', 'ua', '-', '+380676731428 ', 'ol_smotr@mail.ru', 'Інформаційні технології управління, системи штучного інтелекту, системи підтримки прийняття рішень', 'd_sc', 'prof', 'Львівський державний університет безпеки життєдіяльності', 'Кафедра управління проектами, інформаційних технологій та телекомунікацій', 'вул. Клепарівська, 35, Львів, Україна, 79007', 'science', 'http://www.ldubgd.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420057866, 1477245126, 0, '', 1420057866),
+(246, 'Курносенко Лариса Володимирівна', '-', 'ua', 'Доцент ', '+380672741012', 'l_v_k@ukr.net', 'Управління ', 'no_degree', 'docent', 'Одеська державна академія будівництва та архітектури', 'Кафедра менеджменту та управління проектами', 'вул. Дідріхсона, 4, Одеса, Україна, 65029', 'science', 'http://www.ogasa.org.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420058059, 1477245126, 0, '', 1420058059),
+(247, 'Вакуленко Валентина Петрівна', '-', 'ua', 'Аспірант', '+380676015704', 'Veli_81@mail.ru', 'Управління трудовими ресурсами проекту', 'd_sc', 'prof', 'Одеська державна академія будівництва та архітектури', 'Кафедра менеджменту та управління проектами', 'вул. Дідріхсона, 4, Одеса, Україна, 65029', 'science', 'http://www.ogasa.org.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420058225, 1477245126, 0, '', 1420058225),
+(248, 'Черкаський Микола Вячеславович', '-', 'ua', '-', '+38032582722', 'dunets@polynet.lviv.ua', 'Процеси і системи управління, кібернетика, імітаційне моделювання', 'd_sc_tech', 'prof', 'Національний університет "Львівська політехніка"', 'Кафедра спеціалізованих комп’ютерних систем', 'вул. Степана Бандери, 12, Львів, Україна, 79013', 'science', 'http://www.lp.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420058457, 1477245126, 0, '', 1420058457),
+(249, 'Рак Ольга Юріївна', '-', 'ua', 'Доцент', '+380322586147', 'o.rak@gmail.com', 'Процеси і системи управління, політологія', 'ph_d', 'docent', 'Національний університет "Львівська політехніка"', 'Кафедра журналістики та засобів масової комунікації', 'вул. Степана Бандери, 12, Львів, Україна, 79013', 'science', 'http://www.lp.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420059054, 1477245126, 0, '', 1420059054),
+(250, 'Івануса Андрій Іванович', '-', 'ua', 'Старший викладач', '+380967402224', 'ivaaanusa@gmail.com', 'Процеси і системи управління, кібернетика, імітаційне моделювання', 'ph_d_tech', 'no_rank', 'Львівський державний університет безпеки життєдіяльності', 'Кафедра управління проектами, інформаційних технологій та телекомунікацій', 'вул. Клепарівська, 35, Львів, Україна, 79007', 'science', 'http://www.ldubgd.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420059293, 1477245126, 0, '', 1420059293),
+(251, 'Назимко Віктор Вікторович', '-', 'ua', 'Завідувач кафедри «Маркшейдерська справа»', '+380623372024', 'victor_nazimko@mail.ru', 'Стохастичне моделювання, проектні ризики', 'd_sc_tech', 'prof', 'Донецький національний технічний університет', 'Кафедра «Маркшейдерська справа»', 'вул. Артема, 58, Донецьк, Україна, 83001', 'science', 'http://donntu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420059541, 1477245126, 0, '', 1420059541),
+(252, 'Пономаренко Олена Вікторівна', '-', 'ua', 'Завідувач кафедри інноваційного менеджменту та управління проектами', '+380505636376', 'ponomarenko777elena@rambler.ru', 'Управління проектами', 'd_sc_tech', 'docent', 'Донецький державний університет управління', 'Кафедра інноваційного менеджменту та управління проектами', 'вул. Челюскінців, 163а, Донецьк, Україна, 83015', 'science', 'http://dsum.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420059822, 1477245126, 0, '', 1420059822),
+(253, 'Гречко Тетяна Костянтинівна', '-', 'ua', '-', '+380501300242', 'gtk17@rambler.ru', 'Управління проектами', 'no_degree', 'docent', 'Донецький державний університет управління', 'Кафедра інноваційного менеджменту та управління проектами', 'вул. Челюскінців, 163а, Донецьк, Україна, 83015', 'science', 'http://dsum.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420060170, 1477245126, 0, '', 1420060170),
+(254, 'Антикова Ірина Валеріївна', '-', 'ua', 'Аспірант', '+380512431381', 'iryna.antykova@nuos.edu.ua', 'Інформаційні системи електронного  самоврядування', 'd_sc', 'prof', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедри інформаційних управляючих систем і технологій', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420060457, 1477245126, 0, '', 1420060457),
+(255, 'Фатєєв Микола  Володимирович', '-', 'ua', 'Завідувач кафедри менеджменту', '+380512424800', 'nikolay.fateev@nuos.edu.ua', 'Управління проектами, технологія та організація бюджетного управління суднобудівних та судноремонтних підприємств, кластерні об’єднання', 'ph_d_tech', 'prof', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра менеджменту', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420060864, 1477245126, 0, '', 1420060864),
+(256, 'Запорожець Ірина Михайлівна', '-', 'ua', 'Доцент ', '+380954908601', 'Bhtyf2007@rambler.ru', '-', 'ph_d_tech', 'docent', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра менеджменту', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420061070, 1477245126, 0, '', 1420061070),
+(257, 'Самуляк Віталій Юрійович', '-', 'ua', 'Асистент', '+380964574050', 'atlukr@gmail.com', '-', 'd_sc', 'prof', 'Національний університет "Львівська політехніка"', 'Кафедра технологій управління', 'вул. Степана Бандери, 12, Львів, Україна, 79013', 'science', 'http://www.lp.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420061261, 1477245126, 0, '', 1420061261),
+(258, 'Шишковський  Сергій Вікторович', '-', 'ua', 'Аспірант', '+380673444659', 'polystu@gmail.com', '-', 'no_degree', 'no_rank', 'Національний університет "Львівська політехніка"', 'Кафедра менеджменту і міжнародного підприємництва', 'вул. Степана Бандери, 12, Львів, Україна, 79013', 'science', 'http://www.lp.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420061428, 1477245126, 0, '', 1420061428),
+(259, 'Кваша Тетяна Костянтинівна', '-', 'ua', 'Завідувач відділення прогнозно-аналітичного забезпечення інноваційної діяльності', '+380445210026', 'tkvasha@mail.ru', '-', 'no_degree', 'no_rank', 'Український інститут науково-технічної експертизи і інформації', 'Відділення прогнозно-аналітичного забезпечення інноваційної діяльності', 'вул. Антоновича, 180, Київ, Україна, 03680', 'science', 'http://www.uintei.kiev.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420102607, 1477245126, 0, '', 1420102607),
+(260, 'Ріппа Сергій Петрович', '-', 'ua', 'Професор', '+380630574991', 'Rippa_serg@ukr.net', 'Бази знань, онтології, розкриття знань', 'd_sc_econ', 'prof', 'Університет державної фіскальної служби України', 'Кафедра інтелектуальних систем прийняття рішення', 'вул. Університетська, 31, Ірпінь, Україна, 08201', 'science', 'http://www.nusta.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420105217, 1477245126, 0, '', 1420105217),
+(261, 'Польшаков Ілля Валерійович', '-', 'ua', 'Доцент ', '+380000000000', 'maestro_ilya@ukr.net', 'Управління проектами, реінжиніринг бізнес-процесів', 'ph_d_tech', 'docent', 'Університет економіка та права "КРОК"', 'Кафедра бізнес-адміністрування та управління проектами', 'вул. Лагерна, 30-32, Київ, Україна, 01001', 'science', 'http://www.krok.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420056314, 1477245126, 0, '', 1420056314),
+(262, 'Малько Ганна Олександрівна', '-', 'ua', 'Асистент', '+380951168332 ', 'ecannam@mail.ru', 'Інформаційне забезпечення розрахунків викидів забруднюючих речовин автотранспортом та його вплив на навколишнє середовище', 'no_degree', 'no_rank', 'Національний транспортний університет', 'Кафедра екології та безпеки життєдіяльності', 'вул. Суворова, 1, Київ, Україна, 01010', 'science', 'http://ntu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420056624, 1477245126, 0, '', 1420056624),
+(263, 'Михелєв Ігор Леонідович', '-', 'ua', 'Доцент ', '+380679955380      ', 'micheleva@mksat.net', 'Дослідження в області управління проектами, їхприкладне використання в суднобудуванні', 'ph_d_tech', 'docent', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра інформаційних управляючих систем та технологій', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420056908, 1477245126, 0, '', 1420056908),
+(264, 'Беркунскій Євген Юрійович', '-', 'ua', 'Старший викладач ', '+380667185017      ', 'eberkunsky@gmail.com', 'Проблеми інформаційної взаємодії CAD / CAM / CAEсистем', 'no_degree', 'no_rank', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра інформаційних управляючих систем та технологій', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420140336, 1477245126, 0, '', 1420140336),
+(265, 'Копил Діана Вікторівна', '-', 'ua', 'Асистент', '+380674734659', 'Diana_kopyl@mail.ru', '-', 'no_degree', 'prof', 'Черкаський державний технологічний університет', 'Кафедри інформатики та інформаційної безпеки', 'бул. Шевченко, 460, Черкаси, Україна, 18006', 'science', 'https://chdtu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420140627, 1477245126, 0, '', 1420140627),
+(266, 'Макарчук Олексій Васильович', '-', 'ua', 'Асистент', '+380985969211', 'shumakar@rambler.ru', 'Управління проектами аграрного виробництва', 'no_degree', 'no_rank', 'Житомирський національний агроекологічний університет', 'Кафедра технічного сервісу та інженерної екології ', 'вул. Старий бульвар, 7, Житомир, Україна, 10002', 'science', 'http://www.znau.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420140974, 1477245126, 0, '', 1420140974),
+(267, 'Прихно Юлія Євгенівна', '-', 'ua', 'Аспірант', '+380972856823      ', 'karro@bk.ru', 'Інтересів управління проектами та програмами всудноплавних компаніях ', 'no_degree', 'no_rank', 'Одеський національний морський університет', 'Кафедра «Системний аналіз та логістика»', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420141180, 1477245126, 0, '', 1420141180),
+(268, 'Куценко Марина  Миколаївна', '-', 'ua', 'Аспірант', '+380677207706      ', 'marinakytsenko@mail.ru', 'Формування цінності компанії, управлінняінноваційними проектами', 'no_degree', 'no_rank', 'Київський національний університет будівництва і архітектури', 'Кафедра управління проектами', 'пр-т Повітрофлотський, 31, Київ, Україна, 03680', 'science', 'http://www.knuba.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420141426, 1477245126, 0, '', 1420141426),
+(269, 'Борзенко-Мірошніченко Аліна Юріївна', '-', 'ua', 'Доцент ', '+380958508445', 'bmalina@mail.ru', 'Портфельне управління проектами регіонального освітнього кластеру', 'ph_d_tech', 'docent', 'Східноукраїнський національний університет імені Володимира Даля', 'Кафедра управління проектами та прикладної статистики', 'пр-т Центральний, 59-а, Сєвєродонецьк, Україна, 93400', 'science', 'http://snu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420141624, 1477245126, 0, '', 1420141624),
+(270, 'Немчук Олексій Олегович ', '-', 'ua', 'Завідувач кафедри «Підйомно-транспортні машини і механізація перевантажувальних робіт»', '+38048770539 ', 'alnemchuk@gmail.com', 'Управління проектами і програмами, системитехнічного обслуговування і ремонту систем', 'ph_d_tech', 'docent', 'Одеський національний морський університет', 'Кафедра «Підйомно-транспортні машини і механізація перевантажувальних робіт»', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420142319, 1477245126, 0, '', 1420142319),
+(271, 'Купріна Тетяна Георгіївна', '-', 'ua', 'Аспірант', '+380667902830', 'enteres43@yandex.ru', 'Взаємодія ВНЗ у реалізації міжвузівських проектів', 'no_degree', 'no_rank', 'Національний університет кораблебудування імені адмірала Макарова', '-', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420142629, 1477245126, 0, '', 1420142629),
+(272, 'Падюка Роман Іванович', '-', 'ua', 'Майстер виробничого навчання кафедри управління проектами та безпеки виробництва', '+380974437651', 'rompadiv@mail.ru', 'Управління проектами, моделювання технічних систем', 'no_degree', 'no_rank', 'Львівський національний аграрний університет', 'Кафедра управління проектами та безпеки виробництва', 'вул. Володимира Великого, 1, м. Дубляни, Жовківський район, Львівська область, Україна, 80381', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420143102, 1477245126, 0, '', 1420143102),
+(273, 'Острівна Олександра Ігорівна', '-', 'ua', 'Аспірант', '+380997257361', 'ostrivnaya@mail.ru', 'Економіко-математичні моделі розвитку морського терміналу', 'no_degree', 'no_rank', 'Одеський національний морський університет', 'Кафедра «Системний аналіз та логістика»', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420057045, 1477245126, 0, '', 1420057045),
+(274, 'Гладка Олена Миколаївна', '-', 'ua', 'Старший викладач ', '+380676356107', 'olenglad@ya.ru', 'Управління проектами девелопменту нерухомості', 'no_degree', 'no_rank', 'Дніпропетровський регіональний інститут державного управління Національної Академії державного управління при Президентові України', 'Кафедра менеджменту та управління проектами', 'вул. Гоголя, 29, Дніпропетровськ, Україна, 49044', 'science', 'http://www.dridu.dp.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420057692, 1477245126, 0, '', 1420057692),
+(275, 'Комарніцький Сергій Петрович', '-', 'ua', 'Завідувач кафедри транспортних технологій та засобів АПК', '+380964589447', 'trteh@mail.ru', '-', 'ph_d_tech', 'docent', 'Подільський державний аграрно-технічний університет', 'Кафедра транспортних технологій та засобів АПК', 'вул. Шевченка, 13, Кам’янець-Подільський, Україна, 32300', 'science', 'http://www.pdatu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420057974, 1477245126, 0, '', 1420057974),
+(276, 'Жуль Сергій Григорович', '-', 'ua', 'Аспірант', '+380457132690      ', 'ustilug@ukr.net', 'Використання комп\'ютерних технологій придослідження системи збирання зернових культур', 'no_degree', 'no_rank', 'Національний науковий центр «Інститут механізації та електрифікації сільського господарства»', 'Лабораторія управління системами та проектами', 'вул. Вокзальна, 11, смт. Глеваха-1, Васильківський район, Київська область, Україна, 08631', 'science', 'http://imesg.gov.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420058192, 1477245126, 0, '', 1420058192),
+(277, 'Дуганец Віктор Іванович', '-', 'ua', 'Перший проректор', '+380678842586', 'duganec-viktor@rambler.ru', '-', 'ph_d_tech', 'docent', 'Подільський державний аграрно-технічний університет', 'Ректорат', 'вул. Шевченка, 13, Кам’янець-Подільський, Україна, 32300', 'science', 'http://www.pdatu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420058525, 1477245126, 0, '', 1420058525),
+(278, 'Бузмаков Володимир Іванович', '-', 'ua', 'Аспірант', '+380503302311', 'chief@itdirector.org.ua', 'Управління ІТ проектами', 'no_degree', 'no_rank', 'Університет економіка та права "КРОК"', 'Кафедра бізнес-адміністрування та управління проектами', 'вул. Лагерна, 30-32, Київ, Україна, 01001', 'science', 'http://www.krok.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420058720, 1477245126, 0, '', 1420058720),
+(279, 'Чередниченко Аліна Миколаївна ', '-', 'ua', 'Доцент', '+380509133041      ', 'alina.cherednichenko@gmail.com', 'Стратегічне управління проектно-орієнтованими підприємствами', 'ph_d_tech', 'docent', 'Університет економіка та права "КРОК"', 'Кафедра бізнес-адміністрування та управління проектами', 'вул. Лагерна, 30-32, Київ, Україна, 01001', 'science', 'http://www.krok.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420103430, 1477245126, 0, '', 1420103430),
+(280, 'Білощицький Андрій Олександрович', '-', 'ua', 'Завідувач кафедри інформаційних технологій', '+380442483050', 'bao@knuba.edu.ua', 'Управління проектами в освітньому середовищі, побудова систем управління в освіті', 'd_sc_tech', 'prof', 'Київський національний університет будівництва і архітектури', 'Кафедра інформаційних технологій', 'пр-т Повітрофлотський, 31, Київ, Україна, 03680', 'science', 'http://www.knuba.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420103897, 1477245126, 0, '', 1420103897),
+(281, 'Оборська Ганна Геннадіївна', '-', 'ua', 'Старший викладач', '+380503362709', 'oborska@ukr.net', 'Комунікаціі в проектах', 'ph_d_tech', 'no_rank', 'Одеський національний політехнічний університет', 'Кафедра управління системами безпеки життєдіяльності', 'пр-т Шевченка, 1, Одеса, Україна, 65044', 'science', 'http://opu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420104083, 1477245126, 0, '', 1420104083),
+(282, 'Бондар Василь Іванович', '-', 'ua', 'Старший викладач', '+380979949993', 'vivbond@ukr.net', 'Управління безнадійними проектами', 'no_degree', 'no_rank', 'Одеський національний політехнічний університет', 'Кафедра управління системами безпеки життєдіяльності', 'пр-т Шевченка, 1, Одеса, Україна, 65044', 'science', 'http://opu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420104232, 1477245126, 0, '', 1420104232),
+(283, 'Вайсман Владислав Олександрович', '-', 'ua', 'Директор холдінгової компанії "Мікрон"', '+380504928777', 'vaysman@micron.ua', 'Управління проектами', 'd_sc_tech', 'docent', 'ТОВ Холдінгова компанія "Мікрон"', 'Апарат управління', 'вул. Промислова, 37, Одеса, Україна, 65031', 'industry', 'http://www.micron.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420104581, 1477245126, 0, '', 1420104581),
+(284, 'Пухалевич Андрій Володимирович', '-', 'ua', 'Аспірант', '+380512397366', 'a.puhalevich@gmail.com', 'Управління проектами, моделювання стохастичних диференціальних систем та їх застосування в інформаційних технологіях', 'no_degree', 'no_rank', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра програмного забезпечення автоматизованих систем', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420104750, 1477245126, 0, '', 1420104750),
+(285, 'Приходько Сергій Борисович', '-', 'ua', 'Завідувач кафедри програмного забезпечення автоматизованих систем', '+380512424470', 'sprikhodko@nuos.edu.ua', 'Статистичний аналіз даних, моделювання стохастичних диференціальних систем та їх застосування в інформаційних технологіях', 'ph_d_tech', 'docent', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра програмного забезпечення автоматизованих систем', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420106124, 1477245126, 0, '', 1420106124),
+(286, 'Смокова Тетяна Миколаївна', '-', 'ua', 'Аспірант', '+380000000000', 'smokovat@yandex.ru', 'Управління проектами та програмами', 'no_degree', 'no_rank', 'Одеський національний морський університет', 'Кафедра «Системний аналіз та логістика»', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420106254, 1477245126, 0, '', 1420106254),
+(287, 'Петрова Олена Сергіївна.', '-', 'ua', 'Асистент', '+380674813932', 'e-petrova@ukr.net', 'Управління проектами та програмами', 'no_degree', 'no_rank', 'Одеський національний морський університет', 'Кафедра «Системний аналіз та логістика»', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420106432, 1477245126, 0, '', 1420106432),
+(288, 'Величко Сергій Олександрович', '-', 'ua', 'Менеджер', '+380504928333', 'velychko@micron.ua', 'Менеджмент персоналу', 'no_degree', 'no_rank', 'ТОВ Холдінгова компанія "Мікрон"', '-', 'вул. Промислова, 37, Одеса, Україна, 65031', 'industry', 'http://www.micron.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420106565, 1477245126, 0, '', 1420106565),
+(289, 'Москаленко Наталія Віталіївна', '-', 'ua', 'Доцент', '+380977933111', 'NAVIMO@ukr.net', 'Банківська діяльність, фінансовий моніторинг, офшорний бізнес, тіньова економіка', 'ph_d', 'docent', 'Університет державної фіскальної служби України', 'Кафедра банківської справи та фінансового моніторингу', 'вул. Університетська, 31, Ірпінь, Україна, 08201', 'science', 'http://www.nusta.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420106718, 1477245126, 0, '', 1420106718),
+(290, 'Перехрест Лілія Миколаївна', '-', 'ua', 'Доцент', '+380971000600 ', 'perehrest_l@mail.ru', 'Проблеми забезпечення фінансової стабільності і безпеки банківського сектора економіки ', 'ph_d', 'docent', 'Університет державної фіскальної служби України', 'Кафедра банківської справи та фінансового моніторингу', 'вул. Університетська, 31, Ірпінь, Україна, 08201', 'science', 'http://www.nusta.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420106864, 1477245126, 0, '', 1420106864),
+(291, 'Федунець Петро Дмитрович', '-', 'ua', 'Доцент', '+380974893981', 'fedunecp@ukr.net', 'Математичне моделювання в управлінні проектами', 'ph_d_tech', 'docent', 'Одеська державна академія будівництва та архітектури', 'Кафедра менеджменту та управління проектами', 'вул. Дідріхсона, 4, Одеса, Україна, 65029', 'science', 'http://www.ogasa.org.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420107010, 1477245126, 0, '', 1420107010),
+(292, 'Жадан Марія Сергіївна', '-', 'ua', 'Здобувач', '+380963966252      ', '4_work@ukr.net', 'Управління проектами та програмами', 'no_degree', 'no_rank', 'Одеська державна академія будівництва та архітектури', 'Кафедра менеджменту та управління проектами', 'вул. Дідріхсона, 4, Одеса, Україна, 65029', 'science', 'http://www.ogasa.org.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420107152, 1477245126, 0, '', 1420107152),
+(293, 'Лапкина Інна Олександрівна', '-', 'ua', 'Завідувач кафедри «Системний аналіз та логістика»', '+380487281349      ', 'lapkina@ukr.net', 'Управління проектами і програмами, проекти наморському транспорті', 'd_sc_econ', 'prof', 'Одеський національний морський університет', 'Кафедра «Системний аналіз та логістика»', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420107304, 1477245126, 0, '', 1420107304),
+(294, 'Трушлякова Антоніна Борисівна', '-', 'ua', 'Старший викладач', '+380505216324', 'antrush@mail.ru', 'Управління проектами, психологія управління', 'no_degree', 'no_rank', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра менеджменту', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420107509, 1477245126, 0, '', 1420107509),
+(295, 'Пілюшенко Віталій Лаврентійович', '-', 'ua', 'Завідувач кафедри маркетингу', '+380505973933', 'prorektor_nauka@dsum.edu.ua', 'Маркетинг, металургія, управління проектами', 'd_sc_tech', 'prof', 'Донецький державний університет управління', 'Кафедра маркетингу', 'вул. Челюскінців, 163а, Донецьк, Україна, 83015', 'science', 'http://dsum.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420107667, 1477245126, 0, '', 1420107667),
+(296, 'Гайдукова Наталія Валентинівна', '-', 'ua', 'Здобувач, провідний економіст інвестиційного відділу ВАТ Металургійний комбінат "Азовсталь"', '+380676230693', 'n.gaydukova@makmet.com.ua', 'Управління проектами та програмами', 'no_degree', 'no_rank', 'Донецький державний університет управління', 'Кафедра інноваційного менеджменту та управління проектами', 'вул. Челюскінців, 163а, Донецьк, Україна, 83015', 'science', 'http://dsum.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420107906, 1477245126, 0, '', 1420107906),
+(297, 'Швець Олексій Володимирович', '-', 'ua', 'Аспірант', '+380632319485', 'cdeveloper@ua.fm', 'Управління проектами, дослідження операцій,проблеми впровадження інформаційних систем на підприємствах', 'no_degree', 'no_rank', 'Одеський національний морський університет', 'Кафедра «Системний аналіз та логістика»', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420108028, 1477245126, 0, '', 1420108028),
+(298, 'Чубчик Тетяна Тимофіївна', '-', 'ua', 'Старший викладач', '+380679019951 ', 'chubchyk@nuos.edu.ua', 'Проекти інноваційного розвитку наукоємких підприємств', 'no_degree', 'no_rank', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра управління проектами', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420108155, 1477245126, 0, '', 1420108155),
+(299, 'Рач Валентин Анатолійович', '-', 'ua', 'Завідувач кафедри управління проектами та прикладної статистики', '+380956817914 ', 'valentine.rach@i.ua', 'Управління розвитком соціально-економічних систем', 'd_sc_tech', 'prof', 'Східноукраїнський національний університет імені Володимира Даля', 'Кафедра управління проектами та прикладної статистики', 'пр-т Центральний, 59-а, Сєвєродонецьк, Україна, 93400', 'science', 'http://snu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420108307, 1477245126, 0, '', 1420108307),
+(300, 'Молчанова Юлія Василівна', '-', 'ua', 'Старший викладач', '+380487298568', 'frittilari@mail.ru', 'Маркетинг, поведінка споживачів, управление проектами, брендинг, комунікаціі', 'ph_d', 'no_rank', 'Одеська державна академія будівництва та архітектури', 'Кафедра маркетингу', 'вул. Дідріхсона, 4, Одеса, Україна, 65029', 'science', 'http://www.ogasa.org.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420108444, 1477245126, 0, '', 1420108444),
+(301, 'Рудковський Олександр Володимирович', '-', 'ua', 'Доцент', '+380682071111', 'arudkovsky@gmail.com', 'Оцінка ефективності управління; планування розвитку підприємства', 'ph_d_econ', 'docent', 'Хмельницький кооперативний торговельно-економічний університет', 'Кафедра обліку та аудиту', 'вул. Кам’янецька, 3, Хмельницький, України, 29013', 'science', 'http://www.xktei.km.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420108604, 1477245126, 0, '', 1420108604),
+(303, 'Фоменко Георгій Вадимович', '-', 'ua', 'Помічник голови Миколаївської обласної державної адміністрації', '+380512582196 ', 'george_fomenco@mail.ru', '-', 'no_degree', 'no_rank', 'Миколаївська обласна державна адміністрація', '-', 'вул. Адміральська, 22, Миколаїв, Україна, 54001', 'public_adm', 'http://www.mk.gov.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420109036, 1477245126, 0, '', 1420109036),
+(304, 'Поліщук Лариса Миколаївна', '-', 'ua', 'Інспектор відділу аспірантури та докторантури', '+380990140507', 'slarisam@ukr.net', '-', 'no_degree', 'no_rank', 'Луцький національний технічний університет', 'Відділ аспірантури та докторантури', 'вул. Львівська, 75, Луцьк, Україна, 43018', 'science', 'http://lutsk-ntu.com.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420109174, 1477245126, 0, '', 1420109174),
+(305, 'Тищенко Валерія Олексіївна', '-', 'ua', 'Завідувач кафедри фізичного виховання ', '+380972487658', 'lera_gal@ukr.net', 'Проблеми управління проектами ефективної підготовки кваліфікованих гандболісток', 'ph_d', 'docent', 'Львівський національний аграрний університет', 'Кафедра фізичного виховання ', 'вул. Володимира Великого, 1, м. Дубляни, Жовківський район, Львівська область, Україна, 80381', 'science', 'http://lnau.lviv.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420109412, 1477245126, 0, '', 1420109412),
+(306, 'Шамов Олексій Володимирович', '-', 'ua', 'Старший викладач', '+30984524777', 'al23od@rambler.ru', 'Управління проектами на виробництві', 'no_degree', 'no_rank', 'Одеський національний морський університет', 'Кафедра "Матеріалознавство та технології матеріалів"', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420109555, 1477245126, 0, '', 1420109555),
+(307, 'Балдук Павло Георгійович', '-', 'ua', 'Професор', '+380982488970', 'Baldyck@yandex.ua', 'Управління проектами та програмами', 'ph_d_tech', 'prof', 'Одеська державна академія будівництва та архітектури', 'Кафедра будівельної механіки', 'вул. Дідріхсона, 4, Одеса, Україна, 65029', 'science', 'http://www.ogasa.org.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420109685, 1477245126, 0, '', 1420109685),
+(308, 'Морозова Ганна Сергіївна', '-', 'ua', 'Старший викладач', '+380976875513', 'amorozova71@yandex.ru', 'Проектний менеджмент, енерго- та ресурсозбереження, самоокупні проекти', 'no_degree', 'no_rank', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра інформаційних управляючих систем та технологій ', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420115987, 1477245126, 0, '', 1420115987),
+(309, 'Шнейдер Олена Борисівна', '-', 'ua', 'Старший викладач', '+380935099385', 'shneider.elena@gmail.com', '-', 'no_degree', 'no_rank', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра управління проектами', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420116108, 1477245126, 0, '', 1420116108),
+(310, 'Єлгіна Олена Володимирівна', '-', 'ua', 'Аспірант', '+380512465886', 'monoceros@ukr.net', '-', 'd_sc', 'prof', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра управління проектами', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420116327, 1477245126, 0, '', 1420116327),
+(311, 'Харитонов Юрій Миколайович', '-', 'ua', 'Декан факультету морської інфраструктури', '+380512397399', 'ensave@mksat.net', '-', 'd_sc_tech', 'prof', 'Національний університет кораблебудування імені адмірала Макарова', 'Кафедра системотехніки об’єктів морської інфраструктури і енергетичного менеджменту', 'пр-т Героїв Сталінграда, 9, Миколаїв, Україна, 54025', 'science', 'http://www.nuos.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420116814, 1477245126, 0, '', 1420116814),
+(312, 'Петренко Юрій Антонович', '-', 'ua', 'Професор', '+380973319081 ', 'UA_Petrenko@mail.ru', 'САПР, управління проектами', 'd_sc_tech', 'prof', 'Харківський національний автомобільно-дорожній університет', 'Кафедра автоматизації та комп’ютерно-інтегрованих технологій', 'вул. Ярослава Мудрого, 25, Харків, Україна, 61002', 'science', 'http://www.khadi.kharkov.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420117080, 1477245126, 0, '', 1420117080),
+(313, 'Москаленко Валентина Володимирівна', '-', 'ua', 'Доцент', '+380661574920', 'mvv_17@mail.ru', '-', 'ph_d_tech', 'docent', 'Національний технічний університет "Харківський політехнічний інститут"', 'Кафедра "Програмна інженерія та інформаційні технології управління"', 'вул. Кирпичова, 21, Харків, Україна, 61002', 'science', 'http://www.kpi.kharkov.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420117515, 1477245126, 0, '', 1420117515),
+(314, 'Захарова Тетяна В\'ячеславівна', '-', 'ua', 'Старший викладач', '+380505684816', 'tetiana.zakharova@gmail.com', '-', 'ph_d_tech', 'no_rank', 'Національний технічний університет "Харківський політехнічний інститут"', 'Кафедра "Програмна інженерія та інформаційні технології управління"', 'вул. Кирпичова, 21, Харків, Україна, 61002', 'science', 'http://www.kpi.kharkov.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420117743, 1477245126, 0, '', 1420117743),
+(315, 'Жихарєва Влада Вікторівна', '-', 'ua', 'Професор', '+380679764505', 'vlada_z@te.net.ua', '-', 'd_sc_econ', 'prof', 'Одеський національний морський університет', 'Кафедра "Економіка підприємства і підприємництво на морському транспорті"', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420118229, 1477245126, 0, '', 1420118229),
+(316, 'Концевич Валерій Георгійович', '-', 'ua', 'Доцент', '+380509736433', 'valery@opm.sumdu.edu.ua', '-', 'ph_d_tech', 'docent', 'Сумський державний університет', 'Кафедра комп\'ютерних наук', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420118630, 1477245126, 0, '', 1420118630),
+(317, 'Лебідь Валерій Володимирович', '-', 'ua', 'Начальник відділу маркетингу та інноваційної політики', '+380674805317', 'lebed@mip.opu.ua', '-', 'no_degree', 'no_rank', 'Одеський національний політехнічний університет', 'Відділ маркетингу та інноваційної політики', 'пр-т Шевченка, 1, Одеса, Україна, 65044', 'science', 'http://opu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420119045, 1477245126, 0, '', 1420119045),
+(318, 'Лук\'янов Дмитро Володимирович', '-', 'ua', 'Керуючий партнер ТОВ «Бюро проектного менеджменту»', '+380508053917', 'dl@pmb.com.ua', 'Управління проектами та програмами', 'ph_d_tech', 'no_rank', 'ТОВ «Бюро проектного менеджменту»', 'Апарат управління', 'вул. Дружківська, 10, Київ, Україна, 03113', 'consult', 'http://pm-in-ua.com/', 'listener', '', '0', '0', 450, 'uah', 0, 1420119460, 1477245126, 0, '', 1420119460),
+(319, 'Гармаш Олександра Юріївна', '-', 'ua', 'Аспірант', '+380975615543', 'aharmash@zp.universalna.com', '-', 'no_degree', 'no_rank', 'Таврійський державний агротехнологічний університет', 'Кафедра «Сільськогосподарські машини»', 'пр-т Б. Хмельницького, 18, Мелітополь, Україна, 72310', 'science', 'http://www.tsatu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420119787, 1477245126, 0, '', 1420119787),
+(320, 'Угоднікова Олена Ігорівна', '-', 'ua', 'Асистент', '+380962804987', 'lena-ugodnikova@yandex.ru', 'Управління ризиками в інноваційних проектах', 'no_degree', 'no_rank', 'Харківський національний університет міського господарства імені О.М. Бекетова', 'кафедра туризму і готельного господарства ', 'вул. Маршала Бажанова, 17, Харків, Україна, 61002', 'science', 'http://www.kname.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420120007, 1477245126, 0, '', 1420120007),
+(321, 'Лебідь Тетяна Вікторівна', '-', 'ua', 'Старший викладач', '+380322582118', 'tanja.lvov@mail.ru', 'Маркетингова складова управління проектами', 'no_degree', 'no_rank', 'Національний університет "Львівська політехніка"', 'Кафедра технологій управління', 'вул. Степана Бандери, 12, Львів, Україна, 79013', 'science', 'http://www.lp.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420120171, 1477245126, 0, '', 1420120171),
+(322, 'Олексів Ігор Богданович', '-', 'ua', 'Професор', '+380676727408', 'ihoroleksiv@yahoo.com', 'Групи економіко-управлінського впливу, прийняття управлінських рішень, стратегічний менеджмент, економіко-математичне моделювання', 'd_sc_econ', 'prof', 'Національний університет "Львівська політехніка"', 'Кафедра менеджменту і міжнародного підприємництва', 'вул. Степана Бандери, 12, Львів, Україна, 79013', 'science', 'http://www.lp.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420120381, 1477245126, 0, '', 1420120381),
+(324, 'Сафронов Олександр Сергійович', '-', 'ua', 'Доцент', '+380952787575', 'AlexanderSafronov@rambler.ru', '-', 'ph_d_tech', 'docent', 'Одеський національний політехнічний університет', 'Кафедра інформаційної безпеки', 'пр-т Шевченка, 1, Одеса, Україна, 65044', 'science', 'http://opu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420121224, 1477245126, 0, '', 1420121224),
+(325, 'Водянко Христина Ярославівна', '-', 'ua', 'Аспірант', '+380672545099', 'dmxrystja1@rambler.ru', '-', 'no_degree', 'no_rank', 'Національний університет "Львівська політехніка"', 'Кафедра економіки підприємства та інвестицій', 'вул. Степана Бандери, 12, Львів, Україна, 79013', 'science', 'http://www.lp.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420121465, 1477245126, 0, '', 1420121465),
+(326, 'Кунанець Наталія Едуардівна', '-', 'ua', 'Доцент', '+380637832275', 'n_kunan@yahoo.com', '-', 'ph_d', 'docent', 'Національний університет "Львівська політехніка"', 'Кафедра інформаційних систем та мереж', 'вул. Степана Бандери, 12, Львів, Україна, 79013', 'science', 'http://www.lp.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1420121597, 1477245126, 0, '', 1420121597),
+(327, 'Вартанян Василь Михайлович', '-', 'ua', 'Завідувач кафедри менеджменту', '+380577074605', 'vartanyan_vm@ukr.net', '-', 'd_sc_tech', 'prof', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра менеджменту', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1420121837, 1477245126, 0, '', 1420121837),
+(328, 'Довбиш Анатолій Степанович', '-', 'ua', 'Завідувач кафедри комп\'ютерних наук', '+380542687754', 'kras@id.sumdu.edu.ua', '-', 'd_sc_tech', 'prof', 'Сумський державний університет', 'Кафедра комп\'ютерних наук', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1410977972, 1477245126, 0, '', 1410977972),
+(329, 'Авраменко Віктор Васильович', '-', 'ua', 'Доцент', '+380542687754', 'avr@sumdu.edu.ua', '-', 'ph_d_tech', 'docent', 'Сумський державний університет', 'Кафедра комп\'ютерних наук', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1410978175, 1477245126, 0, '', 1410978175),
+(330, 'Бабiй Михайло Семенович', '-', 'ua', 'Доцент', '+380542687754', 'mbabiy@id.sumdu.edu.ua', '-', 'ph_d_tech', 'docent', 'Сумський державний університет', 'Кафедра комп\'ютерних наук', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1410978307, 1477245126, 0, '', 1410978307),
+(331, 'Ободяк Віктор Корнелійович', '-', 'ua', 'Доцент', '+380542687754', 'vobodyak@id.sumdu.edu.ua', '-', 'ph_d_tech', 'docent', 'Сумський державний університет', 'Кафедра комп\'ютерних наук', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1410978400, 1477245126, 0, '', 1410978400),
+(332, 'Скаковська Алла Миколаївна', '-', 'ua', 'Старший викладач', '+380542770827', 'sk_alla@id.sumdu.edu.ua', '-', 'ph_d_tech', 'no_rank', 'Сумський державний університет', 'Кафедра комп\'ютерних наук', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1410978497, 1477245126, 0, '', 1410978497),
+(333, 'Шаповалов Сергій Павлович', '-', 'ua', 'Доцент', '+380542687754', 'shap@id.sumdu.edu.ua', '-', 'ph_d_math', 'docent', 'Сумський державний університет', 'Кафедра комп\'ютерних наук', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1410978596, 1477245126, 0, '', 1410978596),
+(334, 'Бондар Олександр В\'ячеславович', '-', 'ua', 'Доцент', '+380542780799', 'oleksandr.v.bondar@gmail.com', '-', 'ph_d_tech', 'docent', 'Сумський державний університет', 'Кафедра комп\'ютерних наук', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1410978799, 1477245126, 0, '', 1410978799),
+(335, 'Баранова Ірина Володимирівна', '-', 'ua', 'Доцент', '+380542780799', 'gloria@opm.sumdu.edu.ua', '-', 'ph_d_tech', 'docent', 'Сумський державний університет', 'Кафедра комп\'ютерних наук', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1410978883, 1477245126, 0, '', 1410978883),
+(336, 'Алексенко Ольга Василівна', '-', 'ua', 'Доцент', '+380542223344', 'olga_tat@opm.sumdu.edu.ua', '-', 'ph_d_tech', 'docent', 'Сумський державний університет', 'Кафедра комп\'ютерних наук', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1410978963, 1477245126, 0, '', 1410978963),
+(337, 'Ващенко Світлана Михайлівна', '-', 'ua', 'Старший викладач', '+380542223344', 'sveta@opm.sumdu.edu.ua', '-', 'ph_d_tech', 'docent', 'Сумський державний університет', 'Кафедра комп\'ютерних наук', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1410979059, 1477245126, 0, '', 1410979059),
+(338, 'Марченко Анна Вікторівна', '-', 'ua', 'Старший викладач', '+380542780799', 'nenja_av@opm.sumdu.edu.ua', '-', 'ph_d_tech', 'no_rank', 'Сумський державний університет', 'Кафедра комп\'ютерних наук', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1410979164, 1477245126, 0, '', 1410979164),
+(339, 'Неня Віктор Григорович', '-', 'ua', 'Доцент', '+380542780799', 'nenja_vg@sumdu.edu.ua', '-', 'ph_d_tech', 'docent', 'Сумський державний університет', 'Кафедра комп\'ютерних наук', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1410979263, 1477245126, 0, '', 1410979263),
+(340, 'Федотова Наталія Анатоліївна', '-', 'ua', 'Старший викладач', '+380542780799', 'opm@opm.sumdu.edu.ua', '-', 'ph_d_tech', 'no_rank', 'Сумський державний університет', 'Кафедра комп\'ютерних наук', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1410979343, 1477245126, 0, '', 1410979343),
+(341, 'Шендрик Віра Вікторівна', '-', 'ua', 'Доцент', '+380542780798', 've-shen@opm.sumdu.edu.ua', '-', 'ph_d_tech', 'docent', 'Сумський державний університет', 'Кафедра комп\'ютерних наук', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1410979431, 1477245126, 0, '', 1410979431),
+(342, 'Лавров Євген Анатолійович', '-', 'ua', 'Професор', '+380542687854', 'prof_lavrov@mail.ru', '-', 'd_sc_tech', 'prof', 'Сумський державний університет', 'Кафедра комп\'ютерних наук', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1410979964, 1477245126, 0, '', 1410979964),
+(343, 'Кузнєцов Едуард Геннадійович', '-', 'ua', 'Старший викладач', '+380542687854', 'kuznetsov@opm.sumdu.edu.ua', '-', 'ph_d_tech', 'no_rank', 'Сумський державний університет', 'Кафедра комп\'ютерних наук', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1410980066, 1477245126, 0, '', 1410980066),
+(344, 'Чибіряк Яна Іванівна', '-', 'ua', 'Доцент', '+380542780799', 'chibyana@yandex.ru', '-', 'ph_d_tech', 'docent', 'Сумський державний університет', 'Кафедра комп\'ютерних наук', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1410980200, 1477245126, 0, '', 1410980200),
+(345, 'Парфененко Юлія Вікторівна', '-', 'ua', 'Провідний фахівець', '+380542780799', 'yuliap86@list.ru', '-', 'no_degree', 'no_rank', 'Сумський державний університет', 'Кафедра комп\'ютерних наук', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1410980294, 1477245126, 0, '', 1410980294),
+(346, 'Шулима Ольга Василівна', '-', 'ua', 'Аспірант', '+380542687854', 'o.shulyma@gmail.com', '-', 'no_degree', 'no_rank', 'Сумський державний університет', 'Кафедра комп\'ютерних наук', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1410980375, 1477245126, 0, '', 1410980375),
+(347, 'Захарченко Вікторія Петрівна', '-', 'ua', 'Аспірант', '+380542780799', 'VictoriaIT@ukr.net', '-', 'no_degree', 'no_rank', 'Сумський державний університет', 'Кафедра комп\'ютерних наук', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1410980452, 1477245126, 0, '', 1410980452),
+(348, 'Москаленко Денис Русланович', '-', 'ua', 'Аспірант', '+380542780799', 'moskalenko.denys@gmail.com', '-', 'no_degree', 'no_rank', 'Сумський державний університет', 'Кафедра комп\'ютерних наук', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1410980526, 1477245126, 0, '', 1410980526),
+(349, 'Окопний Руслан Петрович', '-', 'ua', 'Аспірант', '+380542780799', 'rusikok@rambler.ru', '-', 'no_degree', 'no_rank', 'Сумський державний університет', 'Кафедра комп\'ютерних наук', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1410980604, 1477245126, 0, '', 1410980604),
+(350, 'Криводуб Анна Сергіївна', '-', 'ua', 'Аспірант', '+380542780799', 'annakrivodub@mail.ru', '-', 'no_degree', 'no_rank', 'Сумський державний університет', 'Кафедра комп\'ютерних наук', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1410980679, 1477245126, 0, '', 1410980679),
+(351, 'Коротенко Андрій Сергійович', '-', 'ua', 'Аспірант', '+380542780799', 'x-progr@ukr.net', '-', 'no_degree', 'no_rank', 'Сумський державний університет', 'Кафедра комп\'ютерних наук', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1410980759, 1477245126, 0, '', 1410980759),
+(352, 'Безверхнюк Тетяна Миколаївна', '-', 'ua', 'Завідувач кафедри управління проектами', '+380000000000', 'tatiana.bezverkhniuk@gmail.com', 'Конкурентоспроможність регіонів, інвестиційний потенціал регіону, управління якістю, регіональне управління, системи ресурсного забезпечення, стратегічні комунікації, управління проектами в туризмі', 'd_sc', 'prof', 'Одеський регіональний інститут державного управління Національної академії державного управління при Президентові України', 'Кафедра управління проектами', 'вул. Генуезька, 22, Одеса, Україна, 65009', 'science', 'http://www.oridu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411034983, 1477245126, 0, '', 1411034983),
+(353, 'Левін Михайло Григорович', '-', 'ua', 'Професор', '+380000000000', 'mglevin@yandex.ru', 'Моделювання та управління якістю бізнес-процесів; CALS-технології та корпоративні інформаційні системи (КІС); теорія організації, системний аналіз та підтримка прийняття управлінських рішень', 'd_sc_tech', 'prof', 'Одеський регіональний інститут державного управління Національної академії державного управління при Президентові України', 'Кафедра управління проектами', 'вул. Генуезька, 22, Одеса, Україна, 65009', 'science', 'http://www.oridu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411035078, 1477245126, 0, '', 1411035078),
+(354, 'Вишневська Віолета Михайлівна', '-', 'ua', 'Доцент', '+380000000000', 'viola@meta.ua', 'Інтелектуальні системи управління; Штучні нейронні мережі; Нечітке моделювання; Системи підтримки прийняття рішень, нейротехнології в територіальному маркетинзі', 'ph_d_tech', 'docent', 'Одеський регіональний інститут державного управління Національної академії державного управління при Президентові України', 'Кафедра управління проектами', 'вул. Генуезька, 22, Одеса, Україна, 65009', 'science', 'http://www.oridu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411035165, 1477245126, 0, '', 1411035165),
+(355, 'Кривогуз Геннадій Іванович', '-', 'ua', 'Доцент', '+380000000000', 'kgil57@mail.ru', 'Управління матеріально-технічним забезпеченням діяльності організацій, соціальна та екологічна безпека діяльності організацій', 'ph_d', 'docent', 'Одеський регіональний інститут державного управління Національної академії державного управління при Президентові України', 'Кафедра управління проектами', 'вул. Генуезька, 22, Одеса, Україна, 65009', 'science', 'http://www.oridu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411035246, 1477245126, 0, '', 1411035246);
+INSERT INTO `member` (`id`, `name`, `nameEng`, `country`, `position`, `phone`, `email`, `interest`, `scienceDegree`, `scienceTitle`, `organisationTitle`, `organisationDepartment`, `organisationAddress`, `organisationActivity`, `organisationUrl`, `participationType`, `topicTitle`, `topicLanguage`, `topicSection`, `totalSum`, `currency`, `papersCount`, `created_at`, `updated_at`, `paid`, `noteFromAdmin`, `inviteSentAt`) VALUES
+(356, 'Сивак Тетяна Володимирівна', '-', 'ua', 'Доцент', '+380000000000', 'syvaktetiana@gmail.com', 'інтерес в державному управління, публічні регіональні інтереси, управління проектами в публічній сфері, стратегічні комунікації, інформаційна політика.', 'ph_d', 'docent', 'Одеський регіональний інститут державного управління Національної академії державного управління при Президентові України', 'Кафедра управління проектами', 'вул. Генуезька, 22, Одеса, Україна, 65009', 'science', 'http://www.oridu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411035351, 1477245126, 0, '', 1411035351),
+(357, 'Руда Ірина Віталіївна', '-', 'ua', 'Старший викладач', '+380000000000', 'irinakhalus@gmail.com', 'Проектно-орієнтоване управління, проекти місцевого розвитку, місцеве самоврядування, самодостатність територіальної громади', 'no_degree', 'no_rank', 'Одеський регіональний інститут державного управління Національної академії державного управління при Президентові України', 'Кафедра управління проектами', 'вул. Генуезька, 22, Одеса, Україна, 65009', 'science', 'http://www.oridu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411035464, 1477245126, 0, '', 1411035464),
+(358, 'Махуренко Геннадій Сергійович', '-', 'ua', 'Професор', '+380000000000', 'makhurenko@mail.ru', 'Управління проектами на морському транспорті, економічна кібернетика на морському транспорті', 'd_sc_econ', 'prof', 'Одеський регіональний інститут державного управління Національної академії державного управління при Президентові України', 'Кафедра управління проектами', 'вул. Генуезька, 22, Одеса, Україна, 65009', 'science', 'http://www.oridu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411035572, 1477245126, 0, '', 1411035572),
+(359, 'Лоханова Наталія Олексіївна', '-', 'ua', 'Професор', '+380000000000', 'lokhanova@bk.ru', 'Управлінський і фінансовий облік, фінансова звітність, Міжнародні стандарти фінансової звітності, управління проектами, не фінансова звітність, облік і звітність в управлінні проектами', 'd_sc_econ', 'prof', 'Одеський регіональний інститут державного управління Національної академії державного управління при Президентові України', 'Кафедра управління проектами', 'вул. Генуезька, 22, Одеса, Україна, 65009', 'science', 'http://www.oridu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411035650, 1477245126, 0, '', 1411035650),
+(360, 'Ліпкан Володимир Анатолійович', '-', 'ua', 'Професор', '+380000000000', 'academic@ukr.net', 'Стратегічні комунікації, міжнародна і національна безпека, інформаційна політика, глобальне лідерство', 'd_sc', 'prof', 'Одеський регіональний інститут державного управління Національної академії державного управління при Президентові України', 'Кафедра управління проектами', 'вул. Генуезька, 22, Одеса, Україна, 65009', 'science', 'http://www.oridu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411035732, 1477245126, 0, '', 1411035732),
+(361, 'Сенча Ірина Анатоліївна', '-', 'ua', 'Доцент', '+380000000000', 'sencha_irina@mail.ru', 'Антикризове проектне управління ', 'ph_d', 'docent', 'Одеський регіональний інститут державного управління Національної академії державного управління при Президентові України', 'Кафедра управління проектами', 'вул. Генуезька, 22, Одеса, Україна, 65009', 'science', 'http://www.oridu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411035817, 1477245126, 0, '', 1411035817),
+(362, 'Яценко Олександр Володимирович', '-', 'ua', 'Доцент', '+380000000000', 'ajax1950@i.ua', 'Дизайн бізнес-конструкцій, методологія та технологія менеджменту', 'ph_d_tech', 'prof', 'Одеський регіональний інститут державного управління Національної академії державного управління при Президентові України', 'Кафедра управління проектами', 'вул. Генуезька, 22, Одеса, Україна, 65009', 'science', 'http://www.oridu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411035904, 1477245126, 0, '', 1411035904),
+(363, 'Оганов Андрій Валерійович', '-', 'ua', 'Старший викладач', '+380000000000', 'oganov.andrey@gmail.com', 'Управління проектами і програмами, управління портфелями проектів, теорія обмеження систем', 'no_degree', 'no_rank', 'Одеський регіональний інститут державного управління Національної академії державного управління при Президентові України', 'Кафедра управління проектами', 'вул. Генуезька, 22, Одеса, Україна, 65009', 'science', 'http://www.oridu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411035984, 1477245126, 0, '', 1411035984),
+(364, 'Дзяний Ростислав Борисович', '-', 'ua', 'Заступник завідувача кафедри управління проектами', '+383222346920', 'rostidz@yahoo.com', '-', 'ph_d', 'docent', 'Львівський регіональний інститут державного управління Національної академії державного управління при Президентові України', 'Кафедра управління проектами', 'вул. Сухомлинського, 16, Львів, Україна, 79491', 'science', 'http://www.lvivacademy.com/', 'listener', '', '0', '0', 450, 'uah', 0, 1411038212, 1477245126, 0, '', 1411038212),
+(365, 'Голубятніков Володимир Трохимович', '-', 'ua', 'Доцент', '+380000000000', 'golubiatnikov.vt@gmail.com', '-', 'ph_d_tech', 'docent', 'Львівський регіональний інститут державного управління Національної академії державного управління при Президентові України', 'Кафедра управління проектами', 'вул. Сухомлинського, 16, Львів, Україна, 79491', 'science', 'http://www.lvivacademy.com/', 'listener', '', '0', '0', 450, 'uah', 0, 1411038336, 1477245126, 0, '', 1411038336),
+(366, 'Нєма Олександра Степанівна', '-', 'ua', 'Старший викладач', '+380000000000', 'oleksna@ukr.net', '-', 'ph_d', 'no_rank', 'Львівський регіональний інститут державного управління Національної академії державного управління при Президентові України', 'Кафедра управління проектами', 'вул. Сухомлинського, 16, Львів, Україна, 79491', 'science', 'http://www.lvivacademy.com/', 'listener', '', '0', '0', 450, 'uah', 0, 1411038468, 1477245126, 0, '', 1411038468),
+(367, 'Федорчак Ольга Василівна', '-', 'ua', 'Доцент', '+380000000000', 'olya-fedorchak@mail.ru', '-', 'ph_d', 'docent', 'Львівський регіональний інститут державного управління Національної академії державного управління при Президентові України', 'Кафедра управління проектами', 'вул. Сухомлинського, 16, Львів, Україна, 79491', 'science', 'http://www.lvivacademy.com/', 'listener', '', '0', '0', 450, 'uah', 0, 1411038551, 1477245126, 0, '', 1411038551),
+(368, 'Кадильникова Тетяна Михайлівна', '-', 'ua', 'Завідувач кафедри управління проектами', '+380563748067', 'Kaf.up@metal.nmetau.edu.ua', '-', 'd_sc_tech', 'prof', 'Національна металургійна академія України', 'Кафедра управління проектами', 'пр-т Гагаріна, 4, Дніпропетровськ, Україна, 49600', 'science', 'http://nmetau.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411046618, 1477245126, 0, '', 1411046618),
+(369, 'Доненко Василь Іванович', '-', 'ua', 'Завідувач кафедри будівельного виробництва та управління проектами', '+380612709507', 'kafedra_bud@zntu.edu.ua', '-', 'd_sc_tech', 'prof', 'Запорізький національний технічний університет', 'Кафедра будівельного виробництва та управління проектами', 'вул. Жуковського, 64, Запоріжжя, Україна, 69063', 'science', 'http://www.zntu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411047175, 1477245126, 0, '', 1411047175),
+(370, 'Жулавський Аркадій Юрійович', '-', 'ua', 'Професор', '+380000000000', 'a.zhulavskiy@management.sumdu.edu.ua', '-', 'ph_d_econ', 'prof', 'Сумський державний університет', 'Кафедра управління', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411047716, 1477245126, 0, '', 1411047716),
+(371, 'Швіндіна Ганна Олександрівна', '-', 'ua', 'Доцент', '+380000000000', 'shvindina.hannah@gmail.com', '-', 'ph_d_econ', 'docent', 'Сумський державний університет', 'Кафедра управління', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411047996, 1477245126, 0, '', 1411047996),
+(372, 'Гавкалова Наталія Леонідівна', '-', 'ua', 'Завідувач кафедри державного управління, публічного адміністрування та регіональної економіки', '+380000000000', 'ngavl@ukr.net', '-', 'd_sc_econ', 'prof', 'Харківський національний економічний університет імені Семена Кузнеця', 'Кафедра державного управління, публічного адміністрування та регіональної економіки', 'пр-т Науки, 9а, Харків, Україна, 61166', 'science', 'http://www.hneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411053709, 1477245126, 0, '', 1411053709),
+(373, 'Шумська Ганна Миколаївна', '-', 'ua', 'Заступник завідувача кафедри державного управління, публічного адміністрування та регіональної економіки', '+380000000000', 'an_shumskaya@mail.ru', '-', 'ph_d_econ', 'docent', 'Харківський національний економічний університет імені Семена Кузнеця', 'Кафедра державного управління, публічного адміністрування та регіональної економіки', 'пр-т Науки, 9а, Харків, Україна, 61166', 'science', 'http://www.hneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411053883, 1477245126, 0, '', 1411053883),
+(374, 'Власенко Тетяна Анатоліївна', '-', 'ua', 'Доцент', '+380000000000', 'tatyanavlasenko2011@gmail.com', '-', 'ph_d_econ', 'docent', 'Харківський національний економічний університет імені Семена Кузнеця', 'Кафедра державного управління, публічного адміністрування та регіональної економіки', 'пр-т Науки, 9а, Харків, Україна, 61166', 'science', 'http://www.hneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411054112, 1477245126, 0, '', 1411054112),
+(375, 'Аведян Людмила Йосипівна', '-', 'ua', 'Доцент', '+380000000000', 's-lyuda@mail.ru', '-', 'ph_d_econ', 'docent', 'Харківський національний економічний університет імені Семена Кузнеця', 'Кафедра державного управління, публічного адміністрування та регіональної економіки', 'пр-т Науки, 9а, Харків, Україна, 61166', 'science', 'http://www.hneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411054201, 1477245126, 0, '', 1411054201),
+(376, 'Гордієнко Лариса Юріївна', '-', 'ua', 'Доцент', '+380000000000', 'gordienkolarisa@ukr.net', '-', 'ph_d_econ', 'docent', 'Харківський національний економічний університет імені Семена Кузнеця', 'Кафедра державного управління, публічного адміністрування та регіональної економіки', 'пр-т Науки, 9а, Харків, Україна, 61166', 'science', 'http://www.hneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411054308, 1477245126, 0, '', 1411054308),
+(377, 'Золенко Альона Сергіївна', '-', 'ua', 'Старший викладач', '+380000000000', 'alenazolenko@gmail.com', '-', 'ph_d_econ', 'no_rank', 'Харківський національний економічний університет імені Семена Кузнеця', 'Кафедра державного управління, публічного адміністрування та регіональної економіки', 'пр-т Науки, 9а, Харків, Україна, 61166', 'science', 'http://www.hneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411054446, 1477245126, 0, '', 1411054446),
+(378, 'Кабанець Анатолій Григорович', '-', 'ua', 'Доцент', '+380000000000', 'kobanat@ukr.net', '-', 'ph_d_econ', 'docent', 'Харківський національний економічний університет імені Семена Кузнеця', 'Кафедра державного управління, публічного адміністрування та регіональної економіки', 'пр-т Науки, 9а, Харків, Україна, 61166', 'science', 'http://www.hneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411054523, 1477245126, 0, '', 1411054523),
+(379, 'Кайнова Тетяна Володимирівна', '-', 'ua', 'Доцент', '+380000000000', 't_kajnova@mail.ru', '-', 'ph_d_econ', 'docent', 'Харківський національний економічний університет імені Семена Кузнеця', 'Кафедра державного управління, публічного адміністрування та регіональної економіки', 'пр-т Науки, 9а, Харків, Україна, 61166', 'science', 'http://www.hneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411054599, 1477245126, 0, '', 1411054599),
+(380, 'Мельник Вікторія Іванівна', '-', 'ua', 'Доцент', '+380000000000', 'melnik511@ukr.net', '-', 'ph_d_econ', 'docent', 'Харківський національний економічний університет імені Семена Кузнеця', 'Кафедра державного управління, публічного адміністрування та регіональної економіки', 'пр-т Науки, 9а, Харків, Україна, 61166', 'science', 'http://www.hneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411054672, 1477245126, 0, '', 1411054672),
+(381, 'Петряєв Олексій Олександрович', '-', 'ua', 'Доцент', '+380000000000', 'dozchent@rambler.ru', '-', 'ph_d_econ', 'docent', 'Харківський національний економічний університет імені Семена Кузнеця', 'Кафедра державного управління, публічного адміністрування та регіональної економіки', 'пр-т Науки, 9а, Харків, Україна, 61166', 'science', 'http://www.hneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411054758, 1477245126, 0, '', 1411054758),
+(382, 'Єрмоленко Оксана Олександрівна', '-', 'ua', 'Доцент', '+380000000000', 'o.jermolenko@mail.ru', '-', 'ph_d_econ', 'docent', 'Харківський національний економічний університет імені Семена Кузнеця', 'Кафедра державного управління, публічного адміністрування та регіональної економіки', 'пр-т Науки, 9а, Харків, Україна, 61166', 'science', 'http://www.hneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411054848, 1477245126, 0, '', 1411054848),
+(383, 'Чистякова Анастасія Вадимівна', '-', 'ua', 'Старший викладач', '+380000000000', 'achystiakova@yandex.ru', '-', 'no_degree', 'no_rank', 'Харківський національний економічний університет імені Семена Кузнеця', 'Кафедра державного управління, публічного адміністрування та регіональної економіки', 'пр-т Науки, 9а, Харків, Україна, 61166', 'science', 'http://www.hneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411054936, 1477245126, 0, '', 1411054936),
+(384, 'Соболєв Вадим Григорович', '-', 'ua', 'Аспірант', '+380000000000', 'khan370@yandex.ru', '-', 'no_degree', 'no_rank', 'Харківський національний економічний університет імені Семена Кузнеця', 'Кафедра державного управління, публічного адміністрування та регіональної економіки', 'пр-т Науки, 9а, Харків, Україна, 61166', 'science', 'http://www.hneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411055033, 1477245126, 0, '', 1411055033),
+(385, 'Матвієнко Карина Олександрівна', '-', 'ua', 'Аспірант', '+380000000000', 'karinaloba@mail.ru', '-', 'no_degree', 'no_rank', 'Харківський національний економічний університет імені Семена Кузнеця', 'Кафедра державного управління, публічного адміністрування та регіональної економіки', 'пр-т Науки, 9а, Харків, Україна, 61166', 'science', 'http://www.hneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411055103, 1477245126, 0, '', 1411055103),
+(386, 'Галич Степан Павлович', '-', 'ua', 'Аспірант', '+380000000000', 'stephengalych@gmail.com', '-', 'no_degree', 'no_rank', 'Харківський національний економічний університет імені Семена Кузнеця', 'Кафедра державного управління, публічного адміністрування та регіональної економіки', 'пр-т Науки, 9а, Харків, Україна, 61166', 'science', 'http://www.hneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411055172, 1477245126, 0, '', 1411055172),
+(387, 'Болотова Олена Олегівна', '-', 'ua', 'Аспірант', '+380000000000', 'olena.bolotova@gmail.com', '-', 'no_degree', 'no_rank', 'Харківський національний економічний університет імені Семена Кузнеця', 'Кафедра державного управління, публічного адміністрування та регіональної економіки', 'пр-т Науки, 9а, Харків, Україна, 61166', 'science', 'http://www.hneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411055241, 1477245126, 0, '', 1411055241),
+(388, 'Michał Trocki', '-', 'pl', 'Head of Project Management Department', '+380000000000', 'michal.trocki@sgh.waw.pl', 'Project management, process management and capital group management', 'd_sc', 'prof', 'Warsaw School of Economics ', 'Department of Project Management', 'al. Niepodległości 162, Warsaw, Poland, 02-554', 'science', 'http://www.sgh.waw.pl/', 'listener', '', '0', '0', 100, 'usd', 0, 1411145534, 1477245126, 0, '', 1411145534),
+(389, 'Emil Bukłaha', '-', 'pl', 'Assistant Professor', '+380000000000', 'emil.buklaha@sgh.waw.pl', 'Multiple project management, budget planning and project controlling, change management and outsourcing', 'ph_d', 'docent', 'Warsaw School of Economics ', 'Department of Project Management', 'al. Niepodległości 162, Warsaw, Poland, 02-554', 'science', 'http://www.sgh.waw.pl/', 'listener', '', '0', '0', 100, 'usd', 0, 1411145800, 1477245126, 0, '', 1411145800),
+(390, 'Katarzyna Jasińska', '-', 'pl', 'Assistant Professor', '+380000000000', 'katarzyna.jasinska@sgh.waw.pl', 'ICT project management and process management', 'ph_d', 'docent', 'Warsaw School of Economics ', 'Department of Project Management', 'al. Niepodległości 162, Warsaw, Poland, 02-554', 'science', 'http://www.sgh.waw.pl/', 'listener', '', '0', '0', 100, 'usd', 0, 1411145891, 1477245126, 0, '', 1411145891),
+(391, 'Mateusz Juchniewicz', '-', 'pl', 'Assistant Professor', '+380000000000', 'mateusz.juchniewicz@sgh.waw.pl', 'Project maturity, quality management in projects and risk management', 'ph_d', 'docent', 'Warsaw School of Economics ', 'Department of Project Management', 'al. Niepodległości 162, Warsaw, Poland, 02-554', 'science', 'http://www.sgh.waw.pl/', 'listener', '', '0', '0', 100, 'usd', 0, 1411146024, 1477245126, 0, '', 1411146024),
+(392, 'Paweł Wyrozębski', '-', 'pl', 'Assistant Professor', '+380000000000', 'pawel.wyrozebski@sgh.waw.pl', 'Project management methodologies and knowledge management in projects', 'ph_d', 'docent', 'Warsaw School of Economics ', 'Department of Project Management', 'al. Niepodległości 162, Warsaw, Poland, 02-554', 'science', 'http://www.sgh.waw.pl/', 'listener', '', '0', '0', 100, 'usd', 0, 1411146188, 1477245126, 0, '', 1411146188),
+(393, 'Гринцевич Любовь Владимировна', '-', 'by', 'Заведующий кафедрой «Экономика и управление инновационными проектами в промышленности»', '+380000000000', 'grintsevich@bntu.by', 'Расчеты экономической эффективности в различных отраслях науки, техники и производства', 'ph_d_econ', 'docent', 'Белорусский национальный технический университет', 'Кафедра «Экономика и управление инновационными проектами в промышленности»', 'пр-т Независимости, 67, Минск, Беларусь, 220013', 'science', 'http://www.bntu.by/', 'listener', '', '0', '0', 100, 'usd', 0, 1411157212, 1477245126, 0, '', 1411157212),
+(394, 'Кочетов Николай Владимирович', '-', 'by', 'Доцент', '+380000000000', 'kochetov@bntu.by', '-', 'ph_d_tech', 'docent', 'Белорусский национальный технический университет', 'Кафедра «Экономика и управление инновационными проектами в промышленности»', 'пр-т Независимости, 67, Минск, Беларусь, 220013', 'science', 'http://www.bntu.by/', 'listener', '', '0', '0', 100, 'usd', 0, 1411157567, 1477245126, 0, '', 1411157567),
+(396, 'Артьомова Аліна Вадимівна', '-', 'ua', 'Доцент ', '+380954736207 ', 'artemovi@rambler.ru', '-', 'ph_d_tech', 'docent', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра економіки і маркетингу', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411157878, 1477245126, 0, '', 1411157878),
+(397, 'Кудрявцев Владимир Алексеевич', '-', 'by', 'Старший преподаватель', '+380000000000', 'kudryavtsev@bntu.by', 'Эффективность и качество управления, конкурентные преимущества предприятий', 'no_degree', 'no_rank', 'Белорусский национальный технический университет', 'Кафедра «Экономика и управление инновационными проектами в промышленности»', 'пр-т Независимости, 67, Минск, Беларусь, 220013', 'science', 'http://www.bntu.by/', 'listener', '', '0', '0', 100, 'usd', 0, 1411158115, 1477245126, 0, '', 1411158115),
+(398, 'Бабенко Віталіна Олексіївна', '-', 'ua', 'Професор кафедри економічної теорії', '+380675703573', 'vitalina_babenko@meta.ua', '-', 'ph_d_tech', 'docent', 'Харківський національний університет імені В.Н. Каразіна', 'Кафедра економічної теорії', 'майдан Свободи 4, Харків, Україна, 61022', 'science', 'http://www.univer.kharkov.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411159253, 1477245126, 0, '', 1411159253),
+(399, 'Баженов Володимир Андрійович', '-', 'ua', 'Перший заступник декана факультету електроенерготехніки та автоматики', '+380503846010 ', 'v_bazenov@ukr.net', '-', 'ph_d_tech', 'docent', 'Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"', 'Кафедра електричних мереж та систем', 'пр-т Перемоги, 37, Київ, Україна, 03056', 'science', 'http://kpi.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411160769, 1477245126, 0, '', 1411160769),
+(400, 'Камоцкая Наталья Ивановна', '-', 'by', 'Старший преподаватель', '+380000000000', 'kamozkaya@bntu.by', '-', 'no_degree', 'no_rank', 'Белорусский национальный технический университет', 'Кафедра «Экономика и управление инновационными проектами в промышленности»', 'пр-т Независимости, 67, Минск, Беларусь, 220013', 'science', 'http://www.bntu.by/', 'listener', '', '0', '0', 100, 'usd', 0, 1411198854, 1477245126, 0, '', 1411198854),
+(401, 'Астрахан Борис Моисеевич', '-', 'by', 'Доцент', '+380000000000', 'astrahan@bntu.by', 'Применение математических методов для повышения эффективности деятельности предприятий', 'ph_d_tech', 'docent', 'Белорусский национальный технический университет', 'Кафедра «Экономика и управление инновационными проектами в промышленности»', 'пр-т Независимости, 67, Минск, Беларусь, 220013', 'science', 'http://www.bntu.by/', 'listener', '', '0', '0', 100, 'usd', 0, 1411198978, 1477245126, 0, '', 1411198978),
+(402, 'Прокофьева Наталия Георгиевна', '-', 'by', 'Старший преподаватель', '+380000000000', 'prokofyeva@bntu.by', 'Сравнительный анализ экономических систем, культура как фактор экономического развития', 'ph_d_econ', 'no_rank', 'Белорусский национальный технический университет', 'Кафедра «Экономика и управление инновационными проектами в промышленности»', 'пр-т Независимости, 67, Минск, Беларусь, 220013', 'science', 'http://www.bntu.by/', 'listener', '', '0', '0', 100, 'usd', 0, 1411199084, 1477245126, 0, '', 1411199084),
+(403, 'Файзрахманов Фаниль Мударисович', '-', 'by', 'Доцент', '+380000000000', 'fayzrakhmanov@bntu.by', 'Теория и практика менеджмента и маркетинга', 'ph_d_econ', 'docent', 'Белорусский национальный технический университет', 'Кафедра «Экономика и управление инновационными проектами в промышленности»', 'пр-т Независимости, 67, Минск, Беларусь, 220013', 'science', 'http://www.bntu.by/', 'listener', '', '0', '0', 100, 'usd', 0, 1411199298, 1477245126, 0, '', 1411199298),
+(404, 'Хлевна Юлія Леонідівна', '-', 'ua', 'Асистент', '+380445213277', 'infokordinator@gmail.com', '-', 'ph_d_tech', 'no_rank', 'Київський національний університет імені Тараса Шевченка', 'Кафедра технологій управління', 'вул. Володимирська, 64/13, Київ, Україна, 01601', 'science', 'http://www.univ.kiev.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411204558, 1477245126, 0, '', 1411204558),
+(405, 'Кислий Володимир Миколайович', '-', 'ua', 'Професор', '+380000000000', 'kvn_sumdu@ukr.net', 'Економічний потенціал територіальних та виробничих систем, економічна оцінка природно-ресурсного потенціалу, економіка сталого розвитку', 'ph_d_econ', 'docent', 'Сумський державний університет', 'Кафедра управління', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411206240, 1477245126, 0, '', 1411206240),
+(406, 'Глівенко Сергій Володимирович', '-', 'ua', 'Доцент', '+380000000000', 'glivenko@ukr.net', 'Економіка природокористування, управління інформацією та технології її обробки, адміністративне управління, особливості розвитку української бізнес-еліти', 'ph_d_econ', 'docent', 'Сумський державний університет', 'Кафедра управління', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411206372, 1477245126, 0, '', 1411206372),
+(407, 'Петрушенко Микола Миколайович', '-', 'ua', 'Доцент', '+380000000000', 'petrushenkom@gmail.com', 'Теорія ігор, екологічна економіка, конфлікти в економіці', 'ph_d_econ', 'docent', 'Сумський державний університет', 'Кафедра управління', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411206561, 1477245126, 0, '', 1411206561),
+(408, 'Шевченко Ганна Миколаївна', '-', 'ua', 'Доцент', '+380000000000', 'annshev@ukr.net', 'Економіка та менеджмент рекреації та туризму, соціальний капітал', 'ph_d_econ', 'docent', 'Сумський державний університет', 'Кафедра управління', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411206727, 1477245126, 0, '', 1411206727),
+(409, 'Грищенко Вадим Федорович', '-', 'ua', 'Доцент', '+380542687879', 'aivvfg@gmail.com', '-', 'ph_d_econ', 'docent', 'Сумський державний університет', 'Кафедра управління', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411206886, 1477245126, 0, '', 1411206886),
+(410, 'Смоленніков Денис Олегович', '-', 'ua', 'Асистент', '+380542330172', 'dos@management.sumdu.edu.ua', '-', 'no_degree', 'no_rank', 'Сумський державний університет', 'Кафедра управління', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411207024, 1477245126, 0, '', 1411207024),
+(411, 'Скиданенко Юлія Павлівна', '-', 'ua', 'Асистент', '+380000000000', 'Sky-j@ukr.net', 'Організаційно-економічні основи управління наслідками надзвичайних ситуацій природного характеру', 'ph_d_econ', 'no_rank', 'Сумський державний університет', 'Кафедра управління', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411207167, 1477245126, 0, '', 1411207167),
+(412, 'Майборода Тетяна Миколаївна', '-', 'ua', 'Асистент', '+380000000000', 'tetyana_mayboroda@yahoo.com', '-', 'no_degree', 'no_rank', 'Сумський державний університет', 'Кафедра управління', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411207373, 1477245126, 0, '', 1411207373),
+(413, 'Вишницька Олена Іванівна', '-', 'ua', 'Асистент', '+380000000000', 'vyshnytska.o@gmail.com', 'Оцінка ефективності інвестиційних проектів в природокористуванні', 'no_degree', 'no_rank', 'Сумський державний університет', 'Кафедра управління', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411207485, 1477245126, 0, '', 1411207485),
+(414, 'Мирошниченко Юлія Олександрівна', '-', 'ua', 'Старший викладач', '+380000000000', 'elfida@ukr.net', 'Управління капіталом, інвестиційна діяльність, економічне прогнозування, циклічність економічних процесів', 'ph_d_econ', 'no_rank', 'Сумський державний університет', 'Кафедра управління', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411207597, 1477245126, 0, '', 1411207597),
+(415, 'Колосок Світлана Іванівна', '-', 'ua', 'Старший викладач', '+380000000000', 'kolosok@management.sumdu.edu.ua', 'Управління проектами та програмами, інноваційний менеджмент, рекламний та піар-менеджмент', 'ph_d_econ', 'no_rank', 'Сумський державний університет', 'Кафедра управління', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411207706, 1477245126, 0, '', 1411207706),
+(416, 'Шевченко Тетяна Іванівна', '-', 'ua', 'Старший викладач', '+380000000000', 'tanya_goncharova@meta.ua', 'Стійкий розвиток, екологічна економіка, управління використанням ресурсного потенціалу відходів', 'ph_d_econ', 'no_rank', 'Сумський державний університет', 'Кафедра управління', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411207803, 1477245126, 0, '', 1411207803),
+(417, 'Кобушко Яна Володимирівна', '-', 'ua', 'Старший викладач', '+380000000000', 'ianakobushko@gmail.com', '-', 'ph_d_econ', 'no_rank', 'Сумський державний університет', 'Кафедра управління', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411208037, 1477245126, 0, '', 1411208037),
+(418, 'Личак Анна Юріївна', '-', 'ua', 'Аспірант', '+380000000000', 'bezysskaya@management.sumdu.edu.ua', 'Оптимізація еколого-орієнтованих стратегій управління соціально-економічним розвитком території', 'no_degree', 'no_rank', 'Сумський державний університет', 'Кафедра управління', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411208145, 1477245126, 0, '', 1411208145),
+(419, 'Бондар Тетяна Вікторівна', '-', 'ua', 'Асистент', '+380000000000', 'bondart_v@ukr.net', 'Методологія системного підходу, синергетична методологія розвитку, механізм і стратегія забезпечення конкурентоспроможності підприємства в умовах реалізації концепції сталого розвитку України', 'ph_d_econ', 'no_rank', 'Сумський державний університет', 'Кафедра управління', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411208311, 1477245126, 0, '', 1411208311),
+(420, 'Грищенко Ірина Володимирівна', '-', 'ua', 'Асистент', '+380542687879', 'irina.v.info@gmail.com', 'Економіка природокористування', 'ph_d_econ', 'no_rank', 'Сумський державний університет', 'Кафедра управління', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411208496, 1477245126, 0, '', 1411208496),
+(421, 'Воронкова Валентина Григорівна', '-', 'ua', 'Завідувач кафедри менеджменту організацій та управління проектами', '+380000000000', 'valentina-voronkova@yandex.ru', '-', 'd_sc', 'prof', 'Запорізька державна інженерна академія', 'Кафедра менеджменту організацій та управління проектами', 'пр-т Соборний, 226, Запоріжжя, Україна, 69006', 'science', 'http://www.zgia.zp.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411210919, 1477245126, 0, '', 1411210919),
+(422, 'Євдокимова Альона Вікторівна', '-', 'ua', 'Старший викладач', '+380000000000', 'alyona_ev@ukr.net', 'Управління проектами та програмами', 'no_degree', 'no_rank', 'Сумський державний університет', 'Кафедра управління', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411225853, 1477245126, 0, '', 1411225853),
+(423, 'Козьменко Сергій Миколайович', '-', 'ua', 'Професор', '+380000000000', 'kozmenko@uabs.edu.ua', 'інноваційні методи в страхуванні, менеджмент організацій, стратегічний менеджмент у банках, відтворювальні процеси в економіці, економіка природокористування і охорони навколишнього середовища', 'd_sc_econ', 'prof', 'Сумський державний університет', 'Кафедра управління', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411225978, 1477245126, 0, '', 1411225978),
+(424, 'Валенкевич Лариса Петрівна', '-', 'ua', 'Доцент', '+380000000000', 'valenkev@ukr.net', 'Управління вищою освітою, економіка природокористування, фінансування місцевих бюджетів', 'ph_d_econ', 'docent', 'Сумський державний університет', 'Кафедра управління', 'вул. Римського-Корсакова, 2, Суми, Україна, 40007', 'science', 'http://sumdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411226160, 1477245126, 0, '', 1411226160),
+(425, 'Дергачова Вікторія Вікторівна', '-', 'ua', 'Завідувач кафедри менеджменту', '+380000000000', 'dervikvik@mail.ru', '-', 'd_sc_econ', 'prof', 'Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"', 'Кафедра менеджменту', 'пр-т Перемоги, 37, Київ, Україна, 03056', 'science', 'http://kpi.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411228234, 1477245126, 0, '', 1411228234),
+(426, 'Морозов Олександр Федорович', '-', 'ua', 'Професор', '+380000000000', 'o.morozov@kpi.ua', '-', 'd_sc_tech', 'prof', 'Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"', 'Кафедра менеджменту', 'пр-т Перемоги, 37, Київ, Україна, 03056', 'science', 'http://kpi.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411228345, 1477245126, 0, '', 1411228345),
+(427, 'Шульгіна Людмила Михайлівна', '-', 'ua', 'Професор', '+380000000000', 'shulm@ukr.net', 'Маркетингова діяльність підприємств, маркетинг інновацій, маркетинг персоналу, маркетингові дослідження, маркетингові комунікації та цінова політика підприємств, стратегічне управління економічним розвитком', 'd_sc_econ', 'prof', 'Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"', 'Кафедра менеджменту', 'пр-т Перемоги, 37, Київ, Україна, 03056', 'science', 'http://kpi.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411228419, 1477245126, 0, '', 1411228419),
+(428, 'Смоляр Любов Гаврилівна', '-', 'ua', 'Професор', '+380000000000', 'lgsm@mail.ru', 'Розвиток теорії інноваційного менеджменту, стратегічне управління інноваційним розвитком підприємств, управління знаннями, креативний менеджмент, мережні форми міжфірмового співробітництва', 'ph_d_econ', 'docent', 'Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"', 'Кафедра менеджменту', 'пр-т Перемоги, 37, Київ, Україна, 03056', 'science', 'http://kpi.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411228501, 1477245126, 0, '', 1411228501),
+(429, 'Довгань Людмила Євгенівна', '-', 'ua', 'Професор', '+380000000000', 'dovganle@gmail.com', 'Менеджмент організацій, корпоративне управління, креативний менеджмент, управління людськими ресурсами', 'ph_d_econ', 'docent', 'Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"', 'Кафедра менеджменту', 'пр-т Перемоги, 37, Київ, Україна, 03056', 'science', 'http://kpi.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411228582, 1477245126, 0, '', 1411228582),
+(430, 'Артеменко Ліна Петрівна', '-', 'ua', 'Доцент', '+380000000000', 'tarlin@ukr.net', 'Стратегічне управління, конкурентоспроможність промислових підприємств, економічна безпека підприємств, сучасний менеджмент', 'ph_d_econ', 'docent', 'Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"', 'Кафедра менеджменту', 'пр-т Перемоги, 37, Київ, Україна, 03056', 'science', 'http://kpi.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411228663, 1477245126, 0, '', 1411228663),
+(431, 'Дунська Алла Рашидівна', '-', 'ua', 'Доцент', '+380000000000', 'alsu@i.ua', 'Стратегічне управління зовнішньоекономічною діяльністю, формування інноваційних механізмів розвитку промислових підприємств, мікроекономічне моделювання, соціальні аспекти інноваційного розвитку', 'ph_d_econ', 'docent', 'Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"', 'Кафедра менеджменту', 'пр-т Перемоги, 37, Київ, Україна, 03056', 'science', 'http://kpi.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411228735, 1477245126, 0, '', 1411228735),
+(432, 'Жигалкевич Жанна Михайлівна', '-', 'ua', 'Доцент', '+380000000000', 'zhygalkevych@gmail.com', 'Кластероутворення, розвиток корпоративних структур, інноваційна діяльність підприємств, конкурентоспроможність підприємств, квазіінтеграційні структури, управління фінансами на підприємстві, управління стартап-проектами', 'ph_d_econ', 'docent', 'Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"', 'Кафедра менеджменту', 'пр-т Перемоги, 37, Київ, Україна, 03056', 'science', 'http://kpi.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411228812, 1477245126, 0, '', 1411228812),
+(433, 'Бояринова Катерина Олександрівна', '-', 'ua', 'Доцент', '+380000000000', 'boyarinovaea@ukr.net', 'Управління інноваційним розвитком промислових підприємств, національна інноваційна система, інноваційна політика на макро-, мікро- рівнях, управління розробкою і освоєнням виробництва інноваційної продукції', 'ph_d_econ', 'docent', 'Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"', 'Кафедра менеджменту', 'пр-т Перемоги, 37, Київ, Україна, 03056', 'science', 'http://kpi.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411228880, 1477245126, 0, '', 1411228880),
+(434, 'Пічугіна Марина Анатоліївна', '-', 'ua', 'Доцент', '+380000000000', 'pichuginam@ukr.net', 'Управління зовнішньоекономічною діяльністю промислових підприємств, розвиток міжфірмової кооперації, економічна безпека підприємств, психологія управління', 'ph_d_econ', 'docent', 'Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"', 'Кафедра менеджменту', 'пр-т Перемоги, 37, Київ, Україна, 03056', 'science', 'http://kpi.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411228944, 1477245126, 0, '', 1411228944),
+(435, 'Мохонько Ганна Анатоліївна', '-', 'ua', 'Доцент', '+380000000000', 'mokhonkoanna@yandex.ru', 'Управління проектами, економіка підприємств видавничо-поліграфічної галузі, стратегічна стійкість підприємства, забезпечення стійкості підприємства', 'ph_d_econ', 'docent', 'Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"', 'Кафедра менеджменту', 'пр-т Перемоги, 37, Київ, Україна, 03056', 'science', 'http://kpi.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411229004, 1477245126, 0, '', 1411229004),
+(436, 'Коцко Тарас Аркадійович', '-', 'ua', 'Доцент', '+380000000000', 'tkotsko@gmail.com', 'Проблеми розвитку енергетичних ринків, економічна безпека територіальних утворень, економічна політика структурних трансформацій, сталий розвиток економіки', 'ph_d_econ', 'docent', 'Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"', 'Кафедра менеджменту', 'пр-т Перемоги, 37, Київ, Україна, 03056', 'science', 'http://kpi.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411229069, 1477245126, 0, '', 1411229069),
+(437, 'Давиденко Володимир Вадимович', '-', 'ua', 'Доцент', '+380000000000', 'viold@i.ua', 'Стратегічне управління, аудит, управління якістю, ощадне виробництво', 'ph_d_econ', 'docent', 'Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"', 'Кафедра менеджменту', 'пр-т Перемоги, 37, Київ, Україна, 03056', 'science', 'http://kpi.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411229126, 1477245126, 0, '', 1411229126),
+(438, 'Кравченко Марина Олегівна', '-', 'ua', 'Доцент', '+380000000000', 'mary_kravchenko@mail.ru', 'Управління інноваційним розвитком промислових підприємств, управління інноваційною активністю персоналу підприємств, управління проектами', 'ph_d_econ', 'docent', 'Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"', 'Кафедра менеджменту', 'пр-т Перемоги, 37, Київ, Україна, 03056', 'science', 'http://kpi.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411229189, 1477245126, 0, '', 1411229189),
+(439, 'Гук Ольга Володимирівна', '-', 'ua', 'Доцент', '+380000000000', 'olgaguk@ukr.net', 'Економічна безпека підприємств в умовах сьогодення, управління ризиками венчурний бізнес, запобігання банкрутству підприємств, інноваційна діяльність підприємства', 'ph_d_econ', 'docent', 'Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"', 'Кафедра менеджменту', 'пр-т Перемоги, 37, Київ, Україна, 03056', 'science', 'http://kpi.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411229257, 1477245126, 0, '', 1411229257),
+(440, 'Ситник Наталія Іванівна', '-', 'ua', 'Доцент', '+380000000000', 'natalia_sytnik@ukr.net', 'Управління знаннями, розвиток креативно-інноваційного потенціалу підприємств, управління персоналом інтелектуальних організацій', 'ph_d', 'docent', 'Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"', 'Кафедра менеджменту', 'пр-т Перемоги, 37, Київ, Україна, 03056', 'science', 'http://kpi.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411229324, 1477245126, 0, '', 1411229324),
+(441, 'Пермінова Світлана Олександрівна', '-', 'ua', 'Доцент', '+380000000000', 'zelle12@mail.ru', 'Державне управління вищою освітою, підготовка фахівців у вищій школі, управління інтелектуальним капіталом підприємства', 'ph_d', 'docent', 'Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"', 'Кафедра менеджменту', 'пр-т Перемоги, 37, Київ, Україна, 03056', 'science', 'http://kpi.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411229396, 1477245126, 0, '', 1411229396),
+(442, 'Савицька Олена Миколаївна', '-', 'ua', 'Доцент', '+380000000000', 'savickaya.en@gmail.com', 'Контролінг, фінансовий контролінг, фінанси підприємств, економічний аналіз, системний аналіз, управління фінансами, управління витратами, управління проектами, інноваційно-інвестиційна діяльність підприємств', 'ph_d_econ', 'docent', 'Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"', 'Кафедра менеджменту', 'пр-т Перемоги, 37, Київ, Україна, 03056', 'science', 'http://kpi.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411229461, 1477245126, 0, '', 1411229461),
+(443, 'Луценко Ірина Сергіївна', '-', 'ua', 'Доцент', '+380000000000', 'irina.lutsenko0802@mail.ru', 'Логістика, логістична підтримка інноваційної діяльності, логістична підтримка зовнішньоекономічної діяльності, управління каналами розподілу, рециклінг, управління якістю, моделі досконалости організацій', 'ph_d_econ', 'docent', 'Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"', 'Кафедра менеджменту', 'пр-т Перемоги, 37, Київ, Україна, 03056', 'science', 'http://kpi.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411229539, 1477245126, 0, '', 1411229539),
+(444, 'Лазоренко Таїсія Василівна', '-', 'ua', 'Доцент', '+380000000000', 'taisa-@ukr.net', 'Конкурентоспроможність підприємств, управління якістю, зовнішньоекономічна діяльність підприємств', 'ph_d_econ', 'docent', 'Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"', 'Кафедра менеджменту', 'пр-т Перемоги, 37, Київ, Україна, 03056', 'science', 'http://kpi.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411229602, 1477245126, 0, '', 1411229602),
+(445, 'Малик Ірина Петрівна', '-', 'ua', 'Доцент', '+380000000000', 'imalyk@yandex.ru', 'Корпоративне управління, інформаційна економіка, корпоративна соціальна відповідальність, управлінське консультування', 'ph_d_econ', 'docent', 'Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"', 'Кафедра менеджменту', 'пр-т Перемоги, 37, Київ, Україна, 03056', 'science', 'http://kpi.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411229661, 1477245126, 0, '', 1411229661),
+(446, 'Голюк Вікторія Ярославівна', '-', 'ua', 'Доцент', '+380000000000', 'tavika@ukr.net', 'Грошово-кредитна політика, інфляція, економічний розвиток держави', 'ph_d_econ', 'docent', 'Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"', 'Кафедра менеджменту', 'пр-т Перемоги, 37, Київ, Україна, 03056', 'science', 'http://kpi.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411229718, 1477245126, 0, '', 1411229718),
+(447, 'Кам’янська Ольга Вікторівна', '-', 'ua', 'Доцент', '+380000000000', 'kamyanska@iuf.kpi.ua', 'Управління інтелектуальною власністю, трансфер технологій, корпоративне управління, міжнародне інвестування', 'ph_d_econ', 'docent', 'Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"', 'Кафедра менеджменту', 'пр-т Перемоги, 37, Київ, Україна, 03056', 'science', 'http://kpi.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411229783, 1477245126, 0, '', 1411229783),
+(448, 'Чупріна Маргарита Олександрівна', '-', 'ua', 'Доцент', '+380000000000', 'ma.chuprina@gmail.com', '-', 'ph_d_econ', 'docent', 'Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"', 'Кафедра менеджменту', 'пр-т Перемоги, 37, Київ, Україна, 03056', 'science', 'http://kpi.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411229904, 1477245126, 0, '', 1411229904),
+(449, 'Шкробот Маріна Володимирівна', '-', 'ua', 'Доцент', '+380000000000', 'shkrobotmarina@ukr.net', 'Менеджмент організації, стратегічне управління, державно-приватне партнерство, корпоративна соціальна відповідальність, економіка інноваційного підприємства, стратегічна модернізація гідроелектроенергетики', 'ph_d_econ', 'docent', 'Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"', 'Кафедра менеджменту', 'пр-т Перемоги, 37, Київ, Україна, 03056', 'science', 'http://kpi.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411229970, 1477245126, 0, '', 1411229970),
+(450, 'Манаєнко Ірина Миколаївна', '-', 'ua', 'Старший викладач', '+380000000000', 'verholyad@ukr.net', 'Регіональний розвиток, розвиток міжнародних економічних відносин, інвестиційна діяльність, інноваційний розвиток, економіка електроенергетики, менеджмент на телекомунікаційних підприємствах, митна справа', 'ph_d_econ', 'no_rank', 'Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"', 'Кафедра менеджменту', 'пр-т Перемоги, 37, Київ, Україна, 03056', 'science', 'http://kpi.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411230036, 1477245126, 0, '', 1411230036),
+(451, 'Шеховцова Ірина Анатоліївна', '-', 'ua', 'Старший викладач', '+380000000000', 'shia@meta.ua', 'Менеджмент організацій, бізнес процеси, логістика, конкурентоспроможність підприємств, операційний менеджмент', 'no_degree', 'no_rank', 'Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"', 'Кафедра менеджменту', 'пр-т Перемоги, 37, Київ, Україна, 03056', 'science', 'http://kpi.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411230099, 1477245126, 0, '', 1411230099),
+(452, 'Мінкін Олександр Юрійович', '-', 'ua', 'Старший викладач', '+380000000000', 'minkin_ay@mail.ru', 'Менеджмент організацій, управління вищою школою, логістика, економічне прогнозування', 'no_degree', 'no_rank', 'Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"', 'Кафедра менеджменту', 'пр-т Перемоги, 37, Київ, Україна, 03056', 'science', 'http://kpi.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411230156, 1477245126, 0, '', 1411230156),
+(453, 'Салоїд Станіслав Васильович', '-', 'ua', 'Старший викладач', '+380000000000', 's_saloid@ukr.net', '-', 'no_degree', 'no_rank', 'Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"', 'Кафедра менеджменту', 'пр-т Перемоги, 37, Київ, Україна, 03056', 'science', 'http://kpi.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411230218, 1477245126, 0, '', 1411230218),
+(454, 'Кузнєцова Катерина Олександрівна', '-', 'ua', 'Старший викладач', '+380000000000', 'kuznietsova.k@gmail.com', 'Енергетична безпека, конкурентоспроможність енергетичних підприємств, реформування енергетичного ринку, міжнародна економічна діяльність України', 'ph_d_econ', 'no_rank', 'Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"', 'Кафедра менеджменту', 'пр-т Перемоги, 37, Київ, Україна, 03056', 'science', 'http://kpi.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411230277, 1477245126, 0, '', 1411230277),
+(455, 'Копішинська Катерина Олександрівна', '-', 'ua', 'Старший викладач', '+380000000000', 'kopishynska@ukr.net', 'Управління інноваційним розвитком підприємств, інноваційні системи мікро- та макрорівня, інтелектуальний капітал', 'ph_d_econ', 'no_rank', 'Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"', 'Кафедра менеджменту', 'пр-т Перемоги, 37, Київ, Україна, 03056', 'science', 'http://kpi.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411230334, 1477245126, 0, '', 1411230334),
+(456, 'Черняк Ганна Михайлівна', '-', 'ua', 'Асистент', '+380000000000', 'ani3008@rambler.ru', 'Економічна безпека підприємства, конкурентоспроможність підприємств, реформування ринку енергетики, правові аспекти управління підприємством', 'no_degree', 'no_rank', 'Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"', 'Кафедра менеджменту', 'пр-т Перемоги, 37, Київ, Україна, 03056', 'science', 'http://kpi.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411230396, 1477245126, 0, '', 1411230396),
+(457, 'Чорній Вікторія Валеріївна', '-', 'ua', 'Асистент', '+380000000000', 'lukashpost@gmail.com', 'Іноземне інвестування, фондовий ринок, фінанси піжприємства, міжнародна торгівля', 'no_degree', 'no_rank', 'Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"', 'Кафедра менеджменту', 'пр-т Перемоги, 37, Київ, Україна, 03056', 'science', 'http://kpi.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411230457, 1477245126, 0, '', 1411230457);
+INSERT INTO `member` (`id`, `name`, `nameEng`, `country`, `position`, `phone`, `email`, `interest`, `scienceDegree`, `scienceTitle`, `organisationTitle`, `organisationDepartment`, `organisationAddress`, `organisationActivity`, `organisationUrl`, `participationType`, `topicTitle`, `topicLanguage`, `topicSection`, `totalSum`, `currency`, `papersCount`, `created_at`, `updated_at`, `paid`, `noteFromAdmin`, `inviteSentAt`) VALUES
+(458, 'Жалдак Ганна Петрівна', '-', 'ua', 'Старший викладач', '+380000000000', 'ann17@i.ua', 'інноваційний розвиток, соціальний капітал, зовнішньоекономічна діяльність підприємств, мікроекономічне моделювання', 'ph_d_econ', 'no_rank', 'Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"', 'Кафедра менеджменту', 'пр-т Перемоги, 37, Київ, Україна, 03056', 'science', 'http://kpi.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411230520, 1477245126, 0, '', 1411230520),
+(459, 'Воржакова Юлія Петрівна', '-', 'ua', 'Асистент', '+380000000000', 'juliyav@meta.ua', '-', 'no_degree', 'no_rank', 'Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"', 'Кафедра менеджменту', 'пр-т Перемоги, 37, Київ, Україна, 03056', 'science', 'http://kpi.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411230587, 1477245126, 0, '', 1411230587),
+(460, 'Баженова Олена Володимирівна', '-', 'ua', 'Доцент ', '+380509147047', 'bazhenova_elena@univ.kiev.ua', 'Макроекономічний аналіз, макроекономічне моделювання, економічна безпека', 'ph_d_tech', 'docent', 'Київський національний університет імені Тараса Шевченка', 'Кафедра економічної кібернетики', 'вул. Володимирська, 64/13, Київ, Україна, 01601', 'science', 'http://www.univ.kiev.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411241726, 1477245126, 0, '', 1411241726),
+(461, 'Воркут Тетяна Анатоліївна', '-', 'ua', 'Завідувач кафедри транспортного права та логістики', ' +380442544326', 'tpsalkaf@mail.ntu.edu.ua', 'Теорія транспортних процесів і систем, логістика, управління ланцюгами постачань, управління проектами логістичних систем, оцінювання фінансової та економічної ефективності інвестиційних проектів', 'd_sc_tech', 'prof', 'Національний транспортний університет', 'Кафедра транспортного права та логістики', 'вул. Суворова, 1, Київ, Україна, 01010', 'science', 'http://ntu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411297084, 1477245126, 0, '', 1411297084),
+(462, 'Лабута Артем Віталійович', '-', 'ua', 'Асистент', '+380000000000', 'karerra@ukr.net', 'Теорія транспортних процесів і систем, логістика, управління проектами', 'no_degree', 'no_rank', 'Національний транспортний університет', 'Кафедра транспортного права та логістики', 'вул. Суворова, 1, Київ, Україна, 01010', 'science', 'http://ntu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411297480, 1477245126, 0, '', 1411297480),
+(463, 'Батенко Людмила Павлівна', '-', 'ua', 'Завідувач кафедри стратегії підприємств', '+380000000000', 'Ludmilla.Batenko@iib.com.ua', '-', 'ph_d_econ', 'prof', 'Київський національний економічний університет імені Вадима Гетьмана', 'Кафедра стратегії підприємств ', 'пр-т Перемоги, 54/1, Київ, Україна, 03680', 'science', 'https://kneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411316456, 1477245126, 0, '', 1411316456),
+(464, 'Прохорова Єлєна Вікторівна', '-', 'ua', 'Заступник завідувача кафедри стратегії підприємств з навчально-методичної роботи', '+380000000000', 'yeliena.prokhorova@kneu.ua', '-', 'ph_d_econ', 'docent', 'Київський національний економічний університет імені Вадима Гетьмана', 'Кафедра стратегії підприємств ', 'пр-т Перемоги, 54/1, Київ, Україна, 03680', 'science', 'https://kneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411316638, 1477245126, 0, '', 1411316638),
+(465, 'Решетняк Тетяна Іванівна', '-', 'ua', 'Заступник завідувача кафедри стратегії підприємств з наукової роботи', '+380000000000', 'tatresh@mail.ru', '-', 'ph_d_econ', 'docent', 'Київський національний економічний університет імені Вадима Гетьмана', 'Кафедра стратегії підприємств ', 'пр-т Перемоги, 54/1, Київ, Україна, 03680', 'science', 'https://kneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411316769, 1477245126, 0, '', 1411316769),
+(466, 'Верба Вероніка Анатоліївна', '-', 'ua', 'Професор', '+380000000000', 'v_verba@ukr.net', '-', 'd_sc_econ', 'prof', 'Київський національний економічний університет імені Вадима Гетьмана', 'Кафедра стратегії підприємств', 'пр-т Перемоги, 54/1, Київ, Україна, 03680', 'science', 'https://kneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411316893, 1477245126, 0, '', 1411316893),
+(467, 'Євдокимова Ніна Миколаївна', '-', 'ua', 'Професор', '+380000000000', 'enenjev@gmail.com', '-', 'ph_d_econ', 'docent', 'Київський національний економічний університет імені Вадима Гетьмана', 'Кафедра стратегії підприємств ', 'пр-т Перемоги, 54/1, Київ, Україна, 03680', 'science', 'https://kneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411316981, 1477245126, 0, '', 1411316981),
+(468, 'Азьмук Любов Анатоліївна', '-', 'ua', 'Доцент', '+380000000000', 'azmukl@gmail.com', '-', 'ph_d_econ', 'docent', 'Київський національний економічний університет імені Вадима Гетьмана', 'Кафедра стратегії підприємств', 'пр-т Перемоги, 54/1, Київ, Україна, 03680', 'science', 'https://kneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411317730, 1477245126, 0, '', 1411317730),
+(469, 'Банщиков Петро Гаврилович', '-', 'ua', 'Професор', '+380000000000', 'bpg@kneu.edu.ua', '-', 'ph_d_econ', 'docent', 'Київський національний економічний університет імені Вадима Гетьмана', 'Кафедра стратегії підприємств ', 'пр-т Перемоги, 54/1, Київ, Україна, 03680', 'science', 'https://kneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411317855, 1477245126, 0, '', 1411317855),
+(470, 'Гаращенко Наталія Миколаївна', '-', 'ua', 'Доцент', '+380000000000', 'ngarash@gmail.com', '-', 'ph_d_econ', 'docent', 'Київський національний економічний університет імені Вадима Гетьмана', 'Кафедра стратегії підприємств ', 'пр-т Перемоги, 54/1, Київ, Україна, 03680', 'science', 'https://kneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411317972, 1477245126, 0, '', 1411317972),
+(471, 'Гребешков Олексій Миколайович', '-', 'ua', 'Доцент', '+380000000000', 'grebeshkov@kneu.edu.ua', '-', 'ph_d_econ', 'no_rank', 'Київський національний економічний університет імені Вадима Гетьмана', 'Кафедра стратегії підприємств ', 'пр-т Перемоги, 54/1, Київ, Україна, 03680', 'science', 'https://kneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411318070, 1477245126, 0, '', 1411318070),
+(472, 'Гребешкова Олена Миколаївна', '-', 'ua', 'Доцент', '+380000000000', 'grebeshkova@kneu.edu.ua', '-', 'ph_d_econ', 'docent', 'Київський національний економічний університет імені Вадима Гетьмана', 'Кафедра стратегії підприємств ', 'пр-т Перемоги, 54/1, Київ, Україна, 03680', 'science', 'https://kneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411318172, 1477245126, 0, '', 1411318172),
+(473, 'Кизенко Олена Олександрівна', '-', 'ua', 'Доцент', '+380000000000', 'olena.kyzenko@kneu.ua', '-', 'ph_d_econ', 'docent', 'Київський національний економічний університет імені Вадима Гетьмана', 'Кафедра стратегії підприємств ', 'пр-т Перемоги, 54/1, Київ, Україна, 03680', 'science', 'https://kneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411318254, 1477245126, 0, '', 1411318254),
+(474, 'Кібук Тетяна Миколаївна', '-', 'ua', 'Доцент', '+380000000000', 'tatyana-kibuk@ya.ru', '-', 'ph_d_econ', 'no_rank', 'Київський національний економічний університет імені Вадима Гетьмана', 'Кафедра стратегії підприємств ', 'пр-т Перемоги, 54/1, Київ, Україна, 03680', 'science', 'https://kneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411318336, 1477245126, 0, '', 1411318336),
+(475, 'Коцюба Олексій Станіславович', '-', 'ua', 'Докторант', '+380000000000', 'kotsyuba@voliacable.com', '-', 'ph_d_econ', 'no_rank', 'Київський національний економічний університет імені Вадима Гетьмана', 'Кафедра стратегії підприємств ', 'пр-т Перемоги, 54/1, Київ, Україна, 03680', 'science', 'https://kneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411318431, 1477245126, 0, '', 1411318431),
+(476, 'Лозовик Юрій Миколайович', '-', 'ua', 'Докторант', '+380000000000', 'yuralm@ukr.net', '-', 'ph_d_econ', 'docent', 'Київський національний економічний університет імені Вадима Гетьмана', 'Кафедра стратегії підприємств ', 'пр-т Перемоги, 54/1, Київ, Україна, 03680', 'science', 'https://kneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411318527, 1477245126, 0, '', 1411318527),
+(477, 'Махова Галина Вікторівна', '-', 'ua', 'Доцент', '+380000000000', 'gala_mahova@mail.ru', '-', 'ph_d_econ', 'docent', 'Київський національний економічний університет імені Вадима Гетьмана', 'Кафедра стратегії підприємств ', 'пр-т Перемоги, 54/1, Київ, Україна, 03680', 'science', 'https://kneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411318616, 1477245126, 0, '', 1411318616),
+(478, 'Мельник Оксана Володимирівна', '-', 'ua', 'Доцент', '+380000000000', 'kina22@gmail.com', '-', 'ph_d_econ', 'no_rank', 'Київський національний економічний університет імені Вадима Гетьмана', 'Кафедра стратегії підприємств ', 'пр-т Перемоги, 54/1, Київ, Україна, 03680', 'science', 'https://kneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411318693, 1477245126, 0, '', 1411318693),
+(479, 'Оберемчук Валентина Феодосіївна', '-', 'ua', 'Доцент', '+380000000000', 'oberemchuk@yahoo.com', '-', 'ph_d_econ', 'docent', 'Київський національний економічний університет імені Вадима Гетьмана', 'Кафедра стратегії підприємств ', 'пр-т Перемоги, 54/1, Київ, Україна, 03680', 'science', 'https://kneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411318770, 1477245126, 0, '', 1411318770),
+(480, 'Скитьова Ганна Сергіївна', '-', 'ua', 'Доцент', '+380000000000', 'askit@kneu.edu.ua', '-', 'ph_d_econ', 'no_rank', 'Київський національний економічний університет імені Вадима Гетьмана', 'Кафедра стратегії підприємств ', 'пр-т Перемоги, 54/1, Київ, Україна, 03680', 'science', 'https://kneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411318848, 1477245126, 0, '', 1411318848),
+(481, 'Щербатюк Олена Миколаївна', '-', 'ua', 'Доцент', '+380000000000', 'shcherbatyuk@ukr.net', '-', 'ph_d_econ', 'docent', 'Київський національний економічний університет імені Вадима Гетьмана', 'Кафедра стратегії підприємств ', 'пр-т Перемоги, 54/1, Київ, Україна, 03680', 'science', 'https://kneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411318971, 1477245126, 0, '', 1411318971),
+(482, 'Голіонко Наталія Григорівна', '-', 'ua', 'Старший викладач', '+380000000000', 'golionko@ukr.net', '-', 'ph_d_econ', 'no_rank', 'Київський національний економічний університет імені Вадима Гетьмана', 'Кафедра стратегії підприємств ', 'пр-т Перемоги, 54/1, Київ, Україна, 03680', 'science', 'https://kneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411319352, 1477245126, 0, '', 1411319352),
+(483, 'Дяченко Максим Іванович', '-', 'ua', 'Старший викладач', '+380000000000', 'maxd@mail.ru', '-', 'no_degree', 'no_rank', 'Київський національний економічний університет імені Вадима Гетьмана', 'Кафедра стратегії підприємств ', 'пр-т Перемоги, 54/1, Київ, Україна, 03680', 'science', 'https://kneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411319419, 1477245126, 0, '', 1411319419),
+(484, 'Кубарева Ірина Володимирівна', '-', 'ua', 'Доцент', '+380000000000', 'irinav.kubareva@gmail.com', '-', 'ph_d_econ', 'no_rank', 'Київський національний економічний університет імені Вадима Гетьмана', 'Кафедра стратегії підприємств ', 'пр-т Перемоги, 54/1, Київ, Україна, 03680', 'science', 'https://kneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411319512, 1477245126, 0, '', 1411319512),
+(485, 'Ліщинська Вікторія Валеріївна', '-', 'ua', 'Старший викладач', '+380000000000', 'victoria.leshchinska@gmail.com', '-', 'no_degree', 'no_rank', 'Київський національний економічний університет імені Вадима Гетьмана', 'Кафедра стратегії підприємств ', 'пр-т Перемоги, 54/1, Київ, Україна, 03680', 'science', 'https://kneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411319592, 1477245126, 0, '', 1411319592),
+(486, 'Міхеєва Марія Валеріївна', '-', 'ua', 'Асистент', '+380000000000', 'mariia.mikheeva@kneu.ua', '-', 'no_degree', 'no_rank', 'Київський національний економічний університет імені Вадима Гетьмана', 'Кафедра стратегії підприємств ', 'пр-т Перемоги, 54/1, Київ, Україна, 03680', 'science', 'https://kneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411319700, 1477245126, 0, '', 1411319700),
+(487, 'Тарасюк Галина Миколаївна', '-', 'ua', 'Завідувач кафедри менеджменту організацій і адміністрування', '+380412241421', 'galinatar@ukr.net', 'Проблеми теорії та практики планування діяльності підприємств, корпоративний та фінансовий менеджмент, економіка підприємства, бізнес-освіта', 'd_sc_econ', 'prof', 'Житомирський державний технологічний університет', 'Кафедра менеджменту організацій і адміністрування', 'вул. Черняховського, 103, Житомир, Україна, 10005', 'science', 'https://ztu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411322365, 1477245126, 0, '', 1411322365),
+(488, 'Гонтарева Ірина Вячеславівна', '-', 'ua', 'Професор', '+380577021834', 'lider.khneu@gmail.com', 'Проблеми оцінювання системної ефективності функціонування та розвитку підприємства, компетентністний підхід в підготовці студентів', 'd_sc_econ', 'prof', 'Харківський національний економічний університет імені Семена Кузнеця', 'Кафедра економіки підприємства та менеджменту', 'пр-т Науки, 9а, Харків, Україна, 61166', 'science', 'http://www.hneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411322858, 1477245126, 0, '', 1411322858),
+(489, 'Бабич Олександр Вікторович', '-', 'ua', 'Здобувач', '+380577884302', 'alexander.taurus@gmail.com', '-', 'no_degree', 'no_rank', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра інформаційних управляючих систем ', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411283592, 1477245126, 0, '', 1411283592),
+(490, 'Безкоровайний Володимир Валентинович', '-', 'ua', 'Професор кафедри системотехніки', '+380509840329', 'vvbeskorovainyi@mail.ru', '-', 'd_sc_tech', 'prof', 'Харківський національний університет радіоелектроніки', 'Кафедра системотехніки', 'пр-т Науки, 14, Харків. Україна, 61166', 'science', 'http://nure.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411284562, 1477245126, 0, '', 1411284562),
+(492, 'Бондарева Тетяна Іванівна', '-', 'ua', 'Доцент ', '+380958896980', 'bond_tat@ukr.net', '-', 'ph_d_tech', 'docent', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра менеджменту', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411285186, 1477245126, 0, '', 1411285186),
+(493, 'Вдовитченко Олександр Валерійович ', '-', 'ua', 'Асистент', '+380937663158 ', 'kentsanya91@gmail.com', '-', 'no_degree', 'no_rank', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра інженерії програмного забезпечення', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411285710, 1477245126, 0, '', 1411285710),
+(495, 'Федорович Олег Євгенович ', '-', 'ua', 'Завідувач кафедри інформаційних управляючих систем', '+380577884302', 'kafius@ukr.net', '-', 'd_sc_tech', 'prof', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра інформаційних управляючих систем ', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411374964, 1477245126, 0, '', 1411374964),
+(496, 'Гатило Валентина Петрівна', '-', 'ua', 'Старший викладач ', '+380999251568', 'gatulo@ukr.net', '-', 'no_degree', 'no_rank', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра менеджменту', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411289462, 1477245126, 0, '', 1411289462),
+(497, 'Голованова Майя Анатоліївна', '-', 'ua', 'Доцент ', '+380577074488 ', 'gmaya@mail.ua', '-', 'ph_d_tech', 'docent', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра економіки і маркетингу', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411289667, 1477245126, 0, '', 1411289667),
+(498, 'Гончар Інна Олександрівна', '-', 'ua', 'Завідувач кафедри менеджменту', ' +380675711110 ', 'gonchar@mail.ru', '-', 'ph_d_tech', 'docent', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра менеджменту', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411289801, 1477245126, 0, '', 1411289801),
+(499, 'Гончаренко Олена Миколаївна', '-', 'ua', 'Завідувач кафедри фінансового менеджменту та фондового ринку', '+380506522714', 'engoncharenko@ukr.net', '-', 'd_sc_econ', 'docent', 'Одеський національний економічний університет', 'Кафедра фінансового менеджменту та фондового ринку', 'вул. Преображенська, 8, Одеса, Україна, 65026', 'science', 'http://oneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411289972, 1477245126, 0, '', 1411289972),
+(500, 'Гордєєва Інна Олександрівна', '-', 'ua', 'Доцент ', '+380973043111 ', 'gordeeva_inna@list.ru', '-', 'ph_d_tech', 'docent', 'Дніпропетровський національний університет залізничного транспорту ім. академіка Лазаряна', 'Кафедра "Управління проектами, бідівлі та будівельні матеріали"', 'вул. академіка В. Лазаряна, 2, Дніпропетровськ, Україна, 49010', 'science', 'http://www.diit.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411290124, 1477245126, 0, '', 1411290124),
+(501, 'Шаров Юрій Павлович', '-', 'ua', 'Завідувач кафедри менеджменту та управління проектами', '+380567945827', 'sharov@vidr.dp.ua', '-', 'd_sc', 'prof', 'Дніпропетровський регіональний інститут державного управління Національної Академії державного управління при Президентові України', 'Кафедра менеджменту та управління проектами', 'вул. Гоголя, 29, Дніпропетровськ, Україна, 49044', 'science', 'http://www.dridu.dp.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411386701, 1477245126, 0, '', 1411386701),
+(502, 'Маматова Тетяна Валеріївна', '-', 'ua', 'Професор', '+380000000000', 'mamatova@consyst.dp.ua', '-', 'd_sc', 'prof', 'Дніпропетровський регіональний інститут державного управління Національної Академії державного управління при Президентові України', 'Кафедра менеджменту та управління проектами', 'вул. Гоголя, 29, Дніпропетровськ, Україна, 49044', 'science', 'http://www.dridu.dp.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411387043, 1477245126, 0, '', 1411387043),
+(503, 'Молоканова Валентина Михайлівна', '-', 'ua', 'Доцент', '+380000000000', 'molokany@gmail.com', '-', 'd_sc_tech', 'docent', 'Дніпропетровський регіональний інститут державного управління Національної Академії державного управління при Президентові України', 'Кафедра менеджменту та управління проектами', 'вул. Гоголя, 29, Дніпропетровськ, Україна, 49044', 'science', 'http://www.dridu.dp.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411387217, 1477245126, 0, '', 1411387217),
+(504, 'Чикаренко Ірина Аркадіївна', '-', 'ua', 'Доцент', '+380000000000', 'irina_chikarenko@ukr.net', '-', 'd_sc', 'docent', 'Дніпропетровський регіональний інститут державного управління Національної Академії державного управління при Президентові України', 'Кафедра менеджменту та управління проектами', 'вул. Гоголя, 29, Дніпропетровськ, Україна, 49044', 'science', 'http://www.dridu.dp.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411387427, 1477245126, 0, '', 1411387427),
+(505, 'Данова Марія Олександрівна', '-', 'ua', 'Асистент', '+380633190877', 'danovamariya@gmail.com', '-', 'ph_d_tech', 'no_rank', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра інженерії програмного забезпечення', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411330484, 1477245126, 0, '', 1411330484),
+(506, 'Даньшина Світлана Юріївна', '-', 'ua', 'Доцент ', '+380677707484', 'zhmel_s@mail.ru', '-', 'ph_d_tech', 'docent', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра виробництва радіоелектронних систем ЛА', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411332209, 1477245126, 0, '', 1411332209),
+(507, 'Зейнієв Теймур Гидаятович', '-', 'ua', 'Асистент', '+380996701302', 'teymur_ztg@mail.ru', '-', 'no_degree', 'no_rank', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра економіки і маркетингу', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411333352, 1477245126, 0, '', 1411333352),
+(508, 'Зеленков Андрій Вікторович', '-', 'ua', 'Доцент ', '+380664475807 ', 'a_zelenkov@mail.ru', '-', 'ph_d_tech', 'docent', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра менеджменту', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411247437, 1477245126, 0, '', 1411247437),
+(509, 'Ігнатьєв Дмитро Сергійович', '-', 'ua', 'Аспірант', '+380000000000', 'ignatevds@gmail.com', '-', 'no_degree', 'no_rank', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра інженерії програмного забезпечення', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411334070, 1477245126, 0, '', 1411334070),
+(510, 'Калініна Ольга Миколаївна', '-', 'ua', 'Доцент ', ' +380507200677', 'kalininaolga17@mail.ru', '-', 'ph_d_tech', 'docent', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра менеджменту', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411477565, 1477245126, 0, '', 1411477565),
+(511, 'Каменєва Зоя Вікторівна', '-', 'ua', 'Старший викладач ', '+380577884628 ', 'wik_z@mail.ru', '-', 'no_degree', 'no_rank', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра економіки і маркетингу', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411482571, 1477245126, 0, '', 1411482571),
+(513, 'Клименко Тетяна Анатоліївна', '-', 'ua', 'Старший викладач ', '+380662323406 ', 'klimenko_t_a.73@mail.ru', '-', 'no_degree', 'no_rank', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра економіки і маркетингу', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411482991, 1477245126, 0, '', 1411482991),
+(514, 'Косолапов Анатолій Аркадійович', '-', 'ua', 'Професор кафедри «Електронні обчислювальні машини»', '+380505750532', 'kosolapof@i.ua', '-', 'd_sc', 'prof', 'Дніпропетровський національний університет залізничного транспорту ім. академіка Лазаряна', 'Кафедра «Електронні обчислювальні машини»', 'вул. академіка В. Лазаряна, 2, Дніпропетровськ, Україна, 49010', 'science', 'http://www.diit.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411483306, 1477245126, 0, '', 1411483306),
+(515, 'Крючкова Анна Андріївна', '-', 'ua', 'Аспірант', '+380934480319 ', 'annandreevna@ukr.net', '-', 'no_degree', 'no_rank', 'Одеський національний морський університет', '-', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411483469, 1477245126, 0, '', 1411483469),
+(516, 'Крячок Олександр Степанович', '-', 'ua', 'Доцент ', ' +380677118496', 'kryachok@apeps.kpi.ua', '-', 'ph_d_tech', 'docent', 'Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"', 'Кафедра автоматизації проектування', 'пр-т Перемоги, 37, Київ, Україна, 03056', 'science', 'http://kpi.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411483818, 1477245126, 0, '', 1411483818),
+(517, 'Кузнєцова Юлія Анатоліївна', '-', 'ua', 'Старший викладач ', '+380932479270', 'jk-sv@ya.ru', '-', 'ph_d_tech', 'no_rank', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра інженерії програмного забезпечення', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411483972, 1477245126, 0, '', 1411483972),
+(518, 'Кутяков Євген Юрійович', '-', 'ua', 'Асистент', '+380937196461', 'evgeniykutyakov@gmail.com', '-', 'no_degree', 'no_rank', 'Одеський національний політехнічний університет', 'Кафедра автомобільного транспорту', 'пр-т Шевченка, 1, Одеса, Україна, 65044', 'science', 'http://opu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411542958, 1477245126, 0, '', 1411542958),
+(519, 'Лебедченко Віра Віталіївна', '-', 'ua', 'Старший викладач ', '+380509101818', 'vera_lebedchenko@ukr.net', '-', 'no_degree', 'no_rank', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра економіки і маркетингу', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411543197, 1477245126, 0, '', 1411543197),
+(520, 'Луценко Ігор Анатолійович', '-', 'ua', 'Професор', '+380677206112 ', 'delo-do@i.ua', '-', 'd_sc_tech', 'prof', 'Кременчуцький національний університет ім. М. Остроградського', 'Кафедра електронних апаратів ', 'вул. Першотравнева, 20, Кременчук, Україна, 39600', 'science', 'http://www.kdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411543649, 1477245126, 0, '', 1411543649),
+(521, 'Лучшев Павло Олександрович', '-', 'ua', 'Доцент ', '+380000000000', 'lpa@ai.kharkov.com', '-', 'no_degree', 'docent', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра інженерії програмного забезпечення', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411543790, 1477245126, 0, '', 1411543790),
+(523, 'Либа Василь Олексійович', '-', 'ua', 'Асистент', ' +380990577325', 'bllb@ukr.net', '-', 'ph_d_tech', 'no_rank', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра економіки і маркетингу', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411544024, 1477245126, 0, '', 1411544024),
+(524, 'Лисенко Дмитро Едуардович', '-', 'ua', 'Докторант ', '+380509381556', 'Lysenko.d@gmail.com', '-', 'ph_d_tech', 'docent', 'Одеський національний політехнічний університет', 'Кафедра прикладної математики та інформаційних технологій', 'пр-т Шевченка, 1, Одеса, Україна, 65044', 'science', 'http://opu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411544223, 1477245126, 0, '', 1411544223),
+(525, 'Мироєвська Катерина Вікторівна', '-', 'ua', 'Асистент', '+380952515735', 'Miroevskaya.k@gmail.com', '-', 'no_degree', 'no_rank', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра менеджменту', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411544360, 1477245126, 0, '', 1411544360),
+(526, 'Морозова Ольга Ігорівна', '-', 'ua', 'Доцент ', '+380503001758', 'oligmorozova@gmail.com', '-', 'ph_d_tech', 'docent', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра теоретичної механіки, машинознавства і робототехнічних систем', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411544507, 1477245126, 0, '', 1411544507),
+(527, 'Москаленко Анастасія Сергіївна', '-', 'ua', 'Професор', '+380999188438 ', 'exxy1111@mail.ru', '-', 'no_degree', 'prof', 'Харківський національний університет радіоелектроніки', 'Кафедра системотехніки', 'пр-т Науки, 14, Харків. Україна, 61166', 'science', 'http://nure.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411545795, 1477245126, 0, '', 1411545795),
+(528, 'Науменко Тетяна Олександрівна', '-', 'ua', 'Старший викладач ', '+380959327614', 'naum-t@yandex.ru', 'Інновації інформаційних технологій  для поліпшення економічного розвитку', 'no_degree', 'no_rank', 'Первомайський політехнічний інститут національного університету кораблебудування імені адмірала Макарова', 'Кафедра "Облік та економічний аналіз"', 'вул. Одеська 107, Первомайськ, Україна, 55200', 'science', 'http://www.ppi.net.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411546024, 1477245126, 0, '', 1411546024),
+(530, 'Никишов Олександр Анатолійович', '-', 'ua', 'Доцент ', '+380577884602', '53nikishov@mail.ru', '-', 'ph_d_tech', 'docent', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра менеджменту', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411546283, 1477245126, 0, '', 1411546283),
+(531, 'Осадчук Олеся Ігорівна', '-', 'ua', 'Старший викладач ', '+380504001716', 'lehrerin@list.ru', '-', 'no_degree', 'no_rank', 'Луганський національний аграрний університет', '-', ' вул. Алчевських 44, Харків, Україна, 61022', 'science', 'http://lnau.in.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411546600, 1477245126, 0, '', 1411546600),
+(532, 'Павленко Віталій Миколайович', '-', 'ua', 'Проректор з науково-педагогічної роботи', '+380577884010', 'v.pavlenko@khai.edu', '-', 'd_sc_tech', 'prof', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра теоретичної механіки, машинознавства і робототехнічних систем', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411546880, 1477245126, 0, '', 1411546880),
+(533, 'Петрик Валерія Леонідівна', '-', 'ua', 'Доцент ', '+380688889288 ', 'petrikvl@mail.ru', '-', 'ph_d_tech', 'docent', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра економіки і маркетингу', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411560159, 1477245126, 0, '', 1411560159),
+(534, 'Прончаков Юрій Леонідович', '-', 'ua', 'Декан факультету економіки та менеджменту', '+380577884600', 'pronchakov@gmail.com', '-', 'ph_d_tech', 'docent', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', '-', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411560339, 1477245126, 0, '', 1411560339),
+(535, 'Ревенко Данило Сергійович', '-', 'ua', 'Доцент ', ' +380577884605', 'revenko_dan@ukr.net', '-', 'ph_d_tech', 'docent', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра економіки і маркетингу', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411560984, 1477245126, 0, '', 1411560984),
+(536, 'Савчук Лариса Миколаївна', '-', 'ua', 'Професор', '+380667177055', 'dialog-aktiv@rambler.ru', '-', 'ph_d_tech', 'prof', 'Національна металургійна академія України', 'Кафедра економічної інформатики', 'пр-т Гагаріна, 4, Дніпропетровськ, Україна, 49600', 'science', 'http://nmetau.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411561324, 1477245126, 0, '', 1411561324),
+(537, 'Савчук Роман В\'ячеславович', '-', 'ua', 'Асистент', '+380667910025', 'prepodrvs@gmail.com', '-', 'no_degree', 'no_rank', 'Національна металургійна академія України', 'Кафедра економічної інформатики', 'пр-т Гагаріна, 4, Дніпропетровськ, Україна, 49600', 'science', 'http://nmetau.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411562190, 1477245126, 0, '', 1411562190),
+(538, 'Семенчук Катерина Леонідівна', '-', 'ua', 'Доцент ', '+380679299411', 'katarix@ukr.net', '-', 'ph_d_tech', 'docent', 'Одеський національний морський університет', 'Кафедра «Системний аналіз та логістика»', 'вул. Мечникова, 34, Одеса, Україна, 65029', 'science', 'http://www.osmu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411562460, 1477245126, 0, '', 1411562460),
+(539, 'Сердюк Ольга Юріївна', '-', 'ua', 'Аспірант', '+380675393132', 'olgajs28@gmail.com', '-', 'no_degree', 'no_rank', 'Криворізький національний університет', 'Кафедра інформаційних технологій', ' вул. Віталія Матусевича,11, Кривий Ріг, Україна, 50027', 'science', 'http://knu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411563370, 1477245126, 0, '', 1411563370),
+(540, 'Скачков Олександр Миколайович', '-', 'ua', 'Старший викладач ', '+380577884605', 'k605@d6.khai.edu', '-', 'ph_d_tech', 'no_rank', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра економіки і маркетингу', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411563807, 1477245126, 0, '', 1411563807),
+(541, 'Скачкова Ірина Анатоліївна', '-', 'ua', 'Доцент ', '+380577884484 ', 'sorokinaia@yandex.ru', '-', 'ph_d_tech', 'docent', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра менеджменту', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411564593, 1477245126, 0, '', 1411564593),
+(542, 'Скринник Олена Ігорівна', '-', 'ua', 'Аспірант', '+380502354550', 'alona.igorevna@gmail.com', '-', 'no_degree', 'no_rank', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра менеджменту', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411565033, 1477245126, 0, '', 1411565033),
+(543, 'Собчак Андрій Павлович', '-', 'ua', 'Доцент ', '+380503010593', 'sobchak@ukr.net', '-', 'ph_d_tech', 'docent', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра менеджменту', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411565625, 1477245126, 0, '', 1411565625),
+(544, 'Соколова Євгенія Віталіївна', '-', 'ua', 'Доцент ', '+380506693436', 'evskhai@gmail.com', '-', 'ph_d_tech', 'docent', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра інженерії програмного забезпечення', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411566045, 1477245126, 0, '', 1411566045),
+(545, 'Туркін Ігор Борисович', '-', 'ua', 'Завідувач кафедри інженерії програмного забезпечення', '+380000000000', 'nikrutrogi@mail.ru', '-', 'd_sc_tech', 'prof', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра інженерії програмного забезпечення', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411566605, 1477245126, 0, '', 1411566605),
+(546, 'Туркіна Вікторія Валентинівна', '-', 'ua', 'Інженер', '+380000000000', 'viki1361@mail.ru', '-', 'no_degree', 'no_rank', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра економіки і маркетингу', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411566709, 1477245127, 0, '', 1411566709),
+(547, 'Удовенко Сергій Григорович', '-', 'ua', 'Професор', '+380679098331', 'serhii.udovenko@nure.ua', '-', 'd_sc_tech', 'prof', 'Харківський національний університет радіоелектроніки', 'Кафедра електронних обчислювальних машин', 'пр-т Науки, 14, Харків. Україна, 61166', 'science', 'http://nure.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411567104, 1477245127, 0, '', 1411567104),
+(548, 'Усов Анатолій Васильович', '-', 'ua', 'Завідувач кафедри вищої математики та моделювання систем', '+380487348558', 'usov-a-v@mbei.opu.ua', '-', 'd_sc_tech', 'prof', 'Одеський національний політехнічний університет', 'Кафедра вищої математики та моделювання систем', 'пр-т Шевченка, 1, Одеса, Україна, 65044', 'science', 'http://opu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411567255, 1477245127, 0, '', 1411567255),
+(549, 'Фірсова Ганна Вікторівна', '-', 'ua', 'Аспірант', '+380503004420', 'kushnar_07@inbox.ru', '-', 'no_degree', 'no_rank', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра менеджменту', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411567477, 1477245127, 0, '', 1411567477),
+(550, 'Фомовський Олена Владиславівна', '-', 'ua', 'Завідувач кафедри "Електронні апаратів"', '+380672591155 ', 'fill.fo@mail.ru', '-', 'ph_d_tech', 'docent', 'Кременчуцький національний університет ім. М. Остроградського', 'Кафедра електронні апаратів', 'вул. Першотравнева, 20, Кременчук, Україна, 39600', 'science', 'http://www.kdu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411567624, 1477245127, 0, '', 1411567624),
+(551, 'Чала Лариса Ернестівна', '-', 'ua', 'Доцент ', '+380506360603 ', 'larysa.chala@nure.ua', '-', 'ph_d_tech', 'docent', 'Харківський національний університет радіоелектроніки', 'Кафедра штучного інтелекту', 'пр-т Науки, 14, Харків. Україна, 61166', 'science', 'http://nure.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411567777, 1477245127, 0, '', 1411567777),
+(552, 'Шаршаткін Данило Юрійович', '-', 'ua', 'Аспірант', '+380933436979', 'sharshatkin.d@ukr.net', '-', 'no_degree', 'no_rank', 'Одеський регіональний інститут державного управління Національної академії державного управління при Президентові України', 'Кафедра управління проектами', 'вул. Генуезька, 22, Одеса, Україна, 65009', 'science', 'http://www.oridu.odessa.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411568121, 1477245127, 0, '', 1411568121),
+(553, 'Шевченко Роман Іванович', '-', 'ua', 'Докторант ', '+380502117733', 'Shevchenko605@rambler.ru', '-', 'ph_d_tech', 'sen_res_off', 'Національний університет цивільного захисту України', 'Кафедра управління та організації діяльності у сфері цивільної оборони', 'вул. Чернишевська, 94, Харків, Україна, 61023', 'science', 'http://nuczu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411568323, 1477245127, 0, '', 1411568323),
+(554, 'Шенгелія Марина Отаровна', '-', 'ua', 'Старший викладач ', '+380991751857', 'm_shengeliya@mail.ru', '-', 'no_degree', 'no_rank', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра менеджменту', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411568443, 1477245127, 0, '', 1411568443),
+(555, 'Шилова Тетяна Геннадіївна', '-', 'ua', 'Аспірант', '+380955217121', '4a4shilova@gmail.com', '-', 'no_degree', 'no_rank', 'Харківський національний автомобільно-дорожній університет', '-', 'вул. Ярослава Мудрого, 25, Харків, Україна, 61002', 'science', 'http://www.khadi.kharkov.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411568584, 1477245127, 0, '', 1411568584),
+(556, 'Шостак Олена Ігорівна', '-', 'ua', 'Асистент', '+380934877725', 'ei_shostak@mail.ru', '-', 'no_degree', 'no_rank', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра менеджменту', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411568782, 1477245127, 0, '', 1411568782),
+(557, 'Шостак Ігор Володимирович', '-', 'ua', 'Професор', '+380577884261 ', 'iv_shostak@rambler.ru', '-', 'd_sc_tech', 'prof', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра інженерії програмного забезпечення', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411568882, 1477245127, 0, '', 1411568882),
+(558, 'Штейнбрехер Дар\'я Олександрівна', '-', 'ua', 'Аспірант', '+380633554404 ', 'dasha_sh@i.ua', '-', 'no_degree', 'no_rank', 'Національний аерокосмічний університет ім. М.Є. Жуковського "Харківський авіаційний інститут"', 'Кафедра менеджменту', 'вул. Чкалова, 17, Харків, Україна, 61070', 'science', 'http://www.khai.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411569010, 1477245127, 0, '', 1411569010),
+(559, 'Бандоріна Лілія Миколаївна', '-', 'ua', 'Завідувач кафедри економічної інформатики', '+380562474361', 'bandorina1@yandex.ru', '-', 'ph_d_econ', 'docent', 'Національна металургійна академія України', 'Кафедра економічної інформатики', 'пр-т Гагаріна, 4, Дніпропетровськ, Україна, 49600', 'science', 'http://nmetau.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411669585, 1477245127, 0, '', 1411669585),
+(560, 'Білова Ірина Сергіївна', '-', 'ua', 'Старший викладач', '+380000000000', 'tabakerka_52@mail.ru', '-', 'no_degree', 'no_rank', 'Національна металургійна академія України', 'Кафедра економічної інформатики', 'пр-т Гагаріна, 4, Дніпропетровськ, Україна, 49600', 'science', 'http://nmetau.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411669695, 1477245127, 0, '', 1411669695),
+(561, 'Ковальчук Костянтин Федорович', '-', 'ua', 'Професор', '+380000000000', 'kovalchuk@web.dp.ua', '-', 'd_sc_econ', 'prof', 'Національна металургійна академія України', 'Кафедра економічної інформатики', 'пр-т Гагаріна, 4, Дніпропетровськ, Україна, 49600', 'science', 'http://nmetau.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411670206, 1477245127, 0, '', 1411670206),
+(562, 'Лісовенко Микола Миколайович', '-', 'ua', 'Доцент', '+380000000000', 'lisovpost@gmail.com', '-', 'ph_d_tech', 'docent', 'Національна металургійна академія України', 'Кафедра економічної інформатики', 'пр-т Гагаріна, 4, Дніпропетровськ, Україна, 49600', 'science', 'http://nmetau.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411670295, 1477245127, 0, '', 1411670295),
+(563, 'Лозовська Людмила Іванівна', '-', 'ua', 'Доцент', '+380000000000', 'l.lozovskaya@gmail.com', '-', 'ph_d_math', 'docent', 'Національна металургійна академія України', 'Кафедра економічної інформатики', 'пр-т Гагаріна, 4, Дніпропетровськ, Україна, 49600', 'science', 'http://nmetau.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411670386, 1477245127, 0, '', 1411670386),
+(564, 'Краплина Тетяна Михайлівна', '-', 'ua', 'Старший викладач', '+380000000000', 'tkrap@mail.ru', '-', 'no_degree', 'no_rank', 'Національна металургійна академія України', 'Кафедра економічної інформатики', 'пр-т Гагаріна, 4, Дніпропетровськ, Україна, 49600', 'science', 'http://nmetau.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411670457, 1477245127, 0, '', 1411670457),
+(565, 'Никитенко Вікторія Андріївна', '-', 'ua', 'Асистент', '+380000000000', 'panivika@ua.fm', '-', 'ph_d_econ', 'no_rank', 'Національна металургійна академія України', 'Кафедра економічної інформатики', 'пр-т Гагаріна, 4, Дніпропетровськ, Україна, 49600', 'science', 'http://nmetau.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411670721, 1477245127, 0, '', 1411670721),
+(567, 'Никитенко Олексій Костянтинович', '-', 'ua', 'Доцент', '+380000000000', 'kaf.ei@metal.nmetau.edu.ua', '-', 'ph_d_econ', 'docent', 'Національна металургійна академія України', 'Кафедра економічної інформатики', 'пр-т Гагаріна, 4, Дніпропетровськ, Україна, 49600', 'science', 'http://nmetau.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411671099, 1477245127, 0, '', 1411671099),
+(568, 'Підгорна Катерина Дмитрівна', '-', 'ua', 'Доцент', '+380000000000', 'k.pidgorna@hotmail.com', '-', 'ph_d_tech', 'docent', 'Національна металургійна академія України', 'Кафедра економічної інформатики', 'пр-т Гагаріна, 4, Дніпропетровськ, Україна, 49600', 'science', 'http://nmetau.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411671169, 1477245127, 0, '', 1411671169),
+(569, 'Трофименко Ганна Сергіївна', '-', 'ua', 'Асистент', '+380000000000', 'anyasamba1@gmail.com', '-', 'ph_d_econ', 'no_rank', 'Національна металургійна академія України', 'Кафедра економічної інформатики', 'пр-т Гагаріна, 4, Дніпропетровськ, Україна, 49600', 'science', 'http://nmetau.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411671240, 1477245127, 0, '', 1411671240),
+(570, 'Удачина Катерина Олександрівна', '-', 'ua', 'Асистент', '+380000000000', 'eudachina7@yandex.ru', '-', 'no_degree', 'no_rank', 'Національна металургійна академія України', 'Кафедра економічної інформатики', 'пр-т Гагаріна, 4, Дніпропетровськ, Україна, 49600', 'science', 'http://nmetau.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411671354, 1477245127, 0, '', 1411671354),
+(571, 'Ярмоленко Людмила Іванівна', '-', 'ua', 'Старший викладач', '+380000000000', 'yarmolenko_2012@mail.ru', '-', 'no_degree', 'no_rank', 'Національна металургійна академія України', 'Кафедра економічної інформатики', 'пр-т Гагаріна, 4, Дніпропетровськ, Україна, 49600', 'science', 'http://nmetau.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411671422, 1477245127, 0, '', 1411671422),
+(572, 'Бондар Наталія Миколаївна', '-', 'ua', 'Доцент', '+380667192340', 'Ruta2000@ukr.net', '-', 'd_sc_econ', 'docent', 'Національний транспортний університет', 'Кафедра менеджменту', 'вул. Суворова, 1, Київ, Україна, 01010', 'science', 'http://ntu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411818093, 1477245127, 0, '', 1411818093),
+(573, 'Бакуліч Олена Олександровна', '-', 'ua', 'Декан факультету економіки, менеджменту і права', '+380442803876', 'bakulich@rambler.ru', '-', 'ph_d_tech', 'prof', 'Національний транспортний університет', 'Кафедра менеджменту', 'вул. Суворова, 1, Київ, Україна, 01010', 'science', 'http://ntu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411818407, 1477245127, 0, '', 1411818407),
+(574, 'Бушуєва Наталія Сергіївна', '-', 'ua', 'Професор', '+380503820176', 'natbush@ukr.net', '-', 'd_sc_tech', 'prof', 'Київський національний університет будівництва і архітектури', 'Кафедра управління проектами', 'пр-т Повітрофлотський, 31, Київ, Україна, 03680', 'science', 'http://www.knuba.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411818711, 1477245127, 0, '', 1411818711),
+(575, 'Хрутьба Вікторія Олександрівна', '-', 'ua', 'Завідувач кафедри екології та безпеки життєдіяльності', '+380935372915', 'hrutba@mail.ru', 'Процеси та системи управління екологічними проектами і програмами, математичне моделювання і оптимізація процесів управління проектами', 'd_sc_tech', 'docent', 'Національний транспортний університет', 'Кафедра екології та безпеки життєдіяльності', 'вул. Суворова, 1, Київ, Україна, 01010', 'science', 'http://ntu.edu.ua/', 'listener', '', '0', '0', 400, 'uah', 0, 1411818899, 1477983233, 0, '', 1411818899),
+(576, 'Гайдай Ганна Григорівна', '-', 'ua', 'Старший викладач', '+380969722234', 'Ania-gy@ukr.net', '-', 'no_degree', 'no_rank', 'Національний транспортний університет', 'Кафедра економіки', 'вул. Суворова, 1, Київ, Україна, 01010', 'science', 'http://ntu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411819209, 1477245127, 0, '', 1411819209),
+(577, 'Галіцин Володимир Костянтинович', '-', 'ua', 'Завідувач кафедри інформаційного менеджменту', '+380445370742', 'galicyn@kneu.kiev.ua', 'Проблеми розбудови інформаційного менеджменту об’єктів соціально-економічних систем України', 'd_sc_econ', 'prof', 'Київський національний економічний університет імені Вадима Гетьмана', 'Кафедра інформаційного менеджменту', 'пр-т Перемоги, 54/1, Київ, Україна, 03680', 'science', 'https://kneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411910538, 1477245127, 0, '', 1411910538),
+(578, 'Лепьохін Олександр Васильович', '-', 'ua', 'Завідувач кафедри управління фінансово-економічною безпекою і проектами', '+380612287610', 'znu.kafedra.ufebipr@gmail.com', '-', 'ph_d_econ', 'docent', 'Запорізький національний університет', 'Кафедра управління фінансово-економічною безпекою і проектами', 'вул. Жуковського, 66, Запоріжжя, Україна, 69600', 'science', 'https://www.znu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411911190, 1477245127, 0, '', 1411911190),
+(579, 'Пічик Катерина Валеріївна ', '-', 'ua', 'Завідувач кафедри маркетингу та управління бізнесом', '+380509597979', 'pichik.ketrin@gmail.com', 'Маркетингові дослідження в умовах ринкової економіки. Інноваційний маркетинг. Мерчендайзинг', 'ph_d_econ', 'docent', 'Національний університет «Києво-Могилянська академія» ', 'Кафедра маркетингу та управління бізнесом', 'вул. Г. Сковороди, 2, Київ, Україна, 04070', 'science', 'http://www.ukma.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411912044, 1477245127, 0, '', 1411912044),
+(580, 'Павліха Наталія Володимирівна', '-', 'ua', 'Завідувач кафедри міжнародних економічних відносин та управління проектами', '+380332248254', 'kafedra_doc@ukr.net', 'Управління проектами та програмами', 'd_sc_econ', 'prof', 'Східноєвропейський національний університет імені Лесі Українки', 'Кафедра міжнародних економічних відносин та управління проектами', 'пр-т Волі, 13, Луцьк, Україна, 43025', 'science', 'http://eenu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411912855, 1477245127, 0, '', 1411912855);
+INSERT INTO `member` (`id`, `name`, `nameEng`, `country`, `position`, `phone`, `email`, `interest`, `scienceDegree`, `scienceTitle`, `organisationTitle`, `organisationDepartment`, `organisationAddress`, `organisationActivity`, `organisationUrl`, `participationType`, `topicTitle`, `topicLanguage`, `topicSection`, `totalSum`, `currency`, `papersCount`, `created_at`, `updated_at`, `paid`, `noteFromAdmin`, `inviteSentAt`) VALUES
+(581, 'Попов Станіслав Олегович', '-', 'ua', 'Завідувач кафедри економічної кібернетики і управління проектами', '+380564090638', 'ktuekiup@gmail.com', '-', 'd_sc_tech', 'prof', 'Криворізький національний університет', 'Кафедра економічної кібернетики і управління проектами', 'вул. Віталія Матусевича,11, Кривий Ріг, Україна, 50027', 'science', 'http://knu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411913582, 1477245127, 0, '', 1411913582),
+(582, 'Логутова Тамара Григорівна', '-', 'ua', 'Завідувач кафедри інноватіки і управління', '+380629446460', 'Logutova_t_g@pstu.edu', '-', 'd_sc_econ', 'prof', 'Приазовський державний технічний університет', 'Кафедра інноватіки і управління', 'вул. Університетська, 7, Марiуполь, Україна, 87500', 'science', 'http://www.pstu.edu/', 'listener', '', '0', '0', 450, 'uah', 0, 1411914362, 1477245127, 0, '', 1411914362),
+(583, 'Посилкіна Ольга Вікторівна', '-', 'ua', 'Завідувач кафедри управління та економіки підприємства', '+380577718147', 'o.posilkina@gmail.com', '-', 'd_sc', 'prof', 'Національний фармацевтичний університет', 'Кафедра управління та економіки підприємства', 'вул. Пушкінська, 53, Харків, Україна, 61002', 'science', 'http://nuph.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411914769, 1477245127, 0, '', 1411914769),
+(584, 'Ажаман Ірина Анатоліївна', '-', 'ua', 'Завідувач кафедри менеджменту та управління проектами', '+380673065064', 'ag_irisya@ukr.net', '-', 'ph_d_econ', 'docent', 'Одеська державна академія будівництва та архітектури', 'Кафедра менеджменту та управління проектами', 'вул. Дідріхсона, 4, Одеса, Україна, 65029', 'science', 'http://www.ogasa.org.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411928635, 1477245127, 0, '', 1411928635),
+(585, 'Лазарєва Світлана Федорівна', '-', 'ua', 'Заступник завідувача кафедри інформаційного менеджменту', '+380000000000', 'lazer@kneu.kiev.ua', 'Методичні засади створення систем управління інформаційною інфраструктурою об’єктів', 'ph_d_econ', 'docent', 'Київський національний економічний університет імені Вадима Гетьмана', 'Кафедра інформаційного менеджменту', 'пр-т Перемоги, 54/1, Київ, Україна, 03680', 'science', 'https://kneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411848371, 1477245127, 0, '', 1411848371),
+(586, 'Бєгун Анатолій Володимирович', '-', 'ua', 'Професор', '+380000000000', 'begunt@ukr.net', 'Методи і моделі управління інформаційною безпекою економічних об’єктів', 'ph_d_econ', 'prof', 'Київський національний економічний університет імені Вадима Гетьмана', 'Кафедра інформаційного менеджменту', 'пр-т Перемоги, 54/1, Київ, Україна, 03680', 'science', 'https://kneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411848628, 1477245127, 0, '', 1411848628),
+(587, 'Камінський Олег Євгенович', '-', 'ua', 'Доцент ', '+380000000000', 'doc-web@ukr.net', 'Теоретико-методологічні проблеми розвитку інформаційної економіки', 'd_sc_econ', 'docent', 'Київський національний економічний університет імені Вадима Гетьмана', 'Кафедра інформаційного менеджменту', 'пр-т Перемоги, 54/1, Київ, Україна, 03680', 'science', 'https://kneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411848758, 1477245127, 0, '', 1411848758),
+(588, 'Потапенко Сергій Дмитрович', '-', 'ua', 'Доцент ', '+380000000000', 'sergey.potapenko@kneu.edu.ua', 'Економiко-математичне моделювання та iнформацiйнi технологiї у сучасному бiзнесі', 'ph_d_econ', 'docent', 'Київський національний економічний університет імені Вадима Гетьмана', 'Кафедра інформаційного менеджменту', 'пр-т Перемоги, 54/1, Київ, Україна, 03680', 'science', 'https://kneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411848975, 1477245127, 0, '', 1411848975),
+(589, 'Агутін Михайло Михайлович', '-', 'ua', 'Старший викладач ', '+380000000000', 'agutin@kneu.edu.ua', 'Моделювання та інформаційні технології створення складних аналітичних систем', 'ph_d_econ', 'no_rank', 'Київський національний економічний університет імені Вадима Гетьмана', 'Кафедра інформаційного менеджменту', 'пр-т Перемоги, 54/1, Київ, Україна, 03680', 'science', 'https://kneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411849116, 1477245127, 0, '', 1411849116),
+(590, 'Корзаченко Ольга Володимирівна', '-', 'ua', 'Доцент ', '+380000000000', 'flames@ukr.net', 'Моделювання, оптимізація й аналіз бізнес-процесів підприємств, фінансовий менеджмент', 'ph_d_econ', 'no_rank', 'Київський національний економічний університет імені Вадима Гетьмана', 'Кафедра інформаційного менеджменту', 'пр-т Перемоги, 54/1, Київ, Україна, 03680', 'science', 'https://kneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411849238, 1477245127, 0, '', 1411849238),
+(591, 'Самченко Наталія Костянтинівна', '-', 'ua', 'Доцент ', '+380000000000', 'samchenko@kneu.edu.ua', '-', 'ph_d_econ', 'no_rank', 'Київський національний економічний університет імені Вадима Гетьмана', 'Кафедра інформаційного менеджменту', 'пр-т Перемоги, 54/1, Київ, Україна, 03680', 'science', 'https://kneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411849533, 1477245127, 0, '', 1411849533),
+(592, 'Ус Роман Леонідович', '-', 'ua', 'Старший викладач ', '+380000000000', 'us.r@kneu.edu.ua', 'Стратегічне управління інформаційними технологіями, ІТ-ризик менеджмент', 'ph_d_econ', 'no_rank', 'Київський національний економічний університет імені Вадима Гетьмана', 'Кафедра інформаційного менеджменту', 'пр-т Перемоги, 54/1, Київ, Україна, 03680', 'science', 'https://kneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411849718, 1477245127, 0, '', 1411849718),
+(593, 'Габрієлян Дар`я Гагіківна', '-', 'ua', 'Асистент', '+380000000000', 'dashagabrielian@gmail.com', '-', 'no_degree', 'no_rank', 'Київський національний економічний університет імені Вадима Гетьмана', 'Кафедра інформаційного менеджменту', 'пр-т Перемоги, 54/1, Київ, Україна, 03680', 'science', 'https://kneu.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411849829, 1477245127, 0, '', 1411849829),
+(594, 'Воропай Ольга Костянтинівна', '-', 'ua', 'Старший викладач ', '+380000000000', 'Ola.voropai@gmail.com', 'Поведінка споживача, стратегічне управління, маркетинг', 'ph_d_econ', 'no_rank', 'Національний університет «Києво-Могилянська академія»', 'Кафедра маркетингу та управління бізнесом', 'вул. Г. Сковороди, 2, Київ, Україна, 04070', 'science', 'http://www.ukma.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411853456, 1477245127, 0, '', 1411853456),
+(595, 'Гуменна Олександра Віталіївна', '-', 'ua', 'Доцент ', '+380444257737', 'g_aleksandra@ukr.net', 'Інноваційно-інвестиційні проекти. Менеджмент проектів. ', 'ph_d_econ', 'docent', 'Національний університет «Києво-Могилянська академія»', 'Кафедра маркетингу та управління бізнесом', 'вул. Г. Сковороди, 2, Київ, Україна, 04070', 'science', 'http://www.ukma.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411853698, 1477245127, 0, '', 1411853698),
+(596, 'Гурова Наталія Володимирівна', '-', 'ua', 'Асистент', '+380000000000', 'bugaenkonv@ukma.kiev.ua', 'Інноваційні освітні послуги як фактор інтелектуальної економіки', 'no_degree', 'no_rank', 'Національний університет «Києво-Могилянська академія»', 'Кафедра маркетингу та управління бізнесом', 'вул. Г. Сковороди, 2, Київ, Україна, 04070', 'science', 'http://www.ukma.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411853935, 1477245127, 0, '', 1411853935),
+(598, 'Романченко Наталія Володимирівна', '-', 'ua', 'Доцент ', '+380000000000', 'nromanchenko@rambler.ru', 'Дослідження факторів формування ефективності міжнародної економічної діяльності підприємств; управління організаційними змінами, інноваційні стратегії розвитку організації та її персоналу.', 'ph_d_econ', 'docent', 'Національний університет «Києво-Могилянська академія»', 'Кафедра маркетингута управління бізнесом', 'вул. Г. Сковороди, 2, Київ, Україна, 04070', 'science', 'http://www.ukma.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411854338, 1477245127, 0, '', 1411854338),
+(599, 'Герасимчук Олег Олександрович', '-', 'ua', 'Завідувач кафедри комп\'ютерних технологій', '+380000000000', 'lutsk@ukr.net', '-', 'ph_d_tech', 'docent', 'Луцький національний технічний університет', 'Кафедра комп\'ютерних технологій', 'вул. Львівська, 75, Луцьк, Україна, 43018', 'science', 'http://lutsk-ntu.com.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411854990, 1477245127, 0, '', 1411854990),
+(600, 'Андрущак Ігор Євгенович', '-', 'ua', 'Професор', '+380000000000', '9000@lntu.edu.ua', '-', 'd_sc_tech', 'prof', 'Луцький національний технічний університет', 'Кафедра комп\'ютерних технологій', 'вул. Львівська, 75, Луцьк, Україна, 43018', 'science', 'http://lutsk-ntu.com.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411855108, 1477245127, 0, '', 1411855108),
+(601, 'Ліщина Наталія Миколаївна', '-', 'ua', 'Доцент ', '+380000000000', 'lischyna@gmail.com', '-', 'ph_d_tech', 'docent', 'Луцький національний технічний університет', 'Кафедра комп\'ютерних технологій', 'вул. Львівська, 75, Луцьк, Україна, 43018', 'science', 'http://lutsk-ntu.com.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411855254, 1477245127, 0, '', 1411855254),
+(602, 'Лепкий Михайло Іванович', '-', 'ua', 'Доцент ', '+380000000000', 'lepkiym@gmail.com', '-  ', 'ph_d', 'docent', 'Луцький національний технічний університет', 'Кафедра комп\'ютерних технологій', 'вул. Львівська, 75, Луцьк, Україна, 43018', 'science', 'http://lutsk-ntu.com.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411855368, 1477245127, 0, '', 1411855368),
+(603, 'Кабак Віталій Васильович ', '-', 'ua', 'Старший викладач ', '+380000000000', 'wekawest@mail.ru', '-', 'ph_d', 'no_rank', 'Луцький національний технічний університет', 'Кафедра комп\'ютерних технологій', 'вул. Львівська, 75, Луцьк, Україна, 43018', 'science', 'http://lutsk-ntu.com.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411855599, 1477245127, 0, '', 1411855599),
+(604, 'Олексів Наталія Анатоліївна', '-', 'ua', 'Асистент', '+380000000000', 'oleksivn@i.ua', '-', 'no_degree', 'no_rank', 'Луцький національний технічний університет', 'Кафедра комп\'ютерних технологій', 'вул. Львівська, 75, Луцьк, Україна, 43018', 'science', 'http://lutsk-ntu.com.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411855693, 1477245127, 0, '', 1411855693),
+(605, 'Каварський Микола Андрійович', '-', 'ua', 'Завідувач лабораторіями', '+380000000000', '_ktpn@i.ua', '-', 'no_degree', 'no_rank', 'Луцький національний технічний університет', 'Кафедра комп\'ютерних технологій', 'вул. Львівська, 75, Луцьк, Україна, 43018', 'science', 'http://lutsk-ntu.com.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411855811, 1477245127, 0, '', 1411855811),
+(606, 'Басюркіна Наталія Йосипівна', '-', 'ua', 'Завідувач кафедри управління бізнесом', '+380000000000', 'nbas@email.ua', '-', 'ph_d_tech', 'docent', 'Одеська національна академія харчових технологій', 'Кафедра управління бізнесом', 'вул. Канатна, 112, Одеса, Україна, 65039', 'science', 'http://kub.onaft.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411934569, 1477245127, 0, '', 1411934569),
+(607, 'Меліх Олена Олександрівна', '-', 'ua', 'Доцент ', '+380000000000', 'olena_melikh@ukr.net', '-', 'ph_d_econ', 'docent', 'Одеська національна академія харчових технологій', 'Кафедра управління бізнесом', 'вул. Канатна, 112, Одеса, Україна, 65039', 'science', 'http://kub.onaft.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411934674, 1477245127, 0, '', 1411934674),
+(608, 'Свистун Тетяна Володимирівна', '-', 'ua', 'Доцент ', '+380000000000', 'tatyana_dud@mail.ru', '-', 'ph_d_econ', 'docent', 'Одеська національна академія харчових технологій', 'Кафедра управління бізнесом', 'вул. Канатна, 112, Одеса, Україна, 65039', 'science', 'http://kub.onaft.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411934867, 1477245127, 0, '', 1411934867),
+(609, 'Крупіна Світлана Валеріївна', '-', 'ua', 'Доцент ', '+380000000000', 'svetlanabrikalina2010@rambler.ru', '-', 'ph_d_econ', 'docent', 'Одеська національна академія харчових технологій', 'Кафедра управління бізнесом', 'вул. Канатна, 112, Одеса, Україна, 65039', 'science', 'http://kub.onaft.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411934974, 1477245127, 0, '', 1411934974),
+(610, ' Шалений Володимир Анатолійович', '-', 'ua', 'Старший викладач ', '+380000000000', 'shalenyy@rambler.ru', '-', 'no_degree', 'no_rank', 'Одеська національна академія харчових технологій', 'Кафедра управління бізнесом', 'вул. Канатна, 112, Одеса, Україна, 65039', 'science', 'http://kub.onaft.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411935045, 1477245127, 0, '', 1411935045),
+(611, 'Вiгуржинська Свiтлана Юріївна', '-', 'ua', 'Доцент ', '+380000000000', 'svetlana.u@ukr.net', '-', 'ph_d_econ', 'docent', 'Одеська національна академія харчових технологій', 'Кафедра управління бізнесом', 'вул. Канатна, 112, Одеса, Україна, 65039', 'science', 'http://kub.onaft.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411935183, 1477245127, 0, '', 1411935183),
+(612, 'Колесник Володимир Іванович', '-', 'ua', 'Доцент ', '+380000000000', 'brig_od@i.ua', '-', 'ph_d_econ', 'docent', 'Одеська національна академія харчових технологій', 'Кафедра управління бізнесом', 'вул. Канатна, 112, Одеса, Україна, 65039', 'science', 'http://kub.onaft.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411935242, 1477245127, 0, '', 1411935242),
+(613, 'Потьомкина Тетяна Володимирівна', '-', 'ua', 'Старший лаборант', '+380000000000', 'kafedraekon_225@i.ua', '-', 'd_sc', 'prof', 'Одеська національна академія харчових технологій', 'Кафедра управління бізнесом', 'вул. Канатна, 112, Одеса, Україна, 65039', 'science', 'http://kub.onaft.edu.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411935374, 1477245127, 0, '', 1411935374),
+(614, 'Бутурліна Оксана Василівна', '-', 'ua', 'Завідувач кафедри управління інформаційно-освітніми проектами', '+380567324771', 'buturlina71@gmail.com', '-', 'no_degree', 'no_rank', 'Дніпропетровський обласний інститут післядипломної педагогічної освіти', 'Кафедра управління інформаційно-освітніми проектами', 'вул. Володимира Антоновича, 70, Дніпро, Україна, 49000', 'science', 'http://www.doippo.dp.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411936584, 1477245127, 0, '', 1411936584),
+(615, 'Мірошниченко Андрій Анатолійович', '-', 'ua', 'Доцент ', '+380567324771', 'maa2000@ua.fm', '-', 'no_degree', 'docent', 'Дніпропетровський обласний інститут післядипломної педагогічної освіти', 'Кафедра управління інформаційно-освітніми проектами', 'вул. Володимира Антоновича, 70, Дніпро, Україна, 49000', 'science', 'http://www.doippo.dp.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411936721, 1477245127, 0, '', 1411936721),
+(616, 'Довгаль Сергій Анатолійович', '-', 'ua', 'Доцент ', '+380567324766', 'sdovgal2010@gmail.com', '-', 'no_degree', 'docent', 'Дніпропетровський обласний інститут післядипломної педагогічної освіти', 'Кафедра управління інформаційно-освітніми проектами', 'вул. Володимира Антоновича, 70, Дніпро, Україна, 49000', 'science', 'http://www.doippo.dp.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411936786, 1477245127, 0, '', 1411936786),
+(617, 'Мотуз Тетяна Володимирівна', '-', 'ua', 'Старший викладач ', '+380567324766', 'tetyana-motuz@yandex.ua', '-', 'no_degree', 'no_rank', 'Дніпропетровський обласний інститут післядипломної педагогічної освіти', 'Кафедра управління інформаційно-освітніми проектами', 'вул. Володимира Антоновича, 70, Дніпро, Україна, 49000', 'science', 'http://www.doippo.dp.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411937007, 1477245127, 0, '', 1411937007),
+(618, 'Грекова Вікторія Сергіївна', '-', 'ua', 'Старший викладач ', '+380567324766', 'vikgrekova@gmail.com', '-', 'no_degree', 'no_rank', 'Дніпропетровський обласний інститут післядипломної педагогічної освіти', 'Кафедра управління інформаційно-освітніми проектами', 'вул. Володимира Антоновича, 70, Дніпро, Україна, 49000', 'science', 'http://www.doippo.dp.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411937102, 1477245127, 0, '', 1411937102),
+(619, 'Коляда Ірина Григорівна', '-', 'ua', 'Старший викладач ', '+380567324775', 'kolyada65@gmail.com', '-', 'no_degree', 'no_rank', 'Дніпропетровський обласний інститут післядипломної педагогічної освіти', 'Кафедра управління інформаційно-освітніми проектами', 'вул. Володимира Антоновича, 70, Дніпро, Україна, 49000', 'science', 'http://www.doippo.dp.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411937237, 1477245127, 0, '', 1411937237),
+(620, 'Дуднік Володимир Сергійович', '-', 'ua', 'Завідувач науково-дослідного відділу інформаційних технологій та дистанційного навчаннятел', '+380567324766', 'dudnikvolodumur@gmail.com', '-', 'no_degree', 'no_rank', 'Дніпропетровський обласний інститут післядипломної педагогічної освіти', 'Кафедра управління інформаційно-освітніми проектами', 'вул. Володимира Антоновича, 70, Дніпро, Україна, 49000', 'science', 'http://www.doippo.dp.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411937394, 1477245127, 0, '', 1411937394),
+(621, 'Тухтарова Тетяна Карімжанівна', '-', 'ua', 'Науковий співробітник НДВ інформаційних технологій та дистанційного навчаннятел', '+380567324766', 'ttk10@ukr.net', '-', 'no_degree', 'no_rank', 'Дніпропетровський обласний інститут післядипломної педагогічної освіти', 'Кафедра управління інформаційно-освітніми проектами', 'вул. Володимира Антоновича, 70, Дніпро, Україна, 49000', 'science', 'http://www.doippo.dp.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411937609, 1477245127, 0, '', 1411937609),
+(622, 'Рижій Катерина Геннадіївна', '-', 'ua', 'Науковий співробітник НДВ інформаційних технологій та дистанційного навчаннятел', '+380567324766', 'mediaosvyta@gmail.com', '-', 'no_degree', 'no_rank', 'Дніпропетровський обласний інститут післядипломної педагогічної освіти', 'Кафедра управління інформаційно-освітніми проектами', 'вул. Володимира Антоновича, 70, Дніпро, Україна, 49000', 'science', 'http://www.doippo.dp.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411937715, 1477245127, 0, '', 1411937715),
+(623, 'Дзіговський Михайло Сергійович', '-', 'ua', 'Науковий співробітник НДВ інформаційних технологій та дистанційного навчання', '+380567324766', 'dzigmihail@gmail.com', '-', 'no_degree', 'no_rank', 'Дніпропетровський обласний інститут післядипломної педагогічної освіти', 'Кафедра управління інформаційно-освітніми проектами', 'вул. Володимира Антоновича, 70, Дніпро, Україна, 49000', 'science', 'http://www.doippo.dp.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411937798, 1477245127, 0, '', 1411937798),
+(624, 'Голуб Олексій Юрійович', '-', 'ua', 'Науковий співробітник НДВ інформаційних технологій та дистанційного навчання', '+380567324766', 'doippo.adm@gmail.com', '-', 'no_degree', 'no_rank', 'Дніпропетровський обласний інститут післядипломної педагогічної освіти', 'Кафедра управління інформаційно-освітніми проектами', 'вул. Володимира Антоновича, 70, Дніпро, Україна, 49000', 'science', 'http://www.doippo.dp.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411937916, 1477245127, 0, '', 1411937916),
+(625, 'Запорожець Ольга Миколаївна', '-', 'ua', 'Методист НДВ інформаційних технологій та дистанційного навчання', '+380567324766', 'zaporozhets.olga@gmail.com', '-', 'no_degree', 'no_rank', 'Дніпропетровський обласний інститут післядипломної педагогічної освіти', 'Кафедра управління інформаційно-освітніми проектами', 'вул. Володимира Антоновича, 70, Дніпро, Україна, 49000', 'science', 'http://www.doippo.dp.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411938167, 1477245127, 0, '', 1411938167),
+(626, 'Пилипенко Ольга Володимирівна', '-', 'ua', 'Методист НДВ інформаційних технологій та дистанційного навчання', '+380567324766', 'pilipenkoole4ka@gmail.com', '-', 'no_degree', 'no_rank', 'Дніпропетровський обласний інститут післядипломної педагогічної освіти', 'Кафедра управління інформаційно-освітніми проектами', 'вул. Володимира Антоновича, 70, Дніпро, Україна, 49000', 'science', 'http://www.doippo.dp.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411938324, 1477245127, 0, '', 1411938324),
+(627, 'Рожков Олексій Геннадійович', '-', 'ua', 'Методист НДВ інформаційних технологій та дистанційного навчання', '+380567324766', 'agroghkov@gmail.com', '-', 'no_degree', 'no_rank', 'Дніпропетровський обласний інститут післядипломної педагогічної освіти', 'Кафедра управління інформаційно-освітніми проектами', 'вул. Володимира Антоновича, 70, Дніпро, Україна, 49000', 'science', 'http://www.doippo.dp.ua/', 'listener', '', '0', '0', 450, 'uah', 0, 1411938393, 1477245127, 0, '', 1411938393),
+(630, 'Демидюк Микола Анатолійович', 'Mikola Demidyuk ', 'ua', 'Завідувач відділом аспірантури та докторантури', '+380688496435', 'nick090579@mail.ru', 'Управління проектами, автомобільний транспорт', 'ph_d_tech', 'docent', 'Луцький національний технічний університет', 'Відділ аспірантури та докторантури', 'вул. Львівська, 75, Луцьк, Україна, 43018', 'science', 'http://lutsk-ntu.com.ua', 'listener', '', '0', '0', 550, 'uah', 1, 1478024580, 1478032671, 0, '', NULL),
+(631, 'Морозов Віктор Володимирович', 'Viktor Morozov ', 'ua', 'Завідувач кафедри технологій управління', '+380503580950', 'knumvv@gmail.com', 'Управління ІТ проектами', 'ph_d_tech', 'prof', 'Київський національний університет імені Тараса Шевченка', 'Кафедра технологій управління', 'вул. Володимирська, 64/13, Київ, Україна, 01601', 'science', 'http://fit.univ.kiev.ua/', 'speaker', 'Управління проектами електронного навчання управлінню проектами в Україні', '1', '2', 550, 'uah', 1, 1478105132, 1478162338, 0, '', 1478161946),
+(632, 'Павліха Наталія Володимирівна', 'Nataliia Pavlikha', 'ua', 'Завідувач кафедри міжнародних економічних відносин та управління проектами', '+380503785143', 'pavlixa@mail.ru', 'Управління проектами транскордонного співробітництва', 'd_sc', 'prof', 'Східноєвропейський національний університет імені Лесі Українки', 'Кафедра міжнародних економічних відносин та управління проектами', 'пр-т Волі, 13, Луцьк, Україна, 43025', 'science', 'http://eenu.edu.ua/', 'listener', '', '0', '0', 400, 'uah', 0, 1478453615, 1478715780, 0, '', NULL),
+(633, 'Гуца Олег Миколайович', 'Oleh Hutsa', 'ua', 'Доцент', '+380503007762', 'gutsabox@gmail.com', 'Знанняорієнтовані та інформаційні технології, бізнес-процеси, системи підтримки прийняття рішень', 'ph_d_tech', 'docent', 'Харківський національний університет радіоелектроніки', 'Кафедра економічної кібернетики і управління економічною безпекою', 'пр-т Науки, 14, Харків. Україна, 61166', 'science', 'http://nure.ua/', 'speaker', 'Інформаційні технології створення ботів-консультантів в управлінні проектами', '2', '0', 700, 'uah', 2, 1478678017, 1478715983, 0, '', NULL),
+(634, 'Куценко Марина Миколаївна', 'Maryna Kutsenko', 'ua', 'Доцент', '+380677207706', 'marinakytsenko@mail.ru', 'Управління проектами розвитку, управління цінністю, управління знаннями', 'ph_d_tech', 'no_rank', 'Київський національний університет будівництва і архітектури', 'Кафедра управління проектами ', 'пр-т Повітрофлотський, 31, Київ, Україна, 03680', 'science', 'http://www.knuba.edu.ua/', 'speaker', 'Управління цінністю знань як одна зі складових успішного розвитку організацій', '0', '1', 550, 'uah', 1, 1479220151, 1479241125, 0, '', NULL),
+(635, 'Остахов Володимир Вікторович', 'Volodymyr Ostakhov', 'ua', 'Аспірант', '+380683403319', 'vladimir.ostakhov@gmail.com', 'Управління ІТ-проектами', 'no_degree', 'no_rank', 'Університет економіка та права "КРОК"', 'Кафедра бізнес-адміністрування та управління проектами', 'вул. Лагерна, 30-32, Київ, Україна, 01001', 'science', 'http://www.krok.edu.ua', 'speaker', '', '2', '2', 550, 'uah', 1, 1479305575, 1479321456, 0, '', NULL),
+(636, 'Гавкалова Наталія Леонідівна', 'Nataliia Gavkalova', 'ua', 'Завідувач кафедри державного управління, публічного адміністрування та регіональної економіки', '+380506226148', 'ngavl@ukr.net', 'Управління проектами, публічне адміністрування, управління персоналом', 'd_sc_econ', 'prof', 'Харківський національний економічний університет імені Семена Кузнеця', 'Кафедра державного управління, публічного адміністрування та регіональної економіки', 'пр-т Науки, 9а, Харків, Україна, 61166', 'science', 'http://www.cafpubladm.com', 'listener', '', '0', '0', 550, 'uah', 1, 1479550641, 1480060226, 0, '', NULL);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `migration`
+-- Структура таблицы `migration`
 --
--- Creation: Apr 24, 2016 at 05:50 PM
+-- Создание: Ноя 21 2016 г., 00:07
 --
 
 DROP TABLE IF EXISTS `migration`;
@@ -2041,7 +3036,7 @@ CREATE TABLE `migration` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `migration`
+-- Дамп данных таблицы `migration`
 --
 
 INSERT INTO `migration` (`version`, `apply_time`) VALUES
@@ -2055,14 +3050,15 @@ INSERT INTO `migration` (`version`, `apply_time`) VALUES
 ('m141108_111436_add_blog_post_ref_type_fk', 1457897189),
 ('m141129_130551_create_filemanager_mediafile_table', 1458472467),
 ('m141203_173402_create_filemanager_owners_table', 1458472467),
-('m141203_175538_add_filemanager_owners_ref_mediafile_fk', 1458472467);
+('m141203_175538_add_filemanager_owners_ref_mediafile_fk', 1458472467),
+('m161023_161722_add_invite_sent_at_field_to_member', 1477245127);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Структура таблицы `user`
 --
--- Creation: Apr 24, 2016 at 05:50 PM
+-- Создание: Ноя 21 2016 г., 00:07
 --
 
 DROP TABLE IF EXISTS `user`;
@@ -2079,24 +3075,24 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `user`
+-- Дамп данных таблицы `user`
 --
 
 INSERT INTO `user` (`id`, `username`, `auth_key`, `password_hash`, `password_reset_token`, `email`, `status`, `created_at`, `updated_at`) VALUES
-(1, 'admin', '5FD5UJmKjph7bWyKok8NkH944ZJZM1NA', '$2y$13$1meb0beYtpY15vbZU6kpcut9NKKgXBmFQz.Ok/Lh4a1drVVBi.9vm', NULL, 'admin@admin.com', 10, 1454852734, 1456747952);
+(1, 'admin', '5FD5UJmKjph7bWyKok8NkH944ZJZM1NA', '$2y$13$JweJg20X8TiAh8huNk8VcOBXHl2WHFf9IyqR.NMWrRtU3tltzLs/S', NULL, 'admin@admin.com', 10, 1454852734, 1464526559);
 
 --
--- Indexes for dumped tables
+-- Индексы сохранённых таблиц
 --
 
 --
--- Indexes for table `blog_category`
+-- Индексы таблицы `blog_category`
 --
 ALTER TABLE `blog_category`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `blog_post`
+-- Индексы таблицы `blog_post`
 --
 ALTER TABLE `blog_post`
   ADD PRIMARY KEY (`id`),
@@ -2104,75 +3100,75 @@ ALTER TABLE `blog_post`
   ADD KEY `blog_post_ref_type` (`type_id`);
 
 --
--- Indexes for table `blog_post_translation`
+-- Индексы таблицы `blog_post_translation`
 --
 ALTER TABLE `blog_post_translation`
   ADD PRIMARY KEY (`id`),
   ADD KEY `post_id` (`post_id`);
 
 --
--- Indexes for table `blog_type`
+-- Индексы таблицы `blog_type`
 --
 ALTER TABLE `blog_type`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `conf_period`
+-- Индексы таблицы `conf_period`
 --
 ALTER TABLE `conf_period`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `countries`
+-- Индексы таблицы `countries`
 --
 ALTER TABLE `countries`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `filemanager_mediafile`
+-- Индексы таблицы `filemanager_mediafile`
 --
 ALTER TABLE `filemanager_mediafile`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `filemanager_owners`
+-- Индексы таблицы `filemanager_owners`
 --
 ALTER TABLE `filemanager_owners`
   ADD PRIMARY KEY (`mediafile_id`,`owner_id`,`owner`,`owner_attribute`);
 
 --
--- Indexes for table `language`
+-- Индексы таблицы `language`
 --
 ALTER TABLE `language`
   ADD PRIMARY KEY (`language_id`);
 
 --
--- Indexes for table `language_source`
+-- Индексы таблицы `language_source`
 --
 ALTER TABLE `language_source`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `language_translate`
+-- Индексы таблицы `language_translate`
 --
 ALTER TABLE `language_translate`
   ADD PRIMARY KEY (`id`,`language`),
   ADD KEY `language_translate_idx_language` (`language`);
 
 --
--- Indexes for table `member`
+-- Индексы таблицы `member`
 --
 ALTER TABLE `member`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `migration`
+-- Индексы таблицы `migration`
 --
 ALTER TABLE `migration`
   ADD PRIMARY KEY (`version`);
 
 --
--- Indexes for table `user`
+-- Индексы таблицы `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id`),
@@ -2181,78 +3177,78 @@ ALTER TABLE `user`
   ADD UNIQUE KEY `password_reset_token` (`password_reset_token`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT для сохранённых таблиц
 --
 
 --
--- AUTO_INCREMENT for table `blog_category`
+-- AUTO_INCREMENT для таблицы `blog_category`
 --
 ALTER TABLE `blog_category`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
--- AUTO_INCREMENT for table `blog_post`
+-- AUTO_INCREMENT для таблицы `blog_post`
 --
 ALTER TABLE `blog_post`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 --
--- AUTO_INCREMENT for table `blog_post_translation`
+-- AUTO_INCREMENT для таблицы `blog_post_translation`
 --
 ALTER TABLE `blog_post_translation`
   MODIFY `id` int(10) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 --
--- AUTO_INCREMENT for table `blog_type`
+-- AUTO_INCREMENT для таблицы `blog_type`
 --
 ALTER TABLE `blog_type`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
--- AUTO_INCREMENT for table `conf_period`
+-- AUTO_INCREMENT для таблицы `conf_period`
 --
 ALTER TABLE `conf_period`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
--- AUTO_INCREMENT for table `countries`
+-- AUTO_INCREMENT для таблицы `countries`
 --
 ALTER TABLE `countries`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=250;
 --
--- AUTO_INCREMENT for table `filemanager_mediafile`
+-- AUTO_INCREMENT для таблицы `filemanager_mediafile`
 --
 ALTER TABLE `filemanager_mediafile`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `language_source`
+-- AUTO_INCREMENT для таблицы `language_source`
 --
 ALTER TABLE `language_source`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=944;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=977;
 --
--- AUTO_INCREMENT for table `member`
+-- AUTO_INCREMENT для таблицы `member`
 --
 ALTER TABLE `member`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=194;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=637;
 --
--- AUTO_INCREMENT for table `user`
+-- AUTO_INCREMENT для таблицы `user`
 --
 ALTER TABLE `user`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
--- Constraints for dumped tables
+-- Ограничения внешнего ключа сохраненных таблиц
 --
 
 --
--- Constraints for table `blog_post`
+-- Ограничения внешнего ключа таблицы `blog_post`
 --
 ALTER TABLE `blog_post`
   ADD CONSTRAINT `blog_post_ref_category` FOREIGN KEY (`category_id`) REFERENCES `blog_category` (`id`),
   ADD CONSTRAINT `blog_post_ref_type` FOREIGN KEY (`type_id`) REFERENCES `blog_type` (`id`);
 
 --
--- Constraints for table `filemanager_owners`
+-- Ограничения внешнего ключа таблицы `filemanager_owners`
 --
 ALTER TABLE `filemanager_owners`
   ADD CONSTRAINT `filemanager_owners_ref_mediafile` FOREIGN KEY (`mediafile_id`) REFERENCES `filemanager_mediafile` (`id`);
 
 --
--- Constraints for table `language_translate`
+-- Ограничения внешнего ключа таблицы `language_translate`
 --
 ALTER TABLE `language_translate`
   ADD CONSTRAINT `language_translate_ibfk_1` FOREIGN KEY (`language`) REFERENCES `language` (`language_id`) ON DELETE CASCADE ON UPDATE CASCADE,
