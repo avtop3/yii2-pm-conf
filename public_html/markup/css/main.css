@@ -304,29 +304,29 @@ input.search-form:hover {
     text-transform: uppercase;
     font-size: 18px;
 }
-
 .navbar-inverse .navbar-nav > li > a:hover {
-    background-color: #228B22;
+    background: -webkit-linear-gradient(top left, #004a00 0%, #228B22 100%);
+    background: -o-linear-gradient(top left, #004a00 0%, #228B22 100%);
+    background: linear-gradient(to bottom right, #004a00 0%, #228B22 100%);
     color: #fff;
 }
-
 .navbar-inverse {
     border: none;
 }
-
 .navbar-inverse .navbar-brand {
     font-size: 36px;
     line-height: 50px;
     color: #fff;
 }
-
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus,
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
-    background-color: #228B22;
+    background: -webkit-linear-gradient(top left, #004a00 0%, #228B22 100%);
+    background: -o-linear-gradient(top left, #004a00 0%, #228B22 100%);
+    background: linear-gradient(to bottom right, #004a00 0%, #228B22 100%);
     color: #fff;
 }
 
@@ -437,7 +437,7 @@ input.search-form:hover {
     margin-bottom: 2%;
 }
 #main-slider .carousel-content .action-buttons a {
-    font-size: 24px;
+    font-size: 27px;
     text-transform: uppercase;
     min-width: 230px;
     display: inline-block;
@@ -447,30 +447,29 @@ input.search-form:hover {
 }
 #main-slider .carousel-content .action-buttons a.regist {
     margin-right: 25px;
+    background: -webkit-linear-gradient(top left, #004a00 0%, #228B22 100%);
+    background: -o-linear-gradient(top left, #004a00 0%, #228B22 100%);
     background: linear-gradient(to bottom right, #004a00 0%, #228B22 100%);
-    background: -webkit-linear-gradient(to bottom right, #004a00 0%, #228B22 100%);
-    background: -moz-linear-gradient(to bottom right, #004a00 0%, #228B22 100%);
-    background: -o-linear-gradient(to bottom right, #004a00 0%, #228B22 100%);
 }
 #main-slider .carousel-content .action-buttons a.pdf {
     margin-left: 25px;
     padding: 15px 10px;
+    background: -webkit-linear-gradient(top left, rgb(170, 98, 9) 0%, #fc8c04 100%);
+    background: -o-linear-gradient(top left, rgb(170, 98, 9) 0%, #fc8c04 100%);
     background: linear-gradient(to bottom right, rgb(170, 98, 9) 0%, #fc8c04 100%);
-    background: -webkit-linear-gradient(to bottom right, rgb(170, 98, 9) 0%, #fc8c04 100%);
-    background: -moz-linear-gradient(to bottom right, rgb(170, 98, 9) 0%, #fc8c04 100%);
-    background: -o-linear-gradient(to bottom right, rgb(170, 98, 9) 0%, #fc8c04 100%);
 }
 #main-slider .carousel-content .action-buttons a.pdf img {
     width: 34px;
     display: inline-block;
-    margin-right: 15px;
+    margin-right: 6px;
+    vertical-align: sub;
 }
 #main-slider .carousel-content .action-buttons a:hover {
     text-decoration: none;
 }
 #main-slider .carousel-content .left .txt-block p,
 #main-slider .carousel-content .right .txt-block p {
-    font-size: 24px;
+    font-size: 27px;
     display: inline;
     vertical-align: middle;
 }
@@ -502,6 +501,10 @@ input.search-form:hover {
 #main-slider .carousel .item .full.fullsize .carousel-content {
     background: rgba(0,0,0,0.4);
 }
+#main-slider .carousel .item .full.fullsize .carousel-content .titles,
+#main-slider .carousel .item .full.fullsize .carousel-content .dates{
+    margin-top: 4%;
+}
 #main-slider .carousel .item .full.fullsize .carousel-content hr {
     background: #fff;
     width: 200px;
@@ -511,12 +514,12 @@ input.search-form:hover {
     opacity: 0.7;
 }
 #main-slider .carousel .item .full.fullsize .carousel-content h2 {
-    font-size: 24px;
+    font-size: 27px;
     margin-bottom: 15px;
     font-weight: lighter;
 }
 #main-slider .carousel .item .full.fullsize .carousel-content h1 {
-    font-size: 45px;
+    font-size: 50px;
     margin-top: 10px;
     font-weight: lighter;
 }

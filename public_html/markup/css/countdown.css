@@ -18,7 +18,7 @@
 }
 #main-slider .carousel .item .full.fullsize .counter{
     text-align: center;
-    margin: 1% 0;
+    margin: 3% 0;
 }
 #main-slider .carousel .item .full.fullsize .counter .count{
     color: #fff;
@@ -27,21 +27,24 @@
     line-height: normal;
 }
 #main-slider .carousel .item .full.fullsize .counter .count .num {
-    font-size: 45px;
+    font-size: 50px;
     border: 1px solid #000;
     background: rgba(0,0,0,.6);
-    padding: 15%;
+    padding: 12% 14%;
     margin: 0 auto;
     width: 90px;
     height: 90px;
     border-radius: 4px;
 }
 #main-slider .carousel .item .full.fullsize .counter .count p {
-    font-size: 24px;
+    font-size: 27px;
     text-transform: uppercase;
 }
 #dates .row.timer {
     margin: 10px 0!important;
+}
+#dates .row.timer.topMarginDates {
+    margin-top: 5%!important;
 }
 #dates .count, #main-slider .count {
     display: inline-block; 
@@ -62,7 +65,7 @@
     height: 62px;
     color: #fff;
     vertical-align: text-top;
-    background-color: rgb(255, 143, 0);
+    background: rgba(0,0,0,.7);
     border-radius: 3.3px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 4px;
     font-weight: 700;
