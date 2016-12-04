@@ -131,7 +131,9 @@ hr {
   text-align: center;
 }
 .features .all-speakers a {
-  background: #228b22;
+background: -webkit-linear-gradient(top left, #004a00 0%, #228B22 100%);
+background: -o-linear-gradient(top left, #004a00 0%, #228B22 100%);
+background: linear-gradient(to bottom right, #004a00 0%, #228B22 100%);
   color: #fff;
   padding: 10px 20px;
   font-size: 20px;
@@ -139,7 +141,9 @@ hr {
 .features .all-speakers a:hover,
 .features .all-speakers a:focus,
 .features .all-speakers a:active {
-  background: #007600;
+    background: -webkit-linear-gradient(top left, #004a00 0%, #228B22 100%);
+    background: -o-linear-gradient(top left, #004a00 0%, #228B22 100%);
+    background: linear-gradient(to bottom right, #004a00 0%, #228B22 100%);
 }
 #contact-info {
   background: transparent;
@@ -816,7 +820,9 @@ ul#language-selector li {
   text-align: center;
 }
 ul#language-selector li.active {
-  background: #228b22;
+    background: -webkit-linear-gradient(top left, #004a00 0%, #228B22 100%);
+    background: -o-linear-gradient(top left, #004a00 0%, #228B22 100%);
+    background: linear-gradient(to bottom right, #004a00 0%, #228B22 100%);
 }
 .member-create .hidden.info-for-speaker {
   display: block !important;

@@ -14,7 +14,7 @@ $this->params['bodyClass'] = 'homepage';
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="carousel-content">
-                                <div class="container">
+                                <div class="container titles">
                                     <h2 class="animation animated-item-1">VIII International Scientific and Practical Conference</h2>
                                     <hr>
                                     <h1 class="animation animated-item-2">Integrated Strategic Management, <br> Portfolio, Program, and Project Management</h1>
@@ -25,7 +25,7 @@ $this->params['bodyClass'] = 'homepage';
                                     <a href="/documents/en/information_page.pdf" class="pdf">
                                     <img src="/markup/images/pdffile.png" class="img-responsive" alt="">Call for papers</a>
                                 </div>
-                                <div class="container text-center">
+                                <div class="container text-center dates">
                                     <div class="left">
                                        <div class="img-block">
                                            <img src="/markup/images/calendar.png" class="img-responsive" alt="">
@@ -247,7 +247,7 @@ $this->params['bodyClass'] = 'homepage';
         </div>
         <div class="row wow fadeInDown timer">
             <div class="col-md-6 text-right">
-                <p class="descr">Before the end registration of participants left:</p>
+                <p class="descr">Registration deadline in:</p>
             </div>
             <div class="col-md-6">
                 <div id="registrEndEN"></div>
@@ -295,9 +295,9 @@ $this->params['bodyClass'] = 'homepage';
                 </div>
             </div>
         </div>
-        <div class="row wow fadeInDown timer">
+        <div class="row wow fadeInDown timer topMarginDates">
             <div class="col-md-6 text-right">
-                <p class="descr">Before the deadline for the publication of articles left:</p>
+                <p class="descr">Deadline for paper submissions in:</p>
             </div>
             <div class="col-md-6">
                 <div id="articleEndEN"></div>

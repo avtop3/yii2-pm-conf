@@ -14,7 +14,7 @@ $this->params['bodyClass'] = 'homepage';
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="carousel-content">
-                                <div class="container">
+                                <div class="container titles">
                                     <h2 class="animation animated-item-1">VIII Міжнародна науково-практична конференція</h2>
                                     <hr>
                                     <h1 class="animation animated-item-2">Інтегроване стратегічне управління, <br> управління портфелями, програмами, проектами</h1>
@@ -25,7 +25,7 @@ $this->params['bodyClass'] = 'homepage';
                                     <a href="/documents/uk/information_page.pdf" class="pdf">
                                         <img src="/markup/images/pdffile.png" class="img-responsive" alt="">Інформаційний лист</a>
                                 </div>
-                                <div class="container text-center">
+                                <div class="container text-center dates">
                                     <div class="left">
                                         <div class="img-block">
                                             <img src="/markup/images/calendar.png" class="img-responsive" alt="">
@@ -248,7 +248,7 @@ $this->params['bodyClass'] = 'homepage';
         </div>
         <div class="row wow fadeInDown timer">
             <div class="col-md-6 text-right">
-                <p class="descr">До закінчення реєстрації учасників конференції залишилось:</p>
+                <p class="descr">До закінчення реєстрації учасників залишилось:</p>
             </div>
             <div class="col-md-6">
                 <div id="registrEndUA"></div>
@@ -296,9 +296,9 @@ $this->params['bodyClass'] = 'homepage';
                 </div>
             </div>
         </div>
-        <div class="row wow fadeInDown timer">
+        <div class="row wow fadeInDown timer topMarginDates">
             <div class="col-md-6 text-right">
-                <p class="descr">До закінчення прийому статей до публікації від учасників конференції залишилось:</p>
+                <p class="descr">До закінчення прийому статей залишилось:</p>
             </div>
             <div class="col-md-6">
                 <div id="articleEndUA"></div>

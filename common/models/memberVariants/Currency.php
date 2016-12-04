@@ -12,6 +12,10 @@ use Yii;
 
 class Currency
 {
+    const UAH = 'uah';
+    const USD = 'usd';
+    const RUB = 'rub';
+
     public static function getList()
     {
         return [

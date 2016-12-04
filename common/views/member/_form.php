@@ -102,10 +102,10 @@ use common\models\memberVariants\TopicSection;
                 'item' => function ($index, $label, $name, $checked, $value) {
                     if ($index == 0) {
                         return '<div class="col-lg-3 col-lg-offset-3"><label class="radio-inline">'
-                        . Html::radio($name, $checked, ['value' => $value]) . $label . '</label></div>';
+                        . Html::radio($name, $checked, ['value' => $value, 'class'=>'member-participation-type']) . $label . '</label></div>';
                     }
                     return '<div class="col-lg-6"><label class="radio-inline">'
-                    . Html::radio($name, $checked, ['value' => $value]) . $label . '</label></div>';
+                    . Html::radio($name, $checked, ['value' => $value, 'class'=>'member-participation-type']) . $label . '</label></div>';
                 }
             ]); ?>
         </div>

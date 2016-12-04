@@ -14,7 +14,7 @@ $this->params['bodyClass'] = 'homepage';
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="carousel-content">
-                                <div class="container">
+                                <div class="container titles">
                                     <h2 class="animation animated-item-1">VIII Международная научно-практическая конференция</h2>
                                     <hr>
                                     <h1 class="animation animated-item-2">Интегрированное стратегическое управление,<br> управление портфелями, программами, проектами</h1>
@@ -25,7 +25,7 @@ $this->params['bodyClass'] = 'homepage';
                                     <a href="/documents/ru/information_page.pdf" class="pdf">
                                         <img src="/markup/images/pdffile.png" class="img-responsive" alt="">Информационное письмо</a> 
                                 </div>
-                                <div class="container text-center">
+                                <div class="container text-center dates">
                                     <div class="left">
                                         <div class="img-block">
                                             <img src="/markup/images/calendar.png" class="img-responsive" alt="">
@@ -88,7 +88,7 @@ $this->params['bodyClass'] = 'homepage';
                         </div>
                     </div>
                 </div>
-            </div><!--/.item-->
+            </div>
 
             <div class="item" style="background-image: url(/markup/images/s3.jpg)">
                 <div class="container full absolute">
@@ -114,7 +114,7 @@ $this->params['bodyClass'] = 'homepage';
                         </div>
                     </div>
                 </div>
-            </div><!--/.item-->
+            </div>
         </div><!--/.carousel-inner-->
     </div><!--/.carousel-->
     <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
@@ -244,7 +244,7 @@ $this->params['bodyClass'] = 'homepage';
         </div>
         <div class="row wow fadeInDown timer">
             <div class="col-md-6 text-right">
-                <p class="descr">До окончания регистрации участников осталось:</p>
+                <p class="descr">До окончания регистрации осталось:</p>
             </div>
             <div class="col-md-6">
                 <div id="registrEnd"></div>
@@ -292,9 +292,9 @@ $this->params['bodyClass'] = 'homepage';
                 </div>
             </div>
         </div>
-        <div class="row wow fadeInDown timer">
+        <div class="row wow fadeInDown timer topMarginDates">
             <div class="col-md-6 text-right">
-                <p class="descr">До окончания приема статей для публикации осталось:</p>
+                <p class="descr">До окончания приема статей осталось:</p>
             </div>
             <div class="col-md-6">
                 <div id="articleEnd"></div>
