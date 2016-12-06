@@ -519,11 +519,7 @@ input.search-form:hover {
     font-weight: lighter;
 }
 #main-slider .carousel .item .full.fullsize .carousel-content h1 {
-/*<<<<<<< HEAD*/
-    /*font-size: 54px;*/
-/*=======*/
     font-size: 50px;
-/*>>>>>>> c1f264b7f761a0f13721972608c36279d9bb456b*/
     margin-top: 10px;
     font-weight: lighter;
 }
@@ -2701,4 +2697,16 @@ ul#language-selector li a {
 }
 .pluso-engine {
     padding: 0;
+}
+@media screen and (min-width: 1500px) and (max-width: 1800px) {
+    #main-slider .carousel .item .full.fullsize .carousel-content .titles,
+    #main-slider .carousel .item .full.fullsize .carousel-content .dates{
+        margin-top: 3%;
+    }
+}
+@media screen and (min-width: 1801px) {
+    #main-slider .carousel .item .full.fullsize .carousel-content .titles,
+    #main-slider .carousel .item .full.fullsize .carousel-content .dates{
+        margin-top: 2%;
+    }
 }
