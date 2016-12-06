@@ -2698,3 +2698,15 @@ ul#language-selector li a {
 .pluso-engine {
     padding: 0;
 }
+@media screen and (min-width: 1500px) and (max-width: 1800px) {
+    #main-slider .carousel .item .full.fullsize .carousel-content .titles,
+    #main-slider .carousel .item .full.fullsize .carousel-content .dates{
+        margin-top: 3%;
+    }
+}
+@media screen and (min-width: 1801px) {
+    #main-slider .carousel .item .full.fullsize .carousel-content .titles,
+    #main-slider .carousel .item .full.fullsize .carousel-content .dates{
+        margin-top: 2%;
+    }
+}
