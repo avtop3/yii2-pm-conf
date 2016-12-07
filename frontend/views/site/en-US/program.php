@@ -14,7 +14,7 @@ $this->title = 'Conference Topics | International Conference in Project, Program
         <h2>Conference topics</h2>
         <div class="content">
             <div class="section">
-                <p class="large">Section 1. Integration of Strategic Management with Portfolio, Program and Project Management: Models, Methods and Techniques</p>
+                <p class="large">Section 1. Integration of Strategic Management with Portfolio, Program, and Project Management: Models, Methods, and Techniques</p>
                 <ul>
                     <li><i class="fa fa-check"></i>  Forecasting in strategic management, project and program management.</li>
                     <li><i class="fa fa-check"></i>  Models and methods of strategic management, project and program management.</li>

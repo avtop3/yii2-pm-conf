@@ -48,11 +48,13 @@ $this->title = 'For Authors | International Conference in Project, Program, and 
                 list of specialized editions of Ukraine, and is also abstracted and indexed in a variety of
                 international scientometric databases and repositories.</p>
 
-            <p><strong>The author(s) of the published paper will be provided with only one printed copy of the
-                    scientific journal</strong>. This printed copy is already included in the cost of publication.
+            <p><strong>A printed copy of the scientific journal with conference articles is not included in the cost of publication</strong>.
                 Additional printed copies of the journal can be ordered by the author(s) during the registration. The
                 cost of a printed copy of the scientific journal is 150 UAH for author(s) from Ukraine and 50 USD for
-                author(s) from abroad.</p
+                author(s) from abroad.</p>
+                
+            <p><strong>All published papers will be assigned a unique Digital Object Identifier (DOI)</strong>.</p>    
+            
         </div>
         <div class="requirements">
             <h3>Requirements For Papers Preparation</h3>
@@ -60,51 +62,29 @@ $this->title = 'For Authors | International Conference in Project, Program, and 
             <p>Papers can be prepared in either Ukrainian, Russian or English (language of the paper is chosen by the
                 author on his/her own will).</p>
 
-            <p>Submitted paper should be no less than four full journal pages.</strong>Microsoft Word must be used for
+            <p>Submitted <strong>paper should be no less than five full journal pages</strong>. Microsoft Word must be used for
                 paper preparation.</p>
 
-            <p><strong>Bibliographic description of the paper is made on a separate sheet.</strong></p>
-
             <p>PAPER SHOULD BE TYPED IN THE TEMPLATE FILE AND MEET THE FORMATTING REQUIREMENTS.</p>
-            <a href="/documents/ru/pravila.docx" class="hvr-shutter-out-horizontal"><p>Paper Formatting Requirements</p> <i class="fa fa-download"
+            <a href="/documents/ru/PaperRequirements.doc" class="hvr-shutter-out-horizontal"><p>Paper Formatting Requirements</p> <i class="fa fa-download"
                                                                                                   aria-hidden="true"></i></a>
-            <a href="/documents/ru/shablon_UA.docx" class="hvr-shutter-out-horizontal"><p>PAPER TEMPLATE (for papers in Ukrainian)</p> <i
+            <a href="/documents/ru/ArticleTemplate_ua.docx" class="hvr-shutter-out-horizontal"><p>PAPER TEMPLATE (for papers in Ukrainian)</p> <i
                     class="fa fa-download" aria-hidden="true"></i></a>
-            <a href="/documents/ru/shablon_RU.docx" class="hvr-shutter-out-horizontal"><p>PAPER TEMPLATE (for papers in Russian)</p> <i
+            <a href="/documents/ru/ArticleTemplate_ru.docx" class="hvr-shutter-out-horizontal"><p>PAPER TEMPLATE (for papers in Russian)</p> <i
                     class="fa fa-download" aria-hidden="true"></i></a>
-            <a href="/documents/ru/MLA.doc" class="hvr-shutter-out-horizontal"><p>MLA Citation Style</p> <i class="fa fa-download"
+            <a href="/documents/ru/HarvardCitationStyle.docx" class="hvr-shutter-out-horizontal"><p>Harvard Citation Style</p> <i class="fa fa-download"
                                                                                        aria-hidden="true"></i></a>
         </div>
         <div class="commission">
             <h3>Required Documents For The Program Committee</h3>
             <hr>
             <p>1. Application Form for paper submission, signed by all authors.</p>
-            <a href="/documents/ru/zayavlenie.doc" class="hvr-shutter-out-horizontal"><p>Application Form Template</p> <i class="fa fa-download"
+            <a href="/documents/ru/ApplicationForm.doc" class="hvr-shutter-out-horizontal"><p>Application Form Template</p> <i class="fa fa-download"
                                                                                               aria-hidden="true"></i></a>
 
-            <p>2. Expertise Act of possibility of open-access publishing.</p>
-            <a href="/documents/ru/akt.doc" class="hvr-shutter-out-horizontal"><p>Expertise Act Sample</p> <i class="fa fa-download"
-                                                                                         aria-hidden="true"></i></a>
+            <p>2. An electronic version of the final manuscript in Microsoft Word format.</p>
 
-            <p>3. Review signed by a D.Sc./Ph.D., with the stamp of organization reassuring his/her signature.</p>
-
-            <p>4. Two printed copies of the paper. One printed copy must be signed on the back of the last page by all
-                the authors.</p>
-            <a href="/documents/ru/biblio.docx" class="hvr-shutter-out-horizontal"><p>Extended Abstract Sample</p> <i class="fa fa-download"
-                                                                                             aria-hidden="true"></i></a>
-
-            <p>5. Extended Abstract with keywords.</p>
-
-            <p>6. An electronic version of the final manuscript in Microsoft Word format.</p>
-
-            <p>7. An electronic version of information about author(s).</p>
-            <a href="/documents/ru/avtori.doc" class="hvr-shutter-out-horizontal"><p>Information About Author Sample</p> <i
-                    class="fa fa-download" aria-hidden="true"></i></a>
-
-            <p>8. A printed version of information about author(s).</p>
-
-            <p><strong>ALL DOCUMENTS IN PRINTED FORM MUST BE SEND TO THE PROGRAM COMMITTEE ADDRESS BY MAIL.
-                    ELECTRONIC VERSIONS MUST BE SEND TO THE CONFERENCE EMAIL</strong></p>
+            <p><strong>ALL DOCUMENTS MUST BE SEND TO THE PROGRAM COMMITTEE EMAIL ADDRESS.</strong></p>
         </div>
     </div>
 </section>

@@ -42,14 +42,13 @@ $this->title = 'Авторам публикаций | Международная
 
             <p>Прошедшие процедуру рецензирования и своевременно оплаченные статьи будут опубликованы в <a
                     href="http://pm.khpi.edu.ua/" target="_blank">Вестнике НТУ «ХПИ». Серия: Стратегическое управление,
-                    управление портфелями, программами и проектами.</a>Данный научный журнал входит в перечень
+                    управление портфелями, программами и проектами</a>. Данный научный журнал входит в перечень
                 специализированных изданий Украины, а также включен в различные наукометрические базы и репозитории.</p>
 
-            <p><strong>Авторам</strong> опубликованной <strong>статьи будет предоставлен один печатный экземпляр
-                    научного журнала</strong>, который входит в стоимость публикации статьи. Дополнительные печатные
+            <p><strong>Печатный экземпляр научного журнала со статьями конференции в стоимость публикации статьи не входит</strong>. Печатные
                 экземпляры журнала могут быть заказаны одним из авторов при регистрации. Стоимость одного печатного
-                экземпляра журнала составляет 150 грн. для участников из Украины и 50 USD для участников из-за границы.
-            </p>
+                экземпляра журнала составляет 150 грн. для участников из Украины и 50 USD для участников из-за границы.</p>
+            <p><strong>На все статьи конференции, опубликованные в журнале, будут установлены цифровые идентификаторы DOI</strong>.</p>
         </div>
         <div class="requirements">
             <h3>Общие требования к статьям</h3>
@@ -57,55 +56,35 @@ $this->title = 'Авторам публикаций | Международная
             <p>Статьи могут быть подготовлены на украинском, русском либо английском языке (язык статьи автор выбирает
                 самостоятельно).</p>
 
-            <p>Объем статьи – <strong>не менее 4 страниц</strong>, которые должны быть оформлены в редакторе Microsoft
+            <p>Объем статьи – <strong>не менее 5 полных страниц</strong>, которые должны быть оформлены в редакторе Microsoft
                 Word.</p>
 
-            <p><strong>Дополнительно на отдельной странице оформляется библиографическое описание статьи на трех
-                    языках.</strong></p>
-
             <p>СТАТЬЯ ДОЛЖНА БЫТЬ НАБРАНА В ШАБЛОННОМ ДОКУМЕНТЕ И ПОЛНОСТЬЮ ОТВЕЧАТЬ ТРЕБОВАНИЯМ К ОФОРМЛЕНИЮ.</p>
-            <a href="/documents/ru/pravila.docx" class="hvr-shutter-out-horizontal"><p>Требования к оформлению статьи</p> <i
+            <a href="/documents/ru/PaperRequirements.doc" class="hvr-shutter-out-horizontal"><p>Требования к оформлению статьи</p> <i
                     class="fa fa-download" aria-hidden="true"></i></a>
-            <a href="/documents/ru/shablon_UA.docx" class="hvr-shutter-out-horizontal"><p>Шаблон оформления статьи на украинском языке</p> <i
+            <a href="/documents/ru/ArticleTemplate_ua.docx" class="hvr-shutter-out-horizontal"><p>Шаблон оформления статьи на украинском языке</p> <i
                     class="fa fa-download" aria-hidden="true"></i></a>
-            <a href="/documents/ru/shablon_RU.docx" class="hvr-shutter-out-horizontal"><p>Шаблон оформления статьи на русском языке</p> <i
+            <a href="/documents/ru/ArticleTemplate_ru.docx" class="hvr-shutter-out-horizontal"><p>Шаблон оформления статьи на русском языке</p> <i
                     class="fa fa-download" aria-hidden="true"></i></a>
-            <a href="/documents/ru/rek-perevod.docx" class="hvr-shutter-out-horizontal"><p>Рекомендованный перевод научных ступеней, ученых званий и
+            <a href="/documents/ru/DegreesTranslation.docx" class="hvr-shutter-out-horizontal"><p>Рекомендованный перевод научных ступеней, ученых званий и
                     должностей</p> <i class="fa fa-download" aria-hidden="true"></i></a>
-            <a href="/documents/ru/MLA.doc" class="hvr-shutter-out-horizontal"><p>Описание источников информации в стиле MLA</p> <i
+            <a href="/documents/ru/HarvardCitationStyle.docx" class="hvr-shutter-out-horizontal"><p>Описание источников информации в стиле Harvard</p> <i
                     class="fa fa-download" aria-hidden="true"></i></a>
         </div>
         <div class="commission">
             <h3>Программному комитету предоставляются</h3>
             <hr>
             <p>1. Заявление на прием статьи, подписанное всеми авторами.</p>
-            <a href="/documents/ru/zayavlenie.doc" class="hvr-shutter-out-horizontal"><p>Шаблон заявления</p> <i class="fa fa-download"
+            <a href="/documents/ru/ApplicationForm.doc" class="hvr-shutter-out-horizontal"><p>Шаблон заявления</p> <i class="fa fa-download"
                                                                                      aria-hidden="true"></i></a>
 
             <p>2. Акт экспертизы о возможности публикации материалов в открытом доступе.</p>
-            <a href="/documents/ru/akt.doc" class="hvr-shutter-out-horizontal"><p>Пример акта экспертизы</p> <i class="fa fa-download"
-                                                                                           aria-hidden="true"></i></a>
+            
+            <p>3. Электронная версия макета статьи.</p>
 
-            <p>3. Рецензия, подписанная доктором или кандидатом наук (не ниже научной степени и ученного звания авторов
-                статьи).</p>
+            <p>4. Копия чека об оплате организационного взноса и стоимости публикации статьи.</p>
 
-            <p>4. Два экземпляра статьи в распечатанном варианте (один вариант подписанный на обратной стороне последней
-                страницы всеми авторами).</p>
-            <a href="/documents/ru/biblio.docx" class="hvr-shutter-out-horizontal"><p>Пример библиографического описания статьи</p> <i
-                    class="fa fa-download" aria-hidden="true"></i></a>
-
-            <p>5. На отдельной странице три библиографических описания статьи с аннотациями и ключевыми словами.</p>
-
-            <p>6. Электронная версия макета статьи.</p>
-
-            <p>7. Как отдельный документ сведения об авторах на трех языках.</p>
-            <a href="/documents/ru/avtori.doc" class="hvr-shutter-out-horizontal"><p>Сведения об авторах</p> <i class="fa fa-download"
-                                                                                        aria-hidden="true"></i></a>
-
-            <p>8. Электронная версия сведений об авторах.</p>
-
-            <p><strong>ДОКУМЕНТЫ ПРИСЛАТЬ ПОЧТОЙ НА АДРЕС ПРОГРАММНОГО КОМИТЕТА И НА ЭЛЕКТРОННЫЙ АДРЕС
-                    КОНФЕРЕНЦИИ</strong></p>
+            <p><strong>ДОКУМЕНТЫ ПРИСЛАТЬ ПОЧТОЙ НА АДРЕС ПРОГРАММНОГО КОМИТЕТА И НА ЭЛЕКТРОННЫЙ АДРЕС КОНФЕРЕНЦИИ</strong></p>
         </div>
     </div>
 </section>
