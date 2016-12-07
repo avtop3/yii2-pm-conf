@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "be64ac3633779a158dd44127ee1aee5a",
-    "content-hash": "19405e1b8bbdaa8f37756b6266115f2f",
+    "hash": "4d5f1c19b5b69185d06a17b3239b7f14",
+    "content-hash": "23486f745ed84a7cb4c2f2c041dc65d3",
     "packages": [
         {
             "name": "2amigos/yii2-file-upload-widget",
@@ -524,80 +524,6 @@
             "time": "2016-02-29 15:56:39"
         },
         {
-            "name": "bower-asset/materialize",
-            "version": "v0.97.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Dogfalo/materialize.git",
-                "reference": "793e5716040cb133041b55be75b1fae51debb9f3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Dogfalo/materialize/zipball/793e5716040cb133041b55be75b1fae51debb9f3",
-                "reference": "793e5716040cb133041b55be75b1fae51debb9f3",
-                "shasum": ""
-            },
-            "require": {
-                "bower-asset/jquery": ">=2.1.1"
-            },
-            "type": "bower-asset-library",
-            "extra": {
-                "bower-asset-main": [
-                    "bin/materialize.css",
-                    "bin/materialize.js",
-                    "fonts/roboto/Roboto-Bold.ttf",
-                    "fonts/roboto/Roboto-Bold.woff",
-                    "fonts/roboto/Roboto-Bold.woff2",
-                    "fonts/roboto/Roboto-Light.ttf",
-                    "fonts/roboto/Roboto-Light.woff",
-                    "fonts/roboto/Roboto-Light.woff2",
-                    "fonts/roboto/Roboto-Medium.ttf",
-                    "fonts/roboto/Roboto-Medium.woff",
-                    "fonts/roboto/Roboto-Medium.woff2",
-                    "fonts/roboto/Roboto-Regular.ttf",
-                    "fonts/roboto/Roboto-Regular.woff",
-                    "fonts/roboto/Roboto-Regular.woff2",
-                    "fonts/roboto/Roboto-Thin.ttf",
-                    "fonts/roboto/Roboto-Thin.woff",
-                    "fonts/roboto/Roboto-Thin.woff2"
-                ],
-                "bower-asset-ignore": [
-                    "jade/",
-                    ".gitignore",
-                    "CNAME",
-                    "css/",
-                    "bower.json",
-                    "README.md",
-                    "images/",
-                    "js/jquery.timeago.js",
-                    "js/init.js",
-                    "js/prism.js",
-                    "res/",
-                    "sass/style.scss",
-                    "sass/ghpages-materialize.scss",
-                    "**/*.html",
-                    "**/*.zip",
-                    "**/*.txt",
-                    "sitemap.xml",
-                    "package.json",
-                    "Gruntfile.js"
-                ]
-            },
-            "description": "A modern responsive front-end framework based on Material Design",
-            "keywords": [
-                "css",
-                "design",
-                "framework",
-                "front-end",
-                "js",
-                "material",
-                "mobile-first",
-                "responsive",
-                "sass",
-                "ux"
-            ]
-        },
-        {
             "name": "bower-asset/punycode",
             "version": "v1.3.2",
             "source": {
@@ -759,6 +685,52 @@
                 "yii2"
             ],
             "time": "2016-10-08 16:09:21"
+        },
+        {
+            "name": "devgroup/yii2-http2-server-push",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DevGroup-ru/yii2-http2-server-push.git",
+                "reference": "a33e2e4e1f82f0af7e74f56243f3ba9d6099f32c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DevGroup-ru/yii2-http2-server-push/zipball/a33e2e4e1f82f0af7e74f56243f3ba9d6099f32c",
+                "reference": "a33e2e4e1f82f0af7e74f56243f3ba9d6099f32c",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "^2.0.6"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "bootstrap": "DevGroup\\ServerPush\\AutomaticServerPush"
+            },
+            "autoload": {
+                "psr-4": {
+                    "DevGroup\\ServerPush\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander Kozhevnikov",
+                    "email": "b37hr3z3n@gmail.com"
+                }
+            ],
+            "description": "HTTP/2 server push support for Yii2 Asset Manager",
+            "keywords": [
+                "assetmanager",
+                "http2",
+                "push",
+                "server push",
+                "yii2"
+            ],
+            "time": "2016-07-03 10:52:29"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -1097,7 +1069,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-grid/zipball/08dd6ded1f0c81d5c28fc10a99b1dba39a83eeb6",
+                "url": "https://api.github.com/repos/kartik-v/yii2-grid/zipball/448db13904dad68153ef466bbc905b916a2a5900",
                 "reference": "08dd6ded1f0c81d5c28fc10a99b1dba39a83eeb6",
                 "shasum": ""
             },
@@ -1293,12 +1265,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-activeform.git",
-                "reference": "52b4db751e80440816f392b682d75f6f8f6585cb"
+                "reference": "6980832716b7075c103999c0574699b26e263f6c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-activeform/zipball/52b4db751e80440816f392b682d75f6f8f6585cb",
-                "reference": "52b4db751e80440816f392b682d75f6f8f6585cb",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-activeform/zipball/6980832716b7075c103999c0574699b26e263f6c",
+                "reference": "6980832716b7075c103999c0574699b26e263f6c",
                 "shasum": ""
             },
             "require": {
@@ -1337,7 +1309,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2016-09-09 04:18:17"
+            "time": "2016-10-30 11:47:06"
         },
         {
             "name": "kartik-v/yii2-widget-alert",
@@ -1534,52 +1506,6 @@
                 "yii2"
             ],
             "time": "2016-07-12 14:25:30"
-        },
-        {
-            "name": "macgyer/yii2-materializecss",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/MacGyer/yii2-materializecss.git",
-                "reference": "8412123136634a1cf05a177e906baf2dcbb6ce19"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/MacGyer/yii2-materializecss/zipball/8412123136634a1cf05a177e906baf2dcbb6ce19",
-                "reference": "8412123136634a1cf05a177e906baf2dcbb6ce19",
-                "shasum": ""
-            },
-            "require": {
-                "bower-asset/materialize": "0.97.6",
-                "php": ">=5.4.0",
-                "yiisoft/yii2": "~2.0"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "macgyer\\yii2materializecss\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Christoph Erdmann",
-                    "homepage": "http://www.medienpol.de",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Materialize CSS implementation for Yii2",
-            "homepage": "http://macgyer.github.io/yii2-materializecss",
-            "keywords": [
-                "material design",
-                "materialize",
-                "widgets",
-                "yii2"
-            ],
-            "time": "2016-09-01 21:09:00"
         },
         {
             "name": "mpdf/mpdf",
@@ -2156,7 +2082,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/8257fc3b78e70137d8b12b393d8b460f543aa95e",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/3d964ad5c56ebc1fc4be560cf4c8cf807da253f2",
                 "reference": "8257fc3b78e70137d8b12b393d8b460f543aa95e",
                 "shasum": ""
             },
@@ -2524,7 +2450,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/87c9003bc4dadd245a62979a1e35396d6bbf3edf",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/81f9493330d934cf0bc8fc4b58d4fbd39ffc6227",
                 "reference": "87c9003bc4dadd245a62979a1e35396d6bbf3edf",
                 "shasum": ""
             },
@@ -2612,7 +2538,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-codeception/zipball/572a6d46d942cc5733c45931fdbd1d60228f3c89",
+                "url": "https://api.github.com/repos/yiisoft/yii2-codeception/zipball/76fdd689b7ec49c3c57db6137ae5ea536fa8f16d",
                 "reference": "572a6d46d942cc5733c45931fdbd1d60228f3c89",
                 "shasum": ""
             },
@@ -2657,7 +2583,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/4f8de2192fe354c8b903a083fcdcc3d1ddaccc8c",
+                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/99f2f9275674a3b461632268adc78e90f2e9b29d",
                 "reference": "4f8de2192fe354c8b903a083fcdcc3d1ddaccc8c",
                 "shasum": ""
             },
@@ -2751,7 +2677,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/12762bb0272db0bfceceeb151a1df6ec7a1898ce",
+                "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/ffefc12a47f9bdabdd53076767b92dbceb6283e9",
                 "reference": "12762bb0272db0bfceceeb151a1df6ec7a1898ce",
                 "shasum": ""
             },

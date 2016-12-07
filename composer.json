@@ -30,7 +30,8 @@
         "pendalf89/yii2-blog": "dev-master",
         "vakorovin/yii2-datetimepicker": "dev-master",
         "kartik-v/yii2-export": "@dev",
-        "kartik-v/yii2-mpdf": "dev-master"
+        "kartik-v/yii2-mpdf": "dev-master",
+        "devgroup/yii2-http2-server-push": "^1.0"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",

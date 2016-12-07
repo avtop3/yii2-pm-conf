@@ -34,7 +34,7 @@ $this->title = 'About Conference | International Conference in Project, Program,
                         <img src="/markup/images/speakers/bushuev.jpg" alt="bushuev">
                     </div>
                     <div class="txt-block">
-                        <p class="sname"> BUSHUIEV</p>
+                        <p class="sname"> BUSHUYEV</p>
                         <p class="fname">Sergey</p>
 
                         <hr>

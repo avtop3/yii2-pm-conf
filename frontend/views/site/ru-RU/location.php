@@ -38,10 +38,10 @@ $this->title = 'Место проведения | Международная к�
                 </div>
                 <div class="booking">
                     <p><strong>Бронирование отеля:</strong></p>
-                    <a href="http://gorgany.ua/"><img src="/markup/images/location/HotelLogo.png" alt=""></a>
-                    <a href="http://www.bookit.com.ua/object-gorgani/"><img src="/markup/images/location/bookit.png" alt=""></a>
-                    <a href="http://hotels24.ua/%D0%93%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D0%B8%D1%86%D1%8B-%D0%AF%D0%B1%D0%BB%D1%83%D0%BD%D0%B8%D1%86%D1%8B/%D0%93%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D0%B8%D1%86%D0%B0-%D0%93%D0%BE%D1%80%D0%B3%D0%B0%D0%BD%D1%8B-811.html"><img src="/markup/images/location/hotels24.png" alt=""></a>
-                    <a href="http://www.hotelsbukovel.com.ua/otel-gorgany"><img src="/markup/images/location/hotelsbukovel.png" alt=""></a>
+                    <a href="http://gorgany.ua/" rel="nofollow"><img src="/markup/images/location/HotelLogo.png" alt=""></a>
+                    <a href="http://www.bookit.com.ua/object-gorgani/" rel="nofollow"><img src="/markup/images/location/bookit.png" alt=""></a>
+                    <a href="http://hotels24.ua/%D0%93%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D0%B8%D1%86%D1%8B-%D0%AF%D0%B1%D0%BB%D1%83%D0%BD%D0%B8%D1%86%D1%8B/%D0%93%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D0%B8%D1%86%D0%B0-%D0%93%D0%BE%D1%80%D0%B3%D0%B0%D0%BD%D1%8B-811.html" rel="nofollow"><img src="/markup/images/location/hotels24.png" alt=""></a>
+                    <a href="http://www.hotelsbukovel.com.ua/otel-gorgany" rel="nofollow"><img src="/markup/images/location/hotelsbukovel.png" alt=""></a>
                 </div>
             </div>
             <div class="col-lg-6 img-block left-padd">

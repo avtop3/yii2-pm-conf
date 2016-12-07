@@ -95,6 +95,8 @@ $this->params['bodyClass'] = 'homepage';
         <i class="fa fa-chevron-right"></i>
     </a>
 </section><!--/#main-slider-->
+
+<!--
 <section id="contact-info">
     <div class="container">
         <div class="row">
@@ -163,6 +165,7 @@ $this->params['bodyClass'] = 'homepage';
         </div>
     </div><!--/.container-->
 </section><!--/#conatcat-info-->
+-->
 
 <section id="feature" >
     <div class="container">
@@ -226,10 +229,10 @@ $this->params['bodyClass'] = 'homepage';
                 </div>
                 <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                     <div class="feature-wrap hvr-glow">
-                        <img src="/markup/images/main-speakers/levchenko.jpg" alt="">
-                        <h2>ТАИСИЯ ЛЕВЧЕНКО</h2>
-                        <p>Основатель и директор консалтинговой компании "ДІЯти!"</p>
-                        <p>Винница, Украина</p>
+                        <img src="/markup/images/main-speakers/koshkin.jpg" alt="">
+                        <h2>КОНСТАНТИН КОШКИН</h2>
+                        <p>Директор Института компьютерных и инженерно-технологических наук НУК им. адм. Макарова</p>
+                        <p>Николаев, Украина</p>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
