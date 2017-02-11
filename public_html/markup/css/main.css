@@ -2698,6 +2698,14 @@ ul#language-selector li a {
 .pluso-engine {
     padding: 0;
 }
+#main-slider .carousel .item .full.fullsize .counter.off {
+    display: none;
+}
+#main-slider .carousel .item .full.fullsize .counter.off p{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 50px;
+}
 @media screen and (min-width: 1500px) and (max-width: 1800px) {
     #main-slider .carousel .item .full.fullsize .carousel-content .titles,
     #main-slider .carousel .item .full.fullsize .carousel-content .dates{
