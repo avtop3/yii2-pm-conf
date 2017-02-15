@@ -172,6 +172,34 @@ $this->title = 'Про конференцію | Міжнародна конфе�
                         <p class="from"><i class="fa fa-map-marker"></i>  Харків, Україна</p>
                     </div>
                 </div>
+                <div class="col-lg-3 item hvr-float-shadow wow fadeInUp" data-wow-delay="1.6s" data-offset="0">
+                    <div class="img-block">
+                        <img src="/markup/images/speakers/bukrieieva.jpg" alt="Букреева Карина Сергеевна">
+                    </div>
+                    <div class="txt-block">
+                        <p class="sname">Букрєєва</p>
+
+                        <p class="fname">Каріна Сергіївна</p>
+                        <hr>
+                        <p class="proff"><i class="fa fa-graduation-cap"></i>  К.т.н., НТУ «ХПІ»</p>
+
+                        <p class="from"><i class="fa fa-map-marker"></i>  Харків, Україна</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 item hvr-float-shadow wow fadeInUp" data-wow-delay="1.8s" data-offset="0">
+                    <div class="img-block">
+                        <img src="/markup/images/speakers/babych.jpg" alt="Бабич Игорь Игоревич">
+                    </div>
+                    <div class="txt-block">
+                        <p class="sname">Бабич</p>
+
+                        <p class="fname">Ігор Ігоревич</p>
+                        <hr>
+                        <p class="proff"><i class="fa fa-graduation-cap"></i>  НТУ «ХПІ»</p>
+
+                        <p class="from"><i class="fa fa-map-marker"></i>  Харків, Україна</p>
+                    </div>
+                </div>
             </div>
             
         </div>

@@ -22,7 +22,7 @@ $this->params['bodyClass'] = 'homepage';
                                 <div id="sliderCountEN" class="counter"></div>
                                 <div class="container text-center action-buttons">
                                     <a href="/uk/registration" class="regist">Реєстрація</a>
-                                    <a href="/documents/uk/information_page.pdf" class="pdf">
+                                    <a href="/documents/ua/information_page.pdf" class="pdf">
                                         <img src="/markup/images/pdffile.png" class="img-responsive" alt="">Інформаційний лист</a>
                                 </div>
                                 <div class="container text-center dates">
@@ -218,10 +218,10 @@ $this->params['bodyClass'] = 'homepage';
                 </div>
                 <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                     <div class="feature-wrap hvr-glow">
-                        <img src="/markup/images/main-speakers/levchenko.jpg" alt="">
-                        <h2>ТАЇСІЯ ЛЕВЧЕНКО</h2>
-                        <p>Засновник і директор консалтингової компанії "ДІЯти!"</p>
-                        <p>Вінниця, Україна</p>
+                        <img src="/markup/images/main-speakers/koshkin.jpg" alt="">
+                        <h2>КОСТЯНТИН КОШКІН</h2>
+                        <p>Директор Інституту комп'ютерних та інженерно-технологічних наук НУК імені адмірала Макарова</p>
+                        <p>Миколаїв, Україна</p>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
@@ -439,14 +439,30 @@ $this->params['bodyClass'] = 'homepage';
 
         <div class="partners col-lg-12">
             <ul>
-                <li> <a href="http://pm-edu.org/ua/"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" src="/markup/images/partners/strategic.png"></a></li>
-                <li> <a href="http://upma.kiev.ua/uk" rel="nofollow"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" src="/markup/images/partners/upma.png"></a></li>
-                <li> <a href="http://www.kpi.kharkov.ua/ua/" rel="nofollow"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms" src="/markup/images/partners/hpi.png"></a></li>
-                <li> <a href="http://www.kname.edu.ua/" rel="nofollow"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms" src="/markup/images/partners/g.png"></a></li>
+                <li> <a href="http://upma.kiev.ua/uk" rel="nofollow"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" src="/markup/images/partners/upma.png"></a></li>
+                <li> <a href="http://www.kpi.kharkov.ua/ua/" rel="nofollow"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" src="/markup/images/partners/hpi.png"></a></li>
+                <li> <a href="http://www.wsb.pl/ukrainian/" rel="nofollow"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms" src="/markup/images/partners/WSB.png"></a></li>
+            </ul>
+        </div>
+        
+    </div><!--/.container-->
+    
+    <div class="container">
+        <div class="center wow fadeInDown">
+            <h2>ПРИ ПІДТРИМЦІ</h2>
+        </div>
+
+        <div class="partners col-lg-12">
+            <ul>
+                <li> <a href="http://kname.edu.ua/" rel="nofollow"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms" src="/markup/images/partners/g.png"></a></li>
                 <li> <a href="http://lnau.lviv.ua/lnau/" rel="nofollow"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1500ms" src="/markup/images/partners/lnau.png"></a></li>
             </ul>
         </div>
+        
     </div><!--/.container-->
+    
+    
+    
     <div class="container">
         <div class="center wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1800ms">
             <h2>ПАРТНЕРИ КОНФЕРЕНЦІЇ</h2>
@@ -455,9 +471,10 @@ $this->params['bodyClass'] = 'homepage';
         <div class="partners col-lg-12">
             <ul>
                 <li> <a href="http://www.zhilstroj-2.ua/" rel="nofollow"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1800ms" src="/markup/images/partners/zhil.png"></a></li>
-                <li> <a href="http://lineup.com.ua/ua/" rel="nofollow"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="2500ms" src="/markup/images/partners/LineUp.png"></a></li>
+                <li> <a href="http://lineup.com.ua/uk/" rel="nofollow"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="2500ms" src="/markup/images/partners/LineUp.png"></a></li>
             </ul>
         </div>
+        
     </div>
     <hr>
 </section><!--/#partner-->

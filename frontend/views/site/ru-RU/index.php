@@ -214,10 +214,10 @@ $this->params['bodyClass'] = 'homepage';
                 </div>
                 <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                     <div class="feature-wrap hvr-glow">
-                        <img src="/markup/images/main-speakers/levchenko.jpg" alt="">
-                        <h2>ТАИСИЯ ЛЕВЧЕНКО</h2>
-                        <p>Основатель и директор консалтинговой компании "ДІЯти!"</p>
-                        <p>Винница, Украина</p>
+                        <img src="/markup/images/main-speakers/koshkin.jpg" alt="">
+                        <h2>КОНСТАНТИН КОШКИН</h2>
+                        <p>Директор Института компьютерных и инженерно-технологических наук НУК имени адмирала Макарова</p>
+                        <p>Николаев, Украина</p>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
@@ -426,23 +426,38 @@ $this->params['bodyClass'] = 'homepage';
     <hr>
     <div class="container">
         <div class="center wow fadeInDown">
-            <h2>Организаторы</h2>
+            <h2>ОРГАНИЗАТОРЫ КОНФЕРЕНЦИИ</h2>
         </div>
 
         <div class="partners col-lg-12">
             <ul>
-                <li> <a href="http://pm-edu.org/ru/"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" src="/markup/images/partners/strategic.png"></a></li>
-                <li> <a href="http://upma.kiev.ua/ru" rel="nofollow"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" src="/markup/images/partners/upma.png"></a></li>
-                <li> <a href="http://www.kpi.kharkov.ua/ru/" rel="nofollow"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms" src="/markup/images/partners/hpi.png"></a></li>
-                <li> <a href="http://www.kname.edu.ua/" rel="nofollow"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms" src="/markup/images/partners/g.png"></a></li>
+                <li> <a href="http://upma.kiev.ua/ru" rel="nofollow"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" src="/markup/images/partners/upma.png"></a></li>
+                <li> <a href="http://www.kpi.kharkov.ua/ru/" rel="nofollow"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" src="/markup/images/partners/hpi.png"></a></li>
+                <li> <a href="http://www.wsb.pl/russian/" rel="nofollow"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms" src="/markup/images/partners/WSB.png"></a></li>
+            </ul>
+        </div>
+        
+    </div><!--/.container-->
+    
+    <div class="container">
+        <div class="center wow fadeInDown">
+            <h2>ПРИ ПОДДЕРЖКЕ</h2>
+        </div>
+
+        <div class="partners col-lg-12">
+            <ul>
+                <li> <a href="http://kname.edu.ua/index.php/ru/" rel="nofollow"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms" src="/markup/images/partners/g.png"></a></li>
                 <li> <a href="http://lnau.lviv.ua/lnau/" rel="nofollow"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1500ms" src="/markup/images/partners/lnau.png"></a></li>
             </ul>
         </div>
         
     </div><!--/.container-->
+    
+    
+    
     <div class="container">
         <div class="center wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1800ms">
-            <h2>Партнеры</h2>
+            <h2>ПАРТНЁРЫ КОНФЕРЕНЦИИ</h2>
         </div>
 
         <div class="partners col-lg-12">
@@ -451,6 +466,7 @@ $this->params['bodyClass'] = 'homepage';
                 <li> <a href="http://lineup.com.ua/ru/" rel="nofollow"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="2500ms" src="/markup/images/partners/LineUp.png"></a></li>
             </ul>
         </div>
+        
     </div>
     <hr>
 </section><!--/#partner-->

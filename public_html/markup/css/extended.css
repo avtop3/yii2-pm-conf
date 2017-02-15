@@ -305,7 +305,7 @@ background: linear-gradient(to bottom right, #004a00 0%, #228B22 100%);
   color: #004a00;
 }
 #conditions .price_table {
-  color: #444;
+  color: #202020;
   font-size: 100%;
   margin: 10px auto;
   width: 100%;
@@ -328,7 +328,7 @@ background: linear-gradient(to bottom right, #004a00 0%, #228B22 100%);
   color: #fff;
   text-shadow: 0 1px 0 rgba(125,207,61,0.4);
   width: 100%;
-  background: #3b3c36;
+  background: #202020;
   padding: 15px 0;
 }
 #conditions .price_table .column_1 {
@@ -1023,23 +1023,23 @@ ul#language-selector li.active {
   text-align: center;
 }
 #dates .row .part .number {
-  border: 1px solid #00b350;
+  border: 1px solid #004a00;
 }
 #dates .row .part .number.black {
-  border: 1px solid #000;
+  border: 1px solid #202020;
 }
 #dates .row .part .number.black p {
-  color: #000;
+  color: #202020;
 }
 #dates .row .part .number.red {
-  border: 1px solid #c00000;
+  border: 1px solid #660000;
 }
 #dates .row .part .number.red p {
-  color: #c00000;
+  color: #660000;
 }
 #dates .row .part .number p {
   font-size: 46px;
-  color: #00b350;
+  color: #004a00;
   line-height: normal;
   margin: 0;
 }
@@ -1048,7 +1048,9 @@ ul#language-selector li.active {
   line-height: 66px;
 }
 #dates .row .part .descr {
-  background: #00b350;
+  background: -webkit-linear-gradient(top left, #004a00 0%, #228B22 100%);
+  background: -o-linear-gradient(top left, #004a00 0%, #228B22 100%);
+  background: linear-gradient(to bottom right, #004a00 0%, #228B22 100%);
   font-size: 22px;
   padding: 20px 5px;
   color: #fff;
@@ -1059,10 +1061,14 @@ ul#language-selector li.active {
   line-height: 24px;
 }
 #dates .row .part .descr.black {
-  background: #000;
+  background: -webkit-linear-gradient(top left, #202020 0%, #404040 100%);
+  background: -o-linear-gradient(top left, #202020 0%, #404040 100%);
+  background: linear-gradient(to bottom right, #202020 0%, #404040 100%);
 }
 #dates .row .part .descr.red {
-  background: #c00000;
+  background: -webkit-linear-gradient(top left, #660000 0%, #cc0000 100%);
+  background: -o-linear-gradient(top left, #660000 0%, #cc0000 100%);
+  background: linear-gradient(to bottom right, #660000 0%, #cc0000 100%);
 }
 #insidePhoto .tab-content {
      padding: 10px 0;   

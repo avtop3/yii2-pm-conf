@@ -75,8 +75,9 @@ $this->params['bodyClass'] = 'homepage';
                         </div>
                     </div>
                 </div>
--->
+-->                
             </div><!--/.item-->
+            
             <div class="item" style="background-image: url(/markup/images/s12.jpg)">
                 <div class="container full absolute">
                     <div class="row">
@@ -153,7 +154,7 @@ $this->params['bodyClass'] = 'homepage';
         </div>
     </div>
 </section><!--/#conatcat-info-->
--->
+
 
 <section id="feature" >
     <div class="container">
@@ -248,7 +249,7 @@ $this->params['bodyClass'] = 'homepage';
         </div>
         <div class="row wow fadeInDown timer">
             <div class="col-md-6 text-right">
-                <p class="descr">Registration deadline in:</p>
+                <p class="descr">REGISTRATION DEADLINE IN:</p>
             </div>
             <div class="col-md-6">
                 <div id="registrEndEN"></div>
@@ -257,7 +258,7 @@ $this->params['bodyClass'] = 'homepage';
         <div class="row wow fadeInDown">
             <div class="part">
                 <img src="/markup/images/people.png" alt="">
-                <p class="title">Participation in the Conference</p>
+                <p class="title">Conference Participation</p>
             </div>
             <div class="part">
                 <div class="number">
@@ -298,7 +299,7 @@ $this->params['bodyClass'] = 'homepage';
         </div>
         <div class="row wow fadeInDown timer topMarginDates">
             <div class="col-md-6 text-right">
-                <p class="descr">Deadline for paper submissions in:</p>
+                <p class="descr">DEADLINE FOR PAPER SUBMISSION IN:</p>
             </div>
             <div class="col-md-6">
                 <div id="articleEndEN"></div>
@@ -435,15 +436,30 @@ $this->params['bodyClass'] = 'homepage';
 
         <div class="partners col-lg-12">
             <ul>
-                <li> <a href="http://pm-edu.org/en/"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" src="/markup/images/partners/strategic.png"></a></li>
-                <li> <a href="http://upma.kiev.ua/en" rel="nofollow"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" src="/markup/images/partners/upma.png"></a></li>
-                <li> <a href="http://www.kpi.kharkov.ua/en/" rel="nofollow"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms" src="/markup/images/partners/hpi.png"></a></li>
-                <li> <a href="http://www.kname.edu.ua/" rel="nofollow"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms" src="/markup/images/partners/g.png"></a></li>
+                <li> <a href="http://upma.kiev.ua/en" rel="nofollow"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" src="/markup/images/partners/upma.png"></a></li>
+                <li> <a href="http://www.kpi.kharkov.ua/eng/" rel="nofollow"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" src="/markup/images/partners/hpi.png"></a></li>
+                <li> <a href="http://www.wsb.pl/english/" rel="nofollow"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms" src="/markup/images/partners/WSB.png"></a></li>
+            </ul>
+        </div>
+        
+    </div><!--/.container-->
+    
+    <div class="container">
+        <div class="center wow fadeInDown">
+            <h2>SUPPORTED BY</h2>
+        </div>
+
+        <div class="partners col-lg-12">
+            <ul>
+                <li> <a href="http://en.kname.edu.ua/" rel="nofollow"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms" src="/markup/images/partners/g.png"></a></li>
                 <li> <a href="http://lnau.lviv.ua/lnau/" rel="nofollow"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1500ms" src="/markup/images/partners/lnau.png"></a></li>
             </ul>
         </div>
         
     </div><!--/.container-->
+    
+    
+    
     <div class="container">
         <div class="center wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1800ms">
             <h2>CONFERENCE PARTNERS</h2>
