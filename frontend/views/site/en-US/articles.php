@@ -14,10 +14,12 @@ $this->title = 'For Authors | International Conference in Project, Program, and 
         <div class="general">
             <h3>General Provisions</h3>
             <hr>
+            <a href="http://ojs.wsb.wroclaw.pl/index.php/WSBRJ/index" target="_blank" rel="nofollow"><img src="/markup/images/WSBRJ.png" alt=""></a>
             <a href="http://pm.khpi.edu.ua/" target="_blank"><img src="/markup/images/zelenaya-oblozhka.jpg" alt=""></a>
 
             <p>Terms of beginning and ending of papers submission for publication are indicated on the main page of the
-                conference website. <strong>Papers for publication will not be accepted by the program committee after
+                conference website.</p> 
+            <p><strong>Papers for publication will not be accepted by the program committee after
                     the deadline for papers submission.</strong></p>
 
             <p><strong>Papers</strong> submitted to the program commitee <strong> must fully comply with the
@@ -43,8 +45,8 @@ $this->title = 'For Authors | International Conference in Project, Program, and 
                     PER PAGE FOR AUTHOR(S) FROM ABROAD.</strong></p>
 
             <p>Papers that have successfully undergone the peer-review procedure and were paid in time will be published
-                in <a href="http://pm.khpi.edu.ua/" target="_blank">Bulletin of NTU "KhPI". Strategic Management,
-                    Portfolio, Program and Project Management</a> scientific journal. The journal is included in the
+                in <strong><a href="http://pm.khpi.edu.ua/" target="_blank">Bulletin of NTU "KhPI". Strategic Management,
+                    Portfolio, Program and Project Management</a></strong> scientific journal. The journal is included in the
                 list of specialized editions of Ukraine, and is also abstracted and indexed in a variety of
                 international scientometric databases and repositories.</p>
 
@@ -53,7 +55,9 @@ $this->title = 'For Authors | International Conference in Project, Program, and 
                 cost of a printed copy of the scientific journal is 150 UAH for author(s) from Ukraine and 50 USD for
                 author(s) from abroad.</p>
                 
-            <p><strong>All published papers will be assigned a unique Digital Object Identifier (DOI)</strong>.</p>    
+            <p><strong>All published papers will be assigned a unique Digital Object Identifier (DOI)</strong>.</p>
+            
+            <p><strong>Selected papers by the program commitee will be recommended for publication in <a href="http://ojs.wsb.wroclaw.pl/index.php/WSBRJ/index" target="_blank" rel="nofollow">WSB University in Wroclaw Research Journal</a> free of charge</strong>.</p>
             
         </div>
         <div class="requirements">

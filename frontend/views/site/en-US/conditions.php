@@ -25,7 +25,7 @@ $this->title = 'Conditions of Perticipation | International Conference in Projec
                 <div class="description align_center">
                     <p><strong>400 UAH</strong></p>
                     <p><strong>70 UAH</strong><br>
-                        for one printed  sheet</p>
+                        for one printed page</p>
                     <p><strong>150 UAH</strong></p>
                 </div>
             </div>
@@ -34,7 +34,7 @@ $this->title = 'Conditions of Perticipation | International Conference in Projec
                 <div class="description align_center">
                     <p><strong>100 USD</strong></p>
                     <p><strong>5 USD</strong><br>
-                        for one printed  sheet</p>
+                        for one printed page</p>
                     <p><strong>50 USD</strong></p>
                 </div>
                 </div>

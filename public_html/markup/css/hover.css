@@ -2031,7 +2031,7 @@
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  background: #e1e1e1;
+  background: #c0c0c0;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
@@ -2089,7 +2089,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: #e1e1e1;
+  background: #c0c0c0;
   -webkit-transform: scaleY(1);
   transform: scaleY(1);
   -webkit-transform-origin: 50%;

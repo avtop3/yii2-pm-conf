@@ -10,7 +10,7 @@ use common\models\memberVariants\ParticipationType;
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Участники ожидающие подтверждения';
+$this->title = 'Участники, ожидающие подтверждения регистрации';
 $this->params['breadcrumbs'][] = $this->title;
 
 ?>

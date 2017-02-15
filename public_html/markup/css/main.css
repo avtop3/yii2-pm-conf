@@ -1087,11 +1087,11 @@ a.accordion-toggle i {
 .partners ul li {
     display: inline-block;
     vertical-align: middle;
-    width: 19%;
+    width: 40%;
 }
 @media(max-width:1199px){
     .partners ul li {        
-        width: 50%;
+        width: 49%;
     }
 }
 .partners ul li a {

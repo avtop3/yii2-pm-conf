@@ -315,7 +315,7 @@ $this->title = 'Speakers | International Conference in Project, Program, and Por
                                         <p class="name">Viktor Morozov</p>
                                         <p>PhD, Professor, Head of Technology Management Department at Taras Shevchenko National University of Kyiv</p>
                                         <p>Kyiv, Ukraine</p>
-                                        <p class="post">Managing E-Learning Projects in Project Management in Ukraine</p>
+                                        <p class="post">Analysis of trends in the development of the banking sector through the management of IT projects</p>
                                     </div>
                                 </div>
                             </a>

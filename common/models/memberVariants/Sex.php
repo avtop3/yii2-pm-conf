@@ -12,7 +12,7 @@ class Sex
 {
     const MALE = 'male';
     const FEMALE = 'female';
-    const NOT_SET = 'not-set';
+    const NOT_SET = 'not set';
 
     public static function getList()
     {
