@@ -20,6 +20,10 @@ $this->params['bodyClass'] = 'homepage';
                                     <h1 class="animation animated-item-2">Інтегроване стратегічне управління, <br> управління портфелями, програмами, проектами</h1>
                                 </div>
                                 <div id="sliderCountEN" class="counter"></div>
+                                <div class="counter off animation animated-item-2">
+                                    <p class="in_progress">Йде конфенеція</p>
+                                    <p class="end">Конференція завершена!</p>
+                                </div>
                                 <div class="container text-center action-buttons">
                                     <a href="/uk/registration" class="regist">Реєстрація</a>
                                     <a href="/documents/uk/information_page.pdf" class="pdf">
@@ -251,7 +255,8 @@ $this->params['bodyClass'] = 'homepage';
                 <p class="descr">До закінчення реєстрації учасників залишилось:</p>
             </div>
             <div class="col-md-6">
-                <div id="registrEndUA"></div>
+                <!--<div id="registrEndUA"></div>-->
+                <p class="descr">Реєстрація завершена</p>
             </div>
         </div>
         <div class="row wow fadeInDown">
@@ -301,7 +306,8 @@ $this->params['bodyClass'] = 'homepage';
                 <p class="descr">До закінчення прийому статей залишилось:</p>
             </div>
             <div class="col-md-6">
-                <div id="articleEndUA"></div>
+                <!--<div id="articleEndUA"></div>-->
+                <p class="descr">Статті більше не приймаються</p>
             </div>
         </div>
         <div class="row wow fadeInDown">

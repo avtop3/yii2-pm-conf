@@ -20,6 +20,10 @@ $this->params['bodyClass'] = 'homepage';
                                     <h1 class="animation animated-item-2">Integrated Strategic Management, <br> Portfolio, Program, and Project Management</h1>
                                 </div>
                                 <div id="sliderCountEN" class="counter"></div>
+                                <div class="counter off animation animated-item-2">
+                                    <p class="in_progress">Conference in progress</p>
+                                    <p class="end">The conference is finished!</p>
+                                </div>
                                 <div class="container text-center action-buttons">
                                     <a href="/en/registration" class="regist">Register now</a>
                                     <a href="/documents/en/information_page.pdf" class="pdf">
@@ -251,7 +255,8 @@ $this->params['bodyClass'] = 'homepage';
                 <p class="descr">Registration deadline in:</p>
             </div>
             <div class="col-md-6">
-                <div id="registrEndEN"></div>
+                <!--<div id="registrEndEN"></div>-->
+                <p class="descr">Registration is over</p>
             </div>
         </div>
         <div class="row wow fadeInDown">
@@ -301,7 +306,8 @@ $this->params['bodyClass'] = 'homepage';
                 <p class="descr">Deadline for paper submissions in:</p>
             </div>
             <div class="col-md-6">
-                <div id="articleEndEN"></div>
+                <!--<div id="articleEndEN"></div>-->
+                <p class="descr">Articles are no longer accepted</p>
             </div>
         </div>
         <div class="row wow fadeInDown">

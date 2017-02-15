@@ -245,7 +245,20 @@ AppAsset::register($this);
             + '<div class="count"><div class="num">%-H</div> <p class="string"> <?= Yii::t('app.layout','hours' )?> </p></div>'
             + '<div class="count"><div class="num">%-M</div> <p class="string"> <?= Yii::t('app.layout','min' )?> </p></div>'
             + '<div class="count"><div class="num">%-S</div> <p class="string"> <?= Yii::t('app.layout','sec' )?> </p></div>'));
-    });
+    }).on('finish.countdown', function() { 
+        $(this).css('display', 'none');
+        $('.counter.off').css('display', 'block')
+        $('.counter.off p.end').css('display', 'none')
+    });;
+    
+    window.setInterval(function(){
+        var current = new Date();
+        var expiry  = new Date("February 17, 2017 00:00:01")
+        if(current.getTime()>expiry.getTime()){
+            $('.counter.off p.in_progress').css('display', 'none')
+            $('.counter.off p.end').css('display', 'block')
+        }
+    }, 3000);
     
     //Counter for registration time in RU UA EN
     $('#clock, #clockUA, #clockEN').countdown('2017/02/13').on('update.countdown', function(event) {
